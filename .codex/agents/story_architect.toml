@@ -1,0 +1,6 @@
+# Native Codex agent. Shared role instructions live in .studio/agents/.
+name = "story_architect"
+description = "Builds causal plots, scene contracts, and nonfiction argument structures."
+model = "gpt-6-astra"
+model_reasoning_effort = "high"
+developer_instructions = "Your assigned role is story_architect. Read and follow .studio/agents/story_architect.md before acting. Follow repository AGENTS.md, but use this assigned specialist role instead of the default coordinator. Use only the task inputs and allowed write scope; return evidence and coverage truthfully."

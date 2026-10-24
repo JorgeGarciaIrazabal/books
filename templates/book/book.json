@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "id": "{{book}}",
+  "universe": "{{universe}}",
+  "series": "{{series}}",
+  "title": "{{title}}",
+  "kind": "{{kind}}",
+  "stage": "brief",
+  "language": "en",
+  "chapters": []
+}

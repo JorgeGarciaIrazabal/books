@@ -1,0 +1,33 @@
+{
+  "requested_model": "kimi-k3:cloud",
+  "reported_model": "kimi-k3",
+  "timestamp_utc": "2026-10-24T00:51:57.927460+00:00",
+  "elapsed_seconds": 7.54,
+  "done": true,
+  "done_reason": "stop",
+  "eval_count": 769,
+  "prompt_eval_count": 9430,
+  "inputs": [
+    {
+      "path": ".studio/reviews/2026-10-23/round-2-brief.md",
+      "sha256": "9185dff9f8d734424db2ebbe5e4930d59435e17d04623f3a41af3834cae5d789"
+    },
+    {
+      "path": ".studio/reviews/2026-10-23/mistral-large-4-round-1.md",
+      "sha256": "e3a57f44207122e97701b7ee43e0c0826e0493362d46f77d8db8aa12155ba2f0"
+    },
+    {
+      "path": ".studio/reviews/2026-10-23/astra-round-1.md",
+      "sha256": "f16356fedf4d159d2601cf8d36e922c86719f017042e91e1094254b16b4e67a2"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "22351473a5c34a0e7c139db9f3c3c3c7358a1f00b22de1578a5064f796c0bbe7"
+    },
+    {
+      "path": ".studio/workflow.md",
+      "sha256": "dc7593cf2188e033d8c1307b1537b3db9035698cdc426885e59810a288974693"
+    }
+  ],
+  "max_output_tokens": 4000
+}

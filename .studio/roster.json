@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "agents": [
+    {
+      "id": "studio_director",
+      "description": "Coordinates the writing studio and completes the author’s requested deliverable.",
+      "kind": "coordinator",
+      "source": ".studio/agents/studio_director.md",
+      "codex_model": "gpt-6-astra",
+      "codex_reasoning": "high",
+      "opencode_model": "ollama/kimi-k3:cloud"
+    },
+    {
+      "id": "acquisitions_editor",
+      "description": "Develops a distinctive premise, reader promise, and viable publishing brief.",
+      "kind": "creator",
+      "source": ".studio/agents/acquisitions_editor.md",
+      "codex_model": "gpt-6-astra",
+      "codex_reasoning": "medium",
+      "opencode_model": "ollama/mistral-large-4:cloud"
+    },
+    {
+      "id": "universe_architect",
+      "description": "Designs coherent worlds or subject collections with constraints and consequences.",
+      "kind": "creator",
+      "source": ".studio/agents/universe_architect.md",
+      "codex_model": "gpt-6-astra",
+      "codex_reasoning": "medium",
+      "opencode_model": "ollama/kimi-k3:cloud"
+    },
+    {
+      "id": "series_showrunner",
+      "description": "Designs book-to-book arcs, promises, revelations, and continuity.",
+      "kind": "creator",
+      "source": ".studio/agents/series_showrunner.md",
+      "codex_model": "gpt-6-astra",
+      "codex_reasoning": "high",
+      "opencode_model": "ollama/kimi-k3:cloud"
+    },
+    {
+      "id": "story_architect",
+      "description": "Builds causal plots, scene contracts, and nonfiction argument structures.",
+      "kind": "creator",
+      "source": ".studio/agents/story_architect.md",
+      "codex_model": "gpt-6-astra",
+      "codex_reasoning": "high",
+      "opencode_model": "ollama/kimi-k3:cloud"
+    },
+    {
+      "id": "character_director",
+      "description": "Develops character agency, relationships, arcs, and distinct dialogue.",
+      "kind": "creator",
+      "source": ".studio/agents/character_director.md",
+      "codex_model": "gpt-6-astra",
+      "codex_reasoning": "medium",
+      "opencode_model": "ollama/mistral-large-4:cloud"
+    },
+    {
+      "id": "researcher",
+      "description": "Collects inspected primary evidence and maps it to specific claims.",
+      "kind": "creator",
+      "source": ".studio/agents/researcher.md",
+      "codex_model": "gpt-6-astra",
+      "codex_reasoning": "medium",
+      "opencode_model": "ollama/kimi-k3:cloud"
+    },
+    {
+      "id": "drafter",
+      "description": "Writes original scenes or nonfiction sections to a scoped creative brief.",
+      "kind": "creator",
+      "source": ".studio/agents/drafter.md",
+      "codex_model": "gpt-6-astra",
+      "codex_reasoning": "medium",
+      "opencode_model": "ollama/mistral-large-4:cloud"
+    },
+    {
+      "id": "developmental_editor",
+      "description": "Independently evaluates structure, causality, pacing, and thematic execution.",
+      "kind": "reviewer",
+      "source": ".studio/agents/developmental_editor.md",
+      "codex_model": "gpt-6-astra",
+      "codex_reasoning": "high",
+      "opencode_model": "ollama/kimi-k3:cloud"
+    },
+    {
+      "id": "line_editor",
+      "description": "Improves prose, subtext, rhythm, and precision while preserving voice.",
+      "kind": "creator",
+      "source": ".studio/agents/line_editor.md",
+      "codex_model": "gpt-6-astra",
+      "codex_reasoning": "medium",
+      "opencode_model": "ollama/mistral-large-4:cloud"
+    },
+    {
+      "id": "copy_editor",
+      "description": "Checks grammar, usage, mechanics, naming consistency, and citation presentation.",
+      "kind": "creator",
+      "source": ".studio/agents/copy_editor.md",
+      "codex_model": "gpt-6-astra",
+      "codex_reasoning": "medium",
+      "opencode_model": "ollama/mistral-large-4:cloud"
+    },
+    {
+      "id": "canon_keeper",
+      "description": "Audits accepted facts, chronology, character state, and disclosure boundaries.",
+      "kind": "reviewer",
+      "source": ".studio/agents/canon_keeper.md",
+      "codex_model": "gpt-6-astra",
+      "codex_reasoning": "medium",
+      "opencode_model": "ollama/kimi-k3:cloud"
+    },
+    {
+      "id": "reader_advocate",
+      "description": "Reports independent reader experience, genre satisfaction, and representation risks.",
+      "kind": "reviewer",
+      "source": ".studio/agents/reader_advocate.md",
+      "codex_model": "gpt-6-astra",
+      "codex_reasoning": "medium",
+      "opencode_model": "ollama/mistral-large-4:cloud"
+    },
+    {
+      "id": "nonfiction_editor",
+      "description": "Independently audits thesis, argument, pedagogy, and factual support.",
+      "kind": "reviewer",
+      "source": ".studio/agents/nonfiction_editor.md",
+      "codex_model": "gpt-6-astra",
+      "codex_reasoning": "high",
+      "opencode_model": "ollama/kimi-k3:cloud"
+    },
+    {
+      "id": "production_editor",
+      "description": "Assembles reproducible manuscripts and verifies the actual release candidate.",
+      "kind": "creator",
+      "source": ".studio/agents/production_editor.md",
+      "codex_model": "gpt-6-astra",
+      "codex_reasoning": "medium",
+      "opencode_model": "ollama/kimi-k3:cloud"
+    },
+    {
+      "id": "art_director",
+      "description": "Develops cohesive cover and illustration briefs with production requirements.",
+      "kind": "creator",
+      "source": ".studio/agents/art_director.md",
+      "codex_model": "gpt-6-astra",
+      "codex_reasoning": "medium",
+      "opencode_model": "ollama/mistral-large-4:cloud"
+    }
+  ]
+}

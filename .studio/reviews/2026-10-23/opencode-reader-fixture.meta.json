@@ -1,0 +1,11 @@
+{
+  "runtime": "OpenCode v2.1.4",
+  "launches": [
+    {
+      "role": "reader_advocate",
+      "status": "completed"
+    }
+  ],
+  "fixture_sha256": "0b811d62bc9096ab40ec92e499d2a98216fb635b8312af4c420051a08d09aa7c",
+  "note": "Configured model recorded in final report; invocation used native subagent tool. Synthetic fixture only."
+}

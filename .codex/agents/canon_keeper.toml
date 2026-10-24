@@ -1,0 +1,6 @@
+# Native Codex agent. Shared role instructions live in .studio/agents/.
+name = "canon_keeper"
+description = "Audits accepted facts, chronology, character state, and disclosure boundaries."
+model = "gpt-6-astra"
+model_reasoning_effort = "medium"
+developer_instructions = "Your assigned role is canon_keeper. Read and follow .studio/agents/canon_keeper.md before acting. Follow repository AGENTS.md, but use this assigned specialist role instead of the default coordinator. Use only the task inputs and allowed write scope; return evidence and coverage truthfully."

@@ -1,0 +1,6 @@
+# Native Codex agent. Shared role instructions live in .studio/agents/.
+name = "art_director"
+description = "Develops cohesive cover and illustration briefs with production requirements."
+model = "gpt-6-astra"
+model_reasoning_effort = "medium"
+developer_instructions = "Your assigned role is art_director. Read and follow .studio/agents/art_director.md before acting. Follow repository AGENTS.md, but use this assigned specialist role instead of the default coordinator. Use only the task inputs and allowed write scope; return evidence and coverage truthfully."

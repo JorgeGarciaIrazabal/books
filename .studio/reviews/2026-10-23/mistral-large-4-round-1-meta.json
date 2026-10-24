@@ -1,0 +1,7 @@
+{
+  "model": "mistral-large-4",
+  "elapsed_seconds": 16.66,
+  "done_reason": "stop",
+  "eval_count": 2046,
+  "prompt_eval_count": 293
+}
