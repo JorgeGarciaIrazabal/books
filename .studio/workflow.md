@@ -137,3 +137,29 @@ consequential claims and evaluates the argument and whether the evidence actuall
 supports it. A fresh researcher can do the independent factual check for fiction.
 Record claim IDs actually checked, exact locators, omissions, and unresolved support
 in research/claims.json. Factual review is not just citation formatting.
+
+## Model routing and artifact boundaries
+
+Use `.studio/roster.json` for each role’s runtime model and effort. The Codex default is GPT-6.1 Sol high; acquisition copy and developmental editing default to medium. Use the acquisitions high override for premise development. The reader advocate uses GPT-6 Sol high so a principal writer has a different-model reader. A fresh session of the same model remains a useful check, with its independence limit disclosed. Untested research, nonfiction, production and art roles retain their previous model families.
+
+OpenCode currently uses explicitly labeled Ollama fallbacks because the connected OpenRouter key has reached its cap. Do not raise account limits, copy credentials or silently switch providers. Preferred OpenRouter routes are recorded in the roster for a later authorized routing update; they are not active. The Ollama OpenAI-compatible endpoint takes `reasoning_effort`, not the native `think` field. Validate a changed control through the runtime instead of trusting a variant label alone.
+
+A scene’s word budget and the allowance for its state delta must be distinct. Keep handoff/process commentary out of manuscript or public-facing copy. Allow enough runtime steps for the assigned reads, writing and validation; a step-limit summary is not manuscript prose. In a review, distinguish definite errors from queries and preferences, and verify a quoted passage and its cited locator before reporting it as evidence.
+
+The author authorized provisional adoption despite incomplete trials. Short feasibility and evidence guards are editorial changes motivated by observed failures; the larger experimental instruction blocks have not passed a full A/B comparison and are not adopted wholesale. See `docs/model-routing.md`.
+
+## Illustrated stories and illustrated editions
+
+At the brief stage, consider whether pictures are part of the reading promise. For children's stories, record the reading format, visual scope and any reversible art assumptions before drafting. Respect explicit text-only preferences and the author's page or image limits.
+
+Use [.studio/skills/illustrated-story/SKILL.md](skills/illustrated-story/SKILL.md) when pictures are part of the requested reading experience, including an illustrated retrofit. Plan text and pictures together for new stories; protect the existing text and snapshot its edition for a retrofit. A chapter, page, scene and spread are distinct units. Set art frequency from the author request, not a universal quota.
+
+Add visual work to the minimum useful loop: narrative brief and scene contracts → page/spread dummy → visual bible and inspected cast/prop reference → scene commissions → selected images → book design/export → independent image and final-page proof. The dummy uses actual text and defines image scale, negative space and edge treatment for scene commissions. Render representative composed pages and assess them together before extending the design across the book. A reference sheet and recurring ornaments do not count as requested scene illustrations.
+
+Art direction owns visual intent, illustrator owns assigned assets and prompt/provenance records, production owns typography/layout/export, and illustration_reviewer owns an independent report. The director keeps shared tasks, integration and handoff. These are specialist responsibilities, not a requirement to start all roles at once. Existing permission and independence boundaries still apply.
+
+Use book-local production/visual-style.md, production/illustration-plan.json, and assets/illustrations/ for selected source art and references. Order remains book.json.chapters. Validate chapter coverage and local paths with the skill helper, but inspect actual images and the actual export to judge narrative consistency, disclosures, crop and readability. Hash text, plan, references, images and layout sources with the output. Recheck any changed asset and its affected pages.
+
+Record an **illustration** checkpoint for selected-image/prose/reference agreement and a **production** checkpoint for the actual illustrated artifact. Each pass states images/pages individually inspected, samples and omissions; a contact sheet or successful build is insufficient. The production review separately assesses the composed edition's aesthetics, including art/text integration and rhythm across pages or spreads, with concrete examples and taste judgments labeled. Collision-free geometry does not establish successful design, and author feedback overrides an earlier aesthetic pass. A revised export requires its own review. Print constraints derive from the actual printer; private digital reading has no automatic print-resolution requirement. Keep prompts, source method, rights limits and generated-art provenance outside the story.
+
+Capture lessons after the edition is reviewed: observed problem, evidence, smallest durable adjustment, and scope. Do not promote one project's art count, visual taste or layout into a universal publishing rule. See [illustrated-story guidance](../docs/illustrated-stories.md).

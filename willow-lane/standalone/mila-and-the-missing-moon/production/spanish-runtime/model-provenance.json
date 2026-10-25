@@ -1,0 +1,26 @@
+{
+  "session": "ses_e8ce2502affeqvQl1QRop4i6Px",
+  "title": "Mila Spanish translation Mistral Large 4 batch 1",
+  "assistant_models": [
+    {
+      "id": "mistral-large-4:cloud",
+      "providerID": "ollama",
+      "variant": "high"
+    }
+  ],
+  "completed_assistant_messages": 39,
+  "note": "Actual native OpenCode session metadata; high is the explicitly requested configured variant. No model substitution. Coordinator made one supplementary-page punctuation correction after Mistral completed all four native assignments.",
+  "runtime_logs_sha256": {
+    "production/spanish-runtime/batch-1.jsonl": "cf8c31fc6663a56eccf2f03318cdba36c1fba14651a8213440851b8990be05a9",
+    "production/spanish-runtime/batch-2.jsonl": "d1a3d11752a37fab21007e363ebf7f24d8f688fabc9bc0a615a95963978ea7b6",
+    "production/spanish-runtime/batch-3.jsonl": "e99d178f8881cf97d89d8176e7c60875d55504a13fb72b3bf1278388bb22e7b2",
+    "production/spanish-runtime/batch-4.jsonl": "e42ab1ffb55e82ccdc071f8cbb8f079e14ee1516515c08b23a962531ccbdfa85"
+  },
+  "native_tool_calls_per_batch": {
+    "1": 22,
+    "2": 11,
+    "3": 12,
+    "4": 59
+  },
+  "budget_deviation": "Batch 4 returned 59 completed tool calls against the requested cap of 40. Batched edits had already returned when observed; no further Mistral round was launched. See tasks.json."
+}

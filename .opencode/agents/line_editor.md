@@ -1,7 +1,7 @@
 ---
 description: "Improves prose, subtext, rhythm, and precision while preserving voice."
 mode: subagent
-model: ollama/mistral-large-4:cloud
+model: ollama/mistral-large-4:cloud#high
 steps: 40
 permissions:
   - action: subagent

@@ -1,0 +1,8 @@
+{
+  "reason": "Kimi low P8 included a process-note tail after its complete blurb, prompted by native max-step handling. It is not part of the blurb. Strip only the separator and note; do not regenerate or edit the fiction. Preserve the original artifact and rankings.",
+  "operation": "Exact prefix before known process-note delimiter retained, with trailing whitespace normalized.",
+  "original_sha256": "81fe122fabd1e7f22fa92ab47c139bd8fe7a63d3b6e9d3268d2adf2809f660d1",
+  "corrected_sha256": "29d9e4328f5733a785c92c5e08584eb28b4197e2a36689da197bb1b9adc1ff75",
+  "review": "Six fresh P8-only comparisons from eligible other model conditions; original Kimi reviewer ranks remain applicable because they never saw either Kimi output.",
+  "preregistration": "Post-hoc correction after original results; disclose separately, do not pretend it was preregistered."
+}

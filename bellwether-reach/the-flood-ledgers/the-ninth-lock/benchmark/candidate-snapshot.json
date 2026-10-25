@@ -1,0 +1,10 @@
+{
+  "outputs/kimi-high.md": "276338dcffe096d281a47aa1ac689f2e88cfca99fb7ae782a5b65f8c0dc38911",
+  "outputs/kimi-low.md": "81fe122fabd1e7f22fa92ab47c139bd8fe7a63d3b6e9d3268d2adf2809f660d1",
+  "outputs/mistral-high.md": "55d95dffcfb225c49899bfa29411e74d83b232c16b90a1dc2ac0ea28aac5d57f",
+  "outputs/mistral-none.md": "e62671e187c44e9427267259f035817ad58a814543b0eac275081501bf95bc5b",
+  "outputs/sol6-high.md": "1db1007bb651ba1505f996e3f57270d5742c3e9c3eafb48d4c0829035c613de1",
+  "outputs/sol6-medium.md": "cefc481ef37028384e2564ef07a2b0c2ee5b9823727c7ada0b9762a917970fcb",
+  "outputs/sol61-high.md": "bf9c2171dce66dace52d4a726b89640621a05a61104eb8d39465919e6989b48a",
+  "outputs/sol61-medium.md": "445f56e3428326fd03bbcd1ff214faecf737fb7e9b4642fa9bf4d421ae4ffe3c"
+}

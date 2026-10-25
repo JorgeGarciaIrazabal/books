@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "disclosures": [
+    {
+      "id": "KN-0001",
+      "scene_id": "SC-0001",
+      "source": "manuscript/001-the-empty-table.md",
+      "reader_learns": "Yellow wool is a possible trace, not proof of who moved the box.",
+      "mila_learns": "Yellow wool is a possible trace, not proof of who moved the box.",
+      "boundary": "Scene-end disclosures do not grant future knowledge to the viewpoint character.",
+      "status": "draft-disclosure-record"
+    },
+    {
+      "id": "KN-0002",
+      "scene_id": "SC-0002",
+      "source": "manuscript/002-something-white.md",
+      "reader_learns": "The white track material has not yet been identified; Noah's drawing is visible to reader.",
+      "mila_learns": "The white track material has not yet been identified; Noah's drawing is visible to reader.",
+      "boundary": "Scene-end disclosures do not grant future knowledge to the viewpoint character.",
+      "status": "draft-disclosure-record"
+    },
+    {
+      "id": "KN-0003",
+      "scene_id": "SC-0003",
+      "source": "manuscript/003-the-wrong-question.md",
+      "reader_learns": "Bea reports a square box with yellow wool on a low wooden trolley; pusher unseen.",
+      "mila_learns": "Bea reports a square box with yellow wool on a low wooden trolley; pusher unseen.",
+      "boundary": "Scene-end disclosures do not grant future knowledge to the viewpoint character.",
+      "status": "draft-disclosure-record"
+    },
+    {
+      "id": "KN-0004",
+      "scene_id": "SC-0004",
+      "source": "manuscript/004-a-wheel-with-a-bite.md",
+      "reader_learns": "Mr. Moss borrowed trolley for garden boxes; route beyond yard is not established.",
+      "mila_learns": "Mr. Moss borrowed trolley for garden boxes; route beyond yard is not established.",
+      "boundary": "Scene-end disclosures do not grant future knowledge to the viewpoint character.",
+      "status": "draft-disclosure-record"
+    },
+    {
+      "id": "KN-0005",
+      "scene_id": "SC-0005",
+      "source": "manuscript/005-rain-on-the-notebook.md",
+      "reader_learns": "Garden uses the same yellow wool widely; June has agreed to open shed.",
+      "mila_learns": "Garden uses the same yellow wool widely; June has agreed to open shed.",
+      "boundary": "Scene-end disclosures do not grant future knowledge to the viewpoint character.",
+      "status": "draft-disclosure-record"
+    },
+    {
+      "id": "KN-0006",
+      "scene_id": "SC-0006",
+      "source": "manuscript/006-the-map-that-wasnt.md",
+      "reader_learns": "Route is a reason to prioritize shed, not conclusive proof of destination.",
+      "mila_learns": "Route is a reason to prioritize shed, not conclusive proof of destination.",
+      "boundary": "Scene-end disclosures do not grant future knowledge to the viewpoint character.",
+      "status": "draft-disclosure-record"
+    },
+    {
+      "id": "KN-0007",
+      "scene_id": "SC-0007",
+      "source": "manuscript/007-boxes-boxes.md",
+      "reader_learns": "Old labels can disagree with contents; Mr. Moss identifies storage wall but not exact moon carton.",
+      "mila_learns": "Old labels can disagree with contents; Mr. Moss identifies storage wall but not exact moon carton.",
+      "boundary": "Scene-end disclosures do not grant future knowledge to the viewpoint character.",
+      "status": "draft-disclosure-record"
+    },
+    {
+      "id": "KN-0008",
+      "scene_id": "SC-0008",
+      "source": "manuscript/008-start-again.md",
+      "reader_learns": "Children plan to turn broad, shallow boxes and read every side; lantern dimensions narrow search.",
+      "mila_learns": "Children plan to turn broad, shallow boxes and read every side; lantern dimensions narrow search.",
+      "boundary": "Scene-end disclosures do not grant future knowledge to the viewpoint character.",
+      "status": "draft-disclosure-record"
+    },
+    {
+      "id": "KN-0009",
+      "scene_id": "SC-0009",
+      "source": "manuscript/009-the-other-side.md",
+      "reader_learns": "Accidental move fully explained; cardboard lid tab corresponds to paper tear. Stars are safe in library drawer.",
+      "mila_learns": "Accidental move fully explained; cardboard lid tab corresponds to paper tear. Stars are safe in library drawer.",
+      "boundary": "Scene-end disclosures do not grant future knowledge to the viewpoint character.",
+      "status": "draft-disclosure-record"
+    },
+    {
+      "id": "KN-0010",
+      "scene_id": "SC-0010",
+      "source": "manuscript/010-a-moon-with-a-scar.md",
+      "reader_learns": "Repair succeeds; old garden labels are corrected; lantern uses battery light.",
+      "mila_learns": "Repair succeeds; old garden labels are corrected; lantern uses battery light.",
+      "boundary": "Scene-end disclosures do not grant future knowledge to the viewpoint character.",
+      "status": "draft-disclosure-record"
+    },
+    {
+      "id": "KN-0011",
+      "scene_id": "SC-0011",
+      "source": "manuscript/011-one-small-light.md",
+      "reader_learns": "Moon is found and safe. Noah permits one more night of the notebook-and-pencil loan, due tomorrow.",
+      "mila_learns": "Moon is found and safe. Noah permits one more night of the notebook-and-pencil loan, due tomorrow.",
+      "boundary": "Scene-end disclosures do not grant future knowledge to the viewpoint character.",
+      "status": "draft-disclosure-record"
+    },
+    {
+      "id": "KN-0012",
+      "scene_id": "SC-0012",
+      "source": "manuscript/012-the-last-page.md",
+      "reader_learns": "Main mystery and emotional threads close. Paper moon safe in library; real moon visible from home; no unresolved sequel requirement.",
+      "mila_learns": "Main mystery and emotional threads close. Paper moon safe in library; real moon visible from home; no unresolved sequel requirement.",
+      "boundary": "Scene-end disclosures do not grant future knowledge to the viewpoint character.",
+      "status": "draft-disclosure-record"
+    }
+  ]
+}

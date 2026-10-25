@@ -1,0 +1,44 @@
+[
+  {
+    "id": "F1-P",
+    "fixture": "F1",
+    "role": "story_architect",
+    "words": "150–210",
+    "task": "Plan four causal beats for a complete short story from the fixture. Include feasible times, a consequential choice by the viewpoint, another character’s agency, an earned outcome accepting the fixed limit, and one setup/payoff. The motive may be planned for the author, but distinguish it from opening POV knowledge. Do not use your draft or audit as source."
+  },
+  {
+    "id": "F1-D",
+    "fixture": "F1",
+    "role": "drafter",
+    "words": "280–360 prose words plus at most 35 words of state delta",
+    "task": "Write the specified scene as fiction, independently of your plan. Use only fixed inputs, the specified voice, incoming state and scene window. End with a concrete costly commitment; do not solve the entire story or disclose the unknown motive. Add a concise state delta after the scene, clearly separated. No process report in the fiction."
+  },
+  {
+    "id": "F1-C",
+    "fixture": "F1",
+    "role": "canon_keeper",
+    "words": "140–220",
+    "task": "Audit ONLY this fixture’s numbered audit target against its fixed facts and style, not your own plan or scene. Inside this section return JSON with keys errors (objects with line, conflict, quote, repair), queries (objects with line and reason), and preserve (list of line IDs). Quote 4–14 exact consecutive words for each definite error. Include all definite errors; distinguish queries, optional preferences and valid lines. No hidden events or new resources may be supplied to repair a contradiction."
+  },
+  {
+    "id": "F2-P",
+    "fixture": "F2",
+    "role": "story_architect",
+    "words": "150–210",
+    "task": "Plan four causal beats for a complete short story from the fixture. Include feasible times, a consequential choice by the viewpoint, another character’s agency, an earned outcome accepting the fixed limit, and one setup/payoff. The motive may be planned for the author, but distinguish it from opening POV knowledge. Do not use your draft or audit as source."
+  },
+  {
+    "id": "F2-D",
+    "fixture": "F2",
+    "role": "drafter",
+    "words": "280–360 prose words plus at most 35 words of state delta",
+    "task": "Write the specified scene as fiction, independently of your plan. Use only fixed inputs, the specified voice, incoming state and scene window. End with a concrete costly commitment; do not solve the entire story or disclose the unknown motive. Add a concise state delta after the scene, clearly separated. No process report in the fiction."
+  },
+  {
+    "id": "F2-C",
+    "fixture": "F2",
+    "role": "canon_keeper",
+    "words": "140–220",
+    "task": "Audit ONLY this fixture’s numbered audit target against its fixed facts and style, not your own plan or scene. Inside this section return JSON with keys errors (objects with line, conflict, quote, repair), queries (objects with line and reason), and preserve (list of line IDs). Quote 4–14 exact consecutive words for each definite error. Include all definite errors; distinguish queries, optional preferences and valid lines. No hidden events or new resources may be supplied to repair a contradiction."
+  }
+]

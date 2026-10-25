@@ -1,0 +1,1 @@
+{"type": "error", "error": {"type": "provider.auth", "status": 403, "message": "OpenRouter API key spending limit already exceeded; no inference result. Credential-management identifiers redacted.", "action": "Keep operational Ollama fallback; use recommended Sol routes through Codex. No account limits or credentials changed."}}

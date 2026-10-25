@@ -1,0 +1,187 @@
+{
+  "schema_version": 3,
+  "layout_record": "production/layout-v3.json",
+  "note": "Author-directed composed-page dummy. Exact boxes/leading/reading sequence are in referenced layout record; prior uniform inset dummy archived with v2.",
+  "pages": [
+    {
+      "page": 1,
+      "composition": "title-and-opening",
+      "art_id": null,
+      "chapter_title": true
+    },
+    {
+      "page": 2,
+      "composition": "large-bottom-vignette",
+      "art_id": "ILL-0001",
+      "chapter_title": false
+    },
+    {
+      "page": 3,
+      "composition": "quiet-text",
+      "art_id": null,
+      "chapter_title": false
+    },
+    {
+      "page": 4,
+      "composition": "edge-to-edge-landscape-first",
+      "art_id": "ILL-0002",
+      "chapter_title": false
+    },
+    {
+      "page": 5,
+      "composition": "quiet-text",
+      "art_id": null,
+      "chapter_title": false
+    },
+    {
+      "page": 6,
+      "composition": "vignette-above-chapter",
+      "art_id": "ILL-0003",
+      "chapter_title": true
+    },
+    {
+      "page": 7,
+      "composition": "quiet-text",
+      "art_id": null,
+      "chapter_title": false
+    },
+    {
+      "page": 8,
+      "composition": "quiet-text",
+      "art_id": null,
+      "chapter_title": false
+    },
+    {
+      "page": 9,
+      "composition": "portrait-environment-with-upper-columns",
+      "art_id": "ILL-0004",
+      "chapter_title": false
+    },
+    {
+      "page": 10,
+      "composition": "quiet-text",
+      "art_id": null,
+      "chapter_title": false
+    },
+    {
+      "page": 11,
+      "composition": "chapter-opening",
+      "art_id": null,
+      "chapter_title": true
+    },
+    {
+      "page": 12,
+      "composition": "vignette-before-response",
+      "art_id": "ILL-0005",
+      "chapter_title": false
+    },
+    {
+      "page": 13,
+      "composition": "quiet-text",
+      "art_id": null,
+      "chapter_title": false
+    },
+    {
+      "page": 14,
+      "composition": "quiet-text",
+      "art_id": null,
+      "chapter_title": false
+    },
+    {
+      "page": 15,
+      "composition": "prose-vignette-prose",
+      "art_id": "ILL-0006",
+      "chapter_title": false
+    },
+    {
+      "page": 16,
+      "composition": "chapter-opening",
+      "art_id": null,
+      "chapter_title": true
+    },
+    {
+      "page": 17,
+      "composition": "musical-columns-over-wide-scene",
+      "art_id": "ILL-0007",
+      "chapter_title": false
+    },
+    {
+      "page": 18,
+      "composition": "quiet-text",
+      "art_id": null,
+      "chapter_title": false
+    },
+    {
+      "page": 19,
+      "composition": "wide-procession-before-prose",
+      "art_id": "ILL-0008",
+      "chapter_title": false
+    },
+    {
+      "page": 20,
+      "composition": "quiet-text",
+      "art_id": null,
+      "chapter_title": false
+    },
+    {
+      "page": 21,
+      "composition": "chapter-opening",
+      "art_id": null,
+      "chapter_title": true
+    },
+    {
+      "page": 22,
+      "composition": "quiet-text",
+      "art_id": null,
+      "chapter_title": false
+    },
+    {
+      "page": 23,
+      "composition": "portrait-vignette-beside-prose",
+      "art_id": "ILL-0009",
+      "chapter_title": false
+    },
+    {
+      "page": 24,
+      "composition": "sky-page",
+      "art_id": "ILL-0010",
+      "chapter_title": false
+    },
+    {
+      "page": 25,
+      "composition": "quiet-text",
+      "art_id": null,
+      "chapter_title": false
+    },
+    {
+      "page": 26,
+      "composition": "chapter-opening",
+      "art_id": null,
+      "chapter_title": true
+    },
+    {
+      "page": 27,
+      "composition": "sky-page",
+      "art_id": "ILL-0011",
+      "chapter_title": false
+    },
+    {
+      "page": 28,
+      "composition": "quiet-text",
+      "art_id": null,
+      "chapter_title": false
+    },
+    {
+      "page": 29,
+      "composition": "quiet-text",
+      "art_id": null,
+      "chapter_title": false
+    },
+    {
+      "page": 30,
+      "composition": "final-object-vignette",
+      "art_id": "ILL-0012",
+      "chapter_title": false
+    }
+  ]
+}

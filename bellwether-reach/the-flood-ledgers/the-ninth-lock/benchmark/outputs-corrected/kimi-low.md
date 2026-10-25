@@ -1,0 +1,190 @@
+## P1
+
+**Hook:** In Bellwether Reach, flood protection is a legal instrument. The Ninth Lock can shield only one basin per tide, and the Registry's certificates decide which one. When licensed inspector Sera Venn finds two genuinely sealed certificates for the same tide, the crime is not forged paper — it is the discovery that paperwork can be true, honored, and lethal all at once. The mystery is not *who faked it* but *who arranged for truth to kill*.
+
+**Consequential local custom (proposed):** The Witness Toll — a basin that learns it has lost protection may send one resident to stand at the lock while the assignment is held; the loss must be witnessed by a person, not announced by bell alone. Compatible with canon (it changes nothing mechanically), it turns bureaucracy into ritual and gives the unprotected a face in every book.
+
+**Repeatable series engine:** Each installment takes one civic instrument of Bellwether Reach — lock, charter, grain ledger, toll right — and reveals it to be legally valid and morally rigged. Sera (and whoever survives her choices) must trace the instrument's paper trail and take a defensible loss before the deadline the instrument itself dictates.
+
+**Emotional promise:** Practical competence under strain, estrangements repaired through shared work rather than apology, and a cost always itemized: saving something means choosing, on the record, what may be lost. Readers should feel both the mercy and the invoice.
+
+**Boundaries:** no cartoon villains, no truth magic, no miracle machinery, no promised commercial performance.
+
+## P2
+
+**Antagonist motive (author-visible planning; unknown to opening POV):** Registry Provost Odell Marr (proposed) has quietly sold "assured protection" to both basins for years — double registration as a racket. Only one tide's honored assignment is ever audited, so the fraud was invisible until two basins compared paper in the same season. Marr engineered South to be the designated sacrifice: its flood-ruined ground leases will forfeit to him. Ivo registered South's certificate under coercion; Marr holds his mother's debt.
+
+**Fair clues (all built from fixed facts):** (1) Both seals are authentic, so the fraud must live in the ledger's sequence and countersign, not the paper — Sera spots South's entry written out of order. (2) Identical fee chits mark both payments cleared by the same countersign. (3) The forty-minute change time proves a planned switch at the bell would finish after the tide — so the scheme needed no freeze filed, meaning someone needed Sera compliant.
+
+**Six beats:**
+
+1. **Registry (SC-0001).** Two authentic originals, one tide. Unable to lawfully un-protect either basin in time, Sera invokes the freeze — license surrendered publicly, North keeps tonight's protection, a hearing is forced. Cost: she is now a civilian witness.
+2. **That tide.** South floods. Unlicensed, Sera goes to South Basin and helps carry the seed store up the stair beside residents who know exactly whose paperwork failed them. Ivo comes too. The seed is saved; homes are not. Neither forgives the other, but they work shoulder to shoulder.
+3. **Investigation.** Sera reads the fee ledgers with Ivo's guarded help; the clue chain points to Marr. Ivo admits coerced registration but cannot testify while the debt is live. Sera's brother urges her to stop — North is protected; why risk it? A real alternative, honestly priced.
+4. **Temptation.** Marr offers reinstatement if she tells the hearing the duplicate was a clerk's mistake — all blame on Ivo.
+5. **Hearing.** Ivo produces his private fee book, incriminating himself to break the racket. Agency: Sera's freeze, Ivo's testimony, neither convenient.
+6. **Ending.** The constraint stands: one basin per tide, forever. Marr falls; Ivo is struck off; a lawful rotation is instituted with South first next tide — too late for tonight's streets. Sera takes up the brass key again knowing the instrument itself is the next case.
+
+**Explicit setup/payoff:** Setup — the broken left wrist; one key, one working hand (FACT-0003). Payoff — the lawful change at the hearing needs the inspector's key and a second pair of hands; the only available pair is Ivo's. Trust is enacted physically, never spoken.
+
+## P3
+
+The Registry smelled of boiled glue and lamp oil. Sera had not crossed this threshold in three years, and Ivo had aged the way people do who work indoors — not older exactly, but further from the rain.
+
+He pushed the second chair out with his foot. She stayed standing.
+
+"You are holding a paper that belongs in my case bag," she said.
+
+"I hold a great many papers." He aligned the blotter with the desk's edge, the old fussy geometry she had once tried to train out of him. "The last time we spoke, you told me never to waste your time again."
+
+"You remember."
+
+"I wrote it down." He tapped the ledger beside his elbow, and she could not tell whether he was joking. That was new, or she had lost the habit of reading him. "Write everything down, you said. Memory is a courtesy. Records are a kindness."
+
+She had said that. On a stair somewhere, in the wet years, to a boy who took instruction the way other boys took bread.
+
+"I'm asking for the South certificate, Ivo."
+
+"And I am asking—" He stopped. Poured the tea. He set her mug on the right side of the desk, where a one-handed woman could reach it, and did not remark on the courtesy, and she hated him briefly for knowing.
+
+Whatever he was asking, he had priced it: three years old, a thing with no name, because naming it would let her defend herself, and he had learned defense from her and knew how it went.
+
+She sat down. The chair was hard. The tea was too strong. She took it in her right hand and drank, and let him see her drink it.
+
+"I'll sit," she said. "That's what I have."
+
+He looked at her for a long moment. Then he unlocked the drawer and laid the South certificate on the desk between them — not pushed toward her, not surrendered. Placed, the way you place a stone on a grave you are not ready to leave.
+
+"Then we'll sit," he said, and pulled his own chair closer, as if the desk were a wall they had agreed to lower by one stone only.
+
+## P4
+
+The water was over the Registry's second tread, higher than it had been at midday. Sera noted it the way she noted everything that season: level, direction, what it intended.
+
+Five o'clock. The corridor smelled of boiled glue. At the desk at the corridor's end, Ivo Renn aligned a blotter with the desk's edge, as if the tide could be held off with straight lines.
+
+"You have South's certificate," she said.
+
+"I have the Registry's certificates. Of which South's is one."
+
+"I came for a look, Ivo. Not a war."
+
+"Then you should have written. Writing lets me say no more slowly."
+
+Her left wrist throbbed in its splint, a passenger she fed by not using it. With her right hand she drew the folded North certificate from inside her coat and laid it on the blotter.
+
+"North Basin's. Registered, sealed, honored this tide. I've come to see whether it has a brother."
+
+Something moved behind Ivo's face. "Basins are not siblings."
+
+"Papers can be. Open the drawer."
+
+"The drawer is Registry property."
+
+For a moment the old rhythm almost held — the two of them at a counter in the wet years, trading needling like wages. Then he opened the drawer.
+
+The South certificate lay on clean paper. He lifted it with the flats of both hands, the way you carry a sick thing, and set it beside North's.
+
+Sera did not touch it. She bent close. The seal: the Registry's true die, the nicked edge above the tower where an engraver's tool had slipped a generation ago. She looked at North's. The same nick. Both authentic. Both registered. One lock, one tide, one basin — the Ninth Lock did not know arithmetic, only paperwork, and tonight the paperwork said two.
+
+"Paid for," Ivo said, too evenly. "All of it."
+
+"Who?"
+
+"The basin pays its fees at the counter. You know the forms."
+
+"That isn't an answer."
+
+"It's the answer I have."
+
+Six minutes gone. Through the thick walls she could hear rain in the gutters and, under it, the bell rope stirring in its housing, waiting to be pulled at half past. Walk to the lock: twenty minutes. Change a lawful assignment after the bell: forty. The sums did not argue. That was what she liked about sums, and what tonight she hated.
+
+"There's a form," she said, "for disputes."
+
+"Eleven." He said it like a man reading the weather of a country he was leaving. "Dispute of assignment, filed by a licensed inspector. The assignment freezes pending public hearing. The inspector surrenders her license with the filing. North keeps tonight's protection. Nothing else changes. Nothing else can, not before the water."
+
+"I know what it costs."
+
+"You once told me a license is a promissory note against your own judgment."
+
+He drew Form Eleven from under the counter — already fetched, she saw. Already waiting. He had known she would come, and what she would choose, or had hoped it.
+
+Her left hand could not hold the paper still. Ivo held it, one finger on its edge, without comment, and she wrote in the ugly scrawl of a person signing her own demotion. *Venn, Sera. Inspector, licensed. Grounds: two honored certificates, one tide. Requested: freeze pending public hearing.*
+
+Then her license itself — the small stiff card, her name in the Registry's own lettering. Ivo's lettering, she saw now. He had inked it himself at the last renewal.
+
+He blotted the signature. Stamped the receipt. His hand was not quite steady.
+
+"North remains protected tonight," he said, and gave her the receipt as if it were a ticket home. "The hearing will be called."
+
+"Keep both originals under your seal, Ivo. Not the drawer's. Yours. If either of them walks, I'll come back for the walker."
+
+Outside, the rain had thinned to a drizzle that meant nothing. Twenty-three minutes to the bell; twenty to the lock. Sera went down the flooded steps to stand witness for the basin her signature had just kept safe, and for the one it hadn't.
+
+*State delta (proposals):* 17:08 — freeze order filed; Sera's license surrendered into Ivo's receipted custody; North retains tonight's protection per FACT-0006. Both original certificates remain at the Registry under Ivo's personal seal (proposed custody detail). Brass inspection key remains in Sera's right coat pocket; left wrist unchanged. Ivo's motive and any coercion remain unknown. 17:10 — Sera departs for the Ninth Lock, arrival ~17:30, no authority to act there.
+
+## P5
+
+**Coverage:** Read the supplied developmental fixture [P1]–[P6] in full, experience first; it is the entire target, and the ending was treated as the submitted ending. No manuscript beyond the excerpt was assessed.
+
+**Finding 1 — defect (causality/fair play), [P3]:** The discovery arrives as confession furniture. A never-before-seen girl enters, names the certificate's hiding place *and* the motive ("signed it to pay his mother's debt"), exits; Sera then "immediately understood the entire fraud." The mystery's engine dies at its first turn: no clue chain, no use of Sera's inspector competence, and Ivo's silence reads as the author withholding rather than a man choosing. Smallest effective repair: delete the girl's second and third sentences. Let Sera lift the blotter unprompted and read the fraud herself — an out-of-sequence ledger entry or a countersign — and leave the motive unstated.
+
+**Finding 2 — defect (constraint/promise), [P6]:** The council's quietly purchased spare pump "saved both basins." This contradicts the brief's governing constraint (one basin per tide; no convenient new machinery) and retroactively refunds every cost the excerpt just priced — the freeze ("my license is the price" in [P4]) is returned without consequence, the hearing happens offstage, and "everyone had forgiven Ivo" erases the relationship cost. Reader effect: promised sacrifice, delivered refund. Repair: cut the pump and the blanket forgiveness. Put tonight's unprotected basin on stage with a managed, partial loss; any reinstatement should be conditional and visibly paid for.
+
+**Finding 3 — defect (structure/pacing), [P4]→[P5]→[P6]:** The freeze's real consequence is never dramatized. Sera arrives at the lock unlicensed, yet no one questions her authority and nothing requires her to choose what an unlicensed woman can do; the seed-sack help is accidental rather than chosen. [P6] then compresses the entire aftermath into summary ("She felt, at last, that she was home"). Repair: in [P5], stage someone recognizing she's no longer an inspector, and let her choose the civilian act anyway — promote the seed-sack moment into the scene's turn. Replace [P6]'s summary with one concrete, partial aftermath.
+
+**Preserve:** [P4]'s restraints — "For a moment she wished he had shouted at her" — and [P5]'s unpaid attention: the woman thanking her without looking up, and the moved chair in [P2]. The beans-as-legal-argument line is taste, not defect; leave it to the author.
+
+## P6
+
+**Revised prose:**
+
+Ivo put two mugs on the desk. Sera looked at them and did not want what she felt. He had remembered how she took her tea.
+
+Her left wrist sat splinted and aching, a white parcel she carried but could not use. With her right hand she drew the North certificate from her coat and laid it on the desk.
+
+"That isn't the only one," she said quietly.
+
+Something moved in Ivo's face and went still. He opened the drawer and set the South certificate beside the first. Paid for. All of it. The seals shone in the lamplight, authentic and identical: proof of registration, and of nothing else.
+
+Sera looked at him. He looked at the mugs. Neither of them said what the second mug was for.
+
+**Rationale:**
+
+- Cut accidental doublings ("the two mugs that were on the desk"; "a silence full of... say") while keeping the two mugs and her resisted feeling as the meaningful details — repetition stays where it's doing work and goes where it's tread.
+- Replaced the self-explaining seal simile ("like two small seals that had both been paid for") with the registration-versus-truth distinction in Sera's working attention, which the scene's stakes actually need; the original image explained itself, which the style guide asks us not to do.
+- Preserved "Paid for. All of it." as a floating fragment, kept custody (he produces, she does not touch), the splinted wrist, the unresolved motive, and introduced no license surrender; the final line stays evasive on purpose rather than naming the silence.
+
+## P7
+
+Audit against fixed canon and style; numbered lines treated as locators.
+
+**L1 — Error (travel time).** FACT-0002: the walk is twenty minutes. Departing 17:20 yields arrival 17:40, not "ten minutes later." Correct to arrive 17:40 — noting this puts her at the lock after the 17:30 bell, a downstream consequence — or move departure to 17:10.
+
+**L2 — Error (injury).** FACT-0003: the splinted left hand cannot grip. She cannot grip the rail with it. Correct: she pulls herself up with her right hand, or braces with the splinted forearm.
+
+**L3 — Error (possession).** FACT-0003: the brass key is in her right coat pocket. Correct "left coat pocket" to "right."
+
+**L4 — Two errors.** (a) Name: canonical clerk is Ivo **Renn** (FACT-0004), not "Ren." Correct spelling. (b) Knowledge leak: his motives are unknown to Sera and reader at the opening; "she knew he had registered... to pay his mother's debt" asserts undisclosed motive as fact. Correct: recast as unverified conjecture ("a debt, someone said — someone's word, not hers") or cut the clause. No hidden backstory should be invented to excuse it.
+
+**L5 — Error (rule contradiction).** FACT-0005: the seal proves registration, not truth or capacity; FACT-0001: only one basin can be protected per tide. "Proved that both basins could be protected at once" contradicts both. Correct: the seals prove only that both registrations occurred.
+
+**L6 — Mechanical error.** Number agreement: "Neither of the certificates **is** missing."
+
+**L7 — Error (procedure).** FACT-0006: a freeze requires surrender of the license pending public hearing. Hiding it in her boot while filing is not a freeze; it voids the premise. Correct: she surrenders the license when she signs — or she does not sign.
+
+**L8 — Error (arithmetic/constraint).** FACT-0001: post-bell change takes forty minutes. Started 17:40, it completes ~18:20, after the 18:00 tide; "complete before the tide" is impossible. Correct: start by 17:20, or state plainly the change finishes after the water arrives.
+
+**Valid — preserve:** **L9** ("Paid for. All of it." is the style-mandated fragment); **L10** (North holding protection matches current assignment under FACT-0006); **L11** (Sera's unresolved doubt preserves FACT-0004's motive boundary; Ivo may claim what she cannot verify).
+
+**Optional preferences (not errors):** L8's impossibility could be dramatized by having a character correct her reckoning on the page; L2 could keep the failed grip attempt in dialogue rather than narration. Taste only.
+
+## P8
+
+In Bellwether Reach, the Ninth Lock can shield only one basin from the tide — and the Registry's paperwork decides which.
+
+Inspector Sera Venn has found the impossible: two protection certificates for the same tide, both genuine, both sealed, both honored. She has until the warning bell to learn how the same lock was legally sold twice — and the only person who can show her the second original is the clerk she swore she'd never speak to again.
+
+Exposing the truth will cost her license, her estranged apprentice, or a basin's harvest. Her brother's home stands behind one wall. The city's seed for next year sits behind the other.
+
+*The Flood Ledgers* begins with a civic mystery where every signature has a price, no document lies without a reason, and saving something means choosing — on the record — what may be lost.

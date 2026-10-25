@@ -1,7 +1,7 @@
 ---
 description: "Independently evaluates structure, causality, pacing, and thematic execution."
 mode: subagent
-model: ollama/kimi-k3:cloud
+model: ollama/kimi-k3:cloud#high
 steps: 40
 permissions:
   - action: subagent

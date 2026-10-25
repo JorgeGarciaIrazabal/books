@@ -1,0 +1,16 @@
+{
+  "outputs/sol61-medium-p.md": "24c9ff905e5ec4dffc30ec954b642ed2a747a3be4d457d9165854f5c0fed27c0",
+  "outputs/sol61-medium-q.md": "02f83daadfb185ef9136f365abe24ec53783e323d43205e615b351f04f43c28f",
+  "outputs/sol61-high-p.md": "396296aa551a9367b3ee2b4323dc605642316228b2f644f354d9158654f834da",
+  "outputs/sol61-high-q.md": "6a50817ab8fe43a2ee99f753b1ff07a89f052c501342c4bf047117e454494328",
+  "outputs/sol6-medium-p.md": "e5ae5921d50062e8c231d90b1c16f79185e24809d531b99baaaf99cf0ca8fc06",
+  "outputs/sol6-medium-q.md": "be3f2b8d7cc956158efab89336a6ebebb2ecf1e2d962c9ae6b2a2d55c4cb3253",
+  "outputs/sol6-high-p.md": "4862f617bae1566a348bd8b2e47e5151d2dec4dec0c0407530065ad796d847db",
+  "outputs/sol6-high-q.md": "4e1ae742e398c1fd09ec4eaf265709b1d9fd5a5081fffd1c0455618f12a04b22",
+  "outputs/kimi-low-p.md": "03a66660b1fc1da9915720b88a7f49beef0f485ab88c745a432418024a0a2578",
+  "outputs/kimi-low-q.md": "d3baabd91f5f12b3153f811cf3adea6a13c58a2183b7f7f6e273f6992e57671f",
+  "outputs/kimi-high-p.md": "be3a19e9e0c890ee72fa2ba19355ba4e2c749c3ac145830fd3dd9a94242a697f",
+  "outputs/kimi-high-q.md": "ea0349bbbaec3be1b0eec26d114b73563646283d5d4c85cf9e23b3a912c85b27",
+  "outputs/mistral-none-p.md": "3e5acb9a9c7f5b5c1b417019429be30155a6d01116055c1baf45f5e79a0e5005",
+  "outputs/mistral-none-q.md": "e3e480c1d6018bb91e6d773a580441df84d05feba39f499defe97553efc0c3c5"
+}

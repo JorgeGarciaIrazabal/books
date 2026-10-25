@@ -1,0 +1,59 @@
+{
+  "phases": [
+    {
+      "phase": "P8",
+      "tiers": [
+        [
+          "Candidate E"
+        ],
+        [
+          "Candidate F",
+          "Candidate A"
+        ],
+        [
+          "Candidate B"
+        ],
+        [
+          "Candidate C"
+        ],
+        [
+          "Candidate D"
+        ]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate A",
+          "quote": "the water does not wait for a hearing",
+          "reason": "A strong, economical hook joins the duplicate sale, estranged apprentice, personal stakes, and irreversible loss in a restrained voice; the freeze price is clear, although its preservation of North is only implicit and the final thematic description is less immediate than the opening."
+        },
+        {
+          "candidate": "Candidate B",
+          "quote": "two papers were made true",
+          "reason": "Distinctive rhythm and dry humor make the deadline memorable, but this formulation blurs registered obligations with truth; saying the remedy settles nothing also obscures its concrete preservation of North, while the brother’s fields add an unsupported detail."
+        },
+        {
+          "candidate": "Candidate C",
+          "quote": "The seals are authentic. The tide is not.",
+          "reason": "The doubled sale and competing losses remain legible, but this strained contrast undermines the otherwise factual pitch; densely recited clock mechanics and an ambiguous afterward make the copy feel like a briefing, and license surrender loses its specific connection to freezing the assignment."
+        },
+        {
+          "candidate": "Candidate D",
+          "quote": "Exposing the truth will cost her license",
+          "reason": "The copy has momentum and balanced personal and communal stakes, but converts license surrender into a cost of disclosure, invents a vow of estrangement and a threatened loss of the apprentice, and calls incompatible certificates both honored; these additions weaken truthful limits most substantially."
+        },
+        {
+          "candidate": "Candidate E",
+          "quote": "Sera must surrender her license, and a freeze leaves North protected",
+          "reason": "The clearest account of the costly legal choice anchors a specific duplicate-sale hook and competing human stakes; practical objects and public accountability sustain the promised civic mystery without inventing a solution, though its measured progression offers less overt urgency than the strongest rivals."
+        },
+        {
+          "candidate": "Candidate F",
+          "quote": "let one basin prepare for a protection it will never receive",
+          "reason": "This makes inaction materially consequential and gives threatened residents an experience beyond symbolic stakes, with strong paper-and-water imagery; however, the invented desire for Ivo’s account and the suggestion that the license supplies her voice at the gate exceed the supplied situation slightly."
+        }
+      ],
+      "uncertainty": "A and F are tied: A is more economical and closely bounded, while F better dramatizes the consequences of inaction. E’s greater procedural precision narrowly outweighs its quieter sales energy. Small inferred details matter less than misleading the central legal choice."
+    }
+  ],
+  "coverage": "All six blurbs and the supplied brief read in full."
+}

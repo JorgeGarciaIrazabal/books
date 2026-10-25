@@ -1,0 +1,114 @@
+{
+  "sol61-medium": {
+    "seed": 20261024,
+    "labels": {
+      "Candidate A": "kimi-high",
+      "Candidate B": "kimi-low",
+      "Candidate C": "mistral-high",
+      "Candidate D": "sol6-medium",
+      "Candidate E": "sol6-high",
+      "Candidate F": "mistral-none"
+    },
+    "packet_sha256": "623bd793df9d0baf803fe901987f438a218d3fc7aa19269fd128c4fb5a7c024e",
+    "model": "gpt-6.1-sol",
+    "effort": "medium"
+  },
+  "sol61-high": {
+    "seed": 20261025,
+    "labels": {
+      "Candidate A": "kimi-high",
+      "Candidate B": "mistral-none",
+      "Candidate C": "sol6-medium",
+      "Candidate D": "sol6-high",
+      "Candidate E": "mistral-high",
+      "Candidate F": "kimi-low"
+    },
+    "packet_sha256": "7c9adb75abfd78ff7cbcccc9e7ad386c0148a28c577e5e0b50907716b905f602",
+    "model": "gpt-6.1-sol",
+    "effort": "high"
+  },
+  "sol6-medium": {
+    "seed": 20261026,
+    "labels": {
+      "Candidate A": "mistral-high",
+      "Candidate B": "kimi-high",
+      "Candidate C": "kimi-low",
+      "Candidate D": "mistral-none",
+      "Candidate E": "sol61-high",
+      "Candidate F": "sol61-medium"
+    },
+    "packet_sha256": "08a649f75562e4ecd2001eaa99126c6c981a8d3fb44f05eaae1aec6f01581a26",
+    "model": "gpt-6-sol",
+    "effort": "medium"
+  },
+  "sol6-high": {
+    "seed": 20261027,
+    "labels": {
+      "Candidate A": "kimi-low",
+      "Candidate B": "kimi-high",
+      "Candidate C": "mistral-none",
+      "Candidate D": "mistral-high",
+      "Candidate E": "sol61-medium",
+      "Candidate F": "sol61-high"
+    },
+    "packet_sha256": "1fdc7fdc8d9604782741b8926664c9f82555b840b46b201610643737f51b1d2d",
+    "model": "gpt-6-sol",
+    "effort": "high"
+  },
+  "kimi-high": {
+    "seed": 20261028,
+    "labels": {
+      "Candidate A": "sol61-high",
+      "Candidate B": "sol6-high",
+      "Candidate C": "sol6-medium",
+      "Candidate D": "sol61-medium",
+      "Candidate E": "mistral-high",
+      "Candidate F": "mistral-none"
+    },
+    "packet_sha256": "a15814584c51c949cd9998d08879b479ac6d1ceee09739fa2502a7b9a6826cd1",
+    "model": "ollama/kimi-k3:cloud",
+    "effort": "high"
+  },
+  "kimi-low": {
+    "seed": 20261029,
+    "labels": {
+      "Candidate A": "sol61-medium",
+      "Candidate B": "mistral-high",
+      "Candidate C": "sol6-medium",
+      "Candidate D": "sol61-high",
+      "Candidate E": "sol6-high",
+      "Candidate F": "mistral-none"
+    },
+    "packet_sha256": "55131e31e3913de177b8da9f65106c73d86afd2ab8eab271928b31a754ea6fc7",
+    "model": "ollama/kimi-k3:cloud",
+    "effort": "low"
+  },
+  "mistral-none": {
+    "seed": 20261030,
+    "labels": {
+      "Candidate A": "sol6-high",
+      "Candidate B": "sol61-medium",
+      "Candidate C": "kimi-low",
+      "Candidate D": "sol6-medium",
+      "Candidate E": "sol61-high",
+      "Candidate F": "kimi-high"
+    },
+    "packet_sha256": "4320db334ee6e0abfdca087df1c53bb52d3eb4db899f46386481acf2f1a18b9c",
+    "model": "ollama/mistral-large-4:cloud",
+    "effort": "none"
+  },
+  "mistral-high": {
+    "seed": 20261031,
+    "labels": {
+      "Candidate A": "kimi-high",
+      "Candidate B": "kimi-low",
+      "Candidate C": "sol61-medium",
+      "Candidate D": "sol6-high",
+      "Candidate E": "sol61-high",
+      "Candidate F": "sol6-medium"
+    },
+    "packet_sha256": "5723be0a96f0e9f784d1a0b4d78a8803e9a4d251224bb86bb28282aaf5db11a0",
+    "model": "ollama/mistral-large-4:cloud",
+    "effort": "high"
+  }
+}

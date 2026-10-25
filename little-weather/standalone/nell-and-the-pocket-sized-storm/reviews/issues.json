@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "issues": [
+    {
+      "id": "ISSUE-0001",
+      "reference": "DEV-001",
+      "type": "minor-error",
+      "location": "Page 23",
+      "status": "resolved",
+      "resolution": "Grandma gives launch signal after Nell confirms readiness.",
+      "evidence": "reviews/director-resolution.md"
+    },
+    {
+      "id": "ISSUE-0002",
+      "reference": "DEV-002",
+      "type": "clarity-risk",
+      "location": "Page 5",
+      "status": "resolved",
+      "resolution": "Breeze required to rise high; low floating remains permitted.",
+      "evidence": "reviews/developmental-recheck.md"
+    },
+    {
+      "id": "ISSUE-0003",
+      "reference": "DEV-003 and reader band-placement preference",
+      "type": "minor-continuity",
+      "location": "Pages 21, 23, 25\u201326",
+      "status": "resolved",
+      "resolution": "Band follows; spoon enters pocket then is retrieved after the run.",
+      "evidence": "reviews/director-resolution.md",
+      "recheck_evidence": "reviews/final-proof.md: final pages 23 and 25 reread and freshly rendered; spoon custody resolved."
+    },
+    {
+      "id": "ISSUE-0004",
+      "reference": "Reader page 12 tone preference",
+      "type": "taste",
+      "location": "Page 12",
+      "status": "accepted-editorial-choice",
+      "resolution": "Retain sound comparison and earned apology; no mandatory correction requested.",
+      "evidence": "reviews/director-resolution.md"
+    },
+    {
+      "id": "ISSUE-0005",
+      "reference": "Coordinator visual check",
+      "type": "visual-continuity",
+      "location": "ILL-0003/page 6",
+      "status": "resolved",
+      "resolution": "Unintended early dog removed; rejected version retained; repaired asset and final page inspected.",
+      "evidence": "reviews/illustrated/visual-review.md and reviews/illustrated/lessons.md"
+    },
+    {
+      "id": "ISSUE-0006",
+      "reference": "VR-001",
+      "type": "visual-continuity",
+      "location": "ILL-0007/page 17",
+      "status": "resolved",
+      "resolution": "Duplicate cloudpoint faces removed and active band instruments restored; independent repaired asset/page proof passed.",
+      "evidence": "reviews/illustrated/visual-review.md and reviews/illustrated/lessons.md"
+    },
+    {
+      "id": "ISSUE-0007",
+      "reference": "VR-002",
+      "type": "visual-continuity",
+      "location": "ILL-0011/page 27",
+      "status": "resolved",
+      "resolution": "Tether and winder restored; independent repaired asset/page proof passed.",
+      "evidence": "reviews/illustrated/visual-review.md and reviews/illustrated/lessons.md"
+    },
+    {
+      "id": "ISSUE-0008",
+      "reference": "VR-003",
+      "type": "metadata",
+      "location": "ILL-0004/page 9 alt",
+      "status": "resolved",
+      "resolution": "Alternative text corrected to actual image; final metadata-only build has identical geometry and byte-identical page9 render.",
+      "evidence": "reviews/illustrated/visual-review.md and reviews/illustrated/lessons.md"
+    },
+    {
+      "id": "ISSUE-0009",
+      "type": "page-composition",
+      "location": "All illustrated-v2 picture pages",
+      "status": "resolved",
+      "evidence": "reviews/redesign/final-review.md; reviews/redesign/author-feedback.md",
+      "finding": "Uniform small rectangular inset placement did not meet author aesthetic intent.",
+      "intervention": "Nine composition-specific replacement assets, six alpha vignettes, three page-shaped backgrounds, three full-width retained scenes; varied typesetting and simplified furniture. Final composed-page review pending.",
+      "resolution": "New composed edition independently reviewed at final PDF hash; all 30 pages visually covered and sequence aesthetically assessed. Author acceptance remains open to actual reading."
+    },
+    {
+      "id": "ISSUE-0010",
+      "reference": "RR-001",
+      "type": "minor-visual-continuity",
+      "location": "ILL-0006 versus ILL-0007/8 (Mr Moss outfit)",
+      "status": "noted-nonblocking",
+      "finding": "Green knit/brown cap versus teal waistcoat/warmer cap. Same recognizable face and role.",
+      "decision": "Retain current reading copy; optional later art polish, no material defect requiring another production round.",
+      "evidence": "reviews/redesign/final-review.md"
+    }
+  ]
+}

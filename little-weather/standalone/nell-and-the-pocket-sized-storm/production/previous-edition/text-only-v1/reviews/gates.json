@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "gates": [
+    {
+      "id": "GATE-0001",
+      "checkpoint": "development",
+      "review_target": "manuscript",
+      "status": "pass",
+      "reviewer": "Fresh native developmental_editor, GPT-6.1 Sol medium; final local correction verified by fresh copy_editor, GPT-6.1 Sol high",
+      "source_snapshot": [
+        "reviews/draft-snapshot.json",
+        "reviews/final-source-snapshot.json"
+      ],
+      "evidence": [
+        "reviews/developmental-initial.md",
+        "reviews/developmental-recheck.md",
+        "reviews/director-resolution.md",
+        "reviews/final-proof.md"
+      ],
+      "coverage": {
+        "read_in_full": [
+          "manuscript/001-story.md (all 30 initial pages)"
+        ],
+        "skimmed": [],
+        "not_assessed": [
+          "Actual child listening response"
+        ]
+      },
+      "recheck": "Developmental recheck covered pages 5 and 20–26; final proof reread changed spoon passages and all final source.",
+      "open_issues": [],
+      "independence_limit": "Fresh review context; same model family as director."
+    },
+    {
+      "id": "GATE-0002",
+      "checkpoint": "reader-response",
+      "review_target": "manuscript",
+      "status": "pass",
+      "reviewer": "Fresh native reader_advocate, GPT-6 Sol high",
+      "source_snapshot": "reviews/draft-snapshot.json",
+      "evidence": [
+        "reviews/reader-initial.md"
+      ],
+      "coverage": {
+        "read_in_full": [
+          "manuscript/001-story.md (initial complete draft, all 30 pages)"
+        ],
+        "skimmed": [],
+        "not_assessed": [
+          "Reader advocate did not reread final changed passages; these were checked by coordinator and final proofreader.",
+          "Human child read-aloud response"
+        ]
+      },
+      "scope": "This historical verdict applies to the initial hashed text. It is not a claim that the reader advocate certified the revised PDF.",
+      "open_issues": [],
+      "accepted_taste_choice": "Page 12 sound comparison retained; director rationale in reviews/director-resolution.md."
+    },
+    {
+      "id": "GATE-0003",
+      "checkpoint": "line-copy",
+      "review_target": "manuscript-and-export",
+      "status": "pass",
+      "reviewer": "Fresh native copy_editor, GPT-6.1 Sol high",
+      "source_snapshot": "reviews/final-source-snapshot.json and exports/reading-edition-manifest.json",
+      "evidence": [
+        "reviews/final-proof.md"
+      ],
+      "coverage": {
+        "read_in_full": [
+          "manuscript/001-story.md",
+          "exports/nell-and-the-pocket-sized-storm.pdf (extracted page text, all 30 pages)"
+        ],
+        "skimmed": [
+          "exports/nell-and-the-pocket-sized-storm.pdf (visual samples: 1, 9, 17, 20, 23, 25, 26, 30)"
+        ],
+        "not_assessed": [
+          "Other 22 PDF pages as rendered images",
+          "Physical print proof",
+          "Human child read-aloud response"
+        ]
+      },
+      "scope": "Manual full-source copy proof and final PDF text fidelity. No separate line-editing or human proof claim.",
+      "open_issues": []
+    },
+    {
+      "id": "GATE-0004",
+      "checkpoint": "production",
+      "review_target": "actual-pdf",
+      "status": "pass",
+      "reviewer": "Director build verification plus fresh native copy_editor final proof",
+      "source_snapshot": "exports/reading-edition-manifest.json",
+      "evidence": [
+        "reviews/final-proof.md",
+        "reviews/validation.json"
+      ],
+      "coverage": {
+        "read_in_full": [
+          "manuscript/001-story.md",
+          "exports/nell-and-the-pocket-sized-storm.pdf (extracted page text, all 30 pages)"
+        ],
+        "skimmed": [
+          "exports/nell-and-the-pocket-sized-storm.pdf (visual samples: 1, 9, 17, 20, 23, 25, 26, 30)"
+        ],
+        "not_assessed": [
+          "Other 22 PDF pages as rendered images",
+          "Physical print proof",
+          "Human child read-aloud response"
+        ]
+      },
+      "scope": "Private 30-page reading edition, not a publication authorization.",
+      "open_issues": []
+    },
+    {
+      "id": "GATE-0005",
+      "checkpoint": "continuity-evidence",
+      "status": "not-applicable",
+      "reviewer": "Director scope determination",
+      "source_snapshot": "reviews/final-source-snapshot.json",
+      "evidence": [
+        "reviews/director-resolution.md",
+        "research/notes.md",
+        "canon/proposals.json"
+      ],
+      "reason": "Formal shared-canon acceptance and factual-evidence gate are outside this standalone fantasy deliverable. Internal continuity was checked; proposed durable details remain proposed, with no accepted canon change.",
+      "open_issues": []
+    }
+  ]
+}

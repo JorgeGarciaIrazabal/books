@@ -1,7 +1,7 @@
 ---
 description: "Assembles reproducible manuscripts and verifies the actual release candidate."
 mode: subagent
-model: ollama/kimi-k3:cloud
+model: ollama/kimi-k3:cloud#high
 steps: 40
 permissions:
   - action: subagent

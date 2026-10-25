@@ -1,0 +1,2761 @@
+{
+  "renderer": "Chrome DevTools Protocol; actual archive-extracted XHTML, no test script injected into EPUB",
+  "viewport": [
+    720,
+    912
+  ],
+  "all_30_text_art_heading_folio_geometries_match_approved_html": true,
+  "tolerance_css_px": 0.15,
+  "failures": [],
+  "measurements": [
+    {
+      "page": 1,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "Nell's left boot said, \"Excuse me.\"",
+          "x": 78.71875,
+          "y": 331.1875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Nell stopped putting on her right boot.",
+          "x": 78.71875,
+          "y": 367.046875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"Grandma?\"",
+          "x": 78.71875,
+          "y": 402.90625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"In the kitchen,\" called Grandma.",
+          "x": 78.71875,
+          "y": 438.765625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Nell peered into the left boot. Two small eyes peered back.",
+          "x": 78.71875,
+          "y": 474.625,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "\"There is a pebble in here,\" said a cross little voice. \"And I appear to be sitting on it.\"",
+          "x": 78.71875,
+          "y": 539.15625,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "Nell tipped the boot upside down.",
+          "x": 78.71875,
+          "y": 603.6875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "A pebble fell out.",
+          "x": 78.71875,
+          "y": 639.546875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Then the weather fell out.",
+          "x": 78.71875,
+          "y": 675.40625,
+          "width": 562.546875,
+          "height": 28.671875
+        }
+      ],
+      "headings": [
+        {
+          "text": "Nell and the Pocket-Sized Storm",
+          "x": 78.71875,
+          "y": 110.390625,
+          "width": 562.546875,
+          "height": 89.59375
+        },
+        {
+          "text": "Chapter 1Weather in a Boot",
+          "x": 78.71875,
+          "y": 254.390625,
+          "width": 562.546875,
+          "height": 59.34375
+        }
+      ],
+      "image": null,
+      "folio": {
+        "x": 675.5,
+        "y": 886.078125,
+        "width": 6.109375,
+        "height": 10.671875
+      }
+    },
+    {
+      "page": 2,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "It was a cloud the size of a bread roll. It had a gray belly, fluffy eyebrows, and a piece of yellow sock stuck to its bottom.",
+          "x": 67.1875,
+          "y": 52.796875,
+          "width": 585.59375,
+          "height": 86.015625
+        },
+        {
+          "text": "Nell pulled off the sock.",
+          "x": 67.1875,
+          "y": 146,
+          "width": 585.59375,
+          "height": 28.671875
+        },
+        {
+          "text": "\"Thank you,\" said the cloud. \"It was itching.\"",
+          "x": 67.1875,
+          "y": 181.859375,
+          "width": 585.59375,
+          "height": 28.671875
+        },
+        {
+          "text": "\"You're a cloud.\"",
+          "x": 67.1875,
+          "y": 217.71875,
+          "width": 585.59375,
+          "height": 28.671875
+        },
+        {
+          "text": "\"A pocket storm, actually. My name is Grumble.\"",
+          "x": 67.1875,
+          "y": 253.578125,
+          "width": 585.59375,
+          "height": 28.671875
+        },
+        {
+          "text": "Nell held out her hand. Grumble settled on her palm.",
+          "x": 67.1875,
+          "y": 289.4375,
+          "width": 585.59375,
+          "height": 28.671875
+        },
+        {
+          "text": "Her sleeve immediately became damp.",
+          "x": 67.1875,
+          "y": 325.296875,
+          "width": 585.59375,
+          "height": 28.671875
+        }
+      ],
+      "headings": [],
+      "image": {
+        "x": 76.796875,
+        "y": 431.1875,
+        "width": 585.59375,
+        "height": 390.390625,
+        "decoded": true,
+        "native": [
+          1536,
+          1024
+        ],
+        "alt": "Nell holds a tiny gray cloud on her palm beside a red boot and a yellow sock."
+      },
+      "folio": {
+        "x": 38.390625,
+        "y": 886.078125,
+        "width": 6.109375,
+        "height": 10.671875
+      }
+    },
+    {
+      "page": 3,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "\"Do you live in boots?\" Nell asked.",
+          "x": 78.71875,
+          "y": 216,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"Only by accident. I smelled toast, followed it down a chimney, and got lost.\"",
+          "x": 78.71875,
+          "y": 251.859375,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "\"That happens to me with cake. Except for the chimney.\"",
+          "x": 78.71875,
+          "y": 316.390625,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "Grumble stood on tiptoe. At least, his bottom grew two little points.",
+          "x": 78.71875,
+          "y": 380.921875,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "Through the open window, Nell could see a line of clouds beyond the hill.",
+          "x": 78.71875,
+          "y": 445.453125,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "\"My family,\" he said. \"They'll cross the hills at sunset. I have to catch them.\"",
+          "x": 78.71875,
+          "y": 509.984375,
+          "width": 562.546875,
+          "height": 57.34375
+        }
+      ],
+      "headings": [],
+      "image": null,
+      "folio": {
+        "x": 675.5,
+        "y": 886.078125,
+        "width": 6.109375,
+        "height": 10.671875
+      }
+    },
+    {
+      "page": 4,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "Nell carried him into the kitchen.",
+          "x": 57.59375,
+          "y": 504,
+          "width": 604.796875,
+          "height": 26.875
+        },
+        {
+          "text": "Grandma looked up from buttering toast.",
+          "x": 57.59375,
+          "y": 533.265625,
+          "width": 604.796875,
+          "height": 26.875
+        },
+        {
+          "text": "\"Well,\" she said. \"I thought that boot was unusually rainy.\"",
+          "x": 57.59375,
+          "y": 562.53125,
+          "width": 604.796875,
+          "height": 53.75
+        },
+        {
+          "text": "Grumble bowed. Three drops landed in the butter.",
+          "x": 57.59375,
+          "y": 618.671875,
+          "width": 604.796875,
+          "height": 26.875
+        },
+        {
+          "text": "\"Sorry.\"",
+          "x": 57.59375,
+          "y": 647.9375,
+          "width": 604.796875,
+          "height": 26.875
+        },
+        {
+          "text": "Grandma fetched a saucer.",
+          "x": 57.59375,
+          "y": 677.203125,
+          "width": 604.796875,
+          "height": 26.875
+        },
+        {
+          "text": "\"All guests get something to sit on.\"",
+          "x": 57.59375,
+          "y": 706.46875,
+          "width": 604.796875,
+          "height": 26.875
+        },
+        {
+          "text": "Nell wanted to ask a hundred questions. Did clouds have birthdays? Did lightning tickle?",
+          "x": 57.59375,
+          "y": 735.734375,
+          "width": 604.796875,
+          "height": 53.75
+        },
+        {
+          "text": "But Grumble was watching the window.",
+          "x": 57.59375,
+          "y": 791.875,
+          "width": 604.796875,
+          "height": 26.875
+        },
+        {
+          "text": "\"We'll help you get home,\" she said.",
+          "x": 57.59375,
+          "y": 821.140625,
+          "width": 604.796875,
+          "height": 26.875
+        }
+      ],
+      "headings": [],
+      "image": {
+        "x": 0,
+        "y": 0,
+        "width": 720,
+        "height": 480,
+        "decoded": true,
+        "native": [
+          1536,
+          1024
+        ],
+        "alt": "Grandma offers Grumble a saucer beside the toast while Nell watches."
+      },
+      "folio": {
+        "x": 38.390625,
+        "y": 886.078125,
+        "width": 6.109375,
+        "height": 10.671875
+      }
+    },
+    {
+      "page": 5,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "In the garden, Nell lifted him over her head.",
+          "x": 78.71875,
+          "y": 216,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"Off you go!\"",
+          "x": 78.71875,
+          "y": 251.859375,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Grumble floated down and landed on her nose.",
+          "x": 78.71875,
+          "y": 287.71875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"Cold,\" said Nell.",
+          "x": 78.71875,
+          "y": 323.578125,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"Sorry,\" said Grumble.",
+          "x": 78.71875,
+          "y": 359.4375,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "He peeled himself off.",
+          "x": 78.71875,
+          "y": 395.296875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"Pocket storms need a proper breeze to rise high. It's too still down here.\"",
+          "x": 78.71875,
+          "y": 431.15625,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "Above the houses, a weather vane spun. Its metal rooster pointed toward the hills.",
+          "x": 78.71875,
+          "y": 495.6875,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "Nell looked from the rooster to the shed.",
+          "x": 78.71875,
+          "y": 560.21875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "She had an idea.",
+          "x": 78.71875,
+          "y": 596.078125,
+          "width": 562.546875,
+          "height": 28.671875
+        }
+      ],
+      "headings": [],
+      "image": null,
+      "folio": {
+        "x": 675.5,
+        "y": 886.078125,
+        "width": 6.109375,
+        "height": 10.671875
+      }
+    },
+    {
+      "page": 6,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "Her red kite hung behind the garden rake.",
+          "x": 67.1875,
+          "y": 444.46875,
+          "width": 585.59375,
+          "height": 27.546875
+        },
+        {
+          "text": "It had a long tail and a very fierce face Nell had drawn herself.",
+          "x": 67.1875,
+          "y": 476.8125,
+          "width": 585.59375,
+          "height": 55.09375
+        },
+        {
+          "text": "One eye was bigger than the other. That made it fiercer.",
+          "x": 67.1875,
+          "y": 536.703125,
+          "width": 585.59375,
+          "height": 55.09375
+        },
+        {
+          "text": "\"You can ride this!\"",
+          "x": 67.1875,
+          "y": 596.59375,
+          "width": 585.59375,
+          "height": 27.546875
+        },
+        {
+          "text": "\"Does it bite?\" asked Grumble.",
+          "x": 67.1875,
+          "y": 628.9375,
+          "width": 585.59375,
+          "height": 27.546875
+        },
+        {
+          "text": "\"Only pretend.\"",
+          "x": 67.1875,
+          "y": 661.28125,
+          "width": 585.59375,
+          "height": 27.546875
+        },
+        {
+          "text": "Grandma found an old mitten. Nell tied it below the kite, with its thumb sticking out like a tiny balcony.",
+          "x": 67.1875,
+          "y": 693.625,
+          "width": 585.59375,
+          "height": 55.09375
+        },
+        {
+          "text": "\"Your very own cloud carriage,\" she said.",
+          "x": 67.1875,
+          "y": 753.515625,
+          "width": 585.59375,
+          "height": 27.546875
+        }
+      ],
+      "headings": [
+        {
+          "text": "Chapter 2A Very Thirsty Cloud",
+          "x": 67.1875,
+          "y": 367.671875,
+          "width": 585.59375,
+          "height": 59.34375
+        }
+      ],
+      "image": {
+        "x": 115.1875,
+        "y": 33.59375,
+        "width": 489.59375,
+        "height": 326.390625,
+        "decoded": true,
+        "native": [
+          1536,
+          1024
+        ],
+        "alt": "Nell ties a mitten below her red kite while Grumble watches from a saucer."
+      },
+      "folio": {
+        "x": 38.390625,
+        "y": 886.078125,
+        "width": 6.109375,
+        "height": 10.671875
+      }
+    },
+    {
+      "page": 7,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "They carried everything to the open grass beyond the vegetable beds. Grandma brought the kite string. Nell brought the kite.",
+          "x": 78.71875,
+          "y": 216,
+          "width": 562.546875,
+          "height": 86.015625
+        },
+        {
+          "text": "Grumble brought himself, in the saucer.",
+          "x": 78.71875,
+          "y": 309.203125,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Nell ran.",
+          "x": 78.71875,
+          "y": 345.0625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "The kite flapped once and flopped onto the grass.",
+          "x": 78.71875,
+          "y": 380.921875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "She ran faster.",
+          "x": 78.71875,
+          "y": 416.78125,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "The kite flapped twice and flopped onto a cabbage.",
+          "x": 78.71875,
+          "y": 452.640625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"Perhaps it is tired,\" Grumble suggested.",
+          "x": 78.71875,
+          "y": 488.5,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Grandma studied the still trees.",
+          "x": 78.71875,
+          "y": 524.359375,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"The evening breeze will come. We've time to get ready.\"",
+          "x": 78.71875,
+          "y": 560.21875,
+          "width": 562.546875,
+          "height": 57.34375
+        }
+      ],
+      "headings": [],
+      "image": null,
+      "folio": {
+        "x": 675.5,
+        "y": 886.078125,
+        "width": 6.109375,
+        "height": 10.671875
+      }
+    },
+    {
+      "page": 8,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "While they waited, Nell put Grumble beside the garden tap.",
+          "x": 78.71875,
+          "y": 216,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "\"I'll fetch the string winder. Don't wander.\"",
+          "x": 78.71875,
+          "y": 280.53125,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"I am excellent at staying put,\" said Grumble.",
+          "x": 78.71875,
+          "y": 316.390625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "A drop fell from the tap.",
+          "x": 78.71875,
+          "y": 352.25,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Plip.",
+          "x": 78.71875,
+          "y": 388.109375,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Grumble licked it.",
+          "x": 78.71875,
+          "y": 423.96875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Another drop fell.",
+          "x": 78.71875,
+          "y": 459.828125,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Plip.",
+          "x": 78.71875,
+          "y": 495.6875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "He licked that too.",
+          "x": 78.71875,
+          "y": 531.546875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Then he tucked himself underneath the drip, opened his mouth, and looked extremely pleased.",
+          "x": 78.71875,
+          "y": 567.40625,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "By the time Nell came back, the saucer had disappeared.",
+          "x": 78.71875,
+          "y": 631.9375,
+          "width": 562.546875,
+          "height": 57.34375
+        }
+      ],
+      "headings": [],
+      "image": null,
+      "folio": {
+        "x": 38.390625,
+        "y": 886.078125,
+        "width": 6.109375,
+        "height": 10.671875
+      }
+    },
+    {
+      "page": 9,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "So had the tap.",
+          "x": 62.390625,
+          "y": 38.390625,
+          "width": 273.59375,
+          "height": 26.875
+        },
+        {
+          "text": "In their place sat a cloud the size of a small armchair.",
+          "x": 62.390625,
+          "y": 69.09375,
+          "width": 273.59375,
+          "height": 80.625
+        },
+        {
+          "text": "\"Grumble?\"",
+          "x": 62.390625,
+          "y": 153.546875,
+          "width": 273.59375,
+          "height": 26.875
+        },
+        {
+          "text": "\"I was thirsty.\"",
+          "x": 62.390625,
+          "y": 184.25,
+          "width": 273.59375,
+          "height": 26.875
+        },
+        {
+          "text": "\"You were bread-roll-sized!\"",
+          "x": 62.390625,
+          "y": 214.953125,
+          "width": 273.59375,
+          "height": 53.75
+        },
+        {
+          "text": "\"I was bread-roll-sized and thirsty.\"",
+          "x": 62.390625,
+          "y": 272.53125,
+          "width": 273.59375,
+          "height": 53.75
+        },
+        {
+          "text": "Nell pushed one hand into his fluff and found the tap. She turned it tight.",
+          "x": 369.59375,
+          "y": 38.390625,
+          "width": 273.59375,
+          "height": 107.5
+        },
+        {
+          "text": "Grandma arrived with the wheelbarrow.",
+          "x": 369.59375,
+          "y": 149.71875,
+          "width": 273.59375,
+          "height": 53.75
+        },
+        {
+          "text": "Between them, they rolled Grumble into it.",
+          "x": 369.59375,
+          "y": 207.296875,
+          "width": 273.59375,
+          "height": 53.75
+        },
+        {
+          "text": "His eyebrows drooped over the handles.",
+          "x": 369.59375,
+          "y": 264.875,
+          "width": 273.59375,
+          "height": 53.75
+        }
+      ],
+      "headings": [],
+      "image": {
+        "x": -4.921875,
+        "y": 0,
+        "width": 729.859375,
+        "height": 912,
+        "decoded": true,
+        "native": [
+          1122,
+          1402
+        ],
+        "alt": "An enormous Grumble fills the wheelbarrow while Nell and Grandma stand beside him."
+      },
+      "folio": {
+        "x": 667.5,
+        "y": 883.1875,
+        "width": 14.109375,
+        "height": 14.671875
+      }
+    },
+    {
+      "page": 10,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "\"Can you float?\" Nell asked.",
+          "x": 78.71875,
+          "y": 216,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Grumble strained. The wheelbarrow squeaked.",
+          "x": 78.71875,
+          "y": 251.859375,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"No.\"",
+          "x": 78.71875,
+          "y": 287.71875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"Can you fit in the mitten?\"",
+          "x": 78.71875,
+          "y": 323.578125,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "He looked at the mitten. He looked at himself.",
+          "x": 78.71875,
+          "y": 359.4375,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"Perhaps just an eyebrow.\"",
+          "x": 78.71875,
+          "y": 395.296875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Nell sat on the grass.",
+          "x": 78.71875,
+          "y": 431.15625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"How do we make you small again?\"",
+          "x": 78.71875,
+          "y": 467.015625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"Rain,\" said Grumble. \"Pocket storms soak water up. A rumble shakes it out.\"",
+          "x": 78.71875,
+          "y": 502.875,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "\"Then rumble!\"",
+          "x": 78.71875,
+          "y": 567.40625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Grumble sank into the wheelbarrow until only his eyes showed.",
+          "x": 78.71875,
+          "y": 603.265625,
+          "width": 562.546875,
+          "height": 57.34375
+        }
+      ],
+      "headings": [],
+      "image": null,
+      "folio": {
+        "x": 38.390625,
+        "y": 886.078125,
+        "width": 12.203125,
+        "height": 10.671875
+      }
+    },
+    {
+      "page": 11,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "\"I would rather not.\"",
+          "x": 78.71875,
+          "y": 196.796875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Nell waited.",
+          "x": 78.71875,
+          "y": 232.65625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "A bee visited a bean flower. Grandma untangled the kite string.",
+          "x": 78.71875,
+          "y": 268.515625,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "\"My thunder is wrong,\" Grumble said at last.",
+          "x": 78.71875,
+          "y": 333.046875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"Wrong how?\"",
+          "x": 78.71875,
+          "y": 368.90625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"Other storms go BOOM. Or CRASH. My cousin can rattle every saucepan in a kitchen.\"",
+          "x": 78.71875,
+          "y": 404.765625,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "He pulled his eyebrows over his eyes.",
+          "x": 78.71875,
+          "y": 469.296875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"Once, I thundered above a pond. Six ducks answered.\"",
+          "x": 78.71875,
+          "y": 505.15625,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "Nell pressed her lips together very hard.",
+          "x": 78.71875,
+          "y": 569.6875,
+          "width": 562.546875,
+          "height": 28.671875
+        }
+      ],
+      "headings": [
+        {
+          "text": "Chapter 3The Wrong Sort of Thunder",
+          "x": 78.71875,
+          "y": 96,
+          "width": 562.546875,
+          "height": 59.34375
+        }
+      ],
+      "image": null,
+      "folio": {
+        "x": 669.40625,
+        "y": 886.078125,
+        "width": 12.203125,
+        "height": 10.671875
+      }
+    },
+    {
+      "page": 12,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "\"You can try with just me here,\" she said.",
+          "x": 72,
+          "y": 393.59375,
+          "width": 576,
+          "height": 28
+        },
+        {
+          "text": "Grumble glanced at Grandma.",
+          "x": 72,
+          "y": 427.34375,
+          "width": 576,
+          "height": 28
+        },
+        {
+          "text": "Grandma turned toward the beans and began humming to them.",
+          "x": 72,
+          "y": 461.09375,
+          "width": 576,
+          "height": 56
+        },
+        {
+          "text": "Grumble took a breath. He puffed his cheeks. His belly wobbled.",
+          "x": 72,
+          "y": 522.84375,
+          "width": 576,
+          "height": 56
+        },
+        {
+          "text": "\"PIP!\"",
+          "x": 72,
+          "y": 584.59375,
+          "width": 576,
+          "height": 28
+        },
+        {
+          "text": "It sounded like a rubber duck being sat on.",
+          "x": 72,
+          "y": 618.34375,
+          "width": 576,
+          "height": 28
+        },
+        {
+          "text": "A laugh popped out of Nell before she could catch it.",
+          "x": 72,
+          "y": 652.09375,
+          "width": 576,
+          "height": 28
+        },
+        {
+          "text": "Grumble turned away.",
+          "x": 72,
+          "y": 685.84375,
+          "width": 576,
+          "height": 28
+        },
+        {
+          "text": "One drop slid off his chin.",
+          "x": 72,
+          "y": 719.59375,
+          "width": 576,
+          "height": 28
+        }
+      ],
+      "headings": [],
+      "image": {
+        "x": 104.390625,
+        "y": 38.390625,
+        "width": 511.1875,
+        "height": 340.796875,
+        "decoded": true,
+        "native": [
+          1536,
+          1024
+        ],
+        "alt": "Nell falls quiet beside the wheelbarrow as Grumble turns away with a single tear."
+      },
+      "folio": {
+        "x": 38.390625,
+        "y": 886.078125,
+        "width": 12.203125,
+        "height": 10.671875
+      }
+    },
+    {
+      "page": 13,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "Nell's laugh stopped.",
+          "x": 78.71875,
+          "y": 216,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"I'm sorry. I didn't mean to laugh.\"",
+          "x": 78.71875,
+          "y": 251.859375,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Grumble said nothing.",
+          "x": 78.71875,
+          "y": 287.71875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Nell picked a blade of grass and twisted it around her finger.",
+          "x": 78.71875,
+          "y": 323.578125,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "\"It surprised me,\" she said. \"But you asked for help, and I laughed. I'm sorry.\"",
+          "x": 78.71875,
+          "y": 388.109375,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "From behind the beans came a gentle clatter.",
+          "x": 78.71875,
+          "y": 452.640625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Grandma had knocked her spoon against the watering can.",
+          "x": 78.71875,
+          "y": 488.5,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "Tink. Tonk.",
+          "x": 78.71875,
+          "y": 553.03125,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Nell looked up.",
+          "x": 78.71875,
+          "y": 588.890625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Then she looked at Grumble.",
+          "x": 78.71875,
+          "y": 624.75,
+          "width": 562.546875,
+          "height": 28.671875
+        }
+      ],
+      "headings": [],
+      "image": null,
+      "folio": {
+        "x": 669.40625,
+        "y": 886.078125,
+        "width": 12.203125,
+        "height": 10.671875
+      }
+    },
+    {
+      "page": 14,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "\"Would you like some other noises to go with yours?\"",
+          "x": 78.71875,
+          "y": 216,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "\"What sort of noises?\"",
+          "x": 78.71875,
+          "y": 280.53125,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Nell borrowed the spoon and tapped the watering can.",
+          "x": 78.71875,
+          "y": 316.390625,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "Tink. Tonk. Tink-tink. Tonk.",
+          "x": 78.71875,
+          "y": 380.921875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Grumble lifted one eyebrow.",
+          "x": 78.71875,
+          "y": 416.78125,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"That's a peculiar noise.\"",
+          "x": 78.71875,
+          "y": 452.640625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"It's a watering can. It hasn't practiced.\"",
+          "x": 78.71875,
+          "y": 488.5,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "She held out the spoon.",
+          "x": 78.71875,
+          "y": 524.359375,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"You can choose the beat.\"",
+          "x": 78.71875,
+          "y": 560.21875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Grumble listened to the can, then tapped its side with one fluffy point.",
+          "x": 78.71875,
+          "y": 596.078125,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "Tonk. Tonk. TINK.",
+          "x": 78.71875,
+          "y": 660.609375,
+          "width": 562.546875,
+          "height": 28.671875
+        }
+      ],
+      "headings": [],
+      "image": null,
+      "folio": {
+        "x": 38.390625,
+        "y": 886.078125,
+        "width": 12.203125,
+        "height": 10.671875
+      }
+    },
+    {
+      "page": 15,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "Grandma fetched a saucepan and two wooden spoons.",
+          "x": 67.1875,
+          "y": 52.796875,
+          "width": 585.59375,
+          "height": 27.328125
+        },
+        {
+          "text": "\"I was going to cook peas,\" she said. \"They can wait.\"",
+          "x": 67.1875,
+          "y": 83.484375,
+          "width": 585.59375,
+          "height": 27.328125
+        },
+        {
+          "text": "She played Grumble's beat.",
+          "x": 67.1875,
+          "y": 114.171875,
+          "width": 585.59375,
+          "height": 27.328125
+        },
+        {
+          "text": "Tonk. Tonk. TINK.",
+          "x": 67.1875,
+          "y": 144.859375,
+          "width": 585.59375,
+          "height": 27.328125
+        },
+        {
+          "text": "Nell joined in on the watering can.",
+          "x": 67.1875,
+          "y": 600,
+          "width": 585.59375,
+          "height": 27.328125
+        },
+        {
+          "text": "Over the fence, Mr. Moss's head appeared.",
+          "x": 67.1875,
+          "y": 630.6875,
+          "width": 585.59375,
+          "height": 27.328125
+        },
+        {
+          "text": "\"Is that a band?\"",
+          "x": 67.1875,
+          "y": 661.375,
+          "width": 585.59375,
+          "height": 27.328125
+        },
+        {
+          "text": "\"Possibly,\" said Nell.",
+          "x": 67.1875,
+          "y": 692.0625,
+          "width": 585.59375,
+          "height": 27.328125
+        },
+        {
+          "text": "\"Needs a biscuit tin.\"",
+          "x": 67.1875,
+          "y": 722.75,
+          "width": 585.59375,
+          "height": 27.328125
+        },
+        {
+          "text": "He disappeared.",
+          "x": 67.1875,
+          "y": 753.4375,
+          "width": 585.59375,
+          "height": 27.328125
+        },
+        {
+          "text": "A moment later, a biscuit tin rose above the fence. Then Mr. Moss rose behind it.",
+          "x": 67.1875,
+          "y": 784.125,
+          "width": 585.59375,
+          "height": 54.65625
+        }
+      ],
+      "headings": [],
+      "image": {
+        "x": 67.1875,
+        "y": 187.34375,
+        "width": 585.59375,
+        "height": 390.390625,
+        "decoded": true,
+        "native": [
+          1536,
+          1024
+        ],
+        "alt": "Nell and Grandma play a watering can and saucepan as Mr. Moss lifts a biscuit tin over the fence."
+      },
+      "folio": {
+        "x": 669.40625,
+        "y": 886.078125,
+        "width": 12.203125,
+        "height": 10.671875
+      }
+    },
+    {
+      "page": 16,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "Next door, the twins heard the tin and hurried over with two empty flowerpots.",
+          "x": 78.71875,
+          "y": 196.796875,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "The dog followed, carrying a squeaky bone.",
+          "x": 78.71875,
+          "y": 261.328125,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Nell checked with Grumble.",
+          "x": 78.71875,
+          "y": 297.1875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"Is this too many people?\"",
+          "x": 78.71875,
+          "y": 333.046875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "He peered over the wheelbarrow.",
+          "x": 78.71875,
+          "y": 368.90625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Grandma held her spoons ready. The twins waited with their hands above the pots.",
+          "x": 78.71875,
+          "y": 404.765625,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "Nobody played.",
+          "x": 78.71875,
+          "y": 469.296875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Grumble straightened one fluffy point.",
+          "x": 78.71875,
+          "y": 505.15625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"The dog can stay,\" he said.",
+          "x": 78.71875,
+          "y": 541.015625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Then he lifted the other point.",
+          "x": 78.71875,
+          "y": 576.875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"And everyone else.\"",
+          "x": 78.71875,
+          "y": 612.734375,
+          "width": 562.546875,
+          "height": 28.671875
+        }
+      ],
+      "headings": [
+        {
+          "text": "Chapter 4The Garden Band",
+          "x": 78.71875,
+          "y": 96,
+          "width": 562.546875,
+          "height": 59.34375
+        }
+      ],
+      "image": null,
+      "folio": {
+        "x": 38.390625,
+        "y": 886.078125,
+        "width": 12.203125,
+        "height": 10.671875
+      }
+    },
+    {
+      "page": 17,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "\"From the beginning,\" said Grumble.",
+          "x": 57.59375,
+          "y": 52.796875,
+          "width": 288,
+          "height": 53.75
+        },
+        {
+          "text": "Tonk. Tonk. TINK.",
+          "x": 57.59375,
+          "y": 111.8125,
+          "width": 288,
+          "height": 26.875
+        },
+        {
+          "text": "The saucepan clonked. The flowerpots plonked. The biscuit tin went RATTLE-ATTLE-ATTLE.",
+          "x": 57.59375,
+          "y": 143.953125,
+          "width": 288,
+          "height": 107.5
+        },
+        {
+          "text": "The dog bit his bone.",
+          "x": 57.59375,
+          "y": 256.71875,
+          "width": 288,
+          "height": 26.875
+        },
+        {
+          "text": "SQUEAK.",
+          "x": 57.59375,
+          "y": 288.859375,
+          "width": 288,
+          "height": 26.875
+        },
+        {
+          "text": "Grumble blinked at him.",
+          "x": 57.59375,
+          "y": 321,
+          "width": 288,
+          "height": 26.875
+        },
+        {
+          "text": "The dog wagged.",
+          "x": 57.59375,
+          "y": 353.140625,
+          "width": 288,
+          "height": 26.875
+        },
+        {
+          "text": "Grumble took a breath.",
+          "x": 374.390625,
+          "y": 52.796875,
+          "width": 288,
+          "height": 26.875
+        },
+        {
+          "text": "\"Pip.\"",
+          "x": 374.390625,
+          "y": 84.9375,
+          "width": 288,
+          "height": 26.875
+        },
+        {
+          "text": "A few drops spotted the grass.",
+          "x": 374.390625,
+          "y": 117.078125,
+          "width": 288,
+          "height": 53.75
+        },
+        {
+          "text": "Nell kept the beat steady. She watched Grumble's little points rise and fall.",
+          "x": 374.390625,
+          "y": 176.09375,
+          "width": 288,
+          "height": 80.625
+        },
+        {
+          "text": "He took another breath.",
+          "x": 374.390625,
+          "y": 261.984375,
+          "width": 288,
+          "height": 26.875
+        },
+        {
+          "text": "\"PIP!\"",
+          "x": 374.390625,
+          "y": 294.125,
+          "width": 288,
+          "height": 26.875
+        }
+      ],
+      "headings": [],
+      "image": {
+        "x": 0,
+        "y": 398.390625,
+        "width": 720,
+        "height": 480,
+        "decoded": true,
+        "native": [
+          1536,
+          1024
+        ],
+        "alt": "The dog squeaks his bone while Grumble leads the garden band and a few drops fall."
+      },
+      "folio": {
+        "x": 669.40625,
+        "y": 886.078125,
+        "width": 12.203125,
+        "height": 10.671875
+      }
+    },
+    {
+      "page": 18,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "Rain pattered out of the wheelbarrow.",
+          "x": 78.71875,
+          "y": 216,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Grumble's eyebrows bobbed.",
+          "x": 78.71875,
+          "y": 251.859375,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"PIP-pip-PIP!\"",
+          "x": 78.71875,
+          "y": 287.71875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "The twins added a plonk. Mr. Moss shook his tin. Grandma put the saucepan on her head and tapped the bottom.",
+          "x": 78.71875,
+          "y": 323.578125,
+          "width": 562.546875,
+          "height": 86.015625
+        },
+        {
+          "text": "Nell missed a beat because she was staring at Grandma.",
+          "x": 78.71875,
+          "y": 416.78125,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "\"Keeps my hair dry,\" Grandma said.",
+          "x": 78.71875,
+          "y": 481.3125,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Grumble gave such a loud PIP that the dog answered.",
+          "x": 78.71875,
+          "y": 517.171875,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "SQUEAK!",
+          "x": 78.71875,
+          "y": 581.703125,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "This time Grumble laughed first.",
+          "x": 78.71875,
+          "y": 617.5625,
+          "width": 562.546875,
+          "height": 28.671875
+        }
+      ],
+      "headings": [],
+      "image": null,
+      "folio": {
+        "x": 38.390625,
+        "y": 886.078125,
+        "width": 12.203125,
+        "height": 10.671875
+      }
+    },
+    {
+      "page": 19,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "The rain made a widening puddle under the wheelbarrow.",
+          "x": 57.59375,
+          "y": 508.796875,
+          "width": 604.796875,
+          "height": 55.09375
+        },
+        {
+          "text": "Beside it, Grandma's bean plants stood in dry, cracked soil.",
+          "x": 57.59375,
+          "y": 568.203125,
+          "width": 604.796875,
+          "height": 55.09375
+        },
+        {
+          "text": "\"Can we take the music to the beans?\" Nell asked.",
+          "x": 57.59375,
+          "y": 627.609375,
+          "width": 604.796875,
+          "height": 27.546875
+        },
+        {
+          "text": "Grumble peered down.",
+          "x": 57.59375,
+          "y": 659.46875,
+          "width": 604.796875,
+          "height": 27.546875
+        },
+        {
+          "text": "\"I believe this shower is available for bookings.\"",
+          "x": 57.59375,
+          "y": 691.328125,
+          "width": 604.796875,
+          "height": 27.546875
+        },
+        {
+          "text": "Grandma lifted the handles.",
+          "x": 57.59375,
+          "y": 723.1875,
+          "width": 604.796875,
+          "height": 27.546875
+        },
+        {
+          "text": "Nell walked beside Grumble, playing the watering can. The twins followed. Mr. Moss brought up the rear.",
+          "x": 57.59375,
+          "y": 755.046875,
+          "width": 604.796875,
+          "height": 55.09375
+        },
+        {
+          "text": "The dog marched in the middle as if the whole thing had been his idea.",
+          "x": 57.59375,
+          "y": 814.453125,
+          "width": 604.796875,
+          "height": 55.09375
+        }
+      ],
+      "headings": [],
+      "image": {
+        "x": 0,
+        "y": 0,
+        "width": 720,
+        "height": 480,
+        "decoded": true,
+        "native": [
+          1536,
+          1024
+        ],
+        "alt": "Grandma wheels the raining cloud toward the beans as Nell and the neighbors bring their music."
+      },
+      "folio": {
+        "x": 669.40625,
+        "y": 886.078125,
+        "width": 12.203125,
+        "height": 10.671875
+      }
+    },
+    {
+      "page": 20,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "They watered the beans.",
+          "x": 78.71875,
+          "y": 216,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "PIP-pip-PIP.",
+          "x": 78.71875,
+          "y": 251.859375,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "They watered the carrots.",
+          "x": 78.71875,
+          "y": 287.71875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "PIP-pip-PIP.",
+          "x": 78.71875,
+          "y": 323.578125,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "They watered a very dusty garden gnome.",
+          "x": 78.71875,
+          "y": 359.4375,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"He's been needing that,\" said Grandma.",
+          "x": 78.71875,
+          "y": 395.296875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Grumble grew smaller as they went. First armchair-sized. Then cushion-sized. Then teapot-sized.",
+          "x": 78.71875,
+          "y": 431.15625,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "At bread-roll-sized, he rose out of the wheelbarrow and settled on Nell's shoulder.",
+          "x": 78.71875,
+          "y": 495.6875,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "His rain stopped.",
+          "x": 78.71875,
+          "y": 560.21875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"Oh,\" he said. \"I can see the gnome's ears from here. They are dreadful.\"",
+          "x": 78.71875,
+          "y": 596.078125,
+          "width": 562.546875,
+          "height": 57.34375
+        }
+      ],
+      "headings": [],
+      "image": null,
+      "folio": {
+        "x": 38.390625,
+        "y": 886.078125,
+        "width": 12.203125,
+        "height": 10.671875
+      }
+    },
+    {
+      "page": 21,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "A breeze brushed Nell's cheek.",
+          "x": 78.71875,
+          "y": 196.796875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "The bean leaves rustled.",
+          "x": 78.71875,
+          "y": 232.65625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Above the garden wall, the weather vane swung toward the hills again.",
+          "x": 78.71875,
+          "y": 268.515625,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "Grumble looked up.",
+          "x": 78.71875,
+          "y": 333.046875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "His family stretched across the pink sky. They were nearly at the hilltops.",
+          "x": 78.71875,
+          "y": 368.90625,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "\"Now,\" he whispered.",
+          "x": 78.71875,
+          "y": 433.4375,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Nell set down the watering can and ran for the kite.",
+          "x": 78.71875,
+          "y": 469.296875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "The band followed, clattering.",
+          "x": 78.71875,
+          "y": 505.15625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "The dog ran too.",
+          "x": 78.71875,
+          "y": 541.015625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"You won't fit in the mitten,\" she told him.",
+          "x": 78.71875,
+          "y": 576.875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "He brought his bone anyway.",
+          "x": 78.71875,
+          "y": 612.734375,
+          "width": 562.546875,
+          "height": 28.671875
+        }
+      ],
+      "headings": [
+        {
+          "text": "Chapter 5A Ride in the Sky",
+          "x": 78.71875,
+          "y": 96,
+          "width": 562.546875,
+          "height": 59.34375
+        }
+      ],
+      "image": null,
+      "folio": {
+        "x": 669.40625,
+        "y": 886.078125,
+        "width": 12.203125,
+        "height": 10.671875
+      }
+    },
+    {
+      "page": 22,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "The grass was damp and the kite string had wriggled into a knot.",
+          "x": 78.71875,
+          "y": 216,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "Nell pulled one loop.",
+          "x": 78.71875,
+          "y": 280.53125,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "The knot got bigger.",
+          "x": 78.71875,
+          "y": 316.390625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "She pulled another.",
+          "x": 78.71875,
+          "y": 352.25,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "The knot got meaner.",
+          "x": 78.71875,
+          "y": 388.109375,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Grumble's family drifted on.",
+          "x": 78.71875,
+          "y": 423.96875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"I'll pull harder,\" Nell said.",
+          "x": 78.71875,
+          "y": 459.828125,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Grandma crouched beside her.",
+          "x": 78.71875,
+          "y": 495.6875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"Hold this bit loose for me.\"",
+          "x": 78.71875,
+          "y": 531.546875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Nell made her fingers loosen. Grandma slipped the string back through itself.",
+          "x": 78.71875,
+          "y": 567.40625,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "The knot fell open.",
+          "x": 78.71875,
+          "y": 631.9375,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Nell let out the breath she had been holding.",
+          "x": 78.71875,
+          "y": 667.796875,
+          "width": 562.546875,
+          "height": 28.671875
+        }
+      ],
+      "headings": [],
+      "image": null,
+      "folio": {
+        "x": 38.390625,
+        "y": 886.078125,
+        "width": 12.203125,
+        "height": 10.671875
+      }
+    },
+    {
+      "page": 23,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "They checked the mitten's strings. Nell tucked Grumble inside.",
+          "x": 62.390625,
+          "y": 96,
+          "width": 326.390625,
+          "height": 82.640625
+        },
+        {
+          "text": "His eyebrows stuck out at the top.",
+          "x": 62.390625,
+          "y": 183.90625,
+          "width": 326.390625,
+          "height": 55.09375
+        },
+        {
+          "text": "\"Comfortable?\"",
+          "x": 62.390625,
+          "y": 244.265625,
+          "width": 326.390625,
+          "height": 27.546875
+        },
+        {
+          "text": "\"My left side is in the thumb. Otherwise, yes.\"",
+          "x": 62.390625,
+          "y": 277.078125,
+          "width": 326.390625,
+          "height": 55.09375
+        },
+        {
+          "text": "Nell slipped her spoon into her pocket.",
+          "x": 62.390625,
+          "y": 337.4375,
+          "width": 326.390625,
+          "height": 55.09375
+        },
+        {
+          "text": "Grandma carried the kite across the open grass. Nell held the string winder.",
+          "x": 62.390625,
+          "y": 397.796875,
+          "width": 326.390625,
+          "height": 82.640625
+        },
+        {
+          "text": "The breeze lifted the red tail.",
+          "x": 62.390625,
+          "y": 485.703125,
+          "width": 326.390625,
+          "height": 27.546875
+        },
+        {
+          "text": "\"Ready?\" called Grandma.",
+          "x": 62.390625,
+          "y": 518.515625,
+          "width": 326.390625,
+          "height": 27.546875
+        },
+        {
+          "text": "Nell looked up at the enormous sky and gripped the winder.",
+          "x": 62.390625,
+          "y": 551.328125,
+          "width": 326.390625,
+          "height": 82.640625
+        },
+        {
+          "text": "\"Ready!\"",
+          "x": 62.390625,
+          "y": 639.234375,
+          "width": 326.390625,
+          "height": 27.546875
+        },
+        {
+          "text": "\"Go!\" called Grandma.",
+          "x": 62.390625,
+          "y": 672.046875,
+          "width": 326.390625,
+          "height": 27.546875
+        }
+      ],
+      "headings": [],
+      "image": {
+        "x": 408,
+        "y": 239.984375,
+        "width": 297.59375,
+        "height": 446.390625,
+        "decoded": true,
+        "native": [
+          1024,
+          1536
+        ],
+        "alt": "Grumble peeks from the mitten beneath the kite while Grandma holds it and Nell grips the winder."
+      },
+      "folio": {
+        "x": 669.40625,
+        "y": 886.078125,
+        "width": 12.203125,
+        "height": 10.671875
+      }
+    },
+    {
+      "page": 24,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "Grandma let go.",
+          "x": 62.390625,
+          "y": 62.390625,
+          "width": 453.109375,
+          "height": 27.328125
+        },
+        {
+          "text": "Nell ran.",
+          "x": 62.390625,
+          "y": 93.546875,
+          "width": 453.109375,
+          "height": 27.328125
+        },
+        {
+          "text": "The kite skipped, dipped, and rose.",
+          "x": 62.390625,
+          "y": 124.703125,
+          "width": 453.109375,
+          "height": 27.328125
+        },
+        {
+          "text": "It climbed above the beanpoles. Above the garden wall. Above the chimney that had smelled of toast.",
+          "x": 62.390625,
+          "y": 155.859375,
+          "width": 453.109375,
+          "height": 81.984375
+        },
+        {
+          "text": "The string tugged Nell's hands.",
+          "x": 62.390625,
+          "y": 241.671875,
+          "width": 453.109375,
+          "height": 27.328125
+        },
+        {
+          "text": "She slowed and planted her feet. Grandma stood close beside her.",
+          "x": 62.390625,
+          "y": 272.828125,
+          "width": 453.109375,
+          "height": 54.65625
+        },
+        {
+          "text": "Far overhead, two tiny eyebrows peeped from the mitten.",
+          "x": 62.390625,
+          "y": 331.3125,
+          "width": 453.109375,
+          "height": 54.65625
+        },
+        {
+          "text": "\"How is it?\" Nell shouted.",
+          "x": 62.390625,
+          "y": 389.796875,
+          "width": 453.109375,
+          "height": 27.328125
+        },
+        {
+          "text": "For a moment she heard only the breeze.",
+          "x": 62.390625,
+          "y": 420.953125,
+          "width": 453.109375,
+          "height": 27.328125
+        },
+        {
+          "text": "Then came a small, clear sound.",
+          "x": 62.390625,
+          "y": 452.109375,
+          "width": 453.109375,
+          "height": 27.328125
+        },
+        {
+          "text": "\"PIP!\"",
+          "x": 62.390625,
+          "y": 483.265625,
+          "width": 453.109375,
+          "height": 27.328125
+        }
+      ],
+      "headings": [],
+      "image": {
+        "x": -4.921875,
+        "y": 0,
+        "width": 729.859375,
+        "height": 912,
+        "decoded": true,
+        "native": [
+          1122,
+          1402
+        ],
+        "alt": "Nell and Grandma watch the red kite climb high, with Grumble riding in the mitten below it."
+      },
+      "folio": {
+        "x": 38.390625,
+        "y": 883.1875,
+        "width": 20.203125,
+        "height": 14.671875
+      }
+    },
+    {
+      "page": 25,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "Grumble climbed onto the mitten's thumb.",
+          "x": 78.71875,
+          "y": 216,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "The high wind ruffled his edges.",
+          "x": 78.71875,
+          "y": 251.859375,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Nell watched him stretch one fluffy point toward his family, then pull it back.",
+          "x": 78.71875,
+          "y": 287.71875,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "He was holding on tightly.",
+          "x": 78.71875,
+          "y": 352.25,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"Do you think he's frightened?\" she asked.",
+          "x": 78.71875,
+          "y": 388.109375,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Grandma watched the little gray shape.",
+          "x": 78.71875,
+          "y": 423.96875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"It's a big step off a mitten.\"",
+          "x": 78.71875,
+          "y": 459.828125,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Nell wished she could put her hand underneath him.",
+          "x": 78.71875,
+          "y": 495.6875,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "Instead, she pulled the wooden spoon from her pocket.",
+          "x": 78.71875,
+          "y": 560.21875,
+          "width": 562.546875,
+          "height": 57.34375
+        }
+      ],
+      "headings": [],
+      "image": null,
+      "folio": {
+        "x": 669.40625,
+        "y": 886.078125,
+        "width": 12.203125,
+        "height": 10.671875
+      }
+    },
+    {
+      "page": 26,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "She tapped the string winder.",
+          "x": 78.71875,
+          "y": 196.796875,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Tonk. Tonk. TINK.",
+          "x": 78.71875,
+          "y": 232.65625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Grandma joined in on her saucepan.",
+          "x": 78.71875,
+          "y": 268.515625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Mr. Moss rattled his tin. The twins plonked their pots. The dog squeezed his bone with great care.",
+          "x": 78.71875,
+          "y": 304.375,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "The red kite pulled against the sky.",
+          "x": 78.71875,
+          "y": 368.90625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Grumble stood taller on the mitten's thumb.",
+          "x": 78.71875,
+          "y": 404.765625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "He puffed his cheeks.",
+          "x": 78.71875,
+          "y": 440.625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"PIP-pip-PIP!\"",
+          "x": 78.71875,
+          "y": 476.484375,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "From beyond the hill came an answer.",
+          "x": 78.71875,
+          "y": 512.34375,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"POM-pom-POM!\"",
+          "x": 78.71875,
+          "y": 548.203125,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Another voice went, \"Brrrumble!\"",
+          "x": 78.71875,
+          "y": 584.0625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "And a third went, quite distinctly, \"HICCUP.\"",
+          "x": 78.71875,
+          "y": 619.921875,
+          "width": 562.546875,
+          "height": 28.671875
+        }
+      ],
+      "headings": [
+        {
+          "text": "Chapter 6Pip-pip-PIP!",
+          "x": 78.71875,
+          "y": 96,
+          "width": 562.546875,
+          "height": 59.34375
+        }
+      ],
+      "image": null,
+      "folio": {
+        "x": 38.390625,
+        "y": 886.078125,
+        "width": 12.203125,
+        "height": 10.671875
+      }
+    },
+    {
+      "page": 27,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "Grumble jumped.",
+          "x": 62.390625,
+          "y": 62.390625,
+          "width": 453.109375,
+          "height": 27.328125
+        },
+        {
+          "text": "For one breath he hung beneath the kite, a small gray comma in the pink sky.",
+          "x": 62.390625,
+          "y": 93.546875,
+          "width": 453.109375,
+          "height": 54.65625
+        },
+        {
+          "text": "Then the wind caught him.",
+          "x": 62.390625,
+          "y": 152.03125,
+          "width": 453.109375,
+          "height": 27.328125
+        },
+        {
+          "text": "He rose past the red tail. He tumbled once, found his balance, and sailed toward the hills.",
+          "x": 62.390625,
+          "y": 183.1875,
+          "width": 453.109375,
+          "height": 81.984375
+        },
+        {
+          "text": "\"Thank you!\" he called.",
+          "x": 62.390625,
+          "y": 269,
+          "width": 453.109375,
+          "height": 27.328125
+        },
+        {
+          "text": "Nell waved with the spoon.",
+          "x": 62.390625,
+          "y": 300.15625,
+          "width": 453.109375,
+          "height": 27.328125
+        },
+        {
+          "text": "The mitten swung empty.",
+          "x": 62.390625,
+          "y": 331.3125,
+          "width": 453.109375,
+          "height": 27.328125
+        },
+        {
+          "text": "She kept watching until a bigger cloud curled one fluffy edge around him.",
+          "x": 62.390625,
+          "y": 362.46875,
+          "width": 453.109375,
+          "height": 54.65625
+        }
+      ],
+      "headings": [],
+      "image": {
+        "x": -4.921875,
+        "y": 0,
+        "width": 729.859375,
+        "height": 912,
+        "decoded": true,
+        "native": [
+          1122,
+          1402
+        ],
+        "alt": "A bigger cloud curls around Grumble above the hills while the empty mitten hangs beneath Nell’s kite."
+      },
+      "folio": {
+        "x": 661.40625,
+        "y": 883.1875,
+        "width": 20.203125,
+        "height": 14.671875
+      }
+    },
+    {
+      "page": 28,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "They wound in the kite together.",
+          "x": 78.71875,
+          "y": 216,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Mr. Moss opened his biscuit tin. It contained three biscuits and rather a lot of crumbs.",
+          "x": 78.71875,
+          "y": 251.859375,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "Grandma fetched more from the kitchen.",
+          "x": 78.71875,
+          "y": 316.390625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "The twins shared theirs with the dog. The dog ate the crumbs too, just to be helpful.",
+          "x": 78.71875,
+          "y": 352.25,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "Nell sat on the overturned wheelbarrow with the mitten in her lap.",
+          "x": 78.71875,
+          "y": 416.78125,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "Its thumb was still a little damp.",
+          "x": 78.71875,
+          "y": 481.3125,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "She tucked one finger inside and looked toward the hills.",
+          "x": 78.71875,
+          "y": 517.171875,
+          "width": 562.546875,
+          "height": 57.34375
+        }
+      ],
+      "headings": [],
+      "image": null,
+      "folio": {
+        "x": 38.390625,
+        "y": 886.078125,
+        "width": 12.203125,
+        "height": 10.671875
+      }
+    },
+    {
+      "page": 29,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "At bedtime, Nell lined up her boots beneath the window.",
+          "x": 78.71875,
+          "y": 216,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "She checked them both.",
+          "x": 78.71875,
+          "y": 280.53125,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "One pebble. No weather.",
+          "x": 78.71875,
+          "y": 316.390625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Grandma came to say good night. She had washed her hair, which turned out to be a little wet after all.",
+          "x": 78.71875,
+          "y": 352.25,
+          "width": 562.546875,
+          "height": 57.34375
+        },
+        {
+          "text": "\"Should I leave the window open?\" Nell asked.",
+          "x": 78.71875,
+          "y": 416.78125,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "\"A crack, if you like.\"",
+          "x": 78.71875,
+          "y": 452.640625,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Nell hung the mitten on the latch.",
+          "x": 78.71875,
+          "y": 488.5,
+          "width": 562.546875,
+          "height": 28.671875
+        },
+        {
+          "text": "Then she got into bed and listened.",
+          "x": 78.71875,
+          "y": 524.359375,
+          "width": 562.546875,
+          "height": 28.671875
+        }
+      ],
+      "headings": [],
+      "image": null,
+      "folio": {
+        "x": 669.40625,
+        "y": 886.078125,
+        "width": 12.203125,
+        "height": 10.671875
+      }
+    },
+    {
+      "page": 30,
+      "width": 720,
+      "height": 912,
+      "font": "22.4px",
+      "fonts_loaded": true,
+      "paragraphs": [
+        {
+          "text": "For a while, nothing happened.",
+          "x": 76.796875,
+          "y": 86.390625,
+          "width": 566.390625,
+          "height": 28.671875
+        },
+        {
+          "text": "Then three drops tapped the windowsill.",
+          "x": 76.796875,
+          "y": 122.25,
+          "width": 566.390625,
+          "height": 28.671875
+        },
+        {
+          "text": "Tonk. Tonk. TINK.",
+          "x": 76.796875,
+          "y": 158.109375,
+          "width": 566.390625,
+          "height": 28.671875
+        },
+        {
+          "text": "Nell sat up.",
+          "x": 76.796875,
+          "y": 193.96875,
+          "width": 566.390625,
+          "height": 28.671875
+        },
+        {
+          "text": "Far above the house, something small and fluffy crossed the moon.",
+          "x": 76.796875,
+          "y": 229.828125,
+          "width": 566.390625,
+          "height": 57.34375
+        },
+        {
+          "text": "\"PIP-pip-PIP!\"",
+          "x": 76.796875,
+          "y": 294.359375,
+          "width": 566.390625,
+          "height": 28.671875
+        },
+        {
+          "text": "Nell tapped the bedpost in reply.",
+          "x": 76.796875,
+          "y": 330.21875,
+          "width": 566.390625,
+          "height": 28.671875
+        },
+        {
+          "text": "From next door came a sleepy squeak.",
+          "x": 76.796875,
+          "y": 366.078125,
+          "width": 566.390625,
+          "height": 28.671875
+        },
+        {
+          "text": "The dog had joined in.",
+          "x": 76.796875,
+          "y": 401.9375,
+          "width": 566.390625,
+          "height": 28.671875
+        },
+        {
+          "text": "Nell snuggled under her blanket.",
+          "x": 76.796875,
+          "y": 437.796875,
+          "width": 566.390625,
+          "height": 28.671875
+        },
+        {
+          "text": "In the morning, her left boot was dry.",
+          "x": 76.796875,
+          "y": 473.65625,
+          "width": 566.390625,
+          "height": 28.671875
+        },
+        {
+          "text": "Her right boot contained exactly one tiny rainbow.",
+          "x": 76.796875,
+          "y": 509.515625,
+          "width": 566.390625,
+          "height": 28.671875
+        }
+      ],
+      "headings": [],
+      "image": {
+        "x": 398.390625,
+        "y": 667.984375,
+        "width": 249.59375,
+        "height": 166.390625,
+        "decoded": true,
+        "native": [
+          1536,
+          1024
+        ],
+        "alt": "Two red boots stand side by side; exactly one tiny rainbow rises from the right boot."
+      },
+      "folio": {
+        "x": 38.390625,
+        "y": 886.078125,
+        "width": 12.203125,
+        "height": 10.671875
+      }
+    }
+  ],
+  "limit": "Browser rendering proof; not an installed e-reader application or device test."
+}

@@ -1,0 +1,18 @@
+"""Prepare a blind fixed-constraint audit of corrected cloud samples; no inference."""
+from pathlib import Path
+import json,random,hashlib
+B=Path(__file__).resolve().parent;keys=json.loads((B/'condition-keys.json').read_text());runs=[r for r in keys if r.startswith(('kimi','mistral'))];random.Random(2026102407).shuffle(runs);mapping={}
+packet='''# Independent fixed-constraint audit
+You are the canon_keeper for an independent synthetic-fixture audit. This is an objective check, not a literary ranking. Read this packet only; no other files, prior findings, model identities, instruction variants or guesses. The coordinator owns shared ledgers. Each anonymous artifact contains six separately assigned tasks; plans are author-visible and may propose future motives, while a draft must keep its opening motive unresolved. Do not use a plan's invention to excuse the independent draft or audit. Do not penalize ordinary figurative language, uncertain inference, character testimony, explicit on-page transfers or conditional intentions as objective facts. If scope or semantics are ambiguous, return a query, not a definite error.
+
+Identify definite breaches of fixed timeline, capacity, custody, permitted knowledge and explicit task constraints. Check the C sections' diagnoses, minimal repairs, valid-line preservation and explicit source locators against the sealed key. A correct target line does not prove its proposed repair is safe. Do not count quotation typography or optional style preferences as world-rule errors; record evidence issues separately. Cite an exact short excerpt and rule for each definite finding. Do not invent omitted backstory. One pass, maximum about 2,000 output words, no delegation or shared writes.
+
+Return JSON:
+{"artifacts":[{"artifact":"A001","read_in_full":["F1-P","F1-D","F1-C","F2-P","F2-D","F2-C"],"violations":[{"task":"F1-P","kind":"world-or-task|repair|diagnosis|seed-miss|false-positive","rule":"F1-02","quote":"exact source words","reason":"why unambiguously incompatible"}],"queries":[{"task":"F2-D","note":"uncertainty"}],"evidence_faults":[{"task":"F2-C","quote":"exact source words","note":"wrong locator etc"}]}],"coverage":"All eight artifacts and fixtures read in full; literary quality and whole-book execution not assessed."}
+Every A001–A008 appears exactly once, even if violations empty. Use kind=seed-miss or false-positive for missing seeded lines or definite findings on valid control lines; these are counted mechanically and must not be counted twice. Use repair for an unsafe correction, diagnosis for a wrong reason on a seeded line, and world-or-task for planning/drafting contradictions. Do not force any findings. Never certify your own draft; none of these samples are from your model. All eight need actual complete reading, recovering any truncated tool output.
+
+# Fixed fixtures and targets
+'''+(B/'instructions/current/canon_keeper.md').read_text()+'\n# Fixed fixtures and targets\n'+(B/'inputs/fixtures.md').read_text()+'\n# Coordinator’s fixed error key\n'+(B/'inputs/sealed-key.md').read_text()+'\n# Original assignment boundaries\n'+json.dumps(json.loads((B/'assignments.json').read_text()),indent=2)+'\n# Anonymous artifacts\n'
+for i,run in enumerate(runs,1):
+ label=f'A{i:03d}';p=B/f'outputs/{run}.md';text=p.read_text();mapping[label]={'run':run,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()};packet+=f'\n## {label}\n<artifact>\n{text}\n</artifact>\n'
+p=B/'packets/objective-cloud-audit.md';p.write_text(packet);(B/'objective-blind-keys.json').write_text(json.dumps({'artifacts':mapping,'packet_sha256':hashlib.sha256(p.read_bytes()).hexdigest()},indent=2)+'\n');print('Objective packet chars',len(packet))

@@ -1,0 +1,97 @@
+{
+  "scope": "Director manually read P4 and P7 for all eight candidates against the common contract and sealed key; whole-book execution is unassessed.",
+  "key_errors": 9,
+  "candidates": {
+    "sol61-medium": {
+      "P7_planted_errors_identified": 9,
+      "P7_valid_control_lines_preserved": [
+        "L9",
+        "L10",
+        "L11"
+      ],
+      "notes": []
+    },
+    "sol61-high": {
+      "P7_planted_errors_identified": 9,
+      "P7_valid_control_lines_preserved": [
+        "L9",
+        "L10",
+        "L11"
+      ],
+      "notes": [
+        "P7 additionally queries changing an assignment after freezing it, appropriately conditional. P4 contains a clock-detail oddity, not a seeded copy error."
+      ]
+    },
+    "sol6-medium": {
+      "P7_planted_errors_identified": 9,
+      "P7_valid_control_lines_preserved": [
+        "L9",
+        "L10",
+        "L11"
+      ],
+      "notes": [
+        "P7 offers a colloquial-grammar caveat rather than mechanically treating every spoken usage as error; style query about viewpoint is marked optional."
+      ]
+    },
+    "sol6-high": {
+      "P7_planted_errors_identified": 9,
+      "P7_valid_control_lines_preserved": [
+        "L9",
+        "L10",
+        "L11"
+      ],
+      "notes": [
+        "P7 flags chronology and possible freeze interaction without supplying a new event."
+      ]
+    },
+    "kimi-low": {
+      "P7_planted_errors_identified": 9,
+      "P7_valid_control_lines_preserved": [
+        "L9",
+        "L10",
+        "L11"
+      ],
+      "notes": [
+        "P7 detects the motive leak, but its suggested rumor invents unsupported testimony; alternative deletion is sound. L8 earlier-start option needs upstream chronology reconciliation. P4 clock indications differ: 23 minutes to bell suggests 17:07, state delta says 17:08 and departure 17:10. Original P8 includes a runtime-prompted process-note tail. The prefix-only blurb is 140 words by the recorded count and is used in the disclosed fresh P8 correction."
+      ]
+    },
+    "kimi-high": {
+      "P7_planted_errors_identified": 9,
+      "P7_valid_control_lines_preserved": [
+        "L9",
+        "L10",
+        "L11"
+      ],
+      "notes": [
+        "P7 detects all key errors, but earlier-start and suspicion alternatives need chronology/evidence checks. P4: “Nineteen now” follows a twenty-minute travel reminder despite fixed no-faster route; state delta exits at ~17:11 outside 17:00–17:10 contract. P4 declares illegal seizure procedure as a proposal but the resulting cost is concrete."
+      ]
+    },
+    "mistral-none": {
+      "P7_planted_errors_identified": 9,
+      "P7_valid_control_lines_preserved": [
+        "L9",
+        "L10",
+        "L11"
+      ],
+      "notes": [
+        "P7 raises the freeze/change interaction as a query, appropriately conditional. P4 treats the protected style fragment as certificate wording but disclaims that invention as accepted canon; the instruction to be original is separate from continuity."
+      ]
+    },
+    "mistral-high": {
+      "P7_planted_errors_identified": 9,
+      "P7_valid_control_lines_preserved": [
+        "L9",
+        "L11"
+      ],
+      "P7_false_positive_controls": [
+        "L10: categorically declares “The inspector” a POV violation. A role noun alone does not establish an excursion from close-third viewpoint; the control is valid without broader context."
+      ],
+      "notes": [
+        "P7 overstates that motive knowledge would contradict “had told her nothing”; knowledge could have another evidenced source, though none is supplied here, so the seeded knowledge error is real.",
+        "P4 inserts a confusing “not a surrender”/“custody” exchange after the license is physically handed over; delta says surrendered. P4 repeats exact prose from both supplied voice references, which may reduce originality in peer evaluation.",
+        "P2, P5 and P7 materially exceed their stated budgets."
+      ]
+    }
+  },
+  "word_count_note": "word-counts.json counts full artifacts including headings and state delta. P4 requests an added state delta after prose; narrative-only P4 counts must be considered separately before calling a length violation."
+}

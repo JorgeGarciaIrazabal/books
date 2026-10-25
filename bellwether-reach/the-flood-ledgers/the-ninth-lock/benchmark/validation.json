@@ -1,0 +1,191 @@
+{
+  "failures": [],
+  "evidence_flags": [
+    {
+      "judge": "mistral-none",
+      "phase": "P2",
+      "candidate": "sol6-medium",
+      "quote": "A replacement requires the prior document's cancellation; no cancellation appears.",
+      "kind": "not an exact source quote"
+    },
+    {
+      "judge": "mistral-none",
+      "phase": "P2",
+      "candidate": "sol61-medium",
+      "quote": "she withdraws it and supports honoring South's earlier purchase",
+      "kind": "not an exact source quote"
+    },
+    {
+      "judge": "mistral-none",
+      "phase": "P3",
+      "candidate": "sol61-high",
+      "quote": "On the correction slip she crossed out Clerk's and wrote Inspector's instruction; clerk followed it.",
+      "kind": "not an exact source quote"
+    },
+    {
+      "judge": "mistral-none",
+      "phase": "P3",
+      "candidate": "sol6-high",
+      "quote": "She wanted to tell him why she had kept her mouth shut. The tide did not care.",
+      "kind": "not an exact source quote"
+    },
+    {
+      "judge": "mistral-none",
+      "phase": "P7",
+      "candidate": "sol6-medium",
+      "quote": "two authentic seals and L7's preservation of North's assignment are valid components",
+      "kind": "not an exact source quote"
+    },
+    {
+      "judge": "mistral-high",
+      "phase": "P1",
+      "candidate": "kimi-high",
+      "quote": "witnessed registration. A Registry entry is complete only when the clerk and an outside witness both touch the seal",
+      "kind": "outside requested 4\u201318-word quotation length"
+    },
+    {
+      "judge": "mistral-high",
+      "phase": "P1",
+      "candidate": "kimi-low",
+      "quote": "The Witness Toll \u2014 a basin that learns it has lost protection may send one resident to stand at the lock",
+      "kind": "outside requested 4\u201318-word quotation length"
+    },
+    {
+      "judge": "mistral-high",
+      "phase": "P1",
+      "candidate": "sol61-medium",
+      "quote": "households mark the height of their last flood on the outside of their doors and leave the mark after repairs",
+      "kind": "outside requested 4\u201318-word quotation length"
+    },
+    {
+      "judge": "mistral-high",
+      "phase": "P1",
+      "candidate": "sol6-medium",
+      "quote": "basin residents post the names of people willing to carry what cannot be protected up to the public stair",
+      "kind": "outside requested 4\u201318-word quotation length"
+    },
+    {
+      "judge": "mistral-high",
+      "phase": "P2",
+      "candidate": "sol61-medium",
+      "quote": "Sera could maintain the freeze and shelter her brother. Instead, she withdraws it and supports honoring South's earlier purchase",
+      "kind": "outside requested 4\u201318-word quotation length"
+    },
+    {
+      "judge": "mistral-high",
+      "phase": "P2",
+      "candidate": "sol61-medium",
+      "quote": "Sera could maintain the freeze and shelter her brother. Instead, she withdraws it and supports honoring South's earlier purchase",
+      "kind": "not an exact source quote"
+    },
+    {
+      "judge": "mistral-high",
+      "phase": "P2",
+      "candidate": "sol6-high",
+      "quote": "Sera surrenders her license and freezes North's current protection. Her brother is there; she says so in the public notice",
+      "kind": "outside requested 4\u201318-word quotation length"
+    },
+    {
+      "judge": "mistral-high",
+      "phase": "P2",
+      "candidate": "sol6-high",
+      "quote": "Sera surrenders her license and freezes North's current protection. Her brother is there; she says so in the public notice",
+      "kind": "not an exact source quote"
+    },
+    {
+      "judge": "mistral-high",
+      "phase": "P2",
+      "candidate": "sol61-high",
+      "quote": "Ivo produces the payment book bearing the same balance number",
+      "kind": "not an exact source quote"
+    },
+    {
+      "judge": "mistral-high",
+      "phase": "P2",
+      "candidate": "kimi-high",
+      "quote": "Sera sends warning runners to North, then uses her brass key and the forty-minute window to reassign the lock",
+      "kind": "outside requested 4\u201318-word quotation length"
+    },
+    {
+      "judge": "mistral-high",
+      "phase": "P3",
+      "candidate": "sol61-high",
+      "quote": "On the correction slip she crossed out Clerk's and wrote Inspector's instruction",
+      "kind": "not an exact source quote"
+    },
+    {
+      "judge": "mistral-high",
+      "phase": "P4",
+      "candidate": "kimi-low",
+      "quote": "She wrote in the ugly scrawl of a person signing her own demotion",
+      "kind": "not an exact source quote"
+    },
+    {
+      "judge": "mistral-high",
+      "phase": "P4",
+      "candidate": "sol6-high",
+      "quote": "she wrote South's certificate number again in the margin, where a hearing clerk would have to see it",
+      "kind": "not an exact source quote"
+    },
+    {
+      "judge": "mistral-high",
+      "phase": "P5",
+      "candidate": "kimi-low",
+      "quote": "Stage someone recognizing she's no longer an inspector, and let her choose the civilian act anyway",
+      "kind": "not an exact source quote"
+    },
+    {
+      "judge": "mistral-high",
+      "phase": "P5",
+      "candidate": "sol6-medium",
+      "quote": "Give each person an action with a cost, rather than a reported change of heart",
+      "kind": "not an exact source quote"
+    },
+    {
+      "judge": "mistral-high",
+      "phase": "P6",
+      "candidate": "sol61-high",
+      "quote": "Sera had come for the second certificate",
+      "kind": "not an exact source quote"
+    },
+    {
+      "judge": "mistral-high",
+      "phase": "P7",
+      "candidate": "sol6-high",
+      "quote": "whether the relative distance of the inspector in L10 is desired at that moment",
+      "kind": "not an exact source quote"
+    },
+    {
+      "judge": "mistral-high",
+      "phase": "P7",
+      "candidate": "sol6-medium",
+      "quote": "If Sera's speech is intentionally colloquial, keep are as a conscious voice choice",
+      "kind": "not an exact source quote"
+    },
+    {
+      "judge": "mistral-high",
+      "phase": "P7",
+      "candidate": "sol61-medium",
+      "quote": "This also aligns with L8's stated start time",
+      "kind": "not an exact source quote"
+    }
+  ],
+  "checks": [
+    "All 8 reviews parse",
+    "Eight phases each",
+    "Eligible candidates exactly once per phase in rankings and evidence",
+    "Exact quote verification",
+    "No exact-model self reviews by packet construction"
+  ],
+  "additional_checks": [
+    "All initial source and candidate hashes unchanged",
+    "P1\u2013P7 rankings identical to original run",
+    "Kimi reviewer P8 unchanged; its candidate set was unaffected",
+    "Six fresh P8 correction reviews cover their eligible sets",
+    "Opaque correction labels remapped by author ID only",
+    "All pairwise preferences complementary",
+    "All report evidence excerpts selected from exact 4\u201318-word source matches",
+    "All eight P6 edits retain the protected fragment"
+  ],
+  "evidence_disposition": "evidence-disposition.json"
+}

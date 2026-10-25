@@ -1,0 +1,438 @@
+{
+  "phases": [
+    {
+      "phase": "P1",
+      "tiers": [
+        [
+          "Candidate D",
+          "Candidate C"
+        ],
+        [
+          "Candidate F",
+          "Candidate A"
+        ],
+        [
+          "Candidate B"
+        ],
+        [
+          "Candidate E"
+        ]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate D",
+          "quote": "erasing one to calm a street can cost somebody",
+          "reason": "The chalk custom creates specific consequences, witnesses, and possible interference without changing lock mechanics."
+        },
+        {
+          "candidate": "Candidate C",
+          "quote": "The lists are practical, incomplete, and visible to everyone.",
+          "reason": "The carrying lists give residents consequential agency, while the hook clearly preserves the license cost and North's protection."
+        },
+        {
+          "candidate": "Candidate F",
+          "quote": "the loss must be witnessed by a person, not announced by bell alone.",
+          "reason": "A distinctive ritual makes institutional loss personal, though its investigative and practical consequences are less developed than the leaders'."
+        },
+        {
+          "candidate": "Candidate A",
+          "quote": "records carry social fingerprints; favors and blackmail live in who stood beside whom",
+          "reason": "Witnessed registration offers useful evidence and relationship pressures, although the larger engineered-scarcity question is comparatively abstract."
+        },
+        {
+          "candidate": "Candidate B",
+          "quote": "the older assignment stays physically chained to the ledger until a hearing",
+          "reason": "The custom supplies a clear image but risks confusing document retention with the license-costly assignment freeze."
+        },
+        {
+          "candidate": "Candidate E",
+          "quote": "only a witnessed reading binds the lock for that tide.",
+          "reason": "The proposed reading adds a new mechanism for binding protection, creating compatibility questions around North's already-current assignment."
+        }
+      ],
+      "uncertainty": "C and D offer equally usable customs with different social textures; A and F trade investigative utility against ritual force. B's chaining might concern documents alone, which would reduce its procedural risk."
+    },
+    {
+      "phase": "P2",
+      "tiers": [
+        [
+          "Candidate D",
+          "Candidate C"
+        ],
+        [
+          "Candidate B"
+        ],
+        [
+          "Candidate F"
+        ],
+        [
+          "Candidate E"
+        ],
+        [
+          "Candidate A"
+        ]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate D",
+          "quote": "Her method steals South’s chance to prepare for loss.",
+          "reason": "The compromised allocator has a credible civic motive, and the document trail connects deception to preparation, accountability, and partial loss."
+        },
+        {
+          "candidate": "Candidate C",
+          "quote": "A replacement requires the prior document’s cancellation; no cancellation appears.",
+          "reason": "A legible procedural clue supports a causal investigation, both principals make costly choices, and the ending preserves material loss."
+        },
+        {
+          "candidate": "Candidate B",
+          "quote": "She refuses an unlawful switch and chooses the legal freeze",
+          "reason": "The loss and accountability are concrete, but this repeats an already-completed freeze and the resale-endorsement clue needs clearer connection to duplicate protection."
+        },
+        {
+          "candidate": "Candidate F",
+          "quote": "so the scheme needed no freeze filed",
+          "reason": "The later investigation gives Ivo meaningful agency, but this inference is unsupported when the freeze preserves exactly the North protection Marr's South-flooding plan requires."
+        },
+        {
+          "candidate": "Candidate E",
+          "quote": "She walks to the lock and holds the wheel in North's position",
+          "reason": "The physical defense is poorly motivated after a legal freeze already preserves North, and investigation, hearing, and rescue crowd the single pre-tide hour."
+        },
+        {
+          "candidate": "Candidate A",
+          "quote": "beginning just before the bell's rule bites.",
+          "reason": "The 17:19 reassignment cannot follow a Registry departure after 17:10 plus the required twenty-minute walk; the tide-morning reversal also disrupts chronology."
+        }
+      ],
+      "uncertainty": "C has the clearest checkable procedural clue; D has the more persuasive institutional motive. B and F both need causal repairs, and F's post-tide investigation also weakens the brief's investigative deadline."
+    },
+    {
+      "phase": "P3",
+      "tiers": [
+        [
+          "Candidate D",
+          "Candidate C"
+        ],
+        [
+          "Candidate A",
+          "Candidate F"
+        ],
+        [
+          "Candidate B"
+        ],
+        [
+          "Candidate E"
+        ]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate D",
+          "quote": "in the blank that would remain beside his in the public copy",
+          "reason": "Sera answers the emotional demand through a consequential public signature, making the paperwork itself carry the bargain."
+        },
+        {
+          "candidate": "Candidate C",
+          "quote": "He moved his mug, not hers. A clerk’s distinction.",
+          "reason": "Precise object handling sustains conflicting goals, and the brief acknowledgment changes access without dissolving mistrust."
+        },
+        {
+          "candidate": "Candidate A",
+          "quote": "So she sat down. The chair did not creak.",
+          "reason": "The chair converts withheld acknowledgment into a restrained physical concession, though the preceding grievance is comparatively explicit."
+        },
+        {
+          "candidate": "Candidate F",
+          "quote": "She sat down. The chair was hard. The tea was too strong.",
+          "reason": "Sitting and drinking enact acknowledgment convincingly, but the narrated pricing of the bargain and stacked closing metaphors explain the subtext."
+        },
+        {
+          "candidate": "Candidate B",
+          "quote": "I need you to remember what you were",
+          "reason": "Ivo states the emotional demand directly, while his eventual release follows Sera's refusal rather than a clearly earned acknowledgment."
+        },
+        {
+          "candidate": "Candidate E",
+          "quote": "That's the harm. Not the choosing. Being left holding the paperwork.",
+          "reason": "The dialogue names the harm outright, and the closing ledger exchange largely postpones the certificate negotiation instead of dramatizing its change."
+        }
+      ],
+      "uncertainty": "D explains the old abandonment more directly in interior narration; C leaves more space for inference. A's compression and F's emotional warmth are close subjective alternatives."
+    },
+    {
+      "phase": "P4",
+      "tiers": [
+        [
+          "Candidate D"
+        ],
+        [
+          "Candidate C"
+        ],
+        [
+          "Candidate F"
+        ],
+        [
+          "Candidate B"
+        ],
+        [
+          "Candidate A"
+        ],
+        [
+          "Candidate E"
+        ]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate D",
+          "quote": "He wrapped the two originals together in a sheet",
+          "reason": "The scene makes evidence preservation, license surrender, and North's retained protection physically legible while sustaining an adversarial relationship."
+        },
+        {
+          "candidate": "Candidate C",
+          "quote": "She tore off the inspector’s copy along the perforation.",
+          "reason": "The one-handed custody work is concrete and economical, although the final freeze stamp is requested rather than visibly completed."
+        },
+        {
+          "candidate": "Candidate F",
+          "quote": "Her left hand could not hold the paper still.",
+          "reason": "Ivo's practical help makes the injury and estrangement active in the costly filing, though figurative commentary sometimes overwhelms the restraint."
+        },
+        {
+          "candidate": "Candidate B",
+          "quote": "She could freeze the assignment and pay with the only authority she had.",
+          "reason": "The required commitment and custody are clear, but repeated explanations of options and arithmetic reduce dramatic discovery."
+        },
+        {
+          "candidate": "Candidate A",
+          "quote": "exits about 17:11; earliest lock arrival ~17:31, after the bell",
+          "reason": "The unauthorized requisition creates a real consequential alternative, but the declared exit exceeds the scene window and forecloses timely reassignment."
+        },
+        {
+          "candidate": "Candidate E",
+          "quote": "\"That's not a surrender,\" she said.",
+          "reason": "This denial immediately after the required license surrender muddies the central action, while repeated canon recitation and borrowed reference phrasing weaken the scene's own voice."
+        }
+      ],
+      "uncertainty": "C is sparer than D but less explicit about completing the freeze. A's custody theft is a permissible creative choice; its ranking reflects the time boundary and execution, not a requirement that every candidate freeze."
+    },
+    {
+      "phase": "P5",
+      "tiers": [
+        [
+          "Candidate C",
+          "Candidate D"
+        ],
+        [
+          "Candidate B"
+        ],
+        [
+          "Candidate A",
+          "Candidate F"
+        ],
+        [
+          "Candidate E"
+        ]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate C",
+          "quote": "Put the second original into a contested exchange with Ivo",
+          "reason": "The repair restores discovery through the existing relationship, prioritizes the impossible ending, and gives both principals subsequent causal work."
+        },
+        {
+          "candidate": "Candidate D",
+          "quote": "give Sera one specific attempt to warn South before leaving the Registry",
+          "reason": "The report identifies the major defects and proposes a particularly economical way to turn the freeze's human consequence into contestable action."
+        },
+        {
+          "candidate": "Candidate B",
+          "quote": "one concrete investigative discovery and one refused shortcut before the freeze",
+          "reason": "The findings are accurate and practical, though the third partly repeats the first and treats already-effective interpersonal beats somewhat broadly."
+        },
+        {
+          "candidate": "Candidate A",
+          "quote": "determines which basin the remedy protects",
+          "reason": "The report diagnoses the delivered solution and cost-canceling pump well, but this hearing repair needs a timing distinction to avoid implying tonight's loss can be reversed."
+        },
+        {
+          "candidate": "Candidate F",
+          "quote": "yet no one questions her authority",
+          "reason": "The first two diagnoses are useful, but treating the absence of an authority challenge as a defect overstates what civilian seed-sack assistance requires."
+        },
+        {
+          "candidate": "Candidate E",
+          "quote": "planted gestures do no work and the clock is absent.",
+          "reason": "The ending and information-dump diagnoses are sound, but dismissing the chair's relational work is a false positive and the coverage claim conflicts with its use of supplied canon."
+        }
+      ],
+      "uncertainty": "All six identify the pump and unearned revelation; distinctions concern repair precision and unnecessary criticism. A's hearing might concern a later tide, but the report does not make that limit clear."
+    },
+    {
+      "phase": "P6",
+      "tiers": [
+        [
+          "Candidate B"
+        ],
+        [
+          "Candidate A",
+          "Candidate F"
+        ],
+        [
+          "Candidate E"
+        ],
+        [
+          "Candidate D"
+        ],
+        [
+          "Candidate C"
+        ]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate B",
+          "quote": "He had remembered how she took it: the tea, that was.",
+          "reason": "The edit preserves the target's awkwardly revealing tea thought and all factual events with the least invention, although the closing silence remains generic."
+        },
+        {
+          "candidate": "Candidate A",
+          "quote": "Neither of them drank.",
+          "reason": "A small physical ending replaces abstract silence effectively, while the compressed tea reference loses some of the original's distinctive self-correction."
+        },
+        {
+          "candidate": "Candidate F",
+          "quote": "Neither of them said what the second mug was for.",
+          "reason": "The prose is clean and preserves the facts and fragment, though the final deliberate ambiguity feels manufactured when the mug's immediate purpose is evident."
+        },
+        {
+          "candidate": "Candidate E",
+          "quote": "The silence between them was the third thing at the desk.",
+          "reason": "The tea fragment and injury remain intact, but the next sentence explains this image and some unnecessary repetition persists."
+        },
+        {
+          "candidate": "Candidate D",
+          "quote": "The cup nearest her had a chip at the lip",
+          "reason": "The offer and refusal are smoothly staged, but added mug choreography and the replacement of the white-parcel image make this a more interventionist edit."
+        },
+        {
+          "candidate": "Candidate C",
+          "quote": "she could tell by the darker ring beneath it.",
+          "reason": "The added deduction about which tea was poured first is unsupported by the ring and introduces a distracting factual inference into an otherwise restrained edit."
+        }
+      ],
+      "uncertainty": "Fidelity is weighted heavily because this is a line edit of a fixed target. D and C might appeal more as free-standing scene variants; the minor added gestures are not treated as major canon violations."
+    },
+    {
+      "phase": "P7",
+      "tiers": [
+        [
+          "Candidate D",
+          "Candidate B"
+        ],
+        [
+          "Candidate C"
+        ],
+        [
+          "Candidate A"
+        ],
+        [
+          "Candidate F"
+        ],
+        [
+          "Candidate E"
+        ]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate D",
+          "quote": "Correct the projected completion, then check whether the action still makes sense",
+          "reason": "The audit finds the definite errors, checks downstream freeze and timing implications, and avoids turning viewpoint distance into a categorical violation."
+        },
+        {
+          "candidate": "Candidate B",
+          "quote": "Confirm whether a frozen assignment may be changed before the hearing",
+          "reason": "The audit catches the full local error set and explicitly flags the freeze/change interaction as a query rather than inventing an exception."
+        },
+        {
+          "candidate": "Candidate C",
+          "quote": "keep “are” as a conscious voice choice",
+          "reason": "The thorough corrections preserve valid components and distinguish dialogue usage from continuity, though the freeze/change interaction receives less attention."
+        },
+        {
+          "candidate": "Candidate A",
+          "quote": "or depart at 17:10.",
+          "reason": "The core errors are identified, but moving departure alone does not fix the stated ten-minute walk, and suggested motive guesses introduce assumptions."
+        },
+        {
+          "candidate": "Candidate F",
+          "quote": "a debt, someone said — someone's word, not hers",
+          "reason": "The audit detects the main contradictions but proposes unsupported hearsay while claiming not to invent backstory, and its before-tide timing repair is imprecise."
+        },
+        {
+          "candidate": "Candidate E",
+          "quote": "breaks the declared close-third POV",
+          "reason": "Calling the valid descriptive reference 'The inspector' a definite viewpoint error is a consequential false positive in an accuracy-focused audit."
+        }
+      ],
+      "uncertainty": "The leading audits are very close. Agreement in character speech can be intentional; C and D handle that nuance explicitly. Earlier-start suggestions cannot establish pre-bell change duration, which canon leaves unspecified."
+    },
+    {
+      "phase": "P8",
+      "tiers": [
+        [
+          "Candidate C"
+        ],
+        [
+          "Candidate D",
+          "Candidate E"
+        ],
+        [
+          "Candidate A"
+        ],
+        [
+          "Candidate B"
+        ],
+        [
+          "Candidate F"
+        ]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate E",
+          "quote": "the water does not wait for a hearing",
+          "reason": "A strong, economical hook joins the duplicate sale, estranged apprentice, personal stakes, and irreversible loss in a restrained voice; the freeze price is clear, although its preservation of North is only implicit and the final thematic description is less immediate than the opening."
+        },
+        {
+          "candidate": "Candidate A",
+          "quote": "two papers were made true",
+          "reason": "Distinctive rhythm and dry humor make the deadline memorable, but this formulation blurs registered obligations with truth; saying the remedy settles nothing also obscures its concrete preservation of North, while the brother’s fields add an unsupported detail."
+        },
+        {
+          "candidate": "Candidate B",
+          "quote": "The seals are authentic. The tide is not.",
+          "reason": "The doubled sale and competing losses remain legible, but this strained contrast undermines the otherwise factual pitch; densely recited clock mechanics and an ambiguous afterward make the copy feel like a briefing, and license surrender loses its specific connection to freezing the assignment."
+        },
+        {
+          "candidate": "Candidate F",
+          "quote": "Exposing the truth will cost her license",
+          "reason": "The copy has momentum and balanced personal and communal stakes, but converts license surrender into a cost of disclosure, invents a vow of estrangement and a threatened loss of the apprentice, and calls incompatible certificates both honored; these additions weaken truthful limits most substantially."
+        },
+        {
+          "candidate": "Candidate C",
+          "quote": "Sera must surrender her license, and a freeze leaves North protected",
+          "reason": "The clearest account of the costly legal choice anchors a specific duplicate-sale hook and competing human stakes; practical objects and public accountability sustain the promised civic mystery without inventing a solution, though its measured progression offers less overt urgency than the strongest rivals."
+        },
+        {
+          "candidate": "Candidate D",
+          "quote": "let one basin prepare for a protection it will never receive",
+          "reason": "This makes inaction materially consequential and gives threatened residents an experience beyond symbolic stakes, with strong paper-and-water imagery; however, the invented desire for Ivo’s account and the suggestion that the license supplies her voice at the gate exceed the supplied situation slightly."
+        }
+      ],
+      "uncertainty": "A and F are tied: A is more economical and closely bounded, while F better dramatizes the consequences of inaction. E’s greater procedural precision narrowly outweighs its quieter sales energy. Small inferred details matter less than misleading the central legal choice."
+    }
+  ],
+  "coverage": "P1–P7: original full-packet independent review. P8: fresh six-blurb packet, with runtime metadata excluded from blurb text. See provenance.",
+  "provenance": {
+    "original": "reviews/sol61-high.json",
+    "P8_replacement": "reviews-corrected/sol61-high.json",
+    "label_map": "Original blind-key labels restored by author-ID mapping; no preference or evidence content altered."
+  }
+}

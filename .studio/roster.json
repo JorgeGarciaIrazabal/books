@@ -6,54 +6,82 @@
       "description": "Coordinates the writing studio and completes the author’s requested deliverable.",
       "kind": "coordinator",
       "source": ".studio/agents/studio_director.md",
-      "codex_model": "gpt-6-astra",
+      "codex_model": "gpt-6.1-sol",
       "codex_reasoning": "high",
-      "opencode_model": "ollama/kimi-k3:cloud"
+      "opencode_model": "ollama/kimi-k3:cloud#high",
+      "recommendation_status": "provisional-author-approved; reader_advocate prioritizes a different model from the main writer",
+      "opencode_preferred_model": "openrouter/openai/gpt-6.1-sol#high",
+      "opencode_reasoning": "high",
+      "opencode_route_status": "operational Ollama fallback; preferred OpenRouter route blocked by API-key spending cap"
     },
     {
       "id": "acquisitions_editor",
       "description": "Develops a distinctive premise, reader promise, and viable publishing brief.",
       "kind": "creator",
       "source": ".studio/agents/acquisitions_editor.md",
-      "codex_model": "gpt-6-astra",
+      "codex_model": "gpt-6.1-sol",
       "codex_reasoning": "medium",
-      "opencode_model": "ollama/mistral-large-4:cloud"
+      "opencode_model": "ollama/mistral-large-4:cloud#high",
+      "recommendation_status": "provisional-author-approved; reader_advocate prioritizes a different model from the main writer",
+      "opencode_preferred_model": "openrouter/openai/gpt-6.1-sol#medium",
+      "opencode_reasoning": "high",
+      "opencode_route_status": "operational Ollama fallback; preferred OpenRouter route blocked by API-key spending cap",
+      "task_effort_overrides": {
+        "premise_development": "high",
+        "blurb_and_catalog_copy": "medium"
+      }
     },
     {
       "id": "universe_architect",
       "description": "Designs coherent worlds or subject collections with constraints and consequences.",
       "kind": "creator",
       "source": ".studio/agents/universe_architect.md",
-      "codex_model": "gpt-6-astra",
-      "codex_reasoning": "medium",
-      "opencode_model": "ollama/kimi-k3:cloud"
+      "codex_model": "gpt-6.1-sol",
+      "codex_reasoning": "high",
+      "opencode_model": "ollama/kimi-k3:cloud#high",
+      "recommendation_status": "provisional-author-approved; reader_advocate prioritizes a different model from the main writer",
+      "opencode_preferred_model": "openrouter/openai/gpt-6.1-sol#high",
+      "opencode_reasoning": "high",
+      "opencode_route_status": "operational Ollama fallback; preferred OpenRouter route blocked by API-key spending cap"
     },
     {
       "id": "series_showrunner",
       "description": "Designs book-to-book arcs, promises, revelations, and continuity.",
       "kind": "creator",
       "source": ".studio/agents/series_showrunner.md",
-      "codex_model": "gpt-6-astra",
+      "codex_model": "gpt-6.1-sol",
       "codex_reasoning": "high",
-      "opencode_model": "ollama/kimi-k3:cloud"
+      "opencode_model": "ollama/kimi-k3:cloud#high",
+      "recommendation_status": "provisional-author-approved; reader_advocate prioritizes a different model from the main writer",
+      "opencode_preferred_model": "openrouter/openai/gpt-6.1-sol#high",
+      "opencode_reasoning": "high",
+      "opencode_route_status": "operational Ollama fallback; preferred OpenRouter route blocked by API-key spending cap"
     },
     {
       "id": "story_architect",
       "description": "Builds causal plots, scene contracts, and nonfiction argument structures.",
       "kind": "creator",
       "source": ".studio/agents/story_architect.md",
-      "codex_model": "gpt-6-astra",
+      "codex_model": "gpt-6.1-sol",
       "codex_reasoning": "high",
-      "opencode_model": "ollama/kimi-k3:cloud"
+      "opencode_model": "ollama/kimi-k3:cloud#high",
+      "recommendation_status": "provisional-author-approved; reader_advocate prioritizes a different model from the main writer",
+      "opencode_preferred_model": "openrouter/openai/gpt-6.1-sol#high",
+      "opencode_reasoning": "high",
+      "opencode_route_status": "operational Ollama fallback; preferred OpenRouter route blocked by API-key spending cap"
     },
     {
       "id": "character_director",
       "description": "Develops character agency, relationships, arcs, and distinct dialogue.",
       "kind": "creator",
       "source": ".studio/agents/character_director.md",
-      "codex_model": "gpt-6-astra",
-      "codex_reasoning": "medium",
-      "opencode_model": "ollama/mistral-large-4:cloud"
+      "codex_model": "gpt-6.1-sol",
+      "codex_reasoning": "high",
+      "opencode_model": "ollama/mistral-large-4:cloud#high",
+      "recommendation_status": "provisional-author-approved; reader_advocate prioritizes a different model from the main writer",
+      "opencode_preferred_model": "openrouter/openai/gpt-6.1-sol#high",
+      "opencode_reasoning": "high",
+      "opencode_route_status": "operational Ollama fallback; preferred OpenRouter route blocked by API-key spending cap"
     },
     {
       "id": "researcher",
@@ -62,61 +90,88 @@
       "source": ".studio/agents/researcher.md",
       "codex_model": "gpt-6-astra",
       "codex_reasoning": "medium",
-      "opencode_model": "ollama/kimi-k3:cloud"
+      "opencode_model": "ollama/kimi-k3:cloud#high",
+      "recommendation_status": "not benchmarked; existing specialist model family retained",
+      "opencode_reasoning": "high",
+      "opencode_route_status": "existing Ollama family with explicit high effort; not benchmarked for this specialty"
     },
     {
       "id": "drafter",
       "description": "Writes original scenes or nonfiction sections to a scoped creative brief.",
       "kind": "creator",
       "source": ".studio/agents/drafter.md",
-      "codex_model": "gpt-6-astra",
-      "codex_reasoning": "medium",
-      "opencode_model": "ollama/mistral-large-4:cloud"
+      "codex_model": "gpt-6.1-sol",
+      "codex_reasoning": "high",
+      "opencode_model": "ollama/mistral-large-4:cloud#high",
+      "recommendation_status": "provisional-author-approved; reader_advocate prioritizes a different model from the main writer",
+      "opencode_preferred_model": "openrouter/openai/gpt-6.1-sol#high",
+      "opencode_reasoning": "high",
+      "opencode_route_status": "operational Ollama fallback; preferred OpenRouter route blocked by API-key spending cap"
     },
     {
       "id": "developmental_editor",
       "description": "Independently evaluates structure, causality, pacing, and thematic execution.",
       "kind": "reviewer",
       "source": ".studio/agents/developmental_editor.md",
-      "codex_model": "gpt-6-astra",
-      "codex_reasoning": "high",
-      "opencode_model": "ollama/kimi-k3:cloud"
+      "codex_model": "gpt-6.1-sol",
+      "codex_reasoning": "medium",
+      "opencode_model": "ollama/kimi-k3:cloud#high",
+      "recommendation_status": "provisional-author-approved; reader_advocate prioritizes a different model from the main writer",
+      "opencode_preferred_model": "openrouter/openai/gpt-6.1-sol#medium",
+      "opencode_reasoning": "high",
+      "opencode_route_status": "operational Ollama fallback; preferred OpenRouter route blocked by API-key spending cap"
     },
     {
       "id": "line_editor",
       "description": "Improves prose, subtext, rhythm, and precision while preserving voice.",
       "kind": "creator",
       "source": ".studio/agents/line_editor.md",
-      "codex_model": "gpt-6-astra",
-      "codex_reasoning": "medium",
-      "opencode_model": "ollama/mistral-large-4:cloud"
+      "codex_model": "gpt-6.1-sol",
+      "codex_reasoning": "high",
+      "opencode_model": "ollama/mistral-large-4:cloud#high",
+      "recommendation_status": "provisional-author-approved; reader_advocate prioritizes a different model from the main writer",
+      "opencode_preferred_model": "openrouter/openai/gpt-6.1-sol#high",
+      "opencode_reasoning": "high",
+      "opencode_route_status": "operational Ollama fallback; preferred OpenRouter route blocked by API-key spending cap"
     },
     {
       "id": "copy_editor",
       "description": "Checks grammar, usage, mechanics, naming consistency, and citation presentation.",
       "kind": "creator",
       "source": ".studio/agents/copy_editor.md",
-      "codex_model": "gpt-6-astra",
-      "codex_reasoning": "medium",
-      "opencode_model": "ollama/mistral-large-4:cloud"
+      "codex_model": "gpt-6.1-sol",
+      "codex_reasoning": "high",
+      "opencode_model": "ollama/mistral-large-4:cloud#high",
+      "recommendation_status": "provisional-author-approved; reader_advocate prioritizes a different model from the main writer",
+      "opencode_preferred_model": "openrouter/openai/gpt-6.1-sol#high",
+      "opencode_reasoning": "high",
+      "opencode_route_status": "operational Ollama fallback; preferred OpenRouter route blocked by API-key spending cap"
     },
     {
       "id": "canon_keeper",
       "description": "Audits accepted facts, chronology, character state, and disclosure boundaries.",
       "kind": "reviewer",
       "source": ".studio/agents/canon_keeper.md",
-      "codex_model": "gpt-6-astra",
-      "codex_reasoning": "medium",
-      "opencode_model": "ollama/kimi-k3:cloud"
+      "codex_model": "gpt-6.1-sol",
+      "codex_reasoning": "high",
+      "opencode_model": "ollama/kimi-k3:cloud#high",
+      "recommendation_status": "provisional-author-approved; reader_advocate prioritizes a different model from the main writer",
+      "opencode_preferred_model": "openrouter/openai/gpt-6.1-sol#high",
+      "opencode_reasoning": "high",
+      "opencode_route_status": "operational Ollama fallback; preferred OpenRouter route blocked by API-key spending cap"
     },
     {
       "id": "reader_advocate",
       "description": "Reports independent reader experience, genre satisfaction, and representation risks.",
       "kind": "reviewer",
       "source": ".studio/agents/reader_advocate.md",
-      "codex_model": "gpt-6-astra",
-      "codex_reasoning": "medium",
-      "opencode_model": "ollama/mistral-large-4:cloud"
+      "codex_model": "gpt-6-sol",
+      "codex_reasoning": "high",
+      "opencode_model": "ollama/kimi-k3:cloud#high",
+      "recommendation_status": "provisional-author-approved; reader_advocate prioritizes a different model from the main writer",
+      "opencode_preferred_model": "openrouter/openai/gpt-6-sol#high",
+      "opencode_reasoning": "high",
+      "opencode_route_status": "operational Kimi fallback: different from active Mistral drafter; preferred OpenRouter Sol route blocked by spending cap"
     },
     {
       "id": "nonfiction_editor",
@@ -125,7 +180,10 @@
       "source": ".studio/agents/nonfiction_editor.md",
       "codex_model": "gpt-6-astra",
       "codex_reasoning": "high",
-      "opencode_model": "ollama/kimi-k3:cloud"
+      "opencode_model": "ollama/kimi-k3:cloud#high",
+      "recommendation_status": "not benchmarked; existing specialist model family retained",
+      "opencode_reasoning": "high",
+      "opencode_route_status": "existing Ollama family with explicit high effort; not benchmarked for this specialty"
     },
     {
       "id": "production_editor",
@@ -134,7 +192,10 @@
       "source": ".studio/agents/production_editor.md",
       "codex_model": "gpt-6-astra",
       "codex_reasoning": "medium",
-      "opencode_model": "ollama/kimi-k3:cloud"
+      "opencode_model": "ollama/kimi-k3:cloud#high",
+      "recommendation_status": "not benchmarked; existing specialist model family retained",
+      "opencode_reasoning": "high",
+      "opencode_route_status": "existing Ollama family with explicit high effort; not benchmarked for this specialty"
     },
     {
       "id": "art_director",
@@ -143,7 +204,57 @@
       "source": ".studio/agents/art_director.md",
       "codex_model": "gpt-6-astra",
       "codex_reasoning": "medium",
-      "opencode_model": "ollama/mistral-large-4:cloud"
+      "opencode_model": "ollama/mistral-large-4:cloud#high",
+      "recommendation_status": "not benchmarked; existing specialist model family retained",
+      "opencode_reasoning": "high",
+      "opencode_route_status": "existing Ollama family with explicit high effort; not benchmarked for this specialty"
+    },
+    {
+      "id": "illustrator",
+      "description": "Creates coherent narrative illustrations from references and scoped scene commissions.",
+      "kind": "creator",
+      "source": ".studio/agents/illustrator.md",
+      "codex_model": "gpt-6-astra",
+      "codex_reasoning": "medium",
+      "opencode_model": "ollama/mistral-large-4:cloud#high",
+      "opencode_reasoning": "high",
+      "recommendation_status": "new specialty; unbenchmarked configuration using existing studio model families",
+      "opencode_route_status": "operational Ollama fallback family; this specialty has not been runtime-benchmarked",
+      "image_tool_note": "Language-model role assignment does not select or certify an image-generation model."
+    },
+    {
+      "id": "illustration_reviewer",
+      "description": "Independently checks story images and final illustrated layouts against prose and visual constraints.",
+      "kind": "reviewer",
+      "source": ".studio/agents/illustration_reviewer.md",
+      "codex_model": "gpt-6.1-sol",
+      "codex_reasoning": "high",
+      "opencode_model": "ollama/kimi-k3:cloud#high",
+      "opencode_reasoning": "high",
+      "recommendation_status": "new specialty; unbenchmarked configuration using existing studio model families",
+      "opencode_route_status": "operational Ollama fallback family; this specialty has not been runtime-benchmarked",
+      "image_tool_note": "Language-model role assignment does not select or certify an image-generation model."
     }
-  ]
+  ],
+  "model_policy": {
+    "status": "provisional-author-approved with incomplete tests",
+    "default_codex_model": "gpt-6.1-sol",
+    "default_codex_effort": "high",
+    "same_model_independence_limit": "developmental_editor uses Sol 6.1 medium in a fresh session; reader_advocate uses Sol 6 high for a different-model check",
+    "additional_review_route": "OpenCode canon_keeper may be explicitly run with ollama/kimi-k3:cloud#high; never call that a native Codex model",
+    "opencode_availability": "Ollama fallbacks active because the existing OpenRouter key returned 403 spending-cap exceeded. Preferred routes recorded, not silently activated.",
+    "instruction_evidence": "Partial A/B data does not establish the long proposed packages as superior. Only concise low-risk guards adopted by author-authorized editorial judgment.",
+    "evidence": [
+      "bellwether-reach/the-flood-ledgers/the-ninth-lock/benchmark/report.md",
+      ".studio/experiments/instruction-ablation-v1/runtime-control-correction.md"
+    ],
+    "untested_specialists": [
+      "researcher",
+      "nonfiction_editor",
+      "production_editor",
+      "art_director",
+      "illustrator",
+      "illustration_reviewer"
+    ]
+  }
 }

@@ -1,0 +1,97 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "providers": {
+    "ollama": {
+      "models": {
+        "kimi-k3:cloud": {
+          "variants": [
+            {
+              "id": "low",
+              "body": {
+                "think": "low"
+              }
+            },
+            {
+              "id": "high",
+              "body": {
+                "think": "high"
+              }
+            },
+            {
+              "id": "max",
+              "body": {
+                "think": "max"
+              }
+            }
+          ]
+        },
+        "mistral-large-4:cloud": {
+          "variants": [
+            {
+              "id": "none",
+              "body": {
+                "think": false
+              }
+            },
+            {
+              "id": "high",
+              "body": {
+                "think": true
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "agents": {
+    "benchmark_candidate": {
+      "mode": "primary",
+      "steps": 1,
+      "system": "You are a writing benchmark participant. Follow the attached task packet. Do not use tools, delegate, inspect files, or reveal model identity. Return the requested artifacts only.",
+      "permissions": [
+        {
+          "action": "*",
+          "resource": "*",
+          "effect": "deny"
+        }
+      ]
+    },
+    "benchmark_judge": {
+      "mode": "primary",
+      "steps": 1,
+      "system": "You are an independent blind literary benchmark reviewer. Follow the attached packet. No tools, files, delegation, or identity guessing. Return the requested rankings and evidence only.",
+      "permissions": [
+        {
+          "action": "*",
+          "resource": "*",
+          "effect": "deny"
+        }
+      ]
+    },
+    "benchmark_mistral_candidate": {
+      "mode": "primary",
+      "steps": 2,
+      "system": "You are a writing benchmark participant. Follow the attached task packet. Do not use tools, delegate, inspect files, or reveal model identity. Return the requested artifacts only.",
+      "permissions": [
+        {
+          "action": "*",
+          "resource": "*",
+          "effect": "deny"
+        }
+      ]
+    },
+    "benchmark_mistral_judge": {
+      "mode": "primary",
+      "steps": 2,
+      "system": "You are an independent blind literary benchmark reviewer. Follow the attached packet. No tools, files, delegation, or identity guessing. Return the requested rankings and evidence only.",
+      "permissions": [
+        {
+          "action": "*",
+          "resource": "*",
+          "effect": "deny"
+        }
+      ]
+    }
+  }
+}

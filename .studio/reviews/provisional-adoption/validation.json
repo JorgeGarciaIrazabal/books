@@ -1,0 +1,183 @@
+{
+  "status": "pass",
+  "date": "2026-10-25",
+  "role_count": 16,
+  "roles": [
+    {
+      "id": "studio_director",
+      "codex_model": "gpt-6.1-sol",
+      "codex_effort": "high",
+      "opencode_loaded": "ollama/kimi-k3:cloud#high",
+      "unchanged_nonmodel_native_settings": true
+    },
+    {
+      "id": "acquisitions_editor",
+      "codex_model": "gpt-6.1-sol",
+      "codex_effort": "medium",
+      "opencode_loaded": "ollama/mistral-large-4:cloud#high",
+      "unchanged_nonmodel_native_settings": true
+    },
+    {
+      "id": "universe_architect",
+      "codex_model": "gpt-6.1-sol",
+      "codex_effort": "high",
+      "opencode_loaded": "ollama/kimi-k3:cloud#high",
+      "unchanged_nonmodel_native_settings": true
+    },
+    {
+      "id": "series_showrunner",
+      "codex_model": "gpt-6.1-sol",
+      "codex_effort": "high",
+      "opencode_loaded": "ollama/kimi-k3:cloud#high",
+      "unchanged_nonmodel_native_settings": true
+    },
+    {
+      "id": "story_architect",
+      "codex_model": "gpt-6.1-sol",
+      "codex_effort": "high",
+      "opencode_loaded": "ollama/kimi-k3:cloud#high",
+      "unchanged_nonmodel_native_settings": true
+    },
+    {
+      "id": "character_director",
+      "codex_model": "gpt-6.1-sol",
+      "codex_effort": "high",
+      "opencode_loaded": "ollama/mistral-large-4:cloud#high",
+      "unchanged_nonmodel_native_settings": true
+    },
+    {
+      "id": "researcher",
+      "codex_model": "gpt-6-astra",
+      "codex_effort": "medium",
+      "opencode_loaded": "ollama/kimi-k3:cloud#high",
+      "unchanged_nonmodel_native_settings": true
+    },
+    {
+      "id": "drafter",
+      "codex_model": "gpt-6.1-sol",
+      "codex_effort": "high",
+      "opencode_loaded": "ollama/mistral-large-4:cloud#high",
+      "unchanged_nonmodel_native_settings": true
+    },
+    {
+      "id": "developmental_editor",
+      "codex_model": "gpt-6.1-sol",
+      "codex_effort": "medium",
+      "opencode_loaded": "ollama/kimi-k3:cloud#high",
+      "unchanged_nonmodel_native_settings": true
+    },
+    {
+      "id": "line_editor",
+      "codex_model": "gpt-6.1-sol",
+      "codex_effort": "high",
+      "opencode_loaded": "ollama/mistral-large-4:cloud#high",
+      "unchanged_nonmodel_native_settings": true
+    },
+    {
+      "id": "copy_editor",
+      "codex_model": "gpt-6.1-sol",
+      "codex_effort": "high",
+      "opencode_loaded": "ollama/mistral-large-4:cloud#high",
+      "unchanged_nonmodel_native_settings": true
+    },
+    {
+      "id": "canon_keeper",
+      "codex_model": "gpt-6.1-sol",
+      "codex_effort": "high",
+      "opencode_loaded": "ollama/kimi-k3:cloud#high",
+      "unchanged_nonmodel_native_settings": true
+    },
+    {
+      "id": "reader_advocate",
+      "codex_model": "gpt-6-sol",
+      "codex_effort": "high",
+      "opencode_loaded": "ollama/kimi-k3:cloud#high",
+      "unchanged_nonmodel_native_settings": true
+    },
+    {
+      "id": "nonfiction_editor",
+      "codex_model": "gpt-6-astra",
+      "codex_effort": "high",
+      "opencode_loaded": "ollama/kimi-k3:cloud#high",
+      "unchanged_nonmodel_native_settings": true
+    },
+    {
+      "id": "production_editor",
+      "codex_model": "gpt-6-astra",
+      "codex_effort": "medium",
+      "opencode_loaded": "ollama/kimi-k3:cloud#high",
+      "unchanged_nonmodel_native_settings": true
+    },
+    {
+      "id": "art_director",
+      "codex_model": "gpt-6-astra",
+      "codex_effort": "medium",
+      "opencode_loaded": "ollama/mistral-large-4:cloud#high",
+      "unchanged_nonmodel_native_settings": true
+    }
+  ],
+  "native_registry_method": "opencode api agent.list with explicit x-opencode-directory header; no model inference",
+  "utility_tests": {
+    "command": "python3 -m unittest discover -s tests -v",
+    "passed": 19
+  },
+  "structure_check": {
+    "command": "python3 tools/studio.py check",
+    "books": 1,
+    "errors": 0,
+    "note": "benchmark book has no source chapters"
+  },
+  "git_diff_check": "passed",
+  "closed_experiment": {
+    "complete_candidates": 15,
+    "valid_peer_reviews": 1,
+    "unfinished_tasks": "cancelled"
+  },
+  "limitations": [
+    "No successful OpenRouter Sol inference: connected key spending cap returned HTTP 403.",
+    "Independent adoption-audit and documentation workers hit a usage limit; parent completed validation and documentation.",
+    "A/B experiment incomplete; no full aggregate instruction verdict."
+  ],
+  "changed_live_paths": [
+    ".codex/agents/acquisitions_editor.toml",
+    ".codex/agents/canon_keeper.toml",
+    ".codex/agents/character_director.toml",
+    ".codex/agents/copy_editor.toml",
+    ".codex/agents/developmental_editor.toml",
+    ".codex/agents/drafter.toml",
+    ".codex/agents/line_editor.toml",
+    ".codex/agents/reader_advocate.toml",
+    ".codex/agents/series_showrunner.toml",
+    ".codex/agents/story_architect.toml",
+    ".codex/agents/studio_director.toml",
+    ".codex/agents/universe_architect.toml",
+    ".codex/config.toml",
+    ".opencode/agents/acquisitions_editor.md",
+    ".opencode/agents/art_director.md",
+    ".opencode/agents/canon_keeper.md",
+    ".opencode/agents/character_director.md",
+    ".opencode/agents/copy_editor.md",
+    ".opencode/agents/developmental_editor.md",
+    ".opencode/agents/drafter.md",
+    ".opencode/agents/line_editor.md",
+    ".opencode/agents/nonfiction_editor.md",
+    ".opencode/agents/production_editor.md",
+    ".opencode/agents/reader_advocate.md",
+    ".opencode/agents/researcher.md",
+    ".opencode/agents/series_showrunner.md",
+    ".opencode/agents/story_architect.md",
+    ".opencode/agents/studio_director.md",
+    ".opencode/agents/universe_architect.md",
+    ".studio/agents/canon_keeper.md",
+    ".studio/agents/drafter.md",
+    ".studio/agents/story_architect.md",
+    ".studio/agents/studio_director.md",
+    ".studio/roster.json",
+    ".studio/workflow.md",
+    "AGENTS.md",
+    "README.md",
+    "docs/model-routing.md",
+    "docs/tooling.md",
+    "opencode.json"
+  ]
+}

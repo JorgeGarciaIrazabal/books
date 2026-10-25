@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "mila-and-the-missing-moon",
+  "universe": "willow-lane",
+  "series": "standalone",
+  "title": "Mila and the Missing Moon",
+  "kind": "fiction",
+  "stage": "production",
+  "language": "en",
+  "chapters": [
+    "manuscript/001-the-empty-table.md",
+    "manuscript/002-something-white.md",
+    "manuscript/003-the-wrong-question.md",
+    "manuscript/004-a-wheel-with-a-bite.md",
+    "manuscript/005-rain-on-the-notebook.md",
+    "manuscript/006-the-map-that-wasnt.md",
+    "manuscript/007-boxes-boxes.md",
+    "manuscript/008-start-again.md",
+    "manuscript/009-the-other-side.md",
+    "manuscript/010-a-moon-with-a-scar.md",
+    "manuscript/011-one-small-light.md",
+    "manuscript/012-the-last-page.md"
+  ],
+  "word_count": 7464,
+  "delivery_status": "complete-reading-edition",
+  "reading_edition": {
+    "pages": 50,
+    "story_pages": 48,
+    "trim_inches": [
+      7,
+      10
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "threads": [
+    {
+      "id": "THR-0001",
+      "setup": "Boot contains a storm, pages 1–2",
+      "payoff": "Other boot contains a rainbow, page 30",
+      "status": "resolved-in-draft"
+    },
+    {
+      "id": "THR-0002",
+      "setup": "Family beyond hill and sunset deadline, page 3",
+      "payoff": "Answering chorus and reunion, pages 26–27",
+      "status": "resolved-in-draft"
+    },
+    {
+      "id": "THR-0003",
+      "setup": "Kite and mitten, page 6",
+      "payoff": "Launch and jump, pages 23–27; damp mitten keepsake, pages 28–29",
+      "status": "resolved-in-draft"
+    },
+    {
+      "id": "THR-0004",
+      "setup": "Wrong-sounding thunder, pages 11–12",
+      "payoff": "Voluntary band participation and personal laughter, pages 14–18; family’s varied sounds, page 26",
+      "status": "resolved-in-draft"
+    },
+    {
+      "id": "THR-0005",
+      "setup": "Grumble chooses the beat, page 14",
+      "payoff": "Rain, garden procession, support at leap, bedtime greeting, pages 17–20, 26, 30",
+      "status": "resolved-in-draft"
+    }
+  ]
+}

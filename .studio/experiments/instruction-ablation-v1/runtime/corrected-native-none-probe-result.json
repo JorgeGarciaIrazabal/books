@@ -1,0 +1,14 @@
+{
+  "session": "ses_e8f763ddeffe3pjTYX10wIWb7z",
+  "answer": "READY",
+  "configured_variant": "none",
+  "request_field": "reasoning_effort",
+  "reasoning_characters": 0,
+  "actual_model_metadata": [
+    {
+      "id": "mistral-large-4:cloud",
+      "providerID": "ollama",
+      "variant": "none"
+    }
+  ]
+}

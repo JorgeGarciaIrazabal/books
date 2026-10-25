@@ -1,0 +1,313 @@
+{
+  "schema_version": 1,
+  "tasks": [
+    {
+      "id": "TASK-0001",
+      "role": "drafter",
+      "owner": "/root/draft_mila",
+      "status": "done",
+      "source_snapshot": {
+        "brief.md": "73782d70d9402c491fa4da4def841e3e8f2b3e8a29695e945dfb9ac6b4ab3122",
+        "style.md": "cefbb45b5d94d2b2d79b5d08a90012acc6137b75f963b8cd23c708baa8150adc",
+        "outline.md": "1bb7b59ec29427a810b1f6877939b207bdf785bcdded4e687cae9c40bef24bd0",
+        "book.json": "177ccca12502f6f8ff74f97f8137d9f5b9f801820afc931a9c7b10af3e83cb1a"
+      },
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "outline.md",
+        "book.json"
+      ],
+      "allowed_writes": [
+        "manuscript/001-the-empty-table.md",
+        "manuscript/002-something-white.md",
+        "manuscript/003-the-wrong-question.md",
+        "manuscript/004-a-wheel-with-a-bite.md",
+        "manuscript/005-rain-on-the-notebook.md",
+        "manuscript/006-the-map-that-wasnt.md",
+        "manuscript/007-boxes-boxes.md",
+        "manuscript/008-start-again.md",
+        "manuscript/009-the-other-side.md",
+        "manuscript/010-a-moon-with-a-scar.md",
+        "manuscript/011-one-small-light.md",
+        "manuscript/012-the-last-page.md"
+      ],
+      "deliverable": "Full sequential twelve-chapter manuscript, after chapter-one sample review",
+      "acceptance": [
+        "Forty-eight designed story pages",
+        "Readable aloud for age eight",
+        "Fair complete mystery",
+        "7,000–8,500 story words target"
+      ],
+      "budget": {
+        "max_rounds": 2,
+        "max_output_words": 9000,
+        "max_tool_calls": 45
+      },
+      "dependencies": [],
+      "result": "Twelve chapters; 7,464 story words; 48 page units; creator whole-draft pass complete. No canon acceptance."
+    },
+    {
+      "id": "TASK-0002",
+      "role": "reader_advocate",
+      "owner": "/root/read_mila",
+      "status": "done",
+      "source_snapshot": "SHA256 in review report",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "manuscript/001-the-empty-table.md"
+      ],
+      "allowed_writes": [
+        "reviews/sample-reader.md"
+      ],
+      "deliverable": "Fresh independent sample reading",
+      "acceptance": [
+        "Full sample coverage",
+        "Concrete evidence",
+        "No outline or prior verdict supplied"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_output_words": 800,
+        "max_tool_calls": 10
+      },
+      "dependencies": [
+        "TASK-0001 chapter-one sample"
+      ],
+      "deliverable_path": "reviews/sample-reader.md"
+    },
+    {
+      "id": "TASK-0003",
+      "role": "reader_advocate",
+      "owner": "/root/read_full_mila",
+      "status": "done",
+      "source_snapshot": {
+        "manuscript/001-the-empty-table.md": "8e84cc0a31490f9fee9d604cebc357a7b7fdcb9e90f195fe2522b467e60073d0",
+        "manuscript/002-something-white.md": "5355e00c50956b9753d41a71338b938b69d4813d414443f79a547c2816f9b12d",
+        "manuscript/003-the-wrong-question.md": "3d9f39d35b1045836de6dcf0bd55bf2fc43ec139d7c1cf25a5b66d4c7ca0f6a3",
+        "manuscript/004-a-wheel-with-a-bite.md": "d9b0113782a8ed2050339a8af0136065b9f366c645ca7d2d34fb808444091018",
+        "manuscript/005-rain-on-the-notebook.md": "cda52344f69e5974969f59744c4e6afe5b777c903eb60c080e409156c47b5306",
+        "manuscript/006-the-map-that-wasnt.md": "830a72ff3696d82a75af704ce35664f7f26c7c670114d65a885ec138839fb6a3",
+        "manuscript/007-boxes-boxes.md": "4abc7193149dff9f90f87a71c21639d6c71f6b5fc46c66d373d810e3e88c600d",
+        "manuscript/008-start-again.md": "9ec051576b50186b9cfa0fd83e270692d4f7a86c133444e54a2f5b03edf4df6e",
+        "manuscript/009-the-other-side.md": "c517dbfd2b8ff3449e48820688ea935294f4fa54c7a85aaa9a52a2a97beddc60",
+        "manuscript/010-a-moon-with-a-scar.md": "b16f4b7ab552a53688ffe2183b9850ade5a66e0c05799c4c5d2c1a370e6be6d0",
+        "manuscript/011-one-small-light.md": "8b91c50782c21ddffb1bad00670506bd64a901cda22c4d0709a937391ee9ec05",
+        "manuscript/012-the-last-page.md": "0dff4355a70a31159733a351a61774bb88479a075964f5fb705f5894dfa8b43b"
+      },
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "book.json",
+        "manuscript/001-the-empty-table.md",
+        "manuscript/002-something-white.md",
+        "manuscript/003-the-wrong-question.md",
+        "manuscript/004-a-wheel-with-a-bite.md",
+        "manuscript/005-rain-on-the-notebook.md",
+        "manuscript/006-the-map-that-wasnt.md",
+        "manuscript/007-boxes-boxes.md",
+        "manuscript/008-start-again.md",
+        "manuscript/009-the-other-side.md",
+        "manuscript/010-a-moon-with-a-scar.md",
+        "manuscript/011-one-small-light.md",
+        "manuscript/012-the-last-page.md"
+      ],
+      "allowed_writes": [
+        "reviews/full-reader.md"
+      ],
+      "deliverable": "Fresh independent whole-manuscript reading",
+      "acceptance": [
+        "All twelve chapters read in full",
+        "No outline, handoff, prior reviews or drafter rationale supplied",
+        "Evidence-backed assessment with exact hashes",
+        "Cumulative pacing, fair clues, accessibility and emotional closure assessed"
+      ],
+      "budget": {
+        "max_rounds": 2,
+        "max_input_chars": 90000,
+        "max_output_words": 1500,
+        "max_tool_calls": 20
+      },
+      "dependencies": [
+        "TASK-0001"
+      ],
+      "deliverable_path": "reviews/full-reader.md",
+      "result": "All twelve chapters read in full; no concrete revision required. One optional spatial orientation suggestion reserved for possible human read-aloud testing."
+    },
+    {
+      "id": "TASK-0004",
+      "role": "drafter",
+      "owner": "native OpenCode drafter, session ses_e8ce2502affeqvQl1QRop4i6Px, ollama/mistral-large-4:cloud#high",
+      "status": "done",
+      "source_snapshot": {
+        "manuscript/001-the-empty-table.md": "8e84cc0a31490f9fee9d604cebc357a7b7fdcb9e90f195fe2522b467e60073d0",
+        "manuscript/002-something-white.md": "5355e00c50956b9753d41a71338b938b69d4813d414443f79a547c2816f9b12d",
+        "manuscript/003-the-wrong-question.md": "3d9f39d35b1045836de6dcf0bd55bf2fc43ec139d7c1cf25a5b66d4c7ca0f6a3",
+        "manuscript/004-a-wheel-with-a-bite.md": "d9b0113782a8ed2050339a8af0136065b9f366c645ca7d2d34fb808444091018",
+        "manuscript/005-rain-on-the-notebook.md": "cda52344f69e5974969f59744c4e6afe5b777c903eb60c080e409156c47b5306",
+        "manuscript/006-the-map-that-wasnt.md": "830a72ff3696d82a75af704ce35664f7f26c7c670114d65a885ec138839fb6a3",
+        "manuscript/007-boxes-boxes.md": "4abc7193149dff9f90f87a71c21639d6c71f6b5fc46c66d373d810e3e88c600d",
+        "manuscript/008-start-again.md": "9ec051576b50186b9cfa0fd83e270692d4f7a86c133444e54a2f5b03edf4df6e",
+        "manuscript/009-the-other-side.md": "c517dbfd2b8ff3449e48820688ea935294f4fa54c7a85aaa9a52a2a97beddc60",
+        "manuscript/010-a-moon-with-a-scar.md": "b16f4b7ab552a53688ffe2183b9850ade5a66e0c05799c4c5d2c1a370e6be6d0",
+        "manuscript/011-one-small-light.md": "8b91c50782c21ddffb1bad00670506bd64a901cda22c4d0709a937391ee9ec05",
+        "manuscript/012-the-last-page.md": "0dff4355a70a31159733a351a61774bb88479a075964f5fb705f5894dfa8b43b"
+      },
+      "inputs": [
+        "production/spanish-brief.md",
+        "brief.md",
+        "style.md",
+        "book.json",
+        "manuscript/001-the-empty-table.md",
+        "manuscript/002-something-white.md",
+        "manuscript/003-the-wrong-question.md",
+        "manuscript/004-a-wheel-with-a-bite.md",
+        "manuscript/005-rain-on-the-notebook.md",
+        "manuscript/006-the-map-that-wasnt.md",
+        "manuscript/007-boxes-boxes.md",
+        "manuscript/008-start-again.md",
+        "manuscript/009-the-other-side.md",
+        "manuscript/010-a-moon-with-a-scar.md",
+        "manuscript/011-one-small-light.md",
+        "manuscript/012-the-last-page.md"
+      ],
+      "allowed_writes": [
+        "manuscript/es/001-the-empty-table.md",
+        "manuscript/es/002-something-white.md",
+        "manuscript/es/003-the-wrong-question.md",
+        "manuscript/es/004-a-wheel-with-a-bite.md",
+        "manuscript/es/005-rain-on-the-notebook.md",
+        "manuscript/es/006-the-map-that-wasnt.md",
+        "manuscript/es/007-boxes-boxes.md",
+        "manuscript/es/008-start-again.md",
+        "manuscript/es/009-the-other-side.md",
+        "manuscript/es/010-a-moon-with-a-scar.md",
+        "manuscript/es/011-one-small-light.md",
+        "manuscript/es/012-the-last-page.md",
+        "manuscript/es/read-together.md"
+      ],
+      "deliverable": "Complete Spanish translation of twelve chapters and optional questions, in sequential bounded batches",
+      "acceptance": [
+        "Actual Mistral Large 4 invocation recorded",
+        "All scenes and clues retained",
+        "Accessible natural Spanish for parent read-aloud",
+        "English manuscript and exports preserved"
+      ],
+      "budget": {
+        "max_rounds": 2,
+        "max_tool_calls_per_batch": 40,
+        "max_batches": 4
+      },
+      "dependencies": [],
+      "result": "Complete twelve-chapter Spanish translation plus question page, followed by one targeted native Mistral correction pass. Coordinator moved one opening question mark in the supplementary page after the pass.",
+      "budget_deviation": "Final native pass completed 59 tool calls against a requested 40-tool cap; batched edit results had already completed when observed. No further Mistral turn was started. Other batches stayed under the cap. Native JSONL logs preserve actual counts; this cap was not mechanically enforced."
+    },
+    {
+      "id": "TASK-0005",
+      "role": "copy_editor",
+      "owner": "/root/spanish_translation_review, native copy_editor (gpt-6.1-sol high)",
+      "status": "done",
+      "source_snapshot": {
+        "manuscript/001-the-empty-table.md": "8e84cc0a31490f9fee9d604cebc357a7b7fdcb9e90f195fe2522b467e60073d0",
+        "manuscript/002-something-white.md": "5355e00c50956b9753d41a71338b938b69d4813d414443f79a547c2816f9b12d",
+        "manuscript/003-the-wrong-question.md": "3d9f39d35b1045836de6dcf0bd55bf2fc43ec139d7c1cf25a5b66d4c7ca0f6a3",
+        "manuscript/004-a-wheel-with-a-bite.md": "d9b0113782a8ed2050339a8af0136065b9f366c645ca7d2d34fb808444091018",
+        "manuscript/005-rain-on-the-notebook.md": "cda52344f69e5974969f59744c4e6afe5b777c903eb60c080e409156c47b5306",
+        "manuscript/006-the-map-that-wasnt.md": "830a72ff3696d82a75af704ce35664f7f26c7c670114d65a885ec138839fb6a3",
+        "manuscript/007-boxes-boxes.md": "4abc7193149dff9f90f87a71c21639d6c71f6b5fc46c66d373d810e3e88c600d",
+        "manuscript/008-start-again.md": "9ec051576b50186b9cfa0fd83e270692d4f7a86c133444e54a2f5b03edf4df6e",
+        "manuscript/009-the-other-side.md": "c517dbfd2b8ff3449e48820688ea935294f4fa54c7a85aaa9a52a2a97beddc60",
+        "manuscript/010-a-moon-with-a-scar.md": "b16f4b7ab552a53688ffe2183b9850ade5a66e0c05799c4c5d2c1a370e6be6d0",
+        "manuscript/011-one-small-light.md": "8b91c50782c21ddffb1bad00670506bd64a901cda22c4d0709a937391ee9ec05",
+        "manuscript/012-the-last-page.md": "0dff4355a70a31159733a351a61774bb88479a075964f5fb705f5894dfa8b43b",
+        "manuscript/es/001-the-empty-table.md": "7518f5c34b81f7f6aed2f795bfcb152f5a8a4051ef4279263e42cffa9e00141f",
+        "manuscript/es/002-something-white.md": "26e8471f5f0f5be4788e3059a8faf1df0e6c6bda5a1edb26058aa6dee66e6eda",
+        "manuscript/es/003-the-wrong-question.md": "f341643c62c678590632c7aadcb5600a4d40c2d2f751b162ea757b5971d3341e",
+        "manuscript/es/004-a-wheel-with-a-bite.md": "6c81a0720ca4bba0f57c4827fcac7e6f9a8626a86073c1250ad6553c26803033",
+        "manuscript/es/005-rain-on-the-notebook.md": "8ed9b1d0480bbab38abe57ab92d1cbbcb49249790451b73a27445d5169fedfa5",
+        "manuscript/es/006-the-map-that-wasnt.md": "79ee0cc0f6e7d1f9af02a0d1d68016a6ada8d81a2d3343b85f5a09238b51f2d7",
+        "manuscript/es/007-boxes-boxes.md": "43ba401eebbf775cb6492d6b44015a926a159ca12f6bace687a04f8d9fca6890",
+        "manuscript/es/008-start-again.md": "6efab70669caead8d9c3d5b6560d8f7f2fe48e47956097801ec0f4ab68c4a258",
+        "manuscript/es/009-the-other-side.md": "130980b49bdf76f6ce91d88d36f3597d50e4d5df459dcb147703044c8288e777",
+        "manuscript/es/010-a-moon-with-a-scar.md": "4183cacd9b6f215adde90045c07018e8b50ee64ceccb51c1e4bea303cb52c10b",
+        "manuscript/es/011-one-small-light.md": "272683a8a9f8b4998b304d155f712fa6122f128bc59406f46ff9212095ed3d7a",
+        "manuscript/es/012-the-last-page.md": "84c41ad7bdd490860d9f4db72885863cce80cdac5157d9689afce513a78eeda3",
+        "manuscript/es/read-together.md": "eeface6c137b20208972acc16eea695b32df481131e9876933b2a33689c35f6c"
+      },
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "production/spanish-brief.md",
+        "book.json",
+        "editions/es.json",
+        "manuscript/001-the-empty-table.md",
+        "manuscript/002-something-white.md",
+        "manuscript/003-the-wrong-question.md",
+        "manuscript/004-a-wheel-with-a-bite.md",
+        "manuscript/005-rain-on-the-notebook.md",
+        "manuscript/006-the-map-that-wasnt.md",
+        "manuscript/007-boxes-boxes.md",
+        "manuscript/008-start-again.md",
+        "manuscript/009-the-other-side.md",
+        "manuscript/010-a-moon-with-a-scar.md",
+        "manuscript/011-one-small-light.md",
+        "manuscript/012-the-last-page.md",
+        "manuscript/es/001-the-empty-table.md",
+        "manuscript/es/002-something-white.md",
+        "manuscript/es/003-the-wrong-question.md",
+        "manuscript/es/004-a-wheel-with-a-bite.md",
+        "manuscript/es/005-rain-on-the-notebook.md",
+        "manuscript/es/006-the-map-that-wasnt.md",
+        "manuscript/es/007-boxes-boxes.md",
+        "manuscript/es/008-start-again.md",
+        "manuscript/es/009-the-other-side.md",
+        "manuscript/es/010-a-moon-with-a-scar.md",
+        "manuscript/es/011-one-small-light.md",
+        "manuscript/es/012-the-last-page.md",
+        "manuscript/es/read-together.md"
+      ],
+      "allowed_writes": [
+        "reviews/spanish-translation-review.md",
+        "reviews/spanish-translation-recheck.md"
+      ],
+      "deliverable": "Fresh complete bilingual Spanish translation/comprehension/mechanics audit, without prior verdicts or drafter defense",
+      "acceptance": [
+        "All twelve English and Spanish chapters read fully, plus Spanish question page",
+        "Evidence and exact hashes",
+        "Prioritize concrete mistranslation, continuity and grammar over taste",
+        "No shared record or manuscript edits"
+      ],
+      "budget": {
+        "max_rounds": 2,
+        "max_input_chars": 160000,
+        "max_output_words": 2200,
+        "max_tool_calls": 30,
+        "scope": "One independent initial assessment, followed only by verification of local repairs."
+      },
+      "dependencies": [
+        "TASK-0004 initial complete translation"
+      ],
+      "recheck_source_snapshot": {
+        "manuscript/es/001-the-empty-table.md": "9917a457a5c30143acd47a736b9783233c4d1c2031db733486d0b3d6bff7e5ab",
+        "manuscript/es/002-something-white.md": "bf727550e6829a5baef7b394459d1019a6e3fb9ebbe4e243e9234b8f3187d644",
+        "manuscript/es/003-the-wrong-question.md": "77c6e74632a1eacd5beafcb7cc4868e068286df01f69fc0dcd1cc14d64235f85",
+        "manuscript/es/004-a-wheel-with-a-bite.md": "1040b6ba4e66eead90cb54021c106592dcd64d73ab45db01b50b3595d218cc31",
+        "manuscript/es/005-rain-on-the-notebook.md": "99bf62ad3eed2585120528426a23910294a458c08a2fa99fb104ec8f5dae8cf4",
+        "manuscript/es/006-the-map-that-wasnt.md": "08539125f5228bf48bdccc0f5dd41817e22b7e77d292c97c20d0a69c2e0f8902",
+        "manuscript/es/007-boxes-boxes.md": "ee4ca50b954130e1f963348e2b160f5e1edcc4abe945ecdf2e73e4593171ba69",
+        "manuscript/es/008-start-again.md": "e3505b5c7bbb8b978fc91a780aa21dac1b8cc8cc956fefbcf3b47ea17092b34f",
+        "manuscript/es/009-the-other-side.md": "55718ab6e0cabc7864975fa8c65da3d1d7fbcabea853b662c650e5191d20c5f4",
+        "manuscript/es/010-a-moon-with-a-scar.md": "a640c54a29adf515a4e01b8c5fbab2fcde0bb8360848ebb8f95d3272fee9b3eb",
+        "manuscript/es/011-one-small-light.md": "e7a08bd9f203e96f51f868e8bf7bfd866affece2c94aed06b0e13f1bb5e55726",
+        "manuscript/es/012-the-last-page.md": "940345ef84a70904b91ce126a37df44d7cb68e48849af78738dc945679d468de",
+        "manuscript/es/read-together.md": "631bae5813d3643b96e43800c8f385b4d17fbe5b259daab9e380f2c8f6db2aa1"
+      },
+      "result": "Initial full bilingual review found eight local repair groups; recheck read all final Spanish sources and relevant English passages, resolved all required items, no new material regression. One optional antecedent clarification preserved without change.",
+      "deliverable_paths": [
+        "reviews/spanish-translation-review.md",
+        "reviews/spanish-translation-recheck.md"
+      ]
+    }
+  ]
+}

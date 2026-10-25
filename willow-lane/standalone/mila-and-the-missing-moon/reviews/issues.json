@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "issues": [
+    {
+      "id": "ISS-0001",
+      "type": "continuity-error",
+      "status": "resolved",
+      "source": "reviews/sample-reader.md",
+      "evidence": "Initial chapter 1 asked about taking moon home yesterday despite librarian seeing it this morning.",
+      "resolution": "Initial question changed to moving moon after lunch; final whole-book review found no definite continuity error.",
+      "current_source": "manuscript/001-the-empty-table.md",
+      "current_sha256": "8e84cc0a31490f9fee9d604cebc357a7b7fdcb9e90f195fe2522b467e60073d0"
+    },
+    {
+      "id": "ISS-0002",
+      "type": "optional-accessibility-judgment",
+      "status": "optional-no-change-required",
+      "source": "reviews/full-reader.md",
+      "evidence": "Chapter 6 route reenactment requires listeners to picture table and two paths.",
+      "disposition": "Keep current independently reviewed text. If later human read-aloud reveals confusion, add one orientation beat. Reviewer explicitly classed this as discretionary, not an error.",
+      "current_source": "manuscript/006-the-map-that-wasnt.md",
+      "current_sha256": "830a72ff3696d82a75af704ce35664f7f26c7c670114d65a885ec138839fb6a3"
+    }
+  ]
+}

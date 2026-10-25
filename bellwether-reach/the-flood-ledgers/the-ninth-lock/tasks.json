@@ -1,0 +1,699 @@
+{
+  "schema_version": 1,
+  "tasks": [
+    {
+      "id": "TASK-0001",
+      "role": "writing-benchmark-candidate",
+      "status": "done",
+      "source_snapshot": "d7ae21f632528b9ca96297e5e1dae7c58aabf62e9b471aee5793d36c9a978d0d",
+      "inputs": [
+        "benchmark/packets/candidate.md"
+      ],
+      "allowed_writes": [
+        "benchmark/outputs/sol61-medium.md"
+      ],
+      "deliverable": "Eight phase artifacts with P1\u2013P8 headings",
+      "acceptance": [
+        "Fixed fixture fidelity",
+        "Phase word budgets",
+        "No model identity in artifact",
+        "No shared writes"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 30000,
+        "max_output_words": 3000,
+        "max_tool_calls": 5
+      },
+      "dependencies": [],
+      "owner": "sol61-medium",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "medium"
+    },
+    {
+      "id": "TASK-0002",
+      "role": "writing-benchmark-candidate",
+      "status": "done",
+      "source_snapshot": "d7ae21f632528b9ca96297e5e1dae7c58aabf62e9b471aee5793d36c9a978d0d",
+      "inputs": [
+        "benchmark/packets/candidate.md"
+      ],
+      "allowed_writes": [
+        "benchmark/outputs/sol61-high.md"
+      ],
+      "deliverable": "Eight phase artifacts with P1\u2013P8 headings",
+      "acceptance": [
+        "Fixed fixture fidelity",
+        "Phase word budgets",
+        "No model identity in artifact",
+        "No shared writes"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 30000,
+        "max_output_words": 3000,
+        "max_tool_calls": 5
+      },
+      "dependencies": [],
+      "owner": "sol61-high",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "high"
+    },
+    {
+      "id": "TASK-0003",
+      "role": "writing-benchmark-candidate",
+      "status": "done",
+      "source_snapshot": "d7ae21f632528b9ca96297e5e1dae7c58aabf62e9b471aee5793d36c9a978d0d",
+      "inputs": [
+        "benchmark/packets/candidate.md"
+      ],
+      "allowed_writes": [
+        "benchmark/outputs/sol6-medium.md"
+      ],
+      "deliverable": "Eight phase artifacts with P1\u2013P8 headings",
+      "acceptance": [
+        "Fixed fixture fidelity",
+        "Phase word budgets",
+        "No model identity in artifact",
+        "No shared writes"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 30000,
+        "max_output_words": 3000,
+        "max_tool_calls": 5
+      },
+      "dependencies": [],
+      "owner": "sol6-medium",
+      "model": "gpt-6-sol",
+      "reasoning_effort": "medium"
+    },
+    {
+      "id": "TASK-0004",
+      "role": "writing-benchmark-candidate",
+      "status": "done",
+      "source_snapshot": "d7ae21f632528b9ca96297e5e1dae7c58aabf62e9b471aee5793d36c9a978d0d",
+      "inputs": [
+        "benchmark/packets/candidate.md"
+      ],
+      "allowed_writes": [
+        "benchmark/outputs/sol6-high.md"
+      ],
+      "deliverable": "Eight phase artifacts with P1\u2013P8 headings",
+      "acceptance": [
+        "Fixed fixture fidelity",
+        "Phase word budgets",
+        "No model identity in artifact",
+        "No shared writes"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 30000,
+        "max_output_words": 3000,
+        "max_tool_calls": 5
+      },
+      "dependencies": [],
+      "owner": "sol6-high",
+      "model": "gpt-6-sol",
+      "reasoning_effort": "high"
+    },
+    {
+      "id": "TASK-0005",
+      "role": "writing-benchmark-candidate",
+      "status": "done",
+      "source_snapshot": "d7ae21f632528b9ca96297e5e1dae7c58aabf62e9b471aee5793d36c9a978d0d",
+      "inputs": [
+        "benchmark/packets/candidate.md"
+      ],
+      "allowed_writes": [
+        "benchmark/outputs/kimi-high.md"
+      ],
+      "deliverable": "Eight phase artifacts with P1\u2013P8 headings",
+      "acceptance": [
+        "Fixed fixture fidelity",
+        "Phase word budgets",
+        "No model identity in artifact",
+        "No shared writes"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 30000,
+        "max_output_words": 3000,
+        "max_tool_calls": 5
+      },
+      "dependencies": [],
+      "owner": "kimi-high",
+      "model": "ollama/kimi-k3:cloud",
+      "reasoning_effort": "high"
+    },
+    {
+      "id": "TASK-0006",
+      "role": "writing-benchmark-candidate",
+      "status": "done",
+      "source_snapshot": "d7ae21f632528b9ca96297e5e1dae7c58aabf62e9b471aee5793d36c9a978d0d",
+      "inputs": [
+        "benchmark/packets/candidate.md"
+      ],
+      "allowed_writes": [
+        "benchmark/outputs/kimi-low.md"
+      ],
+      "deliverable": "Eight phase artifacts",
+      "acceptance": [
+        "Fixed inputs",
+        "Word budgets",
+        "No model identity"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_output_words": 3000
+      },
+      "dependencies": [],
+      "owner": "kimi-low",
+      "model": "ollama/kimi-k3:cloud",
+      "reasoning_effort": "low"
+    },
+    {
+      "id": "TASK-0007",
+      "role": "writing-benchmark-candidate",
+      "status": "cancelled",
+      "source_snapshot": "d7ae21f632528b9ca96297e5e1dae7c58aabf62e9b471aee5793d36c9a978d0d",
+      "inputs": [
+        "benchmark/packets/candidate.md"
+      ],
+      "allowed_writes": [
+        "benchmark/outputs/mistral-default.md"
+      ],
+      "deliverable": "Eight phase artifacts",
+      "acceptance": [
+        "Fixed inputs",
+        "Word budgets",
+        "No model identity"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_output_words": 3000
+      },
+      "dependencies": [],
+      "owner": "mistral-default",
+      "model": "ollama/mistral-large-4:cloud",
+      "reasoning_effort": "provider-default-unverified",
+      "note": "Diagnostic default run superseded by explicit none/high before judging; SIGINT sent only to that native CLI process."
+    },
+    {
+      "id": "TASK-0008",
+      "role": "writing-benchmark-candidate",
+      "status": "done",
+      "source_snapshot": "d7ae21f632528b9ca96297e5e1dae7c58aabf62e9b471aee5793d36c9a978d0d",
+      "inputs": [
+        "benchmark/packets/candidate.md"
+      ],
+      "allowed_writes": [
+        "benchmark/outputs/mistral-none.md"
+      ],
+      "deliverable": "Eight phase artifacts",
+      "acceptance": [
+        "Fixed inputs",
+        "Word budgets",
+        "No model identity"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_output_words": 3000
+      },
+      "dependencies": [],
+      "owner": "mistral-none",
+      "model": "ollama/mistral-large-4:cloud",
+      "reasoning_effort": "none"
+    },
+    {
+      "id": "TASK-0009",
+      "role": "writing-benchmark-candidate",
+      "status": "done",
+      "source_snapshot": "d7ae21f632528b9ca96297e5e1dae7c58aabf62e9b471aee5793d36c9a978d0d",
+      "inputs": [
+        "benchmark/packets/candidate.md"
+      ],
+      "allowed_writes": [
+        "benchmark/outputs/mistral-high.md"
+      ],
+      "deliverable": "Eight phase artifacts",
+      "acceptance": [
+        "Fixed inputs",
+        "Word budgets",
+        "No model identity"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_output_words": 3000
+      },
+      "dependencies": [],
+      "owner": "mistral-high",
+      "model": "ollama/mistral-large-4:cloud",
+      "reasoning_effort": "high"
+    },
+    {
+      "id": "TASK-0010",
+      "role": "independent-blind-peer-reviewer",
+      "status": "done",
+      "source_snapshot": "623bd793df9d0baf803fe901987f438a218d3fc7aa19269fd128c4fb5a7c024e",
+      "inputs": [
+        "benchmark/packets/judge-sol61-medium.md"
+      ],
+      "allowed_writes": [
+        "benchmark/reviews/sol61-medium.json"
+      ],
+      "deliverable": "Eight phase ordinal rankings with candidate-specific evidence",
+      "acceptance": [
+        "No exact-model self review",
+        "All six eligible candidates ranked in each phase",
+        "Ties permitted",
+        "Quotes checked against artifact",
+        "Fresh session; no prior verdicts"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 160000,
+        "max_output_words": 4000,
+        "max_tool_calls": 10
+      },
+      "dependencies": [
+        "all-candidates-frozen"
+      ],
+      "owner": "judge-sol61-medium",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "medium",
+      "note": "Full packet read after recovering truncation; nine execution calls plus parent message, as authorized."
+    },
+    {
+      "id": "TASK-0011",
+      "role": "independent-blind-peer-reviewer",
+      "status": "done",
+      "source_snapshot": "7c9adb75abfd78ff7cbcccc9e7ad386c0148a28c577e5e0b50907716b905f602",
+      "inputs": [
+        "benchmark/packets/judge-sol61-high.md"
+      ],
+      "allowed_writes": [
+        "benchmark/reviews/sol61-high.json"
+      ],
+      "deliverable": "Eight phase ordinal rankings with candidate-specific evidence",
+      "acceptance": [
+        "No exact-model self review",
+        "All six eligible candidates ranked in each phase",
+        "Ties permitted",
+        "Quotes checked against artifact",
+        "Fresh session; no prior verdicts"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 160000,
+        "max_output_words": 4000,
+        "max_tool_calls": 10
+      },
+      "dependencies": [
+        "all-candidates-frozen"
+      ],
+      "owner": "judge-sol61-high",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "high",
+      "note": "Full packet read; initial truncation recovered; six calls reported."
+    },
+    {
+      "id": "TASK-0012",
+      "role": "independent-blind-peer-reviewer",
+      "status": "done",
+      "source_snapshot": "08a649f75562e4ecd2001eaa99126c6c981a8d3fb44f05eaae1aec6f01581a26",
+      "inputs": [
+        "benchmark/packets/judge-sol6-medium.md"
+      ],
+      "allowed_writes": [
+        "benchmark/reviews/sol6-medium.json"
+      ],
+      "deliverable": "Eight phase ordinal rankings with candidate-specific evidence",
+      "acceptance": [
+        "No exact-model self review",
+        "All six eligible candidates ranked in each phase",
+        "Ties permitted",
+        "Quotes checked against artifact",
+        "Fresh session; no prior verdicts"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 160000,
+        "max_output_words": 4000,
+        "max_tool_calls": 10
+      },
+      "dependencies": [
+        "all-candidates-frozen"
+      ],
+      "owner": "judge-sol6-medium",
+      "model": "gpt-6-sol",
+      "reasoning_effort": "medium",
+      "note": "Full 1318-line packet read, no other source files; quote capitalization repair reported."
+    },
+    {
+      "id": "TASK-0013",
+      "role": "independent-blind-peer-reviewer",
+      "status": "done",
+      "source_snapshot": "1fdc7fdc8d9604782741b8926664c9f82555b840b46b201610643737f51b1d2d",
+      "inputs": [
+        "benchmark/packets/judge-sol6-high.md"
+      ],
+      "allowed_writes": [
+        "benchmark/reviews/sol6-high.json"
+      ],
+      "deliverable": "Eight phase ordinal rankings with candidate-specific evidence",
+      "acceptance": [
+        "No exact-model self review",
+        "All six eligible candidates ranked in each phase",
+        "Ties permitted",
+        "Quotes checked against artifact",
+        "Fresh session; no prior verdicts"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 160000,
+        "max_output_words": 4000,
+        "max_tool_calls": 10
+      },
+      "dependencies": [
+        "all-candidates-frozen"
+      ],
+      "owner": "judge-sol6-high",
+      "model": "gpt-6-sol",
+      "reasoning_effort": "high",
+      "note": "Complete packet read; ranks and exact quotations validated by reviewer."
+    },
+    {
+      "id": "TASK-0014",
+      "role": "independent-blind-peer-reviewer",
+      "status": "done",
+      "source_snapshot": "a15814584c51c949cd9998d08879b479ac6d1ceee09739fa2502a7b9a6826cd1",
+      "inputs": [
+        "benchmark/packets/judge-kimi-high.md"
+      ],
+      "allowed_writes": [
+        "benchmark/reviews/kimi-high.json"
+      ],
+      "deliverable": "Eight phase ordinal rankings with candidate-specific evidence",
+      "acceptance": [
+        "No exact-model self review",
+        "All six eligible candidates ranked in each phase",
+        "Ties permitted",
+        "Quotes checked against artifact",
+        "Fresh session; no prior verdicts"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 160000,
+        "max_output_words": 4000,
+        "max_tool_calls": 10
+      },
+      "dependencies": [
+        "all-candidates-frozen"
+      ],
+      "owner": "judge-kimi-high",
+      "model": "ollama/kimi-k3:cloud",
+      "reasoning_effort": "high",
+      "note": "Native reviewers may recover truncated reads within ten calls; no extra critique round."
+    },
+    {
+      "id": "TASK-0015",
+      "role": "independent-blind-peer-reviewer",
+      "status": "done",
+      "source_snapshot": "55131e31e3913de177b8da9f65106c73d86afd2ab8eab271928b31a754ea6fc7",
+      "inputs": [
+        "benchmark/packets/judge-kimi-low.md"
+      ],
+      "allowed_writes": [
+        "benchmark/reviews/kimi-low.json"
+      ],
+      "deliverable": "Eight phase ordinal rankings with candidate-specific evidence",
+      "acceptance": [
+        "No exact-model self review",
+        "All six eligible candidates ranked in each phase",
+        "Ties permitted",
+        "Quotes checked against artifact",
+        "Fresh session; no prior verdicts"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 160000,
+        "max_output_words": 4000,
+        "max_tool_calls": 10
+      },
+      "dependencies": [
+        "all-candidates-frozen"
+      ],
+      "owner": "judge-kimi-low",
+      "model": "ollama/kimi-k3:cloud",
+      "reasoning_effort": "low",
+      "note": "Native reviewers may recover truncated reads within ten calls; no extra critique round."
+    },
+    {
+      "id": "TASK-0016",
+      "role": "independent-blind-peer-reviewer",
+      "status": "done",
+      "source_snapshot": "4320db334ee6e0abfdca087df1c53bb52d3eb4db899f46386481acf2f1a18b9c",
+      "inputs": [
+        "benchmark/packets/judge-mistral-none.md"
+      ],
+      "allowed_writes": [
+        "benchmark/reviews/mistral-none.json"
+      ],
+      "deliverable": "Eight phase ordinal rankings with candidate-specific evidence",
+      "acceptance": [
+        "No exact-model self review",
+        "All six eligible candidates ranked in each phase",
+        "Ties permitted",
+        "Quotes checked against artifact",
+        "Fresh session; no prior verdicts"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 160000,
+        "max_output_words": 4000,
+        "max_tool_calls": 10
+      },
+      "dependencies": [
+        "all-candidates-frozen"
+      ],
+      "owner": "judge-mistral-none",
+      "model": "ollama/mistral-large-4:cloud",
+      "reasoning_effort": "none",
+      "note": "Complete native JSON review extracted; optional session metadata export is recorded separately."
+    },
+    {
+      "id": "TASK-0017",
+      "role": "independent-blind-peer-reviewer",
+      "status": "done",
+      "source_snapshot": "5723be0a96f0e9f784d1a0b4d78a8803e9a4d251224bb86bb28282aaf5db11a0",
+      "inputs": [
+        "benchmark/packets/judge-mistral-high.md"
+      ],
+      "allowed_writes": [
+        "benchmark/reviews/mistral-high.json"
+      ],
+      "deliverable": "Eight phase ordinal rankings with candidate-specific evidence",
+      "acceptance": [
+        "No exact-model self review",
+        "All six eligible candidates ranked in each phase",
+        "Ties permitted",
+        "Quotes checked against artifact",
+        "Fresh session; no prior verdicts"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 160000,
+        "max_output_words": 4000,
+        "max_tool_calls": 10
+      },
+      "dependencies": [
+        "all-candidates-frozen"
+      ],
+      "owner": "judge-mistral-high",
+      "model": "ollama/mistral-large-4:cloud",
+      "reasoning_effort": "high",
+      "note": "Native reviewers may recover truncated reads within ten calls; no extra critique round."
+    },
+    {
+      "id": "TASK-0018",
+      "role": "independent-blind-blurb-reviewer",
+      "status": "done",
+      "source_snapshot": "e5e9efab7c80ac3bbb2acc30162b4b7b512218f869d9a56123100f1272d5bb45",
+      "inputs": [
+        "benchmark/packets/blurb-sol61-medium.md"
+      ],
+      "allowed_writes": [
+        "benchmark/reviews-corrected/sol61-medium.json"
+      ],
+      "deliverable": "P8-only ranks and evidence for six blurbs",
+      "acceptance": [
+        "Fresh session",
+        "All six blurbs",
+        "Exact quotations",
+        "No prior verdicts"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_output_words": 800,
+        "max_tool_calls": 5
+      },
+      "dependencies": [
+        "remove-only-runtime-tail"
+      ],
+      "owner": "blurb-sol61-medium",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "medium"
+    },
+    {
+      "id": "TASK-0019",
+      "role": "independent-blind-blurb-reviewer",
+      "status": "done",
+      "source_snapshot": "e5946072a345f828b790b91cf6c1ed53f28f4dcfe14d49377ed51e470e9b2b09",
+      "inputs": [
+        "benchmark/packets/blurb-sol61-high.md"
+      ],
+      "allowed_writes": [
+        "benchmark/reviews-corrected/sol61-high.json"
+      ],
+      "deliverable": "P8-only ranks and evidence for six blurbs",
+      "acceptance": [
+        "Fresh session",
+        "All six blurbs",
+        "Exact quotations",
+        "No prior verdicts"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_output_words": 800,
+        "max_tool_calls": 5
+      },
+      "dependencies": [
+        "remove-only-runtime-tail"
+      ],
+      "owner": "blurb-sol61-high",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "high"
+    },
+    {
+      "id": "TASK-0020",
+      "role": "independent-blind-blurb-reviewer",
+      "status": "done",
+      "source_snapshot": "995419fc9c15cad691b51b6d8bae4ca690a6670c32464b64982bc05c57d7c48e",
+      "inputs": [
+        "benchmark/packets/blurb-sol6-medium.md"
+      ],
+      "allowed_writes": [
+        "benchmark/reviews-corrected/sol6-medium.json"
+      ],
+      "deliverable": "P8-only ranks and evidence for six blurbs",
+      "acceptance": [
+        "Fresh session",
+        "All six blurbs",
+        "Exact quotations",
+        "No prior verdicts"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_output_words": 800,
+        "max_tool_calls": 5
+      },
+      "dependencies": [
+        "remove-only-runtime-tail"
+      ],
+      "owner": "blurb-sol6-medium",
+      "model": "gpt-6-sol",
+      "reasoning_effort": "medium"
+    },
+    {
+      "id": "TASK-0021",
+      "role": "independent-blind-blurb-reviewer",
+      "status": "done",
+      "source_snapshot": "38f53d8eb932ea7e93d1dc550e9e3eb8b15a9f7b91922484e8ee3a14dd981208",
+      "inputs": [
+        "benchmark/packets/blurb-sol6-high.md"
+      ],
+      "allowed_writes": [
+        "benchmark/reviews-corrected/sol6-high.json"
+      ],
+      "deliverable": "P8-only ranks and evidence for six blurbs",
+      "acceptance": [
+        "Fresh session",
+        "All six blurbs",
+        "Exact quotations",
+        "No prior verdicts"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_output_words": 800,
+        "max_tool_calls": 5
+      },
+      "dependencies": [
+        "remove-only-runtime-tail"
+      ],
+      "owner": "blurb-sol6-high",
+      "model": "gpt-6-sol",
+      "reasoning_effort": "high"
+    },
+    {
+      "id": "TASK-0022",
+      "role": "independent-blind-blurb-reviewer",
+      "status": "done",
+      "source_snapshot": "79b5c41cc64a65cd75a05d5d61ce74f55d45c44aacc822f70cb6ef0af7514509",
+      "inputs": [
+        "benchmark/packets/blurb-mistral-none.md"
+      ],
+      "allowed_writes": [
+        "benchmark/reviews-corrected/mistral-none.json"
+      ],
+      "deliverable": "P8-only ranks and evidence for six blurbs",
+      "acceptance": [
+        "Fresh session",
+        "All six blurbs",
+        "Exact quotations",
+        "No prior verdicts"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_output_words": 800,
+        "max_tool_calls": 5
+      },
+      "dependencies": [
+        "remove-only-runtime-tail"
+      ],
+      "owner": "blurb-mistral-none",
+      "model": "ollama/mistral-large-4:cloud",
+      "reasoning_effort": "none"
+    },
+    {
+      "id": "TASK-0023",
+      "role": "independent-blind-blurb-reviewer",
+      "status": "done",
+      "source_snapshot": "e3bf28e76700615dea34586b0775fd26d945676c228ff2807dbaefb5d2e393af",
+      "inputs": [
+        "benchmark/packets/blurb-mistral-high.md"
+      ],
+      "allowed_writes": [
+        "benchmark/reviews-corrected/mistral-high.json"
+      ],
+      "deliverable": "P8-only ranks and evidence for six blurbs",
+      "acceptance": [
+        "Fresh session",
+        "All six blurbs",
+        "Exact quotations",
+        "No prior verdicts"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_output_words": 800,
+        "max_tool_calls": 5
+      },
+      "dependencies": [
+        "remove-only-runtime-tail"
+      ],
+      "owner": "blurb-mistral-high",
+      "model": "ollama/mistral-large-4:cloud",
+      "reasoning_effort": "high"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "id": "standalone",
+  "universe": "willow-lane",
+  "title": "Standalone",
+  "books": [
+    "mila-and-the-missing-moon"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "id": "standalone",
+  "universe": "little-weather",
+  "title": "Standalone",
+  "books": [
+    "nell-and-the-pocket-sized-storm"
+  ]
+}

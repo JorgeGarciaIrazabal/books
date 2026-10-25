@@ -1,0 +1,540 @@
+{
+  "schema_version": 1,
+  "tasks": [
+    {
+      "id": "TASK-0001",
+      "role": "bounded-writing-instruction-test",
+      "status": "done",
+      "source_snapshot": "3b568f2d844a14b97a91ab5fe4962fb1b242bc9be79f380e34f493821377318f",
+      "inputs": [
+        ".studio/experiments/instruction-ablation-v1/packets/sol61-medium-p.md"
+      ],
+      "allowed_writes": [
+        ".studio/experiments/instruction-ablation-v1/outputs/sol61-medium-p.md"
+      ],
+      "deliverable": "Six independent phase artifacts",
+      "acceptance": [
+        "Fixed fixture fidelity",
+        "Exact headings",
+        "Word budgets",
+        "No shared writes or model/arm identity"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 26000,
+        "max_output_words": 1800,
+        "max_tool_calls": 6
+      },
+      "dependencies": [],
+      "owner": "sol61-medium-p",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "medium"
+    },
+    {
+      "id": "TASK-0002",
+      "role": "bounded-writing-instruction-test",
+      "status": "done",
+      "source_snapshot": "0f382022415c94053bb2d429b5ce03e30ff8da4f5e28a06d4dcb1307d351ea11",
+      "inputs": [
+        ".studio/experiments/instruction-ablation-v1/packets/sol61-medium-q.md"
+      ],
+      "allowed_writes": [
+        ".studio/experiments/instruction-ablation-v1/outputs/sol61-medium-q.md"
+      ],
+      "deliverable": "Six independent phase artifacts",
+      "acceptance": [
+        "Fixed fixture fidelity",
+        "Exact headings",
+        "Word budgets",
+        "No shared writes or model/arm identity"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 26000,
+        "max_output_words": 1800,
+        "max_tool_calls": 6
+      },
+      "dependencies": [],
+      "owner": "sol61-medium-q",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "medium"
+    },
+    {
+      "id": "TASK-0003",
+      "role": "bounded-writing-instruction-test",
+      "status": "done",
+      "source_snapshot": "3b568f2d844a14b97a91ab5fe4962fb1b242bc9be79f380e34f493821377318f",
+      "inputs": [
+        ".studio/experiments/instruction-ablation-v1/packets/sol61-high-p.md"
+      ],
+      "allowed_writes": [
+        ".studio/experiments/instruction-ablation-v1/outputs/sol61-high-p.md"
+      ],
+      "deliverable": "Six independent phase artifacts",
+      "acceptance": [
+        "Fixed fixture fidelity",
+        "Exact headings",
+        "Word budgets",
+        "No shared writes or model/arm identity"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 26000,
+        "max_output_words": 1800,
+        "max_tool_calls": 6
+      },
+      "dependencies": [],
+      "owner": "sol61-high-p",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "high"
+    },
+    {
+      "id": "TASK-0004",
+      "role": "bounded-writing-instruction-test",
+      "status": "done",
+      "source_snapshot": "0f382022415c94053bb2d429b5ce03e30ff8da4f5e28a06d4dcb1307d351ea11",
+      "inputs": [
+        ".studio/experiments/instruction-ablation-v1/packets/sol61-high-q.md"
+      ],
+      "allowed_writes": [
+        ".studio/experiments/instruction-ablation-v1/outputs/sol61-high-q.md"
+      ],
+      "deliverable": "Six independent phase artifacts",
+      "acceptance": [
+        "Fixed fixture fidelity",
+        "Exact headings",
+        "Word budgets",
+        "No shared writes or model/arm identity"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 26000,
+        "max_output_words": 1800,
+        "max_tool_calls": 6
+      },
+      "dependencies": [],
+      "owner": "sol61-high-q",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "high"
+    },
+    {
+      "id": "TASK-0005",
+      "role": "bounded-writing-instruction-test",
+      "status": "done",
+      "source_snapshot": "0f382022415c94053bb2d429b5ce03e30ff8da4f5e28a06d4dcb1307d351ea11",
+      "inputs": [
+        ".studio/experiments/instruction-ablation-v1/packets/sol6-medium-p.md"
+      ],
+      "allowed_writes": [
+        ".studio/experiments/instruction-ablation-v1/outputs/sol6-medium-p.md"
+      ],
+      "deliverable": "Six independent phase artifacts",
+      "acceptance": [
+        "Fixed fixture fidelity",
+        "Exact headings",
+        "Word budgets",
+        "No shared writes or model/arm identity"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 26000,
+        "max_output_words": 1800,
+        "max_tool_calls": 6
+      },
+      "dependencies": [],
+      "owner": "sol6-medium-p",
+      "model": "gpt-6-sol",
+      "reasoning_effort": "medium"
+    },
+    {
+      "id": "TASK-0006",
+      "role": "bounded-writing-instruction-test",
+      "status": "done",
+      "source_snapshot": "3b568f2d844a14b97a91ab5fe4962fb1b242bc9be79f380e34f493821377318f",
+      "inputs": [
+        ".studio/experiments/instruction-ablation-v1/packets/sol6-medium-q.md"
+      ],
+      "allowed_writes": [
+        ".studio/experiments/instruction-ablation-v1/outputs/sol6-medium-q.md"
+      ],
+      "deliverable": "Six independent phase artifacts",
+      "acceptance": [
+        "Fixed fixture fidelity",
+        "Exact headings",
+        "Word budgets",
+        "No shared writes or model/arm identity"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 26000,
+        "max_output_words": 1800,
+        "max_tool_calls": 6
+      },
+      "dependencies": [],
+      "owner": "sol6-medium-q",
+      "model": "gpt-6-sol",
+      "reasoning_effort": "medium"
+    },
+    {
+      "id": "TASK-0007",
+      "role": "bounded-writing-instruction-test",
+      "status": "done",
+      "source_snapshot": "3b568f2d844a14b97a91ab5fe4962fb1b242bc9be79f380e34f493821377318f",
+      "inputs": [
+        ".studio/experiments/instruction-ablation-v1/packets/sol6-high-p.md"
+      ],
+      "allowed_writes": [
+        ".studio/experiments/instruction-ablation-v1/outputs/sol6-high-p.md"
+      ],
+      "deliverable": "Six independent phase artifacts",
+      "acceptance": [
+        "Fixed fixture fidelity",
+        "Exact headings",
+        "Word budgets",
+        "No shared writes or model/arm identity"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 26000,
+        "max_output_words": 1800,
+        "max_tool_calls": 6
+      },
+      "dependencies": [],
+      "owner": "sol6-high-p",
+      "model": "gpt-6-sol",
+      "reasoning_effort": "high"
+    },
+    {
+      "id": "TASK-0008",
+      "role": "bounded-writing-instruction-test",
+      "status": "done",
+      "source_snapshot": "0f382022415c94053bb2d429b5ce03e30ff8da4f5e28a06d4dcb1307d351ea11",
+      "inputs": [
+        ".studio/experiments/instruction-ablation-v1/packets/sol6-high-q.md"
+      ],
+      "allowed_writes": [
+        ".studio/experiments/instruction-ablation-v1/outputs/sol6-high-q.md"
+      ],
+      "deliverable": "Six independent phase artifacts",
+      "acceptance": [
+        "Fixed fixture fidelity",
+        "Exact headings",
+        "Word budgets",
+        "No shared writes or model/arm identity"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 26000,
+        "max_output_words": 1800,
+        "max_tool_calls": 6
+      },
+      "dependencies": [],
+      "owner": "sol6-high-q",
+      "model": "gpt-6-sol",
+      "reasoning_effort": "high"
+    },
+    {
+      "id": "TASK-0009",
+      "role": "bounded-writing-instruction-test",
+      "status": "done",
+      "source_snapshot": "3b568f2d844a14b97a91ab5fe4962fb1b242bc9be79f380e34f493821377318f",
+      "inputs": [
+        ".studio/experiments/instruction-ablation-v1/packets/kimi-low-p.md"
+      ],
+      "allowed_writes": [
+        ".studio/experiments/instruction-ablation-v1/outputs/kimi-low-p.md"
+      ],
+      "deliverable": "Six independent phase artifacts",
+      "acceptance": [
+        "Fixed fixture fidelity",
+        "Exact headings",
+        "Word budgets",
+        "No shared writes or model/arm identity"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 26000,
+        "max_output_words": 1800,
+        "max_tool_calls": 6
+      },
+      "dependencies": [],
+      "owner": "kimi-low-p",
+      "model": "ollama/kimi-k3:cloud",
+      "reasoning_effort": "low",
+      "note": "Preflight output archived: native think field not effective through OpenAI-compatible endpoint. Same task/model requested effort will be rerun using reasoning_effort."
+    },
+    {
+      "id": "TASK-0010",
+      "role": "bounded-writing-instruction-test",
+      "status": "done",
+      "source_snapshot": "0f382022415c94053bb2d429b5ce03e30ff8da4f5e28a06d4dcb1307d351ea11",
+      "inputs": [
+        ".studio/experiments/instruction-ablation-v1/packets/kimi-low-q.md"
+      ],
+      "allowed_writes": [
+        ".studio/experiments/instruction-ablation-v1/outputs/kimi-low-q.md"
+      ],
+      "deliverable": "Six independent phase artifacts",
+      "acceptance": [
+        "Fixed fixture fidelity",
+        "Exact headings",
+        "Word budgets",
+        "No shared writes or model/arm identity"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 26000,
+        "max_output_words": 1800,
+        "max_tool_calls": 6
+      },
+      "dependencies": [],
+      "owner": "kimi-low-q",
+      "model": "ollama/kimi-k3:cloud",
+      "reasoning_effort": "low",
+      "note": "Preflight output archived: native think field not effective through OpenAI-compatible endpoint. Same task/model requested effort will be rerun using reasoning_effort."
+    },
+    {
+      "id": "TASK-0011",
+      "role": "bounded-writing-instruction-test",
+      "status": "done",
+      "source_snapshot": "3b568f2d844a14b97a91ab5fe4962fb1b242bc9be79f380e34f493821377318f",
+      "inputs": [
+        ".studio/experiments/instruction-ablation-v1/packets/kimi-high-p.md"
+      ],
+      "allowed_writes": [
+        ".studio/experiments/instruction-ablation-v1/outputs/kimi-high-p.md"
+      ],
+      "deliverable": "Six independent phase artifacts",
+      "acceptance": [
+        "Fixed fixture fidelity",
+        "Exact headings",
+        "Word budgets",
+        "No shared writes or model/arm identity"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 26000,
+        "max_output_words": 1800,
+        "max_tool_calls": 6
+      },
+      "dependencies": [],
+      "owner": "kimi-high-p",
+      "model": "ollama/kimi-k3:cloud",
+      "reasoning_effort": "high",
+      "note": "Preflight output archived: native think field not effective through OpenAI-compatible endpoint. Same task/model requested effort will be rerun using reasoning_effort."
+    },
+    {
+      "id": "TASK-0012",
+      "role": "bounded-writing-instruction-test",
+      "status": "done",
+      "source_snapshot": "0f382022415c94053bb2d429b5ce03e30ff8da4f5e28a06d4dcb1307d351ea11",
+      "inputs": [
+        ".studio/experiments/instruction-ablation-v1/packets/kimi-high-q.md"
+      ],
+      "allowed_writes": [
+        ".studio/experiments/instruction-ablation-v1/outputs/kimi-high-q.md"
+      ],
+      "deliverable": "Six independent phase artifacts",
+      "acceptance": [
+        "Fixed fixture fidelity",
+        "Exact headings",
+        "Word budgets",
+        "No shared writes or model/arm identity"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 26000,
+        "max_output_words": 1800,
+        "max_tool_calls": 6
+      },
+      "dependencies": [],
+      "owner": "kimi-high-q",
+      "model": "ollama/kimi-k3:cloud",
+      "reasoning_effort": "high",
+      "note": "Preflight output archived: native think field not effective through OpenAI-compatible endpoint. Same task/model requested effort will be rerun using reasoning_effort."
+    },
+    {
+      "id": "TASK-0013",
+      "role": "bounded-writing-instruction-test",
+      "status": "done",
+      "source_snapshot": "3b568f2d844a14b97a91ab5fe4962fb1b242bc9be79f380e34f493821377318f",
+      "inputs": [
+        ".studio/experiments/instruction-ablation-v1/packets/mistral-none-p.md"
+      ],
+      "allowed_writes": [
+        ".studio/experiments/instruction-ablation-v1/outputs/mistral-none-p.md"
+      ],
+      "deliverable": "Six independent phase artifacts",
+      "acceptance": [
+        "Fixed fixture fidelity",
+        "Exact headings",
+        "Word budgets",
+        "No shared writes or model/arm identity"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 26000,
+        "max_output_words": 1800,
+        "max_tool_calls": 6
+      },
+      "dependencies": [],
+      "owner": "mistral-none-p",
+      "model": "ollama/mistral-large-4:cloud",
+      "reasoning_effort": "none",
+      "note": "Preflight output archived: native think field not effective through OpenAI-compatible endpoint. Same task/model requested effort will be rerun using reasoning_effort."
+    },
+    {
+      "id": "TASK-0014",
+      "role": "bounded-writing-instruction-test",
+      "status": "done",
+      "source_snapshot": "0f382022415c94053bb2d429b5ce03e30ff8da4f5e28a06d4dcb1307d351ea11",
+      "inputs": [
+        ".studio/experiments/instruction-ablation-v1/packets/mistral-none-q.md"
+      ],
+      "allowed_writes": [
+        ".studio/experiments/instruction-ablation-v1/outputs/mistral-none-q.md"
+      ],
+      "deliverable": "Six independent phase artifacts",
+      "acceptance": [
+        "Fixed fixture fidelity",
+        "Exact headings",
+        "Word budgets",
+        "No shared writes or model/arm identity"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 26000,
+        "max_output_words": 1800,
+        "max_tool_calls": 6
+      },
+      "dependencies": [],
+      "owner": "mistral-none-q",
+      "model": "ollama/mistral-large-4:cloud",
+      "reasoning_effort": "none",
+      "note": "Preflight output archived: native think field not effective through OpenAI-compatible endpoint. Same task/model requested effort will be rerun using reasoning_effort."
+    },
+    {
+      "id": "TASK-0015",
+      "role": "bounded-writing-instruction-test",
+      "status": "done",
+      "source_snapshot": "0f382022415c94053bb2d429b5ce03e30ff8da4f5e28a06d4dcb1307d351ea11",
+      "inputs": [
+        ".studio/experiments/instruction-ablation-v1/packets/mistral-high-p.md"
+      ],
+      "allowed_writes": [
+        ".studio/experiments/instruction-ablation-v1/outputs/mistral-high-p.md"
+      ],
+      "deliverable": "Six independent phase artifacts",
+      "acceptance": [
+        "Fixed fixture fidelity",
+        "Exact headings",
+        "Word budgets",
+        "No shared writes or model/arm identity"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 26000,
+        "max_output_words": 1800,
+        "max_tool_calls": 6
+      },
+      "dependencies": [],
+      "owner": "mistral-high-p",
+      "model": "ollama/mistral-large-4:cloud",
+      "reasoning_effort": "high",
+      "note": "Preflight output archived: native think field not effective through OpenAI-compatible endpoint. Same task/model requested effort will be rerun using reasoning_effort."
+    },
+    {
+      "id": "TASK-0016",
+      "role": "bounded-writing-instruction-test",
+      "status": "cancelled",
+      "source_snapshot": "3b568f2d844a14b97a91ab5fe4962fb1b242bc9be79f380e34f493821377318f",
+      "inputs": [
+        ".studio/experiments/instruction-ablation-v1/packets/mistral-high-q.md"
+      ],
+      "allowed_writes": [
+        ".studio/experiments/instruction-ablation-v1/outputs/mistral-high-q.md"
+      ],
+      "deliverable": "Six independent phase artifacts",
+      "acceptance": [
+        "Fixed fixture fidelity",
+        "Exact headings",
+        "Word budgets",
+        "No shared writes or model/arm identity"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 26000,
+        "max_output_words": 1800,
+        "max_tool_calls": 6
+      },
+      "dependencies": [],
+      "owner": "mistral-high-q",
+      "model": "ollama/mistral-large-4:cloud",
+      "reasoning_effort": "high",
+      "note": "Scope changed to provisional adoption before full peer comparison/audit. Preserve any invalid native output as incomplete evidence."
+    },
+    {
+      "id": "TASK-0017",
+      "role": "independent-blind-paired-reviewer",
+      "status": "done",
+      "source_snapshot": "0974c213ba1fc34c04e0bee64c1f66b5fbc6fcb90b50ec66cfc661cce8c61b76",
+      "inputs": [
+        ".studio/experiments/instruction-ablation-v1/packets/judge-mistral-none.md"
+      ],
+      "allowed_writes": [
+        ".studio/experiments/instruction-ablation-v1/reviews/mistral-none.json"
+      ],
+      "deliverable": "36 anonymous X/Y/tie comparisons with both-side evidence",
+      "acceptance": [
+        "Exact-model pairs excluded",
+        "Complete eligible set",
+        "No variant or author identities",
+        "No prior verdicts"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 180000,
+        "max_output_words": 3500,
+        "max_tool_calls": 12
+      },
+      "dependencies": [
+        "all-eligible-pair-inputs-frozen"
+      ],
+      "owner": "judge-mistral-none",
+      "model": "ollama/mistral-large-4:cloud",
+      "reasoning_effort": "none"
+    },
+    {
+      "id": "TASK-0018",
+      "role": "independent-blind-paired-reviewer",
+      "status": "cancelled",
+      "source_snapshot": "be803440419331100269ef2b1e31e468ca716e4d44d8483dee9900790ed5792b",
+      "inputs": [
+        ".studio/experiments/instruction-ablation-v1/packets/judge-mistral-high.md"
+      ],
+      "allowed_writes": [
+        ".studio/experiments/instruction-ablation-v1/reviews/mistral-high.json"
+      ],
+      "deliverable": "36 anonymous X/Y/tie comparisons with both-side evidence",
+      "acceptance": [
+        "Exact-model pairs excluded",
+        "Complete eligible set",
+        "No variant or author identities",
+        "No prior verdicts"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 180000,
+        "max_output_words": 3500,
+        "max_tool_calls": 12
+      },
+      "dependencies": [
+        "all-eligible-pair-inputs-frozen"
+      ],
+      "owner": "judge-mistral-high",
+      "model": "ollama/mistral-large-4:cloud",
+      "reasoning_effort": "high",
+      "note": "Scope changed to provisional adoption before full peer comparison/audit. Preserve any invalid native output as incomplete evidence."
+    }
+  ]
+}

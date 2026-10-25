@@ -1,0 +1,61 @@
+{
+  "phases": [
+    {
+      "phase": "P8",
+      "tiers": [
+        [
+          "Candidate B"
+        ],
+        [
+          "Candidate E"
+        ],
+        [
+          "Candidate D"
+        ],
+        [
+          "Candidate C"
+        ],
+        [
+          "Candidate F"
+        ],
+        [
+          "Candidate A"
+        ]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate B",
+          "quote": "Sera must surrender her license, and a freeze leaves North protected",
+          "reason": "The clearest faithful pitch joins the duplicate sale, estranged apprentice, unequal stakes, precise freeze consequence, and public accountability in concrete, restrained language; its procedural middle is slightly dense, but the concluding choice sustains the civic mystery promise."
+        },
+        {
+          "candidate": "Candidate E",
+          "quote": "let one basin prepare for a protection it will never receive",
+          "reason": "Strong material causality makes inaction costly and gives both basins substance, while the license connects professional authority to the decision; the opening suggests Sera already possesses the discovery she subsequently needs from Ivo, and his desire to give an account adds an unsupported opening detail."
+        },
+        {
+          "candidate": "Candidate D",
+          "quote": "The only way to stop the paperwork from choosing for her is to freeze the assignment",
+          "reason": "Clean escalation, a difficult personal stake, and a memorable final promise make effective back-cover copy, but the asserted necessity of freezing narrows Sera’s options beyond the brief, and the pitch leaves its preservation of North to inference."
+        },
+        {
+          "candidate": "Candidate C",
+          "quote": "The seals are authentic. The tide is not.",
+          "reason": "Accurate timing and the explicit impossibility of protecting both basins preserve the central constraint, but the quoted flourish confuses the danger and the schedule-heavy opening reads like a synopsis; Ivo’s estranged relationship is also less distinct than in the stronger pitches."
+        },
+        {
+          "candidate": "Candidate F",
+          "quote": "the only lawful remedy costs her license and settles nothing before six o'clock",
+          "reason": "Sharp rhythm and the hearing image supply the strongest surface voice, but the quoted legal claim overreaches and obscures the freeze’s immediate effect, while the brother’s fields and Ivo’s personal history invent specifics beyond the supplied opening situation."
+        },
+        {
+          "candidate": "Candidate A",
+          "quote": "both genuine, both sealed, both honored",
+          "reason": "The double sale and opposed family-and-seed stakes provide a clear hook, but saying both certificates are honored undermines the impossibility driving the mystery, while the vow never to speak and the threatened loss of her apprentice introduce unsupported melodrama and a misleading price structure."
+        }
+      ],
+      "uncertainty": "B is the strongest fit to the fixed brief. E and D are close: E makes inaction more tangible, while D is more economical. C and F trade precision against voice; F’s unsupported legal and biographical claims weigh more heavily here. All six meet the requested length; ranks express comparative preferences on these blurbs alone."
+    }
+  ],
+  "coverage": "All six blurbs and the supplied brief read in full."
+}

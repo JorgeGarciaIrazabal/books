@@ -1,0 +1,99 @@
+{
+  "protocol": "v1",
+  "status": "stopped-incomplete-for-provisional-adoption",
+  "conditions": [
+    {
+      "id": "sol61-medium",
+      "model": "gpt-6.1-sol",
+      "effort": "medium"
+    },
+    {
+      "id": "sol61-high",
+      "model": "gpt-6.1-sol",
+      "effort": "high"
+    },
+    {
+      "id": "sol6-medium",
+      "model": "gpt-6-sol",
+      "effort": "medium"
+    },
+    {
+      "id": "sol6-high",
+      "model": "gpt-6-sol",
+      "effort": "high"
+    },
+    {
+      "id": "kimi-low",
+      "model": "ollama/kimi-k3:cloud",
+      "effort": "low"
+    },
+    {
+      "id": "kimi-high",
+      "model": "ollama/kimi-k3:cloud",
+      "effort": "high"
+    },
+    {
+      "id": "mistral-none",
+      "model": "ollama/mistral-large-4:cloud",
+      "effort": "none"
+    },
+    {
+      "id": "mistral-high",
+      "model": "ollama/mistral-large-4:cloud",
+      "effort": "high"
+    }
+  ],
+  "candidate_runs": 16,
+  "fixtures": 2,
+  "roles": [
+    "story_architect",
+    "drafter",
+    "canon_keeper"
+  ],
+  "planned_phase_artifacts": 96,
+  "live_contracts_modified": true,
+  "failures": [
+    {
+      "run": "mistral-none-q",
+      "attempt": 1,
+      "stage": "empty final answer",
+      "native_exit_code": 0,
+      "evidence": "runtime/mistral-none-q.jsonl",
+      "metadata": "runtime/mistral-none-q-metadata.json",
+      "note": "Native outcome succeeded but assistant contained no text artifacts, only an unprinted reasoning part; reported zero tokens. No substantive candidate is available.",
+      "action": "Repeat exact same packet, model, effort and runtime once after another active job finishes; retain this failed attempt. No completed writing samples are selected between."
+    },
+    {
+      "run": "mistral-high-p",
+      "attempt": 1,
+      "stage": "empty final answer",
+      "native_exit_code": 0,
+      "evidence": "runtime/mistral-high-p.jsonl",
+      "metadata": "runtime/mistral-high-p-metadata.json",
+      "action": "One identical retry, retaining the unusable first response; no completed samples chosen between."
+    }
+  ],
+  "runtime_control_correction": {
+    "status": "corrected; seven of eight cloud reruns completed before scope changed",
+    "original_field": "think",
+    "correct_field": "reasoning_effort",
+    "endpoint": "/v1/chat/completions",
+    "evidence": "runtime/compatibility-control-probes.json",
+    "preflight_outputs": "outputs-preflight/",
+    "note": "Sol runs unaffected. Cloud preflight samples are not used in the primary comparison; current/proposed packets unchanged. This is a disclosed technical correction before any peer review."
+  },
+  "author_decision": "Use recommended models and best-supported updates now despite incomplete tests.",
+  "completed_primary_candidate_runs": 15,
+  "completed_valid_peer_reviews": 1,
+  "invalid_peer_reviews": [
+    {
+      "review": "mistral-high",
+      "error": "Expecting ',' delimiter: line 1 column 10171 (char 10170)",
+      "raw": "runtime/judge-mistral-high.jsonl",
+      "action": "Retained as invalid; no ranking repair or rerun after scope changed."
+    }
+  ],
+  "remaining_inference_stopped": [],
+  "adoption_is_not_test_completion": true,
+  "live_contracts_modification_basis": "Separate author-approved provisional adoption after experiment stopped; frozen current/proposed packets unchanged; no complete A/B verdict."
+}

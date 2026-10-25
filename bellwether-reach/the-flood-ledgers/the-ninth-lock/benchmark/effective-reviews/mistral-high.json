@@ -1,0 +1,456 @@
+{
+  "phases": [
+    {
+      "phase": "P1",
+      "tiers": [
+        [
+          "Candidate A"
+        ],
+        [
+          "Candidate B"
+        ],
+        [
+          "Candidate C"
+        ],
+        [
+          "Candidate F"
+        ],
+        [
+          "Candidate E"
+        ],
+        [
+          "Candidate D"
+        ]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate A",
+          "quote": "witnessed registration. A Registry entry is complete only when the clerk and an outside witness both touch the seal",
+          "reason": "Most integrated custom that serves the mystery mechanism directly; series engine and emotional promise are tightly coupled to the paper physics."
+        },
+        {
+          "candidate": "Candidate B",
+          "quote": "The Witness Toll — a basin that learns it has lost protection may send one resident to stand at the lock",
+          "reason": "Distinctive ritual custom creates unique series texture; explicit boundaries show careful canon awareness and restraint."
+        },
+        {
+          "candidate": "Candidate C",
+          "quote": "households mark the height of their last flood on the outside of their doors and leave the mark after repairs",
+          "reason": "Grounded, evocative custom with strong social consequences; engine is clear and repeatable across installments."
+        },
+        {
+          "candidate": "Candidate F",
+          "quote": "basin residents post the names of people willing to carry what cannot be protected up to the public stair",
+          "reason": "Practical custom creates immediate social stakes; series engine solid but hook is less distinctive than top tier."
+        },
+        {
+          "candidate": "Candidate E",
+          "quote": "households leave a tide tally beside their doors, naming what they will carry first if protection fails",
+          "reason": "Competent proposal but the custom feels slightly more generic; engine description is standard rather than distinctive."
+        },
+        {
+          "candidate": "Candidate D",
+          "quote": "basin households chalk the height of their last flood on their outer doors",
+          "reason": "Custom duplicates Candidate C's concept with less specificity; proposal feels underdeveloped compared to others."
+        }
+      ],
+      "uncertainty": "Candidates C and F are close; F's hook ties more tightly to canon but C's emotional promise is stronger. D and E are similar in quality, with E slightly more integrated."
+    },
+    {
+      "phase": "P2",
+      "tiers": [
+        [
+          "Candidate C"
+        ],
+        [
+          "Candidate D"
+        ],
+        [
+          "Candidate B"
+        ],
+        [
+          "Candidate E"
+        ],
+        [
+          "Candidate F"
+        ],
+        [
+          "Candidate A"
+        ]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate C",
+          "quote": "Sera could maintain the freeze and shelter her brother. Instead, she withdraws it and supports honoring South's earlier purchase",
+          "reason": "Tightest causality; treasurer's motive credible; Sera's choice to favor South over brother is earned and costly; ending accepts constraint."
+        },
+        {
+          "candidate": "Candidate D",
+          "quote": "Sera surrenders her license and freezes North's current protection. Her brother is there; she says so in the public notice",
+          "reason": "Strong antagonist with clear motive; complex choice to freeze North while aiding South; hearing resolves without erasing loss."
+        },
+        {
+          "candidate": "Candidate B",
+          "quote": "Ivo produces his private fee book, incriminating himself to break the racket",
+          "reason": "Systemic antagonist provides series depth; Ivo's testimony at cost is strong; rotation ending honorably accepts one-basin limit."
+        },
+        {
+          "candidate": "Candidate E",
+          "quote": "Ivo produces the payment book bearing the same balance number",
+          "reason": "Solid structure with clear setup/payoff; treasurer motive works; slightly less dramatic moral choice than Candidate C."
+        },
+        {
+          "candidate": "Candidate F",
+          "quote": "Ivo reads his own part aloud. Sera names the limit of her authority",
+          "reason": "Good mystery mechanics and steward motive; counterclaim scene effective; ending slightly summary."
+        },
+        {
+          "candidate": "Candidate A",
+          "quote": "Sera sends warning runners to North, then uses her brass key and the forty-minute window to reassign the lock",
+          "reason": "Violates freeze logic by reassigning lock without clear authority; timing math unclear; antagonist scheme overly convoluted."
+        }
+      ],
+      "uncertainty": "Candidates D and B are close; B's systemic scope suits the series but D's immediate moral complexity is stronger for Book 1. A is penalized for the authority/timing violation."
+    },
+    {
+      "phase": "P3",
+      "tiers": [
+        [
+          "Candidate A"
+        ],
+        [
+          "Candidate E"
+        ],
+        [
+          "Candidate B"
+        ],
+        [
+          "Candidate C"
+        ],
+        [
+          "Candidate F"
+        ],
+        [
+          "Candidate D"
+        ]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate A",
+          "quote": "Her name was somewhere in this room with his line through it. Neatly.",
+          "reason": "Masterful atmosphere and subtext; uses house style rhythm perfectly; ends with changed bargaining position via the blotter."
+        },
+        {
+          "candidate": "Candidate E",
+          "quote": "On the correction slip she crossed out Clerk's and wrote Inspector's instruction",
+          "reason": "Strongest character revelation through the correction slip; unflinching admission of past harm; physicality of injury well handled."
+        },
+        {
+          "candidate": "Candidate B",
+          "quote": "He set her mug on the right side of the desk, where a one-handed woman could reach it",
+          "reason": "Excellent sensory details and unspoken history; tea placement shows deep character knowledge; ending lowers the wall between them."
+        },
+        {
+          "candidate": "Candidate C",
+          "quote": "I should have kept yours",
+          "reason": "Solid rhythm and emotional beat; clock creates pressure; ending is earned but slightly less surprising than top tier."
+        },
+        {
+          "candidate": "Candidate F",
+          "quote": "Then we decide whose name goes on the next line",
+          "reason": "Good dialogue mechanics and mug details; ending position changed but slightly less atmospheric than leaders."
+        },
+        {
+          "candidate": "Candidate D",
+          "quote": "It can be mine too",
+          "reason": "Competent but form-filling structure reduces dramatic tension; ending is adequate but less resonant."
+        }
+      ],
+      "uncertainty": "Candidates A and E are very close; A wins on atmospheric control, E on emotional revelation. D trails due to procedural flatness."
+    },
+    {
+      "phase": "P4",
+      "tiers": [
+        [
+          "Candidate B"
+        ],
+        [
+          "Candidate E"
+        ],
+        [
+          "Candidate D"
+        ],
+        [
+          "Candidate C"
+        ],
+        [
+          "Candidate F"
+        ],
+        [
+          "Candidate A"
+        ]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate B",
+          "quote": "She wrote in the ugly scrawl of a person signing her own demotion",
+          "reason": "Strongest atmosphere and prose; freeze and license surrender handled with weight; final line about standing witness is perfect."
+        },
+        {
+          "candidate": "Candidate E",
+          "quote": "She could picture a sack well enough. She could not picture all of them",
+          "reason": "Excellent internal conflict regarding the sacks; clock discrepancy adds texture; license surrender clear and costly."
+        },
+        {
+          "candidate": "Candidate D",
+          "quote": "she wrote South's certificate number again in the margin, where a hearing clerk would have to see it",
+          "reason": "Good procedural creativity with dispute ledger; marginal notation is a nice concrete detail; key usage effective."
+        },
+        {
+          "candidate": "Candidate C",
+          "quote": "There was enough anger in his voice to make her straighten",
+          "reason": "Solid scene with good anger beat; timing clear; license surrender properly shown; slightly less lyrical."
+        },
+        {
+          "candidate": "Candidate F",
+          "quote": "He wrote. She checked the names, then signed the observation with her right hand",
+          "reason": "Competent handling of custody form and freeze; nick detail good; prose slightly flatter than top tier."
+        },
+        {
+          "candidate": "Candidate A",
+          "quote": "Requisitioned by Venn, both originals, inspection authority",
+          "reason": "Fails to show license surrender for freeze; Sera takes originals without lawful authority, violating opening contract's outgoing state."
+        }
+      ],
+      "uncertainty": "B and E are close on prose quality; B edges ahead on atmospheric opening and closing. A is disqualified by contract violation despite strong prose."
+    },
+    {
+      "phase": "P5",
+      "tiers": [
+        [
+          "Candidate B"
+        ],
+        [
+          "Candidate A"
+        ],
+        [
+          "Candidate F"
+        ],
+        [
+          "Candidate C"
+        ],
+        [
+          "Candidate E"
+        ],
+        [
+          "Candidate D"
+        ]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate B",
+          "quote": "Stage someone recognizing she's no longer an inspector, and let her choose the civilian act anyway",
+          "reason": "Catches crucial staging flaw (unlicensed inspector unchallenged at lock); distinguishes taste (beans line) from defect; prioritized clearly."
+        },
+        {
+          "candidate": "Candidate A",
+          "quote": "give the girl one concrete, partial fact",
+          "reason": "Clear prioritization; separates defects well; excellent preservation notes; identifies protagonist unhooking from outcome."
+        },
+        {
+          "candidate": "Candidate F",
+          "quote": "Give each person an action with a cost, rather than a reported change of heart",
+          "reason": "Strong on causal work of the freeze; good preservation of chair and sacks; slightly less specific on authority issue."
+        },
+        {
+          "candidate": "Candidate C",
+          "quote": "Keep the second original as the discovery, but make Sera secure its release through a consequential exchange",
+          "reason": "Solid findings; notes pump and girl issues; preservation good; DEV-03 overlaps with DEV-01 slightly."
+        },
+        {
+          "candidate": "Candidate E",
+          "quote": "dramatize one contested hearing exchange and one limited act of renewed cooperation",
+          "reason": "Similar to C; notes compressed resolution; good preservation; slightly redundant findings reduce precision."
+        },
+        {
+          "candidate": "Candidate D",
+          "quote": "let the girl contribute one bounded, observable fact if she belongs in the story",
+          "reason": "Combines P3 and P6 in first finding, losing granularity; less precise on the authority/staging issue."
+        }
+      ],
+      "uncertainty": "B and A are close; B's staging insight gives it the edge. C and E are interchangeable in quality; D trails due to structural combining of distinct defects."
+    },
+    {
+      "phase": "P6",
+      "tiers": [
+        [
+          "Candidate C"
+        ],
+        [
+          "Candidate E"
+        ],
+        [
+          "Candidate B"
+        ],
+        [
+          "Candidate A"
+        ],
+        [
+          "Candidate F"
+        ],
+        [
+          "Candidate D"
+        ]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate C",
+          "quote": "she left the question where it was, between the papers and the tea",
+          "reason": "Best preservation of voice and productive strangeness; replaces purple prose with concrete objects; ends elegantly without explaining."
+        },
+        {
+          "candidate": "Candidate E",
+          "quote": "Sera had come for the second certificate",
+          "reason": "Excellent restraint; internal addition fits emotional register; preserves all constraints; clean prose throughout."
+        },
+        {
+          "candidate": "Candidate B",
+          "quote": "Something moved in Ivo's face and went still",
+          "reason": "Solid cuts and rationale; good concrete beat for Ivo; ending slightly more abstract than leaders."
+        },
+        {
+          "candidate": "Candidate A",
+          "quote": "Paid for. All of it.",
+          "reason": "Good trimming but internal phrasing slightly clunky; preserves fragment well and cuts redundancy effectively."
+        },
+        {
+          "candidate": "Candidate F",
+          "quote": "The one by Sera had its handle turned toward her right hand",
+          "reason": "Adds external detail (handle) which slightly expands fixture; otherwise solid with good cooling tea image."
+        },
+        {
+          "candidate": "Candidate D",
+          "quote": "The cup nearest her had a chip at the lip",
+          "reason": "Adds chip detail not in original; slightly more invasive intervention; otherwise competent trimming."
+        }
+      ],
+      "uncertainty": "C and E are neck-and-neck; C's ending is more concrete. D and F add small inventions that slightly violate the minimal-intervention spirit."
+    },
+    {
+      "phase": "P7",
+      "tiers": [
+        [
+          "Candidate E"
+        ],
+        [
+          "Candidate B"
+        ],
+        [
+          "Candidate D"
+        ],
+        [
+          "Candidate F"
+        ],
+        [
+          "Candidate A"
+        ],
+        [
+          "Candidate C"
+        ]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate E",
+          "quote": "Also query the apparent attempt to change an assignment frozen in L7",
+          "reason": "Catches critical L7/L8 interaction (changing frozen assignment); comprehensive error list; correctly notes valid details."
+        },
+        {
+          "candidate": "Candidate B",
+          "quote": "noting this puts her at the lock after the 17:30 bell, a downstream consequence",
+          "reason": "Notes downstream timing consequences; offers optional dialogue fixes; thorough and accurate on all locators."
+        },
+        {
+          "candidate": "Candidate D",
+          "quote": "whether the relative distance of the inspector in L10 is desired at that moment",
+          "reason": "Good viewpoint query on L10; clear organization; misses the frozen-assignment interaction caught by E."
+        },
+        {
+          "candidate": "Candidate F",
+          "quote": "If Sera's speech is intentionally colloquial, keep are as a conscious voice choice",
+          "reason": "Solid nuanced handling of L6 colloquial option; viewpoint query; otherwise accurate but less comprehensive."
+        },
+        {
+          "candidate": "Candidate A",
+          "quote": "if this scene is genuinely post-revelation, source the knowledge on the page",
+          "reason": "Good separation of optional preferences; thorough on L4 knowledge leak; misses the frozen-assignment query."
+        },
+        {
+          "candidate": "Candidate C",
+          "quote": "This also aligns with L8's stated start time",
+          "reason": "Concise and accurate but misses the L7/L8 interaction and viewpoint query; least thorough of the six."
+        }
+      ],
+      "uncertainty": "E and B are strongest; E's catch of the frozen/unfrozen contradiction is uniquely valuable. A, D, F are solid but miss that interaction."
+    },
+    {
+      "phase": "P8",
+      "tiers": [
+        [
+          "Candidate C"
+        ],
+        [
+          "Candidate F",
+          "Candidate A"
+        ],
+        [
+          "Candidate E"
+        ],
+        [
+          "Candidate D"
+        ],
+        [
+          "Candidate B"
+        ]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate C",
+          "quote": "Two basins. One lock. Two certificates bearing the same authentic seal.",
+          "reason": "Strongest fidelity to the brief with a punchy parallel hook, exact freeze mechanics (North keeps protection), accurate timeline, respect for Ivo's unknown motive, and a closing promise of defensible action."
+        },
+        {
+          "candidate": "Candidate F",
+          "quote": "The Ninth Lock protects one basin at high tide. Its Registry has sold protection to two.",
+          "reason": "Concrete canon details (brass key, broken wrist) and clear stakes, but the closing clause 'put that truth before the people' is generic and the ledger metaphor is slightly abstract."
+        },
+        {
+          "candidate": "Candidate A",
+          "quote": "the apprentice who once ruled a neat line through her name",
+          "reason": "Excellent dry humor and the strongest voice match via the reference quotation, but invents 'brother's fields' (canon specifies only residence) and obscures the freeze's North-protection consequence."
+        },
+        {
+          "candidate": "Candidate E",
+          "quote": "Two basins. One lock. Two authentic certificates promising its protection.",
+          "reason": "Correctly includes the broken wrist and opposing stakes, but 'no seal can make for her' is awkwardly phrased and 'no reason to trust her' over-interprets Ivo's interiority beyond the brief's 'risks blame.'"
+        },
+        {
+          "candidate": "Candidate D",
+          "quote": "He wants his own account heard.",
+          "reason": "Invented motive ('wants his own account heard') directly violates FACT-0004 that Ivo's motives remain unknown, and the opening relies on scene-setting rather than a punchy hook."
+        },
+        {
+          "candidate": "Candidate B",
+          "quote": "Exposing the truth will cost her license, her estranged apprentice, or a basin's harvest.",
+          "reason": "Contains a timeline error (deadline is the 18:00 tide, not the 17:30 warning bell), misidentifies the seed store as a 'harvest,' and invents losing the apprentice as a certain cost."
+        }
+      ],
+      "uncertainty": "Tier 2 (A and D) is close: A wins on prop specificity and canon purity, D on voice and humor; B is clearly first; C and F are separated from the top by canonical violations."
+    }
+  ],
+  "coverage": "P1–P7: original full-packet independent review. P8: fresh six-blurb packet, with runtime metadata excluded from blurb text. See provenance.",
+  "provenance": {
+    "original": "reviews/mistral-high.json",
+    "P8_replacement": "reviews-corrected/mistral-high.json",
+    "label_map": "Original blind-key labels restored by author-ID mapping; no preference or evidence content altered."
+  }
+}

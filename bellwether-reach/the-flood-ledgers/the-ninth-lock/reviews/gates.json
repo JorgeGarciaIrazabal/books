@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "gates": [
+    {
+      "id": "GATE-0001",
+      "checkpoint": "sample",
+      "review_target": "manuscript",
+      "status": "not-applicable",
+      "reviewer": "Four requested model IDs in eight full blind peer sessions, six fresh P8-only sessions; unblinded director continuity audit",
+      "snapshot": {
+        "path": "benchmark/candidate-snapshot.json",
+        "sha256": "132352cdb77bb6b7b4395f7bcc54a9cd32e49a8005571706b8db024cce5a196e"
+      },
+      "report": "benchmark/report.md",
+      "coverage": {
+        "read_in_full": [
+          "benchmark/outputs/sol61-medium.md",
+          "benchmark/outputs/sol61-high.md",
+          "benchmark/outputs/sol6-medium.md",
+          "benchmark/outputs/sol6-high.md",
+          "benchmark/outputs/kimi-high.md",
+          "benchmark/outputs/kimi-low.md",
+          "benchmark/outputs/mistral-none.md",
+          "benchmark/outputs/mistral-high.md"
+        ],
+        "skimmed": [],
+        "not_assessed": [
+          "manuscript/"
+        ]
+      },
+      "open_findings": [],
+      "rationale": "Comparative fixture pilot complete. No representative working manuscript selected; this does not pass a book sample, whole-book, production or publishability gate. Detailed candidate defects and evidence flags remain in the benchmark reports. The manuscript directory has no ordered chapters."
+    }
+  ]
+}

@@ -11,7 +11,7 @@ recorded in the setup review. Recheck versions and model inventory when upgradin
 The runtime definitions reference those Markdown contracts directly:
 
 - `.codex/agents/*.toml`: standalone custom agents with `name`, `description`,
-  `developer_instructions`, and Astra model/reasoning settings.
+  `developer_instructions`, and per-role model/reasoning settings.
 - `.opencode/agents/*.md`: Markdown agents with v2 `mode`, `model`, `steps`,
   and ordered `permissions`. The director is primary; the others are subagents.
 
@@ -27,13 +27,13 @@ and [OpenCode v2 configuration](https://opencode.ai/v2/docs/config/).
 
 ## Codex
 
-Launch `codex` at repository root. Project `.codex/config.toml` uses Astra and a
+Launch `codex` at repository root. Project `.codex/config.toml` defaults to GPT-6.1 Sol high and a
 maximum of three concurrent child sessions. Ask the coordinator to use a specialist
 by its ID, for example `story_architect` or `canon_keeper`. Project config applies
 only when the project is trusted; keep trust and provider settings in your normal
 Codex account configuration. This repository does not change global settings.
 
-For a one-off main session, `codex -m gpt-6-astra` makes the model explicit.
+For a one-off main session, `codex -m gpt-6.1-sol` makes the model explicit.
 Inspect the local catalog rather than guessing availability. `codex debug models`
 can be very verbose; it includes model metadata, not just names.
 
@@ -42,13 +42,18 @@ independent reviewers read-only by instruction; that is **not a filesystem sandb
 Use a read-only session/worktree arrangement when enforced isolation is required.
 No role file claims to override Codex's inherited sandbox or authentication.
 
-The tested `codex exec` session exposed native subagents without a custom-role
-selector. Defining TOML files does not by itself prove that selector is available.
-In that interface, the coordinator uses native delegation and explicitly assigns
-the role: “Your role is nonfiction_editor; read `.studio/agents/nonfiction_editor.md`
-and review these inputs using Astra.” This is a role assignment through native
-task instructions, not a custom process or a claim that a TOML role was selected.
-Use the native custom role directly when the client exposes that capability.
+The current session exposed the named custom roles with their updated model and
+effort definitions. Use that selector when available. If another client exposes
+only generic native delegation, assign the role contract and explicitly request
+the model and effort from `.studio/roster.json`; do not claim that a named native
+role was selected. A task-effort override in the roster is coordinator guidance,
+not an automatic runtime switch. Premise development needs an explicit high-effort
+invocation rather than the acquisitions role's medium default. Report an unavailable
+route instead of silently substituting another model.
+
+See [the phase table](model-routing.md) for current choices, retained untested
+specialties, and same-model review limitations. Start a fresh main session to pick
+up project defaults; existing sessions can retain their selected model.
 
 ## OpenCode 2.x
 
@@ -69,8 +74,27 @@ OpenCode [discovers Ollama models](https://opencode.ai/v2/docs/models/) from the
 local service. Exact project IDs are `ollama/kimi-k3:cloud` and
 `ollama/mistral-large-4:cloud`; the `ollama-cloud/…` provider is a different route
 and is not silently substituted. Check `opencode models` and
-`opencode debug agents` after changing routing. For another Ollama host, use v2
+`opencode debug agents` after changing routing. If that command reports an empty
+registry because the service is scoped to another directory, inspect the project
+explicitly without inference:
+
+```bash
+opencode api agent.list -H "x-opencode-directory:/absolute/path/to/books"
+```
+
+The adoption check used this API with the actual repository path and verified all
+16 studio roles. Preferred OpenRouter Sol routes remain metadata only: a native
+probe returned HTTP 403 because the connected key had reached its spending cap.
+The active routes are the explicit Ollama `#high` variants in the native files.
+For another Ollama host, use v2
 `providers.ollama.settings.baseURL`, as documented there.
+
+The OpenAI-compatible Ollama endpoint uses `body.reasoning_effort`. Its native
+`think` option was ineffective on this route. Project variants use Kimi low/high/max
+and Mistral none/high; there is no verified medium setting for either. The author
+accepted Kimi low/high and Mistral's supported equivalents for the experiment.
+Direct and native probes establish the corrected control, not a completed quality
+comparison. See [the runtime correction](../.studio/experiments/instruction-ablation-v1/runtime-control-correction.md).
 
 Custom [OpenCode commands](https://opencode.ai/v2/docs/commands/) live in
 `.opencode/commands/`. They send scoped prompts to the director; they are not a

@@ -1,0 +1,5 @@
+# Correction: cloud effort controls were not verified
+
+The OpenCode configuration used `think` on Ollama's OpenAI-compatible chat endpoint. A subsequent paired probe established that this field did not disable thinking there, while `reasoning_effort: "none"` did. The saved Kimi/Mistral variant labels therefore do **not** establish the intended low/high or none/high comparison. Their effort-effect conclusions are withdrawn. The stored texts and reviewer preferences remain observations on those actual outputs, with unverified effective effort. Sol medium/high controls are unaffected.
+
+The instruction follow-up corrects the request field and reruns affected cloud cells before peer review. See [technical evidence and repair](../../../../.studio/experiments/instruction-ablation-v1/runtime-control-correction.md). The original report is preserved as [report-before-effort-correction.md](report-before-effort-correction.md). The old OpenCode config remains historical evidence and should not be used for new effort comparisons.

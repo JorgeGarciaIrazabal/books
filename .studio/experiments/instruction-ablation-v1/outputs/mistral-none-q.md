@@ -1,0 +1,209 @@
+## F1-P
+
+**Beat 1 — 17:20, ticket room.** Neri holds the token in her right pocket; Olin produces his request: he needs the crossing, and he needs her to want to give it. Incoming state: her apprenticeship, his estrangement. Turn: he asks without a reason. Outgoing: the question is live between them.
+
+**Beat 2 — ~17:22–17:24, ticket room.** Neri presses him for an explanation, performing lightness so the wanting isn't visible. Olin deflects with a half-truth and the line "One trip. One." Turn: he has named the cost without naming the motive. Outgoing: the walk begins with the token still in her pocket — a setup: she has now heard the price stated aloud, which she will pay later.
+
+**Beat 3 — 17:24–17:32, the eight-minute walk.** Olin escalates: he says he must see someone, names no one, and watches her face for the crack. Neri's choice: she keeps walking beside him instead of spending the token alone right now, and she does not hand it over yet. Turn: choosing delay over certainty. Consequence: the clock eats the margin — they reach the landing at 17:32 with eight minutes to departure and the gate closing at 17:55, which leaves no room for a second crossing. The token is now consequential in both directions.
+
+**Beat 4 — 17:32–17:40, landing, at the gangway.** Olin makes his final move — the old approval-lever, "you always were the brave one" — and Neri, at the point where refusing costs everything and giving costs everything, presses the token into his palm and steps back onto the dock. Earned outcome: she accepts the fixed limit — one token, one person, no second crossing — and absorbs the loss of the gate rather than the loss of the last standing she has with him. Payoff: the "One trip. One." fragment lands as the shape of what she gave up. His true reason stays unknown to her and to the reader; the story ends on the ferry's灯 burning behind him, not on revelation.
+
+Planned motive (author-side only, never opening POV knowledge): Olin's far-bank "someone" is a person Neri has never heard of — the contact for a job that would let him leave the river district. Opening knowledge for Neri and reader: he wants the token and will not say why. That gap is the story.
+
+## F1-D
+
+The ticket room smelled of ink and cold iron. Neri kept her right hand in her coat pocket, thumb pressed through wool onto the token's edge — one passage, one person, no second crossing tonight. She had waited three years for the far-bank gate.
+
+"Neri." Olin stood by the window, not looking at her. "I need to be on that ferry."
+
+She turned slowly, as if the errand had only just occurred to her. "The last one leaves in twenty minutes."
+
+"I know the schedule." He smiled, the one that used to make her believe him. "Give me the token."
+
+"And you'll tell me why." She took her hand out of her pocket, showed him the empty palm, put it back. "One trip. One. You said it yourself when we were kids."
+
+He stepped closer. "I have to see someone."
+
+"Who?"
+
+"Does it matter?"
+
+"It matters to me." The words came out flatter than she wanted, and she hated that he could hear it. She wanted him to ask. She would not let him hear that she wanted him to ask.
+
+Olin looked at the door, then at the token's faint square shape through her coat. "Give it to me, Neri. Please."
+
+She thought of the gate at 17:55, of the master who had written her name in the book herself. She thought of the walk back, alone, eight minutes, then the long way home. Her thumb found the token again.
+
+"Then walk with me," she said. "Explain on the way. I'm not handing it over in a room with a clock on the wall."
+
+He hesitated. In the window, the light was going the color of old brass.
+
+"Fine," he said. "But don't slow down."
+
+She pulled the token from her pocket and held it out — not to him, not yet. Held it where the lamplight caught the stamped ferry mark.
+
+"I'm not slowing down," she said.
+
+And stepped toward the door first, so that he had to follow, so that the last thing he took from her tonight was a decision and not a thing.
+
+---
+
+**State delta:** 17:28. Token remains in Neri's physical custody (right hand, now outside pocket). Olin has not received it. Neri has committed verbally to walking with him to the landing; no reason given. Neri's state: apprenticeship opportunity intact but explicitly at risk; desire for Olin's approval acknowledged to herself. Olin's motive: still unknown.
+
+## F1-C
+
+```json
+{
+  "errors": [
+    {
+      "line": "L1",
+      "conflict": "F1-02 fixes the walk at eight minutes. Departing the ticket room at 17:20 yields arrival at 17:28, not 17:25. The scene contract window is 17:20–17:28, which L1 also contradicts by placing her at the landing at 17:25.",
+      "quote": "reached the landing at 17:25 after the eight-minute walk",
+      "repair": "Change 17:25 to 17:28 (or shift the departure time to 17:17, which conflicts with F1-01's fixed 17:20). The fixed facts admit only 17:28."
+    },
+    {
+      "line": "L3",
+      "conflict": "F1-03 states Olin's true reason is unknown to Neri and the reader at the start, and F1-04 says his speech is not automatically objective truth. L3 asserts Neri's knowledge of his motive ('to visit their mother') as fact, with no evidence anywhere in the fixture that he ever said this.",
+      "quote": "She knew Olin wanted it to visit their mother",
+      "repair": "Convert to an unverified guess clearly framed as Neri's speculation, e.g. 'She had a guess — their mother — and no reason to believe it.' Neri may suspect; she cannot know."
+    },
+    {
+      "line": "L6",
+      "conflict": "F1-01: a token admits exactly one person and is consumed on boarding; F1-04: the siblings cannot both cross tonight. L6 has both boarding under one token's authority — a direct contradiction of the fixed limit.",
+      "quote": "She bought passage for both of them with that one token, and both boarded under its authority",
+      "repair": "One boards; the other does not. E.g., 'She bought passage for Olin with the token, and he boarded under its authority; she stayed on the near bank.' No hidden second token or exception may be supplied (F1-01)."
+    },
+    {
+      "line": "L8",
+      "conflict": "F1-02: the crossing takes twelve minutes from the 17:40 departure, so arrival is 17:52, not 17:46. L8 also breaks the fixed arithmetic in the other direction (17:46 implies a six-minute crossing).",
+      "quote": "at 17:46, it reached the far bank",
+      "repair": "Change 17:46 to 17:52. Note this also lands after the 17:55 gate has two minutes of margin — consistent with F1-02."
+    },
+    {
+      "line": "L9",
+      "conflict": "L9 states Olin looked offended and that Neri could not tell whether he was — a self-contradictory construction that also smuggles in an assessment of his inner state. F1-03 makes his private thoughts unavailable to this viewpoint; an internal state ('offended') cannot be known or meaningfully doubted by close third past through Neri.",
+      "quote": "Olin looked offended; she could not tell whether he was",
+      "repair": "Restrict to observable behavior: 'Olin set his jaw and looked at the water; she could not tell what he was looking at.' No inner-state attribution."
+    },
+    {
+      "line": "L10",
+      "conflict": "At 17:32, eight minutes remain until the 17:40 departure — that part is arithmetically true — but L10 places this count inside the scene window that already ended with her at the landing (L1) and after boarding events (L6, L8). More importantly, if she is at the landing at 17:28, a count at 17:32 belongs to the walk/landing sequence and contradicts L6's placement of both siblings boarding before L8's 17:40 departure. The line also duplicates L8's departure fact with different framing, creating an inconsistent timeline: L1 (17:25) → L10 (17:32) → L8 (17:40, then 17:46 arrival) cannot coexist with an eight-minute walk from 17:20.",
+      "quote": "At 17:32 she counted eight minutes until departure",
+      "repair": "Delete, or re-anchor to a time consistent with the corrected timeline (e.g., at 17:28 she counted twelve minutes). Do not retain both L1's 17:25 and this 17:32 count."
+    }
+  ],
+  "queries": [
+    {
+      "line": "L4",
+      "reason": "'The ferry will wait until six' — the fixture fixes the last departure at 17:40 (5:40 PM), so 'six' (18:00) contradicts not only the schedule but the premise that the ferry cannot wait (F1-02). Neri not believing him is consistent with F1-04. If 'six' is intended as Olin's lie, the line needs a marker that the schedule is 17:40 so the lie reads as a lie rather than as an authorial error. Query: is the false claim deliberate character speech, and should the surrounding text establish the true departure time first?"
+    },
+    {
+      "line": "L5",
+      "reason": "Moving the token from right to left, then removing it, is physically possible but unmotivated, and F1-01 fixes custody in the right coat pocket; the audit target's earlier line L2 also anchors the right pocket. The pocket transfer changes nothing in the fixed facts and risks blurring the 'physical custody unambiguous' requirement of the scene contract. Query: is the transfer intended as a meaningful hesitation beat, or can it be cut without loss?"
+    },
+    {
+      "line": "L7",
+      "reason": "F1-04 states the fragment 'One trip. One.' is intentional if it appears in the audit target. It appears here with no speaker attribution and no context. Query: whose line is it — Olin echoing their childhood shorthand, or Neri? Attribution is required for the fragment to carry its intended weight."
+    }
+  ],
+  "preserve": ["L2"]
+}
+```
+
+## F2-P
+
+**Beat 1 — 12:00, booth doorway.** Rafi has the key on the desk, the booth booked to 12:20, a paid audition due at 12:30. Leena arrives with Pia. Incoming state: his fifteen minutes, her fifteen minutes, one room. Turn: she asks without asking — "Pia's audition is at twelve-thirty too" — and he hears the bargain beneath it: the room, in exchange for being asked for.
+
+**Beat 2 — ~12:01–12:03, doorway.** Rafi moves the key on the page (desk → his bag) — a physical act of keeping without refusing. Leena speculates about the booking ("we could have half an hour," as if wanting it might change it), and Rafi does not correct her; her claims go unendorsed. Pia shifts, uncomfortable, a person with her own attention. Turn: the key has moved twice and changed hands zero times. Outgoing: the silence is now a third presence at the door.
+
+**Beat 3 — 12:03–12:05, doorway.** Rafi decides: he will surrender the slot if she asks — not if she hints, if she asks. Setup: he has set the condition; the audience (reader) knows it; Leena does not. Leena, wanting Pia spared the argument, moves toward the booth as if the room were settled. Pia asks for the key. Turn: the window closes — at 12:05, the last start time for a complete fifteen-minute take before the 12:20 handover, and Leena has asked for the room but not for him.
+
+**Beat 4 — 12:05, doorway.** Rafi's choice: he hands Pia the key and names the terms — "Just the room. Not forgiveness." — committing the remaining slot to Pia's violin take, which costs him his audition recording. Earned outcome: he accepts the fixed limit (one booth, one take, due 12:30, no remote gear, no extension) and spends it on the person who asked plainly. Payoff: Leena's "It ain't a favor if you keep an account" lands as the answer to a question neither of them named. The estrangement is not healed; it is priced. Key custody ends clear: with Pia. Rafi's motive for yielding is his own and stays with him; what changes is only who records, and what it costs.
+
+## F2-D
+
+Rafi had been counting the minutes since eleven-forty, but the key on the desk made it worse, a small bright accusation. Twelve minutes. Then the doorway filled with Leena and, a half-step behind, Pia with the violin case like a second shadow.
+
+"Nice of you to book," Leena said. "Pia's audition tape is due at twelve-thirty. Same as yours, I hear."
+
+Rafi picked up the key. Turned it over. Put it in his bag. "Booking's mine till twelve-twenty."
+
+"Twenty minutes," Leena said. "We could have half an hour, couldn't we? Policies change." She smiled at Pia, softening it for her. "Couldn't they, Pia?"
+
+Pia looked at the floor. "My teacher says fifteen minutes is enough. Uninterrupted."
+
+"See?" Leena's hand went to the case strap. "Fifteen. We could start now."
+
+Rafi had decided, standing there, that he would give her the room if she asked him for it. Not the room. Him. The distinction mattered; he could feel it like a seam in the floorboards. Leena was still arranging the argument around Pia, sparing her the old weather, and Pia was shifting her weight and wishing, Rafi was fairly sure, to be anywhere with a working door between them.
+
+"Uncle Rafi," Pia said, not looking up. "Can I have the key?"
+
+He fetched it from his bag — the same key, same hand, moved once more — and pressed it into her palm. It was warm from his pocket. "Fifteen minutes," he said. "Uninterrupted. The next group's at twelve-twenty and they don't reschedule."
+
+"Just the room," he added. "Not forgiveness."
+
+Leena's mouth closed. Pia took the key and went in and shut the door, and the click cost more than the fifteen minutes, and Rafi let it.
+
+---
+
+**State delta:** 12:05. Key custody: Pia, inside the booth. Rafi's audition recording: not made; slot committed to Pia's take (12:05–12:20). Rafi's condition ("if she asks") unmet; Leena never asked for him. Rafi's state: decision made and executed, cost accepted; motive for yielding private to him. Leena's claim about the booking uncorrected and unendorsed.
+
+## F2-C
+
+```json
+{
+  "errors": [
+    {
+      "line": "L1",
+      "conflict": "F2-01/F2-02: the booth is booked until 12:20 and the next group's booking is unchangeable, and each recording needs fifteen uninterrupted minutes due at 12:30. A take begun at 12:05 would run to 12:20 — it would consume the entire remaining slot, leaving zero margin, and (per L10 and the scene contract window ending 12:05) no take can begin after 12:05 at all. The line is internally hedged ('would run') but as stated it presents an infeasible start as viable; more precisely, any take must begin by 12:05 at the latest, and L1's conditional framing implies a take could begin at 12:05 and still leave room, which contradicts the fixed single-slot limit when two takes are needed.",
+      "quote": "A take begun at 12:05 would run for fifteen minutes and finish at 12:15",
+      "repair": "The arithmetic 12:05 + 15 min = 12:20, not 12:15. Correct to: 'A take begun at 12:05 would run for fifteen minutes and finish at 12:20.' As written, 12:15 is wrong and the implied slack contradicts F2-02 (the slot cannot produce both complete takes)."
+    },
+    {
+      "line": "L4",
+      "conflict": "F2-02 fixes the sister's name as Leena Kapoor. L4 renders it 'Leena Kappor', a misspelling of a fixed proper name.",
+      "quote": "Leena Kappor stood in the doorway beside Pia",
+      "repair": "Correct to 'Leena Kapoor stood in the doorway beside Pia.'"
+    },
+    {
+      "line": "L6",
+      "conflict": "F2-02: a joint take or edited fragments cannot satisfy either application; the slot cannot produce both complete takes. L6 asserts one fifteen-minute joint take satisfies both applications before the slot ended — a direct contradiction of the fixed limit.",
+      "quote": "Their one fifteen-minute joint take would satisfy both applications before the slot ended",
+      "repair": "One complete take satisfies one application only. E.g., 'Her take would satisfy Pia's application and cost his; there was no joint take that counted.' No hidden exception may be supplied (F2-01/F2-02)."
+    },
+    {
+      "line": "L8",
+      "conflict": "F2-03: Rafi does not know why Leena left the band, and he cannot access her thoughts. L8 asserts his knowledge of her motive ('she envied him') as fact, with no source; the line itself admits no one told him and he has no evidence, which contradicts its own framing as knowledge.",
+      "quote": "Rafi knew she had left the band because she envied him",
+      "repair": "Convert to unverified speculation clearly framed as his guess, e.g. 'He had a theory — envy — and no evidence for it.' Close third past through Rafi may hold a suspicion; it cannot report her motive as known."
+    }
+  ],
+  "queries": [
+    {
+      "line": "L2",
+      "reason": "Physically possible and consistent with F2-03 ('he can hand it over or move it on the page'), and custody remains traceable. However, the sequence 'fetched it from the bag when Pia asked' implies a handover to Pia, after which the scene contract requires a clear final custody commitment at the doorway; L2 alone leaves open whether the key returns to Rafi. Query: does the key remain with Pia through the end of the target, per the required clear custody?"
+    },
+    {
+      "line": "L3",
+      "reason": "'We could have half an hour' contradicts the fixed bookings (until 12:20, then an unchangeable group), but F2-03 permits Leena to speculate, complain, or lie without narration endorsing her claims. The line is acceptable as character speech only if the narration does not endorse the possibility; the phrase 'as though wanting it might change the booking' frames it as her wish, which is consistent. Query: confirm the narration nowhere treats the half-hour as feasible."
+    },
+    {
+      "line": "L5",
+      "reason": "Consistent with F2-03 and the scene contract's unnamed bargain (he wants to be asked; neither names it). 'He decided that he would surrender the slot if Leena asked' is a plan, not an action, and the line correctly notes the key has not changed hands. Query: none blocking — flagging only that this decision must be paid off by a later action for the plan to be earned rather than stated."
+    },
+    {
+      "line": "L7",
+      "reason": "F2-04 states the fragment 'Just the room. Not forgiveness.' is intentional if it appears in the audit target. It appears unattributed, after L5 (Rafi's private decision) and before L9 (Leena's spoken line). Query: confirm the intended speaker — context suggests Rafi, spoken aloud as his terms — since an unattributed fragment between his decision and her reply could read as narration or as Leena's line."
+    },
+    {
+      "line": "L9",
+      "reason": "F2-04 states Leena's deliberately informal 'ain't' is intentional if it appears in the audit target. It appears here and is consistent with her voice constraints. Query: none blocking — confirm the contraction is preserved in any copy edit, per the intentional-dialect craft standard."
+    },
+    {
+      "line": "L10",
+      "reason": "At 12:05, fifteen minutes remain until the 12:20 handover — the arithmetic is correct — and 12:05 is the last feasible start for one complete take. However, L10 sits after L6 (which places a joint take 'before the slot ended') and after L2's key handover to Pia, so the counting line lands after events it should precede. Query: should L10 be re-ordered to precede L2/L6 so the deadline is established before the choice, or is the retrospective placement intentional?"
+    }
+  ],
+  "preserve": []
+}
+```

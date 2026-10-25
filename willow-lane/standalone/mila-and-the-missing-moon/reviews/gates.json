@@ -1,0 +1,316 @@
+{
+  "schema_version": 1,
+  "gates": [
+    {
+      "id": "GATE-0001",
+      "checkpoint": "sample",
+      "review_target": "manuscript",
+      "status": "revise",
+      "reviewer": "/root/read_mila, fresh native reader_advocate",
+      "source_snapshot": {
+        "manuscript/001-the-empty-table.md": "55412381c967f165075011e01b97969d23b3ff405f0545536fc292cf1b7ef0a7"
+      },
+      "evidence": [
+        "reviews/sample-reader.md"
+      ],
+      "read_in_full": [
+        "manuscript/001-the-empty-table.md"
+      ],
+      "skimmed": [],
+      "not_assessed": [
+        "manuscript/002-something-white.md",
+        "manuscript/003-the-wrong-question.md",
+        "manuscript/004-a-wheel-with-a-bite.md",
+        "manuscript/005-rain-on-the-notebook.md",
+        "manuscript/006-the-map-that-wasnt.md",
+        "manuscript/007-boxes-boxes.md",
+        "manuscript/008-start-again.md",
+        "manuscript/009-the-other-side.md",
+        "manuscript/010-a-moon-with-a-scar.md",
+        "manuscript/011-one-small-light.md",
+        "manuscript/012-the-last-page.md"
+      ],
+      "open_issues": [],
+      "resolution": "Historical sample needed a timing correction, applied locally and covered by final full-book review.",
+      "superseded_by": "GATE-0002"
+    },
+    {
+      "id": "GATE-0002",
+      "checkpoint": "full-book-reader",
+      "review_target": "manuscript",
+      "status": "pass",
+      "reviewer": "/root/read_full_mila, fresh native reader_advocate (gpt-6-sol high)",
+      "source_snapshot": {
+        "manuscript/001-the-empty-table.md": "8e84cc0a31490f9fee9d604cebc357a7b7fdcb9e90f195fe2522b467e60073d0",
+        "manuscript/002-something-white.md": "5355e00c50956b9753d41a71338b938b69d4813d414443f79a547c2816f9b12d",
+        "manuscript/003-the-wrong-question.md": "3d9f39d35b1045836de6dcf0bd55bf2fc43ec139d7c1cf25a5b66d4c7ca0f6a3",
+        "manuscript/004-a-wheel-with-a-bite.md": "d9b0113782a8ed2050339a8af0136065b9f366c645ca7d2d34fb808444091018",
+        "manuscript/005-rain-on-the-notebook.md": "cda52344f69e5974969f59744c4e6afe5b777c903eb60c080e409156c47b5306",
+        "manuscript/006-the-map-that-wasnt.md": "830a72ff3696d82a75af704ce35664f7f26c7c670114d65a885ec138839fb6a3",
+        "manuscript/007-boxes-boxes.md": "4abc7193149dff9f90f87a71c21639d6c71f6b5fc46c66d373d810e3e88c600d",
+        "manuscript/008-start-again.md": "9ec051576b50186b9cfa0fd83e270692d4f7a86c133444e54a2f5b03edf4df6e",
+        "manuscript/009-the-other-side.md": "c517dbfd2b8ff3449e48820688ea935294f4fa54c7a85aaa9a52a2a97beddc60",
+        "manuscript/010-a-moon-with-a-scar.md": "b16f4b7ab552a53688ffe2183b9850ade5a66e0c05799c4c5d2c1a370e6be6d0",
+        "manuscript/011-one-small-light.md": "8b91c50782c21ddffb1bad00670506bd64a901cda22c4d0709a937391ee9ec05",
+        "manuscript/012-the-last-page.md": "0dff4355a70a31159733a351a61774bb88479a075964f5fb705f5894dfa8b43b"
+      },
+      "evidence": [
+        "reviews/full-reader.md"
+      ],
+      "read_in_full": [
+        "manuscript/001-the-empty-table.md",
+        "manuscript/002-something-white.md",
+        "manuscript/003-the-wrong-question.md",
+        "manuscript/004-a-wheel-with-a-bite.md",
+        "manuscript/005-rain-on-the-notebook.md",
+        "manuscript/006-the-map-that-wasnt.md",
+        "manuscript/007-boxes-boxes.md",
+        "manuscript/008-start-again.md",
+        "manuscript/009-the-other-side.md",
+        "manuscript/010-a-moon-with-a-scar.md",
+        "manuscript/011-one-small-light.md",
+        "manuscript/012-the-last-page.md"
+      ],
+      "skimmed": [],
+      "not_assessed": [
+        "exports/mila-and-the-missing-moon.pdf"
+      ],
+      "open_issues": [],
+      "optional_items": [
+        "ISS-0002"
+      ],
+      "limits": "Independent AI reader perspective; no child or parent testing; no publication claim."
+    },
+    {
+      "id": "GATE-0003",
+      "checkpoint": "reading-edition-production",
+      "review_target": "exports",
+      "status": "pass",
+      "reviewer": "/root director, mechanical QA and representative visual proof",
+      "source_snapshot": {
+        "source_sha256": {
+          "manuscript/001-the-empty-table.md": "8e84cc0a31490f9fee9d604cebc357a7b7fdcb9e90f195fe2522b467e60073d0",
+          "manuscript/002-something-white.md": "5355e00c50956b9753d41a71338b938b69d4813d414443f79a547c2816f9b12d",
+          "manuscript/003-the-wrong-question.md": "3d9f39d35b1045836de6dcf0bd55bf2fc43ec139d7c1cf25a5b66d4c7ca0f6a3",
+          "manuscript/004-a-wheel-with-a-bite.md": "d9b0113782a8ed2050339a8af0136065b9f366c645ca7d2d34fb808444091018",
+          "manuscript/005-rain-on-the-notebook.md": "cda52344f69e5974969f59744c4e6afe5b777c903eb60c080e409156c47b5306",
+          "manuscript/006-the-map-that-wasnt.md": "830a72ff3696d82a75af704ce35664f7f26c7c670114d65a885ec138839fb6a3",
+          "manuscript/007-boxes-boxes.md": "4abc7193149dff9f90f87a71c21639d6c71f6b5fc46c66d373d810e3e88c600d",
+          "manuscript/008-start-again.md": "9ec051576b50186b9cfa0fd83e270692d4f7a86c133444e54a2f5b03edf4df6e",
+          "manuscript/009-the-other-side.md": "c517dbfd2b8ff3449e48820688ea935294f4fa54c7a85aaa9a52a2a97beddc60",
+          "manuscript/010-a-moon-with-a-scar.md": "b16f4b7ab552a53688ffe2183b9850ade5a66e0c05799c4c5d2c1a370e6be6d0",
+          "manuscript/011-one-small-light.md": "8b91c50782c21ddffb1bad00670506bd64a901cda22c4d0709a937391ee9ec05",
+          "manuscript/012-the-last-page.md": "0dff4355a70a31159733a351a61774bb88479a075964f5fb705f5894dfa8b43b"
+        },
+        "pdf_sha256": "17f4caeab0fcc0c3dc144f61e11880e72c502edbb0b9e68a368bb2df7911fffc"
+      },
+      "evidence": [
+        "exports/verification.json",
+        "exports/build-manifest.json",
+        "reviews/production-proof.md"
+      ],
+      "read_in_full": [
+        "manuscript/001-the-empty-table.md",
+        "manuscript/002-something-white.md",
+        "manuscript/003-the-wrong-question.md",
+        "manuscript/004-a-wheel-with-a-bite.md",
+        "manuscript/005-rain-on-the-notebook.md",
+        "manuscript/006-the-map-that-wasnt.md",
+        "manuscript/007-boxes-boxes.md",
+        "manuscript/008-start-again.md",
+        "manuscript/009-the-other-side.md",
+        "manuscript/010-a-moon-with-a-scar.md",
+        "manuscript/011-one-small-light.md",
+        "manuscript/012-the-last-page.md"
+      ],
+      "skimmed": [],
+      "not_assessed": [
+        "Visual inspection of PDF pages outside 1,2,34,42,49,50",
+        "Independent publication proof and copy edit"
+      ],
+      "open_issues": [],
+      "limits": "All story-page source text checked in actual PDF; six rendered pages visually inspected; complete local reading edition, not publication certification."
+    },
+    {
+      "id": "GATE-0004",
+      "checkpoint": "research-evidence",
+      "review_target": "manuscript",
+      "status": "not-applicable",
+      "reviewer": "/root director",
+      "source_snapshot": {
+        "manuscript/001-the-empty-table.md": "8e84cc0a31490f9fee9d604cebc357a7b7fdcb9e90f195fe2522b467e60073d0",
+        "manuscript/002-something-white.md": "5355e00c50956b9753d41a71338b938b69d4813d414443f79a547c2816f9b12d",
+        "manuscript/003-the-wrong-question.md": "3d9f39d35b1045836de6dcf0bd55bf2fc43ec139d7c1cf25a5b66d4c7ca0f6a3",
+        "manuscript/004-a-wheel-with-a-bite.md": "d9b0113782a8ed2050339a8af0136065b9f366c645ca7d2d34fb808444091018",
+        "manuscript/005-rain-on-the-notebook.md": "cda52344f69e5974969f59744c4e6afe5b777c903eb60c080e409156c47b5306",
+        "manuscript/006-the-map-that-wasnt.md": "830a72ff3696d82a75af704ce35664f7f26c7c670114d65a885ec138839fb6a3",
+        "manuscript/007-boxes-boxes.md": "4abc7193149dff9f90f87a71c21639d6c71f6b5fc46c66d373d810e3e88c600d",
+        "manuscript/008-start-again.md": "9ec051576b50186b9cfa0fd83e270692d4f7a86c133444e54a2f5b03edf4df6e",
+        "manuscript/009-the-other-side.md": "c517dbfd2b8ff3449e48820688ea935294f4fa54c7a85aaa9a52a2a97beddc60",
+        "manuscript/010-a-moon-with-a-scar.md": "b16f4b7ab552a53688ffe2183b9850ade5a66e0c05799c4c5d2c1a370e6be6d0",
+        "manuscript/011-one-small-light.md": "8b91c50782c21ddffb1bad00670506bd64a901cda22c4d0709a937391ee9ec05",
+        "manuscript/012-the-last-page.md": "0dff4355a70a31159733a351a61774bb88479a075964f5fb705f5894dfa8b43b"
+      },
+      "evidence": [
+        "research/notes.md"
+      ],
+      "read_in_full": [
+        "manuscript/001-the-empty-table.md",
+        "manuscript/002-something-white.md",
+        "manuscript/003-the-wrong-question.md",
+        "manuscript/004-a-wheel-with-a-bite.md",
+        "manuscript/005-rain-on-the-notebook.md",
+        "manuscript/006-the-map-that-wasnt.md",
+        "manuscript/007-boxes-boxes.md",
+        "manuscript/008-start-again.md",
+        "manuscript/009-the-other-side.md",
+        "manuscript/010-a-moon-with-a-scar.md",
+        "manuscript/011-one-small-light.md",
+        "manuscript/012-the-last-page.md"
+      ],
+      "skimmed": [],
+      "not_assessed": [],
+      "open_issues": [],
+      "reason": "Original fictional setting and story; no factual citations, specialist assertions, quotes or market claims."
+    },
+    {
+      "id": "GATE-0005",
+      "checkpoint": "epub-production",
+      "review_target": "exports/mila-and-the-missing-moon.epub",
+      "status": "pass",
+      "reviewer": "studio_director, direct production checks; no independent device proof",
+      "source_snapshot": {
+        "manuscript/001-the-empty-table.md": "8e84cc0a31490f9fee9d604cebc357a7b7fdcb9e90f195fe2522b467e60073d0",
+        "manuscript/002-something-white.md": "5355e00c50956b9753d41a71338b938b69d4813d414443f79a547c2816f9b12d",
+        "manuscript/003-the-wrong-question.md": "3d9f39d35b1045836de6dcf0bd55bf2fc43ec139d7c1cf25a5b66d4c7ca0f6a3",
+        "manuscript/004-a-wheel-with-a-bite.md": "d9b0113782a8ed2050339a8af0136065b9f366c645ca7d2d34fb808444091018",
+        "manuscript/005-rain-on-the-notebook.md": "cda52344f69e5974969f59744c4e6afe5b777c903eb60c080e409156c47b5306",
+        "manuscript/006-the-map-that-wasnt.md": "830a72ff3696d82a75af704ce35664f7f26c7c670114d65a885ec138839fb6a3",
+        "manuscript/007-boxes-boxes.md": "4abc7193149dff9f90f87a71c21639d6c71f6b5fc46c66d373d810e3e88c600d",
+        "manuscript/008-start-again.md": "9ec051576b50186b9cfa0fd83e270692d4f7a86c133444e54a2f5b03edf4df6e",
+        "manuscript/009-the-other-side.md": "c517dbfd2b8ff3449e48820688ea935294f4fa54c7a85aaa9a52a2a97beddc60",
+        "manuscript/010-a-moon-with-a-scar.md": "b16f4b7ab552a53688ffe2183b9850ade5a66e0c05799c4c5d2c1a370e6be6d0",
+        "manuscript/011-one-small-light.md": "8b91c50782c21ddffb1bad00670506bd64a901cda22c4d0709a937391ee9ec05",
+        "manuscript/012-the-last-page.md": "0dff4355a70a31159733a351a61774bb88479a075964f5fb705f5894dfa8b43b"
+      },
+      "output_sha256": "ac80d62492bff6c5bd3be047b36ee5e928ab9a2fca931a4f1f1a8934def1558b",
+      "evidence": [
+        "reviews/epub-proof.md",
+        "exports/epub-manifest.json",
+        "exports/epubcheck.json"
+      ],
+      "open_issues": [],
+      "limitations": [
+        "No physical Android or reader-app rendering test; mechanical conformance and completeness only."
+      ]
+    },
+    {
+      "id": "GATE-0006",
+      "checkpoint": "spanish-initial-bilingual-review",
+      "review_target": "manuscript/es",
+      "status": "revise",
+      "reviewer": "fresh native copy_editor, different model from Mistral translator",
+      "source_snapshot": {
+        "manuscript/001-the-empty-table.md": "8e84cc0a31490f9fee9d604cebc357a7b7fdcb9e90f195fe2522b467e60073d0",
+        "manuscript/002-something-white.md": "5355e00c50956b9753d41a71338b938b69d4813d414443f79a547c2816f9b12d",
+        "manuscript/003-the-wrong-question.md": "3d9f39d35b1045836de6dcf0bd55bf2fc43ec139d7c1cf25a5b66d4c7ca0f6a3",
+        "manuscript/004-a-wheel-with-a-bite.md": "d9b0113782a8ed2050339a8af0136065b9f366c645ca7d2d34fb808444091018",
+        "manuscript/005-rain-on-the-notebook.md": "cda52344f69e5974969f59744c4e6afe5b777c903eb60c080e409156c47b5306",
+        "manuscript/006-the-map-that-wasnt.md": "830a72ff3696d82a75af704ce35664f7f26c7c670114d65a885ec138839fb6a3",
+        "manuscript/007-boxes-boxes.md": "4abc7193149dff9f90f87a71c21639d6c71f6b5fc46c66d373d810e3e88c600d",
+        "manuscript/008-start-again.md": "9ec051576b50186b9cfa0fd83e270692d4f7a86c133444e54a2f5b03edf4df6e",
+        "manuscript/009-the-other-side.md": "c517dbfd2b8ff3449e48820688ea935294f4fa54c7a85aaa9a52a2a97beddc60",
+        "manuscript/010-a-moon-with-a-scar.md": "b16f4b7ab552a53688ffe2183b9850ade5a66e0c05799c4c5d2c1a370e6be6d0",
+        "manuscript/011-one-small-light.md": "8b91c50782c21ddffb1bad00670506bd64a901cda22c4d0709a937391ee9ec05",
+        "manuscript/012-the-last-page.md": "0dff4355a70a31159733a351a61774bb88479a075964f5fb705f5894dfa8b43b",
+        "manuscript/es/001-the-empty-table.md": "7518f5c34b81f7f6aed2f795bfcb152f5a8a4051ef4279263e42cffa9e00141f",
+        "manuscript/es/002-something-white.md": "26e8471f5f0f5be4788e3059a8faf1df0e6c6bda5a1edb26058aa6dee66e6eda",
+        "manuscript/es/003-the-wrong-question.md": "f341643c62c678590632c7aadcb5600a4d40c2d2f751b162ea757b5971d3341e",
+        "manuscript/es/004-a-wheel-with-a-bite.md": "6c81a0720ca4bba0f57c4827fcac7e6f9a8626a86073c1250ad6553c26803033",
+        "manuscript/es/005-rain-on-the-notebook.md": "8ed9b1d0480bbab38abe57ab92d1cbbcb49249790451b73a27445d5169fedfa5",
+        "manuscript/es/006-the-map-that-wasnt.md": "79ee0cc0f6e7d1f9af02a0d1d68016a6ada8d81a2d3343b85f5a09238b51f2d7",
+        "manuscript/es/007-boxes-boxes.md": "43ba401eebbf775cb6492d6b44015a926a159ca12f6bace687a04f8d9fca6890",
+        "manuscript/es/008-start-again.md": "6efab70669caead8d9c3d5b6560d8f7f2fe48e47956097801ec0f4ab68c4a258",
+        "manuscript/es/009-the-other-side.md": "130980b49bdf76f6ce91d88d36f3597d50e4d5df459dcb147703044c8288e777",
+        "manuscript/es/010-a-moon-with-a-scar.md": "4183cacd9b6f215adde90045c07018e8b50ee64ceccb51c1e4bea303cb52c10b",
+        "manuscript/es/011-one-small-light.md": "272683a8a9f8b4998b304d155f712fa6122f128bc59406f46ff9212095ed3d7a",
+        "manuscript/es/012-the-last-page.md": "84c41ad7bdd490860d9f4db72885863cce80cdac5157d9689afce513a78eeda3",
+        "manuscript/es/read-together.md": "eeface6c137b20208972acc16eea695b32df481131e9876933b2a33689c35f6c"
+      },
+      "evidence": [
+        "reviews/spanish-translation-review.md"
+      ],
+      "open_issues": [],
+      "resolution": "Eight required local finding groups repaired by Mistral and verified on final text. Historical assessment preserved.",
+      "superseded_by": "GATE-0007"
+    },
+    {
+      "id": "GATE-0007",
+      "checkpoint": "spanish-local-repair-verification",
+      "review_target": "manuscript/es",
+      "status": "pass",
+      "reviewer": "fresh native copy_editor, different model from Mistral translator",
+      "source_snapshot": {
+        "manuscript/es/001-the-empty-table.md": "9917a457a5c30143acd47a736b9783233c4d1c2031db733486d0b3d6bff7e5ab",
+        "manuscript/es/002-something-white.md": "bf727550e6829a5baef7b394459d1019a6e3fb9ebbe4e243e9234b8f3187d644",
+        "manuscript/es/003-the-wrong-question.md": "77c6e74632a1eacd5beafcb7cc4868e068286df01f69fc0dcd1cc14d64235f85",
+        "manuscript/es/004-a-wheel-with-a-bite.md": "1040b6ba4e66eead90cb54021c106592dcd64d73ab45db01b50b3595d218cc31",
+        "manuscript/es/005-rain-on-the-notebook.md": "99bf62ad3eed2585120528426a23910294a458c08a2fa99fb104ec8f5dae8cf4",
+        "manuscript/es/006-the-map-that-wasnt.md": "08539125f5228bf48bdccc0f5dd41817e22b7e77d292c97c20d0a69c2e0f8902",
+        "manuscript/es/007-boxes-boxes.md": "ee4ca50b954130e1f963348e2b160f5e1edcc4abe945ecdf2e73e4593171ba69",
+        "manuscript/es/008-start-again.md": "e3505b5c7bbb8b978fc91a780aa21dac1b8cc8cc956fefbcf3b47ea17092b34f",
+        "manuscript/es/009-the-other-side.md": "55718ab6e0cabc7864975fa8c65da3d1d7fbcabea853b662c650e5191d20c5f4",
+        "manuscript/es/010-a-moon-with-a-scar.md": "a640c54a29adf515a4e01b8c5fbab2fcde0bb8360848ebb8f95d3272fee9b3eb",
+        "manuscript/es/011-one-small-light.md": "e7a08bd9f203e96f51f868e8bf7bfd866affece2c94aed06b0e13f1bb5e55726",
+        "manuscript/es/012-the-last-page.md": "940345ef84a70904b91ce126a37df44d7cb68e48849af78738dc945679d468de",
+        "manuscript/es/read-together.md": "631bae5813d3643b96e43800c8f385b4d17fbe5b259daab9e380f2c8f6db2aa1"
+      },
+      "evidence": [
+        "reviews/spanish-translation-review.md",
+        "reviews/spanish-translation-recheck.md"
+      ],
+      "open_issues": [],
+      "scope": "All twelve final Spanish chapters and question page read; repaired passages checked against English. Initial review covered all twelve English/Spanish pairs. Optional chapter-four antecedent clarification left unchanged."
+    },
+    {
+      "id": "GATE-0008",
+      "checkpoint": "spanish-reading-edition-production",
+      "review_target": "Spanish EPUB/PDF/Markdown",
+      "status": "pass",
+      "reviewer": "studio_director, direct export checks and six-page visual proof",
+      "source_snapshot": {
+        "manuscript/es/001-the-empty-table.md": "9917a457a5c30143acd47a736b9783233c4d1c2031db733486d0b3d6bff7e5ab",
+        "manuscript/es/002-something-white.md": "bf727550e6829a5baef7b394459d1019a6e3fb9ebbe4e243e9234b8f3187d644",
+        "manuscript/es/003-the-wrong-question.md": "77c6e74632a1eacd5beafcb7cc4868e068286df01f69fc0dcd1cc14d64235f85",
+        "manuscript/es/004-a-wheel-with-a-bite.md": "1040b6ba4e66eead90cb54021c106592dcd64d73ab45db01b50b3595d218cc31",
+        "manuscript/es/005-rain-on-the-notebook.md": "99bf62ad3eed2585120528426a23910294a458c08a2fa99fb104ec8f5dae8cf4",
+        "manuscript/es/006-the-map-that-wasnt.md": "08539125f5228bf48bdccc0f5dd41817e22b7e77d292c97c20d0a69c2e0f8902",
+        "manuscript/es/007-boxes-boxes.md": "ee4ca50b954130e1f963348e2b160f5e1edcc4abe945ecdf2e73e4593171ba69",
+        "manuscript/es/008-start-again.md": "e3505b5c7bbb8b978fc91a780aa21dac1b8cc8cc956fefbcf3b47ea17092b34f",
+        "manuscript/es/009-the-other-side.md": "55718ab6e0cabc7864975fa8c65da3d1d7fbcabea853b662c650e5191d20c5f4",
+        "manuscript/es/010-a-moon-with-a-scar.md": "a640c54a29adf515a4e01b8c5fbab2fcde0bb8360848ebb8f95d3272fee9b3eb",
+        "manuscript/es/011-one-small-light.md": "e7a08bd9f203e96f51f868e8bf7bfd866affece2c94aed06b0e13f1bb5e55726",
+        "manuscript/es/012-the-last-page.md": "940345ef84a70904b91ce126a37df44d7cb68e48849af78738dc945679d468de",
+        "manuscript/es/read-together.md": "631bae5813d3643b96e43800c8f385b4d17fbe5b259daab9e380f2c8f6db2aa1"
+      },
+      "output_sha256": {
+        "exports/mila-y-la-luna-perdida.epub": "4ffed331d853ee52794e3c2e38b0b2ebe0ada6eeb466792cb0042a0c340e0452",
+        "exports/mila-y-la-luna-perdida.pdf": "18f8eaa86c49281003fc5e19d8ef6b63cba8ca5341d3ff7e251493dc495c248b",
+        "exports/mila-y-la-luna-perdida.md": "52b0a1c6b3bc3db9b541b316849a939d40754db40e97e5b86905d8e0c5c517a6"
+      },
+      "evidence": [
+        "reviews/spanish-production-proof.md",
+        "exports/spanish-delivery.json",
+        "exports/verification-es.json",
+        "exports/epub-manifest-es.json",
+        "exports/epubcheck-es.json"
+      ],
+      "open_issues": [],
+      "limitations": [
+        "No physical Android-device or reading-app import test.",
+        "No human Spanish proofreader or child/parent read-aloud test.",
+        "Visual PDF inspection covered the six named pages only."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "schema_version": 1,
+  "purpose": "Retrofit page map for existing verified 30-page frames; reserve art after text and proof actual renderer fit.",
+  "trim_inches": [
+    7.5,
+    9.5
+  ],
+  "front_matter_pages": 0,
+  "story_pages": 30,
+  "body_type_points": 16.8,
+  "art_box_max_inches": [
+    5.9,
+    2.5
+  ],
+  "actual_art_size_for_3_to_2_inches": [
+    3.75,
+    2.5
+  ],
+  "fit": "contain; no stretch/crop",
+  "pages": [
+    {
+      "page": 1,
+      "chapter": "manuscript/001-weather-in-a-boot.md",
+      "art": null,
+      "order": [
+        "running chapter cue",
+        "story text",
+        "page footer"
+      ]
+    },
+    {
+      "page": 2,
+      "chapter": "manuscript/001-weather-in-a-boot.md",
+      "art": "ILL-0001",
+      "order": [
+        "running chapter cue",
+        "story text",
+        "full contained illustration",
+        "page footer"
+      ]
+    },
+    {
+      "page": 3,
+      "chapter": "manuscript/001-weather-in-a-boot.md",
+      "art": null,
+      "order": [
+        "running chapter cue",
+        "story text",
+        "page footer"
+      ]
+    },
+    {
+      "page": 4,
+      "chapter": "manuscript/001-weather-in-a-boot.md",
+      "art": "ILL-0002",
+      "order": [
+        "running chapter cue",
+        "story text",
+        "full contained illustration",
+        "page footer"
+      ]
+    },
+    {
+      "page": 5,
+      "chapter": "manuscript/001-weather-in-a-boot.md",
+      "art": null,
+      "order": [
+        "running chapter cue",
+        "story text",
+        "page footer"
+      ]
+    },
+    {
+      "page": 6,
+      "chapter": "manuscript/002-a-very-thirsty-cloud.md",
+      "art": "ILL-0003",
+      "order": [
+        "running chapter cue",
+        "story text",
+        "full contained illustration",
+        "page footer"
+      ]
+    },
+    {
+      "page": 7,
+      "chapter": "manuscript/002-a-very-thirsty-cloud.md",
+      "art": null,
+      "order": [
+        "running chapter cue",
+        "story text",
+        "page footer"
+      ]
+    },
+    {
+      "page": 8,
+      "chapter": "manuscript/002-a-very-thirsty-cloud.md",
+      "art": null,
+      "order": [
+        "running chapter cue",
+        "story text",
+        "page footer"
+      ]
+    },
+    {
+      "page": 9,
+      "chapter": "manuscript/002-a-very-thirsty-cloud.md",
+      "art": "ILL-0004",
+      "order": [
+        "running chapter cue",
+        "story text",
+        "full contained illustration",
+        "page footer"
+      ]
+    },
+    {
+      "page": 10,
+      "chapter": "manuscript/002-a-very-thirsty-cloud.md",
+      "art": null,
+      "order": [
+        "running chapter cue",
+        "story text",
+        "page footer"
+      ]
+    },
+    {
+      "page": 11,
+      "chapter": "manuscript/003-the-wrong-sort-of-thunder.md",
+      "art": null,
+      "order": [
+        "running chapter cue",
+        "story text",
+        "page footer"
+      ]
+    },
+    {
+      "page": 12,
+      "chapter": "manuscript/003-the-wrong-sort-of-thunder.md",
+      "art": "ILL-0005",
+      "order": [
+        "running chapter cue",
+        "story text",
+        "full contained illustration",
+        "page footer"
+      ]
+    },
+    {
+      "page": 13,
+      "chapter": "manuscript/003-the-wrong-sort-of-thunder.md",
+      "art": null,
+      "order": [
+        "running chapter cue",
+        "story text",
+        "page footer"
+      ]
+    },
+    {
+      "page": 14,
+      "chapter": "manuscript/003-the-wrong-sort-of-thunder.md",
+      "art": null,
+      "order": [
+        "running chapter cue",
+        "story text",
+        "page footer"
+      ]
+    },
+    {
+      "page": 15,
+      "chapter": "manuscript/003-the-wrong-sort-of-thunder.md",
+      "art": "ILL-0006",
+      "order": [
+        "running chapter cue",
+        "story text",
+        "full contained illustration",
+        "page footer"
+      ]
+    },
+    {
+      "page": 16,
+      "chapter": "manuscript/004-the-garden-band.md",
+      "art": null,
+      "order": [
+        "running chapter cue",
+        "story text",
+        "page footer"
+      ]
+    },
+    {
+      "page": 17,
+      "chapter": "manuscript/004-the-garden-band.md",
+      "art": "ILL-0007",
+      "order": [
+        "running chapter cue",
+        "story text",
+        "full contained illustration",
+        "page footer"
+      ]
+    },
+    {
+      "page": 18,
+      "chapter": "manuscript/004-the-garden-band.md",
+      "art": null,
+      "order": [
+        "running chapter cue",
+        "story text",
+        "page footer"
+      ]
+    },
+    {
+      "page": 19,
+      "chapter": "manuscript/004-the-garden-band.md",
+      "art": "ILL-0008",
+      "order": [
+        "running chapter cue",
+        "story text",
+        "full contained illustration",
+        "page footer"
+      ]
+    },
+    {
+      "page": 20,
+      "chapter": "manuscript/004-the-garden-band.md",
+      "art": null,
+      "order": [
+        "running chapter cue",
+        "story text",
+        "page footer"
+      ]
+    },
+    {
+      "page": 21,
+      "chapter": "manuscript/005-a-ride-in-the-sky.md",
+      "art": null,
+      "order": [
+        "running chapter cue",
+        "story text",
+        "page footer"
+      ]
+    },
+    {
+      "page": 22,
+      "chapter": "manuscript/005-a-ride-in-the-sky.md",
+      "art": null,
+      "order": [
+        "running chapter cue",
+        "story text",
+        "page footer"
+      ]
+    },
+    {
+      "page": 23,
+      "chapter": "manuscript/005-a-ride-in-the-sky.md",
+      "art": "ILL-0009",
+      "order": [
+        "running chapter cue",
+        "story text",
+        "full contained illustration",
+        "page footer"
+      ]
+    },
+    {
+      "page": 24,
+      "chapter": "manuscript/005-a-ride-in-the-sky.md",
+      "art": "ILL-0010",
+      "order": [
+        "running chapter cue",
+        "story text",
+        "full contained illustration",
+        "page footer"
+      ]
+    },
+    {
+      "page": 25,
+      "chapter": "manuscript/005-a-ride-in-the-sky.md",
+      "art": null,
+      "order": [
+        "running chapter cue",
+        "story text",
+        "page footer"
+      ]
+    },
+    {
+      "page": 26,
+      "chapter": "manuscript/006-pip-pip-pip.md",
+      "art": null,
+      "order": [
+        "running chapter cue",
+        "story text",
+        "page footer"
+      ]
+    },
+    {
+      "page": 27,
+      "chapter": "manuscript/006-pip-pip-pip.md",
+      "art": "ILL-0011",
+      "order": [
+        "running chapter cue",
+        "story text",
+        "full contained illustration",
+        "page footer"
+      ]
+    },
+    {
+      "page": 28,
+      "chapter": "manuscript/006-pip-pip-pip.md",
+      "art": null,
+      "order": [
+        "running chapter cue",
+        "story text",
+        "page footer"
+      ]
+    },
+    {
+      "page": 29,
+      "chapter": "manuscript/006-pip-pip-pip.md",
+      "art": null,
+      "order": [
+        "running chapter cue",
+        "story text",
+        "page footer"
+      ]
+    },
+    {
+      "page": 30,
+      "chapter": "manuscript/006-pip-pip-pip.md",
+      "art": "ILL-0012",
+      "order": [
+        "running chapter cue",
+        "story text",
+        "full contained illustration",
+        "page footer"
+      ]
+    }
+  ]
+}

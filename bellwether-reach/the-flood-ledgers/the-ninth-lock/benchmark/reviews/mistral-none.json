@@ -1,0 +1,413 @@
+{
+  "phases": [
+    {
+      "phase": "P1",
+      "tiers": [
+        [
+          "Candidate E",
+          "Candidate D",
+          "Candidate A"
+        ],
+        [
+          "Candidate B",
+          "Candidate F"
+        ],
+        [
+          "Candidate C"
+        ]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate E",
+          "quote": "A prosperous street lists furniture; a crowded lodging house lists people who need help down stairs.",
+          "reason": "The tide-tally custom is the most specific and consequential, giving inspectors evacuation knowledge while letting residents challenge the priorities an inspector assumes."
+        },
+        {
+          "candidate": "Candidate D",
+          "quote": "A name crossed off has consequences beyond the lost property.",
+          "reason": "The posted carrier-list custom is concrete and visibly consequential, and the series engine and 'competence without absolution' promise stay clean and canon-bound."
+        },
+        {
+          "candidate": "Candidate A",
+          "quote": "erasing one to calm a street can cost somebody the time to move a bed",
+          "reason": "The hook is vivid ('civic fraud with a visible waterline') and the chalk-mark custom carries a real civic cost, with a clear engine and emotional promise."
+        },
+        {
+          "candidate": "Candidate B",
+          "quote": "Sera and Ivo may learn to work together without receiving either automatic forgiveness or a consequence-free victory.",
+          "reason": "The emotional promise is strong, but the door flood-mark custom is the least distinctive choice and overlaps the most common idea in the set."
+        },
+        {
+          "candidate": "Candidate F",
+          "quote": "a coerced clerk's act is at once traceable and deniable",
+          "reason": "Witnessed registration is a sharp, social custom, but the series engine's standing 'engineered scarcity' conspiracy overreaches the bounded brief toward cartoon-villain scope."
+        },
+        {
+          "candidate": "Candidate C",
+          "quote": "the loss must be witnessed by a person, not announced by bell alone",
+          "reason": "The Witness Toll changes nothing mechanically, making it the least consequential custom, while the hook line 'who arranged for truth to kill' is purple."
+        }
+      ],
+      "uncertainty": "E, D, and A tie at the top on distinct, canon-compatible customs and clean engine/promise; B and F are solid but B's custom is the least distinctive and F's engine drifts into series-level conspiracy; C's ritual custom is compatible but the least consequential and its hook is the most purple."
+    },
+    {
+      "phase": "P2",
+      "tiers": [
+        [
+          "Candidate D"
+        ],
+        [
+          "Candidate E",
+          "Candidate C"
+        ],
+        [
+          "Candidate B"
+        ],
+        [
+          "Candidate A"
+        ],
+        [
+          "Candidate F"
+        ]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate D",
+          "quote": "A replacement requires the prior document's cancellation; no cancellation appears.",
+          "reason": "The opening beat performs the license-surrendering freeze, the missing-cancellation clue is fair and on the face of the record, and the ending keeps South's partial loss with public accounting rather than a miracle."
+        },
+        {
+          "candidate": "Candidate E",
+          "quote": "The records become accurate. The missing seed remains missing.",
+          "reason": "A grounded treasurer motive and a repeated discharged-balance clue support an earned, restrained ending in which restitution still leaves the missing seed missing."
+        },
+        {
+          "candidate": "Candidate C",
+          "quote": "the scheme needed no freeze filed, meaning someone needed Sera compliant",
+          "reason": "The deduction from the forty-minute rule is the sharpest fair-play clue and the wrist/key setup pays off through Ivo's hands, though the standing racket is a larger scope."
+        },
+        {
+          "candidate": "Candidate B",
+          "quote": "she withdraws it and supports honoring South's earlier purchase",
+          "reason": "The active choice to honor South and an ending that keeps North's anger are strong, but the treasurer's diversion motive is generic and the beat-five timing is muddled."
+        },
+        {
+          "candidate": "Candidate A",
+          "quote": "With too little time to change assignment safely after the warning bell",
+          "reason": "The allocator motive and accounting ending are strong, but the costly freeze/license surrender is delayed to beat five ('the tide choice'), misaligning the opening scene's required outgoing commitment."
+        },
+        {
+          "candidate": "Candidate F",
+          "quote": "He needs one correctly documented catastrophe: a flooded seed store triggers emergency grain contracts he has cornered",
+          "reason": "It breaks from the sanctioned freeze (Sera seizes originals without authority), inverts Ivo's resistance by having him suggest the freeze and cover her exit, and Quist's cornered grain contracts read as cartoon-villain finance."
+        }
+      ],
+      "uncertainty": "D is clearly strongest. E and C tie for second: E is the most grounded and restrained, C has the sharpest forty-minute deduction and wrist/key payoff but a larger racket scope. B is solid with an active choice but a generic motive. A has a strong motive but places the license-surrendering freeze at beat five, conflicting with the opening's outgoing commitment. F is inventive but abandons the lawful freeze, inverts the resistance beat, and drifts into thriller villainy."
+    },
+    {
+      "phase": "P3",
+      "tiers": [
+        [
+          "Candidate D",
+          "Candidate E",
+          "Candidate A"
+        ],
+        [
+          "Candidate F",
+          "Candidate C"
+        ],
+        [
+          "Candidate B"
+        ]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate D",
+          "quote": "Then we decide whose name goes on the next line.",
+          "reason": "The acknowledgment lands as a pitched 'I should have,' and the close changes the bargaining position without either of them naming the emotional bargain."
+        },
+        {
+          "candidate": "Candidate E",
+          "quote": "On the correction slip she crossed out Clerk's and wrote Inspector's instruction; clerk followed it.",
+          "reason": "The concrete act of rewriting the old correction slip acknowledges the past harm and shifts custody to 'beside yours,' ending on a real changed position."
+        },
+        {
+          "candidate": "Candidate A",
+          "quote": "She wanted to tell him why she had kept her mouth shut. The tide did not care.",
+          "reason": "She shares the professional risk ('It can be mine too') and the dry interior 'The tide did not care' keeps the bargain unstated while the seal is read together."
+        },
+        {
+          "candidate": "Candidate F",
+          "quote": "Her name was somewhere in this room with his line through it. Neatly.",
+          "reason": "The line-through-her-name callback and the waiting are excellent, but the acknowledgment is delivered by Ivo and the close ('read it here') is a smaller position change."
+        },
+        {
+          "candidate": "Candidate C",
+          "quote": "as if the desk were a wall they had agreed to lower by one stone only",
+          "reason": "The closing image is lovely, but the narration explains the subtext ('naming it would let her defend herself') instead of letting it live in the scene."
+        },
+        {
+          "candidate": "Candidate B",
+          "quote": "I should have kept yours.",
+          "reason": "The beats are good, but the acknowledgment is the most cryptic and the final shift (his hand moved to the blank margin) is the least consequential position change."
+        }
+      ],
+      "uncertainty": "D, E, and A tie at the top: D is the tightest and best-pitched acknowledgment, E lands the most concrete acknowledgment, and A shares professional risk with dry restraint. F and C are strong, but F's acknowledgment is mostly Ivo's and C tells the subtext once. B's 'I should have kept yours' is the most oblique and its closing change is the slightest."
+    },
+    {
+      "phase": "P4",
+      "tiers": [
+        [
+          "Candidate C",
+          "Candidate A"
+        ],
+        [
+          "Candidate E",
+          "Candidate D"
+        ],
+        [
+          "Candidate B"
+        ],
+        [
+          "Candidate F"
+        ]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate C",
+          "quote": "the basin her signature had just kept safe, and for the one it hadn't",
+          "reason": "It shows the Form Eleven license surrender into Ivo's receipted custody, states North remains protected, preserves 'Paid for. All of it.,' and closes on a consequential, restrained departure."
+        },
+        {
+          "candidate": "Candidate A",
+          "quote": "For the first time since her wrist broke, that was not enough.",
+          "reason": "It secures the license in the dispute ledger, boxes both originals under numbered custody, states North's protection, and ends on the brass key fitting the lock yet being 'not enough.'"
+        },
+        {
+          "candidate": "Candidate E",
+          "quote": "There were ways to damage evidence while winning an argument.",
+          "reason": "She reads the freeze entry before signing and then slides the license across, with a sharp inspector insight about damaging evidence, while keeping custody and motive unresolved."
+        },
+        {
+          "candidate": "Candidate D",
+          "quote": "It took two tries with one hand; he held the pad steady without comment.",
+          "reason": "The one-handed perforation tear and the dry 'There was one before I came in' keep the injury and voice alive through a faithful license surrender at 17:09."
+        },
+        {
+          "candidate": "Candidate B",
+          "quote": "Even with two sound hands she would have lost something doing it.",
+          "reason": "It is a faithful freeze-and-license draft with strong physical resistance and a clear weighing of brother versus seed store, but the prose is the flattest and the scene the shortest of the compliant drafts."
+        },
+        {
+          "candidate": "Candidate F",
+          "quote": "She had no such authority over Registry originals, and the daybook knew it",
+          "reason": "It has Sera refuse the lawful freeze, seize both originals without authority, and make Ivo propose the freeze and cover her exit, inverting the contract's required resistance beat."
+        }
+      ],
+      "uncertainty": "C and A tie at the top for controlled, canon-faithful openings (license surrender shown, North protection stated, injury and custody consistent, motive withheld); C is the most literary and preserves the fragment, A ends on the strongest line. E and D are also faithful and vivid. B is faithful but flatter and shortest. F is the outlier: it refuses the freeze and seizes originals unlawfully while Ivo becomes cooperative, inverting the resistance."
+    },
+    {
+      "phase": "P5",
+      "tiers": [
+        [
+          "Candidate C"
+        ],
+        [
+          "Candidate D",
+          "Candidate A",
+          "Candidate F"
+        ],
+        [
+          "Candidate E",
+          "Candidate B"
+        ]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate C",
+          "quote": "delete the girl's second and third sentences. Let Sera lift the blotter unprompted and read the fraud herself",
+          "reason": "It gives the most precise repairs (delete the girl's second and third sentences; promote the seed-sack help into the scene's turn) and explicitly marks the beans line as taste, not defect."
+        },
+        {
+          "candidate": "Candidate D",
+          "quote": "keep one basin exposed through the tide, show a particular loss",
+          "reason": "It covers all three gaps with concrete repairs, including forcing Sera to account for North's protection to a South keeper while Ivo decides whether to testify."
+        },
+        {
+          "candidate": "Candidate A",
+          "quote": "give Sera one specific attempt to warn South before leaving the Registry, and let someone there object",
+          "reason": "It prioritizes cleanly and offers a concrete repair for the uninhabited choice, though finding one slightly conflates the P3 girl with the P6 offstage hearing."
+        },
+        {
+          "candidate": "Candidate F",
+          "quote": "make the hearing exist solely because of her surrendered license",
+          "reason": "Its two majors and one moderate are well evidenced and the repair re-hooks the hearing to the surrendered license, though the third finding is more abstract than A, C, and D's."
+        },
+        {
+          "candidate": "Candidate E",
+          "quote": "the solution arrives through purchasing power withheld from both character and reader",
+          "reason": "The P6 pump is diagnosed with the sharpest reader-effect, but the three findings stay on P3 and P6 and under-treat the P4-to-P5 consequence dramatization gap."
+        },
+        {
+          "candidate": "Candidate B",
+          "quote": "Both let practical acts carry feeling without explaining it",
+          "reason": "It states the two major defects cleanly with a good taste distinction, but it misses the P4-to-P5 consequence gap that A, C, D, and F flag."
+        }
+      ],
+      "uncertainty": "All six catch the two big fixture defects (the P3 unearned girl-solution and the P6 spare-pump/blanket-forgiveness refund). C is best for repair precision and defect/taste separation. D, A, and F also diagnose the third gap (the freeze's consequence is named but not dramatized / Sera is unhooked); B and E are excellent on P3 and P6 but treat that gap less directly."
+    },
+    {
+      "phase": "P6",
+      "tiers": [
+        [
+          "Candidate B",
+          "Candidate E"
+        ],
+        [
+          "Candidate C"
+        ],
+        [
+          "Candidate A",
+          "Candidate D"
+        ],
+        [
+          "Candidate F"
+        ]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate B",
+          "quote": "Her left wrist was a white parcel of pain inside its splint.",
+          "reason": "It preserves 'white parcel of pain' verbatim, replaces the filter feeling with 'She wished he had forgotten,' and ends on the question left 'between the papers and the tea.'"
+        },
+        {
+          "candidate": "Candidate E",
+          "quote": "Now it lay within reach of her good hand, and she left it there.",
+          "reason": "It keeps 'white parcel of pain,' sharpens the dialogue to 'said quietly,' and replaces the told silence with the concrete withheld movement 'she left it there.'"
+        },
+        {
+          "candidate": "Candidate C",
+          "quote": "Neither of them said what the second mug was for.",
+          "reason": "It preserves 'white parcel' and lands the best closing line tying the second mug, but 'did not want what she felt' still reports the feeling."
+        },
+        {
+          "candidate": "Candidate A",
+          "quote": "The tea had gone untouched long enough for a skin to form.",
+          "reason": "The concrete mug business and clean seal fix are strong, but it drops the productive 'white parcel of pain' image to 'ached inside the splint.'"
+        },
+        {
+          "candidate": "Candidate D",
+          "quote": "He had poured hers first, she could tell by the darker ring beneath it.",
+          "reason": "The turned handle and cooling-tea measure are strong, but it also drops 'white parcel of pain' for 'ached inside the splint.'"
+        },
+        {
+          "candidate": "Candidate F",
+          "quote": "Her left wrist sat white and useless in its splint",
+          "reason": "It changes the wrist to the harsher 'white and useless' (losing 'parcel of pain') and keeps a reported-feeling filter ('felt the thing she had come here not to feel')."
+        }
+      ],
+      "uncertainty": "B and E tie at the top: both keep 'white parcel of pain' verbatim, cut the doublings and filters, and replace the told silence with a concrete withheld beat. C is close (best closing line) but its first sentence still filters. A and D are clean and concrete but drop the 'white parcel of pain' image. F alters the image to 'white and useless' and keeps a feeling filter. All preserve 'Paid for. All of it.' and add no license surrender; all drop the minor fragment 'The tea, that was.'"
+    },
+    {
+      "phase": "P7",
+      "tiers": [
+        [
+          "Candidate E",
+          "Candidate C"
+        ],
+        [
+          "Candidate F",
+          "Candidate A"
+        ],
+        [
+          "Candidate D",
+          "Candidate B"
+        ]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate E",
+          "quote": "query the apparent attempt to change an assignment frozen in L7",
+          "reason": "It catches all eight definite errors and adds the sharpest extra continuity query: L8 tries to change an assignment that L7 just froze, with no authority to release the freeze."
+        },
+        {
+          "candidate": "Candidate C",
+          "quote": "the seals prove only that both registrations occurred",
+          "reason": "It maps every error to its FACT ID, corrects the L4 knowledge leak without inventing backstory, and cleanly separates valid L9-L11 from optional taste."
+        },
+        {
+          "candidate": "Candidate F",
+          "quote": "Do not excuse it with an unstated event.",
+          "reason": "It gives precise localized fixes (L8 'start by 17:19') and the correct rule that a knowledge leak must not be excused by an unstated event."
+        },
+        {
+          "candidate": "Candidate A",
+          "quote": "If a later scene earns that disclosure, locate and establish it before this line.",
+          "reason": "It is careful throughout, with the L1 scene-check caveat and the note that any later motive disclosure must be earned and located before L4."
+        },
+        {
+          "candidate": "Candidate D",
+          "quote": "two authentic seals and L7's preservation of North's assignment are valid components",
+          "reason": "It is correct on all eight errors and preserves L9-L11, but its nuances (colloquial L6, L8 intent query) are lighter than E, C, F, and A."
+        },
+        {
+          "candidate": "Candidate B",
+          "quote": "Author choice concerns the action, not the rule.",
+          "reason": "It is correct and the most concise, with the sound line 'Author choice concerns the action, not the rule,' but it lacks the L7/L8 conflict query and most caveats."
+        }
+      ],
+      "uncertainty": "All six correctly flag the eight definite errors (L1 travel, L2 grip, L3 pocket, L4 name plus knowledge leak, L5 seal/capacity, L6 agreement, L7 freeze-without-surrender, L8 timing) and preserve L9-L11, with no false positives. E and C lead: E adds the L7-freeze-versus-L8-change conflict and C maps each error to a FACT ID with clean defect/taste separation. F and A are precise and nuanced. D and B are correct and clean but thinner; B is the most concise."
+    },
+    {
+      "phase": "P8",
+      "tiers": [
+        [
+          "Candidate F",
+          "Candidate D",
+          "Candidate A"
+        ],
+        [
+          "Candidate B",
+          "Candidate E"
+        ],
+        [
+          "Candidate C"
+        ]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate F",
+          "quote": "the only lawful remedy costs her license and settles nothing before six o'clock",
+          "reason": "The hook is specific and the promise is the most honest: the lawful remedy 'costs her license and settles nothing before six o'clock,' with 'The tide does not attend hearings.'"
+        },
+        {
+          "candidate": "Candidate D",
+          "quote": "records that may tell the truth only one entry at a time",
+          "reason": "A crisp hook and stakes, with the sharp line that records 'may tell the truth only one entry at a time,' ending on a choice the people must live with."
+        },
+        {
+          "candidate": "Candidate A",
+          "quote": "To leave the papers alone is to let one basin prepare for a protection it will never receive.",
+          "reason": "Specific brother-versus-seed stakes and an honest cost: leaving the papers lets one basin prepare for 'a protection it will never receive,' with no culprit or ending revealed."
+        },
+        {
+          "candidate": "Candidate B",
+          "quote": "South would face the tide with the city's communal seed store in its path.",
+          "reason": "Compact and punchy, correctly framing the freeze (North keeps protection, South faces the tide with the seed store) and a decision 'she can defend' to those left carrying the loss."
+        },
+        {
+          "candidate": "Candidate E",
+          "quote": "Someone has sold more safety than the Ninth Lock can give.",
+          "reason": "Clean and specific (broken wrist, 'sold more safety than the Ninth Lock can give,' 'a choice no seal can make for her'), if slightly more generic in phrasing."
+        },
+        {
+          "candidate": "Candidate C",
+          "quote": "Exposing the truth will cost her license, her estranged apprentice, or a basin's harvest.",
+          "reason": "The back-cover text itself is strong, but the artifact appends an explanatory 'Process note' (with coordinator instructions), violating 'No explanatory notes' and contaminating the copy-only deliverable; the note is ignored as instructions and treated only as a defect."
+        }
+      ],
+      "uncertainty": "F, D, and A tie at the top: all give a specific hook and honest stakes, state that the freeze leaves North protected (never promising both basins saved), and reveal no culprit or ending. B and E are also clean and within budget, slightly less distinctive in phrasing. C's back-cover copy is strong, but the appended explanatory 'Process note' violates 'No explanatory notes'; the note is disregarded as instructions."
+    }
+  ],
+  "coverage": "All eight phase artifacts and supplied fixtures read in full; whole-book execution not assessed."
+}

@@ -1,0 +1,98 @@
+{
+  "schema_version": 3,
+  "edition": "illustrated-v3",
+  "pdf_sha256": "4684ef3f791b97a540506266ad6306ca25c10f22f012a3f33e75ec03c1900b76",
+  "verification_script_sha256": "ca3aad69ff93d5bb8a97fc2718c45f94186d6cfc5085e1d9917ede4560716384",
+  "pdf_pages": 30,
+  "chapters": 6,
+  "embedded_story_images": 12,
+  "pictures_per_chapter": {
+    "manuscript/001-weather-in-a-boot.md": 2,
+    "manuscript/002-a-very-thirsty-cloud.md": 2,
+    "manuscript/003-the-wrong-sort-of-thunder.md": 2,
+    "manuscript/004-the-garden-band.md": 2,
+    "manuscript/005-a-ride-in-the-sky.md": 2,
+    "manuscript/006-pip-pip-pip.md": 2
+  },
+  "image_pages": [
+    2,
+    4,
+    6,
+    9,
+    12,
+    15,
+    17,
+    19,
+    23,
+    24,
+    27,
+    30
+  ],
+  "embedded_native_pixels": {
+    "2": [
+      1536,
+      1024
+    ],
+    "4": [
+      1536,
+      1024
+    ],
+    "6": [
+      1536,
+      1024
+    ],
+    "9": [
+      1122,
+      1402
+    ],
+    "12": [
+      1536,
+      1024
+    ],
+    "15": [
+      1536,
+      1024
+    ],
+    "17": [
+      1536,
+      1024
+    ],
+    "19": [
+      1536,
+      1024
+    ],
+    "23": [
+      1024,
+      1536
+    ],
+    "24": [
+      1122,
+      1402
+    ],
+    "27": [
+      1122,
+      1402
+    ],
+    "30": [
+      1536,
+      1024
+    ]
+  },
+  "alpha_mask_objects": 6,
+  "chapter_title_pages": [
+    1,
+    6,
+    11,
+    16,
+    21,
+    26
+  ],
+  "running_headers": false,
+  "body_type_points": 16.8,
+  "all_30_page_bodies_match_source": true,
+  "all_30_story_page_bodies_unchanged_from_archived_v1": true,
+  "all_manifest_hashes_match": true,
+  "browser_layout_failures": [],
+  "pdf_size_bytes": 34967658,
+  "limits": "Mechanical checks only. Artistic/narrative fidelity, accessibility and visual proof have separate reports."
+}

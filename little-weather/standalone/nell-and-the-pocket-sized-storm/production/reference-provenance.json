@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "reference_only": true,
+  "asset": "assets/references/cast-reference-v1.png",
+  "sha256": "6bb6ad4ecbbd1cfc63e8e40eec3f0042ce3c744b01c32820aa755ad87bcb8a5a",
+  "prompt_record": "production/prompts/cast-reference-v1.txt",
+  "tool": "image_gen.imagegen (built-in)",
+  "underlying_image_model": "Not exposed by tool result",
+  "native_pixels": [
+    1536,
+    1024
+  ],
+  "reference_role": "Shared original cast/medium reference; not an instruction to include every reference character in every scene.",
+  "generated_original": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-233144e6-540f-4251-b842-7c2fe2470330.png"
+}

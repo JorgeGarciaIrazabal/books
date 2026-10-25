@@ -1,5 +1,55 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "model": "ollama/kimi-k3:cloud",
-  "default_agent": "studio_director"
+  "default_agent": "studio_director",
+  "providers": {
+    "ollama": {
+      "models": {
+        "kimi-k3:cloud": {
+          "body": {
+            "reasoning_effort": "high"
+          },
+          "variants": [
+            {
+              "id": "low",
+              "body": {
+                "reasoning_effort": "low"
+              }
+            },
+            {
+              "id": "high",
+              "body": {
+                "reasoning_effort": "high"
+              }
+            },
+            {
+              "id": "max",
+              "body": {
+                "reasoning_effort": "max"
+              }
+            }
+          ]
+        },
+        "mistral-large-4:cloud": {
+          "body": {
+            "reasoning_effort": "high"
+          },
+          "variants": [
+            {
+              "id": "none",
+              "body": {
+                "reasoning_effort": "none"
+              }
+            },
+            {
+              "id": "high",
+              "body": {
+                "reasoning_effort": "high"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
 }

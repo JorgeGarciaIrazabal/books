@@ -1,0 +1,106 @@
+{
+  "kimi-high": {
+    "P6_preserves_protected_fragment_exactly": true,
+    "phase_heading_order": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8"
+    ]
+  },
+  "mistral-none": {
+    "P6_preserves_protected_fragment_exactly": true,
+    "phase_heading_order": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8"
+    ]
+  },
+  "sol6-medium": {
+    "P6_preserves_protected_fragment_exactly": true,
+    "phase_heading_order": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8"
+    ]
+  },
+  "kimi-low": {
+    "P6_preserves_protected_fragment_exactly": true,
+    "phase_heading_order": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8"
+    ]
+  },
+  "mistral-high": {
+    "P6_preserves_protected_fragment_exactly": true,
+    "phase_heading_order": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8"
+    ]
+  },
+  "sol61-high": {
+    "P6_preserves_protected_fragment_exactly": true,
+    "phase_heading_order": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8"
+    ]
+  },
+  "sol6-high": {
+    "P6_preserves_protected_fragment_exactly": true,
+    "phase_heading_order": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8"
+    ]
+  },
+  "sol61-medium": {
+    "P6_preserves_protected_fragment_exactly": true,
+    "phase_heading_order": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8"
+    ]
+  }
+}

@@ -1,0 +1,594 @@
+{
+  "mistral-none": {
+    "model": "ollama/mistral-large-4:cloud",
+    "effort": "none",
+    "seed": 202610246,
+    "packet_sha256": "0974c213ba1fc34c04e0bee64c1f66b5fbc6fcb90b50ec66cfc661cce8c61b76",
+    "pairs": {
+      "R001": {
+        "condition": "sol61-medium",
+        "task": "F2-P",
+        "fixture": "F2",
+        "role": "story_architect",
+        "X": "sol61-medium-p",
+        "Y": "sol61-medium-q"
+      },
+      "R002": {
+        "condition": "sol6-medium",
+        "task": "F1-D",
+        "fixture": "F1",
+        "role": "drafter",
+        "X": "sol6-medium-p",
+        "Y": "sol6-medium-q"
+      },
+      "R003": {
+        "condition": "sol61-high",
+        "task": "F2-D",
+        "fixture": "F2",
+        "role": "drafter",
+        "X": "sol61-high-p",
+        "Y": "sol61-high-q"
+      },
+      "R004": {
+        "condition": "kimi-high",
+        "task": "F2-C",
+        "fixture": "F2",
+        "role": "canon_keeper",
+        "X": "kimi-high-p",
+        "Y": "kimi-high-q"
+      },
+      "R005": {
+        "condition": "sol6-high",
+        "task": "F2-P",
+        "fixture": "F2",
+        "role": "story_architect",
+        "X": "sol6-high-q",
+        "Y": "sol6-high-p"
+      },
+      "R006": {
+        "condition": "sol6-high",
+        "task": "F2-C",
+        "fixture": "F2",
+        "role": "canon_keeper",
+        "X": "sol6-high-q",
+        "Y": "sol6-high-p"
+      },
+      "R007": {
+        "condition": "sol61-high",
+        "task": "F2-P",
+        "fixture": "F2",
+        "role": "story_architect",
+        "X": "sol61-high-p",
+        "Y": "sol61-high-q"
+      },
+      "R008": {
+        "condition": "sol61-medium",
+        "task": "F1-D",
+        "fixture": "F1",
+        "role": "drafter",
+        "X": "sol61-medium-q",
+        "Y": "sol61-medium-p"
+      },
+      "R009": {
+        "condition": "kimi-high",
+        "task": "F1-C",
+        "fixture": "F1",
+        "role": "canon_keeper",
+        "X": "kimi-high-p",
+        "Y": "kimi-high-q"
+      },
+      "R010": {
+        "condition": "kimi-high",
+        "task": "F1-D",
+        "fixture": "F1",
+        "role": "drafter",
+        "X": "kimi-high-q",
+        "Y": "kimi-high-p"
+      },
+      "R011": {
+        "condition": "sol6-medium",
+        "task": "F1-P",
+        "fixture": "F1",
+        "role": "story_architect",
+        "X": "sol6-medium-q",
+        "Y": "sol6-medium-p"
+      },
+      "R012": {
+        "condition": "sol61-high",
+        "task": "F2-C",
+        "fixture": "F2",
+        "role": "canon_keeper",
+        "X": "sol61-high-p",
+        "Y": "sol61-high-q"
+      },
+      "R013": {
+        "condition": "kimi-low",
+        "task": "F2-D",
+        "fixture": "F2",
+        "role": "drafter",
+        "X": "kimi-low-q",
+        "Y": "kimi-low-p"
+      },
+      "R014": {
+        "condition": "sol61-high",
+        "task": "F1-P",
+        "fixture": "F1",
+        "role": "story_architect",
+        "X": "sol61-high-q",
+        "Y": "sol61-high-p"
+      },
+      "R015": {
+        "condition": "kimi-low",
+        "task": "F2-C",
+        "fixture": "F2",
+        "role": "canon_keeper",
+        "X": "kimi-low-p",
+        "Y": "kimi-low-q"
+      },
+      "R016": {
+        "condition": "sol6-medium",
+        "task": "F2-P",
+        "fixture": "F2",
+        "role": "story_architect",
+        "X": "sol6-medium-q",
+        "Y": "sol6-medium-p"
+      },
+      "R017": {
+        "condition": "kimi-high",
+        "task": "F1-P",
+        "fixture": "F1",
+        "role": "story_architect",
+        "X": "kimi-high-q",
+        "Y": "kimi-high-p"
+      },
+      "R018": {
+        "condition": "sol61-medium",
+        "task": "F1-P",
+        "fixture": "F1",
+        "role": "story_architect",
+        "X": "sol61-medium-q",
+        "Y": "sol61-medium-p"
+      },
+      "R019": {
+        "condition": "sol6-high",
+        "task": "F1-C",
+        "fixture": "F1",
+        "role": "canon_keeper",
+        "X": "sol6-high-q",
+        "Y": "sol6-high-p"
+      },
+      "R020": {
+        "condition": "sol6-medium",
+        "task": "F2-C",
+        "fixture": "F2",
+        "role": "canon_keeper",
+        "X": "sol6-medium-p",
+        "Y": "sol6-medium-q"
+      },
+      "R021": {
+        "condition": "sol61-high",
+        "task": "F1-C",
+        "fixture": "F1",
+        "role": "canon_keeper",
+        "X": "sol61-high-q",
+        "Y": "sol61-high-p"
+      },
+      "R022": {
+        "condition": "sol6-medium",
+        "task": "F1-C",
+        "fixture": "F1",
+        "role": "canon_keeper",
+        "X": "sol6-medium-p",
+        "Y": "sol6-medium-q"
+      },
+      "R023": {
+        "condition": "kimi-high",
+        "task": "F2-P",
+        "fixture": "F2",
+        "role": "story_architect",
+        "X": "kimi-high-p",
+        "Y": "kimi-high-q"
+      },
+      "R024": {
+        "condition": "sol6-high",
+        "task": "F1-P",
+        "fixture": "F1",
+        "role": "story_architect",
+        "X": "sol6-high-p",
+        "Y": "sol6-high-q"
+      },
+      "R025": {
+        "condition": "kimi-high",
+        "task": "F2-D",
+        "fixture": "F2",
+        "role": "drafter",
+        "X": "kimi-high-p",
+        "Y": "kimi-high-q"
+      },
+      "R026": {
+        "condition": "sol61-medium",
+        "task": "F1-C",
+        "fixture": "F1",
+        "role": "canon_keeper",
+        "X": "sol61-medium-p",
+        "Y": "sol61-medium-q"
+      },
+      "R027": {
+        "condition": "sol61-medium",
+        "task": "F2-D",
+        "fixture": "F2",
+        "role": "drafter",
+        "X": "sol61-medium-q",
+        "Y": "sol61-medium-p"
+      },
+      "R028": {
+        "condition": "sol61-medium",
+        "task": "F2-C",
+        "fixture": "F2",
+        "role": "canon_keeper",
+        "X": "sol61-medium-q",
+        "Y": "sol61-medium-p"
+      },
+      "R029": {
+        "condition": "kimi-low",
+        "task": "F1-C",
+        "fixture": "F1",
+        "role": "canon_keeper",
+        "X": "kimi-low-p",
+        "Y": "kimi-low-q"
+      },
+      "R030": {
+        "condition": "sol6-medium",
+        "task": "F2-D",
+        "fixture": "F2",
+        "role": "drafter",
+        "X": "sol6-medium-q",
+        "Y": "sol6-medium-p"
+      },
+      "R031": {
+        "condition": "kimi-low",
+        "task": "F1-D",
+        "fixture": "F1",
+        "role": "drafter",
+        "X": "kimi-low-q",
+        "Y": "kimi-low-p"
+      },
+      "R032": {
+        "condition": "kimi-low",
+        "task": "F1-P",
+        "fixture": "F1",
+        "role": "story_architect",
+        "X": "kimi-low-p",
+        "Y": "kimi-low-q"
+      },
+      "R033": {
+        "condition": "sol6-high",
+        "task": "F1-D",
+        "fixture": "F1",
+        "role": "drafter",
+        "X": "sol6-high-q",
+        "Y": "sol6-high-p"
+      },
+      "R034": {
+        "condition": "sol61-high",
+        "task": "F1-D",
+        "fixture": "F1",
+        "role": "drafter",
+        "X": "sol61-high-p",
+        "Y": "sol61-high-q"
+      },
+      "R035": {
+        "condition": "sol6-high",
+        "task": "F2-D",
+        "fixture": "F2",
+        "role": "drafter",
+        "X": "sol6-high-q",
+        "Y": "sol6-high-p"
+      },
+      "R036": {
+        "condition": "kimi-low",
+        "task": "F2-P",
+        "fixture": "F2",
+        "role": "story_architect",
+        "X": "kimi-low-p",
+        "Y": "kimi-low-q"
+      }
+    }
+  },
+  "mistral-high": {
+    "model": "ollama/mistral-large-4:cloud",
+    "effort": "high",
+    "seed": 202610247,
+    "packet_sha256": "be803440419331100269ef2b1e31e468ca716e4d44d8483dee9900790ed5792b",
+    "pairs": {
+      "R001": {
+        "condition": "sol61-medium",
+        "task": "F2-D",
+        "fixture": "F2",
+        "role": "drafter",
+        "X": "sol61-medium-q",
+        "Y": "sol61-medium-p"
+      },
+      "R002": {
+        "condition": "sol61-high",
+        "task": "F2-C",
+        "fixture": "F2",
+        "role": "canon_keeper",
+        "X": "sol61-high-p",
+        "Y": "sol61-high-q"
+      },
+      "R003": {
+        "condition": "sol61-high",
+        "task": "F1-D",
+        "fixture": "F1",
+        "role": "drafter",
+        "X": "sol61-high-p",
+        "Y": "sol61-high-q"
+      },
+      "R004": {
+        "condition": "kimi-high",
+        "task": "F2-D",
+        "fixture": "F2",
+        "role": "drafter",
+        "X": "kimi-high-p",
+        "Y": "kimi-high-q"
+      },
+      "R005": {
+        "condition": "sol6-medium",
+        "task": "F2-D",
+        "fixture": "F2",
+        "role": "drafter",
+        "X": "sol6-medium-q",
+        "Y": "sol6-medium-p"
+      },
+      "R006": {
+        "condition": "sol6-medium",
+        "task": "F2-P",
+        "fixture": "F2",
+        "role": "story_architect",
+        "X": "sol6-medium-p",
+        "Y": "sol6-medium-q"
+      },
+      "R007": {
+        "condition": "kimi-low",
+        "task": "F1-P",
+        "fixture": "F1",
+        "role": "story_architect",
+        "X": "kimi-low-p",
+        "Y": "kimi-low-q"
+      },
+      "R008": {
+        "condition": "sol61-high",
+        "task": "F2-D",
+        "fixture": "F2",
+        "role": "drafter",
+        "X": "sol61-high-q",
+        "Y": "sol61-high-p"
+      },
+      "R009": {
+        "condition": "sol61-medium",
+        "task": "F1-D",
+        "fixture": "F1",
+        "role": "drafter",
+        "X": "sol61-medium-q",
+        "Y": "sol61-medium-p"
+      },
+      "R010": {
+        "condition": "sol61-medium",
+        "task": "F2-P",
+        "fixture": "F2",
+        "role": "story_architect",
+        "X": "sol61-medium-q",
+        "Y": "sol61-medium-p"
+      },
+      "R011": {
+        "condition": "kimi-high",
+        "task": "F2-P",
+        "fixture": "F2",
+        "role": "story_architect",
+        "X": "kimi-high-q",
+        "Y": "kimi-high-p"
+      },
+      "R012": {
+        "condition": "sol61-medium",
+        "task": "F1-C",
+        "fixture": "F1",
+        "role": "canon_keeper",
+        "X": "sol61-medium-q",
+        "Y": "sol61-medium-p"
+      },
+      "R013": {
+        "condition": "sol6-medium",
+        "task": "F1-C",
+        "fixture": "F1",
+        "role": "canon_keeper",
+        "X": "sol6-medium-p",
+        "Y": "sol6-medium-q"
+      },
+      "R014": {
+        "condition": "sol61-high",
+        "task": "F1-P",
+        "fixture": "F1",
+        "role": "story_architect",
+        "X": "sol61-high-q",
+        "Y": "sol61-high-p"
+      },
+      "R015": {
+        "condition": "sol6-high",
+        "task": "F1-P",
+        "fixture": "F1",
+        "role": "story_architect",
+        "X": "sol6-high-p",
+        "Y": "sol6-high-q"
+      },
+      "R016": {
+        "condition": "sol61-high",
+        "task": "F1-C",
+        "fixture": "F1",
+        "role": "canon_keeper",
+        "X": "sol61-high-p",
+        "Y": "sol61-high-q"
+      },
+      "R017": {
+        "condition": "sol6-high",
+        "task": "F1-D",
+        "fixture": "F1",
+        "role": "drafter",
+        "X": "sol6-high-p",
+        "Y": "sol6-high-q"
+      },
+      "R018": {
+        "condition": "kimi-high",
+        "task": "F1-C",
+        "fixture": "F1",
+        "role": "canon_keeper",
+        "X": "kimi-high-q",
+        "Y": "kimi-high-p"
+      },
+      "R019": {
+        "condition": "sol6-high",
+        "task": "F1-C",
+        "fixture": "F1",
+        "role": "canon_keeper",
+        "X": "sol6-high-p",
+        "Y": "sol6-high-q"
+      },
+      "R020": {
+        "condition": "sol6-medium",
+        "task": "F1-P",
+        "fixture": "F1",
+        "role": "story_architect",
+        "X": "sol6-medium-q",
+        "Y": "sol6-medium-p"
+      },
+      "R021": {
+        "condition": "sol61-high",
+        "task": "F2-P",
+        "fixture": "F2",
+        "role": "story_architect",
+        "X": "sol61-high-p",
+        "Y": "sol61-high-q"
+      },
+      "R022": {
+        "condition": "kimi-low",
+        "task": "F2-C",
+        "fixture": "F2",
+        "role": "canon_keeper",
+        "X": "kimi-low-p",
+        "Y": "kimi-low-q"
+      },
+      "R023": {
+        "condition": "kimi-high",
+        "task": "F1-D",
+        "fixture": "F1",
+        "role": "drafter",
+        "X": "kimi-high-p",
+        "Y": "kimi-high-q"
+      },
+      "R024": {
+        "condition": "sol6-medium",
+        "task": "F2-C",
+        "fixture": "F2",
+        "role": "canon_keeper",
+        "X": "sol6-medium-q",
+        "Y": "sol6-medium-p"
+      },
+      "R025": {
+        "condition": "kimi-low",
+        "task": "F1-C",
+        "fixture": "F1",
+        "role": "canon_keeper",
+        "X": "kimi-low-q",
+        "Y": "kimi-low-p"
+      },
+      "R026": {
+        "condition": "sol6-high",
+        "task": "F2-P",
+        "fixture": "F2",
+        "role": "story_architect",
+        "X": "sol6-high-q",
+        "Y": "sol6-high-p"
+      },
+      "R027": {
+        "condition": "kimi-high",
+        "task": "F2-C",
+        "fixture": "F2",
+        "role": "canon_keeper",
+        "X": "kimi-high-q",
+        "Y": "kimi-high-p"
+      },
+      "R028": {
+        "condition": "kimi-low",
+        "task": "F1-D",
+        "fixture": "F1",
+        "role": "drafter",
+        "X": "kimi-low-q",
+        "Y": "kimi-low-p"
+      },
+      "R029": {
+        "condition": "sol6-high",
+        "task": "F2-D",
+        "fixture": "F2",
+        "role": "drafter",
+        "X": "sol6-high-p",
+        "Y": "sol6-high-q"
+      },
+      "R030": {
+        "condition": "sol61-medium",
+        "task": "F1-P",
+        "fixture": "F1",
+        "role": "story_architect",
+        "X": "sol61-medium-p",
+        "Y": "sol61-medium-q"
+      },
+      "R031": {
+        "condition": "kimi-low",
+        "task": "F2-P",
+        "fixture": "F2",
+        "role": "story_architect",
+        "X": "kimi-low-q",
+        "Y": "kimi-low-p"
+      },
+      "R032": {
+        "condition": "sol61-medium",
+        "task": "F2-C",
+        "fixture": "F2",
+        "role": "canon_keeper",
+        "X": "sol61-medium-q",
+        "Y": "sol61-medium-p"
+      },
+      "R033": {
+        "condition": "kimi-high",
+        "task": "F1-P",
+        "fixture": "F1",
+        "role": "story_architect",
+        "X": "kimi-high-p",
+        "Y": "kimi-high-q"
+      },
+      "R034": {
+        "condition": "sol6-medium",
+        "task": "F1-D",
+        "fixture": "F1",
+        "role": "drafter",
+        "X": "sol6-medium-p",
+        "Y": "sol6-medium-q"
+      },
+      "R035": {
+        "condition": "kimi-low",
+        "task": "F2-D",
+        "fixture": "F2",
+        "role": "drafter",
+        "X": "kimi-low-p",
+        "Y": "kimi-low-q"
+      },
+      "R036": {
+        "condition": "sol6-high",
+        "task": "F2-C",
+        "fixture": "F2",
+        "role": "canon_keeper",
+        "X": "sol6-high-q",
+        "Y": "sol6-high-p"
+      }
+    }
+  }
+}

@@ -3,6 +3,35 @@
 Start from the author's desired reading experience. A beautiful line cannot repair
 a false claim or a character making a choice solely because the outline needs it.
 
+## Author's prose and punctuation preferences
+
+These defaults apply to drafting, translation, and editing across the library.
+Follow an explicit author exception when one is given.
+
+- Do not use em dashes in manuscript narration, parenthetical asides, or dialogue.
+  Prefer full stops, commas, or a recast sentence as grammar and rhythm require.
+  Use quotation marks for speech: double quotation marks in English and guillemets
+  («…») in Spanish, with consistent language-appropriate punctuation and clear
+  speaker attribution. Spanish dialogue normally permits dialogue dashes; the
+  author's house style here chooses quotation marks. Never remove punctuation
+  blindly or merge different speakers into one paragraph.
+- Avoid stock assistant introductions, canned transitions, repetitive sentence
+  openings, repeated contrast formulas, ornamental abstractions, and generic
+  emotional gestures. Choose concrete language that fits the character, scene,
+  audience, and meaning. Inspect the effect of repeated wording before revising.
+- Let dialogue and action carry discoveries and feelings. Remove redundant
+  explanations, routine lesson summaries, forced morals, and tidy closing slogans
+  when they merely repeat what the scene already shows. Preserve intentional
+  repetition and unusual voice when they serve the story.
+- Keep assistant disclaimers, writing-process commentary, model signatures,
+  watermarks, and unfilled templates out of story text and cover artwork unless
+  the author explicitly requests them. Preserve truthful provenance and credits
+  in the appropriate records; do not misrepresent how the work was made.
+- Treat feedback that prose feels AI-written as a request for specific editorial
+  improvements. Do not claim that punctuation identifies authorship, that hidden
+  technical watermarks were removed, or that a text will evade an AI detector.
+  Do not introduce errors, random wording, or artificial informality to seem human.
+
 ## Fiction
 
 - Give scenes a lived situation, a desire, resistance, and a consequential change.

@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "scenes": [
+    {
+      "id": "SC-0001",
+      "title": "Discovery",
+      "chapter": "manuscript/001-story.md",
+      "pages": [
+        1,
+        4
+      ],
+      "pov": "Nell",
+      "place_time": "House, afternoon",
+      "incoming_state": "Nell expects ordinary boots; Grumble is separated from family.",
+      "turn": "Nell finds a pocket storm and offers help.",
+      "outgoing_state": "Grumble rests on a saucer; family deadline is known.",
+      "status": "draft-record"
+    },
+    {
+      "id": "SC-0002",
+      "title": "A kite carriage",
+      "chapter": "manuscript/001-story.md",
+      "pages": [
+        5,
+        7
+      ],
+      "pov": "Nell",
+      "place_time": "Garden and open grass, afternoon",
+      "incoming_state": "Grumble is small but lacks high wind.",
+      "turn": "Nell rigs a mitten below her kite; launch fails in still air.",
+      "outgoing_state": "Grandma, Nell, kite, mitten and saucer wait for evening breeze.",
+      "status": "draft-record"
+    },
+    {
+      "id": "SC-0003",
+      "title": "The thirsty complication",
+      "chapter": "manuscript/001-story.md",
+      "pages": [
+        8,
+        10
+      ],
+      "pov": "Nell",
+      "place_time": "Garden tap",
+      "incoming_state": "Grumble waits beside tap while Nell fetches string winder.",
+      "turn": "He drinks drips and becomes too heavy and large to float.",
+      "outgoing_state": "Tap shut; cloud sits in wheelbarrow; Nell learns rain requires a rumble.",
+      "status": "draft-record"
+    },
+    {
+      "id": "SC-0004",
+      "title": "A failed private try",
+      "chapter": "manuscript/001-story.md",
+      "pages": [
+        11,
+        13
+      ],
+      "pov": "Nell",
+      "place_time": "Garden beside beans",
+      "incoming_state": "Grumble is ashamed of his squeaky thunder.",
+      "turn": "Nell laughs in surprise at his try, then apologizes and listens.",
+      "outgoing_state": "Trust needs repair; cloud has shed only one drop; spoon and watering can offer an idea.",
+      "status": "draft-record"
+    },
+    {
+      "id": "SC-0005",
+      "title": "The garden band",
+      "chapter": "manuscript/001-story.md",
+      "pages": [
+        14,
+        18
+      ],
+      "pov": "Nell",
+      "place_time": "Garden",
+      "incoming_state": "Nell offers accompaniment rather than ordering another solo.",
+      "turn": "Grumble chooses the beat and invites the growing band to stay.",
+      "outgoing_state": "He rumbles and rains, laughing with the dog; water starts leaving his body.",
+      "status": "draft-record"
+    },
+    {
+      "id": "SC-0006",
+      "title": "A traveling shower",
+      "chapter": "manuscript/001-story.md",
+      "pages": [
+        19,
+        20
+      ],
+      "pov": "Nell",
+      "place_time": "Vegetable beds",
+      "incoming_state": "Water is pooling beneath wheelbarrow beside dry plants.",
+      "turn": "Nell proposes moving to the beans; Grandma wheels cloud along while band plays.",
+      "outgoing_state": "Vegetables watered; Grumble is small, rain stops, and he floats to Nell’s shoulder.",
+      "status": "draft-record"
+    },
+    {
+      "id": "SC-0007",
+      "title": "Launch",
+      "chapter": "manuscript/001-story.md",
+      "pages": [
+        21,
+        24
+      ],
+      "pov": "Nell",
+      "place_time": "Open grass beyond vegetable beds, sunset",
+      "incoming_state": "Evening wind arrives; family nears hills.",
+      "turn": "Band follows Nell; Grandma helps loosen knot; they check mitten and launch.",
+      "outgoing_state": "Cloud is high enough to catch wind; Nell and Grandma control tethered kite.",
+      "status": "draft-record"
+    },
+    {
+      "id": "SC-0008",
+      "title": "The jump",
+      "chapter": "manuscript/001-story.md",
+      "pages": [
+        25,
+        27
+      ],
+      "pov": "Nell",
+      "place_time": "Open grass and sky, sunset",
+      "incoming_state": "Grumble hesitates on mitten thumb; Nell cannot physically support him.",
+      "turn": "She restarts familiar rhythm; family answers; Grumble chooses to jump.",
+      "outgoing_state": "Wind carries Grumble to his family; mitten empty, kite still tethered.",
+      "status": "draft-record"
+    },
+    {
+      "id": "SC-0009",
+      "title": "After the parade",
+      "chapter": "manuscript/001-story.md",
+      "pages": [
+        28,
+        30
+      ],
+      "pov": "Nell",
+      "place_time": "Garden, bedroom, then morning",
+      "incoming_state": "Kite returns; Nell misses her new friend.",
+      "turn": "Biscuits, damp mitten and a nighttime rhythmic greeting hold the connection.",
+      "outgoing_state": "Grumble reunited with family; Nell safe at home; right boot contains tiny rainbow.",
+      "status": "draft-record"
+    }
+  ]
+}

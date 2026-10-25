@@ -12,6 +12,9 @@ Central situation or question, boundaries, and exclusions.
 ## Aesthetic intention
 Voice, emotional/intellectual effect, themes, original reference passages or broad craft traits.
 
+## Visual scope, when relevant
+For a children's story, record the reading format and whether pictures carry part of the experience. State the intended art frequency, page/spread allowance, recurring cast/reference needs, and any reversible assumptions. For other books, include this only when visual material serves the brief. Respect explicit text-only choices; page count and chapter count are different units.
+
 ## Structure and ending / takeaway
 The promise this book pays, even if a series continues.
 

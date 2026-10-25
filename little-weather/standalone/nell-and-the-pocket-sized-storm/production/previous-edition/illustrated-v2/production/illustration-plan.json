@@ -1,0 +1,680 @@
+{
+  "schema_version": 1,
+  "title": "Nell and the Pocket-Sized Storm",
+  "source_snapshot": {
+    "scope": "Six chapter files; story-page prose exactly preserved from archived text-only v1",
+    "sha256": {
+      "manuscript/001-weather-in-a-boot.md": "c8268260c4925ad723925846d6c96cdb837906fec3c0383c777f272df98ab851",
+      "manuscript/002-a-very-thirsty-cloud.md": "a11be018acd7ffabd6d10b023cc08a554f71cb0248489ecfea303fe91fd28d8b",
+      "manuscript/003-the-wrong-sort-of-thunder.md": "dd42b1ad66a0b6b4324627d5fd0ce03ede3db1269b87c0d4d722e32746fdd7ce",
+      "manuscript/004-the-garden-band.md": "cee0c107bff65fc908f631d0d9ba2edc1780e76c677e3c0ee8873f660e15631f",
+      "manuscript/005-a-ride-in-the-sky.md": "8683752d18c58883205fd09f224da5f007d4e11d52957ffd4f89a9346c289325",
+      "manuscript/006-pip-pip-pip.md": "789354f59c158dde6294f89382b0b986f9e2a85307f229e8f1b7afb5ecb2fc6e"
+    },
+    "previous_edition": "production/previous-edition/text-only-v1/archive-manifest.json"
+  },
+  "chapter_paths": [
+    "manuscript/001-weather-in-a-boot.md",
+    "manuscript/002-a-very-thirsty-cloud.md",
+    "manuscript/003-the-wrong-sort-of-thunder.md",
+    "manuscript/004-the-garden-band.md",
+    "manuscript/005-a-ride-in-the-sky.md",
+    "manuscript/006-pip-pip-pip.md"
+  ],
+  "chapter_ranges": [
+    {
+      "chapter_id": "CH-0001",
+      "pages": [
+        1,
+        5
+      ]
+    },
+    {
+      "chapter_id": "CH-0002",
+      "pages": [
+        6,
+        10
+      ]
+    },
+    {
+      "chapter_id": "CH-0003",
+      "pages": [
+        11,
+        15
+      ]
+    },
+    {
+      "chapter_id": "CH-0004",
+      "pages": [
+        16,
+        20
+      ]
+    },
+    {
+      "chapter_id": "CH-0005",
+      "pages": [
+        21,
+        25
+      ]
+    },
+    {
+      "chapter_id": "CH-0006",
+      "pages": [
+        26,
+        30
+      ]
+    }
+  ],
+  "art_per_chapter": {
+    "min": 2,
+    "max": 2
+  },
+  "story_pages": 30,
+  "illustrations": [
+    {
+      "id": "ILL-0001",
+      "chapter_id": "CH-0001",
+      "chapter": "manuscript/001-weather-in-a-boot.md",
+      "page": 2,
+      "asset": "assets/illustrations/ill-0001.png",
+      "alt_text": "Nell holds a tiny gray cloud on her palm beside a red boot and a yellow sock.",
+      "scene_ref": {
+        "heading": "Page 2",
+        "anchor": "Grumble settled on her palm."
+      },
+      "narrative_purpose": "Intimate palm-level discovery",
+      "description": "Nell holds bread-roll-sized Grumble on her open palm; damp teal cuff, removed yellow sock beside red boot. His gray belly and fluffy eyebrows remain readable. Crop near hands and curious face.",
+      "subjects_state": "Nell curious; Grumble small and newly introduced; sock removed.",
+      "no_early_reveals": "No kite, large cloud, band, flight, or rainbow.",
+      "disclosure": {
+        "not_before_page": 2
+      },
+      "placement": {
+        "position": "after page text",
+        "source_aspect_ratio": "3:2",
+        "fit": "contain; preserve full composition",
+        "max_width_in": 5.9,
+        "max_height_in": 2.5
+      },
+      "provenance": {
+        "method": "Reference-led AI-generated raster illustration",
+        "generator": "image_gen.imagegen (built-in tool; underlying image-model identifier not exposed)",
+        "prompt_record": "production/prompts/ill-0001-retry-1.txt",
+        "reference_assets": [
+          {
+            "path": "assets/references/cast-reference-v1.png",
+            "sha256": "6bb6ad4ecbbd1cfc63e8e40eec3f0042ce3c744b01c32820aa755ad87bcb8a5a"
+          }
+        ],
+        "rights_status": "Original generated art for this authorized project; no third-party reference artwork used; not a legal rights-clearance certificate.",
+        "generation_date": "2026-10-25",
+        "initial_prompt_record": "production/prompts/ill-0001-retry-1.txt",
+        "revision": 0
+      },
+      "status": "selected-for-proof",
+      "asset_sha256": "693b071cd3e188e927b43d74a17a70e4d55a5090cc4349848bfb90c9bf2bc49f",
+      "native_pixels": [
+        1536,
+        1024
+      ],
+      "review_record": "reviews/illustrated/visual-review.md; independent acceptance is recorded by exact hashes, not inferred from generation."
+    },
+    {
+      "id": "ILL-0002",
+      "chapter_id": "CH-0001",
+      "chapter": "manuscript/001-weather-in-a-boot.md",
+      "page": 4,
+      "asset": "assets/illustrations/ill-0002.png",
+      "alt_text": "Grandma offers Grumble a saucer beside the toast while Nell watches.",
+      "scene_ref": {
+        "heading": "Page 4",
+        "anchor": "All guests get something to sit on."
+      },
+      "narrative_purpose": "Hospitality and a distant goal",
+      "description": "Kitchen three-quarter view: Grandma offers a saucer beside buttered toast, Nell near her; small Grumble on saucer turns toward the window. Three drops in butter provide a quiet secondary joke.",
+      "subjects_state": "Grumble bread-roll-sized; Grandma welcoming; Nell attentive.",
+      "no_early_reveals": "No kite, band, rainbow, or family reunion. Distant ordinary cloud line permitted after page 3.",
+      "disclosure": {
+        "not_before_page": 4
+      },
+      "placement": {
+        "position": "after page text",
+        "source_aspect_ratio": "3:2",
+        "fit": "contain; preserve full composition",
+        "max_width_in": 5.9,
+        "max_height_in": 2.5
+      },
+      "provenance": {
+        "method": "Reference-led AI-generated raster illustration",
+        "generator": "image_gen.imagegen (built-in tool; underlying image-model identifier not exposed)",
+        "prompt_record": "production/prompts/ill-0002.txt",
+        "reference_assets": [
+          {
+            "path": "assets/references/cast-reference-v1.png",
+            "sha256": "6bb6ad4ecbbd1cfc63e8e40eec3f0042ce3c744b01c32820aa755ad87bcb8a5a"
+          }
+        ],
+        "rights_status": "Original generated art for this authorized project; no third-party reference artwork used; not a legal rights-clearance certificate.",
+        "generation_date": "2026-10-25",
+        "initial_prompt_record": "production/prompts/ill-0002.txt",
+        "revision": 0
+      },
+      "status": "selected-for-proof",
+      "asset_sha256": "9d7ca110b62b82b5a397e64a322ce195358fb7161ccbe92b5621739c0b46d554",
+      "native_pixels": [
+        1536,
+        1024
+      ],
+      "review_record": "reviews/illustrated/visual-review.md; independent acceptance is recorded by exact hashes, not inferred from generation."
+    },
+    {
+      "id": "ILL-0003",
+      "chapter_id": "CH-0002",
+      "chapter": "manuscript/002-a-very-thirsty-cloud.md",
+      "page": 6,
+      "asset": "assets/illustrations/ill-0003.png",
+      "alt_text": "Nell ties a mitten below her red kite while Grumble watches from a saucer.",
+      "scene_ref": {
+        "heading": "Page 6",
+        "anchor": "Nell tied it below the kite"
+      },
+      "narrative_purpose": "A child invents a possible carriage",
+      "description": "Object-led view at shed doorway: Nell ties a cream knitted mitten BELOW the red diamond kite. Thumb projects sideways like a balcony. Unequal drawn eyes, long tail, rake in background; small Grumble observes from saucer.",
+      "subjects_state": "Kite grounded; Grumble small; mitten unoccupied.",
+      "no_early_reveals": "No airborne kite, swollen cloud, successful escape, or rain band.",
+      "disclosure": {
+        "not_before_page": 6
+      },
+      "placement": {
+        "position": "after page text",
+        "source_aspect_ratio": "3:2",
+        "fit": "contain; preserve full composition",
+        "max_width_in": 5.9,
+        "max_height_in": 2.5
+      },
+      "provenance": {
+        "method": "Reference-led AI-generated raster illustration",
+        "generator": "image_gen.imagegen (built-in tool; underlying image-model identifier not exposed)",
+        "prompt_record": "production/prompts/ill-0003-revision-1.txt",
+        "reference_assets": [
+          {
+            "path": "assets/references/cast-reference-v1.png",
+            "sha256": "6bb6ad4ecbbd1cfc63e8e40eec3f0042ce3c744b01c32820aa755ad87bcb8a5a"
+          }
+        ],
+        "rights_status": "Original generated art for this authorized project; no third-party reference artwork used; not a legal rights-clearance certificate.",
+        "generation_date": "2026-10-25",
+        "initial_prompt_record": "production/prompts/ill-0003.txt",
+        "revision": 1,
+        "revision_record": {
+          "prompt": "production/prompts/ill-0003-revision-1.txt",
+          "before": "assets/iterations/ill-0003-before-dog-removal.png",
+          "reason": "Remove dog introduced before story entrance on page16",
+          "selected_generated_original": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-005ac18a-e3e0-4007-92ed-80a27142abc2.png"
+        }
+      },
+      "status": "selected-for-proof",
+      "asset_sha256": "b5edcd60604272dc5487110ac3c6f621ed648d4bb372144342ad01912372e524",
+      "native_pixels": [
+        1536,
+        1024
+      ],
+      "review_record": "reviews/illustrated/visual-review.md; independent acceptance is recorded by exact hashes, not inferred from generation."
+    },
+    {
+      "id": "ILL-0004",
+      "chapter_id": "CH-0002",
+      "chapter": "manuscript/002-a-very-thirsty-cloud.md",
+      "page": 9,
+      "asset": "assets/illustrations/ill-0004.png",
+      "alt_text": "An enormous Grumble fills the wheelbarrow while Nell and Grandma stand beside him.",
+      "scene_ref": {
+        "heading": "Page 9",
+        "anchor": "His eyebrows drooped over the handles."
+      },
+      "narrative_purpose": "Comic change of scale",
+      "description": "Low wheelbarrow-height view: armchair-sized Grumble fills the barrow, eyebrows flopping over its handles. Nell and Grandma flank him. Tap behind now shut; no visible saucer required.",
+      "subjects_state": "Grumble armchair-sized and heavy; Nell surprised; Grandma practical.",
+      "no_early_reveals": "No rain solution, musical props, flying cloud, or rainbow.",
+      "disclosure": {
+        "not_before_page": 9
+      },
+      "placement": {
+        "position": "after page text",
+        "source_aspect_ratio": "3:2",
+        "fit": "contain; preserve full composition",
+        "max_width_in": 5.9,
+        "max_height_in": 2.5
+      },
+      "provenance": {
+        "method": "Reference-led AI-generated raster illustration",
+        "generator": "image_gen.imagegen (built-in tool; underlying image-model identifier not exposed)",
+        "prompt_record": "production/prompts/ill-0004.txt",
+        "reference_assets": [
+          {
+            "path": "assets/references/cast-reference-v1.png",
+            "sha256": "6bb6ad4ecbbd1cfc63e8e40eec3f0042ce3c744b01c32820aa755ad87bcb8a5a"
+          }
+        ],
+        "rights_status": "Original generated art for this authorized project; no third-party reference artwork used; not a legal rights-clearance certificate.",
+        "generation_date": "2026-10-25",
+        "initial_prompt_record": "production/prompts/ill-0004.txt",
+        "revision": 0
+      },
+      "status": "selected-for-proof",
+      "asset_sha256": "a44e1d6c7c4d7ed601eba8433fd858f54760fed4a44f2711c836a7aa24df7c4c",
+      "native_pixels": [
+        1536,
+        1024
+      ],
+      "review_record": "reviews/illustrated/visual-review.md; independent acceptance is recorded by exact hashes, not inferred from generation."
+    },
+    {
+      "id": "ILL-0005",
+      "chapter_id": "CH-0003",
+      "chapter": "manuscript/003-the-wrong-sort-of-thunder.md",
+      "page": 12,
+      "asset": "assets/illustrations/ill-0005.png",
+      "alt_text": "Grumble turns away in the wheelbarrow as Nell falls quiet; Grandma faces the beans.",
+      "scene_ref": {
+        "heading": "Page 12",
+        "anchor": "Grumble turned away."
+      },
+      "narrative_purpose": "Let silence show the hurt",
+      "description": "Restrained close two-shot after the laugh: Grumble turns away inside wheelbarrow, one drop on chin; Nell has just stopped laughing, lips closed, hands still. Grandma distant with her back turned toward beans. Quiet space separates the pair.",
+      "subjects_state": "Grumble still large; Nell surprised and subdued; Grandma protecting privacy.",
+      "no_early_reveals": "No band, gleeful audience, reconciliation, literal duck, or rainbow. Do not add tears streaming or villainous laughter.",
+      "disclosure": {
+        "not_before_page": 12
+      },
+      "placement": {
+        "position": "after page text",
+        "source_aspect_ratio": "3:2",
+        "fit": "contain; preserve full composition",
+        "max_width_in": 5.9,
+        "max_height_in": 2.5
+      },
+      "provenance": {
+        "method": "Reference-led AI-generated raster illustration",
+        "generator": "image_gen.imagegen (built-in tool; underlying image-model identifier not exposed)",
+        "prompt_record": "production/prompts/ill-0005.txt",
+        "reference_assets": [
+          {
+            "path": "assets/references/cast-reference-v1.png",
+            "sha256": "6bb6ad4ecbbd1cfc63e8e40eec3f0042ce3c744b01c32820aa755ad87bcb8a5a"
+          }
+        ],
+        "rights_status": "Original generated art for this authorized project; no third-party reference artwork used; not a legal rights-clearance certificate.",
+        "generation_date": "2026-10-25",
+        "initial_prompt_record": "production/prompts/ill-0005.txt",
+        "revision": 0
+      },
+      "status": "selected-for-proof",
+      "asset_sha256": "5d4e32eb37cfcc3e5dc490ca5a7ddfc87741aa4c9a57d51c0ac08ebd516a49e5",
+      "native_pixels": [
+        1536,
+        1024
+      ],
+      "review_record": "reviews/illustrated/visual-review.md; independent acceptance is recorded by exact hashes, not inferred from generation."
+    },
+    {
+      "id": "ILL-0006",
+      "chapter_id": "CH-0003",
+      "chapter": "manuscript/003-the-wrong-sort-of-thunder.md",
+      "page": 15,
+      "asset": "assets/illustrations/ill-0006.png",
+      "alt_text": "Nell and Grandma play a watering can and saucepan as Mr. Moss lifts a biscuit tin over the fence.",
+      "scene_ref": {
+        "heading": "Page 15",
+        "anchor": "a biscuit tin rose above the fence."
+      },
+      "narrative_purpose": "An invitation grows, before the crowd",
+      "description": "Medium garden view: Nell taps watering can with one spoon, Grandma saucepan with two wooden spoons. Mr. Moss and biscuit tin rise above fence. Grumble watches from wheelbarrow, attentive and unthreatened.",
+      "subjects_state": "Grumble large, has chosen beat; Mr. Moss behind fence; Grandma holding saucepan.",
+      "no_early_reveals": "No twins or dog before page16; no shower before page17; no saucepan on Grandma’s head until page18.",
+      "disclosure": {
+        "not_before_page": 15
+      },
+      "placement": {
+        "position": "after page text",
+        "source_aspect_ratio": "3:2",
+        "fit": "contain; preserve full composition",
+        "max_width_in": 5.9,
+        "max_height_in": 2.5
+      },
+      "provenance": {
+        "method": "Reference-led AI-generated raster illustration",
+        "generator": "image_gen.imagegen (built-in tool; underlying image-model identifier not exposed)",
+        "prompt_record": "production/prompts/ill-0006.txt",
+        "reference_assets": [
+          {
+            "path": "assets/references/cast-reference-v1.png",
+            "sha256": "6bb6ad4ecbbd1cfc63e8e40eec3f0042ce3c744b01c32820aa755ad87bcb8a5a"
+          }
+        ],
+        "rights_status": "Original generated art for this authorized project; no third-party reference artwork used; not a legal rights-clearance certificate.",
+        "generation_date": "2026-10-25",
+        "initial_prompt_record": "production/prompts/ill-0006.txt",
+        "revision": 0
+      },
+      "status": "selected-for-proof",
+      "asset_sha256": "b8c3584e57f1da108b9a3452ce4874987c761d31489b96f9ba8abff87a87b4c2",
+      "native_pixels": [
+        1536,
+        1024
+      ],
+      "review_record": "reviews/illustrated/visual-review.md; independent acceptance is recorded by exact hashes, not inferred from generation."
+    },
+    {
+      "id": "ILL-0007",
+      "chapter_id": "CH-0004",
+      "chapter": "manuscript/004-the-garden-band.md",
+      "page": 17,
+      "asset": "assets/illustrations/ill-0007.png",
+      "alt_text": "The dog squeaks his bone while Grumble leads the garden band and a few drops fall.",
+      "scene_ref": {
+        "heading": "Page 17",
+        "anchor": "She watched Grumble's little points rise and fall."
+      },
+      "narrative_purpose": "Shared rhythm belongs to Grumble",
+      "description": "Low, dog-led composition: terrier bites squeaky bone and looks toward Grumble, who directs with two tiny cloudpoints from wheelbarrow. Nell keeps watering-can beat; Grandma, Mr. Moss and twins form loose arc behind. Only first sparse drops spot grass.",
+      "subjects_state": "Consent given page16; Grumble large and leading; band follows his cue.",
+      "no_early_reveals": "No full soaking shower, saucepan hat, shrinking cloud, sky reunion, or rainbow.",
+      "disclosure": {
+        "not_before_page": 17
+      },
+      "placement": {
+        "position": "after page text",
+        "source_aspect_ratio": "3:2",
+        "fit": "contain; preserve full composition",
+        "max_width_in": 5.9,
+        "max_height_in": 2.5
+      },
+      "provenance": {
+        "method": "Reference-led AI-generated raster illustration",
+        "generator": "image_gen.imagegen (built-in tool; underlying image-model identifier not exposed)",
+        "prompt_record": "production/prompts/ill-0007-revision-1.txt",
+        "reference_assets": [
+          {
+            "path": "assets/references/cast-reference-v1.png",
+            "sha256": "6bb6ad4ecbbd1cfc63e8e40eec3f0042ce3c744b01c32820aa755ad87bcb8a5a"
+          }
+        ],
+        "rights_status": "Original generated art for this authorized project; no third-party reference artwork used; not a legal rights-clearance certificate.",
+        "generation_date": "2026-10-25",
+        "initial_prompt_record": "production/prompts/ill-0007.txt",
+        "revision": 1,
+        "revision_record": {
+          "prompt": "production/prompts/ill-0007-revision-1.txt",
+          "before": "assets/iterations/ill-0007-before-continuity-repair.png",
+          "reason": "Remove duplicate cloudpoint faces; restore visible band instruments",
+          "selected_generated_original": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-73ede5e7-66e4-4674-bdbc-66d5a45e2d8b.png"
+        }
+      },
+      "status": "selected-for-proof",
+      "asset_sha256": "6a8a92c92469aff208b631b97c482d7533d76150fee2ed113007e218f8a0a754",
+      "native_pixels": [
+        1536,
+        1024
+      ],
+      "review_record": "reviews/illustrated/visual-review.md; independent acceptance is recorded by exact hashes, not inferred from generation."
+    },
+    {
+      "id": "ILL-0008",
+      "chapter_id": "CH-0004",
+      "chapter": "manuscript/004-the-garden-band.md",
+      "page": 19,
+      "asset": "assets/illustrations/ill-0008.png",
+      "alt_text": "Grandma wheels the raining cloud toward the beans as Nell and the neighbors bring their music.",
+      "scene_ref": {
+        "heading": "Page 19",
+        "anchor": "Grandma lifted the handles."
+      },
+      "narrative_purpose": "Rain becomes useful motion",
+      "description": "Wide lateral procession toward dry beans: Grandma pushes wheelbarrow by its handles; large Grumble rains beneath it. Nell walks beside him with watering can and spoon; twins follow with flowerpots, Mr. Moss last with tin, terrier in middle. Dry cracked soil visible ahead.",
+      "subjects_state": "Grumble still large; Grandma’s hands on handles, not playing; saucepan can rest on her head after page18.",
+      "no_early_reveals": "No bread-roll-sized cloud yet; no successful kite flight or rainbow.",
+      "disclosure": {
+        "not_before_page": 19
+      },
+      "placement": {
+        "position": "after page text",
+        "source_aspect_ratio": "3:2",
+        "fit": "contain; preserve full composition",
+        "max_width_in": 5.9,
+        "max_height_in": 2.5
+      },
+      "provenance": {
+        "method": "Reference-led AI-generated raster illustration",
+        "generator": "image_gen.imagegen (built-in tool; underlying image-model identifier not exposed)",
+        "prompt_record": "production/prompts/ill-0008.txt",
+        "reference_assets": [
+          {
+            "path": "assets/references/cast-reference-v1.png",
+            "sha256": "6bb6ad4ecbbd1cfc63e8e40eec3f0042ce3c744b01c32820aa755ad87bcb8a5a"
+          }
+        ],
+        "rights_status": "Original generated art for this authorized project; no third-party reference artwork used; not a legal rights-clearance certificate.",
+        "generation_date": "2026-10-25",
+        "initial_prompt_record": "production/prompts/ill-0008.txt",
+        "revision": 0
+      },
+      "status": "selected-for-proof",
+      "asset_sha256": "0525efa222ee2c57358a5b1fdbd39d4021e1434acf820e96d7ea35fbfd7cc71e",
+      "native_pixels": [
+        1536,
+        1024
+      ],
+      "review_record": "reviews/illustrated/visual-review.md; independent acceptance is recorded by exact hashes, not inferred from generation."
+    },
+    {
+      "id": "ILL-0009",
+      "chapter_id": "CH-0005",
+      "chapter": "manuscript/005-a-ride-in-the-sky.md",
+      "page": 23,
+      "asset": "assets/illustrations/ill-0009.png",
+      "alt_text": "Grumble peeks from the mitten beneath the kite while Grandma holds it and Nell grips the winder.",
+      "scene_ref": {
+        "heading": "Page 23",
+        "anchor": "His eyebrows stuck out at the top."
+      },
+      "narrative_purpose": "Careful preparation makes courage possible",
+      "description": "Close-up of bread-roll-sized Grumble tucked into cream mitten, eyebrows over cuff, left side in thumb balcony. Mitten visibly tied BELOW grounded red kite; Grandma holds kite ready; Nell holds winder, spoon pocketed. Red tail lifts in breeze.",
+      "subjects_state": "Grumble small after page20; kite supported by Grandma; spoon in Nell’s pocket.",
+      "no_early_reveals": "No launch yet, cloud leap, reunion, or rainbow.",
+      "disclosure": {
+        "not_before_page": 23
+      },
+      "placement": {
+        "position": "after page text",
+        "source_aspect_ratio": "3:2",
+        "fit": "contain; preserve full composition",
+        "max_width_in": 5.9,
+        "max_height_in": 2.5
+      },
+      "provenance": {
+        "method": "Reference-led AI-generated raster illustration",
+        "generator": "image_gen.imagegen (built-in tool; underlying image-model identifier not exposed)",
+        "prompt_record": "production/prompts/ill-0009.txt",
+        "reference_assets": [
+          {
+            "path": "assets/references/cast-reference-v1.png",
+            "sha256": "6bb6ad4ecbbd1cfc63e8e40eec3f0042ce3c744b01c32820aa755ad87bcb8a5a"
+          }
+        ],
+        "rights_status": "Original generated art for this authorized project; no third-party reference artwork used; not a legal rights-clearance certificate.",
+        "generation_date": "2026-10-25",
+        "initial_prompt_record": "production/prompts/ill-0009.txt",
+        "revision": 0
+      },
+      "status": "selected-for-proof",
+      "asset_sha256": "77292efd6fec69eace596f15fb980a94baf861a9ed3a3081a60ee67860ffbb04",
+      "native_pixels": [
+        1536,
+        1024
+      ],
+      "review_record": "reviews/illustrated/visual-review.md; independent acceptance is recorded by exact hashes, not inferred from generation."
+    },
+    {
+      "id": "ILL-0010",
+      "chapter_id": "CH-0005",
+      "chapter": "manuscript/005-a-ride-in-the-sky.md",
+      "page": 24,
+      "asset": "assets/illustrations/ill-0010.png",
+      "alt_text": "Nell and Grandma watch the red kite climb high, with Grumble riding in the mitten below it.",
+      "scene_ref": {
+        "heading": "Page 24",
+        "anchor": "She slowed and planted her feet."
+      },
+      "narrative_purpose": "First successful ascent opens the space",
+      "description": "Wide upward view: Nell plants both feet, winder held firmly, Grandma close beside her. String leads above chimney and beanpoles to red kite, cream mitten BELOW with tiny eyebrows visible. Pink evening sky takes most space.",
+      "subjects_state": "Nell has stopped running; Grandma released kite; Grumble small.",
+      "no_early_reveals": "Grumble still inside mitten; no leap, family embrace, night moon, or rainbow.",
+      "disclosure": {
+        "not_before_page": 24
+      },
+      "placement": {
+        "position": "after page text",
+        "source_aspect_ratio": "3:2",
+        "fit": "contain; preserve full composition",
+        "max_width_in": 5.9,
+        "max_height_in": 2.5
+      },
+      "provenance": {
+        "method": "Reference-led AI-generated raster illustration",
+        "generator": "image_gen.imagegen (built-in tool; underlying image-model identifier not exposed)",
+        "prompt_record": "production/prompts/ill-0010.txt",
+        "reference_assets": [
+          {
+            "path": "assets/references/cast-reference-v1.png",
+            "sha256": "6bb6ad4ecbbd1cfc63e8e40eec3f0042ce3c744b01c32820aa755ad87bcb8a5a"
+          }
+        ],
+        "rights_status": "Original generated art for this authorized project; no third-party reference artwork used; not a legal rights-clearance certificate.",
+        "generation_date": "2026-10-25",
+        "initial_prompt_record": "production/prompts/ill-0010.txt",
+        "revision": 0
+      },
+      "status": "selected-for-proof",
+      "asset_sha256": "494f985661da5b99abd8b4ec0c16619c2703e9e728e74d8b34fc0e7c2ffa5f54",
+      "native_pixels": [
+        1536,
+        1024
+      ],
+      "review_record": "reviews/illustrated/visual-review.md; independent acceptance is recorded by exact hashes, not inferred from generation."
+    },
+    {
+      "id": "ILL-0011",
+      "chapter_id": "CH-0006",
+      "chapter": "manuscript/006-pip-pip-pip.md",
+      "page": 27,
+      "asset": "assets/illustrations/ill-0011.png",
+      "alt_text": "A bigger cloud curls around Grumble above the hills while the empty mitten hangs beneath Nell’s kite.",
+      "scene_ref": {
+        "heading": "Page 27",
+        "anchor": "a bigger cloud curled one fluffy edge around him."
+      },
+      "narrative_purpose": "The family receives him",
+      "description": "Sky-focused ending beat: one larger cloud curls a fluffy edge around tiny Grumble near hills. Red kite to one side with clearly empty cream mitten beneath it; Nell small below waves wooden spoon. Keep family gentle and cloud-shaped.",
+      "subjects_state": "Grumble left mitten voluntarily; family receives him; Nell holds spoon out of pocket.",
+      "no_early_reveals": "Family reunion allowed here; no nighttime greeting or rainbow until page30.",
+      "disclosure": {
+        "not_before_page": 27
+      },
+      "placement": {
+        "position": "after page text",
+        "source_aspect_ratio": "3:2",
+        "fit": "contain; preserve full composition",
+        "max_width_in": 5.9,
+        "max_height_in": 2.5
+      },
+      "provenance": {
+        "method": "Reference-led AI-generated raster illustration",
+        "generator": "image_gen.imagegen (built-in tool; underlying image-model identifier not exposed)",
+        "prompt_record": "production/prompts/ill-0011-revision-1.txt",
+        "reference_assets": [
+          {
+            "path": "assets/references/cast-reference-v1.png",
+            "sha256": "6bb6ad4ecbbd1cfc63e8e40eec3f0042ce3c744b01c32820aa755ad87bcb8a5a"
+          }
+        ],
+        "rights_status": "Original generated art for this authorized project; no third-party reference artwork used; not a legal rights-clearance certificate.",
+        "generation_date": "2026-10-25",
+        "initial_prompt_record": "production/prompts/ill-0011.txt",
+        "revision": 1,
+        "revision_record": {
+          "prompt": "production/prompts/ill-0011-revision-1.txt",
+          "before": "assets/iterations/ill-0011-before-continuity-repair.png",
+          "reason": "Restore kite tether and string winder for next-page recovery",
+          "selected_generated_original": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-f7a67eb7-f662-48f9-aa13-24bb5f8ca0a2.png"
+        }
+      },
+      "status": "selected-for-proof",
+      "asset_sha256": "7a610cbb671bf7cc582e92aafa5dbec8bb14aaf981086af1537d6875c772ac2b",
+      "native_pixels": [
+        1536,
+        1024
+      ],
+      "review_record": "reviews/illustrated/visual-review.md; independent acceptance is recorded by exact hashes, not inferred from generation."
+    },
+    {
+      "id": "ILL-0012",
+      "chapter_id": "CH-0006",
+      "chapter": "manuscript/006-pip-pip-pip.md",
+      "page": 30,
+      "asset": "assets/illustrations/ill-0012.png",
+      "alt_text": "In morning light, Nell’s right red boot holds one tiny rainbow; the left boot is empty.",
+      "scene_ref": {
+        "heading": "Page 30",
+        "anchor": "Her right boot contained exactly one tiny rainbow."
+      },
+      "narrative_purpose": "A quiet object closes the loop",
+      "description": "Morning still life below bedroom window: paired red boots, LEFT boot dry and empty, RIGHT boot holds exactly one tiny rainbow. Cream mitten hangs from window latch; soft morning light, restrained paper texture. No full cast or sky spectacle.",
+      "subjects_state": "Morning after night greeting; Grumble absent from room; mitten on latch.",
+      "no_early_reveals": "Final page only. Exactly one small rainbow; do not relocate it to left boot or add a second.",
+      "disclosure": {
+        "not_before_page": 30
+      },
+      "placement": {
+        "position": "after page text",
+        "source_aspect_ratio": "3:2",
+        "fit": "contain; preserve full composition",
+        "max_width_in": 5.9,
+        "max_height_in": 2.5
+      },
+      "provenance": {
+        "method": "Reference-led AI-generated raster illustration",
+        "generator": "image_gen.imagegen (built-in tool; underlying image-model identifier not exposed)",
+        "prompt_record": "production/prompts/ill-0012.txt",
+        "reference_assets": [
+          {
+            "path": "assets/references/cast-reference-v1.png",
+            "sha256": "6bb6ad4ecbbd1cfc63e8e40eec3f0042ce3c744b01c32820aa755ad87bcb8a5a"
+          }
+        ],
+        "rights_status": "Original generated art for this authorized project; no third-party reference artwork used; not a legal rights-clearance certificate.",
+        "generation_date": "2026-10-25",
+        "initial_prompt_record": "production/prompts/ill-0012.txt",
+        "revision": 0
+      },
+      "status": "selected-for-proof",
+      "asset_sha256": "7e47870ddd49e0dc032856393e9faf764aaab900fdf5729326a315ebbfaed2c8",
+      "native_pixels": [
+        1536,
+        1024
+      ],
+      "review_record": "reviews/illustrated/visual-review.md; independent acceptance is recorded by exact hashes, not inferred from generation."
+    }
+  ],
+  "reference_assets": [
+    {
+      "path": "assets/references/cast-reference-v1.png",
+      "sha256": "6bb6ad4ecbbd1cfc63e8e40eec3f0042ce3c744b01c32820aa755ad87bcb8a5a",
+      "purpose": "Inspected cast and medium reference only; not a requested narrative illustration",
+      "native_pixels": [
+        1536,
+        1024
+      ]
+    }
+  ]
+}

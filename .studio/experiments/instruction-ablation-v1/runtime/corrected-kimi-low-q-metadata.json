@@ -1,0 +1,17 @@
+{
+  "session": "ses_e8f7588f4ffe6DwankWUgGO7z5",
+  "time": {
+    "created": 1792889485248,
+    "updated": 1792889515775,
+    "idle": 1792889515778
+  },
+  "models": [
+    {
+      "id": "kimi-k3:cloud",
+      "providerID": "ollama",
+      "variant": "low"
+    }
+  ],
+  "reasoning_characters": 614,
+  "final_text_characters": 11921
+}

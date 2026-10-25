@@ -1,0 +1,379 @@
+{
+  "schema_version": 1,
+  "gates": [
+    {
+      "id": "GATE-0001",
+      "checkpoint": "development",
+      "review_target": "manuscript",
+      "status": "pass",
+      "reviewer": "Fresh native developmental_editor, GPT-6.1 Sol medium; final local correction verified by fresh copy_editor, GPT-6.1 Sol high",
+      "source_snapshot": [
+        "reviews/draft-snapshot.json",
+        "reviews/final-source-snapshot.json"
+      ],
+      "evidence": [
+        "reviews/developmental-initial.md",
+        "reviews/developmental-recheck.md",
+        "reviews/director-resolution.md",
+        "reviews/final-proof.md"
+      ],
+      "coverage": {
+        "read_in_full": [
+          "manuscript/001-story.md (all 30 initial pages)"
+        ],
+        "skimmed": [],
+        "not_assessed": [
+          "Actual child listening response"
+        ]
+      },
+      "recheck": "Developmental recheck covered pages 5 and 20\u201326; final proof reread changed spoon passages and all final source.",
+      "open_issues": [],
+      "independence_limit": "Fresh review context; same model family as director.",
+      "edition": "text-only-v1",
+      "historical": true,
+      "current_scope_note": "Historical prose-only edition. New illustrated acceptance is in GATE-0006/GATE-0007."
+    },
+    {
+      "id": "GATE-0002",
+      "checkpoint": "reader-response",
+      "review_target": "manuscript",
+      "status": "pass",
+      "reviewer": "Fresh native reader_advocate, GPT-6 Sol high",
+      "source_snapshot": "reviews/draft-snapshot.json",
+      "evidence": [
+        "reviews/reader-initial.md"
+      ],
+      "coverage": {
+        "read_in_full": [
+          "manuscript/001-story.md (initial complete draft, all 30 pages)"
+        ],
+        "skimmed": [],
+        "not_assessed": [
+          "Reader advocate did not reread final changed passages; these were checked by coordinator and final proofreader.",
+          "Human child read-aloud response"
+        ]
+      },
+      "scope": "This historical verdict applies to the initial hashed text. It is not a claim that the reader advocate certified the revised PDF.",
+      "open_issues": [],
+      "accepted_taste_choice": "Page 12 sound comparison retained; director rationale in reviews/director-resolution.md.",
+      "edition": "text-only-v1",
+      "historical": true,
+      "current_scope_note": "Historical prose-only edition. New illustrated acceptance is in GATE-0006/GATE-0007."
+    },
+    {
+      "id": "GATE-0003",
+      "checkpoint": "line-copy",
+      "review_target": "manuscript-and-export",
+      "status": "pass",
+      "reviewer": "Fresh native copy_editor, GPT-6.1 Sol high",
+      "source_snapshot": "reviews/final-source-snapshot.json and exports/reading-edition-manifest.json",
+      "evidence": [
+        "reviews/final-proof.md"
+      ],
+      "coverage": {
+        "read_in_full": [
+          "manuscript/001-story.md",
+          "exports/nell-and-the-pocket-sized-storm.pdf (extracted page text, all 30 pages)"
+        ],
+        "skimmed": [
+          "exports/nell-and-the-pocket-sized-storm.pdf (visual samples: 1, 9, 17, 20, 23, 25, 26, 30)"
+        ],
+        "not_assessed": [
+          "Other 22 PDF pages as rendered images",
+          "Physical print proof",
+          "Human child read-aloud response"
+        ]
+      },
+      "scope": "Manual full-source copy proof and final PDF text fidelity. No separate line-editing or human proof claim.",
+      "open_issues": [],
+      "edition": "text-only-v1",
+      "historical": true,
+      "current_scope_note": "Historical prose-only edition. New illustrated acceptance is in GATE-0006/GATE-0007."
+    },
+    {
+      "id": "GATE-0004",
+      "checkpoint": "production",
+      "review_target": "actual-pdf",
+      "status": "pass",
+      "reviewer": "Director build verification plus fresh native copy_editor final proof",
+      "source_snapshot": "exports/reading-edition-manifest.json",
+      "evidence": [
+        "reviews/final-proof.md",
+        "reviews/validation.json"
+      ],
+      "coverage": {
+        "read_in_full": [
+          "manuscript/001-story.md",
+          "exports/nell-and-the-pocket-sized-storm.pdf (extracted page text, all 30 pages)"
+        ],
+        "skimmed": [
+          "exports/nell-and-the-pocket-sized-storm.pdf (visual samples: 1, 9, 17, 20, 23, 25, 26, 30)"
+        ],
+        "not_assessed": [
+          "Other 22 PDF pages as rendered images",
+          "Physical print proof",
+          "Human child read-aloud response"
+        ]
+      },
+      "scope": "Private 30-page reading edition, not a publication authorization.",
+      "open_issues": [],
+      "edition": "text-only-v1",
+      "historical": true,
+      "current_scope_note": "Historical prose-only edition. New illustrated acceptance is in GATE-0006/GATE-0007."
+    },
+    {
+      "id": "GATE-0005",
+      "checkpoint": "continuity-evidence",
+      "status": "not-applicable",
+      "reviewer": "Director scope determination",
+      "source_snapshot": "reviews/final-source-snapshot.json",
+      "evidence": [
+        "reviews/director-resolution.md",
+        "research/notes.md",
+        "canon/proposals.json"
+      ],
+      "reason": "Formal shared-canon acceptance and factual-evidence gate are outside this standalone fantasy deliverable. Internal continuity was checked; proposed durable details remain proposed, with no accepted canon change.",
+      "open_issues": [],
+      "edition": "text-only-v1",
+      "historical": true,
+      "current_scope_note": "Historical prose-only edition. New illustrated acceptance is in GATE-0006/GATE-0007."
+    },
+    {
+      "id": "GATE-0006",
+      "edition": "illustrated-v2",
+      "checkpoint": "illustration",
+      "review_target": "selected-art-and-actual-illustrated-pdf",
+      "status": "pass",
+      "reviewer": "Fresh native child explicitly assigned illustration_reviewer contract, GPT-6.1 Sol high; coordinator integration/build verification",
+      "source_snapshot": "reviews/illustrated/source-snapshot.json and exports/reading-edition-manifest.json",
+      "pdf_sha256": "3c0fa08e5ada5eab3c7cd27b054c81c786656c4b509aa004d9bf342844e1db65",
+      "evidence": [
+        "reviews/illustrated/visual-review.md",
+        "reviews/illustrated/verification.json",
+        "exports/illustrated-layout-check.json"
+      ],
+      "coverage": {
+        "read_in_full": [
+          "manuscript/001-weather-in-a-boot.md",
+          "manuscript/002-a-very-thirsty-cloud.md",
+          "manuscript/003-the-wrong-sort-of-thunder.md",
+          "manuscript/004-the-garden-band.md",
+          "manuscript/005-a-ride-in-the-sky.md",
+          "manuscript/006-pip-pip-pip.md"
+        ],
+        "images_individually_viewed": [
+          "assets/illustrations/ill-0001.png",
+          "assets/illustrations/ill-0002.png",
+          "assets/illustrations/ill-0003.png",
+          "assets/illustrations/ill-0004.png",
+          "assets/illustrations/ill-0005.png",
+          "assets/illustrations/ill-0006.png",
+          "assets/illustrations/ill-0007.png",
+          "assets/illustrations/ill-0008.png",
+          "assets/illustrations/ill-0009.png",
+          "assets/illustrations/ill-0010.png",
+          "assets/illustrations/ill-0011.png",
+          "assets/illustrations/ill-0012.png"
+        ],
+        "pdf_pages_individually_viewed": [
+          2,
+          4,
+          6,
+          9,
+          12,
+          15,
+          17,
+          19,
+          23,
+          24,
+          27,
+          30
+        ],
+        "not_assessed": [
+          "Other 18 PDF pages visually (text and geometry checked)",
+          "Human child reading",
+          "Physical printer proof",
+          "PDF assistive-technology and alt-tag preservation"
+        ]
+      },
+      "open_issues": [],
+      "scope": "Private digital read-aloud edition; not publication authorization or printer/accessibility certification.",
+      "independence_limit": "Fresh reviewer context, same model family; reviewer did not create or edit images. No new native role selector was claimed."
+    },
+    {
+      "id": "GATE-0007",
+      "edition": "illustrated-v2",
+      "checkpoint": "production",
+      "review_target": "selected-art-and-actual-illustrated-pdf",
+      "status": "pass",
+      "reviewer": "Fresh native child explicitly assigned illustration_reviewer contract, GPT-6.1 Sol high; coordinator integration/build verification",
+      "source_snapshot": "reviews/illustrated/source-snapshot.json and exports/reading-edition-manifest.json",
+      "pdf_sha256": "3c0fa08e5ada5eab3c7cd27b054c81c786656c4b509aa004d9bf342844e1db65",
+      "evidence": [
+        "reviews/illustrated/visual-review.md",
+        "reviews/illustrated/verification.json",
+        "exports/illustrated-layout-check.json"
+      ],
+      "coverage": {
+        "read_in_full": [
+          "manuscript/001-weather-in-a-boot.md",
+          "manuscript/002-a-very-thirsty-cloud.md",
+          "manuscript/003-the-wrong-sort-of-thunder.md",
+          "manuscript/004-the-garden-band.md",
+          "manuscript/005-a-ride-in-the-sky.md",
+          "manuscript/006-pip-pip-pip.md"
+        ],
+        "images_individually_viewed": [
+          "assets/illustrations/ill-0001.png",
+          "assets/illustrations/ill-0002.png",
+          "assets/illustrations/ill-0003.png",
+          "assets/illustrations/ill-0004.png",
+          "assets/illustrations/ill-0005.png",
+          "assets/illustrations/ill-0006.png",
+          "assets/illustrations/ill-0007.png",
+          "assets/illustrations/ill-0008.png",
+          "assets/illustrations/ill-0009.png",
+          "assets/illustrations/ill-0010.png",
+          "assets/illustrations/ill-0011.png",
+          "assets/illustrations/ill-0012.png"
+        ],
+        "pdf_pages_individually_viewed": [
+          2,
+          4,
+          6,
+          9,
+          12,
+          15,
+          17,
+          19,
+          23,
+          24,
+          27,
+          30
+        ],
+        "not_assessed": [
+          "Other 18 PDF pages visually (text and geometry checked)",
+          "Human child reading",
+          "Physical printer proof",
+          "PDF assistive-technology and alt-tag preservation"
+        ]
+      },
+      "open_issues": [],
+      "scope": "Private digital read-aloud edition; not publication authorization or printer/accessibility certification.",
+      "independence_limit": "Fresh reviewer context, same model family; reviewer did not create or edit images. No new native role selector was claimed."
+    },
+    {
+      "id": "GATE-0008",
+      "edition": "illustrated-v2",
+      "checkpoint": "author-aesthetic-feedback",
+      "status": "revise",
+      "reviewer": "Author",
+      "pdf_sha256": "3c0fa08e5ada5eab3c7cd27b054c81c786656c4b509aa004d9bf342844e1db65",
+      "evidence": [
+        "reviews/redesign/author-feedback.md"
+      ],
+      "finding": "Repeated rectangular inset images below prose felt artificial. Prior visual passes did not establish author acceptance; v2 superseded by redesign."
+    },
+    {
+      "id": "GATE-0009",
+      "edition": "illustrated-v3",
+      "checkpoint": "composed-edition-aesthetics-and-production",
+      "status": "pass",
+      "reviewer": "Fresh native child assigned illustration_reviewer contract, GPT-6.1 Sol high, plus coordinator mechanical integration",
+      "source_snapshot": "reviews/redesign/source-snapshot.json",
+      "pdf_sha256": "4684ef3f791b97a540506266ad6306ca25c10f22f012a3f33e75ec03c1900b76",
+      "evidence": [
+        "reviews/redesign/final-review.md",
+        "reviews/redesign/verification.json",
+        "exports/illustrated-layout-check.json"
+      ],
+      "coverage": {
+        "images_individually_viewed": 12,
+        "pdf_pages_individually_viewed": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "spread_sequence_assessed": true,
+        "all_30_pdf_page_bodies_match": true,
+        "aesthetic_assessment_separate_from_mechanics": true
+      },
+      "open_material_issues": [],
+      "nonblocking_observations": [
+        "RR-001 Mr Moss outfit variation across pictures; identity/action remain clear."
+      ],
+      "scope": "Private digital reading candidate. Editorial assessment does not presume author aesthetic acceptance.",
+      "independence_limit": "Fresh session, same model family; no independent human/child test."
+    },
+    {
+      "id": "GATE-0010",
+      "edition": "illustrated-v3-epub",
+      "checkpoint": "actual-epub-production",
+      "status": "pass",
+      "reviewer": "Coordinator archive/render verification and fresh native illustration_reviewer child (GPT-6.1 Sol high)",
+      "epub_sha256": "5027cc6302965743f55ed9c8e5f69087b0a72ec961093112426002752eb0fa7e",
+      "source_snapshot": "exports/epub-manifest.json",
+      "evidence": [
+        "reviews/epub/epubcheck.json",
+        "reviews/epub/verification.json",
+        "reviews/epub/browser-proof.json",
+        "reviews/epub/independent-review.md"
+      ],
+      "coverage": {
+        "story_spine_pages": 30,
+        "selected_illustrations": 12,
+        "page_bodies_and_render_geometries_checked": 30,
+        "pages_individually_viewed": [
+          1,
+          2,
+          4,
+          6,
+          9,
+          11,
+          12,
+          15,
+          16,
+          17,
+          19,
+          21,
+          23,
+          24,
+          26,
+          27,
+          30
+        ],
+        "epubcheck_errors": 0,
+        "epubcheck_warnings": 0
+      },
+      "open_material_issues": [],
+      "limits": "Chrome rendering of actual EPUB XHTML; no installed e-reader/device test, accessibility certification or publication approval. Fresh same-family review."
+    }
+  ]
+}

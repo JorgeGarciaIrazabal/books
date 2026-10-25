@@ -1,0 +1,35 @@
+{
+  "session": "ses_e92325aaaffe840xNGzf5PKmXP",
+  "time": {
+    "created": 1792843556343,
+    "updated": 1792843976783,
+    "idle": 1792843976787
+  },
+  "assistant_messages": [
+    {
+      "time": {
+        "created": 1792843556442,
+        "streamed": 1792843976765,
+        "completed": 1792843976783
+      },
+      "type": "assistant",
+      "model": {
+        "id": "mistral-large-4:cloud",
+        "providerID": "ollama",
+        "variant": "none"
+      },
+      "finish": "stop",
+      "rawFinish": "stop",
+      "cost": 0,
+      "tokens": {
+        "input": 832,
+        "output": 27754,
+        "reasoning": 0,
+        "cache": {
+          "read": 8172,
+          "write": 0
+        }
+      }
+    }
+  ]
+}

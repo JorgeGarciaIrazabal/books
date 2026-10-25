@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "nell-and-the-pocket-sized-storm",
+  "universe": "little-weather",
+  "series": "standalone",
+  "title": "Nell and the Pocket-Sized Storm",
+  "kind": "fiction",
+  "stage": "production",
+  "language": "en",
+  "chapters": [
+    "manuscript/001-weather-in-a-boot.md",
+    "manuscript/002-a-very-thirsty-cloud.md",
+    "manuscript/003-the-wrong-sort-of-thunder.md",
+    "manuscript/004-the-garden-band.md",
+    "manuscript/005-a-ride-in-the-sky.md",
+    "manuscript/006-pip-pip-pip.md"
+  ],
+  "story_pages": 30,
+  "format": "read-aloud storybook",
+  "edition": "illustrated-v3",
+  "illustration_plan": "production/illustration-plan.json",
+  "chapter_details": [
+    {
+      "id": "CH-0001",
+      "path": "manuscript/001-weather-in-a-boot.md",
+      "title": "Weather in a Boot",
+      "pages": [
+        1,
+        5
+      ]
+    },
+    {
+      "id": "CH-0002",
+      "path": "manuscript/002-a-very-thirsty-cloud.md",
+      "title": "A Very Thirsty Cloud",
+      "pages": [
+        6,
+        10
+      ]
+    },
+    {
+      "id": "CH-0003",
+      "path": "manuscript/003-the-wrong-sort-of-thunder.md",
+      "title": "The Wrong Sort of Thunder",
+      "pages": [
+        11,
+        15
+      ]
+    },
+    {
+      "id": "CH-0004",
+      "path": "manuscript/004-the-garden-band.md",
+      "title": "The Garden Band",
+      "pages": [
+        16,
+        20
+      ]
+    },
+    {
+      "id": "CH-0005",
+      "path": "manuscript/005-a-ride-in-the-sky.md",
+      "title": "A Ride in the Sky",
+      "pages": [
+        21,
+        25
+      ]
+    },
+    {
+      "id": "CH-0006",
+      "path": "manuscript/006-pip-pip-pip.md",
+      "title": "Pip-pip-PIP!",
+      "pages": [
+        26,
+        30
+      ]
+    }
+  ],
+  "layout": "production/layout-v3.json"
+}

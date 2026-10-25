@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "source_snapshot": "reviews/final-source-snapshot.json",
+  "pdf_manifest": "exports/reading-edition-manifest.json",
+  "checks": {
+    "structural_errors": 0,
+    "declared_story_pages": 30,
+    "actual_pdf_pages": 30,
+    "story_word_count": 2047,
+    "page_body_text_matches_source": true,
+    "comparison": "All 30 extracted PDF page bodies compared with source; ignored only whitespace, running header/footer and title on page1.",
+    "final_snapshot_and_export_hashes_match": true,
+    "browser_detected_overflow": [],
+    "coordinator_visual_inspection_pages": [
+      1,
+      16,
+      23,
+      30
+    ],
+    "visual_inspection_note": "Pages 1 and 16 viewed in initial PDF, unaffected body text; pages 23 and 30 viewed after final rebuild. Final independent proof records its own actual coverage.",
+    "universe_canon_revision": 0
+  },
+  "limitations": [
+    "No human child read-aloud test",
+    "Decorative vector ornaments, not a fully illustrated book",
+    "Mechanical checks do not establish literary quality or publication readiness"
+  ]
+}

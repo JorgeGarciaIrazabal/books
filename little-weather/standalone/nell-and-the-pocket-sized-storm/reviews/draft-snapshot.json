@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "snapshot": "first-complete-draft",
+  "sha256": {
+    "brief.md": "46bcf4c0c9e3000f91a2733b3a6bd043586c19726678019a5c9f2631220c4f4b",
+    "style.md": "2c05c179cf9aea5196e3c648f063facdcd5a9e60720649cb3b8293a3721cbb8b",
+    "book.json": "2af7bd3c4d32bb4c3a2abf7999afe48b62928af8efe4b2e5cea8989ca24ab162",
+    "manuscript/001-story.md": "fb20c3176f84b143b3ddcd45686a17c70516b3912c71ff3186318e0c9b2f537d"
+  }
+}

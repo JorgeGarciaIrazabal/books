@@ -1,0 +1,26 @@
+{
+  "edition": "text-only-v1",
+  "sha256": {
+    "book.json": "1dde062b669ca5ae5de7faa07467e5477f5341f7cfdf3375007cc8799dae22af",
+    "brief.md": "46bcf4c0c9e3000f91a2733b3a6bd043586c19726678019a5c9f2631220c4f4b",
+    "outline.md": "1801d94bf2cb1c2073e14d8162a0fef101f2f5af53a9c7293fefb10cce3e7687",
+    "scenes.json": "1ed3e7da5ffa70650b4257833dc5917c924a3b1311c225a5e1bdf34f3c6cfa4c",
+    "knowledge.json": "cb2663035540c3f8e3e90fba7f546d094e586d74c24ae61fb6a4ba83a7793993",
+    "threads.json": "189bc8d31fddb1089e2bfa8bd372741c237e1e58138e89fc7390077080cc8f58",
+    "state.md": "fdff660fc9243f383091176472ead8f881d33f9c7b366c194e10ad1c05129717",
+    "handoff.md": "fbcd367761021d4bb216dd7ec0e3e185a4eda4567f983aaf2b28ba2d0ddb3ab1",
+    "tasks.json": "fc7d36d3a6f67bdb10ec6fe0b106d9c86dbd772bbee736b32ea290d248ee0e12",
+    "production/build.py": "694966067f628f23cb7d36eb6e30eb0aca788022b61a9ebc455676600f6a8976",
+    "production/brief.md": "fef56d8545f5b7969cac346eddba95c8cc1c350bfd44defc57fa2c733a4af0a8",
+    "manuscript/001-story.md": "1b0619f51d42774f6d948388d70e291361f3348bbd832d3bd29edfc7e57e7a7d",
+    "reviews/final-source-snapshot.json": "d0d85af8549455f4781c6d0327474c959da9940173c096e8b3176c2a9219e184",
+    "reviews/gates.json": "d0018d815d48e8a878996128a7dece9519e1e4a3f5f87293b953930c29e6ed12",
+    "reviews/issues.json": "66cbfa4680407d1afafd78731b6f6cddbfd4f0fb93629903e46566c80ca4419f",
+    "reviews/validation.json": "359ba862a75b0cec64dbf6ff301310cfe472ebf325ba4a479fa339df70c16731",
+    "exports/reading-edition-manifest.json": "e6cc7ede242b0b168d031493c2f7a9a367bf6577c81738c5d68821ac53f30101",
+    "exports/nell-and-the-pocket-sized-storm.md": "1b0619f51d42774f6d948388d70e291361f3348bbd832d3bd29edfc7e57e7a7d",
+    "exports/nell-and-the-pocket-sized-storm.manifest.json": "b20249fff7e53e70bdc5ef49b92180bcf45ac7d777dfc9b63617895a845b82da",
+    "exports/nell-and-the-pocket-sized-storm.html": "da6b67ea52ee860f0c7fef7b6b9dc604e96db1d6a25737d9569ca77b21ddcede",
+    "exports/nell-and-the-pocket-sized-storm.pdf": "737e0332eeaf3d46f3d9495c2bb059c3977eab67964834a59b085b04ab1b7aa0"
+  }
+}

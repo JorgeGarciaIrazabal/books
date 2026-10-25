@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "issues": [
+    {
+      "id": "ISSUE-0001",
+      "reference": "DEV-001",
+      "type": "minor-error",
+      "location": "Page 23",
+      "status": "resolved",
+      "resolution": "Grandma gives launch signal after Nell confirms readiness.",
+      "evidence": "reviews/director-resolution.md"
+    },
+    {
+      "id": "ISSUE-0002",
+      "reference": "DEV-002",
+      "type": "clarity-risk",
+      "location": "Page 5",
+      "status": "resolved",
+      "resolution": "Breeze required to rise high; low floating remains permitted.",
+      "evidence": "reviews/developmental-recheck.md"
+    },
+    {
+      "id": "ISSUE-0003",
+      "reference": "DEV-003 and reader band-placement preference",
+      "type": "minor-continuity",
+      "location": "Pages 21, 23, 25–26",
+      "status": "resolved",
+      "resolution": "Band follows; spoon enters pocket then is retrieved after the run.",
+      "evidence": "reviews/director-resolution.md",
+      "recheck_evidence": "reviews/final-proof.md: final pages 23 and 25 reread and freshly rendered; spoon custody resolved."
+    },
+    {
+      "id": "ISSUE-0004",
+      "reference": "Reader page 12 tone preference",
+      "type": "taste",
+      "location": "Page 12",
+      "status": "accepted-editorial-choice",
+      "resolution": "Retain sound comparison and earned apology; no mandatory correction requested.",
+      "evidence": "reviews/director-resolution.md"
+    }
+  ]
+}

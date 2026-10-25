@@ -39,7 +39,7 @@ AGENTS.md                         # recognized by Codex and OpenCode
 AGETNS.md                         # spelling compatibility pointer
 README.md                         # human quick start
 .studio/                          # portable role contracts and operating policy
-.codex/agents/*.toml               # native Codex specialists (Astra)
+.codex/agents/*.toml               # native Codex specialists; models from roster
 .opencode/agents/*.md              # native OpenCode v2 specialists
 .opencode/commands/*.md            # OpenCode workflow shortcuts
 opencode.json                     # OpenCode v2 project configuration
@@ -117,6 +117,8 @@ The human author is the creative director; `studio_director` is the AI coordinat
 | `nonfiction_editor` | Thesis, logic, pedagogy, evidence sufficiency | Argument/evidence audit |
 | `production_editor` | Assembly, front/back matter, metadata, release QA | Reproducible release candidate |
 | `art_director` | Cover/series visual identity and accessibility | Cover and illustration briefs |
+| `illustrator` | Reference-led narrative image execution | Scene art, prompts, provenance, alt text |
+| `illustration_reviewer` | Independent image/prose and final-layout proof | Visual findings with exact coverage |
 
 ## Orchestration and file ownership
 
@@ -126,8 +128,9 @@ The human author is the creative director; `studio_director` is the AI coordinat
   and no recursive delegation. The coordinator owns shared task and handoff files.
 - Use the runtime's native role selector when available. If a Codex session exposes
   native subagents without a custom-role selector, assign the role by ID in the
-  child's task and require it to read `.studio/agents/ROLE.md`; request Astra
-  explicitly. This still uses native delegation. Describe the invocation accurately
+  child's task and require it to read `.studio/agents/ROLE.md`; request the model
+  and effort from `.studio/roster.json` explicitly, including any task-specific
+  override. Never silently replace an unavailable preferred model. This still uses native delegation. Describe the invocation accurately
   rather than claiming a selector or role configuration was applied when it was not.
 - Each assignment specifies source snapshot, inputs, deliverable, acceptance
   criteria, allowed writes, and budget. Record it in `tasks.json` for concurrent
@@ -167,6 +170,11 @@ The human author is the creative director; `studio_director` is the AI coordinat
 
 - Follow `.studio/craft.md`. Do not flatten unusual voice or impose a universal
   formula. Structure and genre conventions are diagnostic tools.
+- Apply the author's prose preferences in `.studio/craft.md` to all new drafting,
+  translation, and editing: no em dashes by default, quotation marks for dialogue
+  including Spanish, and no stock assistant phrasing or formulaic padding. An
+  explicit author exception takes precedence. Keep model/process records outside
+  the story; assess prose in context rather than promising AI-detector results.
 - Draft, developmental edit, line edit, copy edit, and proof are distinct passes.
   Fix causality and evidence before polishing sentences that may be removed.
 - Independent editors receive the brief and actual text in a fresh session, not
@@ -187,3 +195,6 @@ The human author is the creative director; `studio_director` is the AI coordinat
   paths, remaining issues, assumptions, and the next action. Independent reviewers
   return their findings and coverage to the coordinator instead of editing shared
   handoffs. Report actual checks and limitations.
+
+## Illustrated stories
+When the author requests an illustrated story or pictures for an existing book, read `.studio/skills/illustrated-story/SKILL.md`. Plan text and art together for new work. Distinguish actual chapters from pages/scenes; art frequency follows the author's request. Use a page/spread dummy, consistent cast/prop references, a scene plan with disclosure boundaries, selected local image assets and provenance. Existing art_director sets direction; illustrator executes images; production_editor designs and builds the edition; illustration_reviewer checks images and actual picture-bearing pages independently. Keep one coordinator and activate only needed specialists. A prose-only proof or decorative icons do not fulfill a requested illustrated edition. Record observed lessons and exact review coverage; do not invent universal printer specifications or automatic publication approval.

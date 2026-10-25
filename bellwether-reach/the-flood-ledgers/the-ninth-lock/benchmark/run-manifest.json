@@ -1,0 +1,164 @@
+{
+  "protocol": "v1",
+  "status": "complete",
+  "requested_models": [
+    "kimi-k3",
+    "gpt-6.1-sol",
+    "gpt-6-sol",
+    "mistral-large-4"
+  ],
+  "requested_efforts": [
+    "medium",
+    "high"
+  ],
+  "conditions": [
+    {
+      "id": "sol61-medium",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "runtime": "native Codex subagent"
+    },
+    {
+      "id": "sol61-high",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "runtime": "native Codex subagent"
+    },
+    {
+      "id": "sol6-medium",
+      "model": "gpt-6-sol",
+      "effort": "medium",
+      "runtime": "native Codex subagent"
+    },
+    {
+      "id": "sol6-high",
+      "model": "gpt-6-sol",
+      "effort": "high",
+      "runtime": "native Codex subagent"
+    },
+    {
+      "id": "kimi-high",
+      "model": "ollama/kimi-k3:cloud",
+      "effort": "high",
+      "runtime": "OpenCode CLI"
+    },
+    {
+      "id": "kimi-low",
+      "model": "ollama/kimi-k3:cloud",
+      "effort": "low",
+      "runtime": "OpenCode CLI",
+      "adjustment": "Author explicitly selected low/high for Kimi in response to clarification."
+    },
+    {
+      "id": "mistral-none",
+      "model": "ollama/mistral-large-4:cloud",
+      "effort": "none",
+      "runtime": "OpenCode CLI standalone",
+      "request_body": {
+        "think": false
+      },
+      "adjustment": "User requested supported equivalents; official Mistral API lists none/high, local Boolean probes confirm thinking off/on. None is not medium; balanced/deep names unverified."
+    },
+    {
+      "id": "mistral-high",
+      "model": "ollama/mistral-large-4:cloud",
+      "effort": "high",
+      "runtime": "OpenCode CLI standalone",
+      "request_body": {
+        "think": true
+      },
+      "adjustment": "User requested supported equivalents; official Mistral API lists none/high, local Boolean probes confirm thinking off/on. None is not medium; balanced/deep names unverified."
+    }
+  ],
+  "source_snapshot": {
+    "bellwether-reach/the-flood-ledgers/the-ninth-lock/benchmark/packets/candidate.md": "d7ae21f632528b9ca96297e5e1dae7c58aabf62e9b471aee5793d36c9a978d0d",
+    "bellwether-reach/the-flood-ledgers/the-ninth-lock/benchmark/protocol.md": "2d8f531197c1dd99e79d74c7d00b6e599aae2fce33696173db84bc09ed0b319f",
+    "bellwether-reach/the-flood-ledgers/the-ninth-lock/benchmark/inputs/answer-key.md": "8ec2a99f7a8c8bde0af27f833d491cb0997f9d7fa793f52a774c920fa6af53c2",
+    "bellwether-reach/the-flood-ledgers/the-ninth-lock/benchmark/inputs/common.md": "f035c0e96391966c6ff6e9c04b54a3ceaa21efaa8635b4665b83494499b1b84c",
+    "bellwether-reach/the-flood-ledgers/the-ninth-lock/benchmark/inputs/copy-continuity-fixture.md": "ccb31f1815baf320005dfbbf94b4205f5a15e0626e4470585ded21ec2a046760",
+    "bellwether-reach/the-flood-ledgers/the-ninth-lock/benchmark/inputs/developmental-fixture.md": "cdc9e50e4042f1b8a1fdfabc0a8b62175675f55847432e8f4670c48117baab09",
+    "bellwether-reach/the-flood-ledgers/the-ninth-lock/benchmark/inputs/line-fixture.md": "1f568a9b1ed9eacbb6fee76b38d776c3bbec8cedf89d242d28137f24b1d9b757"
+  },
+  "omitted_conditions": [
+    {
+      "model": "kimi-k3",
+      "effort": "medium",
+      "reason": "/api/show lists false,low,high,max only; unsupported values can fall back to max."
+    },
+    {
+      "model": "mistral-large-4",
+      "effort": "medium",
+      "reason": "No thinking metadata and OpenCode variant unavailable."
+    }
+  ],
+  "runtime_notes": [
+    "Kimi native OpenCode variant IDs initially unavailable; benchmark-local documented variants explicitly set request body think to low/high. high capability check returned READY.",
+    "GPT candidates use native default subagent role with explicit model/effort overrides because named studio roles fix Astra.",
+    "No model inference custom runner; native Codex subagents and native OpenCode CLI.",
+    "Kimi OpenCode agents used steps=1 and tools denied; Mistral uses dedicated steps=2 agents after a pre-generation compatibility failure. Codex participants use bounded local reads/writes. Runtime/system instructions differ; the Kimi low process-note tail prompted the disclosed P8 correction.",
+    "Mistral two-setting comparison corrected after user requested equivalents and direct capability probes verified think=false/true. Default output is diagnostic only, excluded before judging."
+  ],
+  "failures": [
+    {
+      "condition": "mistral-default",
+      "attempt": 1,
+      "stage": "before generation",
+      "evidence": "runtime/mistral-default.jsonl",
+      "error": "400 Expected last role User or Tool (or Assistant with prefix True) for serving but got assistant",
+      "repair": "Test dedicated native agent with steps=2 instead of steps=1; no candidate output existed, so retry cannot select between quality samples."
+    },
+    {
+      "condition": "mistral-default",
+      "attempt": 2,
+      "stage": "agent resolution before generation",
+      "evidence": "runtime/mistral-default-attempt2.jsonl",
+      "error": "Shared OpenCode server did not reload added benchmark_mistral_candidate agent",
+      "repair": "Retry via native --standalone, which reloads local configuration."
+    }
+  ],
+  "diagnostic_conditions": [
+    {
+      "id": "mistral-default",
+      "model": "ollama/mistral-large-4:cloud",
+      "effort": "provider-default-unverified",
+      "runtime": "OpenCode CLI",
+      "adjustment": "No verified medium/high controls; one provider-default condition, not an effort comparison.",
+      "status": "cancelled-after-user-selected-explicit-settings",
+      "evidence": "runtime/mistral-default-attempt3.jsonl"
+    }
+  ],
+  "format_normalizations": [
+    {
+      "review": "kimi-high",
+      "operation": "Extract the complete JSON object verbatim from an unsolicited max-steps preamble; raw native output retained. No ranks or evidence changed.",
+      "raw": "runtime/judge-kimi-high.jsonl"
+    },
+    {
+      "review": "kimi-low",
+      "operation": "Extract complete JSON object from unsolicited preamble; raw output retained. No ranks or evidence changed.",
+      "raw": "runtime/judge-kimi-low.jsonl"
+    }
+  ],
+  "completed_date": "2026-10-24",
+  "summary": {
+    "candidate_conditions": 8,
+    "phase_samples": 64,
+    "full_peer_review_sessions": 8,
+    "fresh_blurb_correction_sessions": 6,
+    "effective_evidence_items": 384,
+    "source_snapshot_preserved": true,
+    "working_manuscript_selected": false
+  },
+  "final_report": "report.md",
+  "final_results": "results.json",
+  "post_hoc_correction": "blurb-correction.json",
+  "evidence_disposition": "evidence-disposition.json",
+  "verification": "validation.json",
+  "effort_control_correction": {
+    "cloud_effective_effort_verified": false,
+    "withdrawn": "Kimi/Mistral effort-effect interpretations",
+    "notice": "effort-control-correction.md",
+    "corrected_followup": "../../../../.studio/experiments/instruction-ablation-v1/",
+    "raw_samples_preserved": true
+  }
+}

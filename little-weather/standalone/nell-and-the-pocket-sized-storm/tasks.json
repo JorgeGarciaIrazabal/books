@@ -1,0 +1,436 @@
+{
+  "schema_version": 1,
+  "tasks": [
+    {
+      "id": "TASK-0001",
+      "role": "developmental_editor",
+      "status": "done",
+      "source_snapshot": "reviews/draft-snapshot.json",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "book.json",
+        "manuscript/001-story.md"
+      ],
+      "allowed_writes": [
+        "reviews/developmental-initial.md"
+      ],
+      "deliverable": "Fresh whole-manuscript review with exact snapshot, page evidence, coverage and prioritized findings. Return findings to coordinator.",
+      "acceptance": [
+        "Read all 30 story pages",
+        "Separate defects from preferences",
+        "Do not consult outline, handoff, other reviews, or drafter rationale",
+        "No manuscript edits"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 42000,
+        "max_output_words": 1100,
+        "max_tool_calls": 12
+      },
+      "dependencies": [],
+      "owner": "/root/developmental_editor"
+    },
+    {
+      "id": "TASK-0002",
+      "role": "reader_advocate",
+      "status": "done",
+      "source_snapshot": "reviews/draft-snapshot.json",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "book.json",
+        "manuscript/001-story.md"
+      ],
+      "allowed_writes": [
+        "reviews/reader-initial.md"
+      ],
+      "deliverable": "Fresh whole-manuscript review with exact snapshot, page evidence, coverage and prioritized findings. Return findings to coordinator.",
+      "acceptance": [
+        "Read all 30 story pages",
+        "Separate defects from preferences",
+        "Do not consult outline, handoff, other reviews, or drafter rationale",
+        "No manuscript edits"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 42000,
+        "max_output_words": 1100,
+        "max_tool_calls": 12
+      },
+      "dependencies": [],
+      "owner": "/root/reader_advocate"
+    },
+    {
+      "id": "TASK-0003",
+      "role": "developmental_editor",
+      "status": "done",
+      "source_snapshot": "reviews/final-source-snapshot.json",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "manuscript/001-story.md",
+        "reviews/developmental-initial.md"
+      ],
+      "allowed_writes": [
+        "reviews/developmental-recheck.md"
+      ],
+      "deliverable": "Recheck DEV-001 through DEV-003 against revised pages 5, 21, 23, 25, 26",
+      "acceptance": [
+        "Cite new snapshot",
+        "Resolve or retain original findings from actual changed text"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 24000,
+        "max_output_words": 500,
+        "max_tool_calls": 6
+      },
+      "dependencies": [
+        "TASK-0001"
+      ],
+      "owner": "/root/developmental_editor",
+      "completion_note": "Recheck exposed remaining spoon movement; coordinator fixed locally, and fresh copy-editor final proof independently verified it."
+    },
+    {
+      "id": "TASK-0004",
+      "role": "copy_editor",
+      "status": "done",
+      "source_snapshot": "reviews/final-source-snapshot.json and exports/reading-edition-manifest.json",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "book.json",
+        "manuscript/001-story.md",
+        "exports/nell-and-the-pocket-sized-storm.pdf"
+      ],
+      "allowed_writes": [
+        "reviews/final-proof.md"
+      ],
+      "deliverable": "Fresh final proof of full source and actual 30-page PDF: mechanics, missing text, page boundaries, any clipping, exact snapshot and coverage.",
+      "acceptance": [
+        "Read all 30 source and PDF pages",
+        "Compare extracted PDF text to source page by page",
+        "Check actual PDF page count",
+        "Separate defects from preferences",
+        "Do not edit manuscript or shared records"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 60000,
+        "max_output_words": 1100,
+        "max_tool_calls": 15
+      },
+      "dependencies": [],
+      "owner": "/root/copy_editor",
+      "completion_note": "Scoped proof passed; all 30 final page bodies matched source; eight unique pages visually inspected; final hashes verified."
+    },
+    {
+      "id": "TASK-0005",
+      "role": "art_director",
+      "status": "done",
+      "source_snapshot": "production/previous-edition/text-only-v1/archive-manifest.json",
+      "inputs": [
+        "brief.md",
+        "book.json",
+        "manuscript/001-story.md (initial snapshot)",
+        ".studio/agents/"
+      ],
+      "allowed_writes": [
+        "production/visual-style.md",
+        "production/art-direction.md",
+        "production/illustration-plan.json",
+        "production/illustration-research.md"
+      ],
+      "deliverable": "Primary-source-informed visual bible and 12-image scene/placement plan.",
+      "acceptance": [
+        "Preserve existing user edits",
+        "Keep fixed page count and actual chapter boundaries distinct",
+        "Separate art creation, direction, independent proof",
+        "No fabricated research or results"
+      ],
+      "budget": {
+        "max_rounds": 2,
+        "max_tool_calls": 18
+      },
+      "dependencies": [],
+      "owner": "/root/art_direction"
+    },
+    {
+      "id": "TASK-0006",
+      "role": "worker",
+      "status": "done",
+      "source_snapshot": "production/previous-edition/text-only-v1/archive-manifest.json",
+      "inputs": [
+        "brief.md",
+        "book.json",
+        "manuscript/001-story.md (initial snapshot)",
+        ".studio/agents/"
+      ],
+      "allowed_writes": [
+        ".studio/skills/illustrated-story/",
+        ".studio/workflow.md",
+        ".studio/agents/",
+        ".codex/agents/",
+        ".opencode/agents/",
+        "docs/illustrated-stories.md",
+        "templates/book/production/",
+        "AGENTS.md",
+        "README.md",
+        ".studio/roster.json",
+        ".opencode/commands/studio-illustrate.md"
+      ],
+      "deliverable": "Reusable illustrated-story skill, two specialist contracts, runtime definitions, templates and validator.",
+      "acceptance": [
+        "Preserve existing user edits",
+        "Keep fixed page count and actual chapter boundaries distinct",
+        "Separate art creation, direction, independent proof",
+        "No fabricated research or results"
+      ],
+      "budget": {
+        "max_rounds": 2,
+        "max_tool_calls": 25
+      },
+      "dependencies": [],
+      "owner": "/root/illustration_workflow"
+    },
+    {
+      "id": "TASK-0007",
+      "role": "production_editor",
+      "status": "cancelled",
+      "owner": "/root/illustrated_layout",
+      "allowed_writes": [
+        "production/build.py",
+        "production/verify_illustrated.py",
+        "exports/",
+        "reviews/illustrated/layout-implementation.md"
+      ],
+      "source_snapshot": "book.json and production/illustration-plan.json",
+      "deliverable": "Illustrated layout implementation and actual PDF build",
+      "completion_note": "Specialist saved build.py then errored on usage limit. Runtime status confirmed errored; coordinator takes over final implementation/build/verification. No specialist proof claimed."
+    },
+    {
+      "id": "TASK-0008",
+      "role": "illustration_reviewer",
+      "status": "done",
+      "owner": "/root/visual_review",
+      "allowed_writes": [
+        "reviews/illustrated/visual-review.md"
+      ],
+      "source_snapshot": "book.json plus selected asset hashes and final export manifest when available",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "production/visual-style.md",
+        "production/illustration-plan.json",
+        "book.json ordered manuscript",
+        "assets/references/cast-reference-v1.png",
+        "assets/illustrations/",
+        "exports/nell-and-the-pocket-sized-storm.pdf (once rebuilt)"
+      ],
+      "deliverable": "Independent actual image/prose and final picture-bearing-page proof, exact coverage and material findings",
+      "acceptance": [
+        "Inspect every selected image individually",
+        "Read actual prose, not drafter rationale",
+        "Inspect every final illustrated PDF page",
+        "Identify exact hashes and actual limitations"
+      ],
+      "budget": {
+        "max_rounds": 2,
+        "max_tool_calls": 60,
+        "max_input_chars": 65000,
+        "max_output_words": 1800
+      },
+      "dependencies": []
+    },
+    {
+      "id": "TASK-0009",
+      "role": "studio_director",
+      "owner": "/root",
+      "status": "done",
+      "source_snapshot": "reviews/illustrated/source-snapshot.json",
+      "allowed_writes": [
+        "production/build.py",
+        "production/verify_illustrated.py",
+        "production/brief.md",
+        "exports/",
+        "reviews/illustrated/",
+        "shared book records"
+      ],
+      "deliverable": "Complete saved layout implementation after specialist usage limit, integrate actual selected art, build and verify illustrated edition, install skill and record lessons/handoff.",
+      "completion_note": "30 actual PDF pages, 6 chapters, 12 images, 16.8 pt type, exact unchanged prose and all export hashes verified; independent visual proof passed."
+    },
+    {
+      "id": "TASK-0010",
+      "role": "art_director",
+      "owner": "/root/redesign_art",
+      "status": "done",
+      "allowed_writes": [
+        "reviews/redesign/design-critique.md"
+      ],
+      "source_snapshot": "production/previous-edition/illustrated-v2/archive-manifest.json",
+      "deliverable": "Individually inspect current illustrations and prior PDF composition; propose varied integrated page design without changing story.",
+      "acceptance": [
+        "Preserve 30 pages, actual prose and two pictures per chapter",
+        "Judge image/text composition and pacing in actual pages",
+        "No invented quality/acceptance claims"
+      ],
+      "budget": {
+        "max_rounds": 2,
+        "max_tool_calls": 35
+      }
+    },
+    {
+      "id": "TASK-0011",
+      "role": "worker",
+      "owner": "/root/redesign_workflow",
+      "status": "done",
+      "allowed_writes": [
+        ".studio/skills/illustrated-story/",
+        ".studio/agents/art_director.md",
+        ".studio/agents/production_editor.md",
+        ".studio/agents/illustration_reviewer.md",
+        ".studio/workflow.md",
+        "docs/illustrated-stories.md"
+      ],
+      "source_snapshot": "production/previous-edition/illustrated-v2/archive-manifest.json",
+      "deliverable": "Targeted workflow correction from author rejecting repetitive rectangular inset art; aesthetics distinct from mechanical proof.",
+      "acceptance": [
+        "Preserve 30 pages, actual prose and two pictures per chapter",
+        "Judge image/text composition and pacing in actual pages",
+        "No invented quality/acceptance claims"
+      ],
+      "budget": {
+        "max_rounds": 2,
+        "max_tool_calls": 35
+      }
+    },
+    {
+      "id": "TASK-0012",
+      "role": "studio_director",
+      "owner": "/root",
+      "status": "done",
+      "allowed_writes": [
+        "production/",
+        "assets/redesign/",
+        "exports/",
+        "reviews/redesign/",
+        "shared book records"
+      ],
+      "source_snapshot": "production/previous-edition/illustrated-v2/archive-manifest.json",
+      "deliverable": "Create integrated artwork, varied page designs and verify actual redesigned PDF.",
+      "acceptance": [
+        "Preserve 30 pages, actual prose and two pictures per chapter",
+        "Judge image/text composition and pacing in actual pages",
+        "No invented quality/acceptance claims"
+      ],
+      "budget": {
+        "max_rounds": 2,
+        "max_tool_calls": 35
+      },
+      "completion_note": "Frozen illustrated-v3; exact source/page bodies and all hashes verified, all12images/all30PDFpages individually reviewed. RR-001 minor observation recorded."
+    },
+    {
+      "id": "TASK-0013",
+      "role": "illustration_reviewer",
+      "owner": "/root/redesign_review",
+      "status": "done",
+      "allowed_writes": [
+        "reviews/redesign/final-review.md"
+      ],
+      "source_snapshot": "production/previous-edition/illustrated-v2/archive-manifest.json",
+      "deliverable": "Fresh review actual final page compositions and story fidelity.",
+      "acceptance": [
+        "Preserve 30 pages, actual prose and two pictures per chapter",
+        "Judge image/text composition and pacing in actual pages",
+        "No invented quality/acceptance claims"
+      ],
+      "budget": {
+        "max_rounds": 2,
+        "max_tool_calls": 35
+      },
+      "completion_note": "Frozen illustrated-v3; exact source/page bodies and all hashes verified, all12images/all30PDFpages individually reviewed. RR-001 minor observation recorded."
+    },
+    {
+      "id": "TASK-0014",
+      "role": "worker",
+      "owner": "/root/redesign_build",
+      "status": "done",
+      "source_snapshot": "production/previous-edition/illustrated-v2/archive-manifest.json",
+      "allowed_writes": [
+        "production/build.py",
+        "production/verify_illustrated.py",
+        "production/layout-v3.json",
+        "exports/"
+      ],
+      "deliverable": "Implement varied page compositions and mechanically verify actual revised PDF",
+      "acceptance": [
+        "30pages unchangedprose",
+        "16.8pt body",
+        "Preserve transparency",
+        "No accidental image/text collisions"
+      ],
+      "budget": {
+        "max_rounds": 2,
+        "max_tool_calls": 35
+      }
+    },
+    {
+      "id": "TASK-0015",
+      "role": "studio_director",
+      "owner": "/root",
+      "status": "done",
+      "source_snapshot": "exports/reading-edition-manifest.json; approved illustrated-v3 PDF 4684ef3f791b97a540506266ad6306ca25c10f22f012a3f33e75ec03c1900b76",
+      "inputs": [
+        "book.json",
+        "production/layout-v3.json",
+        "exports/nell-and-the-pocket-sized-storm.html",
+        "exports/nell-and-the-pocket-sized-storm.pdf"
+      ],
+      "allowed_writes": [
+        "production/build_epub.py",
+        "production/verify_epub.py",
+        "production/epub-notes.md",
+        "exports/epub/",
+        "exports/nell-and-the-pocket-sized-storm.epub",
+        "exports/epub-manifest.json",
+        "reviews/epub/",
+        "shared book ledgers"
+      ],
+      "deliverable": "Validated fixed-layout EPUB3 preserving approved page designs and prose",
+      "acceptance": [
+        "30 story spine pages",
+        "12 selected illustrations, original alpha retained",
+        "Embedded fonts and chapter/page navigation",
+        "EPUBCheck pass",
+        "Actual packaged XHTML rendering proof"
+      ],
+      "budget": {
+        "max_rounds": 2,
+        "max_tool_calls": 45
+      },
+      "completion_note": "EPUBCheck0errors/warnings; all30page bodies and geometries match approved edition; independent proof12picturepages+5chapteropeners. Actualreaderappuntested."
+    },
+    {
+      "id": "TASK-0016",
+      "role": "illustration_reviewer",
+      "owner": "/root/epub_review",
+      "status": "done",
+      "source_snapshot": "exports/epub-manifest.json once built",
+      "allowed_writes": [
+        "reviews/epub/independent-review.md"
+      ],
+      "deliverable": "Independent actual EPUB package and page proof",
+      "acceptance": [
+        "Inspect actual archive and text reading order",
+        "Individually inspect all12 picture-bearing EPUB XHTML pages",
+        "Record exact EPUB hash and limitations"
+      ],
+      "budget": {
+        "max_rounds": 2,
+        "max_tool_calls": 35
+      },
+      "completion_note": "EPUBCheck0errors/warnings; all30page bodies and geometries match approved edition; independent proof12picturepages+5chapteropeners. Actualreaderappuntested."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "reason": "Author rejected repetitive inset image layout; preserve exact v2 before redesign",
+  "sha256": {
+    "book.json": "3a2f7cb92a67f8714a83af80b51bdf10dc22996060d86ebaf67d7fe1b4913cab",
+    "state.md": "89b31766aef67318380cd8162cc56228bdd69045ac63f6d10d2ff7a46448bb72",
+    "handoff.md": "ed895c77eca6701e4b29e5edcee8f7ad7880f28ea44b58ed12112a0ce04f248b",
+    "exports/reading-edition-manifest.json": "f8477d3d54237facdae7ea1f3fe8854fccd9df49da8d61221d2a8568ecf998a4",
+    "exports/illustrated-layout-check.json": "ab28349bb8c4b0dca60a6a2353001653c1cb65175c8ccab58aa02938780d852b",
+    "exports/nell-and-the-pocket-sized-storm.html": "142c24b6c00cb4178850a6b3a9e598794eb3e6f0f437bac06ffce9951f16e23a",
+    "exports/nell-and-the-pocket-sized-storm.pdf": "3c0fa08e5ada5eab3c7cd27b054c81c786656c4b509aa004d9bf342844e1db65",
+    "production/build.py": "082e024c693f3b2995d869b116e2fa73018b0c0b492b30b7a65d6fb6be140772",
+    "production/page-dummy.json": "a02bd89e38fa1b74e3f2f27a91ccc4d4409c353d1bf3a9937fd110ac8cc7e56c",
+    "production/illustration-plan.json": "74735ad3b5b84949a4fde6e7c28b7e226d55aec47af906889f8e1bcc7cf6cf9b",
+    "production/verify_illustrated.py": "e29628080ad92f54573e4649659f56fd7cf15ff3727c1921e36527841b7fdf26",
+    "production/art-direction.md": "d513a87b30243fb03aa92e051db1c17f21d22ff4f9ee7a1d98c36099ad2f46bb",
+    "production/visual-style.md": "9837f977efcd03e310bd71503e99731aabf98b900de45b296a391285c786f46e",
+    "production/brief.md": "8c74bfb84e2bcc50e8938d3337dbef8da675a543db6b1f2b7f0ec39c3d829c10"
+  }
+}

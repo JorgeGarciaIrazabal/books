@@ -1,0 +1,642 @@
+{
+  "schema_version": 3,
+  "edition": "illustrated-v3",
+  "page_size_inches": [
+    7.5,
+    9.5
+  ],
+  "body_type_points": 16.8,
+  "paper": "#fffdf7",
+  "running_headers": false,
+  "folio": {
+    "position": "bottom-outside",
+    "y": 9.23,
+    "size_pt": 8
+  },
+  "coordinate_system": "inches from page top-left; vignettes/panoramas contain full native composition; portrait backgrounds use declared minimal centered crop",
+  "pages": [
+    {
+      "page": 1,
+      "type": "title-and-opening",
+      "chapter_title": true,
+      "text_blocks": [
+        {
+          "x": 0.82,
+          "y": 3.45,
+          "width": 5.86
+        }
+      ],
+      "leading": 1.28,
+      "paragraph_gap_in": 0.075,
+      "title_box": {
+        "x": 0.82,
+        "y": 1.15,
+        "width": 5.86
+      },
+      "chapter_box": {
+        "x": 0.82,
+        "y": 2.65,
+        "width": 5.86
+      }
+    },
+    {
+      "page": 2,
+      "type": "large-bottom-vignette",
+      "chapter_title": false,
+      "text_blocks": [
+        {
+          "x": 0.7,
+          "y": 0.55,
+          "width": 6.1
+        }
+      ],
+      "leading": 1.28,
+      "paragraph_gap_in": 0.075,
+      "art_id": "ILL-0001",
+      "art_box": {
+        "x": 0.8,
+        "y": 4.45,
+        "width": 6.1,
+        "height": 4.15,
+        "fit": "contain",
+        "crop": "none"
+      }
+    },
+    {
+      "page": 3,
+      "type": "quiet-text",
+      "chapter_title": false,
+      "text_blocks": [
+        {
+          "x": 0.82,
+          "y": 2.25,
+          "width": 5.86
+        }
+      ],
+      "leading": 1.28,
+      "paragraph_gap_in": 0.075
+    },
+    {
+      "page": 4,
+      "type": "edge-to-edge-landscape-first",
+      "chapter_title": false,
+      "text_blocks": [
+        {
+          "x": 0.6,
+          "y": 5.25,
+          "width": 6.3
+        }
+      ],
+      "leading": 1.2,
+      "paragraph_gap_in": 0.025,
+      "art_id": "ILL-0002",
+      "art_box": {
+        "x": 0,
+        "y": 0,
+        "width": 7.5,
+        "height": 5,
+        "fit": "contain",
+        "crop": "none"
+      }
+    },
+    {
+      "page": 5,
+      "type": "quiet-text",
+      "chapter_title": false,
+      "text_blocks": [
+        {
+          "x": 0.82,
+          "y": 2.25,
+          "width": 5.86
+        }
+      ],
+      "leading": 1.28,
+      "paragraph_gap_in": 0.075
+    },
+    {
+      "page": 6,
+      "type": "vignette-above-chapter",
+      "chapter_title": true,
+      "text_blocks": [
+        {
+          "x": 0.7,
+          "y": 4.63,
+          "width": 6.1
+        }
+      ],
+      "leading": 1.23,
+      "paragraph_gap_in": 0.05,
+      "art_id": "ILL-0003",
+      "art_box": {
+        "x": 0.7,
+        "y": 0.35,
+        "width": 6.1,
+        "height": 3.4,
+        "fit": "contain",
+        "crop": "none"
+      },
+      "chapter_box": {
+        "x": 0.7,
+        "y": 3.83,
+        "width": 6.1
+      }
+    },
+    {
+      "page": 7,
+      "type": "quiet-text",
+      "chapter_title": false,
+      "text_blocks": [
+        {
+          "x": 0.82,
+          "y": 2.25,
+          "width": 5.86
+        }
+      ],
+      "leading": 1.28,
+      "paragraph_gap_in": 0.075
+    },
+    {
+      "page": 8,
+      "type": "quiet-text",
+      "chapter_title": false,
+      "text_blocks": [
+        {
+          "x": 0.82,
+          "y": 2.25,
+          "width": 5.86
+        }
+      ],
+      "leading": 1.28,
+      "paragraph_gap_in": 0.075
+    },
+    {
+      "page": 9,
+      "type": "portrait-environment-with-upper-columns",
+      "chapter_title": false,
+      "text_blocks": [
+        {
+          "x": 0.65,
+          "y": 0.4,
+          "width": 2.85,
+          "paragraphs": [
+            0,
+            6
+          ]
+        },
+        {
+          "x": 3.85,
+          "y": 0.4,
+          "width": 2.85,
+          "paragraphs": [
+            6,
+            null
+          ]
+        }
+      ],
+      "leading": 1.2,
+      "paragraph_gap_in": 0.04,
+      "art_id": "ILL-0004",
+      "art_box": {
+        "x": 0,
+        "y": 0,
+        "width": 7.5,
+        "height": 9.5,
+        "fit": "cover",
+        "crop": "centered minimal horizontal crop to15:19 page; focal subjects remain inside page"
+      },
+      "background": true,
+      "quiet_zone": {
+        "x": 0.6,
+        "y": 0.35,
+        "width": 6.3,
+        "height": 3.1
+      }
+    },
+    {
+      "page": 10,
+      "type": "quiet-text",
+      "chapter_title": false,
+      "text_blocks": [
+        {
+          "x": 0.82,
+          "y": 2.25,
+          "width": 5.86
+        }
+      ],
+      "leading": 1.28,
+      "paragraph_gap_in": 0.075
+    },
+    {
+      "page": 11,
+      "type": "chapter-opening",
+      "chapter_title": true,
+      "text_blocks": [
+        {
+          "x": 0.82,
+          "y": 2.05,
+          "width": 5.86
+        }
+      ],
+      "leading": 1.28,
+      "paragraph_gap_in": 0.075,
+      "chapter_box": {
+        "x": 0.82,
+        "y": 1.0,
+        "width": 5.86
+      }
+    },
+    {
+      "page": 12,
+      "type": "vignette-before-response",
+      "chapter_title": false,
+      "text_blocks": [
+        {
+          "x": 0.75,
+          "y": 4.1,
+          "width": 6.0
+        }
+      ],
+      "leading": 1.25,
+      "paragraph_gap_in": 0.06,
+      "art_id": "ILL-0005",
+      "art_box": {
+        "x": 0.85,
+        "y": 0.4,
+        "width": 5.8,
+        "height": 3.55,
+        "fit": "contain",
+        "crop": "none"
+      }
+    },
+    {
+      "page": 13,
+      "type": "quiet-text",
+      "chapter_title": false,
+      "text_blocks": [
+        {
+          "x": 0.82,
+          "y": 2.25,
+          "width": 5.86
+        }
+      ],
+      "leading": 1.28,
+      "paragraph_gap_in": 0.075
+    },
+    {
+      "page": 14,
+      "type": "quiet-text",
+      "chapter_title": false,
+      "text_blocks": [
+        {
+          "x": 0.82,
+          "y": 2.25,
+          "width": 5.86
+        }
+      ],
+      "leading": 1.28,
+      "paragraph_gap_in": 0.075
+    },
+    {
+      "page": 15,
+      "type": "prose-vignette-prose",
+      "chapter_title": false,
+      "text_blocks": [
+        {
+          "x": 0.7,
+          "y": 0.55,
+          "width": 6.1,
+          "paragraphs": [
+            0,
+            4
+          ]
+        },
+        {
+          "x": 0.7,
+          "y": 6.25,
+          "width": 6.1,
+          "paragraphs": [
+            4,
+            null
+          ]
+        }
+      ],
+      "leading": 1.22,
+      "paragraph_gap_in": 0.035,
+      "art_id": "ILL-0006",
+      "art_box": {
+        "x": 0.7,
+        "y": 1.95,
+        "width": 6.1,
+        "height": 4.07,
+        "fit": "contain",
+        "crop": "none"
+      }
+    },
+    {
+      "page": 16,
+      "type": "chapter-opening",
+      "chapter_title": true,
+      "text_blocks": [
+        {
+          "x": 0.82,
+          "y": 2.05,
+          "width": 5.86
+        }
+      ],
+      "leading": 1.28,
+      "paragraph_gap_in": 0.075,
+      "chapter_box": {
+        "x": 0.82,
+        "y": 1.0,
+        "width": 5.86
+      }
+    },
+    {
+      "page": 17,
+      "type": "musical-columns-over-wide-scene",
+      "chapter_title": false,
+      "text_blocks": [
+        {
+          "x": 0.6,
+          "y": 0.55,
+          "width": 3.0,
+          "paragraphs": [
+            0,
+            7
+          ]
+        },
+        {
+          "x": 3.9,
+          "y": 0.55,
+          "width": 3.0,
+          "paragraphs": [
+            7,
+            null
+          ]
+        }
+      ],
+      "leading": 1.2,
+      "paragraph_gap_in": 0.055,
+      "art_id": "ILL-0007",
+      "art_box": {
+        "x": 0,
+        "y": 4.15,
+        "width": 7.5,
+        "height": 5,
+        "fit": "contain",
+        "crop": "none"
+      }
+    },
+    {
+      "page": 18,
+      "type": "quiet-text",
+      "chapter_title": false,
+      "text_blocks": [
+        {
+          "x": 0.82,
+          "y": 2.25,
+          "width": 5.86
+        }
+      ],
+      "leading": 1.28,
+      "paragraph_gap_in": 0.075
+    },
+    {
+      "page": 19,
+      "type": "wide-procession-before-prose",
+      "chapter_title": false,
+      "text_blocks": [
+        {
+          "x": 0.6,
+          "y": 5.3,
+          "width": 6.3
+        }
+      ],
+      "leading": 1.23,
+      "paragraph_gap_in": 0.045,
+      "art_id": "ILL-0008",
+      "art_box": {
+        "x": 0,
+        "y": 0,
+        "width": 7.5,
+        "height": 5,
+        "fit": "contain",
+        "crop": "none"
+      }
+    },
+    {
+      "page": 20,
+      "type": "quiet-text",
+      "chapter_title": false,
+      "text_blocks": [
+        {
+          "x": 0.82,
+          "y": 2.25,
+          "width": 5.86
+        }
+      ],
+      "leading": 1.28,
+      "paragraph_gap_in": 0.075
+    },
+    {
+      "page": 21,
+      "type": "chapter-opening",
+      "chapter_title": true,
+      "text_blocks": [
+        {
+          "x": 0.82,
+          "y": 2.05,
+          "width": 5.86
+        }
+      ],
+      "leading": 1.28,
+      "paragraph_gap_in": 0.075,
+      "chapter_box": {
+        "x": 0.82,
+        "y": 1.0,
+        "width": 5.86
+      }
+    },
+    {
+      "page": 22,
+      "type": "quiet-text",
+      "chapter_title": false,
+      "text_blocks": [
+        {
+          "x": 0.82,
+          "y": 2.25,
+          "width": 5.86
+        }
+      ],
+      "leading": 1.28,
+      "paragraph_gap_in": 0.075
+    },
+    {
+      "page": 23,
+      "type": "portrait-vignette-beside-prose",
+      "chapter_title": false,
+      "text_blocks": [
+        {
+          "x": 0.65,
+          "y": 1.0,
+          "width": 3.4
+        }
+      ],
+      "leading": 1.23,
+      "paragraph_gap_in": 0.055,
+      "art_id": "ILL-0009",
+      "art_box": {
+        "x": 4.25,
+        "y": 1.35,
+        "width": 3.1,
+        "height": 6.95,
+        "fit": "contain",
+        "crop": "none"
+      }
+    },
+    {
+      "page": 24,
+      "type": "sky-page",
+      "chapter_title": false,
+      "text_blocks": [
+        {
+          "x": 0.65,
+          "y": 0.65,
+          "width": 4.72
+        }
+      ],
+      "leading": 1.22,
+      "paragraph_gap_in": 0.04,
+      "art_id": "ILL-0010",
+      "art_box": {
+        "x": 0,
+        "y": 0,
+        "width": 7.5,
+        "height": 9.5,
+        "fit": "cover",
+        "crop": "centered minimal horizontal crop to15:19 page; focal subjects remain inside page"
+      },
+      "background": true,
+      "quiet_zone": {
+        "x": 0.6,
+        "y": 0.6,
+        "width": 4.8,
+        "height": 5.2
+      }
+    },
+    {
+      "page": 25,
+      "type": "quiet-text",
+      "chapter_title": false,
+      "text_blocks": [
+        {
+          "x": 0.82,
+          "y": 2.25,
+          "width": 5.86
+        }
+      ],
+      "leading": 1.28,
+      "paragraph_gap_in": 0.075
+    },
+    {
+      "page": 26,
+      "type": "chapter-opening",
+      "chapter_title": true,
+      "text_blocks": [
+        {
+          "x": 0.82,
+          "y": 2.05,
+          "width": 5.86
+        }
+      ],
+      "leading": 1.28,
+      "paragraph_gap_in": 0.075,
+      "chapter_box": {
+        "x": 0.82,
+        "y": 1.0,
+        "width": 5.86
+      }
+    },
+    {
+      "page": 27,
+      "type": "sky-page",
+      "chapter_title": false,
+      "text_blocks": [
+        {
+          "x": 0.65,
+          "y": 0.65,
+          "width": 4.72
+        }
+      ],
+      "leading": 1.22,
+      "paragraph_gap_in": 0.04,
+      "art_id": "ILL-0011",
+      "art_box": {
+        "x": 0,
+        "y": 0,
+        "width": 7.5,
+        "height": 9.5,
+        "fit": "cover",
+        "crop": "centered minimal horizontal crop to15:19 page; focal subjects remain inside page"
+      },
+      "background": true,
+      "quiet_zone": {
+        "x": 0.6,
+        "y": 0.6,
+        "width": 4.8,
+        "height": 5.2
+      }
+    },
+    {
+      "page": 28,
+      "type": "quiet-text",
+      "chapter_title": false,
+      "text_blocks": [
+        {
+          "x": 0.82,
+          "y": 2.25,
+          "width": 5.86
+        }
+      ],
+      "leading": 1.28,
+      "paragraph_gap_in": 0.075
+    },
+    {
+      "page": 29,
+      "type": "quiet-text",
+      "chapter_title": false,
+      "text_blocks": [
+        {
+          "x": 0.82,
+          "y": 2.25,
+          "width": 5.86
+        }
+      ],
+      "leading": 1.28,
+      "paragraph_gap_in": 0.075
+    },
+    {
+      "page": 30,
+      "type": "final-object-vignette",
+      "chapter_title": false,
+      "text_blocks": [
+        {
+          "x": 0.8,
+          "y": 0.9,
+          "width": 5.9
+        }
+      ],
+      "leading": 1.28,
+      "paragraph_gap_in": 0.075,
+      "art_id": "ILL-0012",
+      "art_box": {
+        "x": 4.15,
+        "y": 6.85,
+        "width": 2.6,
+        "height": 1.95,
+        "fit": "contain",
+        "crop": "none"
+      }
+    }
+  ]
+}

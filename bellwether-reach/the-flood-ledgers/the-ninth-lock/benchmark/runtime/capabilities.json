@@ -1,0 +1,59 @@
+{
+  "checked": "2026-10-24",
+  "openai_documentation": [
+    "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+    "https://developers.openai.com/api/docs/models/gpt-6-sol"
+  ],
+  "ollama_documentation": "https://docs.ollama.com/capabilities/thinking",
+  "opencode_variant_documentation": "https://opencode.ai/v2/docs/models",
+  "native_codex_available": [
+    "gpt-6.1-sol: medium, high",
+    "gpt-6-sol: medium, high"
+  ],
+  "ollama": {
+    "kimi-k3:cloud": {
+      "thinking": {
+        "values": [
+          false,
+          "low",
+          "high",
+          "max"
+        ],
+        "default": "max"
+      },
+      "details": {
+        "parent_model": "kimi-k3",
+        "format": "",
+        "family": "kimi-k3",
+        "families": null,
+        "parameter_size": "2812000000000",
+        "quantization_level": "MXFP4"
+      },
+      "capabilities": [
+        "vision",
+        "thinking",
+        "completion",
+        "tools"
+      ],
+      "modified_at": "2026-07-27T08:00:00-07:00"
+    },
+    "mistral-large-4:cloud": {
+      "thinking": null,
+      "details": {
+        "parent_model": "mistral-large-4",
+        "format": "",
+        "family": "mistral4",
+        "families": null,
+        "parameter_size": "1050000000000",
+        "quantization_level": ""
+      },
+      "capabilities": [
+        "completion",
+        "thinking",
+        "tools",
+        "vision"
+      ],
+      "modified_at": "2026-10-06T06:00:00-07:00"
+    }
+  }
+}

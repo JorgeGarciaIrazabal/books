@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-25",
+  "reason": "Author rejected repeated rectangular bottom-of-page pictures despite earlier review pass",
+  "studio_file_sha256": {
+    ".studio/skills/illustrated-story/SKILL.md": "abbf8de2359b64129608f685ae413c377a83fc65b4429a0342b8e67dbf038835",
+    ".studio/skills/illustrated-story/references/plan.md": "deae33971f51a840b63da31fe6b3c2dcaec6abc0fa6f99f843a93dce43c159fc",
+    ".studio/agents/art_director.md": "b6ae4518f0b2fb972044a2e2c5cda2cc8290889ae4912ebb6d126f37fc8300fc",
+    ".studio/agents/production_editor.md": "3f7ee73c3c681aeca650c9f6962b523aca28aa5990253f8053f4d187c65d4eb9",
+    ".studio/agents/illustration_reviewer.md": "fa20c646d3e37d2bb5da61e1e1786640dcbe5b8d31a9f08a67cb29ddaf808d7a",
+    ".studio/workflow.md": "c784d69faa1a4764c1c406da5571458873a42f140e3511bf812e872801741222",
+    "docs/illustrated-stories.md": "4479c97318f1486990806d0fe646bfaef2f9de5cf8d95ccf7acae3a0580b5a26"
+  },
+  "checks": [
+    "Source skill quick_validate passed",
+    "Installed skill quick_validate passed",
+    "Source and installed skill copies synchronized",
+    "Scoped git diff --check passed",
+    "Book structural check: zero errors",
+    "Actual PDF 30pages/12storyimages/unchanged30pagebodies",
+    "Independent final visual review report in book reviews/redesign/final-review.md"
+  ],
+  "mechanical_limit": "Skill validation and converter success do not prove aesthetic quality. Author taste remains authoritative.",
+  "final_pdf_sha256": "4684ef3f791b97a540506266ad6306ca25c10f22f012a3f33e75ec03c1900b76",
+  "review_coverage": {
+    "selected_images_individually_viewed": 12,
+    "final_pdf_pages_individually_viewed": 30,
+    "report": "little-weather/standalone/nell-and-the-pocket-sized-storm/reviews/redesign/final-review.md"
+  }
+}

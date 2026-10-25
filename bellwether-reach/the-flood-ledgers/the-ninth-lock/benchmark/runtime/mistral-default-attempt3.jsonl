@@ -1,0 +1,2 @@
+{"type":"step_start","timestamp":1792843397257,"sessionID":"ses_e9234ce2bfferF2N8U5K4l7GSk","part":{"id":"prt_16dcb3889001NPgTNqQiL7BfuK","sessionID":"ses_e9234ce2bfferF2N8U5K4l7GSk","messageID":"msg_16dcb32de001K8qC0iZ4iDe9hh","type":"step-start","snapshot":"bfa55ae4608c81359611d3a19dbc2bfc2e7af68b"}}
+{"type":"error","timestamp":1792843688539,"sessionID":"ses_e9234ce2bfferF2N8U5K4l7GSk","error":{"type":"unknown","message":"Transport: ECONNRESET: The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"}}

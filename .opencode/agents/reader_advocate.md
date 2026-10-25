@@ -1,7 +1,7 @@
 ---
 description: "Reports independent reader experience, genre satisfaction, and representation risks."
 mode: subagent
-model: ollama/mistral-large-4:cloud
+model: ollama/kimi-k3:cloud#high
 steps: 40
 permissions:
   - action: subagent

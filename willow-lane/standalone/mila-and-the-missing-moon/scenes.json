@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "scenes": [
+    {
+      "id": "SC-0001",
+      "source": "manuscript/001-the-empty-table.md",
+      "pov": "Mila",
+      "story_time": "Same afternoon; sequential chapter order",
+      "place": "Library, after lunch",
+      "incoming": "Mila wants to help lead the lantern walk; the packed moon and box are gone.",
+      "outgoing": "Yellow wool stays on table; Noah lends notebook and pencil; stars go into Dad's bag.",
+      "disclosure_boundary": "Yellow wool is a possible trace, not proof of who moved the box.",
+      "status": "draft-record-not-accepted-canon"
+    },
+    {
+      "id": "SC-0002",
+      "source": "manuscript/002-something-white.md",
+      "pov": "Mila",
+      "story_time": "Same afternoon; sequential chapter order",
+      "place": "Library yard",
+      "incoming": "Mila and Noah find pale wheel marks and Noah sketches the yard.",
+      "outgoing": "Mila guesses Bea moved moon after seeing her flour-covered apron and hearing she used empty table.",
+      "disclosure_boundary": "The white track material has not yet been identified; Noah's drawing is visible to reader.",
+      "status": "draft-record-not-accepted-canon"
+    },
+    {
+      "id": "SC-0003",
+      "source": "manuscript/003-the-wrong-question.md",
+      "pov": "Mila",
+      "story_time": "Same afternoon; sequential chapter order",
+      "place": "Yard and bakery",
+      "incoming": "Mila accuses Bea; the accusation hurts her.",
+      "outgoing": "Actual sample and cart comparison disfavor Bea's cart; Mila apologizes and asks about sightings.",
+      "disclosure_boundary": "Bea reports a square box with yellow wool on a low wooden trolley; pusher unseen.",
+      "status": "draft-record-not-accepted-canon"
+    },
+    {
+      "id": "SC-0004",
+      "source": "manuscript/004-a-wheel-with-a-bite.md",
+      "pov": "Mila",
+      "story_time": "Same afternoon; sequential chapter order",
+      "place": "Library and yard",
+      "incoming": "Bea's description prompts checking library trolley.",
+      "outgoing": "Actual width and repeated gaps match; Dad contacts Mr. Moss, who agrees to help after returning.",
+      "disclosure_boundary": "Mr. Moss borrowed trolley for garden boxes; route beyond yard is not established.",
+      "status": "draft-record-not-accepted-canon"
+    },
+    {
+      "id": "SC-0005",
+      "source": "manuscript/005-rain-on-the-notebook.md",
+      "pov": "Mila",
+      "story_time": "Same afternoon; sequential chapter order",
+      "place": "Library roof, then garden gate",
+      "incoming": "Rain obscures tracks; June says boxes have been put in shed.",
+      "outgoing": "Yellow gate wool is not unique; Noah asks to show his sketch while they choose a search route.",
+      "disclosure_boundary": "Garden uses the same yellow wool widely; June has agreed to open shed.",
+      "status": "draft-record-not-accepted-canon"
+    },
+    {
+      "id": "SC-0006",
+      "source": "manuscript/006-the-map-that-wasnt.md",
+      "pov": "Mila",
+      "story_time": "Same afternoon; sequential chapter order",
+      "place": "Yard and path",
+      "incoming": "Noah's sketch records tracks and a table moved during rain.",
+      "outgoing": "Re-creating the turn supports searching garden first; Mila credits Noah; June returns with key.",
+      "disclosure_boundary": "Route is a reason to prioritize shed, not conclusive proof of destination.",
+      "status": "draft-record-not-accepted-canon"
+    },
+    {
+      "id": "SC-0007",
+      "source": "manuscript/007-boxes-boxes.md",
+      "pov": "Mila",
+      "story_time": "Same afternoon; sequential chapter order",
+      "place": "Garden shed",
+      "incoming": "Children expect one obvious box; find many with yellow ties.",
+      "outgoing": "A reused STARS box contains pots. Mr. Moss returns and confirms taking the big library box marked TO THE GARDEN.",
+      "disclosure_boundary": "Old labels can disagree with contents; Mr. Moss identifies storage wall but not exact moon carton.",
+      "status": "draft-record-not-accepted-canon"
+    },
+    {
+      "id": "SC-0008",
+      "source": "manuscript/008-start-again.md",
+      "pov": "Mila",
+      "story_time": "Same afternoon; sequential chapter order",
+      "place": "Shed wall, then library",
+      "incoming": "Adults continue opening boxes while Mila and Noah seek packing details.",
+      "outgoing": "Mrs. Bell confirms borrowing an old garden box and writing MOON on one thin edge; children reason other sides may say something else.",
+      "disclosure_boundary": "Children plan to turn broad, shallow boxes and read every side; lantern dimensions narrow search.",
+      "status": "draft-record-not-accepted-canon"
+    },
+    {
+      "id": "SC-0009",
+      "source": "manuscript/009-the-other-side.md",
+      "pov": "Mila",
+      "story_time": "Same afternoon; sequential chapter order",
+      "place": "Garden shed",
+      "incoming": "Adults bring out cartons and turn them for children to read.",
+      "outgoing": "The box marked TO THE GARDEN also says MOON; contents confirmed; a small tissue tear needs repair.",
+      "disclosure_boundary": "Accidental move fully explained; cardboard lid tab corresponds to paper tear. Stars are safe in library drawer.",
+      "status": "draft-record-not-accepted-canon"
+    },
+    {
+      "id": "SC-0010",
+      "source": "manuscript/010-a-moon-with-a-scar.md",
+      "pov": "Mila",
+      "story_time": "Same day; sequential chapter order, dusk in chapter 11 and bedtime in chapter 12",
+      "place": "Library worktable, later afternoon",
+      "incoming": "The found moon has a small tissue tear; paper stars are safe in drawer.",
+      "outgoing": "Children make a star-shaped tissue patch, wait for drying, attach stars and practice carrying with Dad taking weight.",
+      "disclosure_boundary": "Repair succeeds; old garden labels are corrected; lantern uses battery light.",
+      "status": "draft-record-not-accepted-canon"
+    },
+    {
+      "id": "SC-0011",
+      "source": "manuscript/011-one-small-light.md",
+      "pov": "Mila",
+      "story_time": "Same day; sequential chapter order, dusk in chapter 11 and bedtime in chapter 12",
+      "place": "Library, garden and Willow Lane, dusk",
+      "incoming": "Mila and Noah steady the moon while Dad carries its weight.",
+      "outgoing": "Lantern walk occurs; Mila invites Bea alongside, credits Noah; moon hung in library window.",
+      "disclosure_boundary": "Moon is found and safe. Noah permits one more night of the notebook-and-pencil loan, due tomorrow.",
+      "status": "draft-record-not-accepted-canon"
+    },
+    {
+      "id": "SC-0012",
+      "source": "manuscript/012-the-last-page.md",
+      "pov": "Mila",
+      "story_time": "Same day; sequential chapter order, dusk in chapter 11 and bedtime in chapter 12",
+      "place": "Mila's home, after the walk",
+      "incoming": "Mila borrows notebook for one final page.",
+      "outgoing": "A brief lost-pencil joke resolves immediately; Mila draws story, credits helpers, secures pencil for return and goes to sleep.",
+      "disclosure_boundary": "Main mystery and emotional threads close. Paper moon safe in library; real moon visible from home; no unresolved sequel requirement.",
+      "status": "draft-record-not-accepted-canon"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "nell-and-the-pocket-sized-storm",
+  "universe": "little-weather",
+  "series": "standalone",
+  "title": "Nell and the Pocket-Sized Storm",
+  "kind": "fiction",
+  "stage": "production",
+  "language": "en",
+  "chapters": [
+    "manuscript/001-story.md"
+  ],
+  "story_pages": 30,
+  "format": "read-aloud storybook"
+}

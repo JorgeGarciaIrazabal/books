@@ -1,0 +1,35 @@
+{
+  "session": "ses_e8fa66a77ffeSFiYGmxm1QTrHi",
+  "time": {
+    "created": 1792886281767,
+    "updated": 1792886378997,
+    "idle": 1792886379000
+  },
+  "assistant_messages": [
+    {
+      "time": {
+        "created": 1792886281861,
+        "streamed": 1792886378978,
+        "completed": 1792886378997
+      },
+      "type": "assistant",
+      "model": {
+        "id": "kimi-k3:cloud",
+        "providerID": "ollama",
+        "variant": "high"
+      },
+      "finish": "stop",
+      "rawFinish": "stop",
+      "cost": 0,
+      "tokens": {
+        "input": 28831,
+        "output": 17396,
+        "reasoning": 0,
+        "cache": {
+          "read": 128,
+          "write": 0
+        }
+      }
+    }
+  ]
+}

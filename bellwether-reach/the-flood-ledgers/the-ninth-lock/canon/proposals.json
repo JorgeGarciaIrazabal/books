@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "proposals": [
+    {
+      "id": "PROP-0001",
+      "status": "proposed",
+      "scope": "the-ninth-lock benchmark branch sol61-medium",
+      "text": "State delta: At approximately 17:07, Sera holds both originals inside her coat; Ivo has her surrendered license and the signed custody receipt. The freeze preserves North’s protection. Her left hand remains unable to grip; the brass key remains in her right coat pocket. Motive undisclosed. Proposed incidental detail: the written custody receipt; no new accepted canon.",
+      "valid_story_time": "Alternative SC-0001 outcome, around 17:00–17:10; inspect any candidate timing departures before selection.",
+      "provenance": [
+        {
+          "path": "benchmark/outputs/sol61-medium.md",
+          "locator": "P4 state delta"
+        }
+      ],
+      "affected_paths": [
+        "benchmark/outputs/sol61-medium.md"
+      ],
+      "changes_existing_fact": false,
+      "decision": null,
+      "review_status": "Unaccepted competing state bundle. Director checked constraint risks in benchmark/director-audit.json; no branch canon accepted.",
+      "note": "These alternative outcomes must not be combined into one character state. P1/P2 planning inventions remain in the candidate artifacts and require individual validation if selected."
+    },
+    {
+      "id": "PROP-0002",
+      "status": "proposed",
+      "scope": "the-ninth-lock benchmark branch sol61-high",
+      "text": "**State delta:** By 17:10, both originals remain on Ivo’s desk; Sera has examined them and signed the freeze record. License surrendered pending public hearing; North retains protection. Key remains in right coat pocket; left hand never grips. Motive unresolved. Proposed details: custody entry, clock discrepancy, seal’s identifying break.",
+      "valid_story_time": "Alternative SC-0001 outcome, around 17:00–17:10; inspect any candidate timing departures before selection.",
+      "provenance": [
+        {
+          "path": "benchmark/outputs/sol61-high.md",
+          "locator": "P4 state delta"
+        }
+      ],
+      "affected_paths": [
+        "benchmark/outputs/sol61-high.md"
+      ],
+      "changes_existing_fact": false,
+      "decision": null,
+      "review_status": "Unaccepted competing state bundle. Director checked constraint risks in benchmark/director-audit.json; no branch canon accepted.",
+      "note": "These alternative outcomes must not be combined into one character state. P1/P2 planning inventions remain in the candidate artifacts and require individual validation if selected."
+    },
+    {
+      "id": "PROP-0003",
+      "status": "proposed",
+      "scope": "the-ninth-lock benchmark branch sol6-medium",
+      "text": "**State delta:** Sera surrenders her license and files a freeze; North remains protected. Ivo retains custody of South’s original, while Sera retains North’s and an inspector’s copy of their signed comparison. The stamped-rim nick, the custody form, and the seed-store inspection are proposed local details, not accepted canon. Ivo’s motive remains unknown.",
+      "valid_story_time": "Alternative SC-0001 outcome, around 17:00–17:10; inspect any candidate timing departures before selection.",
+      "provenance": [
+        {
+          "path": "benchmark/outputs/sol6-medium.md",
+          "locator": "P4 state delta"
+        }
+      ],
+      "affected_paths": [
+        "benchmark/outputs/sol6-medium.md"
+      ],
+      "changes_existing_fact": false,
+      "decision": null,
+      "review_status": "Unaccepted competing state bundle. Director checked constraint risks in benchmark/director-audit.json; no branch canon accepted.",
+      "note": "These alternative outcomes must not be combined into one character state. P1/P2 planning inventions remain in the candidate artifacts and require individual validation if selected."
+    },
+    {
+      "id": "PROP-0004",
+      "status": "proposed",
+      "scope": "the-ninth-lock benchmark branch sol6-high",
+      "text": "**State delta (proposed where procedural):** Sera has seen both originals, surrendered her license and signed a freeze; North retains protection. Ivo holds the license and has boxed both originals under numbered custody. Sera retains the brass key. The dispute ledger, document box procedure, and marginal notation are proposed local practice. Neither Sera nor the reader knows Ivo’s motive.",
+      "valid_story_time": "Alternative SC-0001 outcome, around 17:00–17:10; inspect any candidate timing departures before selection.",
+      "provenance": [
+        {
+          "path": "benchmark/outputs/sol6-high.md",
+          "locator": "P4 state delta"
+        }
+      ],
+      "affected_paths": [
+        "benchmark/outputs/sol6-high.md"
+      ],
+      "changes_existing_fact": false,
+      "decision": null,
+      "review_status": "Unaccepted competing state bundle. Director checked constraint risks in benchmark/director-audit.json; no branch canon accepted.",
+      "note": "These alternative outcomes must not be combined into one character state. P1/P2 planning inventions remain in the candidate artifacts and require individual validation if selected."
+    },
+    {
+      "id": "PROP-0005",
+      "status": "proposed",
+      "scope": "the-ninth-lock benchmark branch kimi-high",
+      "text": "**State delta (proposals):** Custody — Sera now carries both original certificates inside her coat; the Registry daybook records them requisitioned in her name without authority. License — still held, now revocable for cause; no freeze filed, so North's current protection stands unchanged. Time — exits about 17:11; earliest lock arrival ~17:31, after the bell, so any reassignment faces the forty-minute window. Knowledge — Sera and reader know both seals are authentic; Ivo's motive and any coercion remain unknown. Injury/resources unchanged: splinted left wrist, no grip; one brass key, right coat pocket. Relationship — Ivo covers her exit and uses her name.",
+      "valid_story_time": "Alternative SC-0001 outcome, around 17:00–17:10; inspect any candidate timing departures before selection.",
+      "provenance": [
+        {
+          "path": "benchmark/outputs/kimi-high.md",
+          "locator": "P4 state delta"
+        }
+      ],
+      "affected_paths": [
+        "benchmark/outputs/kimi-high.md"
+      ],
+      "changes_existing_fact": false,
+      "decision": null,
+      "review_status": "Unaccepted competing state bundle. Director checked constraint risks in benchmark/director-audit.json; no branch canon accepted.",
+      "note": "These alternative outcomes must not be combined into one character state. P1/P2 planning inventions remain in the candidate artifacts and require individual validation if selected."
+    },
+    {
+      "id": "PROP-0006",
+      "status": "proposed",
+      "scope": "the-ninth-lock benchmark branch kimi-low",
+      "text": "*State delta (proposals):* 17:08 — freeze order filed; Sera's license surrendered into Ivo's receipted custody; North retains tonight's protection per FACT-0006. Both original certificates remain at the Registry under Ivo's personal seal (proposed custody detail). Brass inspection key remains in Sera's right coat pocket; left wrist unchanged. Ivo's motive and any coercion remain unknown. 17:10 — Sera departs for the Ninth Lock, arrival ~17:30, no authority to act there.",
+      "valid_story_time": "Alternative SC-0001 outcome, around 17:00–17:10; inspect any candidate timing departures before selection.",
+      "provenance": [
+        {
+          "path": "benchmark/outputs/kimi-low.md",
+          "locator": "P4 state delta"
+        }
+      ],
+      "affected_paths": [
+        "benchmark/outputs/kimi-low.md"
+      ],
+      "changes_existing_fact": false,
+      "decision": null,
+      "review_status": "Unaccepted competing state bundle. Director checked constraint risks in benchmark/director-audit.json; no branch canon accepted.",
+      "note": "These alternative outcomes must not be combined into one character state. P1/P2 planning inventions remain in the candidate artifacts and require individual validation if selected."
+    },
+    {
+      "id": "PROP-0007",
+      "status": "proposed",
+      "scope": "the-ninth-lock benchmark branch mistral-none",
+      "text": "State delta (proposed): At 17:10, Sera has surrendered her inspector’s license pending a public hearing; the freeze preserves North Basin’s existing protection and does not protect South Basin. Custody: the North original remains on the Registry desk with the freeze slip; Ivo retains custody of the South original; the brass inspection key remains in Sera’s right coat pocket. Injury unchanged: left wrist splinted, no grip. The “Paid for. All of it.” notation is treated as certificate wording, not new canon. Ivo’s motive remains undisclosed.",
+      "valid_story_time": "Alternative SC-0001 outcome, around 17:00–17:10; inspect any candidate timing departures before selection.",
+      "provenance": [
+        {
+          "path": "benchmark/outputs/mistral-none.md",
+          "locator": "P4 state delta"
+        }
+      ],
+      "affected_paths": [
+        "benchmark/outputs/mistral-none.md"
+      ],
+      "changes_existing_fact": false,
+      "decision": null,
+      "review_status": "Unaccepted competing state bundle. Director checked constraint risks in benchmark/director-audit.json; no branch canon accepted.",
+      "note": "These alternative outcomes must not be combined into one character state. P1/P2 planning inventions remain in the candidate artifacts and require individual validation if selected."
+    },
+    {
+      "id": "PROP-0008",
+      "status": "proposed",
+      "scope": "the-ninth-lock benchmark branch mistral-high",
+      "text": "**State delta (proposed; inventions are not canon):** License surrendered and held in Ivo's locked cabinet pending a public hearing (date unknown). North Basin retains protection under the freeze; the South certificate was viewed but not copied and remains in Ivo's custody. Left wrist unchanged: splinted, no grip. Brass inspection key still in her right coat pocket. No character knows Ivo's motive; the duplication remains unexplained. Proposed inventions: the freeze order is a one-line form signed at the Registry; the license is held in the Registry cabinet; Ivo's \"custody\" remark is characterization only.",
+      "valid_story_time": "Alternative SC-0001 outcome, around 17:00–17:10; inspect any candidate timing departures before selection.",
+      "provenance": [
+        {
+          "path": "benchmark/outputs/mistral-high.md",
+          "locator": "P4 state delta"
+        }
+      ],
+      "affected_paths": [
+        "benchmark/outputs/mistral-high.md"
+      ],
+      "changes_existing_fact": false,
+      "decision": null,
+      "review_status": "Unaccepted competing state bundle. Director checked constraint risks in benchmark/director-audit.json; no branch canon accepted.",
+      "note": "These alternative outcomes must not be combined into one character state. P1/P2 planning inventions remain in the candidate artifacts and require individual validation if selected."
+    }
+  ]
+}

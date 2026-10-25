@@ -1,0 +1,58 @@
+[
+  {
+    "id": "P1",
+    "title": "Concept and world/series development",
+    "role": "acquisitions_editor",
+    "words": "180–250 words",
+    "task": "Pitch a distinct book hook, one consequential local custom compatible with canon, the repeatable series engine, and the emotional promise. Mark invented custom as proposed. No market claims."
+  },
+  {
+    "id": "P2",
+    "title": "Plot and scene architecture",
+    "role": "story_architect",
+    "words": "350–450 words",
+    "task": "Propose a six-beat causal whole-book outline, with fair clues, a credible antagonist motive, meaningful Sera/Ivo agency, an earned ending that accepts the one-basin constraint, and one explicit setup/payoff. Future motive is author-visible planning, not opening POV knowledge."
+  },
+  {
+    "id": "P3",
+    "title": "Character and dialogue",
+    "role": "character_director",
+    "words": "250–350 words",
+    "task": "Write an alternative Registry conversation in close third through Sera: Ivo wants an acknowledgment of past harm; Sera wants the second original. Neither states that emotional bargain outright. End with a changed relationship or bargaining position. No motive reveal or case resolution."
+  },
+  {
+    "id": "P4",
+    "title": "Scene drafting",
+    "role": "drafter",
+    "words": "550–700 words",
+    "task": "Draft the supplied opening scene contract as complete fiction, using fixed inputs only. This is an alternative to P3, not a continuation. End on a consequential action. Add a short state delta after the prose; inventions are proposals."
+  },
+  {
+    "id": "P5",
+    "title": "Developmental editing",
+    "role": "developmental_editor",
+    "words": "300–400 words",
+    "task": "Review ONLY the supplied developmental-fixture excerpt, not your own P2–P4. Give three prioritized findings with P locators, evidence, reader effect, smallest effective repair, and one thing to preserve. Distinguish defects from taste. No rewrite; state coverage."
+  },
+  {
+    "id": "P6",
+    "title": "Line editing",
+    "role": "line_editor",
+    "words": "200–300 words",
+    "task": "Revise ONLY line-fixture, preserving constraints and productive strangeness. Supply revised prose plus at most three short rationale bullets. Do not expand plot or remove intentional fragments."
+  },
+  {
+    "id": "P7",
+    "title": "Copy editing and continuity",
+    "role": "canon_keeper",
+    "words": "300–450 words",
+    "task": "Audit ONLY copy-continuity-fixture against fixed canon/style. List each definite error with L locator and local correction/query. Separate optional stylistic preferences and explicitly identify valid details you would preserve. Do not invent a hidden event to excuse contradiction."
+  },
+  {
+    "id": "P8",
+    "title": "Blurb and reader promise",
+    "role": "acquisitions_editor",
+    "words": "100–150 words",
+    "task": "Write back-cover copy from the fixed brief and opening situation only, with a specific hook and stakes. Avoid revealing an invented culprit/ending, false endorsements, generic rhetorical questions, or promising both basins can be saved. No explanatory notes."
+  }
+]

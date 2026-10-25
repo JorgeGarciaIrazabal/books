@@ -1,7 +1,7 @@
 ---
 description: "Collects inspected primary evidence and maps it to specific claims."
 mode: subagent
-model: ollama/kimi-k3:cloud
+model: ollama/kimi-k3:cloud#high
 steps: 40
 permissions:
   - action: subagent

@@ -1,0 +1,80 @@
+{
+  "sol61-medium": {
+    "labels": {
+      "Candidate A": "kimi-low",
+      "Candidate B": "sol6-medium",
+      "Candidate C": "mistral-none",
+      "Candidate D": "mistral-high",
+      "Candidate E": "sol6-high",
+      "Candidate F": "kimi-high"
+    },
+    "packet_sha256": "e5e9efab7c80ac3bbb2acc30162b4b7b512218f869d9a56123100f1272d5bb45",
+    "model": "gpt-6.1-sol",
+    "effort": "medium"
+  },
+  "sol61-high": {
+    "labels": {
+      "Candidate A": "mistral-high",
+      "Candidate B": "kimi-high",
+      "Candidate C": "mistral-none",
+      "Candidate D": "kimi-low",
+      "Candidate E": "sol6-medium",
+      "Candidate F": "sol6-high"
+    },
+    "packet_sha256": "e5946072a345f828b790b91cf6c1ed53f28f4dcfe14d49377ed51e470e9b2b09",
+    "model": "gpt-6.1-sol",
+    "effort": "high"
+  },
+  "sol6-medium": {
+    "labels": {
+      "Candidate A": "sol61-high",
+      "Candidate B": "kimi-high",
+      "Candidate C": "kimi-low",
+      "Candidate D": "mistral-high",
+      "Candidate E": "sol61-medium",
+      "Candidate F": "mistral-none"
+    },
+    "packet_sha256": "995419fc9c15cad691b51b6d8bae4ca690a6670c32464b64982bc05c57d7c48e",
+    "model": "gpt-6-sol",
+    "effort": "medium"
+  },
+  "sol6-high": {
+    "labels": {
+      "Candidate A": "mistral-high",
+      "Candidate B": "mistral-none",
+      "Candidate C": "sol61-high",
+      "Candidate D": "kimi-low",
+      "Candidate E": "sol61-medium",
+      "Candidate F": "kimi-high"
+    },
+    "packet_sha256": "38f53d8eb932ea7e93d1dc550e9e3eb8b15a9f7b91922484e8ee3a14dd981208",
+    "model": "gpt-6-sol",
+    "effort": "high"
+  },
+  "mistral-none": {
+    "labels": {
+      "Candidate A": "sol61-high",
+      "Candidate B": "sol61-medium",
+      "Candidate C": "kimi-high",
+      "Candidate D": "kimi-low",
+      "Candidate E": "sol6-high",
+      "Candidate F": "sol6-medium"
+    },
+    "packet_sha256": "79b5c41cc64a65cd75a05d5d61ce74f55d45c44aacc822f70cb6ef0af7514509",
+    "model": "ollama/mistral-large-4:cloud",
+    "effort": "none"
+  },
+  "mistral-high": {
+    "labels": {
+      "Candidate A": "sol6-medium",
+      "Candidate B": "sol61-medium",
+      "Candidate C": "sol6-high",
+      "Candidate D": "kimi-high",
+      "Candidate E": "sol61-high",
+      "Candidate F": "kimi-low"
+    },
+    "packet_sha256": "e3bf28e76700615dea34586b0775fd26d945676c228ff2807dbaefb5d2e393af",
+    "model": "ollama/mistral-large-4:cloud",
+    "effort": "high"
+  }
+}

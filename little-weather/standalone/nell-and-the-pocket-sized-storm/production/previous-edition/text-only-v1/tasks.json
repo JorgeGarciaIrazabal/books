@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "tasks": [
+    {
+      "id": "TASK-0001",
+      "role": "developmental_editor",
+      "status": "done",
+      "source_snapshot": "reviews/draft-snapshot.json",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "book.json",
+        "manuscript/001-story.md"
+      ],
+      "allowed_writes": [
+        "reviews/developmental-initial.md"
+      ],
+      "deliverable": "Fresh whole-manuscript review with exact snapshot, page evidence, coverage and prioritized findings. Return findings to coordinator.",
+      "acceptance": [
+        "Read all 30 story pages",
+        "Separate defects from preferences",
+        "Do not consult outline, handoff, other reviews, or drafter rationale",
+        "No manuscript edits"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 42000,
+        "max_output_words": 1100,
+        "max_tool_calls": 12
+      },
+      "dependencies": [],
+      "owner": "/root/developmental_editor"
+    },
+    {
+      "id": "TASK-0002",
+      "role": "reader_advocate",
+      "status": "done",
+      "source_snapshot": "reviews/draft-snapshot.json",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "book.json",
+        "manuscript/001-story.md"
+      ],
+      "allowed_writes": [
+        "reviews/reader-initial.md"
+      ],
+      "deliverable": "Fresh whole-manuscript review with exact snapshot, page evidence, coverage and prioritized findings. Return findings to coordinator.",
+      "acceptance": [
+        "Read all 30 story pages",
+        "Separate defects from preferences",
+        "Do not consult outline, handoff, other reviews, or drafter rationale",
+        "No manuscript edits"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 42000,
+        "max_output_words": 1100,
+        "max_tool_calls": 12
+      },
+      "dependencies": [],
+      "owner": "/root/reader_advocate"
+    },
+    {
+      "id": "TASK-0003",
+      "role": "developmental_editor",
+      "status": "done",
+      "source_snapshot": "reviews/final-source-snapshot.json",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "manuscript/001-story.md",
+        "reviews/developmental-initial.md"
+      ],
+      "allowed_writes": [
+        "reviews/developmental-recheck.md"
+      ],
+      "deliverable": "Recheck DEV-001 through DEV-003 against revised pages 5, 21, 23, 25, 26",
+      "acceptance": [
+        "Cite new snapshot",
+        "Resolve or retain original findings from actual changed text"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 24000,
+        "max_output_words": 500,
+        "max_tool_calls": 6
+      },
+      "dependencies": [
+        "TASK-0001"
+      ],
+      "owner": "/root/developmental_editor",
+      "completion_note": "Recheck exposed remaining spoon movement; coordinator fixed locally, and fresh copy-editor final proof independently verified it."
+    },
+    {
+      "id": "TASK-0004",
+      "role": "copy_editor",
+      "status": "done",
+      "source_snapshot": "reviews/final-source-snapshot.json and exports/reading-edition-manifest.json",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "book.json",
+        "manuscript/001-story.md",
+        "exports/nell-and-the-pocket-sized-storm.pdf"
+      ],
+      "allowed_writes": [
+        "reviews/final-proof.md"
+      ],
+      "deliverable": "Fresh final proof of full source and actual 30-page PDF: mechanics, missing text, page boundaries, any clipping, exact snapshot and coverage.",
+      "acceptance": [
+        "Read all 30 source and PDF pages",
+        "Compare extracted PDF text to source page by page",
+        "Check actual PDF page count",
+        "Separate defects from preferences",
+        "Do not edit manuscript or shared records"
+      ],
+      "budget": {
+        "max_rounds": 1,
+        "max_input_chars": 60000,
+        "max_output_words": 1100,
+        "max_tool_calls": 15
+      },
+      "dependencies": [],
+      "owner": "/root/copy_editor",
+      "completion_note": "Scoped proof passed; all 30 final page bodies matched source; eight unique pages visually inspected; final hashes verified."
+    }
+  ]
+}

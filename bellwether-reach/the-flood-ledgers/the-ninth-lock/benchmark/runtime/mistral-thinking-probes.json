@@ -1,0 +1,22 @@
+[
+  {
+    "think": false,
+    "model": "mistral-large-4",
+    "answer": "READY",
+    "thinking_present": false,
+    "thinking_characters": 0,
+    "done": true,
+    "done_reason": "stop",
+    "elapsed_seconds": 0.71
+  },
+  {
+    "think": true,
+    "model": "mistral-large-4",
+    "answer": "READY",
+    "thinking_present": true,
+    "thinking_characters": 112,
+    "done": true,
+    "done_reason": "stop",
+    "elapsed_seconds": 0.86
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "proposals": [
+    {
+      "id": "FACT-0001",
+      "text": "Mila and Noah solve the accidental relocation of a handmade moon lantern during preparations for one neighborhood lantern walk.",
+      "scope": "willow-lane/standalone/mila-and-the-missing-moon",
+      "status": "proposed",
+      "provenance": {
+        "sources": [
+          "manuscript/001-the-empty-table.md",
+          "manuscript/009-the-other-side.md",
+          "manuscript/011-one-small-light.md"
+        ]
+      },
+      "effective_story_time": "This standalone's afternoon and dusk",
+      "changes_existing_fact": false
+    },
+    {
+      "id": "FACT-0002",
+      "text": "The reused protective box bears MOON on one edge and TO THE GARDEN on the opposite edge; Mr. Moss follows the old message without knowing the contents.",
+      "scope": "willow-lane/standalone/mila-and-the-missing-moon",
+      "status": "proposed",
+      "provenance": {
+        "sources": [
+          "manuscript/007-boxes-boxes.md",
+          "manuscript/008-start-again.md",
+          "manuscript/009-the-other-side.md"
+        ]
+      },
+      "effective_story_time": "Before discovery in chapter 9",
+      "changes_existing_fact": false
+    },
+    {
+      "id": "FACT-0003",
+      "text": "At the ending, the patched paper moon is displayed in the library window; Mila will return Noah's notebook and pencil tomorrow.",
+      "scope": "willow-lane/standalone/mila-and-the-missing-moon",
+      "status": "proposed",
+      "provenance": {
+        "sources": [
+          "manuscript/011-one-small-light.md",
+          "manuscript/012-the-last-page.md"
+        ]
+      },
+      "effective_story_time": "End of this standalone",
+      "changes_existing_fact": false
+    }
+  ]
+}

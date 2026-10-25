@@ -1,0 +1,17 @@
+{
+  "session": "ses_e8f7588f1ffeCMzfhxP33etBUr",
+  "time": {
+    "created": 1792889485251,
+    "updated": 1792889522322,
+    "idle": 1792889522325
+  },
+  "models": [
+    {
+      "id": "mistral-large-4:cloud",
+      "providerID": "ollama",
+      "variant": "none"
+    }
+  ],
+  "reasoning_characters": 0,
+  "final_text_characters": 16353
+}

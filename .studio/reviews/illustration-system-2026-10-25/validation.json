@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "scope": "Illustrated-story system and actual Nell application",
+  "sha256": {
+    "AGENTS.md": "3ebc9df9f01c78154836273405b061441268406b9be63add049ec6d1b9c18ad3",
+    "README.md": "dbe6d336f0bb5569d0c1a8a7aaa9d07a213a3a78af99d5796bcd2532a12c8662",
+    ".studio/workflow.md": "d8f64d0fb4c87dbbd0ff1cd37adb39b5a29f99b5592b7747b2aa75720e0d50ba",
+    ".studio/roster.json": "459b42b614207c99c7fb00c9dd79198536a782c4681481aaeb4efc3be089dc69",
+    ".studio/agents/art_director.md": "16c10fb36938a44535f27b07e7427c284547c4f1b4f65251ef60e254c54d6d2c",
+    ".studio/agents/production_editor.md": "6a0b80be7357f9add4f5f73ba02baa49b2b9f3527a5ed190bdd171f9976e3ec8",
+    ".studio/agents/studio_director.md": "56ce8605b824a5bd78cd1e16bf7c4454772fe69e5f8d6cc5f15f4b3d2a848013",
+    ".studio/agents/story_architect.md": "a6c14678d03b7af60e954079639b52608acaa0beed3fc509070eeb9a7f19ebeb",
+    ".studio/agents/drafter.md": "4d93561c8832ce9764ab8cb12d48af07a916a4f82b9e30ea956bbf7c0ea44713",
+    ".studio/agents/illustrator.md": "26313f41827a7512355d316efdf8a6a2fb9238c9966ec237d2806eab424448e5",
+    ".studio/agents/illustration_reviewer.md": "32fa25e1a2cc524887f1574aeafc95b2c3b6978ef9a4441cee22af3bba808b0a",
+    ".codex/agents/illustrator.toml": "a3f6109774e70f687c8335f7487204c0987ffa1e90987a3a529675db27f2b28c",
+    ".codex/agents/illustration_reviewer.toml": "a99ae8fb8c30e42baae8857143af2dd61ed9130007103627959682bb1a8ff374",
+    ".opencode/agents/illustrator.md": "f417af7cab62c7f39e457f9e92578ac98845f5248b7b3a4a10fd717c634e535a",
+    ".opencode/agents/illustration_reviewer.md": "e6ab60830df0ff3b97e0bb78ac68ce77c79e87d47cf6b2f331f7ea070a82b86e",
+    ".opencode/commands/studio-illustrate.md": "5b18826a194cadc7b5c43cf8b9ef450e642f128069b15ca6b902ce897d6dacb3",
+    ".studio/skills/illustrated-story/SKILL.md": "496f53bc32f3046011ec912278f1a5818d81f25657d370017c84651e65d4a25d",
+    ".studio/skills/illustrated-story/references/plan.md": "7a9e73c17542f4d6af16582327dc5666b08b38bf4c3b5ae9a83556e9b075bd3f",
+    ".studio/skills/illustrated-story/scripts/validate_plan.py": "a122951d2ff52c3779a869bd335255ab07976095b42f3180c7f00c0138976b7d",
+    "docs/illustrated-stories.md": "9b49be7dc63c6440cdaf892bc68a913b6250ce83b8c8c4bfc61a2c23b97ca05e",
+    "templates/book/brief.md": "1d1d7a15cffcc8472f4df0596a8634431f50a9b26324f7a6b4906485f9002d26",
+    "templates/book/production/illustration-plan.json": "c4e67c17b6be4ffd2d177594a483893542b36afd1380f1c76e05eb4e9b161b2e",
+    "templates/book/production/visual-style.md": "9acb118984c6c95e16c4ba3063b3cfb14c394b4e86de6f3fcd87832be3455211"
+  },
+  "checks": [
+    "Skill quick_validate passed for repository and installed copy",
+    "Two new Codex role configs parsed and matched roster models/efforts",
+    "New OpenCode role definitions and all role contracts present; worker validated configuration correspondence",
+    "Worker accepted isolated valid plan and rejected six faulty plans; no independent replay of that isolated fixture claimed",
+    "Actual populated book plan passed --check-assets",
+    "Scoped git diff whitespace check passed",
+    "Actual book verifier passed, final PDF independently proofed on every picture page"
+  ],
+  "runtime_limit": "New role selector was not available in this session; explicit native child assignment used for visual review. Production specialist usage limit required coordinator completion.",
+  "benchmark_limit": "New role configurations are not benchmarked; definitions are not autonomous running workers.",
+  "final_pdf_sha256": "3c0fa08e5ada5eab3c7cd27b054c81c786656c4b509aa004d9bf342844e1db65",
+  "book_evidence": "little-weather/standalone/nell-and-the-pocket-sized-storm/reviews/illustrated/visual-review.md"
+}

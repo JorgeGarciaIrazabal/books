@@ -1,0 +1,6 @@
+# The Ninth Lock — benchmark brief
+Universe: Bellwether Reach. Series: The Flood Ledgers. Book 1, original adult speculative mystery, planned novel of 70,000–85,000 words; this assignment is a bounded sample benchmark, not a whole novel.
+Reader promise: a fair civic mystery in which paperwork has physical consequences and saving something means choosing what may be lost. Sera Venn discovers that the same lock protection was legally sold to both basins. She has until the tide to expose how and choose a defensible action.
+Audience: adult readers who enjoy practical competence, complicated loyalties, dry humor, and earned emotional restraint. Avoid modern policy jargon, cartoon villains, convenient new machinery, magical truth tests, and treating South Basin residents as faceless sacrifices.
+The opening tests whether Sera can make estranged clerk Ivo release the duplicate certificate while risking her license. The crime, motive, and eventual ending are for structure candidates to propose within the fixed facts. No commercial or market claims are needed.
+Success: concrete causality, distinguishable people, legible evidence, material consequences, an actual choice, and language worth reading. Rankings remain comparative preferences on these samples, not numerical literary quality scores.

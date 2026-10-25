@@ -1,7 +1,7 @@
 # Book Studio
 
 A professional writing workspace for original books, series, and shared universes.
-Sixteen native specialist definitions share one set of Markdown contracts across
+Eighteen native specialist definitions share one set of Markdown contracts across
 **Codex** and **OpenCode 2.x**. Those tools run and coordinate the agents; there is
 no custom orchestration framework. The author sets the direction; agents plan, write, challenge,
 revise, and prepare reviewable manuscripts.
@@ -50,17 +50,22 @@ encyclopedia before writing. The scene or section is the practical unit of work.
 
 ## Models and runtime setup
 
-- Codex project default and all native specialists: **GPT-6 Astra** (`gpt-6-astra`).
-  Account access and project trust remain your existing Codex settings.
-- OpenCode primary: **Ollama Kimi K3** (`ollama/kimi-k3:cloud`). Planning,
-  continuity, research, and structural review use this route.
-- OpenCode prose, character, reader, and packaging roles: **Mistral Large V4**,
-  published as Mistral Large 4 (`ollama/mistral-large-4:cloud`).
+- Codex: **GPT-6.1 Sol high** for direction, planning, drafting, line/copy editing,
+  and continuity; **GPT-6.1 Sol medium** for developmental editing and blurbs.
+  Premise development uses the acquisitions role's high-effort task override.
+- Independent reader: **GPT-6 Sol high** in Codex.
+- Research, nonfiction review, production, and art retain their existing Astra
+  assignments because these specialties were not benchmarked.
+- OpenCode currently uses **Ollama Kimi K3 high** and **Mistral Large 4 high**
+  fallbacks. Its connected OpenRouter key has reached its spending cap, so the
+  preferred Sol routes recorded in the roster are not active. The Mistral drafter
+  receives a fresh Kimi reader response.
 
-These role assignments are editorial starting choices, not benchmark claims.
-Both Ollama routes here use **cloud inference**, reached through the local Ollama
-service; they are not offline inference. The requested models were consulted in
-the setup discussion; see [design decisions](docs/design-decisions.md).
+These are author-approved provisional choices from incomplete tests. The original
+cloud effort comparisons were withdrawn after discovering an ineffective control;
+corrected trials remain partial. See [model routing and evidence](docs/model-routing.md)
+for the exact assignments and instruction changes. Both Ollama routes use cloud
+inference through the local service. Account access and trust remain your settings.
 
 ```bash
 ollama pull kimi-k3:cloud
@@ -110,3 +115,7 @@ book files. It does not run agents, choose models, or manage either runtime.
 
 The [independent audit and resolutions](.studio/reviews/post-setup/README.md)
 record the subsequent review, corrections, verification, and remaining limits.
+
+## Illustrated stories
+
+For a new illustrated story or pictures added to an existing book, use the [illustrated-story skill](.studio/skills/illustrated-story/SKILL.md) or OpenCode `/studio-illustrate`. Art direction, an illustrator, book design through production, and an independent illustration reviewer cover distinct parts of the work. The [illustrated-story guide](docs/illustrated-stories.md) explains the plan, references, actual-export proof and source-art records. Picture counts and page targets follow the individual brief. The skill's repository copy is the maintained source; a discoverable local installation can be copied into the current Codex skills directory when requested.

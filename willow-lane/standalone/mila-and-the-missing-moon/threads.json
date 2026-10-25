@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "threads": [
+    {
+      "id": "TH-0001",
+      "setup": "Moon and protective box missing from worktable",
+      "setup_source": "manuscript/001-the-empty-table.md",
+      "payoff": "Moon located by reading both labels and opening correct carton; safely lit for walk",
+      "payoff_sources": [
+        "manuscript/009-the-other-side.md",
+        "manuscript/010-a-moon-with-a-scar.md",
+        "manuscript/011-one-small-light.md"
+      ],
+      "status": "resolved-in-draft"
+    },
+    {
+      "id": "TH-0002",
+      "setup": "Mila mistakes a plausible guess about Bea for proof",
+      "setup_source": "manuscript/002-something-white.md",
+      "payoff": "Apology in chapter 3; invitation to walk beside her in chapter 11",
+      "payoff_sources": [
+        "manuscript/003-the-wrong-question.md",
+        "manuscript/011-one-small-light.md"
+      ],
+      "status": "resolved-in-draft"
+    },
+    {
+      "id": "TH-0003",
+      "setup": "Mila dismisses Noah's drawing",
+      "setup_source": "manuscript/002-something-white.md",
+      "payoff": "Drawing leads route test, Mila apologizes and credits Noah; final notebook page names both children",
+      "payoff_sources": [
+        "manuscript/006-the-map-that-wasnt.md",
+        "manuscript/011-one-small-light.md",
+        "manuscript/012-the-last-page.md"
+      ],
+      "status": "resolved-in-draft"
+    },
+    {
+      "id": "TH-0004",
+      "setup": "Uneven paper star Mila likes; stars need moon",
+      "setup_source": "manuscript/001-the-empty-table.md",
+      "payoff": "Favorite star provides patch shape, strings hang beneath lit moon",
+      "payoff_sources": [
+        "manuscript/010-a-moon-with-a-scar.md",
+        "manuscript/011-one-small-light.md"
+      ],
+      "status": "resolved-in-draft"
+    }
+  ]
+}

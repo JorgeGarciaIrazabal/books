@@ -1,0 +1,40 @@
+{
+  "sol61-medium": {
+    "original": "reviews/sol61-medium.json",
+    "P8_replacement": "reviews-corrected/sol61-medium.json",
+    "label_map": "Original blind-key labels restored by author-ID mapping; no preference or evidence content altered."
+  },
+  "sol61-high": {
+    "original": "reviews/sol61-high.json",
+    "P8_replacement": "reviews-corrected/sol61-high.json",
+    "label_map": "Original blind-key labels restored by author-ID mapping; no preference or evidence content altered."
+  },
+  "sol6-medium": {
+    "original": "reviews/sol6-medium.json",
+    "P8_replacement": "reviews-corrected/sol6-medium.json",
+    "label_map": "Original blind-key labels restored by author-ID mapping; no preference or evidence content altered."
+  },
+  "sol6-high": {
+    "original": "reviews/sol6-high.json",
+    "P8_replacement": "reviews-corrected/sol6-high.json",
+    "label_map": "Original blind-key labels restored by author-ID mapping; no preference or evidence content altered."
+  },
+  "kimi-high": {
+    "original": "reviews/kimi-high.json",
+    "P8": "Unchanged because this exact-model reviewer never saw either Kimi artifact; its candidate set is identical."
+  },
+  "kimi-low": {
+    "original": "reviews/kimi-low.json",
+    "P8": "Unchanged because this exact-model reviewer never saw either Kimi artifact; its candidate set is identical."
+  },
+  "mistral-none": {
+    "original": "reviews/mistral-none.json",
+    "P8_replacement": "reviews-corrected/mistral-none.json",
+    "label_map": "Original blind-key labels restored by author-ID mapping; no preference or evidence content altered."
+  },
+  "mistral-high": {
+    "original": "reviews/mistral-high.json",
+    "P8_replacement": "reviews-corrected/mistral-high.json",
+    "label_map": "Original blind-key labels restored by author-ID mapping; no preference or evidence content altered."
+  }
+}

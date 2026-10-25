@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "facts": [
+    {
+      "id": "FACT-0001",
+      "scope": "bellwether-reach",
+      "status": "accepted",
+      "fact": "North Basin and South Basin share the Ninth Lock. Only one basin can receive its protection during a given high tide; changing the assignment after the warning bell takes forty minutes.",
+      "provenance": "Author delegated benchmark premise selection; director fixture, 2026-10-24",
+      "effective_story_time": "Book 1 opening, before 17:30"
+    },
+    {
+      "id": "FACT-0002",
+      "scope": "bellwether-reach",
+      "status": "accepted",
+      "fact": "The next high tide is at 18:00. The warning bell is at 17:30. Walking from the Registry to the Ninth Lock takes twenty minutes; no faster transport is available in the test scene.",
+      "provenance": "Author delegated benchmark premise selection; director fixture, 2026-10-24",
+      "effective_story_time": "Book 1 opening, before 17:30"
+    },
+    {
+      "id": "FACT-0003",
+      "scope": "bellwether-reach",
+      "status": "accepted",
+      "fact": "Sera Venn is a licensed lock inspector. Her left wrist is broken and splinted; she cannot grip with that hand. She carries one brass inspection key in her right coat pocket.",
+      "provenance": "Author delegated benchmark premise selection; director fixture, 2026-10-24",
+      "effective_story_time": "Book 1 opening, before 17:30"
+    },
+    {
+      "id": "FACT-0004",
+      "scope": "bellwether-reach",
+      "status": "accepted",
+      "fact": "Ivo Renn is the Registry clerk and Sera’s estranged former apprentice. He legally registered two incompatible protection certificates. His motives and any coercion remain unknown to Sera and the reader at the opening.",
+      "provenance": "Author delegated benchmark premise selection; director fixture, 2026-10-24",
+      "effective_story_time": "Book 1 opening, before 17:30"
+    },
+    {
+      "id": "FACT-0005",
+      "scope": "bellwether-reach",
+      "status": "accepted",
+      "fact": "The two certificates have the same authentic Registry seal. The seal proves registration, not truth or available capacity.",
+      "provenance": "Author delegated benchmark premise selection; director fixture, 2026-10-24",
+      "effective_story_time": "Book 1 opening, before 17:30"
+    },
+    {
+      "id": "FACT-0006",
+      "scope": "bellwether-reach",
+      "status": "accepted",
+      "fact": "Sera may freeze a disputed assignment only by surrendering her inspector’s license pending a public hearing. A freeze preserves the current assignment; it does not protect both basins. North Basin currently has protection.",
+      "provenance": "Author delegated benchmark premise selection; director fixture, 2026-10-24",
+      "effective_story_time": "Book 1 opening, before 17:30"
+    },
+    {
+      "id": "FACT-0007",
+      "scope": "bellwether-reach",
+      "status": "accepted",
+      "fact": "Sera’s brother lives in North Basin. South Basin contains the city’s communal seed store. Either loss matters; no undisclosed gate, spare pump, miracle, or secret third basin can protect both before this tide.",
+      "provenance": "Author delegated benchmark premise selection; director fixture, 2026-10-24",
+      "effective_story_time": "Book 1 opening, before 17:30"
+    }
+  ]
+}

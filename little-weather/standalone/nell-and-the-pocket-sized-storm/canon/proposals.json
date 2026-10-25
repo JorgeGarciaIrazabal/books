@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "proposals": [
+    {
+      "id": "PROP-0001",
+      "fact_id": "FACT-0001",
+      "status": "proposed",
+      "scope": "little-weather/standalone/nell-and-the-pocket-sized-storm",
+      "text": "Grumble is a personified pocket storm who lost his cloud family following toast down a chimney.",
+      "provenance": "book.json ordered chapters, pages 1–3",
+      "effective_story_time": "Before discovery through following morning",
+      "affected_entities": [
+        "Nell",
+        "Grumble"
+      ],
+      "affected_books": [
+        "nell-and-the-pocket-sized-storm"
+      ],
+      "changes_existing_fact": false
+    },
+    {
+      "id": "PROP-0002",
+      "fact_id": "FACT-0002",
+      "status": "proposed",
+      "scope": "little-weather/standalone/nell-and-the-pocket-sized-storm",
+      "text": "Pocket storms need a breeze to rise high, grow large and heavy when drinking water, and release the water as rain through a rumble. Low floating is possible when light. These are fictional local rules.",
+      "provenance": "book.json ordered chapters, pages 5, 8–10, 20",
+      "effective_story_time": "Throughout story",
+      "affected_entities": [
+        "Grumble"
+      ],
+      "affected_books": [
+        "nell-and-the-pocket-sized-storm"
+      ],
+      "changes_existing_fact": false
+    },
+    {
+      "id": "PROP-0003",
+      "fact_id": "FACT-0003",
+      "status": "proposed",
+      "scope": "little-weather/standalone/nell-and-the-pocket-sized-storm",
+      "text": "Nell and Grandma fly a red kite with a mitten carriage; Grumble jumps into high wind and rejoins family. The kite returns and Nell keeps the mitten.",
+      "provenance": "book.json ordered chapters, pages 23–29",
+      "effective_story_time": "Sunset through bedtime",
+      "affected_entities": [
+        "Nell",
+        "Grumble",
+        "Grandma"
+      ],
+      "affected_books": [
+        "nell-and-the-pocket-sized-storm"
+      ],
+      "changes_existing_fact": false
+    }
+  ]
+}

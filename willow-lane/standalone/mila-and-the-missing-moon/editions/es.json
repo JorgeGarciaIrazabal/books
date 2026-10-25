@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "mila-y-la-luna-perdida",
+  "title": "Mila y la luna perdida",
+  "language": "es",
+  "source_language": "en",
+  "source_book": "../book.json",
+  "source_chapters": [
+    "manuscript/001-the-empty-table.md",
+    "manuscript/002-something-white.md",
+    "manuscript/003-the-wrong-question.md",
+    "manuscript/004-a-wheel-with-a-bite.md",
+    "manuscript/005-rain-on-the-notebook.md",
+    "manuscript/006-the-map-that-wasnt.md",
+    "manuscript/007-boxes-boxes.md",
+    "manuscript/008-start-again.md",
+    "manuscript/009-the-other-side.md",
+    "manuscript/010-a-moon-with-a-scar.md",
+    "manuscript/011-one-small-light.md",
+    "manuscript/012-the-last-page.md"
+  ],
+  "chapters": [
+    "manuscript/es/001-the-empty-table.md",
+    "manuscript/es/002-something-white.md",
+    "manuscript/es/003-the-wrong-question.md",
+    "manuscript/es/004-a-wheel-with-a-bite.md",
+    "manuscript/es/005-rain-on-the-notebook.md",
+    "manuscript/es/006-the-map-that-wasnt.md",
+    "manuscript/es/007-boxes-boxes.md",
+    "manuscript/es/008-start-again.md",
+    "manuscript/es/009-the-other-side.md",
+    "manuscript/es/010-a-moon-with-a-scar.md",
+    "manuscript/es/011-one-small-light.md",
+    "manuscript/es/012-the-last-page.md"
+  ],
+  "afterword": "manuscript/es/read-together.md",
+  "series_label": "UN MISTERIO EN LA CALLE DE LOS SAUCES",
+  "tagline": "Un misterio para compartir, un capítulo cada vez",
+  "description": "Un misterio de detectives para leer en voz alta.",
+  "translator_model": "ollama/mistral-large-4:cloud",
+  "requested_effort": "high",
+  "edition_date": "2026-10-25"
+}

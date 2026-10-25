@@ -1,0 +1,61 @@
+{
+  "phases": [
+    {
+      "phase": "P8",
+      "tiers": [
+        [
+          "Candidate E"
+        ],
+        [
+          "Candidate C"
+        ],
+        [
+          "Candidate B"
+        ],
+        [
+          "Candidate A"
+        ],
+        [
+          "Candidate F"
+        ],
+        [
+          "Candidate D"
+        ]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate E",
+          "quote": "North would keep its protection—and her brother his safety.",
+          "reason": "The cleanest back-cover arc makes the freeze, its cost, and South’s loss legible while keeping Ivo’s motive open; the ending promises a defensible choice."
+        },
+        {
+          "candidate": "Candidate C",
+          "quote": "knowing the truth will leave her with a choice no seal can make for her.",
+          "reason": "The compact hook and concrete custody problem lead to the right moral stakes, though the wrist detail slightly crowds the sales copy."
+        },
+        {
+          "candidate": "Candidate B",
+          "quote": "changing the assignment afterward takes forty minutes.",
+          "reason": "Its clock and capacity are accurate, but the dense chronology and inventory of fixed facts make the voice read more like a synopsis."
+        },
+        {
+          "candidate": "Candidate A",
+          "quote": "Sera Venn came to the Registry to check a seal and found a crime:",
+          "reason": "The prose moves and the stakes are clear, but calling the duplication a crime resolves a legal question the brief leaves open."
+        },
+        {
+          "candidate": "Candidate F",
+          "quote": "North holds the assignment and her brother's fields.",
+          "reason": "The rhythm is memorable, but the brother’s fields, drawer, and claim that the remedy settles nothing add or distort facts supplied for the copy."
+        },
+        {
+          "candidate": "Candidate D",
+          "quote": "two protection certificates for the same tide, both genuine, both sealed, both honored.",
+          "reason": "Strong images cannot support the claim that both promises are honored, and the copy also treats license loss as the necessary price of exposure."
+        }
+      ],
+      "uncertainty": "The middle ranks weigh task fidelity over vividness; a reader who prizes voice more might move A or F upward."
+    }
+  ],
+  "coverage": "All six blurbs and the supplied brief read in full."
+}

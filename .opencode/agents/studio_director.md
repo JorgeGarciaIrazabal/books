@@ -1,7 +1,7 @@
 ---
 description: "Coordinates the writing studio and completes the author’s requested deliverable."
 mode: primary
-model: ollama/kimi-k3:cloud
+model: ollama/kimi-k3:cloud#high
 steps: 40
 ---
 

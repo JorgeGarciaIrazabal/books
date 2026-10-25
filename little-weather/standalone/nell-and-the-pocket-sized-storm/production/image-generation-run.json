@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "method": "built-in image_gen.imagegen, separate scene calls anchored to inspected cast reference",
+  "initial_tool_failure": {
+    "id": "ILL-0001",
+    "stage": "output",
+    "category": "other",
+    "message": "First scene generation rejected by image tool; no output artifact. Simplified benign scene request retried; no paid fallback."
+  },
+  "assets": [
+    {
+      "id": "ILL-0001",
+      "page": 2,
+      "asset": "assets/illustrations/ill-0001.png",
+      "prompt": "production/prompts/ill-0001-retry-1.txt",
+      "generated_original": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-26f47601-ba01-4452-be03-bbf3123e79a5.png",
+      "reference": "assets/references/cast-reference-v1.png",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in reference-led generation",
+      "transparent_background": false
+    },
+    {
+      "id": "ILL-0002",
+      "page": 4,
+      "asset": "assets/illustrations/ill-0002.png",
+      "prompt": "production/prompts/ill-0002.txt",
+      "generated_original": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-16ef4eab-946b-4997-a304-4d27c9bdf10a.png",
+      "reference": "assets/references/cast-reference-v1.png",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in reference-led generation",
+      "transparent_background": false
+    },
+    {
+      "id": "ILL-0003",
+      "page": 6,
+      "asset": "assets/illustrations/ill-0003.png",
+      "prompt": "production/prompts/ill-0003.txt",
+      "generated_original": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-785abc46-082f-46fc-8678-ca3d655559a3.png",
+      "reference": "assets/references/cast-reference-v1.png",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in reference-led generation",
+      "transparent_background": false
+    },
+    {
+      "id": "ILL-0004",
+      "page": 9,
+      "asset": "assets/illustrations/ill-0004.png",
+      "prompt": "production/prompts/ill-0004.txt",
+      "generated_original": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-98c50b21-2090-4a59-a350-471f3e7753d5.png",
+      "reference": "assets/references/cast-reference-v1.png",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in reference-led generation",
+      "transparent_background": false
+    },
+    {
+      "id": "ILL-0005",
+      "page": 12,
+      "asset": "assets/illustrations/ill-0005.png",
+      "prompt": "production/prompts/ill-0005.txt",
+      "generated_original": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-c77d0fda-1f15-4f6e-9e43-bc590efa8d4c.png",
+      "reference": "assets/references/cast-reference-v1.png",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in reference-led generation",
+      "transparent_background": false
+    },
+    {
+      "id": "ILL-0006",
+      "page": 15,
+      "asset": "assets/illustrations/ill-0006.png",
+      "prompt": "production/prompts/ill-0006.txt",
+      "generated_original": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-6c6ae71b-8537-4b6f-87d2-80b6c3a86315.png",
+      "reference": "assets/references/cast-reference-v1.png",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in reference-led generation",
+      "transparent_background": false
+    },
+    {
+      "id": "ILL-0007",
+      "page": 17,
+      "asset": "assets/illustrations/ill-0007.png",
+      "prompt": "production/prompts/ill-0007.txt",
+      "generated_original": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-ef054a58-ccc9-4bb6-bb0c-00348ddf0340.png",
+      "reference": "assets/references/cast-reference-v1.png",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in reference-led generation",
+      "transparent_background": false
+    },
+    {
+      "id": "ILL-0008",
+      "page": 19,
+      "asset": "assets/illustrations/ill-0008.png",
+      "prompt": "production/prompts/ill-0008.txt",
+      "generated_original": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-d2882b90-6682-4d22-b986-b03a43812fac.png",
+      "reference": "assets/references/cast-reference-v1.png",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in reference-led generation",
+      "transparent_background": false
+    },
+    {
+      "id": "ILL-0009",
+      "page": 23,
+      "asset": "assets/illustrations/ill-0009.png",
+      "prompt": "production/prompts/ill-0009.txt",
+      "generated_original": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-e97362e0-fe94-49f8-9aba-864aeedacac2.png",
+      "reference": "assets/references/cast-reference-v1.png",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in reference-led generation",
+      "transparent_background": false
+    },
+    {
+      "id": "ILL-0010",
+      "page": 24,
+      "asset": "assets/illustrations/ill-0010.png",
+      "prompt": "production/prompts/ill-0010.txt",
+      "generated_original": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-2dde8c70-4bc5-4008-80d4-69baf39067bf.png",
+      "reference": "assets/references/cast-reference-v1.png",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in reference-led generation",
+      "transparent_background": false
+    },
+    {
+      "id": "ILL-0011",
+      "page": 27,
+      "asset": "assets/illustrations/ill-0011.png",
+      "prompt": "production/prompts/ill-0011.txt",
+      "generated_original": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-6fe9f631-fd06-4c13-bd96-d73425e09dee.png",
+      "reference": "assets/references/cast-reference-v1.png",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in reference-led generation",
+      "transparent_background": false
+    },
+    {
+      "id": "ILL-0012",
+      "page": 30,
+      "asset": "assets/illustrations/ill-0012.png",
+      "prompt": "production/prompts/ill-0012.txt",
+      "generated_original": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-ae144fab-41f1-42fb-a79b-691bb41c5b7f.png",
+      "reference": "assets/references/cast-reference-v1.png",
+      "tool": "image_gen.imagegen",
+      "mode": "built-in reference-led generation",
+      "transparent_background": false
+    }
+  ],
+  "unresolved": [],
+  "localized_repairs": {
+    "ILL-0003": {
+      "prompt": "production/prompts/ill-0003-revision-1.txt",
+      "before": "assets/iterations/ill-0003-before-dog-removal.png",
+      "reason": "Remove dog introduced before story entrance on page16",
+      "selected_generated_original": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-005ac18a-e3e0-4007-92ed-80a27142abc2.png"
+    },
+    "ILL-0007": {
+      "prompt": "production/prompts/ill-0007-revision-1.txt",
+      "before": "assets/iterations/ill-0007-before-continuity-repair.png",
+      "reason": "Remove duplicate cloudpoint faces; restore visible band instruments",
+      "selected_generated_original": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-73ede5e7-66e4-4674-bdbc-66d5a45e2d8b.png"
+    },
+    "ILL-0011": {
+      "prompt": "production/prompts/ill-0011-revision-1.txt",
+      "before": "assets/iterations/ill-0011-before-continuity-repair.png",
+      "reason": "Restore kite tether and string winder for next-page recovery",
+      "selected_generated_original": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-f7a67eb7-f662-48f9-aa13-24bb5f8ca0a2.png"
+    }
+  },
+  "selection_status": "Selected for final independent proof; all original PNG masters retained."
+}

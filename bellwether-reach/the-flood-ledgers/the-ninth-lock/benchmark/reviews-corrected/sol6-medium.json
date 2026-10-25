@@ -1,0 +1,49 @@
+{
+  "phases": [
+    {
+      "phase": "P8",
+      "tiers": [
+        ["Candidate E"],
+        ["Candidate A"],
+        ["Candidate B"],
+        ["Candidate F"],
+        ["Candidate D"],
+        ["Candidate C"]
+      ],
+      "evidence": [
+        {
+          "candidate": "Candidate E",
+          "quote": "Before the warning bell, she needs the paper, the truth behind it",
+          "reason": "The clearest, most specific pitch connects evidence, timing, license surrender, and the cost to each basin without disclosing a solution."
+        },
+        {
+          "candidate": "Candidate A",
+          "quote": "The freeze will preserve North’s protection—and her brother’s home.",
+          "reason": "It handles the freeze accurately and builds a personal choice, though its closing language is less distinctive than E's."
+        },
+        {
+          "candidate": "Candidate B",
+          "quote": "The bell rings at half past five. The tide does not attend hearings.",
+          "reason": "Its voice and deadline are memorable, but the brother's fields are invented and the claim that the lawful remedy settles nothing obscures the freeze's effect."
+        },
+        {
+          "candidate": "Candidate F",
+          "quote": "changing the assignment afterward takes forty minutes",
+          "reason": "It conveys the material timing and both losses faithfully, but reads more like a case summary than enticing back-cover copy."
+        },
+        {
+          "candidate": "Candidate D",
+          "quote": "Sera Venn came to the Registry to check a seal and found a crime",
+          "reason": "The central choice is forceful, but declaring a crime before the mystery establishes one overstates the brief."
+        },
+        {
+          "candidate": "Candidate C",
+          "quote": "two protection certificates for the same tide, both genuine, both sealed, both honored",
+          "reason": "The pitch falsely implies both obligations can be fulfilled and invents possible costs to Sera's apprentice, weakening its otherwise lively premise."
+        }
+      ],
+      "uncertainty": "B and F are close: B offers stronger voice, while F is more precise about the lock's timing. These are comparative judgments on short samples."
+    }
+  ],
+  "coverage": "All six blurbs and the supplied brief read in full."
+}

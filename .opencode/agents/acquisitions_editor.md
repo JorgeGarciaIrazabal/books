@@ -1,7 +1,7 @@
 ---
 description: "Develops a distinctive premise, reader promise, and viable publishing brief."
 mode: subagent
-model: ollama/mistral-large-4:cloud
+model: ollama/mistral-large-4:cloud#high
 steps: 40
 permissions:
   - action: subagent

@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-25",
+  "purpose": "Page-composition-led redesign after author rejection",
+  "records": [
+    {
+      "id": "ILL-0001",
+      "prompt": "production/prompts/redesign/ill-0001.txt",
+      "tool": "image_gen.imagegen",
+      "underlying_model": "not exposed by built-in tool",
+      "reference": "assets/references/cast-reference-v1.png",
+      "tool_output": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-b9349b53-0e1c-473b-ac14-c00581a572d7.png",
+      "selected_output": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-b9349b53-0e1c-473b-ac14-c00581a572d7.png",
+      "repair_prompt": null
+    },
+    {
+      "id": "ILL-0003",
+      "prompt": "production/prompts/redesign/ill-0003.txt",
+      "tool": "image_gen.imagegen",
+      "underlying_model": "not exposed by built-in tool",
+      "reference": "assets/references/cast-reference-v1.png",
+      "tool_output": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-c53d1da0-39fb-488c-9ace-abb17bd041e3.png",
+      "selected_output": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-c53d1da0-39fb-488c-9ace-abb17bd041e3.png",
+      "repair_prompt": null
+    },
+    {
+      "id": "ILL-0004",
+      "prompt": "production/prompts/redesign/ill-0004.txt",
+      "tool": "image_gen.imagegen",
+      "underlying_model": "not exposed by built-in tool",
+      "reference": "assets/references/cast-reference-v1.png",
+      "tool_output": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-2e7e46f6-02e9-4fc0-9883-e6b1965948f8.png",
+      "selected_output": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-2e7e46f6-02e9-4fc0-9883-e6b1965948f8.png",
+      "repair_prompt": null
+    },
+    {
+      "id": "ILL-0005",
+      "prompt": "production/prompts/redesign/ill-0005.txt",
+      "tool": "image_gen.imagegen",
+      "underlying_model": "not exposed by built-in tool",
+      "reference": "assets/references/cast-reference-v1.png",
+      "tool_output": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-aab83665-8672-4075-a6ea-6e1b9e6ea249.png",
+      "selected_output": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-aab83665-8672-4075-a6ea-6e1b9e6ea249.png",
+      "repair_prompt": null
+    },
+    {
+      "id": "ILL-0006",
+      "prompt": "production/prompts/redesign/ill-0006.txt",
+      "tool": "image_gen.imagegen",
+      "underlying_model": "not exposed by built-in tool",
+      "reference": "assets/references/cast-reference-v1.png",
+      "tool_output": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-ea65e824-29ae-482f-a070-f0a94f0c9bb6.png",
+      "selected_output": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-b3719411-3607-4aa1-b036-59fe60338df0.png",
+      "repair_prompt": "production/prompts/redesign/ill-0006-repair.txt"
+    },
+    {
+      "id": "ILL-0009",
+      "prompt": "production/prompts/redesign/ill-0009.txt",
+      "tool": "image_gen.imagegen",
+      "underlying_model": "not exposed by built-in tool",
+      "reference": "assets/references/cast-reference-v1.png",
+      "tool_output": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-e7bfa616-f20a-418c-813b-2cc4ae38efac.png",
+      "selected_output": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-7204d80e-9033-4c66-b321-48d224c23511.png",
+      "repair_prompt": "production/prompts/redesign/ill-0009-repair.txt"
+    },
+    {
+      "id": "ILL-0010",
+      "prompt": "production/prompts/redesign/ill-0010.txt",
+      "tool": "image_gen.imagegen",
+      "underlying_model": "not exposed by built-in tool",
+      "reference": "assets/references/cast-reference-v1.png",
+      "tool_output": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-40d93620-34b8-41fa-8505-3673bcfab17f.png",
+      "selected_output": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-4f5ce51d-f728-478c-bdca-061ff241778c.png",
+      "repair_prompt": "production/prompts/redesign/ill-0010-repair.txt"
+    },
+    {
+      "id": "ILL-0011",
+      "prompt": "production/prompts/redesign/ill-0011.txt",
+      "tool": "image_gen.imagegen",
+      "underlying_model": "not exposed by built-in tool",
+      "reference": "assets/references/cast-reference-v1.png",
+      "tool_output": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-0ff6e774-bedd-4c44-9555-26dfe91eb1b5.png",
+      "selected_output": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-b17bdf0f-44ec-43b8-9925-6df23aabb7ea.png",
+      "repair_prompt": "production/prompts/redesign/ill-0011-repair.txt"
+    },
+    {
+      "id": "ILL-0012",
+      "prompt": "production/prompts/redesign/ill-0012.txt",
+      "tool": "image_gen.imagegen",
+      "underlying_model": "not exposed by built-in tool",
+      "reference": "assets/references/cast-reference-v1.png",
+      "tool_output": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-6603b801-d93c-4eac-8bee-f0749cea4684.png",
+      "selected_output": "/home/jgarcairaza/.codex/generated_images/01a1737c-7d40-75a0-aae1-87f8b855b803/exec-6603b801-d93c-4eac-8bee-f0749cea4684.png",
+      "repair_prompt": null
+    }
+  ]
+}

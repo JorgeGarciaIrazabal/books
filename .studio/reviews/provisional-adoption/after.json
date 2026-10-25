@@ -1,0 +1,122 @@
+{
+  ".codex/agents/acquisitions_editor.toml": {
+    "sha256": "bb75b717825c51e4f1f1ee42ad4a2a721dea45c66bf3f853f37d3da17d34e7cf"
+  },
+  ".codex/agents/canon_keeper.toml": {
+    "sha256": "03877d83230c13e69be41451c64f3929cb97aa5aa1f574973b6338f9de64b82a"
+  },
+  ".codex/agents/character_director.toml": {
+    "sha256": "a2cf1671ab5b8d92b6e1e948e1a4e16f75271c35838c9a2ebf9de9ce2adf4432"
+  },
+  ".codex/agents/copy_editor.toml": {
+    "sha256": "18a3fe9d62e6d3c57687573d06dc1e1e9fc0d330df57339bf45fc6e83e548932"
+  },
+  ".codex/agents/developmental_editor.toml": {
+    "sha256": "a2f50c29992669fb0bff4ad060ab791c2b47eeccce2331dee5d1d7a06f26bf03"
+  },
+  ".codex/agents/drafter.toml": {
+    "sha256": "617acf6f98baf07f431df83ce44e6b49f5f5775944f81ed701b2bc17c03e9aaf"
+  },
+  ".codex/agents/line_editor.toml": {
+    "sha256": "2ee1113dbf25022d7f051d81b293ec2522d50da87a77d5ce51230e2f8a9296b2"
+  },
+  ".codex/agents/reader_advocate.toml": {
+    "sha256": "95130f60b5015321f6c8c6d4c537d1f467bd1a903a3cf9dae64643519e8cd0ed"
+  },
+  ".codex/agents/series_showrunner.toml": {
+    "sha256": "8def563b5ce5a1011ec53586d77798ecc92ce3afba7be5ddd0de24e3ba0aa459"
+  },
+  ".codex/agents/story_architect.toml": {
+    "sha256": "6565cc66bbbdfbfde1147df61afc7d9333c8301b3b5fe984bc520be8b122fcd8"
+  },
+  ".codex/agents/studio_director.toml": {
+    "sha256": "bf7b9d529cfbd6241e54325b08726bb8cbc9038e52e49e72bb786ce3d01a10e9"
+  },
+  ".codex/agents/universe_architect.toml": {
+    "sha256": "773cc9a26a1d1df339fd54c2190b0ff66bb33edc9ad182641c5fa2d0adbaad5a"
+  },
+  ".codex/config.toml": {
+    "sha256": "7e643a526a85277d7a03f9eea55462bcb7981df9ee3586556aedff5da86a83db"
+  },
+  ".opencode/agents/acquisitions_editor.md": {
+    "sha256": "fe91e0aa9453fff8928e03c799693b7026ded8de5531077b1d7c705746e3224e"
+  },
+  ".opencode/agents/art_director.md": {
+    "sha256": "0dcc5886bb8f9f4c55316fc5594a54f110efd52c232b48ef76fe33395f393384"
+  },
+  ".opencode/agents/canon_keeper.md": {
+    "sha256": "242548ab152b07ec2578a934929503916468e95dadfb796c9df669df7b592b72"
+  },
+  ".opencode/agents/character_director.md": {
+    "sha256": "e9dcd86856fb5e0ff955d71f4e52a42295aa15ccb7501d586e286535454993f9"
+  },
+  ".opencode/agents/copy_editor.md": {
+    "sha256": "87404b5532fb136ff56002a39525bad133fd9818e50ddd3d2de11138d3653941"
+  },
+  ".opencode/agents/developmental_editor.md": {
+    "sha256": "77a3130442af04ceec4da5ac9caf34d4eb85c39ca940cefd6b25e467aee31751"
+  },
+  ".opencode/agents/drafter.md": {
+    "sha256": "25b0a1313a01276ada9f3154d470978cc04bc5d45d75a760b5c3d9c9d9e3fbd3"
+  },
+  ".opencode/agents/line_editor.md": {
+    "sha256": "559925769fdf333e1249d60031b4702e52c8e47fde6c80bd431ad1f9c3d395a9"
+  },
+  ".opencode/agents/nonfiction_editor.md": {
+    "sha256": "e028ee0b181ee325c3df67f1b185bb4336f0a5e8864a3b515056dd5a799241ec"
+  },
+  ".opencode/agents/production_editor.md": {
+    "sha256": "e2a591aa922878b15f1c227a04fde4f7bd10232955ec3e58c9cf397a11064ebc"
+  },
+  ".opencode/agents/reader_advocate.md": {
+    "sha256": "cc8bd009dcca32e197b638320bd5640bdf1a88bb619f518fa13c8da30b3e2dce"
+  },
+  ".opencode/agents/researcher.md": {
+    "sha256": "cb0487f91919d82f79720e391ff81b3484a475a10ee4524282b257a5cd6b45f2"
+  },
+  ".opencode/agents/series_showrunner.md": {
+    "sha256": "8b84775e6234f34aba211c2778623cc3e8d3bbbfcd6bd33f9e04b3844df1f057"
+  },
+  ".opencode/agents/story_architect.md": {
+    "sha256": "c71084c3c5c229cb5f87ea627d3fa44f051c3f045ad8a8b3ed0008d6b294f95a"
+  },
+  ".opencode/agents/studio_director.md": {
+    "sha256": "79ee2bb4f8e069814782dcca9320c0cb3bd3598473e3189088b5c28fc4163546"
+  },
+  ".opencode/agents/universe_architect.md": {
+    "sha256": "73d38f66f86bc06e6dbc04f45ffe3182e493ecfd6633eb6de5d290210cb9c5a4"
+  },
+  ".studio/agents/canon_keeper.md": {
+    "sha256": "9a10fe6682326144f9a74e20f42534769f5006cb2889ccf56cd74796c367cb3b"
+  },
+  ".studio/agents/drafter.md": {
+    "sha256": "ccd7cc85a4dd7cd79635a268e4d2b51a0cb20a030ef41729eee96f6ee43c811d"
+  },
+  ".studio/agents/story_architect.md": {
+    "sha256": "321bd833acb7cb9df170ed34c94536fa2d1d4bcfad42ae8e47efaa05cd1052d9"
+  },
+  ".studio/agents/studio_director.md": {
+    "sha256": "17a6d8e5dc0bceee283a9dfdd6b489bfe9a4bd40e737af5d9c250025c8f41fc4"
+  },
+  ".studio/roster.json": {
+    "sha256": "ba960a6efcc0af0f20ac7f655233900a462905202d071cfefbac0b67cd65fc05"
+  },
+  ".studio/workflow.md": {
+    "sha256": "8595a80588a210a7281a0be451ab4c6b150cc35fc483f390c28280de31c41f8d"
+  },
+  "AGENTS.md": {
+    "sha256": "4df9e718c86c0e735bc522b1c0d6bf9439a261e9ea5d211d72b183bcae6ceb05"
+  },
+  "README.md": {
+    "sha256": "14c5f4352e4171e3310e3bb7005f8efe86eec28bc1b42b9b51d6f5b2d9a5fdd4"
+  },
+  "docs/model-routing.md": {
+    "sha256": "b84630319c6cb991124757c83c0333be1fee333768b195ae26fa3d1d1bd4b78e"
+  },
+  "docs/tooling.md": {
+    "sha256": "c87258712c2d4ea611b5e511750082f20cc404fc3bcd64e81f2a47e9c4092c2d"
+  },
+  "opencode.json": {
+    "sha256": "6c0df2d1dfe3e5ef554356d39eb58f22971079e80ce3dbffea35793b427913e5"
+  }
+}
