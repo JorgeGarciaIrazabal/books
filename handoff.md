@@ -10,8 +10,8 @@
 - Measured improvements: catalog cards went from 862px to 298px on a 390px phone and from 986px to 659px on a 1440px desktop; the reflowable phone header went from 153px to 106px and the fixed header from 104px to 56px; the pager went from 79px to 62px. The Nell desktop frame is now 589×746 at its native ratio instead of 1411×739 with the page clipped; the reflowable desktop measure is 736px.
 - Evidence: `.studio/reviews/site-responsive-2026-10-25/verification.md`, `metrics.json`, two reproducible Playwright scripts, and curated before/after screenshots.
 - Limits: browser QA used headless Chrome with emulated phone/tablet viewports, not physical devices or every browser. It is not a new literary review or a proof of every page of every book.
-- Publishing: this commit triggers the Pages workflow. Deployment verification is recorded below once the run completes.
-- Next action: confirm the live Pages deployment and spot-check the live catalog and readers at a phone and desktop width.
+- Publishing: commit `f045b63` was pushed to `origin/main`. GitHub Pages run [40258816097](https://github.com/JorgeGarciaIrazabal/books/actions/runs/40258816097) succeeded for both build and deploy. Live checks at `https://jorgegarciairazabal.github.io/books/` confirmed the new CSS and reader JavaScript are served, all nine EPUB/PDF/cover HEAD requests returned 200, the phone catalog card rendered at 358×298 with a 106px reflowable reader header, the desktop catalog rendered three cards in one row at 659px, and the Nell fixed-layout frame rendered at 589×746 at its 0.789 ratio with a working page turn. No JavaScript page errors were observed. Evidence: `.studio/reviews/site-responsive-2026-10-25/live-verification.json` and the live screenshots.
+- Next action: none for this release. Follow `docs/publishing.md` for the next edition or site change.
 
 ## Public catalog and EPUB reader, 2026-10-25
 

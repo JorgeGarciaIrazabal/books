@@ -1,0 +1,21 @@
+{
+  "base": "https://jorgegarciairazabal.github.io/books/",
+  "renderer": "155.0.8059.39",
+  "checks": [
+    "Live assets and all 9 publication/cover HEAD requests are current and reachable",
+    "Live phone: 358x298 card, 106px reader header, 380x666 reflow frame",
+    "Live desktop: three cards in one row, 659px cards, fixed frame 589x746 at ratio 0.789, page turn works"
+  ],
+  "errors": [],
+  "http": {
+    "nell-and-the-pocket-sized-storm.epub": 200,
+    "nell-and-the-pocket-sized-storm.pdf": 200,
+    "nell-and-the-pocket-sized-storm.cover": 200,
+    "mila-and-the-missing-moon.epub": 200,
+    "mila-and-the-missing-moon.pdf": 200,
+    "mila-and-the-missing-moon.cover": 200,
+    "mila-y-la-luna-perdida.epub": 200,
+    "mila-y-la-luna-perdida.pdf": 200,
+    "mila-y-la-luna-perdida.cover": 200
+  }
+}

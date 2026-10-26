@@ -90,3 +90,17 @@ are curated JPEG evidence, not an exhaustive capture set.
   fixed-layout page, chapter page, and empty state.
 - `browser-audit.mjs`: the six-viewport capture script.
 - `functional-checks.mjs`: the interaction and assertion script.
+
+## Live deployment
+
+- Commit `f045b63` was pushed to `origin/main`.
+- GitHub Pages run [40258816097](https://github.com/JorgeGarciaIrazabal/books/actions/runs/40258816097)
+  succeeded for both build and deploy.
+- Live checks against `https://jorgegarciairazabal.github.io/books/` confirmed
+  the new CSS and reader JavaScript are served, all nine EPUB/PDF/cover HEAD
+  requests returned 200, the phone catalog card rendered at 358×298 with a
+  106px reflowable reader header, the desktop catalog rendered three cards in
+  one row at 659px, and the Nell fixed-layout frame rendered at 589×746 at its
+  0.789 ratio with a working page turn. No JavaScript page errors were observed.
+- Machine-readable result: `live-verification.json`. Live screenshots are in
+  `screenshots/live-*.jpg`.
