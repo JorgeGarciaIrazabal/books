@@ -40,7 +40,7 @@
     {
       "id": "TASK-PAGES-0002",
       "role": "studio_director",
-      "status": "in-progress",
+      "status": "done",
       "source_snapshot": "working tree with exact site/build SHA256 inventory in .studio/reviews/github-pages-2026-10-25/verified-source-hashes.json",
       "allowed_writes": [
         "handoff.md",
@@ -56,7 +56,8 @@
       "owner": "coordinator",
       "dependencies": [
         "TASK-PAGES-0001"
-      ]
+      ],
+      "result": "Public repository and successful Pages deployment of bcb42ec7dc19835db6ff5cb83f64ace17487132f; Actions run 40251918523 succeeded. Full live browser checks passed, including all six download hashes and all three actual EPUBs. No background model work remains."
     }
   ]
 }

@@ -1,0 +1,54 @@
+{
+  "base": "https://jorgegarciairazabal.github.io/books/",
+  "renderer": "155.0.8059.39",
+  "checks": [
+    "Catalog: actual visible cards match language/search filters, including empty results",
+    "All six HTTP downloads return 200, match declared sizes, and have recorded SHA256 hashes",
+    "nell-and-the-pocket-sized-storm: real EPUB text, contents, next/previous, chapter jump, saved-location reload, and layout-specific controls",
+    "mila-and-the-missing-moon: real EPUB text, contents, next/previous, chapter jump, saved-location reload, and layout-specific controls",
+    "mila-y-la-luna-perdida: real EPUB text, contents, next/previous, chapter jump, saved-location reload, and layout-specific controls",
+    "390\u00d7844 catalog and Spanish/fixed-layout readers: no horizontal overflow; paging controls remain on screen",
+    "Missing, unknown, and invalid book selection produce errors without opening an EPUB",
+    "EPUB still opens when browser storage is unavailable"
+  ],
+  "errors": [],
+  "downloads": [
+    {
+      "id": "nell-and-the-pocket-sized-storm",
+      "kind": "epub",
+      "bytes": 30826128,
+      "sha256": "5027cc6302965743f55ed9c8e5f69087b0a72ec961093112426002752eb0fa7e"
+    },
+    {
+      "id": "nell-and-the-pocket-sized-storm",
+      "kind": "pdf",
+      "bytes": 34967658,
+      "sha256": "4684ef3f791b97a540506266ad6306ca25c10f22f012a3f33e75ec03c1900b76"
+    },
+    {
+      "id": "mila-and-the-missing-moon",
+      "kind": "epub",
+      "bytes": 28014,
+      "sha256": "ac80d62492bff6c5bd3be047b36ee5e928ab9a2fca931a4f1f1a8934def1558b"
+    },
+    {
+      "id": "mila-and-the-missing-moon",
+      "kind": "pdf",
+      "bytes": 163954,
+      "sha256": "17f4caeab0fcc0c3dc144f61e11880e72c502edbb0b9e68a368bb2df7911fffc"
+    },
+    {
+      "id": "mila-y-la-luna-perdida",
+      "kind": "epub",
+      "bytes": 29910,
+      "sha256": "4ffed331d853ee52794e3c2e38b0b2ebe0ada6eeb466792cb0042a0c340e0452"
+    },
+    {
+      "id": "mila-y-la-luna-perdida",
+      "kind": "pdf",
+      "bytes": 168270,
+      "sha256": "18f8eaa86c49281003fc5e19d8ef6b63cba8ca5341d3ff7e251493dc495c248b"
+    }
+  ],
+  "result": "pass"
+}

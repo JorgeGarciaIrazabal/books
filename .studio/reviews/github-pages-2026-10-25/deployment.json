@@ -1,0 +1,107 @@
+{
+  "site_url": "https://jorgegarciairazabal.github.io/books/",
+  "repository": "https://github.com/JorgeGarciaIrazabal/books",
+  "visibility": "public",
+  "build_type": "workflow",
+  "https_enforced": true,
+  "deployed_source_commit": "bcb42ec7dc19835db6ff5cb83f64ace17487132f",
+  "actions_run": {
+    "conclusion": "success",
+    "headSha": "bcb42ec7dc19835db6ff5cb83f64ace17487132f",
+    "jobs": [
+      {
+        "completedAt": "2026-10-26T00:58:48Z",
+        "conclusion": "success",
+        "databaseId": 121345488263,
+        "name": "build",
+        "startedAt": "2026-10-26T00:58:36Z",
+        "status": "completed",
+        "steps": [
+          {
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Check out the repository",
+            "number": 2,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Configure Pages",
+            "number": 3,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Run manifest, artifact and site checks",
+            "number": 4,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Build the site from site/ and publications/",
+            "number": 5,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Upload Pages artifact",
+            "number": 6,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Post Check out the repository",
+            "number": 12,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 13,
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/JorgeGarciaIrazabal/books/actions/runs/40251918523/job/121345488263"
+      },
+      {
+        "completedAt": "2026-10-26T00:59:01Z",
+        "conclusion": "success",
+        "databaseId": 121345545831,
+        "name": "deploy",
+        "startedAt": "2026-10-26T00:58:52Z",
+        "status": "completed",
+        "steps": [
+          {
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Deploy to GitHub Pages",
+            "number": 2,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 3,
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/JorgeGarciaIrazabal/books/actions/runs/40251918523/job/121345545831"
+      }
+    ],
+    "status": "completed",
+    "url": "https://github.com/JorgeGarciaIrazabal/books/actions/runs/40251918523"
+  },
+  "live_check": "live-browser-results.json",
+  "result": "pass",
+  "limitation": "Desktop Chrome automated QA including a narrow viewport; not a physical-device or all-browser test."
+}
