@@ -100,7 +100,7 @@
         "TASK-PAGES-0001"
       ],
       "owner": "studio_director",
-      "result": "Implemented and checked. Catalog cards dropped from 862px to 298px on a 390px phone and from 986px to 659px on desktop; phone reader header dropped from 153px to 106px (reflowable) and 104px to 56px (fixed); fixed-layout pages now fit their own 720:912 ratio instead of clipping. 51 tests and the build pass; six-viewport Playwright coverage and all three books were exercised. Publication is authorized in the same session."
+      "result": "Implemented and checked. Catalog cards dropped from 862px to 298px on a 390px phone and from 986px to 659px on desktop; phone reader header dropped from 153px to 106px (reflowable) and 104px to 56px (fixed); fixed-layout pages now fit their own 720:912 ratio instead of clipping. 51 tests and the build pass; six-viewport Playwright coverage and all three books were exercised. Published in commit f045b63; GitHub Pages run 40258816097 succeeded; live checks at https://jorgegarciairazabal.github.io/books/ passed with no JavaScript errors."
     }
   ]
 }
