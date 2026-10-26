@@ -58,6 +58,49 @@
         "TASK-PAGES-0001"
       ],
       "result": "Public repository and successful Pages deployment of bcb42ec7dc19835db6ff5cb83f64ace17487132f; Actions run 40251918523 succeeded. Full live browser checks passed, including all six download hashes and all three actual EPUBs. No background model work remains."
+    },
+    {
+      "id": "TASK-SITE-0003",
+      "role": "studio_director",
+      "status": "done",
+      "source_snapshot": "1e342f0 plus the responsive site working tree (2026-10-25)",
+      "inputs": [
+        "AGENTS.md",
+        ".studio/agents/studio_director.md",
+        "handoff.md",
+        "site/index.html",
+        "site/reader.html",
+        "site/assets/css/styles.css",
+        "site/assets/js/catalog.js",
+        "site/assets/js/reader.js",
+        "publications/manifest.json",
+        "docs/publishing.md"
+      ],
+      "allowed_writes": [
+        "site/**",
+        "docs/publishing.md",
+        "handoff.md",
+        "tasks.json",
+        ".studio/reviews/site-responsive-2026-10-25/**"
+      ],
+      "deliverable": "Responsive redesign of the public catalog and browser reader for phone, tablet, and desktop, plus a verified publication",
+      "acceptance": [
+        "Distinct phone, tablet, and desktop layouts",
+        "Legible type, 44px touch targets, and no horizontal overflow from 320px to 1440px",
+        "Catalog filtering, empty state, and search verified",
+        "Reader TOC, font sizing, saved position, progress, start-over, and fixed-layout pages verified",
+        "51 unit tests, site build, and link/hash checks pass",
+        "Published through GitHub Pages with the live site checked"
+      ],
+      "budget": {
+        "max_rounds": 2,
+        "max_tool_calls": 80
+      },
+      "dependencies": [
+        "TASK-PAGES-0001"
+      ],
+      "owner": "studio_director",
+      "result": "Implemented and checked. Catalog cards dropped from 862px to 298px on a 390px phone and from 986px to 659px on desktop; phone reader header dropped from 153px to 106px (reflowable) and 104px to 56px (fixed); fixed-layout pages now fit their own 720:912 ratio instead of clipping. 51 tests and the build pass; six-viewport Playwright coverage and all three books were exercised. Publication is authorized in the same session."
     }
   ]
 }

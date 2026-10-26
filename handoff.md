@@ -1,5 +1,18 @@
 # Workspace handoff
 
+## Responsive catalog and reader redesign, 2026-10-25
+
+- The author asked for a substantial improvement of the published site at phone, tablet, and desktop sizes, with explicit attention to space, type size, and what belongs in each format, then authorized finishing and publishing the new version.
+- Changed paths: `site/index.html`, `site/reader.html`, `site/assets/css/styles.css`, `site/assets/js/catalog.js`, `site/assets/js/reader.js`, `docs/publishing.md`, `tasks.json`, `handoff.md`, and `.studio/reviews/site-responsive-2026-10-25/**`. No manuscript, publication artifact, manifest, build tool, vendored library, or workflow changed.
+- The catalog now uses one compact card per book on phones (cover plate plus details), two columns on tablets, and three columns on desktop with a `76rem` maximum. Search comes first on phones, and the empty state has a visible reset button.
+- The reader now has a compact header, icon pager on phones, a contents drawer with a close button, and a persistent contents rail at wide desktop widths. "Start over" moved into the contents panel. Fixed-layout pages are measured at runtime and fitted to their own 720:912 page ratio; reflowable books are capped at a `46rem` measure. Progress, loading state, 44px touch targets, safe-area insets, `100dvh`, and reduced-motion handling were added.
+- Verification: 51 unit tests passed; `tools/build_catalog.py build` passed all manifest, package, hash, and link checks; both JavaScript files passed `node --check`; Playwright checks covered 320×640, 390×844, 844×390, 768×1024, 1280×800, and 1440×900 on all three books. No horizontal overflow or JavaScript page errors were observed. Functional checks covered filtering, empty state, search shortcut, TOC open/close, chapter jumps, Next/Previous, saved position, font size persistence and bounds, Start over, fixed-layout page turns, and illustration loading.
+- Measured improvements: catalog cards went from 862px to 298px on a 390px phone and from 986px to 659px on a 1440px desktop; the reflowable phone header went from 153px to 106px and the fixed header from 104px to 56px; the pager went from 79px to 62px. The Nell desktop frame is now 589×746 at its native ratio instead of 1411×739 with the page clipped; the reflowable desktop measure is 736px.
+- Evidence: `.studio/reviews/site-responsive-2026-10-25/verification.md`, `metrics.json`, two reproducible Playwright scripts, and curated before/after screenshots.
+- Limits: browser QA used headless Chrome with emulated phone/tablet viewports, not physical devices or every browser. It is not a new literary review or a proof of every page of every book.
+- Publishing: this commit triggers the Pages workflow. Deployment verification is recorded below once the run completes.
+- Next action: confirm the live Pages deployment and spot-check the live catalog and readers at a phone and desktop width.
+
 ## Public catalog and EPUB reader, 2026-10-25
 
 - Author authorized making `JorgeGarciaIrazabal/books` public and publishing the completed PDF/EPUB editions through GitHub Pages, with implementation delegated to OpenCode GLM 5.3 Cloud.

@@ -1,0 +1,146 @@
+{
+  "date": "2026-10-25",
+  "renderer": "155.0.8059.39",
+  "method": "Headless Chrome via Playwright 1.61.1, emulated viewports, local build served over HTTP",
+  "catalog": {
+    "catalog-phone": {
+      "before": {
+        "card_w": 350,
+        "card_h": 862,
+        "card_rows": 3
+      },
+      "after": {
+        "card_w": 358,
+        "card_h": 298,
+        "card_rows": 3
+      },
+      "after_no_horizontal_overflow": true
+    },
+    "catalog-phone-small": {
+      "before": {
+        "card_w": 280,
+        "card_h": 898,
+        "card_rows": 3
+      },
+      "after": {
+        "card_w": 288,
+        "card_h": 303,
+        "card_rows": 3
+      },
+      "after_no_horizontal_overflow": true
+    },
+    "catalog-tablet": {
+      "before": {
+        "card_w": 351,
+        "card_h": 959,
+        "card_rows": 2
+      },
+      "after": {
+        "card_w": 344,
+        "card_h": 531,
+        "card_rows": 2
+      },
+      "after_no_horizontal_overflow": true
+    },
+    "catalog-laptop": {
+      "before": {
+        "card_w": 330,
+        "card_h": 986,
+        "card_rows": 1
+      },
+      "after": {
+        "card_w": 367,
+        "card_h": 636,
+        "card_rows": 1
+      },
+      "after_no_horizontal_overflow": true
+    },
+    "catalog-desktop": {
+      "before": {
+        "card_w": 330,
+        "card_h": 986,
+        "card_rows": 1
+      },
+      "after": {
+        "card_w": 367,
+        "card_h": 659,
+        "card_rows": 1
+      },
+      "after_no_horizontal_overflow": true
+    }
+  },
+  "reader": {
+    "reader-nell-and-the-pocket-sized-storm-phone": {
+      "before": {
+        "header_h": 104,
+        "frame_w": 374,
+        "frame_h": 646,
+        "pager_h": 79
+      },
+      "after": {
+        "header_h": 56,
+        "frame_w": 380,
+        "frame_h": 482,
+        "pager_h": 62
+      },
+      "after_no_horizontal_overflow": true
+    },
+    "reader-mila-and-the-missing-moon-phone": {
+      "before": {
+        "header_h": 153,
+        "frame_w": 374,
+        "frame_h": 596,
+        "pager_h": 79
+      },
+      "after": {
+        "header_h": 106,
+        "frame_w": 380,
+        "frame_h": 666,
+        "pager_h": 62
+      },
+      "after_no_horizontal_overflow": true
+    },
+    "reader-nell-and-the-pocket-sized-storm-desktop": {
+      "before": {
+        "header_h": 66,
+        "frame_w": 1411,
+        "frame_h": 739,
+        "pager_h": 67
+      },
+      "after": {
+        "header_h": 57,
+        "frame_w": 589,
+        "frame_h": 746,
+        "pager_h": 62
+      },
+      "after_no_horizontal_overflow": true
+    },
+    "reader-mila-and-the-missing-moon-desktop": {
+      "before": {
+        "header_h": 66,
+        "frame_w": 1411,
+        "frame_h": 739,
+        "pager_h": 67
+      },
+      "after": {
+        "header_h": 57,
+        "frame_w": 736,
+        "frame_h": 746,
+        "pager_h": 62
+      },
+      "after_no_horizontal_overflow": true
+    }
+  },
+  "functional_checks": [
+    "Catalog: language filter, search, empty state, clear reset, and / shortcut all behave",
+    "Reflowable desktop: persistent contents, 736px measure, chapter jump, progress 13.3%",
+    "Reflowable desktop: Next page advances the saved position",
+    "Reflowable: text size 120% saved and reapplied after reload",
+    "Reflowable: Start over resets progress and position",
+    "Reflowable phone: compact header, 44px controls, contents drawer opens/closes",
+    "Reflowable phone: Start over closes the drawer and resets",
+    "Fixed desktop: 589x746 page, ratio 0.789, chapter jump to Page 6 of 30 · 2. A Very Thirsty Cloud, images [{\"w\":1536,\"h\":1024,\"complete\":true}]",
+    "Fixed phone: 380x482 page, page turn, contents drawer"
+  ],
+  "console_and_page_errors": []
+}

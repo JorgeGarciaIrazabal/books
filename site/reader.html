@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1e2634">
 <title>Books reader</title>
 <meta name="description" content="Read a book from the library directly in the browser.">
 <link rel="stylesheet" href="assets/css/styles.css">
@@ -11,33 +12,50 @@
 <body class="reader-body">
 <div class="reader-shell">
   <header class="reader-bar">
-    <a class="btn btn-ghost back-link" href="index.html">Library</a>
+    <a class="btn btn-ghost back-link" href="index.html" aria-label="Back to the library">
+      <span class="icon" aria-hidden="true">←</span><span class="back-label">Library</span>
+    </a>
     <h1 id="book-title" class="reader-title">Loading</h1>
-    <div class="reader-controls">
-      <span id="font-controls" class="reader-controls" hidden>
-        <button type="button" id="font-smaller" class="btn btn-ghost btn-icon" aria-label="Smaller text">A−</button>
-        <button type="button" id="font-larger" class="btn btn-ghost btn-icon" aria-label="Larger text">A+</button>
-      </span>
-      <button type="button" id="start-over" class="btn btn-ghost" aria-label="Start the book over from the beginning">Start over</button>
-      <button type="button" id="toc-toggle" class="btn" aria-expanded="false" aria-controls="toc-panel">Contents</button>
-    </div>
+    <span id="font-controls" class="font-controls" hidden>
+      <span class="font-label" aria-hidden="true">Text size</span>
+      <button type="button" id="font-smaller" class="btn btn-ghost" aria-label="Smaller text">A−</button>
+      <button type="button" id="font-larger" class="btn btn-ghost" aria-label="Larger text">A+</button>
+    </span>
+    <button type="button" id="toc-toggle" class="btn" aria-expanded="false" aria-controls="toc-panel" aria-label="Table of contents">
+      <span class="icon" aria-hidden="true">☰</span><span class="toc-label">Contents</span>
+    </button>
   </header>
 
   <div class="reader-main">
-    <nav id="toc-panel" class="toc-panel" aria-label="Table of contents" hidden>
-      <h2 class="toc-heading">Contents</h2>
+    <nav id="toc-panel" class="toc-panel" aria-label="Table of contents">
+      <div class="toc-head">
+        <h2 class="toc-heading">Contents</h2>
+        <button type="button" id="toc-close" class="btn btn-ghost toc-close" aria-label="Close the table of contents">×</button>
+      </div>
       <ol id="toc-list" class="toc-list"></ol>
+      <div class="toc-actions">
+        <button type="button" id="start-over" class="btn btn-ghost" aria-label="Start the book over from the beginning">Start over</button>
+      </div>
     </nav>
     <button id="toc-backdrop" class="toc-backdrop" aria-label="Close the table of contents" hidden></button>
     <main class="reader-stage" aria-label="Book pages">
       <div id="epub-frame" class="epub-frame"></div>
+      <div id="reader-loading" class="reader-loading" hidden>
+        <span class="spinner" aria-hidden="true"></span>
+        <span>Opening the book…</span>
+      </div>
     </main>
   </div>
 
-  <footer class="pager-bar">
-    <button type="button" id="prev" class="btn pager-btn">Previous page</button>
+  <footer class="pager-bar" aria-label="Reading controls">
+    <div class="reading-progress" aria-hidden="true"><span id="progress-fill"></span></div>
+    <button type="button" id="prev" class="btn pager-btn" aria-label="Previous page">
+      <span class="pager-icon" aria-hidden="true">‹</span><span class="pager-word">Previous</span>
+    </button>
     <p id="reader-status" class="reader-status" role="status" aria-live="polite">Loading the reader.</p>
-    <button type="button" id="next" class="btn pager-btn">Next page</button>
+    <button type="button" id="next" class="btn pager-btn" aria-label="Next page">
+      <span class="pager-word">Next</span><span class="pager-icon" aria-hidden="true">›</span>
+    </button>
   </footer>
 </div>
 

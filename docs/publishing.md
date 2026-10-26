@@ -19,6 +19,33 @@ The website is deliberately a static, buildless front end: no server, no
 runtime CDN, no downloaded fonts. The only generated file is `catalog.json`,
 written by the build tool from `publications/manifest.json`.
 
+## Responsive presentation
+
+The catalog and reader are styled in three deliberate bands:
+
+| Band | Catalog | Reader |
+| --- | --- | --- |
+| Phone (`<600px`) | one compact card per book; a 100px cover plate beside the details | compact header, icon pager buttons, contents drawer |
+| Tablet (`600–1023px`) | two cards per row | contents drawer, full-width reading area |
+| Desktop (`>=1024px`) | three cards per row, `76rem` maximum | persistent contents rail at wide widths, capped reading measure |
+
+- Interactive controls use at least a 44×44px target. Search text is 16px so
+  iOS does not zoom the page on focus.
+- The phone reader keeps one header row for fixed-layout books and adds a
+  slim text-size row only for reflowable books, maximizing page area.
+- Fixed-layout pages declare their own viewport. The reader measures the
+  rendered page body and fits the frame to that aspect ratio, so illustrations
+  are neither cropped nor left-anchored in a wide white panel.
+- Reflowable books are capped at `46rem` for a comfortable line length. The
+  progress bar uses the EPUB spine index plus the current page within the
+  section when EPUB.js has not generated location percentages.
+- Safe-area insets, `100dvh`, reduced-motion, and hover-only effects are
+  handled in CSS.
+
+These bands were checked with headless Chrome at 320×640, 390×844, 844×390,
+768×1024, 1280×800, and 1440×900, including all three books. That is emulated
+viewport coverage, not a physical-device or cross-browser certification.
+
 ## Local preview and checks
 
 ```sh
@@ -148,8 +175,12 @@ version together.
 
 * The reader only opens books listed in `catalog.json`; it never loads an
   EPUB from an arbitrary external URL.
-* Fixed-layout books (like Nell) render one page at a time; reflowable books
-  (like the Mila editions) paginate and offer text size controls.
+* Fixed-layout books (like Nell) render one page at a time and are fitted to
+  their own page proportions; reflowable books (like the Mila editions)
+  paginate, offer text size controls, and are capped at a `46rem` measure.
+* Wide desktop screens show a persistent contents rail; smaller screens use a
+  slide-over drawer with an explicit close button. "Start over" lives in the
+  contents panel so the reading header stays compact.
 * Reading positions and text size are stored per book in the visitor's
   localStorage. If storage is unavailable (private mode and similar), the
   reader says so and works without saving.

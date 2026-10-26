@@ -14,6 +14,7 @@
   var tocList = byId("toc-list");
   var tocBackdrop = byId("toc-backdrop");
   var tocToggle = byId("toc-toggle");
+  var tocClose = byId("toc-close");
   var prevBtn = byId("prev");
   var nextBtn = byId("next");
   var fontBox = byId("font-controls");
@@ -21,12 +22,18 @@
   var fontLarger = byId("font-larger");
   var startOverBtn = byId("start-over");
   var titleEl = byId("book-title");
+  var loadingEl = byId("reader-loading");
+  var progressFill = byId("progress-fill");
 
   function say(message, isError) {
     if (statusEl) {
       statusEl.textContent = message;
       statusEl.classList.toggle("is-error", Boolean(isError));
     }
+  }
+
+  function hideLoading() {
+    if (loadingEl) { loadingEl.hidden = true; }
   }
 
   function storageWorks() {
@@ -47,10 +54,12 @@
 
   if (!/^[a-z0-9][a-z0-9-]*$/.test(bookId)) {
     say("No book was selected. Go back to the library and choose a title.", true);
+    hideLoading();
     return;
   }
   if (typeof window.ePub !== "function" || typeof window.JSZip === "undefined") {
     say("The reader engine did not load. Refresh the page, or return to the library and try again.", true);
+    hideLoading();
     return;
   }
 
@@ -74,10 +83,13 @@
   function start(book) {
     titleEl.textContent = book.title;
     document.title = book.title + " · Books reader";
+    document.body.classList.add(book.layout === "fixed" ? "is-fixed" : "is-reflowable");
+    if (loadingEl) { loadingEl.hidden = false; }
 
     var epubUrl = book.downloads && book.downloads.epub;
     if (!epubUrl || epubUrl.indexOf("publications/") !== 0) {
       say("This book has no EPUB edition in the catalog.", true);
+      hideLoading();
       return;
     }
 
@@ -90,15 +102,17 @@
         height: "100%",
         flow: "paginated",
         spread: book.layout === "fixed" ? "none" : "auto",
-        minSpreadWidth: 900
+        minSpreadWidth: 1200
       });
     } catch (err) {
       say("The reader could not start for this book.", true);
+      hideLoading();
       return;
     }
 
     epubBook.on("openFailed", function () {
       say("This book could not be opened. The file may be missing or damaged.", true);
+      hideLoading();
     });
 
     if (!canStore) {
@@ -129,13 +143,21 @@
       catch (err) { /* not all renditions support themes */ }
     }
 
+    function updateFontButtons() {
+      if (!fontSmaller || !fontLarger) { return; }
+      fontSmaller.disabled = scale <= 90;
+      fontLarger.disabled = scale >= 170;
+    }
+
     if (book.layout !== "fixed") {
       fontBox.hidden = false;
+      updateFontButtons();
       fontSmaller.addEventListener("click", function () {
         if (scale > 90) {
           scale -= 10;
           savePrefs();
           applyFont();
+          updateFontButtons();
           say("Text size " + scale + "%.");
         }
       });
@@ -144,9 +166,32 @@
           scale += 10;
           savePrefs();
           applyFont();
+          updateFontButtons();
           say("Text size " + scale + "%.");
         }
       });
+    }
+
+    /* ---------- fixed-layout page proportions ---------- */
+
+    function applyFixedRatio() {
+      if (book.layout !== "fixed" || frame.getAttribute("data-page-ratio")) { return; }
+      var contents;
+      try { contents = rendition.getContents(); }
+      catch (err) { return; }
+      if (!contents || !contents.length) { return; }
+      var doc = contents[0] && contents[0].document;
+      var body = doc && doc.body;
+      if (!body) { return; }
+      var w = body.offsetWidth;
+      var h = body.offsetHeight;
+      if (!w || !h) { return; }
+      var ratio = w / h;
+      frame.setAttribute("data-page-ratio", ratio.toFixed(4));
+      frame.style.setProperty("--book-ratio", String(ratio));
+      window.setTimeout(function () {
+        try { rendition.resize(); } catch (err) { /* keep current size */ }
+      }, 40);
     }
 
     /* ---------- table of contents ---------- */
@@ -164,7 +209,7 @@
           rendition.display(item.href).catch(function () {
             say("That part of the book could not be opened.", true);
           });
-          closeToc();
+          closeToc(true);
         });
         var clean = String(item.href || "").split("#")[0].replace(/^\//, "");
         if (clean && !chapterByHref[clean]) { chapterByHref[clean] = button.textContent; }
@@ -204,8 +249,36 @@
       return 0;
     }
 
+    function updateProgress(location) {
+      if (!progressFill || !location || !location.start) { return; }
+      var pct = 0;
+      var total = spineCount();
+      if (book.layout === "fixed") {
+        if (total && location.start.index != null) {
+          pct = (location.start.index + 1) / total;
+        }
+      } else if (typeof location.start.percentage === "number" && location.start.location >= 0) {
+        pct = location.start.percentage;
+      } else if (total && location.start.index != null) {
+        /* EPUB.js only computes a percentage after locations are generated,
+           which we skip to keep opening a book instant. The spine index and
+           the current page within the section give an honest approximation. */
+        var within = 0;
+        var displayed = location.start.displayed;
+        if (displayed && displayed.total) {
+          within = Math.max(0, (displayed.page - 1) / displayed.total);
+        }
+        pct = (location.start.index + within) / total;
+      }
+      pct = Math.max(0, Math.min(1, pct));
+      progressFill.style.width = Math.round(pct * 1000) / 10 + "%";
+    }
+
     rendition.on("relocated", function (location) {
       if (!location || !location.start) { return; }
+      hideLoading();
+      applyFixedRatio();
+      updateProgress(location);
       if (canStore && location.start.cfi) {
         try {
           window.localStorage.setItem(
@@ -231,6 +304,8 @@
       markCurrentToc(location.start.href);
     });
 
+    rendition.on("rendered", applyFixedRatio);
+
     function markCurrentToc(href) {
       var clean = String(href || "").split("#")[0].replace(/^\//, "");
       var buttons = tocList.querySelectorAll("button[data-href]");
@@ -245,7 +320,6 @@
     }
 
     function openToc() {
-      tocPanel.hidden = false;
       tocBackdrop.hidden = false;
       window.requestAnimationFrame(function () {
         tocPanel.classList.add("is-open");
@@ -253,19 +327,24 @@
       tocToggle.setAttribute("aria-expanded", "true");
     }
 
-    function closeToc() {
+    function closeToc(restoreFocus) {
       tocPanel.classList.remove("is-open");
       tocBackdrop.hidden = true;
       tocToggle.setAttribute("aria-expanded", "false");
+      if (restoreFocus && tocToggle.offsetParent !== null) {
+        tocToggle.focus();
+      }
     }
 
-    tocPanel.hidden = false;
     tocBackdrop.hidden = true;
     tocToggle.addEventListener("click", function () {
-      if (tocPanel.classList.contains("is-open")) { closeToc(); }
+      if (tocPanel.classList.contains("is-open")) { closeToc(true); }
       else { openToc(); }
     });
-    tocBackdrop.addEventListener("click", closeToc);
+    tocBackdrop.addEventListener("click", function () { closeToc(true); });
+    if (tocClose) {
+      tocClose.addEventListener("click", function () { closeToc(true); });
+    }
 
     /* ---------- paging ---------- */
 
@@ -279,6 +358,7 @@
     document.addEventListener("keydown", function (event) {
       var tag = event.target && event.target.tagName;
       if (tag && /input|textarea|select/i.test(tag)) { return; }
+      if (event.ctrlKey || event.metaKey || event.altKey) { return; }
       if (event.key === "ArrowRight" || event.key === "PageDown") {
         event.preventDefault();
         rendition.next().catch(function () {});
@@ -286,7 +366,7 @@
         event.preventDefault();
         rendition.prev().catch(function () {});
       } else if (event.key === "Escape") {
-        closeToc();
+        if (tocPanel.classList.contains("is-open")) { closeToc(true); }
       }
     });
 
@@ -298,6 +378,8 @@
       rendition.display(0).catch(function () {
         rendition.display().catch(function () { /* keep current view */ });
       });
+      if (progressFill) { progressFill.style.width = "0%"; }
+      closeToc(true);
       say("Back at the beginning.");
     });
 
@@ -324,6 +406,7 @@
         throw new Error("Could not display the book content.");
       });
     }).catch(function (err) {
+      hideLoading();
       say("The book could not be opened. " + (err && err.message ? err.message : ""), true);
     });
   }
