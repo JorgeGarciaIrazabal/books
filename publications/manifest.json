@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "title": "Books",
+  "description": "Public library of read-aloud stories and picture books, published at https://JorgeGarciaIrazabal.github.io/books/",
+  "provenance": {
+    "source_commit": "e4cf1941351b958883f72284532cd58d5a4cdd67",
+    "copied": "2026-10-25",
+    "note": "Download files are byte-for-byte copies of the selected export artifacts. Cover images are derived from the published editions as noted per book. This file stays in the repository and is not copied into the website; tools/build_catalog.py projects only the public fields into _site/catalog.json."
+  },
+  "books": [
+    {
+      "id": "nell-and-the-pocket-sized-storm",
+      "title": "Nell and the Pocket-Sized Storm",
+      "summary": "Nell finds a tiny talking storm hiding in her boot and sets out to help it catch up with its storm family. A funny, warm read-aloud story with an impromptu garden band, a kite ride, and a cozy bedtime ending, told in six short chapters with twelve pictures.",
+      "language": "en",
+      "layout": "fixed",
+      "edition_note": "Illustrated reading edition (v3), 30 story pages, six chapters, twelve illustrations; fixed-layout EPUB 3 with selectable text.",
+      "downloads": {
+        "epub": {
+          "path": "nell-and-the-pocket-sized-storm.epub",
+          "bytes": 30826128,
+          "sha256": "5027cc6302965743f55ed9c8e5f69087b0a72ec961093112426002752eb0fa7e"
+        },
+        "pdf": {
+          "path": "nell-and-the-pocket-sized-storm.pdf",
+          "bytes": 34967658,
+          "sha256": "4684ef3f791b97a540506266ad6306ca25c10f22f012a3f33e75ec03c1900b76"
+        }
+      },
+      "cover": {
+        "path": "covers/nell-and-the-pocket-sized-storm.jpg",
+        "bytes": 67769,
+        "sha256": "15166dda12513ba0ab7214fca7c1d79eb423f3e8931918b4a5e0a89bf02a7fe4",
+        "derived_from": "EPUB/images/cover.jpg inside the published EPUB, converted to a 720-pixel-wide JPEG"
+      },
+      "sources": [
+        {
+          "path": "little-weather/standalone/nell-and-the-pocket-sized-storm/exports/nell-and-the-pocket-sized-storm.epub",
+          "role": "epub"
+        },
+        {
+          "path": "little-weather/standalone/nell-and-the-pocket-sized-storm/exports/nell-and-the-pocket-sized-storm.pdf",
+          "role": "pdf"
+        }
+      ]
+    },
+    {
+      "id": "mila-and-the-missing-moon",
+      "title": "Mila and the Missing Moon",
+      "summary": "Mila, a neighborhood detective, investigates the disappearance of the big handmade moon lantern before the lantern walk. With her friend Noah's drawings and practical tests, she follows real clues, repairs a wrong accusation, and finds the moon by testing evidence instead of blaming a person. Twelve short chapters, each a natural stopping point for reading aloud at bedtime.",
+      "language": "en",
+      "layout": "reflowable",
+      "edition_note": "Reading edition, 12 chapters, 50 PDF pages; reflowable EPUB 3 with linked chapter contents and reader-controlled font sizing.",
+      "downloads": {
+        "epub": {
+          "path": "mila-and-the-missing-moon.epub",
+          "bytes": 28014,
+          "sha256": "ac80d62492bff6c5bd3be047b36ee5e928ab9a2fca931a4f1f1a8934def1558b"
+        },
+        "pdf": {
+          "path": "mila-and-the-missing-moon.pdf",
+          "bytes": 163954,
+          "sha256": "17f4caeab0fcc0c3dc144f61e11880e72c502edbb0b9e68a368bb2df7911fffc"
+        }
+      },
+      "cover": {
+        "path": "covers/mila-and-the-missing-moon.jpg",
+        "bytes": 35249,
+        "sha256": "d1db00ee5f70c556e69e725996c5de54a7d91a2bad6dc42db4f5c1dda5a69923",
+        "derived_from": "Title page of the published PDF, rendered at 110 dpi and converted to a 720-pixel-wide JPEG"
+      },
+      "sources": [
+        {
+          "path": "willow-lane/standalone/mila-and-the-missing-moon/exports/mila-and-the-missing-moon.epub",
+          "role": "epub"
+        },
+        {
+          "path": "willow-lane/standalone/mila-and-the-missing-moon/exports/mila-and-the-missing-moon.pdf",
+          "role": "pdf"
+        }
+      ]
+    },
+    {
+      "id": "mila-y-la-luna-perdida",
+      "title": "Mila y la luna perdida",
+      "summary": "Mila, detective de barrio, investiga la desaparición de la gran luna de papel hecha a mano antes del paseo de los faroles. Con los dibujos y las pruebas de su amigo Noah, sigue las pistas, repara una acusación equivocada y encuentra la luna. Doce capítulos cortos, pensados como paradas naturales para leer en voz alta antes de dormir.",
+      "language": "es",
+      "layout": "reflowable",
+      "edition_note": "Spanish edition of the same reading edition; reflowable EPUB 3 with linked chapter contents.",
+      "downloads": {
+        "epub": {
+          "path": "mila-y-la-luna-perdida.epub",
+          "bytes": 29910,
+          "sha256": "4ffed331d853ee52794e3c2e38b0b2ebe0ada6eeb466792cb0042a0c340e0452"
+        },
+        "pdf": {
+          "path": "mila-y-la-luna-perdida.pdf",
+          "bytes": 168270,
+          "sha256": "18f8eaa86c49281003fc5e19d8ef6b63cba8ca5341d3ff7e251493dc495c248b"
+        }
+      },
+      "cover": {
+        "path": "covers/mila-y-la-luna-perdida.jpg",
+        "bytes": 34705,
+        "sha256": "6df5af4d3c468e2acfb27a92c7920645d2c9f40d0477141b53de10e40a07e63d",
+        "derived_from": "Title page of the published PDF, rendered at 110 dpi and converted to a 720-pixel-wide JPEG"
+      },
+      "sources": [
+        {
+          "path": "willow-lane/standalone/mila-and-the-missing-moon/exports/mila-y-la-luna-perdida.epub",
+          "role": "epub"
+        },
+        {
+          "path": "willow-lane/standalone/mila-and-the-missing-moon/exports/mila-y-la-luna-perdida.pdf",
+          "role": "pdf"
+        }
+      ]
+    }
+  ]
+}

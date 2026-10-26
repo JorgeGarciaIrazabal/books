@@ -1,6 +1,9 @@
 # Book Studio
 
 A professional writing workspace for original books, series, and shared universes.
+
+Read the published editions in the [Book Studio catalog](https://jorgegarciairazabal.github.io/books/): browse the library, read EPUBs in your browser, or download EPUB and PDF editions. Publication setup and edition updates are documented in [publishing guidance](docs/publishing.md).
+
 Eighteen native specialist definitions share one set of Markdown contracts across
 **Codex** and **OpenCode 2.x**. Those tools run and coordinate the agents; there is
 no custom orchestration framework. The author sets the direction; agents plan, write, challenge,

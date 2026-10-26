@@ -48,6 +48,28 @@
               }
             }
           ]
+        },
+        "glm-5.3:cloud": {
+          "variants": [
+            {
+              "id": "low",
+              "body": {
+                "reasoning_effort": "low"
+              }
+            },
+            {
+              "id": "high",
+              "body": {
+                "reasoning_effort": "high"
+              }
+            },
+            {
+              "id": "max",
+              "body": {
+                "reasoning_effort": "max"
+              }
+            }
+          ]
         }
       }
     }

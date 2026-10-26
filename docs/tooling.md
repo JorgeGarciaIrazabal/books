@@ -82,6 +82,14 @@ explicitly without inference:
 opencode api agent.list -H "x-opencode-directory:/absolute/path/to/books"
 ```
 
+For the author-requested GitHub Pages implementation, OpenCode used the explicit
+`ollama/glm-5.3:cloud#low` override. Project configuration exposes the model's
+supported low/high/max variants without changing the studio's default routes.
+On 2026-10-25, Ollama `/api/show` reported `max` as GLM's default; the initial
+default-effort inference was interrupted after a prolonged pause before any
+implementation edits. Session evidence and actual checks are recorded under
+`.studio/reviews/github-pages-2026-10-25/`.
+
 The adoption check used this API with the actual repository path and verified all
 16 studio roles. Preferred OpenRouter Sol routes remain metadata only: a native
 probe returned HTTP 403 because the connected key had reached its spending cap.

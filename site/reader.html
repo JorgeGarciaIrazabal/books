@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Books reader</title>
+<meta name="description" content="Read a book from the library directly in the browser.">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+</head>
+<body class="reader-body">
+<div class="reader-shell">
+  <header class="reader-bar">
+    <a class="btn btn-ghost back-link" href="index.html">Library</a>
+    <h1 id="book-title" class="reader-title">Loading</h1>
+    <div class="reader-controls">
+      <span id="font-controls" class="reader-controls" hidden>
+        <button type="button" id="font-smaller" class="btn btn-ghost btn-icon" aria-label="Smaller text">A−</button>
+        <button type="button" id="font-larger" class="btn btn-ghost btn-icon" aria-label="Larger text">A+</button>
+      </span>
+      <button type="button" id="start-over" class="btn btn-ghost" aria-label="Start the book over from the beginning">Start over</button>
+      <button type="button" id="toc-toggle" class="btn" aria-expanded="false" aria-controls="toc-panel">Contents</button>
+    </div>
+  </header>
+
+  <div class="reader-main">
+    <nav id="toc-panel" class="toc-panel" aria-label="Table of contents" hidden>
+      <h2 class="toc-heading">Contents</h2>
+      <ol id="toc-list" class="toc-list"></ol>
+    </nav>
+    <button id="toc-backdrop" class="toc-backdrop" aria-label="Close the table of contents" hidden></button>
+    <main class="reader-stage" aria-label="Book pages">
+      <div id="epub-frame" class="epub-frame"></div>
+    </main>
+  </div>
+
+  <footer class="pager-bar">
+    <button type="button" id="prev" class="btn pager-btn">Previous page</button>
+    <p id="reader-status" class="reader-status" role="status" aria-live="polite">Loading the reader.</p>
+    <button type="button" id="next" class="btn pager-btn">Next page</button>
+  </footer>
+</div>
+
+<script src="assets/vendor/jszip.min.js"></script>
+<script src="assets/vendor/epub.min.js"></script>
+<script src="assets/js/reader.js"></script>
+</body>
+</html>

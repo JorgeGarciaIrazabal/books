@@ -1,0 +1,62 @@
+{
+  "tasks": [
+    {
+      "id": "TASK-PAGES-0001",
+      "role": "production_editor",
+      "status": "done",
+      "source_snapshot": "e4cf1941351b958883f72284532cd58d5a4cdd67",
+      "inputs": [
+        "AGENTS.md",
+        ".studio/agents/production_editor.md",
+        "handoff.md",
+        "little-weather/standalone/nell-and-the-pocket-sized-storm/handoff.md",
+        "willow-lane/standalone/mila-and-the-missing-moon/handoff.md"
+      ],
+      "allowed_writes": [
+        "site/**",
+        "publications/**",
+        "tools/build_catalog.py",
+        "tests/test_catalog.py",
+        ".github/workflows/pages.yml",
+        "docs/publishing.md"
+      ],
+      "deliverable": "Static book catalog, in-browser EPUB reader, selected PDF/EPUB editions, reproducible Pages build and deploy workflow",
+      "acceptance": [
+        "Three completed language editions available",
+        "Actual EPUB reading and downloads",
+        "Works at /books/ project base path",
+        "Accessible responsive presentation",
+        "Preserve original manuscripts and exports",
+        "Report actual model, paths, checks, and limitations"
+      ],
+      "budget": {
+        "max_rounds": 2,
+        "max_tool_calls": 40
+      },
+      "dependencies": [],
+      "owner": "OpenCode production_editor sessions ses_e8a9a0ce6ffeoC8kH2q7knYZL8 and ses_e8a89bc4effeG4LVKz77zDjoyL; explicit ollama/glm-5.3:cloud#low",
+      "result": "Implementation and coordinator QA complete; 51 unit tests and full browser check passed. Runtime evidence in .studio/reviews/github-pages-2026-10-25/model-provenance.json. Correction session exceeded its requested tool-call cap; no additional model turn started."
+    },
+    {
+      "id": "TASK-PAGES-0002",
+      "role": "studio_director",
+      "status": "in-progress",
+      "source_snapshot": "working tree with exact site/build SHA256 inventory in .studio/reviews/github-pages-2026-10-25/verified-source-hashes.json",
+      "allowed_writes": [
+        "handoff.md",
+        "tasks.json",
+        ".studio/reviews/github-pages-2026-10-25/**",
+        ".github/workflows/pages.yml",
+        "README.md",
+        "docs/tooling.md",
+        "opencode.json",
+        ".gitignore"
+      ],
+      "deliverable": "Public GitHub repository and verified GitHub Pages deployment",
+      "owner": "coordinator",
+      "dependencies": [
+        "TASK-PAGES-0001"
+      ]
+    }
+  ]
+}
