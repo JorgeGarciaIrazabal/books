@@ -2,8 +2,7 @@
 
 Date: 2026-10-27
 Role: studio_director
-Status: **text editions published; Drama 3 audiobook render in progress; audio not
-published**
+Status: **text editions and Drama 3 audiobook published**
 Source snapshot: `a135b26` plus the working tree; ordered chapter inventory
 `a624ce350e948890f0cc59cd549d6baca5a85da4fc038b375e044f7661b29c4e`
 (22 chapters, 48,850 whitespace-delimited words; reading master SHA-256
@@ -88,38 +87,51 @@ Fingerprints:
   page. No JavaScript errors.
 - Not performed: physical phone/tablet, Safari/Firefox, screen-reader pass.
 
-## Audio status (not published)
+## Audiobook
 
-- A 6 h 23 min Piper draft was rendered from 484 word-exact segments in 602 s.
-  It was withheld after ASR (`base.en`) found 3,263 word differences across
-  483/484 segments, mostly character names (Ragna heard as Ragnar 385 times,
-  Sella as seller, Neri as nary, Ilva as ilver, Tavin as taven/tavern, Kelm as
-  helm). It is not on the public site.
-- The full Drama 3 render, the documented voice, was started over the same 484
-  segments. It is expected to take about 6.5 hours. Its output is in
-  `wizarding-world/goblin-wars/the-ledger-of-ashes/exports/narration-drama3/`
-  (gitignored) and is not part of this release.
-- **No human listened to either audio draft.** The author accepted this limit
-  for the planned audio release. Drama 3 output still needs coverage checks and
-  chapter assembly before publication.
+- The full book was rendered with the documented Drama 3 voice from the 484
+  word-exact segments: 22 chapter MP3s, mono 96 kbps at 24 kHz, 5 h 15 min,
+  217 MB. A one-shot batch at `max_tokens=2200` hit a Vulkan DAC allocation
+  error after three segments; 1400 is stable. The render ran in 20 chunks of
+  25 pages (the last nine).
+- Nine segments hit the 1400-token cap and were split at sentence boundaries
+  and concatenated: pages 4, 44, 136, 213, 268, 305, 311, 333 and 403. The
+  repaired pages were re-rendered and checked for the cap again.
+- Coverage and chapter hashes pass. An 11-segment ASR spot check covered the
+  nine repaired pages plus pages 1 and 484; differences were names, numbers,
+  homophones and punctuation, with one inserted article. No words were missing
+  from the repaired takes.
+- **No human listened to the audiobook.** The public page states the synthetic
+  provenance, the coverage check, the 11-segment spot check and the missing
+  human listen. The Piper draft from the same segment map remains unpublished.
 - Rights: the voice is synthetic Drama 3 using the provisional Kokoro reference;
   the Fish Audio Community License and voice provenance apply. No identifiable
-  person is imitated. The work is unofficial fan fiction; no franchise
-  distribution right is claimed.
+  person is imitated.
 
 ## Deployment
 
 - Text release commit: `8e3fd8685bc491c257af72812c88d3b50378b1af`
-  ("Publish The Ledger of Ashes text editions").
-- GitHub Pages run
-  [40608512713](https://github.com/JorgeGarciaIrazabal/books/actions/runs/40608512713):
-  build and deploy succeeded.
+  ("Publish The Ledger of Ashes text editions"); Pages run
+  [40608512713](https://github.com/JorgeGarciaIrazabal/books/actions/runs/40608512713)
+  succeeded.
+- Audio release commit: `7a0da7dd84362c792abf068293a7f429e5cea46d`
+  ("Publish The Ledger of Ashes audiobook"); Pages run
+  [40645325596](https://github.com/JorgeGarciaIrazabal/books/actions/runs/40645325596)
+  succeeded.
 - Live URL: https://jorgegarciairazabal.github.io/books/
-- Live evidence: `.studio/reviews/goblin-wars-pages-2026-10-27/live-verification.json`.
+- Live checks: four catalogue cards; the goblin reader title/About pages; live
+  EPUB/PDF/cover sizes and SHA-256 matching the manifest; the audiobook page has
+  22 native audio players, 0 autoplay, all `preload="none"`, no phone horizontal
+  overflow and no JavaScript errors. Chapter 1 returns HTTP 200 with
+  `Content-Type: audio/mp3`, 10,288,844 bytes, and its SHA-256 matches the
+  published chapter manifest. Evidence:
+  `.studio/reviews/goblin-wars-pages-2026-10-27/live-verification.json` and
+  `live-audio-verification.json`.
+- Not performed: physical phone/tablet, Safari/Firefox, screen-reader pass,
+  human listening.
 
 ## Next action
 
-When the Drama 3 render finishes, assemble the 22 chapter MP3s, spot-check the
-names and coverage, add `site/audiobook.html` and `site/audio/the-ledger-of-ashes/`,
-update the card and manifest, and publish the audio release. Add Books Two and
-Three only when written.
+Listen to chapter 1 and spot-check the names (Ragna, Tavin, Sella, Neri, Dorrik,
+Ilva, Merrok, Kelm, Thorn). If the voice is accepted, keep it; otherwise
+re-render with a chosen voice. Add Books Two and Three only when written.

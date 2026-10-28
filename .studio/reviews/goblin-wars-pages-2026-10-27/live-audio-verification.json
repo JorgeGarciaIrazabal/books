@@ -1,0 +1,23 @@
+{
+  "cards": 4,
+  "listen": 1,
+  "audios": 22,
+  "autoplay": 0,
+  "preloadNone": 22,
+  "notice": "Synthetic narration. Generated locally with Fish Audio Drama 3; not a human performance. This edition was assembled from 484 word-exact segments. Coverage checked; 11-segment ASR spot check; human listening pending. The ",
+  "meta": {
+    "duration": 857.327167,
+    "readyState": 4,
+    "error": null,
+    "src": "https://jorgegarciairazabal.github.io/books/audio/the-ledger-of-ashes/chapter-01.mp3"
+  },
+  "overflow": false,
+  "errors": [],
+  "first": {
+    "file": "chapter-01.mp3",
+    "bytes": 10288844,
+    "expectedBytes": 10288844,
+    "sha256": "cd9cf2498ac2e1c04f823f58f8ca32d42cc79635be119c6189362a8b83a98671",
+    "expectedSha": "cd9cf2498ac2e1c04f823f58f8ca32d42cc79635be119c6189362a8b83a98671"
+  }
+}

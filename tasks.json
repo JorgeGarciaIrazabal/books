@@ -105,7 +105,7 @@
     {
       "id": "TASK-PAGES-0005",
       "role": "studio_director",
-      "status": "in_progress",
+      "status": "done",
       "source_snapshot": "a135b26 plus the wizarding-world/goblin-wars working tree, 2026-10-27; chapter inventory a624ce350e948890f0cc59cd549d6baca5a85da4fc038b375e044f7661b29c4e",
       "inputs": [
         "AGENTS.md",
@@ -143,7 +143,7 @@
       },
       "dependencies": [],
       "owner": "studio_director (deepseek-v4.1-flash)",
-      "result": "EPUB and PDF published in 8e3fd86 (Pages run 40608512713). Drama 3 audiobook assembled at 5 h 15 min, 22 chapters; audio release prepared. No human listening performed; 11-segment ASR spot check."
+      "result": "EPUB/PDF published in 8e3fd86 (Pages run 40608512713); Drama 3 audiobook published in 7a0da7d (Pages run 40645325596). 52 tests, build/link/hash checks and live checks passed. Audio: 22 chapters, 5 h 15 min, 484 segments, 9 capped pages repaired, 11-segment ASR spot check. No human listening performed."
     }
   ]
 }
