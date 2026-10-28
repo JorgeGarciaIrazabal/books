@@ -73,43 +73,37 @@ def main() -> int:
   <div class="wrap audio-shell"><a class="audio-back" href="index.html">← All books</a><span class="audio-brand">THE LIBRARY / AUDIOBOOK</span></div>
 </header>
 <main class="wrap audio-shell">
-  <section class="audio-hero" aria-labelledby="book-title">
-    <img class="audio-cover" src="publications/covers/the-ledger-of-ashes.jpg" alt="Cover of The Ledger of Ashes">
-    <div class="audio-intro">
-      <p class="audio-eyebrow">THE GOBLIN WARS · BOOK ONE</p>
-      <h1 id="book-title">The Ledger of Ashes</h1>
-      <p class="audio-description">An unofficial Wizarding World fan novel</p>
-      <p class="audio-meta">22 chapters <span>•</span> {total} <span>•</span> English</p>
-      <div class="audio-links">
-        <a class="audio-link-primary" href="reader.html?book={escape(args.book_id)}">Read the book <span aria-hidden="true">↗</span></a>
-        <a href="publications/{escape(args.book_id)}.epub" download>EPUB</a>
-        <a href="publications/{escape(args.book_id)}.pdf" download>PDF</a>
-      </div>
-    </div>
-  </section>
   <div class="audio-layout">
-    <section class="chapter-section" aria-labelledby="chapters-title">
-      <div class="section-heading"><div><p class="audio-eyebrow">THE COMPLETE AUDIOBOOK</p><h2 id="chapters-title">Chapters</h2></div><span>22 TRACKS</span></div>
-      <p class="chapter-instruction">Choose any chapter to start listening.</p>
+    <aside class="chapter-section" aria-labelledby="chapters-title">
+      <div class="section-heading"><div><p class="audio-eyebrow">THE GOBLIN WARS · BOOK ONE</p><h2 id="chapters-title">Chapters</h2></div><span>22 TRACKS</span></div>
+      <p class="chapter-instruction">Choose a chapter, then press play.</p>
       <ol class="chapter-audio">
 {chr(10).join(items)}
       </ol>
-    </section>
-    <aside class="player-column">
+    </aside>
+    <div class="player-column">
       <section id="audio-player" class="audio-player" aria-label="Audiobook player" hidden>
-        <div class="player-top"><span class="player-dot"></span> SELECTED CHAPTER <span id="audio-position"></span></div>
-        <h2 id="audio-current"></h2>
-        <p class="player-book">The Ledger of Ashes</p>
+        <p class="audio-eyebrow">THE GOBLIN WARS · BOOK ONE</p>
+        <img class="audio-cover" src="publications/covers/the-ledger-of-ashes.jpg" alt="Cover of The Ledger of Ashes">
+        <h1 id="book-title">The Ledger of Ashes</h1>
+        <p class="audio-description">An unofficial Wizarding World fan novel</p>
+        <div class="player-current"><p id="audio-position"></p><h2 id="audio-current"></h2></div>
         <div id="audio-control"></div>
         <div class="audio-player-nav">
-          <button id="audio-previous" type="button">← Previous</button>
-          <button id="audio-next" type="button">Next →</button>
+          <button id="audio-previous" type="button">← Previous chapter</button>
+          <button id="audio-next" type="button">Next chapter →</button>
         </div>
-        <p class="player-hint">Chapters play continuously after you start listening.</p>
+        <p class="player-hint">The next chapter plays automatically.</p>
         <p id="audio-status" role="status"></p>
+        <div class="audio-links">
+          <a href="reader.html?book={escape(args.book_id)}">Read the book</a>
+          <a id="audio-download" download>Download chapter</a>
+          <a href="publications/{escape(args.book_id)}.epub" download>EPUB</a>
+          <a href="publications/{escape(args.book_id)}.pdf" download>PDF</a>
+        </div>
       </section>
       <details class="audio-notice"><summary>About this narration</summary><p><strong>Synthetic narration.</strong> {escape(credit)} This edition was assembled from {total_segments} word-exact segments. {escape(review)} The EPUB and PDF remain the authoritative text.</p></details>
-    </aside>
+    </div>
   </div>
 </main>
 

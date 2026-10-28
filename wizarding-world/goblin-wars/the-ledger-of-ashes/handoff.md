@@ -1,5 +1,11 @@
 # Handoff
 
+## Simplified audiobook player, 2026-10-28
+
+- Responded to author feedback by centering one player and placing chapter selection in a sidebar; selecting a chapter preserves the playing or paused state. Continuous playback and individual downloads remain available. Changed `production/build_audiobook_page.py`, `site/audiobook.html`, `site/assets/css/audiobook.css` and `site/assets/js/audiobook.js`.
+- Checks: 57 tests and site build/link checks passed; inspected a desktop Chrome screenshot. Mobile device and actual chapter transitions still need testing; the narration listening review remains outstanding.
+- Next: test on a mobile device and listen to chapter transitions.
+
 ## Audiobook redesign, 2026-10-28
 
 - Redesigned the public audiobook page with the cover, a player and a chapter list with explicit play buttons for every chapter. Previous/next controls, continuous playback, downloads and the no-JavaScript native players remain available. Changed `production/build_audiobook_page.py`, `site/audiobook.html`, `site/assets/css/audiobook.css` and `site/assets/js/audiobook.js`.

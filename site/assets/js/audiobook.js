@@ -9,6 +9,7 @@
   var status = document.getElementById("audio-status");
   var previous = document.getElementById("audio-previous");
   var next = document.getElementById("audio-next");
+  var download = document.getElementById("audio-download");
   var current = 0;
   var chapters = rows.map(function (row, index) {
     var heading = row.querySelector("h3");
@@ -18,16 +19,14 @@
     button.type = "button";
     button.className = "chapter-select";
     var chapterTitle = heading.textContent;
-    var name = document.createElement("span");
-    name.textContent = chapterTitle;
-    var label = document.createElement("span");
-    label.className = "play-label";
-    label.setAttribute("aria-hidden", "true");
-    label.textContent = "▶ Play";
-    button.append(name, label);
-    button.setAttribute("aria-label", "Play " + chapterTitle);
+    button.textContent = chapterTitle.replace(/^Chapter [^:]+: /, "");
+    button.setAttribute("aria-label", chapterTitle);
+    var details = row.querySelector("p");
+    var link = details.querySelector("a");
+    var downloadHref = link.href;
+    link.hidden = true;
     heading.replaceWith(button);
-    button.addEventListener("click", function () { select(index, true); });
+    button.addEventListener("click", function () { select(index, !chapters[current].audio.paused); });
     audio.addEventListener("ended", function () {
       if (index !== current) { return; }
       if (index + 1 < chapters.length) { select(index + 1, true); }
@@ -36,7 +35,7 @@
     audio.addEventListener("error", function () {
       if (index === current) { status.textContent = "This chapter could not be played. Try again or choose another chapter."; }
     });
-    return { audio: audio, button: button, title: chapterTitle, label: label };
+    return { audio: audio, button: button, title: chapterTitle, download: downloadHref };
   });
   function select(index, play) {
     var old = chapters[current].audio;
@@ -46,10 +45,11 @@
     var chapter = chapters[index];
     control.replaceChildren(chapter.audio);
     title.textContent = chapter.title;
+    download.href = chapter.download;
     position.textContent = "Chapter " + (index + 1) + " of " + chapters.length;
     chapters.forEach(function (item, i) {
-      if (i === index) { item.button.setAttribute("aria-current", "true"); item.label.textContent = "▶ Play"; }
-      else { item.button.removeAttribute("aria-current"); item.label.textContent = "▶ Play"; }
+      if (i === index) { item.button.setAttribute("aria-current", "true"); }
+      else { item.button.removeAttribute("aria-current"); }
     });
     previous.disabled = index === 0;
     next.disabled = index === chapters.length - 1;
