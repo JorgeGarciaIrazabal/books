@@ -127,14 +127,14 @@
         "handoff.md",
         "tasks.json"
       ],
-      "deliverable": "Public Book One text editions (EPUB and PDF) on GitHub Pages, with the Drama 3 audiobook render in progress for a later release",
+      "deliverable": "Public Book One editions on GitHub Pages: EPUB, PDF and Drama 3 audiobook",
       "acceptance": [
         "EPUB rebuilt with a public fan-fiction notice and unchanged story text",
         "PDF reading edition built and checked",
-        "Drama 3 audiobook render started from the 484 word-exact segments",
-        "51 site tests, build, manifest, hash and link checks pass",
-        "Browser checks cover the catalogue and goblin reader",
-        "Text editions published through GitHub Pages and checked live",
+        "Drama 3 audiobook rendered from the 484 word-exact segments, capped pages repaired, 22 chapters assembled",
+        "52 site tests, build, manifest, hash and link checks pass",
+        "Browser checks cover the catalogue, goblin reader and audiobook page",
+        "Editions published through GitHub Pages and checked live",
         "Human listening still disclosed as not performed"
       ],
       "budget": {
@@ -143,7 +143,7 @@
       },
       "dependencies": [],
       "owner": "studio_director (deepseek-v4.1-flash)",
-      "result": "Text editions published in commit 8e3fd86; Pages run 40608512713 succeeded; live catalogue, reader and EPUB/PDF/cover hashes verified. Drama 3 audiobook render in progress; Piper draft withheld after ASR found name mispronunciations."
+      "result": "EPUB and PDF published in 8e3fd86 (Pages run 40608512713). Drama 3 audiobook assembled at 5 h 15 min, 22 chapters; audio release prepared. No human listening performed; 11-segment ASR spot check."
     }
   ]
 }

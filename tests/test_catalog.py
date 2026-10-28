@@ -173,6 +173,23 @@ class RealRepoTests(unittest.TestCase):
             self.assertEqual(sha256(cover), book["cover"]["sha256"])
             self.assertIn(cover.read_bytes()[:3], (b"\xff\xd8\xff", b"\x89PNG"))
 
+    def test_audiobook_page_and_chapters(self):
+        page = (SITE / "audiobook.html").read_text(encoding="utf-8")
+        self.assertEqual(page.count("<audio "), 22, "one chapter player per chapter")
+        self.assertNotRegex(page, r"<audio[^>]*\bautoplay\b", "audio must not autoplay")
+        self.assertIn('preload="none"', page)
+        manifest = json.loads(
+            (SITE / "audio" / "the-ledger-of-ashes" / "chapters.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(manifest["book_id"], "the-ledger-of-ashes")
+        self.assertEqual(len(manifest["chapters"]), 22)
+        self.assertIn("Drama 3", manifest["credit"])
+        for chapter in manifest["chapters"]:
+            path = SITE / "audio" / "the-ledger-of-ashes" / chapter["file"]
+            self.assertTrue(path.is_file(), f"missing {path}")
+            self.assertEqual(path.stat().st_size, chapter["bytes"])
+            self.assertEqual(sha256(path), chapter["sha256"])
+
     def test_vendored_reader_libraries_pinned(self):
         provenance = (SITE / "assets" / "vendor" / "PROVENANCE.md").read_text(encoding="utf-8")
         section = provenance.split("## Integrity (sha256)", 1)[1]

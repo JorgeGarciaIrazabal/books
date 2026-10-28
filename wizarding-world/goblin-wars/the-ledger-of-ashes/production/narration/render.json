@@ -45,5 +45,37 @@
     "human_listen": "not performed",
     "public_page": "site/audiobook.html",
     "status": "Piper draft withheld; not published"
+  },
+  "drama3_public_render": {
+    "status": "Published 2026-10-28; coverage checked; 11-segment ASR spot check; human listening pending",
+    "engine": "audio.cpp c7230db / Fish Audio Drama 3",
+    "model": "drama-3-backbone-8bit-experts-Q4_K_S.gguf",
+    "model_sha256": "05af716baf78e7c20863b9ccebb3ebdeca9607dd3ea7d0b72c35079e675b212b",
+    "backend": "vulkan",
+    "seed": 7,
+    "max_tokens": 1400,
+    "text_chunk_size": 4000,
+    "context_length": 4096,
+    "speaker_reference": "cast/narrator.wav",
+    "render_mode": "20 chunks of 25 pages (last 9)",
+    "segments": 484,
+    "chapters": 22,
+    "audio_seconds": 18882.888,
+    "repaired_pages": [
+      4,
+      44,
+      136,
+      213,
+      268,
+      305,
+      311,
+      333,
+      403
+    ],
+    "repair": "sentence-boundary split and concatenation for pages that hit the 1400-token cap",
+    "render_record": "exports/narration-drama3/render-drama3.json",
+    "output_dir": "exports/audiobook-drama3",
+    "public_page": "site/audiobook.html",
+    "human_listen": "not performed"
   }
 }

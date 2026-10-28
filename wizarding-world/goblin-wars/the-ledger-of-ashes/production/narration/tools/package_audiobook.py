@@ -46,6 +46,9 @@ def main() -> int:
     parser.add_argument("--book-id", default="the-ledger-of-ashes")
     parser.add_argument("--bitrate", default="96k")
     parser.add_argument("--sample-rate", default="24000")
+    parser.add_argument("--credit", default="Synthetic narration generated locally; not a human performance.")
+    parser.add_argument("--voice", default=None)
+    parser.add_argument("--review-status", default="Coverage checked; human listening pending.")
     args = parser.parse_args()
 
     source = json.loads(args.segments.read_text(encoding="utf-8"))
@@ -113,11 +116,11 @@ def main() -> int:
         "schema_version": 1,
         "book_id": args.book_id,
         "title": "The Ledger of Ashes",
-        "credit": "Synthetic narration generated locally with Piper; not a human performance.",
+        "credit": args.credit,
         "engine": render.get("engine"),
-        "voice": render.get("voice"),
-        "review_status": "Machine-checked for coverage and ASR differences; human listening pending.",
-        "asr_flagged_segments": flagged,
+        "voice": args.voice or render.get("voice"),
+        "review_status": args.review_status,
+        "asr_flagged_segments": flagged if checks else None,
         "total_segments": len(rows),
         "total_seconds": round(sum(c["seconds"] for c in chapters_out), 3),
         "chapters": chapters_out,

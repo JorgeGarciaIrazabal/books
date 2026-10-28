@@ -1,2 +1,4 @@
 *.pdf binary
 *.epub binary
+*.mp3 binary
+*.wav binary

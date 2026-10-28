@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "book": "the-ledger-of-ashes",
-  "status": "Drama 3 pilot; public draft rendered with Piper; human listening pending",
+  "status": "Drama 3 public audiobook published; Piper draft withheld; human listening pending",
   "voices": [
     {
       "id": 0,
@@ -24,6 +24,17 @@
       "reference_sha256": null,
       "provenance": "Synthetic Piper voice from rhasspy/piper-voices; no identifiable person is imitated.",
       "licence_note": "Piper is MIT-licensed; the voice model dataset terms should be rechecked before commercial use. Drama 3 remains the preferred future voice."
+    },
+    {
+      "id": 2,
+      "role": "Public audiobook narrator",
+      "engine": "audio.cpp c7230db / Fish Audio Drama 3",
+      "voice": "provisional synthetic narrator (Kokoro bf_emma reference)",
+      "reference": "cast/narrator.wav",
+      "reference_text": "The garden was quiet in the late afternoon light, and the kettle had just begun to sing.",
+      "reference_sha256": "524ac1dfbd990bbc8fff29a43185f4c43024fb447b10125edcff7da31e99353b",
+      "provenance": "Synthetic Kokoro preset used as a Drama 3 reference; no identifiable person is imitated.",
+      "licence_note": "Fish Audio Drama 3 Community License v1.0; Kokoro model Apache-2.0; voice-pack terms should be rechecked before commercial use."
     }
   ]
 }

@@ -47,3 +47,16 @@ After final text is stable, create the chapter/segment map and word-exact script
 ## Pilot run after manuscript edit
 
 The coordinator rendered only chapter 1 segment 1 using a provisional synthetic single narrator. See `render.json`, `pilot-segments.json`, and `exports/narration-pilot/` for the exact source, command, audio, transcript and flags. The full private audiobook has **not** been rendered. ASR flagged Ragna/Ragnar plus orthographic and numeric variants; there is 3.041 seconds of silence beginning 2.360 seconds into the sample. Nobody with a listening tool has reviewed it yet. The author was asked to listen to the MP3 before the full render. This is a reflowable chapter audiobook, not the fixed-page public site package.
+
+## Drama 3 public render, 2026-10-28
+
+The full book was rendered with the documented Drama 3 voice from the 484
+word-exact segments. A one-shot batch at `max_tokens=2200` hit a Vulkan DAC
+allocation error after three segments; 1400 is stable on this machine. The book
+was rendered in 20 chunks of 25 pages (the last nine), then assembled to 22
+chapter MP3s, 5 h 15 min total. Nine segments hit the 1400-token cap and were
+split at sentence boundaries and concatenated (`render_drama3_split.py`):
+pages 4, 44, 136, 213, 268, 305, 311, 333 and 403. Coverage and hashes passed;
+an 11-segment ASR spot check was performed. No human listened to the result.
+The Piper draft from the same segment map was not published. The public audio
+page states the synthetic provenance and the missing human listen.

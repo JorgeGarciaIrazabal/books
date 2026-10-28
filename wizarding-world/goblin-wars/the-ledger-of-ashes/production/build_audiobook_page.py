@@ -48,8 +48,12 @@ def main() -> int:
       </li>'''
         )
     total = clock(data["total_seconds"])
-    flagged = data.get("asr_flagged_segments", 0)
+    flagged = data.get("asr_flagged_segments")
     total_segments = data.get("total_segments", 0)
+    review = data.get("review_status", "Coverage checked; human listening pending.")
+    if flagged is not None:
+        review = f"{review} {flagged} of {total_segments} segments carry an ASR or pause flag; they were not heard by a person."
+    credit = data.get("credit", "Synthetic narration generated locally; not a human performance.")
 
     page = f'''<!doctype html>
 <html lang="en">
@@ -94,7 +98,7 @@ def main() -> int:
 </header>
 
 <main class="wrap audio-page">
-  <p class="audio-notice"><strong>Synthetic narration.</strong> This audio edition was generated locally with Piper (en_GB-jenny_dioco-medium). Every one of the {len(chapters)} chapters was assembled from {total_segments} word-exact segments and machine-checked for coverage and ASR differences. {flagged} of {total_segments} segments carry an ASR or pause flag; they were not heard by a person. An ASR difference is not proof of an audio error. The EPUB and PDF remain the authoritative text. No audio autoplays on this page.</p>
+  <p class="audio-notice"><strong>Synthetic narration.</strong> {escape(credit)} This edition was assembled from {total_segments} word-exact segments. {escape(review)} The EPUB and PDF remain the authoritative text. No audio autoplays on this page.</p>
 
   <div class="audio-links">
     <a class="btn" href="reader.html?book={escape(args.book_id)}">Read online</a>
