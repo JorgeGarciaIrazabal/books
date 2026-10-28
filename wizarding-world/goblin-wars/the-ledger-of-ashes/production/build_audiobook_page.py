@@ -42,9 +42,10 @@ def main() -> int:
         src = f"audio/{args.book_id}/{chapter['file']}"
         items.append(
             f'''      <li>
-        <h2>{escape(chapter['title'])}</h2>
+        <span class="chapter-number" aria-hidden="true">{chapter['number']:02d}</span>
+        <div class="chapter-details"><h3>{escape(chapter['title'])}</h3>
         <audio controls preload="none" src="{escape(src)}"></audio>
-        <p>{clock(chapter['seconds'])} · <a href="{escape(src)}" download>Download this chapter</a></p>
+        <p><span>{clock(chapter['seconds'])}</span> <a href="{escape(src)}" download>Download <span class="visually-hidden">{escape(chapter['title'])}</span></a></p></div>
       </li>'''
         )
     total = clock(data["total_seconds"])
@@ -65,71 +66,51 @@ def main() -> int:
 <meta name="description" content="Chapter audio for The Ledger of Ashes, an unofficial Wizarding World fan novel. Synthetic narration.">
 <link rel="stylesheet" href="assets/css/styles.css">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-<style>
-  .audio-page {{ max-width: 52rem; }}
-  .audio-back {{ display: inline-block; margin: 0 0 1.25rem; font-size: 0.9rem; color: #f2e6c9; }}
-  .audio-title {{ font-family: var(--serif); font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.1; margin: 0 0 0.4rem; }}
-  .audio-subtitle {{ margin: 0 0 1rem; color: var(--muted); font-size: 1rem; }}
-  .audio-notice {{ border: 1px solid var(--line); border-left: 4px solid var(--gold); background: var(--panel); padding: 0.9rem 1rem; border-radius: var(--radius-sm); margin: 1.25rem 0 1.5rem; font-size: 0.92rem; line-height: 1.55; }}
-  .audio-links {{ display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0 0 2rem; }}
-  .chapter-audio {{ list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem; }}
-  .chapter-audio li {{ background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem; }}
-  .chapter-audio h2 {{ font-family: var(--serif); font-size: 1.08rem; line-height: 1.3; margin: 0 0 0.6rem; }}
-  .chapter-audio audio {{ width: 100%; height: 40px; }}
-  .chapter-audio p {{ margin: 0.45rem 0 0; font-size: 0.82rem; color: var(--muted); }}
-  .chapter-audio a {{ color: var(--accent-deep); }}
-  .audio-player {{ background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.2rem; margin-bottom: 2rem; }}
-  .audio-player h2 {{ margin: 0.25rem 0 0.8rem; font-family: var(--serif); font-size: 1.2rem; }}
-  .audio-player audio {{ width: 100%; }}
-  .audio-player-nav {{ display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.7rem; }}
-  .audio-player-nav button, .chapter-select {{ cursor: pointer; font: inherit; }}
-  .chapter-select {{ text-align: left; color: inherit; background: transparent; border: 0; padding: 0.35rem 0; font-family: var(--serif); font-size: 1.08rem; }}
-  .chapter-select[aria-current="true"] {{ color: var(--accent-deep); font-weight: bold; }}
-  .chapter-select:focus-visible, .audio-player-nav button:focus-visible {{ outline: 3px solid var(--gold); outline-offset: 3px; }}
-  .audio-foot {{ margin-top: 2rem; font-size: 0.85rem; color: var(--muted); }}
-</style>
+<link rel="stylesheet" href="assets/css/audiobook.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="wrap audio-page">
-    <a class="audio-back" href="index.html">&larr; All books</a>
-    <p class="site-kicker">The Goblin Wars, Book One</p>
-    <h1 class="audio-title">The Ledger of Ashes</h1>
-    <p class="audio-subtitle">Unofficial Wizarding World fan fiction. 22 chapters, {total}.</p>
-    <p class="badges">
-      <span class="badge badge-lang">English</span>
-      <span class="badge">Audiobook</span>
-      <span class="badge">Adult</span>
-      <span class="badge">Fan fiction</span>
-    </p>
-  </div>
+<header class="audio-header">
+  <div class="wrap audio-shell"><a class="audio-back" href="index.html">← All books</a><span class="audio-brand">THE LIBRARY / AUDIOBOOK</span></div>
 </header>
-
-<main class="wrap audio-page">
-  <p class="audio-notice"><strong>Synthetic narration.</strong> {escape(credit)} This edition was assembled from {total_segments} word-exact segments. {escape(review)} The EPUB and PDF remain the authoritative text. Playback starts when you press play and continues to the next chapter.</p>
-
-  <div class="audio-links">
-    <a class="btn" href="reader.html?book={escape(args.book_id)}">Read online</a>
-    <a class="btn btn-ghost" href="publications/{escape(args.book_id)}.epub" download>EPUB</a>
-    <a class="btn btn-ghost" href="publications/{escape(args.book_id)}.pdf" download>PDF</a>
-  </div>
-
-  <section id="audio-player" class="audio-player" aria-label="Audiobook player" hidden>
-    <p id="audio-position"></p>
-    <h2 id="audio-current"></h2>
-    <div id="audio-control"></div>
-    <div class="audio-player-nav">
-      <button class="btn btn-ghost" id="audio-previous" type="button">Previous chapter</button>
-      <button class="btn btn-ghost" id="audio-next" type="button">Next chapter</button>
+<main class="wrap audio-shell">
+  <section class="audio-hero" aria-labelledby="book-title">
+    <img class="audio-cover" src="publications/covers/the-ledger-of-ashes.jpg" alt="Cover of The Ledger of Ashes">
+    <div class="audio-intro">
+      <p class="audio-eyebrow">THE GOBLIN WARS · BOOK ONE</p>
+      <h1 id="book-title">The Ledger of Ashes</h1>
+      <p class="audio-description">An unofficial Wizarding World fan novel</p>
+      <p class="audio-meta">22 chapters <span>•</span> {total} <span>•</span> English</p>
+      <div class="audio-links">
+        <a class="audio-link-primary" href="reader.html?book={escape(args.book_id)}">Read the book <span aria-hidden="true">↗</span></a>
+        <a href="publications/{escape(args.book_id)}.epub" download>EPUB</a>
+        <a href="publications/{escape(args.book_id)}.pdf" download>PDF</a>
+      </div>
     </div>
-    <p id="audio-status" role="status"></p>
   </section>
-  <h2>Chapters</h2>
-  <ol class="chapter-audio">
+  <div class="audio-layout">
+    <section class="chapter-section" aria-labelledby="chapters-title">
+      <div class="section-heading"><div><p class="audio-eyebrow">THE COMPLETE AUDIOBOOK</p><h2 id="chapters-title">Chapters</h2></div><span>22 TRACKS</span></div>
+      <p class="chapter-instruction">Choose any chapter to start listening.</p>
+      <ol class="chapter-audio">
 {chr(10).join(items)}
-  </ol>
-
-  <p class="audio-foot">Narration is a separate performance layer and is not embedded in the EPUB or PDF. The audio files are mono MP3s.</p>
+      </ol>
+    </section>
+    <aside class="player-column">
+      <section id="audio-player" class="audio-player" aria-label="Audiobook player" hidden>
+        <div class="player-top"><span class="player-dot"></span> SELECTED CHAPTER <span id="audio-position"></span></div>
+        <h2 id="audio-current"></h2>
+        <p class="player-book">The Ledger of Ashes</p>
+        <div id="audio-control"></div>
+        <div class="audio-player-nav">
+          <button id="audio-previous" type="button">← Previous</button>
+          <button id="audio-next" type="button">Next →</button>
+        </div>
+        <p class="player-hint">Chapters play continuously after you start listening.</p>
+        <p id="audio-status" role="status"></p>
+      </section>
+      <details class="audio-notice"><summary>About this narration</summary><p><strong>Synthetic narration.</strong> {escape(credit)} This edition was assembled from {total_segments} word-exact segments. {escape(review)} The EPUB and PDF remain the authoritative text.</p></details>
+    </aside>
+  </div>
 </main>
 
 <footer class="site-footer">

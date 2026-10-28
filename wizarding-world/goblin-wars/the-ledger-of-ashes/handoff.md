@@ -1,5 +1,11 @@
 # Handoff
 
+## Audiobook redesign, 2026-10-28
+
+- Redesigned the public audiobook page with the cover, a player and a chapter list with explicit play buttons for every chapter. Previous/next controls, continuous playback, downloads and the no-JavaScript native players remain available. Changed `production/build_audiobook_page.py`, `site/audiobook.html`, `site/assets/css/audiobook.css` and `site/assets/js/audiobook.js`.
+- Checks: 57 tests and site build/link checks passed; a desktop Chrome screenshot was inspected. Mobile device and actual playback transitions remain to be checked, as does the existing human narration review.
+- Next: listen and check playback across chapters on a mobile device.
+
 ## Audiobook navigation, 2026-10-28
 
 - Updated `production/build_audiobook_page.py`, `site/audiobook.html` and `site/assets/js/audiobook.js` to offer a single chapter player, chapter selection and previous/next controls. After a listener starts playback, the next chapter plays automatically; the page does not start audio on load. Individual chapter downloads and native players remain available without JavaScript.

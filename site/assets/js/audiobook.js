@@ -11,13 +11,21 @@
   var next = document.getElementById("audio-next");
   var current = 0;
   var chapters = rows.map(function (row, index) {
-    var heading = row.querySelector("h2");
+    var heading = row.querySelector("h3");
     var audio = row.querySelector("audio");
     audio.remove();
     var button = document.createElement("button");
     button.type = "button";
     button.className = "chapter-select";
-    button.textContent = heading.textContent;
+    var chapterTitle = heading.textContent;
+    var name = document.createElement("span");
+    name.textContent = chapterTitle;
+    var label = document.createElement("span");
+    label.className = "play-label";
+    label.setAttribute("aria-hidden", "true");
+    label.textContent = "▶ Play";
+    button.append(name, label);
+    button.setAttribute("aria-label", "Play " + chapterTitle);
     heading.replaceWith(button);
     button.addEventListener("click", function () { select(index, true); });
     audio.addEventListener("ended", function () {
@@ -28,7 +36,7 @@
     audio.addEventListener("error", function () {
       if (index === current) { status.textContent = "This chapter could not be played. Try again or choose another chapter."; }
     });
-    return { audio: audio, button: button, title: button.textContent };
+    return { audio: audio, button: button, title: chapterTitle, label: label };
   });
   function select(index, play) {
     var old = chapters[current].audio;
@@ -40,8 +48,8 @@
     title.textContent = chapter.title;
     position.textContent = "Chapter " + (index + 1) + " of " + chapters.length;
     chapters.forEach(function (item, i) {
-      if (i === index) { item.button.setAttribute("aria-current", "true"); }
-      else { item.button.removeAttribute("aria-current"); }
+      if (i === index) { item.button.setAttribute("aria-current", "true"); item.label.textContent = "▶ Play"; }
+      else { item.button.removeAttribute("aria-current"); item.label.textContent = "▶ Play"; }
     });
     previous.disabled = index === 0;
     next.disabled = index === chapters.length - 1;
