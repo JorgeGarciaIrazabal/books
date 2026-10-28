@@ -1,0 +1,8 @@
+# Reference notes, inspected 2026-10-26
+
+- [J. K. Rowling, Ministers for Magic](https://www.harrypotter.com/writing-by-jk-rowling/ministers-for-magic): Albert Boot served 1747–1752 and resigned after mishandling a goblin rebellion; Basil Flack served two months in 1752 and resigned after goblins allied with werewolves; Hesphaestus Gore served 1752–1770 and suppressed multiple revolts. The source does not date a precise beginning or end of the rebellion, or describe this project's events. It dates the Ministry's establishment to 1707.
+- [J. K. Rowling, The Sword of Gryffindor](https://www.harrypotter.com/writing-by-jk-rowling/the-sword-of-gryffindor): describes goblin craftsmanship and conflicting ownership customs; do not ascribe a single view to every goblin. Its authorial note treats the allegation of Gryffindor's theft as false.
+- [Official goblin fact file](https://www.harrypotter.com/fact-file/creatures/goblin): describes goblin magic and metalworking, without establishing this project's invented practices or historical banking arrangements.
+- [Official editorial feature on Griphook](https://www.harrypotter.com/features/in-defence-of-griphook): discusses discrimination and eighteenth-century rebellions. It is editorial commentary, not direct primary evidence for the imagined plot.
+
+The published novels and a complete publication catalogue were not independently inspected in this assignment. The existence or nonexistence of another book devoted to the rebellions has not been established. Character names, financial arrangements, events and details of magic in the manuscript are project inventions, not assertions about established canon.

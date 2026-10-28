@@ -1,0 +1,5 @@
+# Whole-book continuity review
+
+A fresh canon_keeper read all 22 chapters in order against brief and style, without outline, handoff or earlier reviews, and re-read revised chapters 6, 7 and 17–22. The reviewer found no unresolved material internal contradiction after targeted corrections to the wage arithmetic, custody and knowledge, collection timing, public disclosure consent and transfer logistics. The review did not verify external franchise canon or historical accuracy.
+
+A final minor wording query in chapter 18 was corrected after the review: Ragna says Kelm obtained the counterfoil rather than implying that he still holds it. That single wording change was not independently re-read. After that review, a targeted line edit changed chapters 6, 8 and 13; those local edits have not been independently continuity-rechecked. The current exact ordered chapter inventory is in `manuscript-sha256.txt`; current inventory hash: `9947eaa9f11b530dc58f0869cdde1b5faedb5a7de4b465cf7dd5ed13a74f8700`. This review does not automatically accept project inventions as external or universe canon.

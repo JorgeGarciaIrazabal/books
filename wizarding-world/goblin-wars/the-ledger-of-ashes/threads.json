@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "threads": [
+    {
+      "id": "TH-0001",
+      "setup": "Dorrik’s death and duplicated charge",
+      "planned_payoff": "Establish the cause of death and expose the wage diversion with evidence",
+      "status": "resolved",
+      "payoff": "Kelm’s signed account explains the lift accident; evidence and Merrok’s admission establish the diverted iron and wrongful charge. Chap. 16, 18, 21–22."
+    },
+    {
+      "id": "TH-0002",
+      "setup": "Ilva secretly hands Ragna a fragment",
+      "planned_payoff": "Explain Ilva’s knowledge and competing loyalties",
+      "status": "resolved",
+      "payoff": "Ilva admits her role in hiding the reconciliation and gives a public account. Chap. 7, 20–22."
+    },
+    {
+      "id": "TH-0003",
+      "setup": "Dorrik signed for forty bars; Sella and Neri say twenty arrived.",
+      "planned_payoff": "Trace the other twenty and explain the signature using corroborated evidence.",
+      "status": "resolved",
+      "payoff": "Venn and Borr explain the second twenty-bar load redirected to Thorn, corroborated by household and dispatch records. Chap. 6, 18, 21."
+    },
+    {
+      "id": "TH-0004",
+      "setup": "Venn’s dispatch and separate forty-bar procurement reference",
+      "planned_payoff": "Corroborate the redirection, purchase financing, and connection to the duplicate charge.",
+      "status": "resolved",
+      "payoff": "Mere’s invoice and Kelm’s counterfoil corroborate the separate forty, while Ilva, fragments and Merrok connect the duplicate posting. Chap. 13–16, 20–21."
+    }
+  ]
+}

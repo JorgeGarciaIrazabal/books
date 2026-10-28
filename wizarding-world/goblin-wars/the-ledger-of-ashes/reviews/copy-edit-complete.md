@@ -1,0 +1,3 @@
+# Copy edit
+
+A fresh copy_editor read all 22 chapters in order after the line passes. Ten localized fixes in chapters 7, 12, 17, 18, 19 and 21 resolved spacing, punctuation, the empty cup, a sentence, the same-afternoon appointment and the next sand order. No unresolved copy queries reported. The copy editor checked quotation balance by paragraph, no em dashes, narration tokens, trailing whitespace, duplicate words or unfinished markers. Coverage: full manuscript, not the assembled export. The post-copy ordered hash in the editor's filename-tab-hash format is `b6c73dcc6400e46782f28f32e7d198a7054f22a667b7095f168117805e7f92f8`.

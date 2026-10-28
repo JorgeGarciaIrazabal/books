@@ -1,0 +1,632 @@
+{
+  "schema_version": 1,
+  "tasks": [
+    {
+      "id": "TASK-0001",
+      "role": "reader_advocate",
+      "status": "done",
+      "source_snapshot": "chapter SHA-256 42d6c3961e5c497a7ca7dac46f9b4a9af3f8852fad106aec637c9d48c8373e2f",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "manuscript/001-the-audit.md"
+      ],
+      "allowed_writes": [],
+      "deliverable": "Independent opening reader response returned to coordinator",
+      "acceptance": [
+        "Read whole opening",
+        "Cite actionable reader impact",
+        "Do not assess unwritten novel"
+      ],
+      "budget": {
+        "max_output_words": 1200,
+        "max_tool_calls": 10
+      },
+      "dependencies": [],
+      "owner": "opening_review"
+    },
+    {
+      "id": "TASK-0002",
+      "role": "story_architect",
+      "status": "done",
+      "source_snapshot": "existing brief, outline and opening chapter; chapter SHA-256 38fafdb1acd9fcf1da510a99bebad7aeeb86735d5adac7b37a36f087564f7331",
+      "inputs": [
+        "brief.md",
+        "outline.md",
+        "manuscript/001-the-audit.md"
+      ],
+      "allowed_writes": [],
+      "deliverable": "Concrete causal story design returned to coordinator",
+      "acceptance": [
+        "Plausible fraud and resolution",
+        "Complete first-book arc"
+      ],
+      "budget": {
+        "max_output_words": 1800
+      },
+      "dependencies": [],
+      "owner": "plot_engine",
+      "result": "Causal design integrated as plot-engine.md; planned inventions remain provisional."
+    },
+    {
+      "id": "TASK-0003",
+      "role": "drafter",
+      "status": "done",
+      "source_snapshot": "chapter 1 SHA-256 38fafdb1acd9fcf1da510a99bebad7aeeb86735d5adac7b37a36f087564f7331",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "manuscript/001-the-audit.md"
+      ],
+      "allowed_writes": [
+        "manuscript/002-the-household.md"
+      ],
+      "deliverable": "Chapter 2 and state delta",
+      "acceptance": [
+        "Dorrik family agency",
+        "Continue chapter 1",
+        "2000\u20133000 words"
+      ],
+      "budget": {
+        "max_output_words": 3500,
+        "max_tool_calls": 20
+      },
+      "dependencies": [],
+      "owner": "chapter_two",
+      "result": "Chapter 2 completed; state returned to coordinator."
+    },
+    {
+      "id": "TASK-0004",
+      "role": "drafter",
+      "status": "done",
+      "source_snapshot": "chapter 1 b334866e4492a971ad5ee4d60b306a55af2edbd2267ba4356513176461d254fc; chapter 2 ab62db2bcb3a6df34729e6a9357321bfdb273caf6a8af6fe50ace24764177448",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "plot-engine.md",
+        "manuscript/001-the-audit.md",
+        "manuscript/002-the-household.md"
+      ],
+      "allowed_writes": [
+        "manuscript/003-blackwater.md"
+      ],
+      "deliverable": "Chapter 3 and state delta",
+      "acceptance": [
+        "Continue causal sequence",
+        "Neri has agency",
+        "Preserve uncertainty about accident"
+      ],
+      "budget": {
+        "max_output_words": 3500,
+        "max_tool_calls": 20
+      },
+      "dependencies": [
+        "TASK-0003"
+      ],
+      "owner": "chapter_two",
+      "result": "Chapter 3 drafted and state integrated."
+    },
+    {
+      "id": "TASK-0005",
+      "role": "drafter",
+      "status": "done",
+      "source_snapshot": "chapters 1\u20133, chapter 3 SHA-256 2900b5354336a2766ca3c3d06528a627dfc98a162753c41a82dcbe17ef2a8e62",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "plot-engine.md",
+        "characters-working.md",
+        "manuscript/001-the-audit.md",
+        "manuscript/002-the-household.md",
+        "manuscript/003-blackwater.md"
+      ],
+      "allowed_writes": [
+        "manuscript/004-*.md",
+        "manuscript/005-*.md",
+        "manuscript/006-*.md"
+      ],
+      "deliverable": "Three sequential chapters and state deltas",
+      "acceptance": [
+        "Follow established evidence",
+        "Develop collective choices and offer",
+        "Avoid premature resolution"
+      ],
+      "budget": {
+        "max_output_words": 9000,
+        "max_tool_calls": 30
+      },
+      "dependencies": [
+        "TASK-0004"
+      ],
+      "owner": "chapter_two",
+      "result": "Chapters 4\u20136 drafted sequentially and registered."
+    },
+    {
+      "id": "TASK-0006",
+      "role": "drafter",
+      "status": "done",
+      "source_snapshot": "chapters 1\u20136, chapter 6 SHA-256 80c9a36a2b5712bd84b0ff1ac4d731e39f5ff76b4410c448097b1903b2204acc",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "plot-engine.md",
+        "state.md",
+        "manuscript chapters 1\u20136"
+      ],
+      "allowed_writes": [
+        "manuscript/007-*.md",
+        "manuscript/008-*.md",
+        "manuscript/009-*.md"
+      ],
+      "deliverable": "Three sequential chapters and state deltas",
+      "acceptance": [
+        "Continue cause and evidence",
+        "Show competing agency",
+        "Build toward petition conflict"
+      ],
+      "budget": {
+        "max_output_words": 9000,
+        "max_tool_calls": 30
+      },
+      "dependencies": [
+        "TASK-0005"
+      ],
+      "owner": "chapter_two",
+      "result": "Chapters 7\u20139 drafted sequentially and registered."
+    },
+    {
+      "id": "TASK-0007",
+      "role": "drafter",
+      "status": "done",
+      "source_snapshot": "chapters 1\u20139, chapter 9 SHA-256 bf411febb8ceea2517301a69a8229063b9c4db38db68ffdee413c7fc016a80a5",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "plot-engine.md",
+        "state.md",
+        "manuscript chapters 1\u20139"
+      ],
+      "allowed_writes": [
+        "manuscript/010-*.md",
+        "manuscript/011-*.md",
+        "manuscript/012-*.md"
+      ],
+      "deliverable": "Three sequential chapters and state deltas",
+      "acceptance": [
+        "Resolve current confrontation causally",
+        "Show material consequences",
+        "Advance partner examination"
+      ],
+      "budget": {
+        "max_output_words": 9000,
+        "max_tool_calls": 30
+      },
+      "dependencies": [
+        "TASK-0006"
+      ],
+      "owner": "chapter_two",
+      "result": "Chapters 10\u201312 drafted and registered."
+    },
+    {
+      "id": "TASK-0008",
+      "role": "drafter",
+      "status": "done",
+      "source_snapshot": "chapters 1\u201312, chapter 12 SHA-256 232a9fe04c9cae6cdb44c1d15494888e00b60d285bcf9075065ab5f995c7e2e4",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "plot-engine.md",
+        "state.md",
+        "manuscript chapters 1\u201312"
+      ],
+      "allowed_writes": [
+        "manuscript/013-*.md",
+        "manuscript/014-*.md",
+        "manuscript/015-*.md"
+      ],
+      "deliverable": "Three sequential chapters and state deltas",
+      "acceptance": [
+        "Corroborate procurement with credible evidence",
+        "Escalate without convenient magic",
+        "Preserve custody and agency"
+      ],
+      "budget": {
+        "max_output_words": 9000,
+        "max_tool_calls": 30
+      },
+      "dependencies": [
+        "TASK-0007"
+      ],
+      "owner": "chapter_two",
+      "result": "Chapters 13\u201315 drafted and registered."
+    },
+    {
+      "id": "TASK-0009",
+      "role": "drafter",
+      "status": "done",
+      "source_snapshot": "chapters 1\u201315, chapter 15 SHA-256 095656484663b19fc53446533c0f1690a19c76772d5cfed3a000f78399b439f3",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "plot-engine.md",
+        "state.md",
+        "manuscript chapters 1\u201315"
+      ],
+      "allowed_writes": [
+        "manuscript/016-*.md",
+        "manuscript/017-*.md",
+        "manuscript/018-*.md"
+      ],
+      "deliverable": "Three sequential chapters and state deltas",
+      "acceptance": [
+        "Carry consequences of Thorn escape",
+        "Develop voluntary evidence",
+        "Give Tavin agency"
+      ],
+      "budget": {
+        "max_output_words": 9000,
+        "max_tool_calls": 30
+      },
+      "dependencies": [
+        "TASK-0008"
+      ],
+      "owner": "chapter_two",
+      "result": "Original drafter hit usage limit after chapter 16; director drafted chapters 17\u201318 and continued through chapter 22."
+    },
+    {
+      "id": "TASK-0010",
+      "role": "developmental_editor",
+      "status": "done",
+      "source_snapshot": "22 chapters as assembled in exports/the-ledger-of-ashes-first-draft source manifest",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "book.json",
+        "all 22 manuscript chapters"
+      ],
+      "allowed_writes": [],
+      "deliverable": "Independent whole-book assessment returned to coordinator",
+      "acceptance": [
+        "Read full manuscript in order",
+        "Identify consequential issues with evidence",
+        "State coverage and limitations"
+      ],
+      "budget": {
+        "max_output_words": 1400
+      },
+      "dependencies": [
+        "TASK-0009"
+      ],
+      "owner": "whole_book_edit",
+      "result": "Whole-book developmental read plus targeted rechecks; see reviews/development-whole-book.md."
+    },
+    {
+      "id": "TASK-0011",
+      "role": "canon_keeper",
+      "status": "done",
+      "source_snapshot": "22 chapters as assembled in exports/the-ledger-of-ashes-first-draft source manifest",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "book.json",
+        "all 22 manuscript chapters"
+      ],
+      "allowed_writes": [],
+      "deliverable": "Independent whole-book assessment returned to coordinator",
+      "acceptance": [
+        "Read full manuscript in order",
+        "Identify consequential issues with evidence",
+        "State coverage and limitations"
+      ],
+      "budget": {
+        "max_output_words": 1400
+      },
+      "dependencies": [
+        "TASK-0009"
+      ],
+      "owner": "whole_book_canon",
+      "result": "Whole-book continuity read and targeted rechecks; final minor wording correction afterward; see reviews/continuity-whole-book.md."
+    },
+    {
+      "id": "TASK-0012",
+      "role": "line_editor",
+      "status": "done",
+      "source_snapshot": "chapters 6, 8, 13 and 18 before local line edits",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "manuscript/006-the-dispatch-clerk.md",
+        "manuscript/008-the-back-room.md",
+        "manuscript/013-the-makers-mark.md",
+        "manuscript/018-the-second-cart.md"
+      ],
+      "allowed_writes": [
+        "manuscript/006-the-dispatch-clerk.md",
+        "manuscript/008-the-back-room.md",
+        "manuscript/013-the-makers-mark.md",
+        "manuscript/018-the-second-cart.md"
+      ],
+      "deliverable": "Targeted line pass",
+      "acceptance": [
+        "Preserve story facts and voice",
+        "Reduce selected repetitive exchanges"
+      ],
+      "budget": {
+        "max_tool_calls": 12,
+        "max_output_words": 800
+      },
+      "dependencies": [
+        "TASK-0010"
+      ],
+      "owner": "line_pass",
+      "result": "Five small changes in chapters 6, 8 and 13; see reviews/targeted-line-pass.md."
+    },
+    {
+      "id": "TASK-0013",
+      "role": "line_editor",
+      "status": "done",
+      "source_snapshot": "ordered chapter inventory SHA-256 9947eaa9f11b530dc58f0869cdde1b5faedb5a7de4b465cf7dd5ed13a74f8700",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "book.json",
+        "manuscript/001-the-audit.md",
+        "manuscript/002-the-household.md",
+        "manuscript/003-blackwater.md",
+        "manuscript/004-the-accommodation.md",
+        "manuscript/005-the-weigh-house.md",
+        "manuscript/006-the-dispatch-clerk.md",
+        "manuscript/007-the-source-column.md",
+        "manuscript/008-the-back-room.md",
+        "manuscript/009-the-abstract.md",
+        "manuscript/010-the-doorway.md",
+        "manuscript/011-the-package.md"
+      ],
+      "allowed_writes": [
+        "manuscript/001-the-audit.md",
+        "manuscript/002-the-household.md",
+        "manuscript/003-blackwater.md",
+        "manuscript/004-the-accommodation.md",
+        "manuscript/005-the-weigh-house.md",
+        "manuscript/006-the-dispatch-clerk.md",
+        "manuscript/007-the-source-column.md",
+        "manuscript/008-the-back-room.md",
+        "manuscript/009-the-abstract.md",
+        "manuscript/010-the-doorway.md",
+        "manuscript/011-the-package.md"
+      ],
+      "deliverable": "Full assigned line edit and report",
+      "acceptance": [
+        "Preserve text and disclose actual coverage",
+        "Return exact changed paths"
+      ],
+      "budget": {
+        "max_tool_calls": 30,
+        "max_output_words": 1500
+      },
+      "dependencies": [],
+      "owner": "line_first",
+      "result": "Completed chapters 1\u201311 line pass and reported coverage."
+    },
+    {
+      "id": "TASK-0014",
+      "role": "line_editor",
+      "status": "done",
+      "source_snapshot": "ordered chapter inventory SHA-256 9947eaa9f11b530dc58f0869cdde1b5faedb5a7de4b465cf7dd5ed13a74f8700",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "book.json",
+        "manuscript/012-the-agreed-balance.md",
+        "manuscript/013-the-makers-mark.md",
+        "manuscript/014-the-outer-stores.md",
+        "manuscript/015-the-lower-gate.md",
+        "manuscript/016-the-part-left-out.md",
+        "manuscript/017-a-visit-allowed.md",
+        "manuscript/018-the-second-cart.md",
+        "manuscript/019-what-they-can-stop.md",
+        "manuscript/020-the-transfer.md",
+        "manuscript/021-two-signatures.md",
+        "manuscript/022-the-work-of-keeping.md"
+      ],
+      "allowed_writes": [
+        "manuscript/012-the-agreed-balance.md",
+        "manuscript/013-the-makers-mark.md",
+        "manuscript/014-the-outer-stores.md",
+        "manuscript/015-the-lower-gate.md",
+        "manuscript/016-the-part-left-out.md",
+        "manuscript/017-a-visit-allowed.md",
+        "manuscript/018-the-second-cart.md",
+        "manuscript/019-what-they-can-stop.md",
+        "manuscript/020-the-transfer.md",
+        "manuscript/021-two-signatures.md",
+        "manuscript/022-the-work-of-keeping.md"
+      ],
+      "deliverable": "Full assigned line edit and report",
+      "acceptance": [
+        "Preserve text and disclose actual coverage",
+        "Return exact changed paths"
+      ],
+      "budget": {
+        "max_tool_calls": 30,
+        "max_output_words": 1500
+      },
+      "dependencies": [],
+      "owner": "line_second",
+      "result": "Reported full read and 73 edits to chapters 12\u201322; final return unavailable after user continuation; file edits present."
+    },
+    {
+      "id": "TASK-0015",
+      "role": "voice_director",
+      "status": "blocked",
+      "source_snapshot": "ordered chapter inventory SHA-256 9947eaa9f11b530dc58f0869cdde1b5faedb5a7de4b465cf7dd5ed13a74f8700",
+      "inputs": [
+        "brief.md",
+        "book.json",
+        ".studio/skills/read-aloud/SKILL.md",
+        "docs/narration.md"
+      ],
+      "allowed_writes": [
+        "production/narration/notes.md"
+      ],
+      "deliverable": "Audio feasibility and cast brief",
+      "acceptance": [
+        "Preserve text and disclose actual coverage",
+        "Return exact changed paths"
+      ],
+      "budget": {
+        "max_tool_calls": 30,
+        "max_output_words": 1500
+      },
+      "dependencies": [],
+      "owner": "audio_feasibility",
+      "result": "Audio specialist hit usage limit after reporting runtime findings; coordinator continues local work."
+    },
+    {
+      "id": "TASK-0016",
+      "role": "copy_editor",
+      "status": "done",
+      "source_snapshot": "ordered chapter inventory 78856e7d9789bd3954d2c19ad89df195467757f8434d9f437881f1a96754db50",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "book.json",
+        "manuscript/001-the-audit.md",
+        "manuscript/002-the-household.md",
+        "manuscript/003-blackwater.md",
+        "manuscript/004-the-accommodation.md",
+        "manuscript/005-the-weigh-house.md",
+        "manuscript/006-the-dispatch-clerk.md",
+        "manuscript/007-the-source-column.md",
+        "manuscript/008-the-back-room.md",
+        "manuscript/009-the-abstract.md",
+        "manuscript/010-the-doorway.md",
+        "manuscript/011-the-package.md",
+        "manuscript/012-the-agreed-balance.md",
+        "manuscript/013-the-makers-mark.md",
+        "manuscript/014-the-outer-stores.md",
+        "manuscript/015-the-lower-gate.md",
+        "manuscript/016-the-part-left-out.md",
+        "manuscript/017-a-visit-allowed.md",
+        "manuscript/018-the-second-cart.md",
+        "manuscript/019-what-they-can-stop.md",
+        "manuscript/020-the-transfer.md",
+        "manuscript/021-two-signatures.md",
+        "manuscript/022-the-work-of-keeping.md"
+      ],
+      "allowed_writes": [
+        "manuscript/001-the-audit.md",
+        "manuscript/002-the-household.md",
+        "manuscript/003-blackwater.md",
+        "manuscript/004-the-accommodation.md",
+        "manuscript/005-the-weigh-house.md",
+        "manuscript/006-the-dispatch-clerk.md",
+        "manuscript/007-the-source-column.md",
+        "manuscript/008-the-back-room.md",
+        "manuscript/009-the-abstract.md",
+        "manuscript/010-the-doorway.md",
+        "manuscript/011-the-package.md",
+        "manuscript/012-the-agreed-balance.md",
+        "manuscript/013-the-makers-mark.md",
+        "manuscript/014-the-outer-stores.md",
+        "manuscript/015-the-lower-gate.md",
+        "manuscript/016-the-part-left-out.md",
+        "manuscript/017-a-visit-allowed.md",
+        "manuscript/018-the-second-cart.md",
+        "manuscript/019-what-they-can-stop.md",
+        "manuscript/020-the-transfer.md",
+        "manuscript/021-two-signatures.md",
+        "manuscript/022-the-work-of-keeping.md"
+      ],
+      "deliverable": "Whole book copy edit",
+      "acceptance": [
+        "Read all chapters",
+        "Report evidence and snapshot"
+      ],
+      "budget": {
+        "max_tool_calls": 35,
+        "max_output_words": 1200
+      },
+      "dependencies": [
+        "TASK-0013",
+        "TASK-0014"
+      ],
+      "owner": "copy_full",
+      "result": "Read all chapters and made ten localized copy/continuity corrections; no unresolved copy queries."
+    },
+    {
+      "id": "TASK-0017",
+      "role": "canon_keeper",
+      "status": "done",
+      "source_snapshot": "ordered chapter inventory 78856e7d9789bd3954d2c19ad89df195467757f8434d9f437881f1a96754db50",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "book.json",
+        "manuscript/001-the-audit.md",
+        "manuscript/002-the-household.md",
+        "manuscript/003-blackwater.md",
+        "manuscript/004-the-accommodation.md",
+        "manuscript/005-the-weigh-house.md",
+        "manuscript/006-the-dispatch-clerk.md",
+        "manuscript/007-the-source-column.md",
+        "manuscript/008-the-back-room.md",
+        "manuscript/009-the-abstract.md",
+        "manuscript/010-the-doorway.md",
+        "manuscript/011-the-package.md",
+        "manuscript/012-the-agreed-balance.md",
+        "manuscript/013-the-makers-mark.md",
+        "manuscript/014-the-outer-stores.md",
+        "manuscript/015-the-lower-gate.md",
+        "manuscript/016-the-part-left-out.md",
+        "manuscript/017-a-visit-allowed.md",
+        "manuscript/018-the-second-cart.md",
+        "manuscript/019-what-they-can-stop.md",
+        "manuscript/020-the-transfer.md",
+        "manuscript/021-two-signatures.md",
+        "manuscript/022-the-work-of-keeping.md"
+      ],
+      "allowed_writes": [],
+      "deliverable": "Whole book independent continuity assessment",
+      "acceptance": [
+        "Read all chapters",
+        "Report evidence and snapshot"
+      ],
+      "budget": {
+        "max_tool_calls": 35,
+        "max_output_words": 1200
+      },
+      "dependencies": [
+        "TASK-0013",
+        "TASK-0014"
+      ],
+      "owner": "canon_full",
+      "result": "Full read and final recheck; later sack correction checked by production editor."
+    },
+    {
+      "id": "TASK-0018",
+      "role": "production_editor",
+      "status": "done",
+      "source_snapshot": "exports/the-ledger-of-ashes-edited.manifest.json",
+      "inputs": [
+        "book.json",
+        "exports/the-ledger-of-ashes-edited.md"
+      ],
+      "allowed_writes": [],
+      "deliverable": "Proof actual assembled export",
+      "acceptance": [
+        "Read entire export",
+        "Verify chapter order and artifacts"
+      ],
+      "budget": {
+        "max_tool_calls": 25,
+        "max_output_words": 1000
+      },
+      "dependencies": [
+        "TASK-0016"
+      ],
+      "owner": "proof_edited",
+      "result": "Full export proof plus targeted recheck after sack correction."
+    }
+  ]
+}

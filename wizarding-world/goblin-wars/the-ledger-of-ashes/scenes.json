@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "scenes": [
+    {
+      "id": "SC-0001",
+      "chapter": "manuscript/001-the-audit.md",
+      "pov": "Ragna",
+      "incoming": "Quarterly wage accounts are due; Dorrik has died.",
+      "turn": "A seized ledger contains a concealed entry; Ilva gives Ragna a fragment.",
+      "outgoing": "The ledger is in Harrow’s possession; Ragna has a clue linking a transaction to Dorrik’s death."
+    },
+    {
+      "id": "SC-0002",
+      "chapter": "manuscript/002-the-household.md",
+      "pov": "Ragna",
+      "incoming": "Wages unavailable; Ragna has the fragment and a suspected duplicate charge.",
+      "turn": "Sella and Neri dispute the delivery and make their own arrangements; Sella keeps the original fragment.",
+      "outgoing": "Only twenty bars reached their household although Dorrik signed for forty; Ragna and Neri plan a legitimate visit to Blackwater."
+    },
+    {
+      "id": "SC-0003",
+      "chapter": "manuscript/003-blackwater.md",
+      "pov": "Ragna",
+      "incoming": "Ragna and Neri travel to Blackwater on a latch commission.",
+      "turn": "Hessa shows records of two twenty-bar releases; Brann directs attention to a dismantled rail. Pell seizes Ragna’s notes.",
+      "outgoing": "Neri and Ragna reconstruct their sketch; the works are restricted; Brann and his sister risk jobs and housing."
+    },
+    {
+      "id": "SC-0004",
+      "chapter": "manuscript/004-the-accommodation.md",
+      "pov": "Ragna",
+      "incoming": "Blackwater investigation restricted; household finances in crisis.",
+      "turn": "Merrok offers conditional relief; Ragna brings it to affected households, while Brann and sister move out of employer housing.",
+      "outgoing": "A weigh-house meeting is set for two after Dorrik’s burial; Tavin proposes mutual relief; reserve payments require two partner signatures."
+    },
+    {
+      "id": "SC-0005",
+      "chapter": "manuscript/005-the-weigh-house.md",
+      "pov": "Ragna",
+      "incoming": "Burial and meeting; offer and mutual relief proposed.",
+      "turn": "Four households take Merrok’s conditional payment; others set up a limited mutual fund and two petitions.",
+      "outgoing": "Sella, Fenn and Vessa oversee two-day food/fuel relief; Brann signs only what he witnessed; separate bank and Ministry petitions await delivery."
+    },
+    {
+      "id": "SC-0006",
+      "chapter": "manuscript/006-the-dispatch-clerk.md",
+      "pov": "Ragna",
+      "incoming": "Petitions ready; mutual relief temporarily functioning.",
+      "turn": "Ilva admits directing concealment and introduces Venn, who admits changing a destination.",
+      "outgoing": "Sella and Ragna each have attested copies showing twenty bars redirected; Venn retains original; Ilva will meet them next morning."
+    },
+    {
+      "id": "SC-0007",
+      "chapter": "manuscript/007-the-source-column.md",
+      "pov": "Ragna",
+      "incoming": "Ilva has agreed to explain the concealed reconciliation.",
+      "turn": "Ilva admits certifying an advance and checking a transfer, and provides corroborating records; Ragna proposes a reserve advance against verified net wages.",
+      "outgoing": "Ilva retains the control book; Sella and Ragna have signed copies. Partner Issa is present and Halrik expected; Edda seeks aid for her unregistered aunt."
+    },
+    {
+      "id": "SC-0008",
+      "chapter": "manuscript/008-the-back-room.md",
+      "pov": "Ragna",
+      "incoming": "Venn must decide how to testify; reserve request pending.",
+      "turn": "Venn’s mother chooses to move; Venn authorises limited disclosure; Harrow refuses an independent hearing and Merrok suspends Ragna.",
+      "outgoing": "Issa will examine balances with Halrik; Arven retains originals and certifies copies; Neri records an independent statement about the rail."
+    },
+    {
+      "id": "SC-0009",
+      "chapter": "manuscript/009-the-abstract.md",
+      "pov": "Ragna",
+      "incoming": "Community weighs disclosure and reserve request.",
+      "turn": "Tavin circulates the agreed abstract before the agreed time; Harrow and Pell arrive to take Venn.",
+      "outgoing": "Venn stands in the weigh house with the original dispatch; Harrow demands he accompany officials; Tavin stands by the latch as people gather."
+    },
+    {
+      "id": "SC-0010",
+      "chapter": "manuscript/010-the-doorway.md",
+      "pov": "Ragna",
+      "incoming": "Harrow demands Venn accompany officials; Tavin waits by the latch.",
+      "turn": "A clearing spell and additional force cause injuries; Tavin is bound after helping Fenn.",
+      "outgoing": "Harrow takes Venn, Tavin and original dispatch toward Blackwater; Fenn’s wrist is injured, and Ragna goes to tell Tavin’s mother."
+    },
+    {
+      "id": "SC-0011",
+      "chapter": "manuscript/011-the-package.md",
+      "pov": "Ragna",
+      "incoming": "Tavin and Venn taken; injuries need care.",
+      "turn": "Hedra and Ragna obtain Pell’s written confirmation of detention but cannot see the prisoners; witnesses set terms for their evidence.",
+      "outgoing": "Both detainees confirmed at Blackwater; fund cannot yet pay medical bills; partners will be asked to examine balances at Sella’s workshop."
+    },
+    {
+      "id": "SC-0012",
+      "chapter": "manuscript/012-the-agreed-balance.md",
+      "pov": "Ragna",
+      "incoming": "Partners examine reconstructed records; Tavin and Venn remain detained.",
+      "turn": "Issa and Halrik authorise and pay three verified balances, preserving other claims; Merrok offers Ragna a narrow private settlement.",
+      "outgoing": "Issa has Ilva’s control book and issued a receipt; Sella’s iron account remains disputed. Ragna and Neri plan to approach the supplier."
+    },
+    {
+      "id": "SC-0013",
+      "chapter": "manuscript/013-the-makers-mark.md",
+      "pov": "Ragna",
+      "incoming": "Ragna and Neri seek the supplier’s record of forty bars.",
+      "turn": "Mere confirms bank payment and Blackwater acceptance; she authorises the two to collect a damaged cart at Thorn.",
+      "outgoing": "Ragna holds attested supplier records; the pair have a limited legitimate entry to Thorn tomorrow; a checkpoint hints at wider unrest."
+    },
+    {
+      "id": "SC-0014",
+      "chapter": "manuscript/014-the-outer-stores.md",
+      "pov": "Ragna",
+      "incoming": "Ragna and Neri have authority to collect Mere’s cart at Thorn.",
+      "turn": "They find Kelm held at the depot; he wants to leave and carries a receiving counterfoil for the later forty.",
+      "outgoing": "Cart repairs under way; Kelm remains at Thorn; both exits guarded and no counterfoil yet transferred."
+    },
+    {
+      "id": "SC-0015",
+      "chapter": "manuscript/015-the-lower-gate.md",
+      "pov": "Ragna",
+      "incoming": "Kelm wants to leave Thorn; Ragna and Neri have the cart.",
+      "turn": "Kelm gives the forty-bar counterfoil and admits he removed the rail. They attempt to leave; Neri is injured and the cart and tools are abandoned.",
+      "outgoing": "Ragna and Neri wait at the kiln; Kelm goes for help voluntarily; Ragna has the forty counterfoil. Venn and Tavin remain detained."
+    },
+    {
+      "id": "SC-0016",
+      "chapter": "manuscript/016-the-part-left-out.md",
+      "pov": "Ragna",
+      "incoming": "Neri injured at the kiln; Kelm has gone for help.",
+      "turn": "Kelm returns with help and gives a detailed, signed account of the rail and Dorrik’s fall.",
+      "outgoing": "Neri is in healer’s care; Mere will seek cart hire reimbursement; Sella holds the counterfoil and has heard Kelm’s account."
+    },
+    {
+      "id": "SC-0017",
+      "chapter": "manuscript/017-a-visit-allowed.md",
+      "pov": "Ragna",
+      "incoming": "Tavin and Venn detained; Kelm has signed an account.",
+      "turn": "Harrow offers Tavin’s and Venn’s release for the counterfoil and Ilva’s silence; Tavin refuses to have a deal made for him.",
+      "outgoing": "The detainees remain held; Hedra knows the terms and has news of her son."
+    },
+    {
+      "id": "SC-0018",
+      "chapter": "manuscript/018-the-second-cart.md",
+      "pov": "Ragna",
+      "incoming": "Sella’s first twenty-bar deduction still disputed; records remain at risk.",
+      "turn": "Borr signs an account of carrying twenty bars to Thorn; Issa receives an order to surrender reserve records.",
+      "outgoing": "Issa will discuss a Sella payment with Halrik; reserve records face seizure at noon tomorrow."
+    },
+    {
+      "id": "SC-0019",
+      "chapter": "manuscript/019-what-they-can-stop.md",
+      "pov": "Ragna",
+      "incoming": "Reserve records face seizure; detainees held.",
+      "turn": "Workers decide which specific work to withhold; partners pay an initial Sella balance.",
+      "outgoing": "Carts wait, counterfoil custody changes to Mere, the bank records await transfer."
+    },
+    {
+      "id": "SC-0020",
+      "chapter": "manuscript/020-the-transfer.md",
+      "pov": "Ragna",
+      "incoming": "Officials arrive to take reserve records; workers withhold selected work.",
+      "turn": "Harrow burns the ledger; Ilva and Ragna save fragments, and Vale intervenes.",
+      "outgoing": "Partial reconciliation survives, records sealed at bank pending count; release of detainees still pending."
+    },
+    {
+      "id": "SC-0021",
+      "chapter": "manuscript/021-two-signatures.md",
+      "pov": "Ragna",
+      "incoming": "Partly burned records, testimony and counterfoil available.",
+      "turn": "Merrok admits the posting; partners sign corrected wages and remove his signing authority; Vale orders detainees brought out.",
+      "outgoing": "Tavin and Venn free pending inquiry; disputed wages authorised; records still under order."
+    },
+    {
+      "id": "SC-0022",
+      "chapter": "manuscript/022-the-work-of-keeping.md",
+      "pov": "Ragna",
+      "incoming": "Local settlement achieved; injuries, records and inquiry remain.",
+      "turn": "Workers receive money; Neri hears Kelm’s account; Sella chooses a public notice; witnesses consent to a limited account.",
+      "outgoing": "Ragna’s bank employment ends; open claims and wider rebellion remain for future stories."
+    }
+  ]
+}

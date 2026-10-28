@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "gates": [
+    {
+      "id": "GATE-0001",
+      "checkpoint": "development",
+      "status": "revise",
+      "reviewer": "whole_book_edit",
+      "review_target": "manuscript",
+      "source_snapshot": "initial ordered inventory b854de5af6d4c85d17eae66995a26ff97bd1f58b7e213779e025115313047dd6; targeted rechecks only after revisions",
+      "coverage": {
+        "read_in_full": [
+          "manuscript/001-the-audit.md",
+          "manuscript/002-the-household.md",
+          "manuscript/003-blackwater.md",
+          "manuscript/004-the-accommodation.md",
+          "manuscript/005-the-weigh-house.md",
+          "manuscript/006-the-dispatch-clerk.md",
+          "manuscript/007-the-source-column.md",
+          "manuscript/008-the-back-room.md",
+          "manuscript/009-the-abstract.md",
+          "manuscript/010-the-doorway.md",
+          "manuscript/011-the-package.md",
+          "manuscript/012-the-agreed-balance.md",
+          "manuscript/013-the-makers-mark.md",
+          "manuscript/014-the-outer-stores.md",
+          "manuscript/015-the-lower-gate.md",
+          "manuscript/016-the-part-left-out.md",
+          "manuscript/017-a-visit-allowed.md",
+          "manuscript/018-the-second-cart.md",
+          "manuscript/019-what-they-can-stop.md",
+          "manuscript/020-the-transfer.md",
+          "manuscript/021-two-signatures.md",
+          "manuscript/022-the-work-of-keeping.md"
+        ],
+        "skimmed": [],
+        "not_assessed": []
+      },
+      "evidence": "reviews/development-whole-book.md",
+      "open_issues": [
+        "Repetitive evidence and consent exchanges; full revised text not independently reassessed."
+      ]
+    },
+    {
+      "id": "GATE-0002",
+      "checkpoint": "continuity",
+      "status": "revise",
+      "reviewer": "whole_book_canon",
+      "review_target": "manuscript",
+      "source_snapshot": "review snapshot before targeted line edits to chapters 6, 8, 13; current inventory 9947eaa9f11b530dc58f0869cdde1b5faedb5a7de4b465cf7dd5ed13a74f8700",
+      "coverage": {
+        "read_in_full": [
+          "manuscript/001-the-audit.md",
+          "manuscript/002-the-household.md",
+          "manuscript/003-blackwater.md",
+          "manuscript/004-the-accommodation.md",
+          "manuscript/005-the-weigh-house.md",
+          "manuscript/006-the-dispatch-clerk.md",
+          "manuscript/007-the-source-column.md",
+          "manuscript/008-the-back-room.md",
+          "manuscript/009-the-abstract.md",
+          "manuscript/010-the-doorway.md",
+          "manuscript/011-the-package.md",
+          "manuscript/012-the-agreed-balance.md",
+          "manuscript/013-the-makers-mark.md",
+          "manuscript/014-the-outer-stores.md",
+          "manuscript/015-the-lower-gate.md",
+          "manuscript/016-the-part-left-out.md",
+          "manuscript/017-a-visit-allowed.md",
+          "manuscript/018-the-second-cart.md",
+          "manuscript/019-what-they-can-stop.md",
+          "manuscript/020-the-transfer.md",
+          "manuscript/021-two-signatures.md",
+          "manuscript/022-the-work-of-keeping.md"
+        ],
+        "skimmed": [],
+        "not_assessed": []
+      },
+      "evidence": "reviews/continuity-whole-book.md",
+      "open_issues": [
+        "Final minor wording correction not independently re-read; external franchise canon not comprehensively checked.",
+        "Targeted line edits to chapters 6, 8, 13 not independently continuity-rechecked."
+      ]
+    },
+    {
+      "id": "GATE-0003",
+      "checkpoint": "line-copy",
+      "status": "pass",
+      "reviewer": "line_first,line_second,copy_full",
+      "review_target": "manuscript",
+      "source_snapshot": "ordered chapter inventory a624ce350e948890f0cc59cd549d6baca5a85da4fc038b375e044f7661b29c4e",
+      "coverage": {
+        "read_in_full": [
+          "manuscript/001-the-audit.md",
+          "manuscript/002-the-household.md",
+          "manuscript/003-blackwater.md",
+          "manuscript/004-the-accommodation.md",
+          "manuscript/005-the-weigh-house.md",
+          "manuscript/006-the-dispatch-clerk.md",
+          "manuscript/007-the-source-column.md",
+          "manuscript/008-the-back-room.md",
+          "manuscript/009-the-abstract.md",
+          "manuscript/010-the-doorway.md",
+          "manuscript/011-the-package.md",
+          "manuscript/012-the-agreed-balance.md",
+          "manuscript/013-the-makers-mark.md",
+          "manuscript/014-the-outer-stores.md",
+          "manuscript/015-the-lower-gate.md",
+          "manuscript/016-the-part-left-out.md",
+          "manuscript/017-a-visit-allowed.md",
+          "manuscript/018-the-second-cart.md",
+          "manuscript/019-what-they-can-stop.md",
+          "manuscript/020-the-transfer.md",
+          "manuscript/021-two-signatures.md",
+          "manuscript/022-the-work-of-keeping.md"
+        ],
+        "skimmed": [],
+        "not_assessed": []
+      },
+      "evidence": "reviews/copy-edit-complete.md; line specialists reports",
+      "open_issues": []
+    },
+    {
+      "id": "GATE-0004",
+      "checkpoint": "continuity-evidence",
+      "status": "pass",
+      "reviewer": "canon_full,proof_edited",
+      "review_target": "manuscript",
+      "source_snapshot": "ordered chapter inventory a624ce350e948890f0cc59cd549d6baca5a85da4fc038b375e044f7661b29c4e",
+      "coverage": {
+        "read_in_full": [
+          "manuscript/001-the-audit.md",
+          "manuscript/002-the-household.md",
+          "manuscript/003-blackwater.md",
+          "manuscript/004-the-accommodation.md",
+          "manuscript/005-the-weigh-house.md",
+          "manuscript/006-the-dispatch-clerk.md",
+          "manuscript/007-the-source-column.md",
+          "manuscript/008-the-back-room.md",
+          "manuscript/009-the-abstract.md",
+          "manuscript/010-the-doorway.md",
+          "manuscript/011-the-package.md",
+          "manuscript/012-the-agreed-balance.md",
+          "manuscript/013-the-makers-mark.md",
+          "manuscript/014-the-outer-stores.md",
+          "manuscript/015-the-lower-gate.md",
+          "manuscript/016-the-part-left-out.md",
+          "manuscript/017-a-visit-allowed.md",
+          "manuscript/018-the-second-cart.md",
+          "manuscript/019-what-they-can-stop.md",
+          "manuscript/020-the-transfer.md",
+          "manuscript/021-two-signatures.md",
+          "manuscript/022-the-work-of-keeping.md"
+        ],
+        "skimmed": [],
+        "not_assessed": []
+      },
+      "evidence": "reviews/continuity-edited-manuscript.md; reviews/production-reading-master.md",
+      "open_issues": [
+        "External franchise canon and historical accuracy not comprehensively checked."
+      ]
+    },
+    {
+      "id": "GATE-0005",
+      "checkpoint": "production",
+      "status": "pass",
+      "reviewer": "proof_edited",
+      "review_target": "assembled Markdown reading master",
+      "source_snapshot": "export SHA-256 37bdb51ed63c2c7b0e45264d872178b8eb57cdd30df983c2e01c27dd5956a7af",
+      "coverage": {
+        "read_in_full": [
+          "exports/the-ledger-of-ashes-edited.md"
+        ],
+        "skimmed": [],
+        "not_assessed": [
+          "EPUB",
+          "PDF"
+        ]
+      },
+      "evidence": "reviews/production-reading-master.md",
+      "open_issues": [
+        "Proof covers private Markdown reading master; no EPUB or PDF prepared."
+      ]
+    }
+  ]
+}

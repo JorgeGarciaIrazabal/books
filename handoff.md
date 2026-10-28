@@ -1,5 +1,17 @@
 # Workspace handoff
 
+## Goblin Wars text release and Drama 3 audiobook render, 2026-10-27
+
+- The author asked to publish the Goblin Wars series to GitHub Pages. Only Book One, *The Ledger of Ashes*, is complete; the author selected Book One in EPUB, PDF and audio, and authorized public fan publication. Books Two and Three remain roadmap plans.
+- Published now: a rebuilt public EPUB (146,201 bytes, SHA-256 `5b9853756cce16485ca786cbecfa1b9097626be26a24eb217cc5b9b05c12ae47`) and a 248-page PDF (482,483 bytes, SHA-256 `32a8fbb9bd53f44af01d63ce239aed2c8d79c7f0a6b3709759d82ccd715c81b4`), with a fourth catalogue card. The text edition is live; the audio is not in the public release yet.
+- Audio: the full Drama 3 render (the documented voice) is running in the background over the 484 segment map; estimate about 6.5 hours. A faster Piper draft was produced for timing and withheld after ASR exposed name mispronunciations (Ragna heard as Ragnar 385 times). The Piper draft is not published.
+- Changed paths in the text release: `publications/{manifest.json,the-ledger-of-ashes.epub,the-ledger-of-ashes.pdf,covers/the-ledger-of-ashes.jpg}`, `site/index.html`, `wizarding-world/goblin-wars/**`, `docs/publishing.md`, `tests/test_catalog.py`, `.gitattributes`, `tasks.json`, `handoff.md`, and `.studio/reviews/goblin-wars-pages-2026-10-27/**`. No `site/audio/` or `site/audiobook.html` is in this commit.
+- Verification: 51 unit tests pass; the site build, manifest, package, hash and link checks pass; Chrome/Playwright covers four cards and the goblin reader (title, About, contents, Chapter One). The EPUB builder proves chapter fidelity, package order and tag exclusion. The PDF has 22 chapters, a one-page contents, bookmarks and no performance tags. No human listened to either audio draft; Drama 3 render and audio checks are pending.
+- Rights: unofficial fan fiction, free public fan publication authorized by the author; no affiliation, endorsement or official status. The audio voice is synthetic Drama 3 using the provisional Kokoro reference; the Fish Audio Community License and voice provenance apply. No identifiable person is imitated.
+- Deployment: **COMMIT_PLACEHOLDER**; Pages run **RUN_PLACEHOLDER**; live checks **LIVE_PLACEHOLDER**.
+- Local state: the text release was prepared and committed in the clean worktree `/tmp/opencode/books-pages`. The main workspace still has the earlier uncommitted narration/adaptive-reader work from 2026-10-26; it is not part of this release. Do not claim that work was published.
+- Next action: when the Drama 3 render finishes, assemble the 22 chapters, add the audiobook page and publish the audio release. Add Books Two and Three only when written.
+
 ## Responsive catalog and reader redesign, 2026-10-25
 
 - The author asked for a substantial improvement of the published site at phone, tablet, and desktop sizes, with explicit attention to space, type size, and what belongs in each format, then authorized finishing and publishing the new version.

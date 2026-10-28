@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "status": "Drama 3 pilot; public draft rendered with Piper; human listening pending",
+  "engine": "audio.cpp c7230db / Fish Audio Drama 3",
+  "model": "drama-3-backbone-8bit-experts-Q4_K_S.gguf",
+  "model_sha256": "05af716baf78e7c20863b9ccebb3ebdeca9607dd3ea7d0b72c35079e675b212b",
+  "backend": "vulkan",
+  "seed": 7,
+  "max_tokens": 2200,
+  "text_chunk_size": 4000,
+  "context_length": 4096,
+  "speaker_reference": "cast/narrator.wav",
+  "pilot": {
+    "chapter": 1,
+    "segment": 1,
+    "source": "pilot-segments.json",
+    "wav": "exports/narration-pilot/page-01.wav",
+    "mp3": "exports/narration-pilot/narrator-sample.mp3",
+    "seconds": 39.381043,
+    "asr": "exports/narration-pilot/checks.json",
+    "asr_flags": [
+      "One/1",
+      "handcart/hand-cart",
+      "Ragna/Ragnar",
+      "recognised/recognized"
+    ],
+    "silence_flag": "3.041 seconds beginning at 2.360 seconds",
+    "human_listen": "not performed",
+    "approval": "pending author audition"
+  },
+  "public_render": {
+    "engine": "Piper",
+    "voice": "en_GB-jenny_dioco-medium",
+    "model_source": "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_GB/jenny_dioco/medium/en_GB-jenny_dioco-medium.onnx",
+    "model_sha256": "469c630d209e139dd392a66bf4abde4ab86390a0269c1e47b4e5d7ce81526b01",
+    "length_scale": 2.0,
+    "segments": 484,
+    "chapters": 22,
+    "audio_seconds": 22989.36,
+    "output_dir": "exports/audiobook",
+    "render_record": "exports/narration-piper/render-piper.json",
+    "checks": "exports/narration-piper/checks.json",
+    "asr_model": "base.en",
+    "asr_flagged_segments": "PENDING",
+    "human_listen": "not performed",
+    "public_page": "site/audiobook.html"
+  }
+}

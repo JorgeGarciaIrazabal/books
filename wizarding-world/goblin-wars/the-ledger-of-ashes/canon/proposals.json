@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "proposals": [
+    {
+      "id": "PROP-0001",
+      "status": "proposed",
+      "scope": "goblin-wars/the-ledger-of-ashes",
+      "text": "Ragna is a goblin accountant; Tavin is her apprentice; Ilva is an examiner; Merrok is a bank official; Harrow is a Ministry examiner. In 1752 Harrow seizes a ledger containing community accounts.",
+      "provenance": "manuscript/001-the-audit.md",
+      "effective_story_time": "1752, exact date undetermined",
+      "changes_existing_fact": false
+    },
+    {
+      "id": "PROP-0002",
+      "status": "proposed",
+      "scope": "goblin-wars/the-ledger-of-ashes",
+      "text": "In the project’s fictional 1752 Derbyshire district, the Works Bank advance, redirected iron, Dorrik’s fall, seizure and partial destruction of records, wage settlement and witness accounts unfold as depicted in chapters 1–22. The Ministry inquiry and wider rebellion remain unresolved.",
+      "provenance": "manuscript/001-the-audit.md through manuscript/022-the-work-of-keeping.md",
+      "effective_story_time": "1752, exact dates undetermined",
+      "changes_existing_fact": false
+    }
+  ]
+}

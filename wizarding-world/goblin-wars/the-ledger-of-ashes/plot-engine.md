@@ -1,0 +1,41 @@
+# Causal design for the first draft
+
+Working story plan; all specific events and institutions below are project inventions. First book spans roughly twelve days in 1752; no precise historical political dates invented.
+
+Merrok has secretly advanced pooled workshop funds for a Ministry security stockpile on the promise of later repayment. To hide the hole, his staff charge the workshops a second time on a forty-bar note; Sella’s household actually received only twenty of those bars. Reconcile the remaining twenty and the duplicate charge through independent evidence as the draft proceeds. The concealed ledger page reconciles the workshop account to the Ministry shipments. Harrow seizes the ledger to suppress the reconciliation and obtain names.
+
+At Blackwater a safety rail was removed to move the shipment. Dorrik refused to operate the lift without it. Harrow ordered the work to continue; a foreman obeyed, a load shifted, and Dorrik fell trying to stop it. The report falsely says the rail was present and Dorrik entered the closed shaft alone. No secret assassin. Harrow treats witnesses as suspected thieves.
+
+Ilva helped hide the page for Merrok, hoping to protect the bank from a wider seizure. She knew of the financing, not the death, when she acted; she must admit her own role. Merrok seeks both to protect his own position and preserve a bank arrangement he believes prevents broader confiscation. The theft is one abuse within wider unequal conditions, not the origin of all rebellion.
+
+## Story sequence
+1. Audit and seizure, already drafted.
+2. Dorrik's household seeks wages, rejects being pressured to sign a false report, and pursues its own choices. A delivery receipt provides a lead, but is not proof of cause of death.
+3. Ragna and Tavin visit Blackwater, find evidence the rail was moved, and hear from a frightened witness. Officials seal the works.
+4. Merrok offers food and money in exchange for a release. Workers decide for themselves; some need immediate relief. A mutual fund offers imperfect assistance without surrendering the claim.
+5. Ilva introduces a Ministry dispatch clerk, who altered a destination to hide the security stockpile and holds a duplicate. In exchange for testimony he seeks protection for his family. The workers agree to protection, not immunity.
+6. A petition for wages, ledger and inquiry fails. Tavin distributes a narrow claim early; Harrow attempts to arrest a witness, violence follows, and Tavin is detained. Both secrecy and publicity have costs.
+7. Ilva admits concealing the page, explaining her role in the financing. Bank partners can authorise reserve advances against verified liabilities; establish this option before the ending.
+8. Families deliberate about disclosure. Dorrik's family consents to publish evidence of his death; others protect sensitive private information. The duplicate and testimony need corroboration. A depot receiving counterfoil and marked stock may supply it.
+9. Workers reach the depot through a delivery access, identify marked fittings, recover the receiving counterfoil and free a detained loader who saw the rail removed. They choose evidence and a person over destruction, at a cost.
+10. Harrow offers Tavin's release in exchange for the evidence and Ilva's silence. Tavin rejects a deal made in his name. The workers organise a stoppage and a presentation to the partners. Harrow moves the ledger.
+11. At the transfer, Harrow attempts to destroy the reconciliation. Ragna chooses people and selected evidence over the intact book. Much of the ledger burns and private balances are lost. Ilva confesses publicly. Testimony, counterfoil and surviving signed material corroborate each other. Bank partners remove Merrok's authority and sign a reserve advance against verified wages, with named detainees released under supervision.
+12. Show wages reaching households, the corrected account of Dorrik's death, and the family's chosen remembrance. Some balances need reconstruction and remain contested. Ilva loses her post and continues testimony; Ragna loses her secure office. Harrow faces an accusation, not instant conviction. Local victory is real; larger conflict persists.
+
+Preserve costs into later books: damaged accounts, harmed workshop and witness network, and Ragna and Tavin's disagreement about who controls disclosures. Adapt details to the actual text as it develops; do not force a chapter to match a plan when character decisions require revision.
+
+## Working financial chain
+
+Let p be the price per bar. Forty bars are released in two lots of twenty: the first reaches Sella's workshop and the second is redirected to the Ministry. The household honestly owes 20p; the Ministry owes 20p, but the household is charged 40p. Separately, the bank advances pooled money to buy a further forty bars for the Ministry, a 40p Ministry liability. Merrok records a false duplicate household charge of 40p to offset that concealed advance. Thus the Ministry receives sixty bars, the household receives twenty, and the household is charged eighty. Its wrongful deductions total 60p. The release note signature need not establish household receipt: Hessa already distinguished release from delivery.
+
+Dorrik returned to question the missing twenty and encountered the later forty-bar consignment. The proposed rail incident concerns that later movement. Prove each link independently: stock records and first delivery acknowledgement; second driver and Ministry receipt; supplier invoice and bank voucher for the separate forty; reconciliation or signed transfer instruction connecting duplicate charge and advance; stock markings and receiving or issue records. The duplicate cannot be proven solely by a matching number. Seed the separate procurement before revealing its role.
+
+If gross wages are W, correct net wages are W minus 20p, not W minus 80p. Reserve payments must cover the whole verified correct balance, not only the wrongful 60p deduction; any later recovery against the Ministry is separate. These figures are a provisional author-facing design, not known to Ragna yet.
+
+## Later movements to develop in sequence
+
+After Ilva's account, give Venn's mother an independent decision about safety and show the practical cost of relocation; discovery can expose him to pressure. As the petitions fail, the public assembly and attempted arrest should have a specific physical cause and location. Tavin is detained helping someone, and the consequences spread through homes and workplaces. Let the fund and witnesses require support rather than treating bravery as free.
+
+The middle must change scene shape and agency: a reserve partner tests reconstructed wages in the workshop; Merrok offers a private settlement that protects his position; a supplier provides evidence of the separate forty-bar payment with conditions; a legitimate delivery or repair permits reconnaissance of Thorn. Evidence of a receipt and the rescue of a loader are chosen over a complete archive or destruction, at a real cost. A physical reconstruction of the lift by skilled workers establishes the witness's account of the rail, while Brann stays within what he actually saw. A witness freely decides whether to sign knowing the risks.
+
+Harrow offers Tavin's freedom for evidence and Ilva's silence; Tavin has his own voice and refuses a bargain made over his head. Workers debate and organise a limited stoppage, including food, communications and dissent. A confrontation around the ledger transfer ends with Ragna choosing witnesses and selected evidence over the intact book; records burn. Independent evidence and collective leverage press two partners to authorise verified net wages and remove Merrok's authority. A Ministry superior authorises a hearing and the actual release of named detainees. Show wages reaching people, including fair treatment for those who took conditional relief; establish the corrected account of Dorrik's death and let his family choose how it is used. Ilva and Ragna lose their posts, reconstruction of private balances continues, and a wider political crisis remains for the next book. Exact chapter divisions and actions must follow the manuscript's developing choices.

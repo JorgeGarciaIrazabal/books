@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "the-ledger-of-ashes",
+  "universe": "wizarding-world",
+  "series": "goblin-wars",
+  "title": "The Ledger of Ashes",
+  "kind": "fiction",
+  "stage": "production",
+  "language": "en",
+  "chapters": [
+    "manuscript/001-the-audit.md",
+    "manuscript/002-the-household.md",
+    "manuscript/003-blackwater.md",
+    "manuscript/004-the-accommodation.md",
+    "manuscript/005-the-weigh-house.md",
+    "manuscript/006-the-dispatch-clerk.md",
+    "manuscript/007-the-source-column.md",
+    "manuscript/008-the-back-room.md",
+    "manuscript/009-the-abstract.md",
+    "manuscript/010-the-doorway.md",
+    "manuscript/011-the-package.md",
+    "manuscript/012-the-agreed-balance.md",
+    "manuscript/013-the-makers-mark.md",
+    "manuscript/014-the-outer-stores.md",
+    "manuscript/015-the-lower-gate.md",
+    "manuscript/016-the-part-left-out.md",
+    "manuscript/017-a-visit-allowed.md",
+    "manuscript/018-the-second-cart.md",
+    "manuscript/019-what-they-can-stop.md",
+    "manuscript/020-the-transfer.md",
+    "manuscript/021-two-signatures.md",
+    "manuscript/022-the-work-of-keeping.md"
+  ],
+  "narration": {
+    "script": "production/narration/script.md",
+    "cast": "production/narration/cast.json",
+    "source": "exports/the-ledger-of-ashes-edited.md",
+    "render": "production/narration/render.json"
+  }
+}

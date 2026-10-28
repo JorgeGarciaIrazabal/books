@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "title": "Books",
-  "description": "Public library of read-aloud stories and picture books, published at https://JorgeGarciaIrazabal.github.io/books/",
+  "description": "Public library of stories, picture books and novels, published at https://JorgeGarciaIrazabal.github.io/books/",
   "provenance": {
     "source_commit": "e4cf1941351b958883f72284532cd58d5a4cdd67",
     "copied": "2026-10-25",
@@ -112,6 +112,42 @@
         },
         {
           "path": "willow-lane/standalone/mila-and-the-missing-moon/exports/mila-y-la-luna-perdida.pdf",
+          "role": "pdf"
+        }
+      ]
+    },
+    {
+      "id": "the-ledger-of-ashes",
+      "title": "The Ledger of Ashes",
+      "summary": "In 1752, goblin accountant Ragna finds a false charge on the day Ministry officials seize the iron ledger holding her community's wages. Her search for the missing iron exposes a transaction that powerful goblins and Ministry officials want buried, and forces her to choose between saving the ledger and publishing the proof. First book of The Goblin Wars; unofficial Wizarding World fan fiction, 22 chapters.",
+      "language": "en",
+      "layout": "reflowable",
+      "edition_note": "Public fan-fiction reading edition: 22 chapters, 248 PDF pages; reflowable EPUB 3 with linked contents and a title-page cover.",
+      "downloads": {
+        "epub": {
+          "path": "the-ledger-of-ashes.epub",
+          "bytes": 146201,
+          "sha256": "5b9853756cce16485ca786cbecfa1b9097626be26a24eb217cc5b9b05c12ae47"
+        },
+        "pdf": {
+          "path": "the-ledger-of-ashes.pdf",
+          "bytes": 482483,
+          "sha256": "32a8fbb9bd53f44af01d63ce239aed2c8d79c7f0a6b3709759d82ccd715c81b4"
+        }
+      },
+      "cover": {
+        "path": "covers/the-ledger-of-ashes.jpg",
+        "bytes": 25943,
+        "sha256": "0d11420aad02fd6fa31a9fbe54f680213762663f3a1ce2a653ff603835bd3637",
+        "derived_from": "EPUB/cover.jpg inside the published EPUB, a 720x1080 title-page rendering"
+      },
+      "sources": [
+        {
+          "path": "wizarding-world/goblin-wars/the-ledger-of-ashes/exports/the-ledger-of-ashes.epub",
+          "role": "epub"
+        },
+        {
+          "path": "wizarding-world/goblin-wars/the-ledger-of-ashes/exports/the-ledger-of-ashes.pdf",
           "role": "pdf"
         }
       ]

@@ -1,0 +1,5 @@
+# Continuity check: chapters 1–5
+
+Independent canon_keeper read all five chapters, brief and style; no plan or handoff. No material internal contradiction found. Coverage is not external canon or whole-novel certification. Chapter hashes in order: `b334866e4492a971ad5ee4d60b306a55af2edbd2267ba4356513176461d254fc`, `ab62db2bcb3a6df34729e6a9357321bfdb273caf6a8af6fe50ace24764177448`, `2900b5354336a2766ca3c3d06528a627dfc98a162753c41a82dcbe17ef2a8e62`, `ba1c8ca002b4b5e19e2885716f7270dfb52b031d8dbaae5d1f7baa197665745e`, `49912952dbbb7efaa8c3795ae687d30047c4a4ed067f9465b4e48d895319d0c7`.
+
+Pell holds the first note; the drawing Ragna and Neri retain is a reconstruction. Sella has the original fragment; Harrow has the ledger. Hessa confirmed two releases, not destinations. Brann observed the lift at an angle and Dorrik dead below, not the cause of death. Neri saw that the rail was dismantled, not when or why. Four households accepted conditional settlements, while mutual aid is a separate gift and does not discharge wages. The first three story days proceed coherently; location remains imprecise. Preserve these boundaries in subsequent chapters.

@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "disclosures": [
+    {
+      "id": "KN-0001",
+      "subject": "The hidden transaction",
+      "known_by": [
+        "Ragna sees a list and Merrok signature",
+        "Ilva knows at least some of the concealment",
+        "Tavin sees the opened page"
+      ],
+      "reader": "Sees only what Ragna observes; the purpose and Dorrik’s cause of death remain unknown."
+    },
+    {
+      "id": "KN-0002",
+      "subject": "The household iron discrepancy",
+      "known_by": [
+        "Sella and Neri know they received twenty bars",
+        "Ragna knows the note signed by Dorrik recorded forty",
+        "Orren recalls Dorrik planned to find the other cart",
+        "Sella, Neri and Ragna know of Merrok’s signature; Sella has the original fragment"
+      ],
+      "reader": "Knows a discrepancy exists, but not where the remaining iron went or why Dorrik signed."
+    },
+    {
+      "id": "KN-0003",
+      "subject": "Redirected twenty bars",
+      "known_by": [
+        "Venn admits he altered the destination to Thorn depot",
+        "Sella and Ragna hold attested copies",
+        "Ilva witnessed his statement"
+      ],
+      "reader": "Knows Venn says Harrow’s office issued an instruction, but his copy does not bear Harrow’s signature and payment source remains unproved."
+    },
+    {
+      "id": "KN-0004",
+      "subject": "Dorrik’s death and the accounts",
+      "known_by": [
+        "Kelm admits removing the rail and gives the top-side account",
+        "Brann reports his limited bottom-of-shaft observation",
+        "Sella and Neri hear Kelm’s account",
+        "Merrok admits authorising the duplicate posting"
+      ],
+      "reader": "Learns the reconstructed local incident and financial chain; wider rebellion remains unresolved."
+    }
+  ]
+}

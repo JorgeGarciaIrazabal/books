@@ -101,6 +101,49 @@
       ],
       "owner": "studio_director",
       "result": "Implemented and checked. Catalog cards dropped from 862px to 298px on a 390px phone and from 986px to 659px on desktop; phone reader header dropped from 153px to 106px (reflowable) and 104px to 56px (fixed); fixed-layout pages now fit their own 720:912 ratio instead of clipping. 51 tests and the build pass; six-viewport Playwright coverage and all three books were exercised. Published in commit f045b63; GitHub Pages run 40258816097 succeeded; live checks at https://jorgegarciairazabal.github.io/books/ passed with no JavaScript errors."
+    },
+    {
+      "id": "TASK-PAGES-0005",
+      "role": "studio_director",
+      "status": "in_progress",
+      "source_snapshot": "a135b26 plus the wizarding-world/goblin-wars working tree, 2026-10-27; chapter inventory a624ce350e948890f0cc59cd549d6baca5a85da4fc038b375e044f7661b29c4e",
+      "inputs": [
+        "AGENTS.md",
+        ".studio/agents/studio_director.md",
+        "wizarding-world/goblin-wars/the-ledger-of-ashes/brief.md",
+        "wizarding-world/goblin-wars/the-ledger-of-ashes/book.json",
+        "wizarding-world/goblin-wars/the-ledger-of-ashes/handoff.md",
+        "publications/manifest.json",
+        "docs/publishing.md"
+      ],
+      "allowed_writes": [
+        "publications/**",
+        "site/**",
+        "wizarding-world/goblin-wars/**",
+        "docs/publishing.md",
+        "tests/test_catalog.py",
+        ".gitattributes",
+        ".studio/reviews/goblin-wars-pages-2026-10-27/**",
+        "handoff.md",
+        "tasks.json"
+      ],
+      "deliverable": "Public Book One text editions (EPUB and PDF) on GitHub Pages, with the Drama 3 audiobook render in progress for a later release",
+      "acceptance": [
+        "EPUB rebuilt with a public fan-fiction notice and unchanged story text",
+        "PDF reading edition built and checked",
+        "Drama 3 audiobook render started from the 484 word-exact segments",
+        "51 site tests, build, manifest, hash and link checks pass",
+        "Browser checks cover the catalogue and goblin reader",
+        "Text editions published through GitHub Pages and checked live",
+        "Human listening still disclosed as not performed"
+      ],
+      "budget": {
+        "max_rounds": 2,
+        "max_tool_calls": 250
+      },
+      "dependencies": [],
+      "owner": "studio_director (deepseek-v4.1-flash)",
+      "result": "EPUB and PDF prepared and checked; Drama 3 full render running in the background. The Piper draft was withheld after ASR exposed name mispronunciations. Audio is not in the text-release commit."
     }
   ]
 }

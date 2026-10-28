@@ -1,0 +1,7 @@
+# Whole-book developmental assessment
+
+A fresh developmental_editor read all 22 chapters in book.json order with the brief and style; no outline, handoff or earlier reports. Initial ordered inventory hash: `b854de5af6d4c85d17eae66995a26ff97bd1f58b7e213779e025115313047dd6`. Coverage: whole manuscript. The novel's local mystery, payments and Dorrik's corrected account resolve; its domestic choices and uneven costs were particularly effective.
+
+The editor identified four consequential climax problems: unclear leverage of the stoppage, Harrow's reason to burn the ledger at the comparison, Vale's unseeded authority, and Merrok's changing calculation. The director revised chapters 18–21. The same editor rechecked the changes and found the first, third and fourth addressed, then rechecked a further mandatory-comparison insertion and considered the second substantially addressed. These are targeted rechecks, not a second full literary review of the revised manuscript.
+
+Open editorial issue: repeated scenes of evidence qualification and permission sometimes share a similar conversational shape. A later developmental/line pass should compress routine comparisons and vary speech without losing consent or evidentiary distinctions. The book is a complete short first draft, not a copyedited or production-proofed edition. Its initial 80,000–100,000-word target was provisional; the draft runs approximately 50,000 words. Its suitability at this length remains an editorial and author judgment.
