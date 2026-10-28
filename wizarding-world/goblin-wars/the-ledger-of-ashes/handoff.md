@@ -1,5 +1,11 @@
 # Handoff
 
+## Audiobook navigation, 2026-10-28
+
+- Updated `production/build_audiobook_page.py`, `site/audiobook.html` and `site/assets/js/audiobook.js` to offer a single chapter player, chapter selection and previous/next controls. After a listener starts playback, the next chapter plays automatically; the page does not start audio on load. Individual chapter downloads and native players remain available without JavaScript.
+- Checks: JavaScript syntax check and 38 catalog unit tests passed. Browser and physical-device playback have not been tested; browser playback restrictions may require pressing play again at a transition. The existing audio listening review remains outstanding.
+- Next: verify chapter transitions and controls in a browser, including on a mobile device, and listen to the narration.
+
 ## Public fan edition and Drama 3 audiobook render, 2026-10-27
 
 - The author asked to publish the Goblin Wars series to GitHub Pages. Only Book One is complete; the author selected Book One in EPUB, PDF and audio, and authorized public fan publication. Books Two and Three remain roadmap plans.

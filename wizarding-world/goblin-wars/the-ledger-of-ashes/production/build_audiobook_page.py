@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Generate the public audiobook page from an assembled chapter manifest.
 
-The page uses native audio controls with preload="none". It never autoplays and
-contains no performance tags or embedded text.
+The page uses native audio controls and starts only after a listener action.
+It contains no performance tags or embedded text.
 """
 from __future__ import annotations
 
@@ -78,6 +78,14 @@ def main() -> int:
   .chapter-audio audio {{ width: 100%; height: 40px; }}
   .chapter-audio p {{ margin: 0.45rem 0 0; font-size: 0.82rem; color: var(--muted); }}
   .chapter-audio a {{ color: var(--accent-deep); }}
+  .audio-player {{ background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.2rem; margin-bottom: 2rem; }}
+  .audio-player h2 {{ margin: 0.25rem 0 0.8rem; font-family: var(--serif); font-size: 1.2rem; }}
+  .audio-player audio {{ width: 100%; }}
+  .audio-player-nav {{ display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.7rem; }}
+  .audio-player-nav button, .chapter-select {{ cursor: pointer; font: inherit; }}
+  .chapter-select {{ text-align: left; color: inherit; background: transparent; border: 0; padding: 0.35rem 0; font-family: var(--serif); font-size: 1.08rem; }}
+  .chapter-select[aria-current="true"] {{ color: var(--accent-deep); font-weight: bold; }}
+  .chapter-select:focus-visible, .audio-player-nav button:focus-visible {{ outline: 3px solid var(--gold); outline-offset: 3px; }}
   .audio-foot {{ margin-top: 2rem; font-size: 0.85rem; color: var(--muted); }}
 </style>
 </head>
@@ -98,7 +106,7 @@ def main() -> int:
 </header>
 
 <main class="wrap audio-page">
-  <p class="audio-notice"><strong>Synthetic narration.</strong> {escape(credit)} This edition was assembled from {total_segments} word-exact segments. {escape(review)} The EPUB and PDF remain the authoritative text. No audio autoplays on this page.</p>
+  <p class="audio-notice"><strong>Synthetic narration.</strong> {escape(credit)} This edition was assembled from {total_segments} word-exact segments. {escape(review)} The EPUB and PDF remain the authoritative text. Playback starts when you press play and continues to the next chapter.</p>
 
   <div class="audio-links">
     <a class="btn" href="reader.html?book={escape(args.book_id)}">Read online</a>
@@ -106,12 +114,22 @@ def main() -> int:
     <a class="btn btn-ghost" href="publications/{escape(args.book_id)}.pdf" download>PDF</a>
   </div>
 
+  <section id="audio-player" class="audio-player" aria-label="Audiobook player" hidden>
+    <p id="audio-position"></p>
+    <h2 id="audio-current"></h2>
+    <div id="audio-control"></div>
+    <div class="audio-player-nav">
+      <button class="btn btn-ghost" id="audio-previous" type="button">Previous chapter</button>
+      <button class="btn btn-ghost" id="audio-next" type="button">Next chapter</button>
+    </div>
+    <p id="audio-status" role="status"></p>
+  </section>
   <h2>Chapters</h2>
   <ol class="chapter-audio">
 {chr(10).join(items)}
   </ol>
 
-  <p class="audio-foot">Narration is a separate performance layer and is not embedded in the EPUB or PDF. The audio files are mono MP3s; each player loads only when you press play.</p>
+  <p class="audio-foot">Narration is a separate performance layer and is not embedded in the EPUB or PDF. The audio files are mono MP3s.</p>
 </main>
 
 <footer class="site-footer">
@@ -119,6 +137,7 @@ def main() -> int:
     <p>The Ledger of Ashes is unofficial fan fiction. Harry Potter and the Wizarding World are properties of their respective rights holders; this free fan work is not authorised, endorsed or sponsored by them.</p>
   </div>
 </footer>
+<script src="assets/js/audiobook.js" defer></script>
 </body>
 </html>
 '''
