@@ -143,7 +143,7 @@
       },
       "dependencies": [],
       "owner": "studio_director (deepseek-v4.1-flash)",
-      "result": "EPUB and PDF prepared and checked; Drama 3 full render running in the background. The Piper draft was withheld after ASR exposed name mispronunciations. Audio is not in the text-release commit."
+      "result": "Text editions published in commit 8e3fd86; Pages run 40608512713 succeeded; live catalogue, reader and EPUB/PDF/cover hashes verified. Drama 3 audiobook render in progress; Piper draft withheld after ASR found name mispronunciations."
     }
   ]
 }

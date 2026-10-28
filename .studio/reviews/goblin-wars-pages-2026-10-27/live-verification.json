@@ -1,0 +1,49 @@
+{
+  "cards": 4,
+  "status": "4 books",
+  "ledgerCard": 1,
+  "listen": 0,
+  "overflow": false,
+  "heading": "The Ledger of Ashes",
+  "text": "THE GOBLIN WARS The Ledger of Ashes Book One Unofficial fan fiction",
+  "afterNext": "About this edition This is unofficial fan fiction set in the Harry Potter / Wizarding World setting.",
+  "errors": [],
+  "book": {
+    "id": "the-ledger-of-ashes",
+    "title": "The Ledger of Ashes",
+    "summary": "In 1752, goblin accountant Ragna finds a false charge on the day Ministry officials seize the iron ledger holding her community's wages. Her search for the missing iron exposes a transaction that powerful goblins and Ministry officials want buried, and forces her to choose between saving the ledger and publishing the proof. First book of The Goblin Wars; unofficial Wizarding World fan fiction, 22 chapters.",
+    "language": "en",
+    "language_label": "English",
+    "layout": "reflowable",
+    "layout_label": "Reflowable",
+    "downloads": {
+      "epub": "publications/the-ledger-of-ashes.epub",
+      "pdf": "publications/the-ledger-of-ashes.pdf"
+    },
+    "cover": "publications/covers/the-ledger-of-ashes.jpg",
+    "sizes": {
+      "epub": 146201,
+      "pdf": 482483
+    }
+  },
+  "hashes": {
+    "epub": {
+      "status": 200,
+      "type": "application/epub+zip",
+      "bytes": 146201,
+      "sha256": "5b9853756cce16485ca786cbecfa1b9097626be26a24eb217cc5b9b05c12ae47"
+    },
+    "pdf": {
+      "status": 200,
+      "type": "application/pdf",
+      "bytes": 482483,
+      "sha256": "32a8fbb9bd53f44af01d63ce239aed2c8d79c7f0a6b3709759d82ccd715c81b4"
+    },
+    "cover": {
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 25943,
+      "sha256": "0d11420aad02fd6fa31a9fbe54f680213762663f3a1ce2a653ff603835bd3637"
+    }
+  }
+}

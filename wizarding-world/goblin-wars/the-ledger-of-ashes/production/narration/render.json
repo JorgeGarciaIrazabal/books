@@ -41,8 +41,9 @@
     "render_record": "exports/narration-piper/render-piper.json",
     "checks": "exports/narration-piper/checks.json",
     "asr_model": "base.en",
-    "asr_flagged_segments": "PENDING",
+    "asr_flagged_segments": 483,
     "human_listen": "not performed",
-    "public_page": "site/audiobook.html"
+    "public_page": "site/audiobook.html",
+    "status": "Piper draft withheld; not published"
   }
 }
