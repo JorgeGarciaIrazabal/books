@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "events": [
+    {
+      "id": "EVT-0001",
+      "title": "The Copper Kettle Set to Simmer",
+      "story_time": "Years before Book 1",
+      "summary": "Jorge and Marissa set the heirloom copper pot over a low steady flame in New Jersey, beginning years of disciplined saving, career climbs, and late-night planning.",
+      "affected_entities": [
+        "CHAR-0001",
+        "CHAR-0002"
+      ]
+    },
+    {
+      "id": "EVT-0002",
+      "title": "Birth of the Six-Year-Old Oracle",
+      "story_time": "Six years before Book 1",
+      "summary": "Clara arrives, transforming the quest from an abstract gold-pile race into a search for a childhood full of parks, dancing, friends, and unicorn-bright mornings.",
+      "affected_entities": [
+        "CHAR-0001",
+        "CHAR-0002",
+        "CHAR-0003"
+      ]
+    },
+    {
+      "id": "EVT-0003",
+      "title": "Forging of Garbanzo",
+      "story_time": "Recent pre-quest months",
+      "summary": "Jorge assembles Garbanzo out of brass rings and four emerald GPU star-crystals to track family vaults every morning at ten, inadvertently baking in the Double-Counting Bug.",
+      "affected_entities": [
+        "CHAR-0001",
+        "CHAR-0004"
+      ]
+    },
+    {
+      "id": "EVT-0004",
+      "title": "Poki Crosses the Silver Wall",
+      "story_time": "Autumn prior to Book 1",
+      "summary": "Poki departs peacefully past the Silver Wall, leaving behind a calm starlight presence and a protective knack for knocking bad brochures off tables.",
+      "affected_entities": [
+        "CHAR-0001",
+        "CHAR-0002",
+        "CHAR-0003",
+        "CHAR-0005"
+      ]
+    },
+    {
+      "id": "EVT-0005",
+      "title": "The Kettle Rattles and the Loom Creeps",
+      "story_time": "Book 1, Chapters 1-4",
+      "summary": "The Automaton Loom swirls through the Amber Terminal Citadel while Clara pins up a crayon portrait of Papa without a screen, triggering the war-table reckoning on the Brass Scale.",
+      "affected_entities": [
+        "CHAR-0001",
+        "CHAR-0002",
+        "CHAR-0003",
+        "CHAR-0004",
+        "CHAR-0005"
+      ]
+    },
+    {
+      "id": "EVT-0006",
+      "title": "The Iberian Gauntlet and the Valladolid Discovery",
+      "story_time": "Book 1, Chapters 5-6",
+      "summary": "Armed with Cadastral Spectacles and the Compass of Living Streets, the family defeats the Mirage Brokers and discovers a sunlit, neighbor-rich home in the Valladolid valley.",
+      "affected_entities": [
+        "CHAR-0001",
+        "CHAR-0002",
+        "CHAR-0003",
+        "CHAR-0005"
+      ]
+    },
+    {
+      "id": "EVT-0007",
+      "title": "The Battle of the Atlantic Storm-Bridge and the Resignation Seal",
+      "story_time": "Book 1, Chapters 7-8",
+      "summary": "After patching Garbanzo mid-storm to defeat Lord Double-Count's Hydra and resisting the Someday Siren's final March-bonus lure, Jorge stamps the Resignation Seal and the Golden Garbanzo blooms.",
+      "affected_entities": [
+        "CHAR-0001",
+        "CHAR-0002",
+        "CHAR-0003",
+        "CHAR-0004"
+      ]
+    },
+    {
+      "id": "EVT-0008",
+      "title": "The Crossing and the First Free Morning",
+      "story_time": "Book 1, Chapters 9-10",
+      "summary": "Following a joyous farewell cocido madrileño feast with extended family, the Garbanzo Family crosses the ocean and claims a crisp, unhurried Tuesday morning in Spain.",
+      "affected_entities": [
+        "CHAR-0001",
+        "CHAR-0002",
+        "CHAR-0003",
+        "CHAR-0004",
+        "CHAR-0005"
+      ]
+    }
+  ]
+}

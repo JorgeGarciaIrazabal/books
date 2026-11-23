@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "id": "standalone",
+  "universe": "garbanzo-family",
+  "title": "Standalone",
+  "books": [
+    "the-quest-of-the-golden-garbanzo"
+  ]
+}

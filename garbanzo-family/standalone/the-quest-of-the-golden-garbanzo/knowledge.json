@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "disclosures": [
+    {
+      "id": "DISC-0001",
+      "topic": "Garbanzo's Double-Counting Bug",
+      "learned_by": [
+        "Jorge",
+        "Marissa",
+        "Clara",
+        "Reader"
+      ],
+      "when": "SC-0001",
+      "note": "Exposed comically in Chapter 1; patched cleanly during battle in SC-0007."
+    },
+    {
+      "id": "DISC-0002",
+      "topic": "Why waiting 'just one more bonus' hurts",
+      "learned_by": [
+        "Jorge",
+        "Reader"
+      ],
+      "when": "SC-0002",
+      "note": "Revealed through Clara's screen-free crayon drawing rather than a lecture."
+    },
+    {
+      "id": "DISC-0003",
+      "topic": "Poki travels in memory and starlight across oceans",
+      "learned_by": [
+        "Clara",
+        "Reader"
+      ],
+      "when": "SC-0004",
+      "note": "Confirmed wordlessly on the twilight fence; reinforced at SC-0006 and SC-0010."
+    },
+    {
+      "id": "DISC-0004",
+      "topic": "Real estate illusions vs urbano consolidado",
+      "learned_by": [
+        "Jorge",
+        "Marissa",
+        "Clara",
+        "Reader"
+      ],
+      "when": "SC-0005",
+      "note": "Demonstrated physically through the Cadastral Spectacles and Compass of Living Streets."
+    },
+    {
+      "id": "DISC-0005",
+      "topic": "Magic respects real-world human advisor verification",
+      "learned_by": [
+        "Jorge",
+        "Marissa",
+        "Reader"
+      ],
+      "when": "SC-0007",
+      "note": "Atlantic Hydra shrinks into a checklist binder rather than pretending tax treaties dissolve by spellwork."
+    }
+  ]
+}

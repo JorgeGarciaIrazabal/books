@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "the-quest-of-the-golden-garbanzo",
+  "universe": "garbanzo-family",
+  "series": "standalone",
+  "title": "The Quest of the Golden Garbanzo",
+  "kind": "fiction",
+  "stage": "released",
+  "language": "en",
+  "chapters": [
+    "manuscript/001-the-kettle-that-refused-to-boil.md",
+    "manuscript/002-the-tyranny-of-the-amber-terminal.md",
+    "manuscript/003-the-brass-scale-of-honest-trade-offs.md",
+    "manuscript/004-the-six-year-old-oracle-and-the-starlight-cat.md",
+    "manuscript/005-the-gauntlet-of-the-mirage-brokers.md",
+    "manuscript/006-the-valley-of-the-living-streets.md",
+    "manuscript/007-the-dragon-of-the-atlantic-toll.md",
+    "manuscript/008-the-last-stand-of-the-someday-siren.md",
+    "manuscript/009-the-flying-furniture-and-the-great-crossing.md",
+    "manuscript/010-the-kingdom-of-free-mornings.md"
+  ],
+  "word_count": 8474,
+  "reading_edition": {
+    "pages": 32,
+    "story_pages": 30,
+    "trim_inches": [
+      6,
+      9
+    ],
+    "words_per_page_estimate": 282
+  }
+}

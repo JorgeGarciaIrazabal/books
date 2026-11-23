@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "tasks": [
+    {
+      "id": "TASK-0001",
+      "role": "studio_director",
+      "status": "done",
+      "inputs": [
+        "AGENTS.md",
+        ".studio/workflow.md",
+        ".studio/craft.md"
+      ],
+      "allowed_writes": [
+        "garbanzo-family/**"
+      ],
+      "deliverable": "Universe scaffold, worldbuilding records, book brief, style, outline, and planning ledgers",
+      "acceptance": [
+        "Zero template placeholders in universe/book planning files",
+        "Privacy guardrails and Poki rule enforced"
+      ],
+      "owner": "antigravity/gemini-4-neon-high"
+    },
+    {
+      "id": "TASK-0002",
+      "role": "drafter",
+      "status": "done",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "outline.md",
+        "garbanzo-family/bible.md",
+        "garbanzo-family/canon.json"
+      ],
+      "allowed_writes": [
+        "manuscript/*.md",
+        "book.json"
+      ],
+      "deliverable": "10 sequential chapters (8,474 words after targeted revisions) with zero em dashes",
+      "acceptance": [
+        "Chapter 1 voice check passed before remaining chapters",
+        "Zero em dashes or double-hyphens",
+        "All 10 scenes fulfill outline contracts"
+      ],
+      "dependencies": [
+        "TASK-0001"
+      ],
+      "owner": "antigravity/gemini-4-neon-high"
+    },
+    {
+      "id": "TASK-0003",
+      "role": "developmental_editor",
+      "status": "done",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "garbanzo-family/canon.json",
+        "manuscript/*.md"
+      ],
+      "allowed_writes": [
+        "reviews/whole-book-dev-review.md"
+      ],
+      "deliverable": "Independent blind whole-book developmental evaluation",
+      "acceptance": [
+        "Fresh review session without outline or handoff",
+        "Exact chapter coverage and passage evidence"
+      ],
+      "dependencies": [
+        "TASK-0002"
+      ],
+      "owner": "codex/gpt-6.2-astra#high"
+    },
+    {
+      "id": "TASK-0004",
+      "role": "canon_keeper",
+      "status": "done",
+      "inputs": [
+        "brief.md",
+        "style.md",
+        "garbanzo-family/canon.json",
+        "garbanzo-family/characters/*.md",
+        "manuscript/*.md"
+      ],
+      "allowed_writes": [
+        "reviews/whole-book-canon-audit.md"
+      ],
+      "deliverable": "Blind continuity and craft audit (Antigravity Gemini 4 Neon fallback after Codex hit usage limit)",
+      "acceptance": [
+        "Fresh subagent session without outline or handoff",
+        "Same-model independence limit disclosed"
+      ],
+      "dependencies": [
+        "TASK-0002"
+      ],
+      "owner": "antigravity/gemini-4-neon-high (f4c62a7b-1a77-4213-8ffe-eb63e546960a)"
+    },
+    {
+      "id": "TASK-0005",
+      "role": "production_editor",
+      "status": "done",
+      "inputs": [
+        "book.json",
+        "manuscript/*.md",
+        "reviews/whole-book-dev-review.md",
+        "reviews/whole-book-canon-audit.md"
+      ],
+      "allowed_writes": [
+        "exports/*",
+        "handoff.md",
+        "reviews/gates.json",
+        "reviews/issues.json",
+        "canon/proposals.json"
+      ],
+      "deliverable": "Targeted repairs applied; Markdown, HTML, and EPUB 3 exports plus verified studio checks and handoff",
+      "acceptance": [
+        "studio.py check, check-studio, and unit tests pass",
+        "Exports build cleanly with manifests"
+      ],
+      "dependencies": [
+        "TASK-0003",
+        "TASK-0004"
+      ],
+      "owner": "antigravity/gemini-4-neon-high"
+    }
+  ]
+}

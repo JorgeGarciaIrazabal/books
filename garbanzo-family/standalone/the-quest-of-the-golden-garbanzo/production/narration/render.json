@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "status": "Published synthetic audiobook; coverage, durations, and hashes verified; human listening pending",
+  "engine": "Kokoro-82M ONNX (kokoro-onnx)",
+  "voice": "af_heart",
+  "format": "mono 24000 Hz 96 kbps CBR MP3",
+  "total_seconds": 3263.996,
+  "total_bytes": 39178520,
+  "public_page": "site/audiobook-the-quest-of-the-golden-garbanzo.html",
+  "audio_dir": "site/audio/the-quest-of-the-golden-garbanzo",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Chapter 1: The Kettle That Refused to Boil",
+      "file": "chapter-01.mp3",
+      "seconds": 357.045,
+      "bytes": 4285484,
+      "sha256": "d06511d74cc3cbfe5e790a7eab84d8caad0be5cecad77f459b737abcb7311f75",
+      "source": "manuscript/001-the-kettle-that-refused-to-boil.md",
+      "source_sha256": "caed9959b963d3ae9a73f6454f8bd2cc9b3dc6718b35d3f9938a91092cd17bc8"
+    },
+    {
+      "number": 2,
+      "title": "Chapter 2: The Tyranny of the Amber Terminal",
+      "file": "chapter-02.mp3",
+      "seconds": 330.65,
+      "bytes": 3968972,
+      "sha256": "2e003e272717afab02f7a1c697bf934f7ea6cd8e9fe42161269ad5fb3867d10a",
+      "source": "manuscript/002-the-tyranny-of-the-amber-terminal.md",
+      "source_sha256": "947d0c57ba9643c37df6cb7cf7b44721e877a7d6038f1c4a72b5bef4962a6939"
+    },
+    {
+      "number": 3,
+      "title": "Chapter 3: The Brass Scale of Honest Trade-Offs",
+      "file": "chapter-03.mp3",
+      "seconds": 317.476,
+      "bytes": 3810860,
+      "sha256": "7b9402c0a76d39295e748a0f0708f696525271b66b610ffd18d8f07258ead47b",
+      "source": "manuscript/003-the-brass-scale-of-honest-trade-offs.md",
+      "source_sha256": "ee847f1575ad5cd8e0894be1479788f366bf6839b9c0a2c5093a28ea8a98a0cc"
+    },
+    {
+      "number": 4,
+      "title": "Chapter 4: The Six-Year-Old Oracle and the Starlight Cat",
+      "file": "chapter-04.mp3",
+      "seconds": 334.69,
+      "bytes": 4017356,
+      "sha256": "b281998d9e317b04e6d1edd4e2639a1d35549082db37e1a7c770cb565b665694",
+      "source": "manuscript/004-the-six-year-old-oracle-and-the-starlight-cat.md",
+      "source_sha256": "9e12fb9a4d867a4770e4daa1e574ef878ab2a24a401dd07e5ae999d3f244ad21"
+    },
+    {
+      "number": 5,
+      "title": "Chapter 5: The Gauntlet of the Mirage Brokers",
+      "file": "chapter-05.mp3",
+      "seconds": 329.506,
+      "bytes": 3955148,
+      "sha256": "7a950c06d82c6f1a21c791fcd8464dc11f28a5f888e56099ca544afa47ab1851",
+      "source": "manuscript/005-the-gauntlet-of-the-mirage-brokers.md",
+      "source_sha256": "7491c0b32d6ad471ed4c5f249b8a01d76a1899fcbfeb1708d9b5335e7fb8a935"
+    },
+    {
+      "number": 6,
+      "title": "Chapter 6: The Valley of the Living Streets",
+      "file": "chapter-06.mp3",
+      "seconds": 308.182,
+      "bytes": 3699116,
+      "sha256": "018dcae2ec0891a524ce2013a243999641ca675d59370640d12df568a798b67c",
+      "source": "manuscript/006-the-valley-of-the-living-streets.md",
+      "source_sha256": "c54778e3bfc3a8d5fe189d526e8a7c6004d061048ed4b99d3990a2e1586fe547"
+    },
+    {
+      "number": 7,
+      "title": "Chapter 7: The Dragon of the Atlantic Toll",
+      "file": "chapter-07.mp3",
+      "seconds": 328.998,
+      "bytes": 3949100,
+      "sha256": "aedcbcf61ed093f917ad467a7e6759cd1663ce4f0e9d72dc0f82d952bf02fe7e",
+      "source": "manuscript/007-the-dragon-of-the-atlantic-toll.md",
+      "source_sha256": "896fd2f84e6ced60e83924986bdb7ffa7041fb9f810d12d44bffdea6efd7358a"
+    },
+    {
+      "number": 8,
+      "title": "Chapter 8: The Last Stand of the Someday Siren",
+      "file": "chapter-08.mp3",
+      "seconds": 326.341,
+      "bytes": 3917132,
+      "sha256": "48eeaccfc3e8b3b5188ba3fd19e12dad132b145a07c206a422617cbe1adc9f23",
+      "source": "manuscript/008-the-last-stand-of-the-someday-siren.md",
+      "source_sha256": "04a86f89480701825460db4bd8e0627de6600aa46b43f0a32096c0d588ff57f1"
+    },
+    {
+      "number": 9,
+      "title": "Chapter 9: The Flying Furniture and the Great Crossing",
+      "file": "chapter-09.mp3",
+      "seconds": 282.565,
+      "bytes": 3391820,
+      "sha256": "242c41d9b3148e9e4cf0cafd397f1d0be45bdda35b7e3c33c6fb8350d77c1780",
+      "source": "manuscript/009-the-flying-furniture-and-the-great-crossing.md",
+      "source_sha256": "1337398d3caa40c29f0eab4feaba12c87e27d698baf4009c591018d3e93f274f"
+    },
+    {
+      "number": 10,
+      "title": "Chapter 10: The Kingdom of Free Mornings",
+      "file": "chapter-10.mp3",
+      "seconds": 348.543,
+      "bytes": 4183532,
+      "sha256": "305013c50c5252dd6d7f9eefb7f0d623c3c9a5fb02bc1e26de4ae1aef189414a",
+      "source": "manuscript/010-the-kingdom-of-free-mornings.md",
+      "source_sha256": "a2c10ef45d208806594cfdcce1d5644d5a0de8998ff196edf3c9ff439fcb90d3"
+    }
+  ]
+}

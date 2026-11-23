@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "gates": [
+    {
+      "id": "GATE-0001",
+      "checkpoint": "development",
+      "review_target": "manuscript",
+      "status": "revise",
+      "reviewer": "Codex CLI (gpt-6.2-astra, high reasoning), blind review packet (outline and handoff withheld)",
+      "source_snapshot": {
+        "manuscript/001-the-kettle-that-refused-to-boil.md": "6e4c6e78704e4e0910f4118f4d423ba566c200e99ea63eefd0767fdd36c62572",
+        "manuscript/002-the-tyranny-of-the-amber-terminal.md": "0a2a67f33b3e51b607686dbe33ab997af9ccf6129048b8aecc64fee1eef886ff",
+        "manuscript/003-the-brass-scale-of-honest-trade-offs.md": "7a6a16ad9faf0ebdfd7be1381c0ea14da04bcee7dc15c46ae18870cada99a551",
+        "manuscript/004-the-six-year-old-oracle-and-the-starlight-cat.md": "584e91031cd947ca7ca64fd1226fdbbee8abf20a99752a68fbebd89809dc9e09",
+        "manuscript/005-the-gauntlet-of-the-mirage-brokers.md": "8d9a39cb59fcfaf040c253b612719e04fc6a5181cfeec18408643a1b8465c140",
+        "manuscript/006-the-valley-of-the-living-streets.md": "f9a1c29b3aebfa469cb8f78c05e1ec20fd049cc7aa50135a5097f59bebd76991",
+        "manuscript/007-the-dragon-of-the-atlantic-toll.md": "2600fc06e97fec5c1ed7095d0ef38824b0567d14a173d937b27aec9ca4b83dd1",
+        "manuscript/008-the-last-stand-of-the-someday-siren.md": "1a63d57cf63bf060425d00c5c0df4400116dea98b0a9aa356b857eb762bef0a6",
+        "manuscript/009-the-flying-furniture-and-the-great-crossing.md": "32e8c1f1f426ac6d9f261bbad2a1247f11d6437c049a2e14a5e89d9b4d8b8401",
+        "manuscript/010-the-kingdom-of-free-mornings.md": "0e32eb0a9884817c4c812059f090d3b1000c5db51dbd42ac3c9ba7891678430f"
+      },
+      "evidence": [
+        "reviews/whole-book-dev-review.md"
+      ],
+      "read_in_full": [
+        "manuscript/001-the-kettle-that-refused-to-boil.md",
+        "manuscript/002-the-tyranny-of-the-amber-terminal.md",
+        "manuscript/003-the-brass-scale-of-honest-trade-offs.md",
+        "manuscript/004-the-six-year-old-oracle-and-the-starlight-cat.md",
+        "manuscript/005-the-gauntlet-of-the-mirage-brokers.md",
+        "manuscript/006-the-valley-of-the-living-streets.md",
+        "manuscript/007-the-dragon-of-the-atlantic-toll.md",
+        "manuscript/008-the-last-stand-of-the-someday-siren.md",
+        "manuscript/009-the-flying-furniture-and-the-great-crossing.md",
+        "manuscript/010-the-kingdom-of-free-mornings.md"
+      ],
+      "skimmed": [],
+      "not_assessed": [
+        "outline.md",
+        "handoff.md",
+        "book.json"
+      ],
+      "open_issues": [],
+      "superseded_by": "GATE-0003",
+      "limits": "Cross-model AI review; no live read-aloud with Clara or export pagination test."
+    },
+    {
+      "id": "GATE-0002",
+      "checkpoint": "continuity-evidence",
+      "review_target": "manuscript",
+      "status": "revise",
+      "reviewer": "Antigravity fresh canon_keeper subagent (f4c62a7b-1a77-4213-8ffe-eb63e546960a, Gemini 4 Neon fallback)",
+      "source_snapshot": {
+        "manuscript/001-the-kettle-that-refused-to-boil.md": "6e4c6e78704e4e0910f4118f4d423ba566c200e99ea63eefd0767fdd36c62572",
+        "manuscript/002-the-tyranny-of-the-amber-terminal.md": "0a2a67f33b3e51b607686dbe33ab997af9ccf6129048b8aecc64fee1eef886ff",
+        "manuscript/003-the-brass-scale-of-honest-trade-offs.md": "7a6a16ad9faf0ebdfd7be1381c0ea14da04bcee7dc15c46ae18870cada99a551",
+        "manuscript/004-the-six-year-old-oracle-and-the-starlight-cat.md": "584e91031cd947ca7ca64fd1226fdbbee8abf20a99752a68fbebd89809dc9e09",
+        "manuscript/005-the-gauntlet-of-the-mirage-brokers.md": "8d9a39cb59fcfaf040c253b612719e04fc6a5181cfeec18408643a1b8465c140",
+        "manuscript/006-the-valley-of-the-living-streets.md": "f9a1c29b3aebfa469cb8f78c05e1ec20fd049cc7aa50135a5097f59bebd76991",
+        "manuscript/007-the-dragon-of-the-atlantic-toll.md": "2600fc06e97fec5c1ed7095d0ef38824b0567d14a173d937b27aec9ca4b83dd1",
+        "manuscript/008-the-last-stand-of-the-someday-siren.md": "1a63d57cf63bf060425d00c5c0df4400116dea98b0a9aa356b857eb762bef0a6",
+        "manuscript/009-the-flying-furniture-and-the-great-crossing.md": "32e8c1f1f426ac6d9f261bbad2a1247f11d6437c049a2e14a5e89d9b4d8b8401",
+        "manuscript/010-the-kingdom-of-free-mornings.md": "0e32eb0a9884817c4c812059f090d3b1000c5db51dbd42ac3c9ba7891678430f"
+      },
+      "evidence": [
+        "reviews/whole-book-canon-audit.md"
+      ],
+      "read_in_full": [
+        "manuscript/001-the-kettle-that-refused-to-boil.md",
+        "manuscript/002-the-tyranny-of-the-amber-terminal.md",
+        "manuscript/003-the-brass-scale-of-honest-trade-offs.md",
+        "manuscript/004-the-six-year-old-oracle-and-the-starlight-cat.md",
+        "manuscript/005-the-gauntlet-of-the-mirage-brokers.md",
+        "manuscript/006-the-valley-of-the-living-streets.md",
+        "manuscript/007-the-dragon-of-the-atlantic-toll.md",
+        "manuscript/008-the-last-stand-of-the-someday-siren.md",
+        "manuscript/009-the-flying-furniture-and-the-great-crossing.md",
+        "manuscript/010-the-kingdom-of-free-mornings.md"
+      ],
+      "skimmed": [],
+      "not_assessed": [
+        "outline.md",
+        "handoff.md",
+        "scratch/dev-review.md"
+      ],
+      "open_issues": [],
+      "superseded_by": "GATE-0003",
+      "limits": "Same-model independence limit disclosed: ran in fresh Antigravity Gemini 4 Neon subagent after Codex hit its usage cap."
+    },
+    {
+      "id": "GATE-0003",
+      "checkpoint": "line-copy",
+      "review_target": "manuscript",
+      "status": "pass",
+      "reviewer": "studio_director (Gemini 4 Neon), targeted repair verification and automated mechanical checks",
+      "source_snapshot": {
+        "manuscript/001-the-kettle-that-refused-to-boil.md": "70e11d2ce5d13b1ba8da3523cf9334e3e810b0755b68e2387c92ad5981c7e4c4",
+        "manuscript/002-the-tyranny-of-the-amber-terminal.md": "4548be32f29d2fc4eb5aba5936bce92d16359c24e37a28314e0612ecb5c3933b",
+        "manuscript/003-the-brass-scale-of-honest-trade-offs.md": "ae98c10356f1787f1a7987c8a2b8593d29db696d7a5ca435bd6aeab95d7c9b85",
+        "manuscript/004-the-six-year-old-oracle-and-the-starlight-cat.md": "8b62e2697c63a0a9805ac14e82c924c2832dd5b70992e13bca77294027cac129",
+        "manuscript/005-the-gauntlet-of-the-mirage-brokers.md": "8421b2cc09470337929d7ecc8dbccdc8acaa9f9fe3e1a534aa3c7e6cb467d554",
+        "manuscript/006-the-valley-of-the-living-streets.md": "f87a589b8ad0f1cb8fdd907e855d895ad1109ee3317f1605c43fae0524b8ac9f",
+        "manuscript/007-the-dragon-of-the-atlantic-toll.md": "b48216387260bda7cbd9a749d2b0806ad790574842784b2f6e5432da79a74f89",
+        "manuscript/008-the-last-stand-of-the-someday-siren.md": "95a7afe08181544404a64aa370e57e648d0381a8e7b5d0ed6a09611967e5cdf7",
+        "manuscript/009-the-flying-furniture-and-the-great-crossing.md": "90b428d16def7377970147e6ff371543922065852620e59a6d68ba884d3b59a1",
+        "manuscript/010-the-kingdom-of-free-mornings.md": "05b02e4a49a124be0ed3bec1ccbe43601599c4cb1a4d459677ce2b3d55e348de"
+      },
+      "evidence": [
+        "reviews/issues.json",
+        "reviews/whole-book-dev-review.md",
+        "reviews/whole-book-canon-audit.md"
+      ],
+      "read_in_full": [
+        "manuscript/001-the-kettle-that-refused-to-boil.md",
+        "manuscript/002-the-tyranny-of-the-amber-terminal.md",
+        "manuscript/003-the-brass-scale-of-honest-trade-offs.md",
+        "manuscript/004-the-six-year-old-oracle-and-the-starlight-cat.md",
+        "manuscript/005-the-gauntlet-of-the-mirage-brokers.md",
+        "manuscript/006-the-valley-of-the-living-streets.md",
+        "manuscript/007-the-dragon-of-the-atlantic-toll.md",
+        "manuscript/008-the-last-stand-of-the-someday-siren.md",
+        "manuscript/009-the-flying-furniture-and-the-great-crossing.md",
+        "manuscript/010-the-kingdom-of-free-mornings.md"
+      ],
+      "skimmed": [],
+      "not_assessed": [],
+      "open_issues": [],
+      "limits": "Director verified all DEV-01..06 and CANON-01..05 targeted repairs and mechanical checks (word count 8,474, zero em/en dashes or double-hyphens, privacy sweep, Poki rule); post-repair text was not re-run through an external cross-model session or live read-aloud."
+    },
+    {
+      "id": "GATE-0004",
+      "checkpoint": "research-evidence",
+      "review_target": "manuscript",
+      "status": "not-applicable",
+      "reviewer": "studio_director",
+      "source_snapshot": {
+        "manuscript/001-the-kettle-that-refused-to-boil.md": "70e11d2ce5d13b1ba8da3523cf9334e3e810b0755b68e2387c92ad5981c7e4c4",
+        "manuscript/010-the-kingdom-of-free-mornings.md": "05b02e4a49a124be0ed3bec1ccbe43601599c4cb1a4d459677ce2b3d55e348de"
+      },
+      "evidence": [],
+      "read_in_full": [],
+      "skimmed": [],
+      "not_assessed": [],
+      "open_issues": [],
+      "reason": "Original fictional family keepsake; no factual citations, financial claims, or market promises asserted."
+    },
+    {
+      "id": "GATE-0005",
+      "checkpoint": "production",
+      "review_target": "exports/manuscript.md; exports/book.html; exports/book.epub",
+      "status": "pass",
+      "reviewer": "studio_director (Gemini 4 Neon), mechanical assembly and XML/HTML verification",
+      "source_snapshot": {
+        "book.json": "894c1cd586301b90dfb7c77b7b85c85820fa5ec300b1d474a92338f4d37351dd",
+        "manuscript/001-the-kettle-that-refused-to-boil.md": "70e11d2ce5d13b1ba8da3523cf9334e3e810b0755b68e2387c92ad5981c7e4c4",
+        "manuscript/002-the-tyranny-of-the-amber-terminal.md": "4548be32f29d2fc4eb5aba5936bce92d16359c24e37a28314e0612ecb5c3933b",
+        "manuscript/003-the-brass-scale-of-honest-trade-offs.md": "ae98c10356f1787f1a7987c8a2b8593d29db696d7a5ca435bd6aeab95d7c9b85",
+        "manuscript/004-the-six-year-old-oracle-and-the-starlight-cat.md": "8b62e2697c63a0a9805ac14e82c924c2832dd5b70992e13bca77294027cac129",
+        "manuscript/005-the-gauntlet-of-the-mirage-brokers.md": "8421b2cc09470337929d7ecc8dbccdc8acaa9f9fe3e1a534aa3c7e6cb467d554",
+        "manuscript/006-the-valley-of-the-living-streets.md": "f87a589b8ad0f1cb8fdd907e855d895ad1109ee3317f1605c43fae0524b8ac9f",
+        "manuscript/007-the-dragon-of-the-atlantic-toll.md": "b48216387260bda7cbd9a749d2b0806ad790574842784b2f6e5432da79a74f89",
+        "manuscript/008-the-last-stand-of-the-someday-siren.md": "95a7afe08181544404a64aa370e57e648d0381a8e7b5d0ed6a09611967e5cdf7",
+        "manuscript/009-the-flying-furniture-and-the-great-crossing.md": "90b428d16def7377970147e6ff371543922065852620e59a6d68ba884d3b59a1",
+        "manuscript/010-the-kingdom-of-free-mornings.md": "05b02e4a49a124be0ed3bec1ccbe43601599c4cb1a4d459677ce2b3d55e348de"
+      },
+      "output_sha256": {
+        "exports/manuscript.md": "ef473c5cc3d55ff408fc2c4b3b8c3ed5916e9952f096b7b8aa8b917338a05bce",
+        "exports/book.html": "7b975e59323507239ba2f0e3ae7aa93713fa859a84291efa5fd42b0c084528b6",
+        "exports/book.epub": "f73381d703182f9ec48ee333dc919b4aff203b679f9943e9b87947c66200e0fb"
+      },
+      "evidence": [
+        "exports/manuscript.manifest.json",
+        "exports/book.html.manifest.json",
+        "exports/book.epub.manifest.json"
+      ],
+      "open_issues": [],
+      "superseded_by": "GATE-0006",
+      "limits": "Superseded after author confirmed Marissa spelling (`DEC-GF-0006` / `DEC-QGG-0003`). Verified ZIP structure, HTML TOC, and source manifests at build time."
+    },
+    {
+      "id": "GATE-0006",
+      "checkpoint": "production",
+      "review_target": "exports/manuscript.md; exports/book.html; exports/book.epub (Marissa update)",
+      "status": "pass",
+      "reviewer": "studio_director (Gemini 4 Neon), mechanical spelling sweep and export verification",
+      "source_snapshot": {
+        "book.json": "894c1cd586301b90dfb7c77b7b85c85820fa5ec300b1d474a92338f4d37351dd",
+        "manuscript/001-the-kettle-that-refused-to-boil.md": "caed9959b963d3ae9a73f6454f8bd2cc9b3dc6718b35d3f9938a91092cd17bc8",
+        "manuscript/002-the-tyranny-of-the-amber-terminal.md": "947d0c57ba9643c37df6cb7cf7b44721e877a7d6038f1c4a72b5bef4962a6939",
+        "manuscript/003-the-brass-scale-of-honest-trade-offs.md": "ee847f1575ad5cd8e0894be1479788f366bf6839b9c0a2c5093a28ea8a98a0cc",
+        "manuscript/004-the-six-year-old-oracle-and-the-starlight-cat.md": "9e12fb9a4d867a4770e4daa1e574ef878ab2a24a401dd07e5ae999d3f244ad21",
+        "manuscript/005-the-gauntlet-of-the-mirage-brokers.md": "7491c0b32d6ad471ed4c5f249b8a01d76a1899fcbfeb1708d9b5335e7fb8a935",
+        "manuscript/006-the-valley-of-the-living-streets.md": "c54778e3bfc3a8d5fe189d526e8a7c6004d061048ed4b99d3990a2e1586fe547",
+        "manuscript/007-the-dragon-of-the-atlantic-toll.md": "896fd2f84e6ced60e83924986bdb7ffa7041fb9f810d12d44bffdea6efd7358a",
+        "manuscript/008-the-last-stand-of-the-someday-siren.md": "04a86f89480701825460db4bd8e0627de6600aa46b43f0a32096c0d588ff57f1",
+        "manuscript/009-the-flying-furniture-and-the-great-crossing.md": "1337398d3caa40c29f0eab4feaba12c87e27d698baf4009c591018d3e93f274f",
+        "manuscript/010-the-kingdom-of-free-mornings.md": "a2c10ef45d208806594cfdcce1d5644d5a0de8998ff196edf3c9ff439fcb90d3"
+      },
+      "output_sha256": {
+        "exports/manuscript.md": "d8afab0d183648ae6defd66c60ef480243404f912f0add51eab41bb46c27aec4",
+        "exports/book.html": "1d685212564ee841c7b05797fe0838957eb3bf17d3bf10ccebbb812552e1a495",
+        "exports/book.epub": "fdc3dc043e04dbc4b8917ad077da9f125e9d445afd4c7a779217469d0dbea6e7"
+      },
+      "evidence": [
+        "exports/manuscript.manifest.json",
+        "exports/book.html.manifest.json",
+        "exports/book.epub.manifest.json"
+      ],
+      "open_issues": [],
+      "limits": "Deterministic spelling update (Marisa -> Marissa) across source/exports verified mechanically; no re-run of external developmental review or live read-aloud after name update."
+    },
+    {
+      "id": "GATE-0007",
+      "checkpoint": "public-release",
+      "review_target": "publications/the-quest-of-the-golden-garbanzo.{epub,pdf}; publications/covers/the-quest-of-the-golden-garbanzo.jpg; site/audiobook-the-quest-of-the-golden-garbanzo.html; site/audio/the-quest-of-the-golden-garbanzo/*",
+      "status": "pass",
+      "reviewer": "studio_director (Gemini 4 Neon), package, hash, link, and audio coverage checks",
+      "source_snapshot": {
+        "book.json": "30c57d903382283a166a2eceaf9112e384c528681f9a0a880ee2d17c73c510b8",
+        "manuscript/001-the-kettle-that-refused-to-boil.md": "caed9959b963d3ae9a73f6454f8bd2cc9b3dc6718b35d3f9938a91092cd17bc8",
+        "manuscript/002-the-tyranny-of-the-amber-terminal.md": "947d0c57ba9643c37df6cb7cf7b44721e877a7d6038f1c4a72b5bef4962a6939",
+        "manuscript/003-the-brass-scale-of-honest-trade-offs.md": "ee847f1575ad5cd8e0894be1479788f366bf6839b9c0a2c5093a28ea8a98a0cc",
+        "manuscript/004-the-six-year-old-oracle-and-the-starlight-cat.md": "9e12fb9a4d867a4770e4daa1e574ef878ab2a24a401dd07e5ae999d3f244ad21",
+        "manuscript/005-the-gauntlet-of-the-mirage-brokers.md": "7491c0b32d6ad471ed4c5f249b8a01d76a1899fcbfeb1708d9b5335e7fb8a935",
+        "manuscript/006-the-valley-of-the-living-streets.md": "c54778e3bfc3a8d5fe189d526e8a7c6004d061048ed4b99d3990a2e1586fe547",
+        "manuscript/007-the-dragon-of-the-atlantic-toll.md": "896fd2f84e6ced60e83924986bdb7ffa7041fb9f810d12d44bffdea6efd7358a",
+        "manuscript/008-the-last-stand-of-the-someday-siren.md": "04a86f89480701825460db4bd8e0627de6600aa46b43f0a32096c0d588ff57f1",
+        "manuscript/009-the-flying-furniture-and-the-great-crossing.md": "1337398d3caa40c29f0eab4feaba12c87e27d698baf4009c591018d3e93f274f",
+        "manuscript/010-the-kingdom-of-free-mornings.md": "a2c10ef45d208806594cfdcce1d5644d5a0de8998ff196edf3c9ff439fcb90d3"
+      },
+      "output_sha256": {
+        "publications/the-quest-of-the-golden-garbanzo.epub": "271eff75ac8b7e5500c465ee029f372e00e3d62703f65d907d913cf0d46dc5a1",
+        "publications/the-quest-of-the-golden-garbanzo.pdf": "88f97ebf9c13e8c12fb37574572920d5a270382967b3c8d804b36a143e546f7e",
+        "publications/covers/the-quest-of-the-golden-garbanzo.jpg": "e9cb6e670dda97cb3a0fdc2566782cebd669069feacfc95cb2fb479c348828fc",
+        "site/audio/the-quest-of-the-golden-garbanzo/chapters.json": "83df0ee372755f58213227dbbbf91bb5d0eadf11dffc48d094ec77440854ec4f"
+      },
+      "evidence": [
+        "publications/manifest.json",
+        "production/narration/render.json",
+        "site/audio/the-quest-of-the-golden-garbanzo/chapters.json"
+      ],
+      "open_issues": [],
+      "limits": "All text artifacts, EPUB XML/paragraphs, PDF header/EOF, cover JPEG, site links, and all 10 MP3 byte sizes/durations/SHA-256 hashes verified mechanically; synthetic Kokoro-82M ONNX narration has not undergone human listening review or physical-device/live-browser proof."
+    }
+  ]
+}

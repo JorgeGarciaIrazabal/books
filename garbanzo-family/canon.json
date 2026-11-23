@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "facts": [
+    {
+      "id": "FACT-0001",
+      "text": "Slow-Simmer Garbanzo Magic converts years of steady, honest family effort, savings, and shared choices into eventual Morning Freedom; shortcuts and lottery wishes turn the copper pot cold.",
+      "scope": "garbanzo-family",
+      "status": "accepted",
+      "provenance": "Universe founding canon, 2026-11-22",
+      "story_time": "Universe baseline"
+    },
+    {
+      "id": "FACT-0002",
+      "text": "The Golden Garbanzo ripens inside the family's heirloom copper pot and unlocks the Gate of Free Mornings only when the family's life plan balances courage, realistic margin, and fairness.",
+      "scope": "garbanzo-family",
+      "status": "accepted",
+      "provenance": "Universe founding canon, 2026-11-22",
+      "story_time": "Universe baseline"
+    },
+    {
+      "id": "FACT-0003",
+      "text": "Every extra luxury placed on the Brass Scale of Honest Trade-Offs drops proportional glowing Work-Months onto the opposite pan; someone always pays in work, savings, or lower future spending.",
+      "scope": "garbanzo-family",
+      "status": "accepted",
+      "provenance": "Universe founding canon from household 'someone must pay' principle, 2026-11-22",
+      "story_time": "Universe baseline"
+    },
+    {
+      "id": "FACT-0004",
+      "text": "Jorge, Marissa, and Clara are the three-person core family at the center of every quest; decisions must work for all three rather than optimizing a single spreadsheet number.",
+      "scope": "garbanzo-family",
+      "status": "accepted",
+      "provenance": "Universe founding canon, 2026-11-22",
+      "story_time": "Universe baseline"
+    },
+    {
+      "id": "FACT-0005",
+      "text": "Garbanzo is Jorge's pocket familiar mounted on four emerald GPU star-crystals. He emits daily ledger scrolls at 10:00 a.m. sharp, and until patched in battle he misfires whenever internal transfers trigger his Double-Counting Bug.",
+      "scope": "garbanzo-family",
+      "status": "accepted",
+      "provenance": "Universe founding canon, 2026-11-22",
+      "story_time": "Book 1 opening"
+    },
+    {
+      "id": "FACT-0006",
+      "text": "Marissa's Compass of Living Streets chimes warm gold only in established, occupied communities with neighbors, daily shops, schools, and a proper bazaar within roughly twenty minutes' travel, refusing empty Isolation Mist.",
+      "scope": "garbanzo-family",
+      "status": "accepted",
+      "provenance": "Universe founding canon, 2026-11-22",
+      "story_time": "Universe baseline"
+    },
+    {
+      "id": "FACT-0007",
+      "text": "Jorge's Cadastral Spectacles strip away Illusion Renderings to expose true lot dimensions, buildable setbacks, serviced urbano consolidado status versus unfinished urbanizable land, and missing entrega de llaves dates.",
+      "scope": "garbanzo-family",
+      "status": "accepted",
+      "provenance": "Universe founding canon, 2026-11-22",
+      "story_time": "Universe baseline"
+    },
+    {
+      "id": "FACT-0008",
+      "text": "Clara is six years old (born September 24 in real-world inspiration), loves unicorns, girl-wizards, dragons, dancing, ice skating, biking, and painting, and refuses overly simplified baby stories.",
+      "scope": "garbanzo-family",
+      "status": "accepted",
+      "provenance": "Universe founding canon, 2026-11-22",
+      "story_time": "Book 1 timeline"
+    },
+    {
+      "id": "FACT-0009",
+      "text": "Jorge does not enjoy cooking and leaves true kitchen alchemy to Marissa and family feasts; his own craft lies in data pipelines, four-crystal tinkering, padel rebounds, and hands-on electrical, plumbing, and solar maintenance.",
+      "scope": "garbanzo-family",
+      "status": "accepted",
+      "provenance": "Universe founding canon, 2026-11-22",
+      "story_time": "Universe baseline"
+    },
+    {
+      "id": "FACT-0010",
+      "text": "Poki the family cat always appears sleek and unadorned in natural coat and starlight; Poki strictly never wears a dragon costume or any other costume.",
+      "scope": "garbanzo-family",
+      "status": "accepted",
+      "provenance": "Explicit author correction preserved from profile, 2026-11-22",
+      "story_time": "All story eras"
+    },
+    {
+      "id": "FACT-0011",
+      "text": "Poki crossed the Silver Wall shortly before the family's great relocation quest, leaving quiet starlight paw-prints that guide the family away from counterfeit homes.",
+      "scope": "garbanzo-family",
+      "status": "accepted",
+      "provenance": "Universe founding canon, 2026-11-22",
+      "story_time": "Just prior to Book 1"
+    },
+    {
+      "id": "FACT-0012",
+      "text": "The family's starting home base sits in New Jersey within commuting reach of Manhattan's Amber Terminal Citadel across the Hudson Crossing.",
+      "scope": "garbanzo-family",
+      "status": "accepted",
+      "provenance": "Universe founding canon, 2026-11-22",
+      "story_time": "Book 1 Act I"
+    },
+    {
+      "id": "FACT-0013",
+      "text": "Within the Amber Terminal Citadel, Jorge maintains Event-Streams and Report-Rendering Dragons while watching the creeping fog of the Automaton Loom and resisting the Someday Siren's lure of 'just one more bonus.'",
+      "scope": "garbanzo-family",
+      "status": "accepted",
+      "provenance": "Universe founding canon, 2026-11-22",
+      "story_time": "Book 1 Act I"
+    },
+    {
+      "id": "FACT-0014",
+      "text": "Across Spain, Murcia fails the Compass of Living Streets, Sierra de Guadarrama towns offer dramatic peaks at steep gold prices, and the Valladolid valley (Arroyo/La Flecha, Laguna de Duero, Simancas, Zaratán near the Grand Bazaar of RÍO) unites lively community, three-bedroom modern homes with real gardens, and sustainable balance.",
+      "scope": "garbanzo-family",
+      "status": "accepted",
+      "provenance": "Universe founding canon, 2026-11-22",
+      "story_time": "Book 1 Act II-III"
+    },
+    {
+      "id": "FACT-0015",
+      "text": "Upon honest resignation from the Amber Terminal Citadel with an advisor-verified, balanced plan, the Golden Garbanzo cracked open inside the heirloom copper pot to become a gleaming brass sunburst key, which unlocked the family's Gate of Free Mornings in Valladolid.",
+      "scope": "garbanzo-family",
+      "status": "accepted",
+      "provenance": "Book 1 Ch 8 & Ch 10; accepted via DEC-GF-0005, 2026-11-22",
+      "story_time": "Book 1 Act III (early spring) onward"
+    },
+    {
+      "id": "FACT-0016",
+      "text": "During the Atlantic Storm-Bridge battle against Lord Double-Count, Jorge soldered out the noisy duplicate wire on Garbanzo's third emerald GPU crystal, permanently curing the Double-Counting Bug so his 10:00 a.m. scrolls zero out internal transfers without celebratory confetti.",
+      "scope": "garbanzo-family",
+      "status": "accepted",
+      "provenance": "Book 1 Ch 7 & Ch 10; accepted via DEC-GF-0005, 2026-11-22",
+      "story_time": "Book 1 Act III (Ch 7) onward"
+    },
+    {
+      "id": "FACT-0017",
+      "text": "After advisor verification of cross-border treaties, taxes, and health coverage, the Garbanzo family sold their New Jersey home and moved to a single-story, solar-tiled modern three-bedroom house with a practical garage and garden in the Valladolid valley near Clara's school, lively cafés, RÍO, and glass padel courts.",
+      "scope": "garbanzo-family",
+      "status": "accepted",
+      "provenance": "Book 1 Ch 6, Ch 9, Ch 10; accepted via DEC-GF-0005, 2026-11-22",
+      "story_time": "Book 1 finale onward"
+    },
+    {
+      "id": "FACT-0018",
+      "text": "Jorge and Marissa maintain equal household footing through twin monogrammed silver pouches balanced at 50/50 out of shared liquid coin, leaving locked long-term vaults untouched and backing daily life with an Emergency Buffer & Realistic Margin shield.",
+      "scope": "garbanzo-family",
+      "status": "accepted",
+      "provenance": "Book 1 Ch 3, Ch 7, Ch 10; accepted via DEC-GF-0005, 2026-11-22",
+      "story_time": "Book 1 Act I onward"
+    },
+    {
+      "id": "FACT-0019",
+      "text": "Poki's silver collar bell and smooth gray windowsill keepsake stone travel safely with the family alongside Clara's separate smooth white backyard pebble from Poki's twilight fence visit. Extended family includes Aunt Lidia (keeper of the coastal inn Ballena Rey), grandparents, and young cousins Isma (Ismael) and Denny.",
+      "scope": "garbanzo-family",
+      "status": "accepted",
+      "provenance": "Book 1 Ch 1, Ch 4, Ch 9, Ch 10; reconciled & accepted via DEC-GF-0005, 2026-11-22",
+      "story_time": "Book 1 Act I onward"
+    }
+  ]
+}

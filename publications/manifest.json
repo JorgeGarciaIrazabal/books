@@ -151,6 +151,42 @@
           "role": "pdf"
         }
       ]
+    },
+    {
+      "id": "the-quest-of-the-golden-garbanzo",
+      "title": "The Quest of the Golden Garbanzo",
+      "summary": "A dramatic, funny, magical chronicle of how Jorge, Marissa, and six-year-old Clara braved towering amber screens, a double-counting pocket chickpea, deceptive mirage brokers, and an Atlantic Tax Hydra to earn unhurried sunlit mornings together in Spain. Ten chapters.",
+      "language": "en",
+      "layout": "reflowable",
+      "edition_note": "Family chronicle reading edition: 10 chapters, 32 PDF pages (30 story pages); reflowable EPUB 3 with linked contents, embedded cover, and companion 10-chapter synthetic audiobook.",
+      "downloads": {
+        "epub": {
+          "path": "the-quest-of-the-golden-garbanzo.epub",
+          "bytes": 84694,
+          "sha256": "271eff75ac8b7e5500c465ee029f372e00e3d62703f65d907d913cf0d46dc5a1"
+        },
+        "pdf": {
+          "path": "the-quest-of-the-golden-garbanzo.pdf",
+          "bytes": 195478,
+          "sha256": "88f97ebf9c13e8c12fb37574572920d5a270382967b3c8d804b36a143e546f7e"
+        }
+      },
+      "cover": {
+        "path": "covers/the-quest-of-the-golden-garbanzo.jpg",
+        "bytes": 69647,
+        "sha256": "e9cb6e670dda97cb3a0fdc2566782cebd669069feacfc95cb2fb479c348828fc",
+        "derived_from": "EPUB/cover.jpg inside the published EPUB, a 720x1080 typographic title-page cover"
+      },
+      "sources": [
+        {
+          "path": "garbanzo-family/standalone/the-quest-of-the-golden-garbanzo/exports/the-quest-of-the-golden-garbanzo.epub",
+          "role": "epub"
+        },
+        {
+          "path": "garbanzo-family/standalone/the-quest-of-the-golden-garbanzo/exports/the-quest-of-the-golden-garbanzo.pdf",
+          "role": "pdf"
+        }
+      ]
     }
   ]
 }

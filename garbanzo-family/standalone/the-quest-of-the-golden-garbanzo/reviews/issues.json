@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "issues": [
+    {
+      "id": "DEV-01",
+      "type": "structural-causality",
+      "status": "resolved",
+      "source": "reviews/whole-book-dev-review.md",
+      "evidence": "Ch 6 stucco token weighed alone without showing carriage/travel/repairs tokens; Ch 8 jumped over advisor binder checks.",
+      "resolution": "Ch 6 explicitly keeps electric carriage, travel compass, and iron repairs shield on the Desire Pan; Ch 8 bridges the winter advisor verification of residency, health coverage, and Spanish tax filings.",
+      "current_source": "manuscript/006-the-valley-of-the-living-streets.md; manuscript/008-the-last-stand-of-the-someday-siren.md",
+      "current_sha256": {
+        "manuscript/006-the-valley-of-the-living-streets.md": "f87a589b8ad0f1cb8fdd907e855d895ad1109ee3317f1605c43fae0524b8ac9f",
+        "manuscript/008-the-last-stand-of-the-someday-siren.md": "95a7afe08181544404a64aa370e57e648d0381a8e7b5d0ed6a09611967e5cdf7"
+      }
+    },
+    {
+      "id": "DEV-02",
+      "type": "read-aloud-clarity",
+      "status": "resolved",
+      "source": "reviews/whole-book-dev-review.md",
+      "evidence": "Ch 7 Hydra names and abstract 'Flexible Spending Fireball' slowed read-aloud clarity for a six-year-old.",
+      "resolution": "Simplified Hydra heads to Winter Market Frost and Two-Kingdom Knot; Clara physically pulls the brass travel compass token off the Desire Pan and tucks it behind groceries/school bag so her silver unicorn spark translates the trade-off visually.",
+      "current_source": "manuscript/007-the-dragon-of-the-atlantic-toll.md",
+      "current_sha256": "b48216387260bda7cbd9a749d2b0806ad790574842784b2f6e5432da79a74f89"
+    },
+    {
+      "id": "DEV-03",
+      "type": "plot-payoff",
+      "status": "resolved",
+      "source": "reviews/whole-book-dev-review.md",
+      "evidence": "Ch 8 sunburst key never physically turned the Gate of Free Mornings promised in FACT-0002 / Ch 1.",
+      "resolution": "Added a crisp, grounded turn and click of the brass sunburst key in the Spanish wrought-iron garden gate as Jorge and Clara leave for Tuesday school in Ch 10.",
+      "current_source": "manuscript/010-the-kingdom-of-free-mornings.md",
+      "current_sha256": "05b02e4a49a124be0ed3bec1ccbe43601599c4cb1a4d459677ce2b3d55e348de"
+    },
+    {
+      "id": "DEV-04",
+      "type": "canon-clock-consistency",
+      "status": "resolved",
+      "source": "reviews/whole-book-dev-review.md",
+      "evidence": "Ch 1 accused Garbanzo of firing his ten o'clock scroll three hours early, creating an extra clock bug outside FACT-0005.",
+      "resolution": "Marisa identifies the 7:00 a.m. burst as an early balance ping three hours before his 10:00 a.m. scroll.",
+      "current_source": "manuscript/001-the-kettle-that-refused-to-boil.md",
+      "current_sha256": "70e11d2ce5d13b1ba8da3523cf9334e3e810b0755b68e2387c92ad5981c7e4c4"
+    },
+    {
+      "id": "DEV-05",
+      "type": "prop-contradiction",
+      "status": "resolved",
+      "source": "reviews/whole-book-dev-review.md; reviews/whole-book-canon-audit.md",
+      "evidence": "Ch 4 backyard pebble changed from white pebble to gray stone in two lines, colliding with Poki's gray windowsill stone.",
+      "resolution": "Kept Poki's gray windowsill stone distinct (packed with the silver collar bell in Ch 9 and displayed in Ch 10) while keeping Clara's backyard gift consistently a smooth white pebble in Ch 4 and Ch 9.",
+      "current_source": "manuscript/004-the-six-year-old-oracle-and-the-starlight-cat.md; manuscript/009-the-flying-furniture-and-the-great-crossing.md",
+      "current_sha256": {
+        "manuscript/004-the-six-year-old-oracle-and-the-starlight-cat.md": "8b62e2697c63a0a9805ac14e82c924c2832dd5b70992e13bca77294027cac129",
+        "manuscript/009-the-flying-furniture-and-the-great-crossing.md": "90b428d16def7377970147e6ff371543922065852620e59a6d68ba884d3b59a1"
+      }
+    },
+    {
+      "id": "DEV-06",
+      "type": "tone-tidy-moral",
+      "status": "resolved",
+      "source": "reviews/whole-book-dev-review.md",
+      "evidence": "Slightly sugary/tidy lines in Ch 3 ('Okay. Lesson learned. Someone always pays.'; 'warmth in her smile beat any greeting-card speech') and Ch 9 ('Only mornings left ahead.').",
+      "resolution": "Replaced those three lines with grounded physical action (rubbing his neck, resting palm beside pouches, pulling the airplane blanket up). Retained Ch 1's scale rule.",
+      "current_source": "manuscript/003-the-brass-scale-of-honest-trade-offs.md; manuscript/009-the-flying-furniture-and-the-great-crossing.md",
+      "current_sha256": {
+        "manuscript/003-the-brass-scale-of-honest-trade-offs.md": "ae98c10356f1787f1a7987c8a2b8593d29db696d7a5ca435bd6aeab95d7c9b85",
+        "manuscript/009-the-flying-furniture-and-the-great-crossing.md": "90b428d16def7377970147e6ff371543922065852620e59a6d68ba884d3b59a1"
+      }
+    },
+    {
+      "id": "CANON-01",
+      "type": "timeline-weekday",
+      "status": "resolved",
+      "source": "reviews/whole-book-canon-audit.md",
+      "evidence": "Ch 4 stated Clara's Poki worry hid 'since Tuesday morning' when she asked about it Monday breakfast in Ch 1.",
+      "resolution": "Updated Ch 4 to note the stubborn worry had kept nagging since Monday morning despite Papa's breakfast reassurance.",
+      "current_source": "manuscript/004-the-six-year-old-oracle-and-the-starlight-cat.md",
+      "current_sha256": "8b62e2697c63a0a9805ac14e82c924c2832dd5b70992e13bca77294027cac129"
+    },
+    {
+      "id": "CANON-02",
+      "type": "timeline-season",
+      "status": "resolved",
+      "source": "reviews/whole-book-canon-audit.md",
+      "evidence": "Ch 2 called Week 1 Monday 'winter light' while Saturday of the same week and Spain scouting were November/autumn; Ch 8 jumped unbridged to early spring.",
+      "resolution": "Changed Ch 2 to 'crisp November light' and added the winter advisor-work bridge in Ch 8.",
+      "current_source": "manuscript/002-the-tyranny-of-the-amber-terminal.md; manuscript/008-the-last-stand-of-the-someday-siren.md",
+      "current_sha256": {
+        "manuscript/002-the-tyranny-of-the-amber-terminal.md": "4548be32f29d2fc4eb5aba5936bce92d16359c24e37a28314e0612ecb5c3933b",
+        "manuscript/008-the-last-stand-of-the-someday-siren.md": "95a7afe08181544404a64aa370e57e648d0381a8e7b5d0ed6a09611967e5cdf7"
+      }
+    },
+    {
+      "id": "CANON-03",
+      "type": "prop-continuity",
+      "status": "resolved",
+      "source": "reviews/whole-book-canon-audit.md",
+      "evidence": "Unexplained shift from heavy kitchen Brass Scale (Ch 1) to pocket Brass Scale (Ch 5-6); Ch 6 rose-gold compass vs brass dial and satchel vs pack/backpack; Ch 3 Garbanzo 'with his sleeve'.",
+      "resolution": "Introduced folding Brass Scale latch in Ch 5 & Ch 6; aligned Ch 6 'rose-gold dial' and 'satchel'; changed Ch 3 Garbanzo to 'against a folded napkin'.",
+      "current_source": "manuscript/003-the-brass-scale-of-honest-trade-offs.md; manuscript/005-the-gauntlet-of-the-mirage-brokers.md; manuscript/006-the-valley-of-the-living-streets.md",
+      "current_sha256": {
+        "manuscript/003-the-brass-scale-of-honest-trade-offs.md": "ae98c10356f1787f1a7987c8a2b8593d29db696d7a5ca435bd6aeab95d7c9b85",
+        "manuscript/005-the-gauntlet-of-the-mirage-brokers.md": "8421b2cc09470337929d7ecc8dbccdc8acaa9f9fe3e1a534aa3c7e6cb467d554",
+        "manuscript/006-the-valley-of-the-living-streets.md": "f87a589b8ad0f1cb8fdd907e855d895ad1109ee3317f1605c43fae0524b8ac9f"
+      }
+    },
+    {
+      "id": "CANON-04",
+      "type": "knowledge-leak",
+      "status": "resolved",
+      "source": "reviews/whole-book-canon-audit.md",
+      "evidence": "Clara mentioned 'a giant shopping bazaar' in Ch 4 before the family introduced the term.",
+      "resolution": "Planted 'a proper shopping bazaar' in Marisa's Living Streets rule in Ch 3.",
+      "current_source": "manuscript/003-the-brass-scale-of-honest-trade-offs.md",
+      "current_sha256": "ae98c10356f1787f1a7987c8a2b8593d29db696d7a5ca435bd6aeab95d7c9b85"
+    },
+    {
+      "id": "CANON-05",
+      "type": "spanish-punctuation-and-rhythm",
+      "status": "resolved",
+      "source": "reviews/whole-book-canon-audit.md",
+      "evidence": "Missing opening exclamation mark on 'Un *dragón* de nubes!' and silver bell echo in Ch 10; repeated 'Not a...' negative-contrast beats in Ch 8 & Ch 10.",
+      "resolution": "Added '¡Un *dragón* de nubes!', changed Garbanzo's bell to 'clear brass bell', and varied Ch 8 & Ch 10 rhythms into direct affirmative beats.",
+      "current_source": "manuscript/008-the-last-stand-of-the-someday-siren.md; manuscript/010-the-kingdom-of-free-mornings.md",
+      "current_sha256": {
+        "manuscript/008-the-last-stand-of-the-someday-siren.md": "95a7afe08181544404a64aa370e57e648d0381a8e7b5d0ed6a09611967e5cdf7",
+        "manuscript/010-the-kingdom-of-free-mornings.md": "05b02e4a49a124be0ed3bec1ccbe43601599c4cb1a4d459677ce2b3d55e348de"
+      }
+    }
+  ]
+}

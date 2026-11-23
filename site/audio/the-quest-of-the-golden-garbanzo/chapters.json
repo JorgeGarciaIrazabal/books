@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "book_id": "the-quest-of-the-golden-garbanzo",
+  "title": "The Quest of the Golden Garbanzo",
+  "credit": "Synthetic narration generated locally with Kokoro-82M ONNX (voice: af_heart); not a human performance.",
+  "engine": "Kokoro-82M ONNX (kokoro-onnx)",
+  "voice": "af_heart",
+  "review_status": "Coverage, durations, sizes, and SHA-256 checksums verified; human listening review pending.",
+  "total_seconds": 3263.996,
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Chapter 1: The Kettle That Refused to Boil",
+      "file": "chapter-01.mp3",
+      "seconds": 357.045,
+      "bytes": 4285484,
+      "sha256": "d06511d74cc3cbfe5e790a7eab84d8caad0be5cecad77f459b737abcb7311f75"
+    },
+    {
+      "number": 2,
+      "title": "Chapter 2: The Tyranny of the Amber Terminal",
+      "file": "chapter-02.mp3",
+      "seconds": 330.65,
+      "bytes": 3968972,
+      "sha256": "2e003e272717afab02f7a1c697bf934f7ea6cd8e9fe42161269ad5fb3867d10a"
+    },
+    {
+      "number": 3,
+      "title": "Chapter 3: The Brass Scale of Honest Trade-Offs",
+      "file": "chapter-03.mp3",
+      "seconds": 317.476,
+      "bytes": 3810860,
+      "sha256": "7b9402c0a76d39295e748a0f0708f696525271b66b610ffd18d8f07258ead47b"
+    },
+    {
+      "number": 4,
+      "title": "Chapter 4: The Six-Year-Old Oracle and the Starlight Cat",
+      "file": "chapter-04.mp3",
+      "seconds": 334.69,
+      "bytes": 4017356,
+      "sha256": "b281998d9e317b04e6d1edd4e2639a1d35549082db37e1a7c770cb565b665694"
+    },
+    {
+      "number": 5,
+      "title": "Chapter 5: The Gauntlet of the Mirage Brokers",
+      "file": "chapter-05.mp3",
+      "seconds": 329.506,
+      "bytes": 3955148,
+      "sha256": "7a950c06d82c6f1a21c791fcd8464dc11f28a5f888e56099ca544afa47ab1851"
+    },
+    {
+      "number": 6,
+      "title": "Chapter 6: The Valley of the Living Streets",
+      "file": "chapter-06.mp3",
+      "seconds": 308.182,
+      "bytes": 3699116,
+      "sha256": "018dcae2ec0891a524ce2013a243999641ca675d59370640d12df568a798b67c"
+    },
+    {
+      "number": 7,
+      "title": "Chapter 7: The Dragon of the Atlantic Toll",
+      "file": "chapter-07.mp3",
+      "seconds": 328.998,
+      "bytes": 3949100,
+      "sha256": "aedcbcf61ed093f917ad467a7e6759cd1663ce4f0e9d72dc0f82d952bf02fe7e"
+    },
+    {
+      "number": 8,
+      "title": "Chapter 8: The Last Stand of the Someday Siren",
+      "file": "chapter-08.mp3",
+      "seconds": 326.341,
+      "bytes": 3917132,
+      "sha256": "48eeaccfc3e8b3b5188ba3fd19e12dad132b145a07c206a422617cbe1adc9f23"
+    },
+    {
+      "number": 9,
+      "title": "Chapter 9: The Flying Furniture and the Great Crossing",
+      "file": "chapter-09.mp3",
+      "seconds": 282.565,
+      "bytes": 3391820,
+      "sha256": "242c41d9b3148e9e4cf0cafd397f1d0be45bdda35b7e3c33c6fb8350d77c1780"
+    },
+    {
+      "number": 10,
+      "title": "Chapter 10: The Kingdom of Free Mornings",
+      "file": "chapter-10.mp3",
+      "seconds": 348.543,
+      "bytes": 4183532,
+      "sha256": "305013c50c5252dd6d7f9eefb7f0d623c3c9a5fb02bc1e26de4ae1aef189414a"
+    }
+  ]
+}

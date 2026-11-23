@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "proposals": [
+    {
+      "id": "PROP-0001",
+      "fact_id": "FACT-0015",
+      "scope": "garbanzo-family",
+      "status": "accepted",
+      "decision_ref": "DEC-GF-0005",
+      "story_time": "Book 1 Act III (early spring) onward",
+      "source_passage": "manuscript/008-the-last-stand-of-the-someday-siren.md; manuscript/010-the-kingdom-of-free-mornings.md",
+      "text": "Upon honest resignation from the Amber Terminal Citadel with an advisor-verified, balanced plan, the Golden Garbanzo cracked open inside the heirloom copper pot to become a gleaming brass sunburst key, which unlocked the family's Gate of Free Mornings in Valladolid."
+    },
+    {
+      "id": "PROP-0002",
+      "fact_id": "FACT-0016",
+      "scope": "garbanzo-family",
+      "status": "accepted",
+      "decision_ref": "DEC-GF-0005",
+      "story_time": "Book 1 Act III (Ch 7) onward",
+      "source_passage": "manuscript/007-the-dragon-of-the-atlantic-toll.md; manuscript/010-the-kingdom-of-free-mornings.md",
+      "text": "During the Atlantic Storm-Bridge battle against Lord Double-Count, Jorge soldered out the noisy duplicate wire on Garbanzo's third emerald GPU crystal, permanently curing the Double-Counting Bug so his 10:00 a.m. scrolls zero out internal transfers without celebratory confetti."
+    },
+    {
+      "id": "PROP-0003",
+      "fact_id": "FACT-0017",
+      "scope": "garbanzo-family",
+      "status": "accepted",
+      "decision_ref": "DEC-GF-0005",
+      "story_time": "Book 1 finale onward",
+      "source_passage": "manuscript/006-the-valley-of-the-living-streets.md; manuscript/009-the-flying-furniture-and-the-great-crossing.md; manuscript/010-the-kingdom-of-free-mornings.md",
+      "text": "After advisor verification of cross-border treaties, taxes, and health coverage, the Garbanzo family sold their New Jersey home and moved to a single-story, solar-tiled modern three-bedroom house with a practical garage and garden in the Valladolid valley near Clara's school, lively cafés, RÍO, and glass padel courts."
+    },
+    {
+      "id": "PROP-0004",
+      "fact_id": "FACT-0018",
+      "scope": "garbanzo-family",
+      "status": "accepted",
+      "decision_ref": "DEC-GF-0005",
+      "story_time": "Book 1 Act I onward",
+      "source_passage": "manuscript/003-the-brass-scale-of-honest-trade-offs.md; manuscript/007-the-dragon-of-the-atlantic-toll.md; manuscript/010-the-kingdom-of-free-mornings.md",
+      "text": "Jorge and Marissa maintain equal household footing through twin monogrammed silver pouches balanced at 50/50 out of shared liquid coin, leaving locked long-term vaults untouched and backing daily life with an Emergency Buffer & Realistic Margin shield."
+    },
+    {
+      "id": "PROP-0005",
+      "fact_id": "FACT-0019",
+      "scope": "garbanzo-family",
+      "status": "accepted",
+      "decision_ref": "DEC-GF-0005",
+      "story_time": "Book 1 Act I onward",
+      "source_passage": "manuscript/001-the-kettle-that-refused-to-boil.md; manuscript/004-the-six-year-old-oracle-and-the-starlight-cat.md; manuscript/009-the-flying-furniture-and-the-great-crossing.md; manuscript/010-the-kingdom-of-free-mornings.md",
+      "text": "Poki's silver collar bell and smooth gray windowsill keepsake stone travel safely with the family alongside Clara's separate smooth white backyard pebble from Poki's twilight fence visit. Extended family includes Aunt Lidia (keeper of the coastal inn Ballena Rey), grandparents, and young cousins Isma (Ismael) and Denny."
+    }
+  ]
+}

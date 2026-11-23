@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "threads": [
+    {
+      "id": "THR-0001",
+      "name": "Ripening of the Golden Garbanzo",
+      "setup": "SC-0001",
+      "payoff": "SC-0010",
+      "status": "resolved",
+      "note": "Copper pot cools under Loom frost in Ch 1, blooms into sunburst brass key upon resignation in Ch 8, and unlocks the Valladolid Gate of Free Mornings in Ch 10."
+    },
+    {
+      "id": "THR-0002",
+      "name": "Garbanzo's Double-Counting Bug",
+      "setup": "SC-0001",
+      "payoff": "SC-0010",
+      "status": "resolved",
+      "note": "Triggers confetti in Ch 1, worsens in Ch 7 Hydra battle, patched mid-storm on crystal 3, and yields clean 10:00 a.m. report in Ch 10."
+    },
+    {
+      "id": "THR-0003",
+      "name": "Poki's Costume-Free Starlight Trail",
+      "setup": "SC-0001",
+      "payoff": "SC-0010",
+      "status": "resolved",
+      "note": "Windowsill gray stone + silver bell established in Ch 1; sleek unadorned Poki taps white backyard pebble in Ch 4, guides in Ch 6, trails wing in Ch 9, watches wall in Ch 10."
+    },
+    {
+      "id": "THR-0004",
+      "name": "Jorge's Second-Chapter Hands-On Craft",
+      "setup": "SC-0002",
+      "payoff": "SC-0010",
+      "status": "resolved",
+      "note": "Copper wire and padel ball counter the Siren in Ch 8; glass padel duel in Ch 6 and comedic-then-successful solar lantern wiring in Ch 10."
+    },
+    {
+      "id": "THR-0005",
+      "name": "Law of Living Streets & Brass Scale",
+      "setup": "SC-0003",
+      "payoff": "SC-0008",
+      "status": "resolved",
+      "note": "Eliminates Murcia and Guadarrama traps in Ch 5, confirms full-life Valladolid fit with carriage/travel/repairs tokens in Ch 6, and survives winter advisor verification in Ch 7-8."
+    }
+  ]
+}
