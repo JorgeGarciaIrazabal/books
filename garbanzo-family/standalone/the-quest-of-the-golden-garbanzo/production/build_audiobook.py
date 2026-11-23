@@ -56,9 +56,21 @@ def sha256_file(path: Path) -> str:
     return h.hexdigest()
 
 
+ACRONYMS = {"AI", "IRS", "USB", "NJ"}
+
+
+def _fix_caps(match: re.Match[str]) -> str:
+    word = match.group(0)
+    if word in ACRONYMS:
+        return word
+    return word.lower()
+
+
 def strip_md(text: str) -> str:
     cleaned = re.sub(r"\*\*(.+?)\*\*", r"\1", text)
     cleaned = re.sub(r"(?<!\*)\*([^*]+?)\*(?!\*)", r"\1", cleaned)
+    cleaned = re.sub(r"`([^`]+?)`", r"\1", cleaned)
+    cleaned = re.sub(r"\b[A-Z]{2,}\b", _fix_caps, cleaned)
     return cleaned.replace("50 / 50", "fifty-fifty")
 
 
@@ -126,7 +138,7 @@ def build_player_html(meta: dict, chapters_meta: list[dict], total_seconds: floa
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#1e2634">
 <title>{escape(meta['title'])}: audiobook</title>
-<meta name="description" content="Chapter audio for The Quest of the Golden Garbanzo, a Garbanzo Family chronicle. Synthetic narration.">
+<meta name="description" content="Chapter audio for The Quest of the Golden Garbanzo, a fun, dramatic Garbanzo Family adventure story. Synthetic narration.">
 <link rel="stylesheet" href="assets/css/styles.css">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/css/audiobook.css">
@@ -149,7 +161,7 @@ def build_player_html(meta: dict, chapters_meta: list[dict], total_seconds: floa
         <p class="audio-eyebrow">GARBANZO FAMILY · STANDALONE</p>
         <img class="audio-cover" src="publications/covers/{escape(book_id)}.jpg" alt="Cover of {escape(meta['title'])}">
         <h1 id="book-title">{escape(meta['title'])}</h1>
-        <p class="audio-description">A dramatic, funny, magical family chronicle · {escape(clock(total_seconds))}</p>
+        <p class="audio-description">A fun, dramatic family adventure · {escape(clock(total_seconds))}</p>
         <div class="player-current"><p id="audio-position"></p><h2 id="audio-current"></h2></div>
         <div id="audio-control"></div>
         <div class="audio-player-nav">
@@ -172,7 +184,7 @@ def build_player_html(meta: dict, chapters_meta: list[dict], total_seconds: floa
 
 <footer class="site-footer">
   <div class="wrap audio-page">
-    <p>The Quest of the Golden Garbanzo is an original Garbanzo Family chronicle. Chapter audio is provided for private and shared family listening.</p>
+    <p>The Quest of the Golden Garbanzo is an original Garbanzo Family adventure story. Chapter audio is provided for private and shared family listening.</p>
   </div>
 </footer>
 <script src="assets/js/audiobook.js" defer></script>

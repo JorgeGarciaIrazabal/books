@@ -3,11 +3,11 @@
   "threads": [
     {
       "id": "THR-0001",
-      "name": "Ripening of the Golden Garbanzo",
+      "name": "The Golden Garbanzo & Sun Key Charm",
       "setup": "SC-0001",
       "payoff": "SC-0010",
       "status": "resolved",
-      "note": "Copper pot cools under Loom frost in Ch 1, blooms into sunburst brass key upon resignation in Ch 8, and unlocks the Valladolid Gate of Free Mornings in Ch 10."
+      "note": "Goes cold when numbers are fudged in Ch 1, warms on honest deal in Ch 3, opens into a sun key charm in Ch 8, and unlocks the garden gate in Ch 10."
     },
     {
       "id": "THR-0002",
@@ -15,31 +15,31 @@
       "setup": "SC-0001",
       "payoff": "SC-0010",
       "status": "resolved",
-      "note": "Triggers confetti in Ch 1, worsens in Ch 7 Hydra battle, patched mid-storm on crystal 3, and yields clean 10:00 a.m. report in Ch 10."
+      "note": "Misfires in Ch 1 and Ch 7, patched on a rainy night in Ch 7, yields a clean zero-confetti 10:00 a.m. readout in Ch 10."
     },
     {
       "id": "THR-0003",
-      "name": "Poki's Costume-Free Starlight Trail",
+      "name": "Poki's Costume-Free Silver Visits",
       "setup": "SC-0001",
       "payoff": "SC-0010",
       "status": "resolved",
-      "note": "Windowsill gray stone + silver bell established in Ch 1; sleek unadorned Poki taps white backyard pebble in Ch 4, guides in Ch 6, trails wing in Ch 9, watches wall in Ch 10."
+      "note": "Gray windowsill stone and silver bell shown in Ch 1; sleek unadorned Poki taps Clara's white backyard pebble in Ch 4, guides in Ch 6, rides safely packed in Ch 9, sits softly on the dusk wall in Ch 10."
     },
     {
       "id": "THR-0004",
-      "name": "Jorge's Second-Chapter Hands-On Craft",
+      "name": "Jorge's Hands-On Second Chapter",
       "setup": "SC-0002",
       "payoff": "SC-0010",
       "status": "resolved",
-      "note": "Copper wire and padel ball counter the Siren in Ch 8; glass padel duel in Ch 6 and comedic-then-successful solar lantern wiring in Ch 10."
+      "note": "Clara's crayon note, padel ball, and copper wire defeat the final bonus temptation in Ch 8; diving padel point in Ch 6; sunny patio wiring (after one harmless blue smoke puff) in Ch 10."
     },
     {
       "id": "THR-0005",
-      "name": "Law of Living Streets & Brass Scale",
+      "name": "Yellow Legal Pad Fairness & Real Neighborhoods",
       "setup": "SC-0003",
       "payoff": "SC-0008",
       "status": "resolved",
-      "note": "Eliminates Murcia and Guadarrama traps in Ch 5, confirms full-life Valladolid fit with carriage/travel/repairs tokens in Ch 6, and survives winter advisor verification in Ch 7-8."
+      "note": "Eliminates Murcia and Collado Mediano traps in Ch 5, confirms sunny Valladolid fit in Ch 6, and passes winter tax/health checks in Ch 7-8."
     }
   ]
 }

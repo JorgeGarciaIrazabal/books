@@ -129,6 +129,66 @@
         "manuscript/008-the-last-stand-of-the-someday-siren.md": "95a7afe08181544404a64aa370e57e648d0381a8e7b5d0ed6a09611967e5cdf7",
         "manuscript/010-the-kingdom-of-free-mornings.md": "05b02e4a49a124be0ed3bec1ccbe43601599c4cb1a4d459677ce2b3d55e348de"
       }
+    },
+    {
+      "id": "REW-DEV-001",
+      "type": "pacing-and-proportion",
+      "status": "resolved",
+      "source": "reviews/rewrite-dev-review.md",
+      "evidence": "Rewritten Ch 9 compressed house closing, suitcase burst, farewell dinner, and flight into 519 words with silent extended family and muddled key handoff.",
+      "resolution": "Expanded Ch 9 to 671 words with clear closing/one-final-night timing plus warm spoken goodbyes for Aunt Lidia, Grandpa, Grandma, Denny, and Isma.",
+      "current_source": "manuscript/009-twelve-dragons-and-one-big-stew.md",
+      "current_sha256": "c2545a70a26cec18d7e0b74828cd75863fff7070d9bf08c2606bc7ab25e7694c"
+    },
+    {
+      "id": "REW-DEV-002",
+      "type": "garbanzo-continuity",
+      "status": "resolved",
+      "source": "reviews/rewrite-dev-review.md; reviews/rewrite-canon-audit.md",
+      "evidence": "Garbanzo floated once in Ch 8 and shifted between 4/2 feet, metal/plastic toes, yellow/tan shell, metal pear, and flag vs. unicorn sticker.",
+      "resolution": "Standardized Garbanzo on walking/tiptoeing/hopping on four stubby green metal feet, golden-tan chickpea shell, and crooked unicorn sticker applied in Ch 4; aligned CHAR-0004-garbanzo.md.",
+      "current_source": "manuscript/003-the-kitchen-table-deal.md; manuscript/004-claras-rules-and-a-silver-tail.md; manuscript/006-the-valladolid-bounce.md; manuscript/007-the-midnight-tax-storm.md; manuscript/008-the-hardest-friday-of-all.md; manuscript/009-twelve-dragons-and-one-big-stew.md; manuscript/010-tuesday-at-ten-oclock.md",
+      "current_sha256": {
+        "manuscript/003-the-kitchen-table-deal.md": "bc34748db61d7c741baa39f4c5b0207dbb508f493b06b3031c6bc23bee59c2c0",
+        "manuscript/004-claras-rules-and-a-silver-tail.md": "1fc9417a93971552de8cb3b992fe754b8e0a042eac3f075fcae9b9634129904e",
+        "manuscript/006-the-valladolid-bounce.md": "51d1b623729f9c8b9b078904e762c7ceac0d5479d4953be2b604879b832105d0",
+        "manuscript/007-the-midnight-tax-storm.md": "f98e8719d58356cf1c24570d3856dbc5911f106fe234003ce4b78c4cad968585",
+        "manuscript/008-the-hardest-friday-of-all.md": "c618673157fa5a5d1bea4301fb0aebb7d2c04186a2212e8ce5fab53814e3b705",
+        "manuscript/009-twelve-dragons-and-one-big-stew.md": "c2545a70a26cec18d7e0b74828cd75863fff7070d9bf08c2606bc7ab25e7694c",
+        "manuscript/010-tuesday-at-ten-oclock.md": "1a34111f4fa24d76c5fa59539977cd747952aafa20fa4575700e5a1443a00cf1"
+      }
+    },
+    {
+      "id": "REW-DEV-003",
+      "type": "guardrail-meta-leaks-and-contrast",
+      "status": "resolved",
+      "source": "reviews/rewrite-dev-review.md; reviews/rewrite-canon-audit.md",
+      "evidence": "Ch 4, Ch 6, and Ch 10 repeated unnatural 'no hat/cape/costume' denials for Poki alongside repetitive 'zero X, zero Y' lists.",
+      "resolution": "Replaced negative costume denials with pure positive descriptions of sleek dark/silver fur and streamlined negative triplets.",
+      "current_source": "manuscript/004-claras-rules-and-a-silver-tail.md; manuscript/006-the-valladolid-bounce.md; manuscript/010-tuesday-at-ten-oclock.md",
+      "current_sha256": {
+        "manuscript/004-claras-rules-and-a-silver-tail.md": "1fc9417a93971552de8cb3b992fe754b8e0a042eac3f075fcae9b9634129904e",
+        "manuscript/006-the-valladolid-bounce.md": "51d1b623729f9c8b9b078904e762c7ceac0d5479d4953be2b604879b832105d0",
+        "manuscript/010-tuesday-at-ten-oclock.md": "1a34111f4fa24d76c5fa59539977cd747952aafa20fa4575700e5a1443a00cf1"
+      }
+    },
+    {
+      "id": "REW-CANON-001",
+      "type": "geography-timeline-staging",
+      "status": "resolved",
+      "source": "reviews/rewrite-dev-review.md; reviews/rewrite-canon-audit.md",
+      "evidence": "Ch 1 microwave downstairs; Ch 3-4 morning-to-twilight jump; Ch 5 Madrid-to-Murcia day trip and untested sink; Ch 6 November straw sunhat, drop shot off back glass, 4-town stack; Ch 7 'rent' slip and '10 words' gag; Ch 8 pocket padel ball; Ch 10 barefoot sandals and coat pocket.",
+      "resolution": "Fixed all physical, seasonal, geographic, and staging glitches across Ch 1-10 without altering the lighthearted human tone.",
+      "current_source": "manuscript/001..010*.md",
+      "current_sha256": {
+        "manuscript/001-the-golden-chickpea-goes-cold.md": "6659dec680cbbdb2d534ee8bb1ad302f5e844e52f790d016dfdba575723a0568",
+        "manuscript/002-the-train-home-and-the-crayon-warning.md": "5aefc333b1fc379913db1e8e00484f8e276dfc1bcd6e24d3a3c8018dca0eef77",
+        "manuscript/005-the-great-spanish-house-trap.md": "66b5965848166a15c281f8a0823ee17a446dacf3b98ec6f2ea55eb6f87752e86",
+        "manuscript/006-the-valladolid-bounce.md": "51d1b623729f9c8b9b078904e762c7ceac0d5479d4953be2b604879b832105d0",
+        "manuscript/007-the-midnight-tax-storm.md": "f98e8719d58356cf1c24570d3856dbc5911f106fe234003ce4b78c4cad968585",
+        "manuscript/008-the-hardest-friday-of-all.md": "c618673157fa5a5d1bea4301fb0aebb7d2c04186a2212e8ce5fab53814e3b705",
+        "manuscript/010-tuesday-at-ten-oclock.md": "1a34111f4fa24d76c5fa59539977cd747952aafa20fa4575700e5a1443a00cf1"
+      }
     }
   ]
 }

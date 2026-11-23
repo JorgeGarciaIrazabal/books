@@ -155,26 +155,26 @@
     {
       "id": "the-quest-of-the-golden-garbanzo",
       "title": "The Quest of the Golden Garbanzo",
-      "summary": "A dramatic, funny, magical chronicle of how Jorge, Marissa, and six-year-old Clara braved towering amber screens, a double-counting pocket chickpea, deceptive mirage brokers, and an Atlantic Tax Hydra to earn unhurried sunlit mornings together in Spain. Ten chapters.",
+      "summary": "A fun, dramatic, easy-to-read adventure about how ordinary humans Jorge, Marissa, and six-year-old Clara braved late-night spreadsheets, a confetti-blasting desk-bot, sneaky Spanish house pitches, and one last office bonus to earn sunny mornings together in Spain. Ten chapters.",
       "language": "en",
       "layout": "reflowable",
-      "edition_note": "Family chronicle reading edition: 10 chapters, 32 PDF pages (30 story pages); reflowable EPUB 3 with linked contents, embedded cover, and companion 10-chapter synthetic audiobook.",
+      "edition_note": "Family adventure reading edition: 10 chapters, 33 PDF pages (31 story pages); reflowable EPUB 3 with linked contents, embedded cover, and companion 10-chapter synthetic audiobook.",
       "downloads": {
         "epub": {
           "path": "the-quest-of-the-golden-garbanzo.epub",
-          "bytes": 84694,
-          "sha256": "271eff75ac8b7e5500c465ee029f372e00e3d62703f65d907d913cf0d46dc5a1"
+          "bytes": 82485,
+          "sha256": "10753a01c30d241d9d53d893cf965916378d0ca39953f88d26d68321d9d99fe4"
         },
         "pdf": {
           "path": "the-quest-of-the-golden-garbanzo.pdf",
-          "bytes": 195478,
-          "sha256": "88f97ebf9c13e8c12fb37574572920d5a270382967b3c8d804b36a143e546f7e"
+          "bytes": 194873,
+          "sha256": "27961e2b2435a48bf54939d12cc7c2f1bc6d5c9547a7e22f784d0ac16030d7cb"
         }
       },
       "cover": {
         "path": "covers/the-quest-of-the-golden-garbanzo.jpg",
-        "bytes": 69647,
-        "sha256": "e9cb6e670dda97cb3a0fdc2566782cebd669069feacfc95cb2fb479c348828fc",
+        "bytes": 68694,
+        "sha256": "3d9f2a07841d923122199fa96d5d394fbdb8e4af5d0786b5b8073ea450080b47",
         "derived_from": "EPUB/cover.jpg inside the published EPUB, a 720x1080 typographic title-page cover"
       },
       "sources": [

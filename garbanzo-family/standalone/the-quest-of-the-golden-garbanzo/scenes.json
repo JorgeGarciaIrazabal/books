@@ -3,103 +3,103 @@
   "scenes": [
     {
       "id": "SC-0001",
-      "chapter": "manuscript/001-the-kettle-that-refused-to-boil.md",
+      "chapter": "manuscript/001-the-golden-chickpea-goes-cold.md",
       "pov": "Jorge",
       "place": "New Jersey kitchen",
-      "story_time": "Quest Week 1, Monday morning",
-      "incoming_state": "Copper kettle nearly ready after years of simmering; Garbanzo running flawed daily syncs.",
-      "turn": "Garbanzo misfires with transfer confetti and the kettle cools under Loom frost; Marissa brings out the Brass Scale.",
-      "outgoing_state": "Household admits guesswork is broken and must face real trade-offs."
+      "story_time": "Week 1, Monday morning",
+      "incoming_state": "Golden Garbanzo nearly ready after years of saving; Jorge tweaked Sunday's budget spreadsheet late at night.",
+      "turn": "Garbanzo misfires with confetti over a savings transfer while the copper pot rattles cold; Marissa catches the fudged mountain house math and pulls out a yellow legal pad.",
+      "outgoing_state": "Family agrees to stop guessing and put honest numbers on Saturday's pad."
     },
     {
       "id": "SC-0002",
-      "chapter": "manuscript/002-the-tyranny-of-the-amber-terminal.md",
+      "chapter": "manuscript/002-the-train-home-and-the-crayon-warning.md",
       "pov": "Jorge",
-      "place": "Hudson Crossing and Amber Terminal Citadel, Manhattan",
-      "story_time": "Quest Week 1, Tuesday",
-      "incoming_state": "Jorge enters the Citadel carrying doubt and the Siren's lure of safety.",
-      "turn": "Jorge tames an Event-Stream crisis, endures the Siren on the train, and finds Clara's crayon screen-free portrait at home.",
-      "outgoing_state": "Jorge commits to scheduling the full war-table council."
+      "place": "Commuter train & Manhattan office",
+      "story_time": "Week 1, Tuesday",
+      "incoming_state": "Jorge heads into Manhattan worried about losing his paycheck if he retires soon.",
+      "turn": "Coworkers buzz about AI speed and waiting for one more March bonus; at home after bedtime, Jorge finds Clara's crayon note on his monitor: STOP LETTING WORK EAT TUESDAYS.",
+      "outgoing_state": "Golden chickpea gives one tiny hopeful gleam; Jorge commits fully to Saturday's talk."
     },
     {
       "id": "SC-0003",
-      "chapter": "manuscript/003-the-brass-scale-of-honest-trade-offs.md",
+      "chapter": "manuscript/003-the-kitchen-table-deal.md",
       "pov": "Marissa",
       "place": "New Jersey dining table",
-      "story_time": "Quest Week 1, Saturday morning",
-      "incoming_state": "Family pulls out maps, balances, and competing dreams.",
-      "turn": "Brass Scale exposes luxury illusions; 50/50 fairness and Law of Living Streets locked; starlight paw-print points to Spain.",
-      "outgoing_state": "Shared adult covenant built on transparent sacrifice and real community."
+      "story_time": "Week 1, Saturday morning",
+      "incoming_state": "Adults spread out coffee, a map of Spain, and the yellow legal pad while muffling Garbanzo under a mug.",
+      "turn": "Every flashy wish Jorge tests costs extra freezing winters on the train; they lock 50/50 accounts, a cash cushion, and lively-neighborhood rules; a soft silver shimmer brushes Spain north of Madrid.",
+      "outgoing_state": "Shared adult plan signed with clear rules and real trade-offs."
     },
     {
       "id": "SC-0004",
-      "chapter": "manuscript/004-the-six-year-old-oracle-and-the-starlight-cat.md",
+      "chapter": "manuscript/004-claras-rules-and-a-silver-tail.md",
       "pov": "Clara",
-      "place": "Clara's bedroom and backyard fence",
-      "story_time": "Quest Week 1, Saturday twilight",
-      "incoming_state": "Clara senses grown-up worry and wonders whether Poki will be left behind.",
-      "turn": "Wizard Council lays down childhood standards; sleek costume-free Poki appears on the fence in starlight and touches her wand.",
-      "outgoing_state": "Clara endorses the journey with fierce confidence."
+      "place": "Clara's bedroom & backyard fence",
+      "story_time": "Week 1, Saturday twilight",
+      "incoming_state": "Clara runs an Official Kid Inspection while secretly worrying Poki will miss them across the ocean.",
+      "turn": "She lists her standards (real adventure books, skating, biking, dancing, horses), then meets sleek costume-free Poki in gentle silver light on the fence tapping her smooth white pebble.",
+      "outgoing_state": "Clara pockets the warm white pebble and backs the move wholeheartedly."
     },
     {
       "id": "SC-0005",
-      "chapter": "manuscript/005-the-gauntlet-of-the-mirage-brokers.md",
+      "chapter": "manuscript/005-the-great-spanish-house-trap.md",
       "pov": "Jorge",
-      "place": "Iberian scouting route (Murcia, Sierra de Guadarrama)",
-      "story_time": "Scouting expedition, Week 3",
-      "incoming_state": "Family arrives in Spain armed with Cadastral Spectacles and Living Compass.",
-      "turn": "Murcia fails the Compass; Guadarrama strains the Scale; crooked 251 m2 urbanizable trap shatters when Jorge demands entrega de llaves.",
-      "outgoing_state": "Phantom defeated; family rides north into Castile."
+      "place": "Madrid, Murcia, Collado Mediano",
+      "story_time": "Autumn scouting trip",
+      "incoming_state": "Family arrives after a 40-minute Newark delay and meets a slick Spanish house agent.",
+      "turn": "Murcia fails Marissa's daily-life test; Collado Mediano costs too much; a 'bargain lot' is exposed with a tape measure and tablet map as a crooked 251 m2 unpiped wedge with vague entrega de llaves.",
+      "outgoing_state": "Family walks away from traps and drives north to Valladolid."
     },
     {
       "id": "SC-0006",
-      "chapter": "manuscript/006-the-valley-of-the-living-streets.md",
+      "chapter": "manuscript/006-the-valladolid-bounce.md",
       "pov": "Marissa",
-      "place": "Valladolid valley (Arroyo/La Flecha, Laguna de Duero, Simancas, Zaratán, RÍO)",
-      "story_time": "Scouting expedition, Week 4",
-      "incoming_state": "Exhausted from mirages, adults test whether affordable towns actually feel alive.",
-      "turn": "Compass chimes gold across Valladolid suburbs; Jorge wins a chaotic glass-wall padel duel; Poki's shadow marks a sunlit modern 3-bedroom house.",
-      "outgoing_state": "Target home and neighborhood discovered and verified."
+      "place": "Valladolid suburbs (Arroyo/La Flecha, Laguna de Duero, Zaratán, RÍO)",
+      "story_time": "Autumn scouting trip, Day 4",
+      "incoming_state": "Tired from mirage homes, family tests whether affordable towns feel vibrant and friendly.",
+      "turn": "Lively streets and RÍO shopping center pass Marissa's test; Jorge wins a wild glass-wall padel point; Poki's silver tail flashes near a modern 3-bedroom house with solar panels and waving neighbors.",
+      "outgoing_state": "Right house and neighborhood chosen within budget."
     },
     {
       "id": "SC-0007",
-      "chapter": "manuscript/007-the-dragon-of-the-atlantic-toll.md",
+      "chapter": "manuscript/007-the-midnight-tax-storm.md",
       "pov": "Jorge",
-      "place": "Atlantic Storm-Bridge",
-      "story_time": "Preparation climax, Month 2",
-      "incoming_state": "Cross-border taxes, market storm risk, and Garbanzo's bug threaten to derail the leap.",
-      "turn": "Jorge solders Garbanzo mid-storm to fix double counting; Marissa holds the 50/50 Buffer Shield; Clara strikes with flexible magic.",
-      "outgoing_state": "Hydra reduced to a neat real-world advisor checklist; crossing cleared."
+      "place": "New Jersey dining room",
+      "story_time": "Winter rainstorm",
+      "incoming_state": "Real panic over cross-border taxes, health coverage, and stock dips makes Garbanzo malfunction badly.",
+      "turn": "Jorge fixes Garbanzo's duplicate-transfer bug with a screwdriver and laptop; Clara suggests skipping big winter trips in stormy market years; cross-border questions go into a real advisor folder.",
+      "outgoing_state": "Budget debugged, flexible spending adopted, human advisor checklist ready."
     },
     {
       "id": "SC-0008",
-      "chapter": "manuscript/008-the-last-stand-of-the-someday-siren.md",
+      "chapter": "manuscript/008-the-hardest-friday-of-all.md",
       "pov": "Jorge",
-      "place": "Amber Terminal Citadel and NJ kitchen",
-      "story_time": "Final Friday in the Citadel",
-      "incoming_state": "Someday Siren offers one last March bonus and questions Jorge's non-corporate identity.",
-      "turn": "Jorge rejects the mirror illusion, claims copper wire and padel over amber towers, and stamps the Resignation Seal; Golden Garbanzo blooms.",
-      "outgoing_state": "Gate of Free Mornings unlocked."
+      "place": "Manhattan glass office & New Jersey kitchen",
+      "story_time": "Early spring, final Friday",
+      "incoming_state": "Human advisors checked taxes and health coverage over winter; Jorge goes in to resign.",
+      "turn": "Boss offers a fat bonus for one more year; touching Clara's crayon note, a padel ball, and copper wire in his pocket, Jorge politely declines; back home, the Golden Garbanzo opens into a golden sun key charm.",
+      "outgoing_state": "Resignation done cleanly; sun charm earned."
     },
     {
       "id": "SC-0009",
-      "chapter": "manuscript/009-the-flying-furniture-and-the-great-crossing.md",
+      "chapter": "manuscript/009-twelve-dragons-and-one-big-stew.md",
       "pov": "Clara",
-      "place": "New Jersey farewell hall and Atlantic Sky-Vessel",
-      "story_time": "Departure week",
-      "incoming_state": "Shrinking trunks, plush dragons, NJ house handoff, and extended family farewell.",
-      "turn": "Joyous cocido madrileño feast (Jorge nowhere near the stove!) with Aunt Lidia, Denny, Isma, and grandparents; on-time sky crossing.",
-      "outgoing_state": "Family lands in Spain with all four GPU crystals and zero regrets."
+      "place": "New Jersey home & Madrid flight",
+      "story_time": "Late spring departure week",
+      "incoming_state": "House sold; packing chaos bursts open with plush dragons and family goodbyes.",
+      "turn": "Overstuffed bag rains twelve plush dragons; Aunt Lidia cooks a giant cocido madrileño (banning Jorge from the stove) with Denny, Isma, and grandparents; on-time plane lifts off with Clara's white pebble and Poki's keepsakes.",
+      "outgoing_state": "Family crosses ocean smoothly."
     },
     {
       "id": "SC-0010",
-      "chapter": "manuscript/010-the-kingdom-of-free-mornings.md",
+      "chapter": "manuscript/010-tuesday-at-ten-oclock.md",
       "pov": "Jorge",
-      "place": "Valladolid home, café plaza, school path, backyard wall",
-      "story_time": "First crisp Tuesday in Spain, 7:45 a.m. through twilight",
+      "place": "Valladolid home, school path, patio, garden wall",
+      "story_time": "First crisp Tuesday in Spain, 7:45 a.m. to dusk",
       "incoming_state": "First ordinary Tuesday belonging completely to the family.",
-      "turn": "Marissa greets lively neighbors, Clara races to school with Spanglish wizardry, Jorge fixes patio solar lantern after one comic puff of blue smoke, Garbanzo issues clean 10 a.m. report, Poki watches softly from the wall.",
-      "outgoing_state": "Complete emotional and comic closure of the Golden Garbanzo quest."
+      "turn": "Sun key charm unlocks the gate; Marissa greets a neighbor over coffee; Jorge walks Clara to school then fixes a patio solar lantern after one comical blue puff; Garbanzo chirps at 10:00 a.m. with zero confetti; costume-free Poki sits softly on the dusk garden wall.",
+      "outgoing_state": "Grounded, happy closure of the book."
     }
   ]
 }

@@ -1,29 +1,27 @@
 # Style and voice — The Quest of the Golden Garbanzo
 
 ## Narrative / explanatory approach
-- **POV & tense**: Close third-person past tense with a nimble, dramatic storybook narrator. Chapters center mainly on Jorge, Marissa, or Clara while keeping all three voices vivid and distinct.
-- **Tone**: High-stakes fantasy framing applied to fiercely relatable family reality (spreadsheets become enchanted ledgers; real-estate zoning becomes treacherous swamp curses; padel matches become courtly duels).
-- **Read-aloud rhythm**: Crisp paragraphs, snappy banter, clear action beats, and vivid verbs so a bright six-year-old stays riveted and adults laugh out loud.
+- **POV & tense**: Close third-person past tense following Jorge, Marissa, or Clara. Keep every viewpoint super easy to follow.
+- **Tone**: Warm, lively, dramatic, and genuinely funny everyday storytelling, with only three small, clear touches of magic (the Golden Garbanzo pot, talking desk-bot Garbanzo, and Poki's gentle silver visits).
+- **Readability**: Target Grade 5–6 reading ease! Aim for short 10–15 word sentences on average, crisp 2–4 sentence paragraphs, clear cause-and-effect, and plain everyday nouns and verbs (`train`, `yellow legal pad`, `tape measure`, `solar panel`, `plane`) instead of heavy fantasy titles or long compound modifiers.
 
 ## Original voice samples
-- **Jorge's wry practicality**: "Anyone could draw a watercolor swimming pool on parchment. It took real spectacles to notice the garage sat three meters inside the neighbor's olive tree."
-- **Marissa's grounded clarity**: "Beautiful mountain air, Jorge. Now lift the compass and find me one bakery within walking distance that does not close for six months a year."
-- **Clara's direct honesty**: "If the clock-towers keep eating Tuesdays, Papa, then we are feeding the wrong dragon."
+- **Jorge**: "Look at the tape measure. Half of that dream garage sits inside the neighbor's bushes, and there isn't a water pipe in sight."
+- **Marissa**: "Pretty pine trees, Jorge. Now point to the bakery, the school bus, and one neighbor who isn't a squirrel."
+- **Clara**: "If a stormy year comes along, we skip the big trip and do movie night at home."
 
 ## Dialogue, rhythm, and imagery
-- Dialogue advances character pressure and humor rather than summarizing the plot.
-- Each character speaks from personal priorities: Jorge thinks in systems, geometry, tools, and rebounds; Marissa measures community warmth, fairness, and livable daily rhythm; Clara fuses unicorn-wizard wonder with startlingly literal truth.
-- Keep Jorge's distaste for cooking playful and unmistakable; never give him sudden gourmet cooking joy.
-- Keep Poki silent, poised, expressive through posture and starlight, and strictly costume-free.
+- Let crisp dialogue and quick action carry the humor and drama.
+- Vary sentence openings naturally; do not repeat negative-contrast crutches (`Not an X. Not a Y.`).
+- Keep Jorge's playful allergy to cooking clear (`FACT-0009`).
+- Keep Poki silent, sleek, poised, and strictly costume-free (`FACT-0010`).
 
 ## House style
-- American English spelling for the New Jersey opening and general narration, with authentic Spanish nouns italicized only on first playful emphasis when helpful (*cocido madrileño*, *urbano consolidado*, *urbanizable*, *entrega de llaves*).
-- **Zero em dashes (`—` / `\u2014`) and zero double-hyphens (`--`)** anywhere in manuscript text. Use periods, commas, colons, semicolons, or clean sentence recasts instead.
-- Standard double quotation marks (`"..."`) for all spoken dialogue, one speaker per paragraph.
-- No assistant boilerplate, no chapter-closing moral lectures, and no sentimental clichés ("you are my everything").
+- American English spelling for clear narration, with three natural Spanish terms italicized on first key appearance with instant meaning clues (*cocido madrileño*, *entrega de llaves*, *padel*).
+- **Zero em dashes (`—` / `\u2014`), zero en dashes (`–` / `\u2013`), and zero double-hyphens (`--`)** anywhere in manuscript text.
+- Standard double quotation marks (`"..."`) for spoken dialogue, one speaker per paragraph.
+- Spell `fifty-fifty` cleanly (or `50/50`) without breaking audio flow; no heavy ALL-CAPS shouted blocks unless short like `STOP LETTING WORK EAT TUESDAYS.`
+- No clichés ("you are my everything") and no preachy chapter-closing morals.
 
 ## Terminology
 See [garbanzo-family/glossary.md](../../../glossary.md) for canonical spellings and meanings.
-
-## Editorial queries
-Separate hard continuity/craft rules (zero em dashes, costume-free Poki, no cooking Jorge, no private medical/legal details) from discretionary rhythm tweaks during review.

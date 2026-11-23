@@ -54,3 +54,11 @@
 - **Authority**: Explicit author release instruction (`2026-11-23`).
 - **Supersedes**: `DEC-GF-0004` (for Book 1 release scope).
 - **Affected paths**: `publications/`, `site/index.html`, `site/audiobook-the-quest-of-the-golden-garbanzo.html`, `site/audio/the-quest-of-the-golden-garbanzo/`, `garbanzo-family/standalone/the-quest-of-the-golden-garbanzo/`.
+
+## DEC-GF-0008: Ground Garbanzo Family in ordinary human life with light magic and easy prose
+- **Date**: 2026-11-23
+- **Question**: Author requested making the book less magical so the family remain ordinary humans, lowering the reading level so it is easy to read and follow (less dense), while keeping it fun and dramatic (`Do a full rewrite of the whole book`).
+- **Accepted choice**: Rewrite *The Quest of the Golden Garbanzo* and update active `garbanzo-family` canon to revision 4 around real human life in New Jersey, Manhattan, and Spain, keeping magic warm, simple, and strictly limited to three elements: (1) the lucky Golden Garbanzo chickpea in the kitchen copper pot, (2) Garbanzo the chickpea-shaped desk-bot, and (3) sleek, costume-free Poki's quiet starlight visits. Remove all heavy allegorical fantasy apparatus (Citadel, Tax Hydra, Mirage Brokers, Loom, Brass Scale, Living Compass, Cadastral Spectacles, Sky-Portal, Padelsword).
+- **Rationale**: Keeps characters clearly human, eliminates dense capitalized terminology, and lowers the prose to crisp, vivid Grade 5–6 read-aloud English without losing the humor, emotion, or stakes.
+- **Authority**: Explicit author instruction (`2026-11-23`).
+- **Affected paths**: `garbanzo-family/universe.json`, `bible.md`, `glossary.md`, `canon.json`, `timeline.json`, `characters/*.md`, `standalone/{bible,roadmap}.md`, and `standalone/the-quest-of-the-golden-garbanzo/`.

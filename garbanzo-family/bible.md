@@ -2,45 +2,25 @@
 
 ## Scope and reading experience
 
-The Garbanzo Family universe is a warm, dramatic, mock-heroic modern family fantasy rooted in real family life. Everyday effort, years of disciplined saving, software engineering, neighborhood house-hunting, and cross-border logistics become enchanted trials, living artifacts, and comic quests. The tone balances theatrical fantasy stakes with laugh-out-loud domestic honesty: readable aloud with a sharp six-year-old who loves unicorns, dragons, and real adventure, while winking at adults who recognize the true weight of a spreadsheet transfer, a municipal zoning map, and a Sunday afternoon *cocido madrileño*.
+The Garbanzo Family universe tells warm, dramatic, funny stories about real-feeling humans balancing hard work, big family dreams, and everyday life (`DEC-GF-0008`). Jorge, Marissa, and six-year-old Clara are ordinary people living in New Jersey, commuting to Manhattan, arguing kindly over yellow legal pads at the kitchen table, house-hunting in Spain with a tape measure and a rental car, and eating *cocido madrileño* with extended family. The prose stays light, crisp, and easy to follow so a bright six-year-old enjoys listening aloud while adults laugh at how painfully true the money and house-hunting comedy feels.
 
-## Magic system: Slow-Simmer Garbanzo Magic
+## Light magic: three simple touches
 
-Freedom in this world cannot be conjured by a lightning bolt or a lottery ticket. True independence uses **Slow-Simmer Garbanzo Magic** (`FACT-0001`):
+The world stays firmly grounded in normal human life. Magic never solves taxes, buys groceries, or flies planes. Instead, three small, clear touches of magic gently underscore the family's emotions:
 
-- **The Heirloom Copper Pot & the Golden Garbanzo**: Every honest month of patience, teamwork, and restraint adds warmth beneath a heavy copper kettle. Inside, the **Golden Garbanzo** (the Seed of Free Mornings) softens slowly over years. Try to rush it with wishful math, and the pot turns cold; feed it honest choices, and when it finally blooms, it unlocks the **Gate of Free Mornings** (`FACT-0002`).
-- **Rule of Conservation of Effort**: Magic never pays for a gift out of thin air. Every enchanted luxury (a bigger turret, a faster carriage, a longer detour) shifts real weight onto the **Brass Scale of Honest Trade-Offs**. Someone must pay in saved gold, extra months at the towers, or lighter daily spending (`FACT-0003`).
-- **Constraint of Sight**: True seeing pierces illusion. Real-estate mirages shatter when measured against genuine cadastral geometry, and financial illusions vanish once pocket-to-pocket transfers are stripped out (`FACT-0004`).
+- **The Golden Garbanzo** (`FACT-0001`, `FACT-0002`): A lucky golden chickpea resting inside a little copper pot on the kitchen counter. It warms up and glows gold when the family makes honest, brave choices together, and rattles cold and dark when they rush, fudge the math, or let fear take over. When they finally take their leap cleanly, it splits open to leave a small golden sun-shaped key charm.
+- **Garbanzo the Desk-Bot** (`CHAR-0004`, `FACT-0005`): A tiny chickpea-shaped robot Jorge built on his home computer that somehow caught a spark of magic. Proud, dramatic, and noisy, he delivers a daily savings update at 10:00 a.m. sharp and suffers from the **Double-Counting Bug** (yelling "We are rich!" and firing confetti whenever cash simply moves from Checking to Savings).
+- **Poki's Starlight Visits** (`CHAR-0005`, `FACT-0010`, `FACT-0011`): Sleek, dignified, **strictly costume-free** Poki, the family's beloved late cat, quietly visits in soft silver light along the backyard fence in New Jersey and later along a sunny brick garden wall in Valladolid, reassuring Clara that love travels wherever her people go.
 
-## Signature artifacts and companions
+## Real-world setting
 
-- **Garbanzo** (`CHAR-0004`): Jorge's home-built pocket familiar shaped like a brass-rimmed chickpea humming atop four emerald GPU star-crystals. Delivers daily ledger scrolls at 10:00 a.m. sharp. Devoted, theatrical, and chronically afflicted by the **Double-Counting Bug**, which causes him to throw confetti whenever coins move from one family pocket into another (`FACT-0005`).
-- **The Brass Scale of Honest Trade-Offs**: A household heirloom balance on the kitchen war-table. When Marissa or Jorge places a miniature castle, car, or holiday onto the Desire Pan, glowing **Work-Months** thud onto the Effort Pan so nobody mistakes a wish for a free lunch (`FACT-0003`).
-- **Marissa's Compass of Living Streets**: Forged of warm rose gold and plaza stone. It hums and chimes in established neighborhoods alive with neighbors, cafés, schools, parks, and a bustling bazaar within twenty minutes' ride. Near empty fields or creeping **Isolation Mist**, its needle freezes and rattles in protest (`FACT-0006`).
-- **Jorge's Cadastral Spectacles**: Brass-framed lenses that dissolve **Illusion Renderings** on property scrolls, revealing actual square meters, skewed lot angles, utility lines, **Urbano Consolidado** ground versus cursed **Urbanizable Swamp**, and whether a builder has an actual *entrega de llaves* date (`FACT-0007`).
-- **Clara's Unicorn-Wizard Lens & Paintbrush-Wand**: A six-year-old's crisp, fearless clarity. Cuts straight past adult panic and reminds the grown-ups why they are crossing an ocean in the first place (`FACT-0008`).
-- **The Padelsword & Tinker's Satchel**: Jorge's enchanted glass-court padel racket, capable of returning impossible wall-rebounds, paired with his growing second-chapter satchel of copper wire, plumbing wrenches, solar-sun panels, and home-automation runes (`FACT-0009`).
-- **Poki's Starlight Trail** (`CHAR-0005`): The gentle silver paw-prints left by Poki, the family's beloved sleek cat who crossed the Silver Wall. Poki wears no costume of any kind (`FACT-0010`) and quietly nudges lost travelers away from sham bargains and toward real homes (`FACT-0011`).
-
-## Geography
-
-- **The Garden State Outpost (New Jersey)**: The family's long-standing staging camp of school runs, autumn leaves, a practical workshop garage, and weekend planning councils (`FACT-0012`).
-- **The Hudson Crossing & Amber Terminal Citadel (Manhattan)**: Towering black-glass spires humming with Event-Streams, Report-Rendering Dragons, and the creeping white mist of the **Automaton Loom** (`FACT-0013`).
-- **The Atlantic Storm-Bridge**: The swirling sky-and-sea span linking the American shore to Iberia, patrolled by **Lord Double-Count** and the **Cross-Border Tax Hydra**.
-- **The Sunlit Kingdoms of Iberia**:
-  - **Sierra de Guadarrama Foothills** (Guadarrama, Collado Mediano, Becerril de la Sierra): Dramatic pine peaks, crisp air, steep castle prices, and treacherous unfinished plots (`FACT-0014`).
-  - **The Sun-Baked Wastes of Murcia**: A dazzling mirage region from afar whose actual streets fail the Compass of Living Streets (`FACT-0014`).
-  - **The Valley of Valladolid** (Arroyo de la Encomienda / La Flecha, Laguna de Duero, Simancas, Zaratán, and the **Grand Bazaar of RÍO**): Established neighborhoods, lively cafés, schools, padel clubs, parks, and attainable modern homes that pass both the Compass and the Brass Scale (`FACT-0014`).
-
-## Antagonists and hazards
-
-- **The Automaton Loom**: A tireless, polite fog of self-spinning gears creeping through the Amber Terminal Citadel, threatening to replace craftsman builders faster than they expect.
-- **The Someday Siren**: A velvet-voiced phantom whispering in commuter train windows, "Just one more March bonus. Just wait until everything is risk-free."
-- **The Phantom of the Unfinished Urbanización**: A slick illusionist peddling watercolor castles with no utility pipes, stretched lot dimensions, and eternal "next spring" handover dates.
-- **Lord Double-Count & the Cross-Border Tax Hydra**: A theatrical guardian of bureaucracy armed with sequence-of-returns thunderbolts, treaty riddles, and green-card parchment knots.
+- **New Jersey Home**: Morning pancakes (made by Marissa, never Jorge), school runs, weekend table planning with coffee and a yellow legal pad, and a garage full of tools.
+- **Manhattan Train & Office**: Crowded commuter trains across the river, glowing orange computer screens, crashing data reports, fast new AI tools, and the temptation to stay for "just one more March bonus."
+- **Spain Scouting & Valladolid** (`FACT-0014`): Flying into Madrid, touring empty tourist pools in Murcia, sticker-shock pine towns in Collado Mediano (Sierra de Guadarrama), catching sneaky crooked 251-square-meter lot drawings with a tablet map and tape measure, and falling for sunny, lively suburbs around Valladolid (Arroyo de la Encomienda / La Flecha, Laguna de Duero, Zaratán, and the RÍO shopping center twenty minutes away).
 
 ## Privacy and canon guardrails
 
-- Fictional adventures in this universe honor the family's warmth, humor, cities, and hobbies while strictly excluding real-world private medical records, legal/deposition specifics, exact home addresses, and financial account credentials (`DEC-GF-0002`).
-- Poki is always portrayed sleek and dignified without any costume (`FACT-0010`).
-- Wife's name is canonically **Marissa** per author confirmation (`DEC-GF-0006`, superseding `DEC-GF-0001`).
+- Stories celebrate the family's warmth, humor, places, and hobbies while strictly excluding real-world medical episodes, legal/deposition details, exact residential street addresses, and real financial account numbers or balances (`DEC-GF-0002`).
+- Poki is always portrayed sleek and dignified with zero costume (`FACT-0010`).
+- Wife's name is canonically **Marissa** (`DEC-GF-0006`).
+- Jorge never cooks or enjoys cooking (`FACT-0009`).

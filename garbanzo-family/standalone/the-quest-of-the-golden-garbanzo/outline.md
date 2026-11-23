@@ -1,71 +1,42 @@
 # The Quest of the Golden Garbanzo — outline
 
 ## Throughline
-Years of quiet effort have nearly ripened the Golden Garbanzo inside the family's copper pot (`FACT-0002`), yet comfort, fear of error, and the creeping Automaton Loom (`FACT-0013`) hold them suspended between New Jersey and Spain. When Garbanzo's morning malfunction exposes how fragile both illusions and delays can be, Jorge, Marissa, and Clara mount a coordinated campaign across three fronts: honest household math (the Brass Scale), real neighborhood life in Spain (Valladolid over empty mirages), and cross-border courage (the Atlantic Hydra and the Someday Siren). Each step costs visible sacrifice and teamwork, unlocking the Gate of Free Mornings not by luck, but by clarity.
+After years of hard work and saving, Jorge, Marissa, and six-year-old Clara are close to leaving stressful Manhattan commutes behind for a happier life in Spain. Yet two ordinary human problems get in their way: fear of leaping on bad math and fear of waiting until Clara's childhood slips past. Guided lightly by a lucky glowing chickpea in a copper pot, Jorge's buggy little chickpea desk-bot Garbanzo, and the quiet silver visits of their late cat Poki, the family tackles wishful budgets, sneaky Spanish house pitches, winter tax worries, and one last shiny office bonus to earn a calm Tuesday morning together in Valladolid.
 
 ## Beginning, development, and ending
-- **Beginning (Chapters 1–2)**: Establish the family, Garbanzo's hilarious Double-Counting Bug, the rattling copper kettle, and the creeping threat of the Automaton Loom inside Manhattan's Amber Terminal Citadel, sharpened by Clara's crayon ultimatum.
-- **Middle (Chapters 3–6)**: Forge the family covenant on the Brass Scale (50/50 fairness and the Law of Living Streets); consult Clara's Wizard Council and witness Poki's starlight pledge; blast through the Mirage Brokers of Murcia, Guadarrama, and crooked 251 m² swamps to discover the living valley of Valladolid and seal the home with a joyful padel duel.
-- **Climax & Resolution (Chapters 7–10)**: Survive the Atlantic Storm-Bridge against Lord Double-Count's Hydra by debugging Garbanzo live in battle; reject the Someday Siren's last March-bonus lure to stamp the Resignation Seal; cross the ocean with Aunt Lidia's feast and Clara's plush dragon brigade; step into an earned, unhurried Tuesday morning in Spain.
+- **Beginning (Chapters 1–2)**: The Golden Garbanzo pot goes cold after Jorge fudges numbers on a Sunday night, Garbanzo showers his coffee with confetti, and a long Manhattan workday ends with Clara's crayon note: `STOP LETTING WORK EAT TUESDAYS.`
+- **Middle (Chapters 3–6)**: At Saturday's kitchen table, Jorge and Marissa write fair 50/50 rules and real-neighborhood rules onto a yellow legal pad. Clara hosts her Stuffed Animal Inspection and sees sleek, costume-free Poki tap her white backyard pebble. In Spain, the family catches an empty tourist trap and a sneaky crooked 251-square-meter house lot, then discovers sunny, neighborly Valladolid with a thrilling glass-wall padel point.
+- **Climax & Resolution (Chapters 7–10)**: During a winter rainstorm, Jorge fixes Garbanzo's Double-Counting Bug and puts cross-border questions into a real human-advisor folder while Clara invents flexible travel rules. In early spring, Jorge turns down one last office bonus and finds a golden sun key charm inside the copper pot. After Aunt Lidia's lively farewell *cocido madrileño* feast and an overflowing suitcase of twelve plush dragons, the family steps into a quiet, bright Tuesday morning at ten o'clock in Valladolid.
 
 ## Chapters and scenes
 
-1. `SC-0001` — `manuscript/001-the-kettle-that-refused-to-boil.md` (~800 words)
-   - **POV**: Jorge (with Marissa & Clara) | **Place/Time**: New Jersey kitchen, Monday 7:15 a.m. -> 10:00 a.m. early test.
-   - **Desire/Resistance**: Jorge wants his daily ledger to confirm readiness; Garbanzo triggers the Double-Counting Bug and showers the pancakes with fake gold confetti, while the copper kettle rattles and cools under a drift of gray Loom frost.
-   - **Turn**: Marissa sets the Brass Scale on the table and says they either solve the plan honestly together or stop pretending the pot is ready.
-   - **Disclosures**: Establishes copper pot, Garbanzo (`FACT-0005`), Double-Counting Bug, Clara's wizard socks, Poki's recent passing across the Silver Wall (`FACT-0011`), and Jorge's aversion to cooking (`FACT-0009`).
-
-2. `SC-0002` — `manuscript/002-the-tyranny-of-the-amber-terminal.md` (~800 words)
-   - **POV**: Jorge | **Place/Time**: Hudson Crossing train & Manhattan's Amber Terminal Citadel, Tuesday day-to-evening.
-   - **Desire/Resistance**: Jorge wants to tame an Event-Stream storm and a Report-Rendering Dragon without losing ground to the Automaton Loom; the Someday Siren whispers in the train glass that waiting two more years makes everything safe.
-   - **Turn**: Arriving home late, Jorge finds Clara's crayon drawing taped to his desk monitor: a smiling stick-figure Papa standing in sunlight with zero glowing amber screens.
-   - **Disclosures**: Establishes Amber Terminal Citadel, Automaton Loom, Someday Siren (`FACT-0013`), and why waiting carries a real childhood cost.
-
-3. `SC-0003` — `manuscript/003-the-brass-scale-of-honest-trade-offs.md` (~800 words)
-   - **POV**: Marissa | **Place/Time**: New Jersey dining war-table, Saturday morning.
-   - **Desire/Resistance**: Marissa wants transparent rules so neither partner works secretly into exhaustion or lands in an isolated castle; Jorge briefly tries adding a glossy luxury chariot and a giant hilltop turret onto the Desire Pan, which slams heavy Work-Months onto the Effort Pan.
-   - **Turn**: Together they calibrate a fair 50/50 vault balance, strip out fantasy castles for a realistic home margin, and lock the Law of Living Streets; a single starlit paw print presses across the map toward northern Castile and Madrid's foothills.
-   - **Disclosures**: Brass Scale (`FACT-0003`), Compass of Living Streets (`FACT-0006`), 50/50 fairness principle (`FACT-0004`).
-
-4. `SC-0004` — `manuscript/004-the-six-year-old-oracle-and-the-starlight-cat.md` (~800 words)
-   - **POV**: Clara | **Place/Time**: Clara's Wizard Council bedroom & backyard fence, Saturday twilight.
-   - **Desire/Resistance**: Clara demands real adventure standards for any new kingdom: real books with big readable letters, dancing, ice skating, biking, horse trails, and friends, not dull baby lessons. Beneath her wizard bravado hides her real fear: will Poki know where they moved?
-   - **Turn**: By the twilight fence, sleek, costume-free Poki appears in quiet silver starlight, touches one warm stone with a paw, and leaves a silver thread curled around Clara's paintbrush-wand, answering without words.
-   - **Disclosures**: Clara's age and tastes (`FACT-0008`), Poki strictly costume-free (`FACT-0010`), emotional anchor that Poki belongs to the family, not a zip code.
-
-5. `SC-0005` — `manuscript/005-the-gauntlet-of-the-mirage-brokers.md` (~800 words)
-   - **POV**: Jorge & Marissa | **Place/Time**: Sky-portal arrival & Iberian mirage territories (Murcia, Sierra de Guadarrama), scouting trip.
-   - **Desire/Resistance**: After a 40-minute Cloud-Troll delay over Newark-Barajas skies, the family tests listings; the Phantom of the Unfinished Urbanización throws dazzling watercolor castles at them. Murcia fails Marissa's Compass flat; Guadarrama / Collado Mediano dazzles visually until the Brass Scale screams under a 400k gold roof-repair curse, and a supposedly huge lot reveals a crooked 251 m² trapezoid and cursed *urbanizable* swamp through Jorge's Cadastral Spectacles.
-   - **Turn**: Jorge demands the contractual *entrega de llaves* date, shattering the Phantom's scroll into dry parchment leaves and forcing the family north beyond the mountains.
-   - **Disclosures**: Cadastral Spectacles (`FACT-0007`), regional shortlist realities (`FACT-0014`).
-
-6. `SC-0006` — `manuscript/006-the-valley-of-the-living-streets.md` (~800 words)
-   - **POV**: Marissa (with Jorge & Clara) | **Place/Time**: Valladolid valley (Arroyo/La Flecha, Laguna de Duero, Simancas, Zaratán, Grand Bazaar of RÍO).
-   - **Desire/Resistance**: Tired from mirage chasing, the family checks whether affordability means giving up life and fun. Marissa's Compass chimes warm gold along Arroyo, Laguna, Zaratán, and the Grand Bazaar of RÍO twenty minutes away. Jorge lands in a wildly comic Duel of the Padelsword off the glass wall at a local club to prove his worth to the valley's defenders.
-   - **Turn**: Guided by Poki's silhouette along a sunny brick wall, they find an occupied, sunlit neighborhood with a modern single-story three-bedroom home, genuine backyard garden, garage for Jorge's tools, and waving neighbors.
-   - **Disclosures**: Valladolid fit (`FACT-0014`), Padelsword (`FACT-0009`).
-
-7. `SC-0007` — `manuscript/007-the-dragon-of-the-atlantic-toll.md` (~800 words)
-   - **POV**: Jorge | **Place/Time**: The Atlantic Storm-Bridge, night storm battle.
-   - **Desire/Resistance**: To ratify the move, the family must cross the Storm-Bridge guarded by Lord Double-Count and the Three-Headed Cross-Border Hydra (Sequence-of-Returns Thunder, Treaty & Green-Card Knots, and a hijacked Double-Counting Bug making Garbanzo blast dizzying numbers mid-fight).
-   - **Turn**: Jorge solders Garbanzo's emerald crystal rune during a lightning flash to strip out internal transfer echoes, Marissa locks down the 50/50 Equilibrium & Cash-Buffer Shield, and Clara rides an enchanted silver unicorn forward with a flexible-margin blast. The Hydra shrinks into a tidy binder labeled "Confirm with Real Human Advisors Before Leap."
-   - **Disclosures**: Garbanzo's Double-Counting Bug cured (`FACT-0005`); honest financial humility preserved (magic does not skip real tax/advisory prep).
-
-8. `SC-0008` — `manuscript/008-the-last-stand-of-the-someday-siren.md` (~800 words)
-   - **POV**: Jorge | **Place/Time**: Amber Terminal Citadel, final Friday.
-   - **Desire/Resistance**: The Someday Siren plays her strongest card: a shimmering mirror of one more spring bonus, extra safety margin, and prestige, asking who Jorge even is without the Citadel's amber glow.
-   - **Turn**: Jorge catches sight of a ten-years-older reflection still telling Clara "next summer," laughs at the trap, pulls a coil of copper wire and a bright yellow padel ball from his pocket, and stamps the Crimson Resignation Seal. Across the river, the Golden Garbanzo cracks wide open inside the copper pot.
-   - **Disclosures**: Climax of the inner arc (`FACT-0002`, `FACT-0013`); Jorge embraces his second-chapter craft identity (`FACT-0009`).
-
-9. `SC-0009` — `manuscript/009-the-flying-furniture-and-the-great-crossing.md` (~800 words)
-   - **POV**: Clara & Marissa | **Place/Time**: New Jersey farewell feast & Atlantic Sky-Vessel.
-   - **Desire/Resistance**: Packing a whole house turns hilarious when shrinking trunks spit out twelve plush dragons, a unicorn crown, and four humming emerald crystals. Selling the old outpost succeeds smoothly, and extended family gather for a mighty farewell feast of *cocido madrileño* (which Jorge is strictly banned from cooking) with Aunt Lidia, lively nephews Denny and Isma, and smiling grandparents.
-   - **Turn**: Boarding the Atlantic Sky-Vessel on time, the family watches the shoreline shrink beneath the clouds as Clara whispers goodnight to the silver star-track behind the wing.
-   - **Disclosures**: Extended family warm cameos (`DEC-GF-0002` privacy-safe); farewell to NJ outpost (`FACT-0012`).
-
-10. `SC-0010` — `manuscript/010-the-kingdom-of-free-mornings.md` (~800 words)
-    - **POV**: All three (rotating cleanly through the morning) | **Place/Time**: Valladolid home & plaza, a crisp Tuesday morning at 10:00 a.m.
-    - **Desire/Resistance**: Has the magic held once the towers are gone? Marissa steps out to coffee with neighbors; Jorge walks Clara toward school listening to her bilingual dragon-wizard tale, then tries wiring the patio solar lantern with one dramatic puff of harmless blue smoke before getting the circuit singing clean.
-    - **Turn**: At 10:00 a.m. sharp, Garbanzo chimes once with zero false confetti and unfurls a simple gold ribbon: *Tuesday Morning: Free and Accounted For*. At twilight, sleek unadorned Poki sits quietly on the sunlit garden wall as the family laughs over dinner they did not rush to finish.
-    - **Disclosures**: Full payoff of `FACT-0001`–`FACT-0014`, ending on earned joy without preachy slogans.
+1. `SC-0001` — `manuscript/001-the-golden-chickpea-goes-cold.md` (~720 words)
+   - **POV**: Jorge (with Marissa & Clara) | **Place/Time**: New Jersey kitchen, Monday morning.
+   - **Action & Turn**: Garbanzo pops confetti into Jorge's coffee (yelling about a checking-to-savings move). The lucky Golden Garbanzo in the copper pot rattles cold instead of glowing warm. Marissa gently catches Jorge stretching last night's spreadsheet to fit a pricey mountain house. Clara sees Poki's silver collar bell and gray stone on the windowsill and asks if Poki can find them in Spain. Marissa puts down a yellow legal pad for Saturday.
+2. `SC-0002` — `manuscript/002-the-train-home-and-the-crayon-warning.md` (~710 words)
+   - **POV**: Jorge | **Place/Time**: Commuter train & Manhattan tech office, Tuesday.
+   - **Action & Turn**: Busy orange screens, a crashing data job, coworkers chasing AI speed and talking about waiting for "one more March bonus." On the dark train home, doubt whispers to wait two more years. At home after Clara's bedtime, Jorge finds her crayon picture taped to his monitor: sunny yard, smiling stick-figure Dad with zero screens, and `STOP LETTING WORK EAT TUESDAYS.` Downstairs, the copper pot gives one tiny warm gleam.
+3. `SC-0003` — `manuscript/003-the-kitchen-table-deal.md` (~720 words)
+   - **POV**: Marissa | **Place/Time**: New Jersey dining table, Saturday morning.
+   - **Action & Turn**: Coffee, a paper map of Spain, a yellow legal pad, and Garbanzo tucked under an upside-down mug after yelling about buying a castle. Jorge tries adding a fancy sports car and giant villa; Marissa calmly writes how many extra freezing commuter trains each wish costs. They agree on 50/50 equal spending accounts, a cash cushion for rainy market years, and lively neighborhoods with bakeries, schools, and big shops within twenty minutes. Both sign; the chickpea glows warm gold and a silver glimmer brushes across Spain north of Madrid.
+4. `SC-0004` — `manuscript/004-claras-rules-and-a-silver-tail.md` (~710 words)
+   - **POV**: Clara | **Place/Time**: Clara's bedroom & backyard fence, Saturday twilight.
+   - **Action & Turn**: Clara calls an Official Kid Inspection with twelve plush dragons, unicorns, and paintbrushes: Spain needs real adventure books with big words, dancing, ice skating, biking, horse trails, and real friends. Outside at twilight, holding a smooth white backyard pebble (kept distinct from Poki's gray windowsill stone), she worries quietly about Poki. Sleek, costume-free Poki appears softly in silver light along the fence, taps the white pebble once with a paw, and fades into dusk.
+5. `SC-0005` — `manuscript/005-the-great-spanish-house-trap.md` (~750 words)
+   - **POV**: Jorge & Marissa | **Place/Time**: Madrid airport, rental car, Murcia, Collado Mediano (autumn scouting trip).
+   - **Action & Turn**: After a 40-minute Newark delay and Garbanzo giving wild directions from a backpack, a slick agent in a shiny blue suit pitches three bad deals: empty off-season Murcia (Marissa vetoes it for zero daily life), a gorgeous Collado Mediano house weighed down by huge prices and costly roof/pipe work, and a sketchy "bargain lot" whose paper lawn hides a crooked 251-square-meter wedge with no water, no power, and a garage overlapping the neighbor's bushes. Jorge asks for the *entrega de llaves* (the real day they get the keys); the agent stammers, Jorge closes the folder, and they drive north to Valladolid.
+6. `SC-0006` — `manuscript/006-the-valladolid-bounce.md` (~740 words)
+   - **POV**: Marissa (with Jorge & Clara) | **Place/Time**: Valladolid valley (Arroyo/La Flecha, Laguna de Duero, Zaratán, RÍO shopping center).
+   - **Action & Turn**: Wide sidewalks, kids on bikes, warm bakeries, schools, and RÍO twenty minutes away make Marissa beam. Waiting before the last showing, Jorge plays a loud, funny **padel** point against two grinning local neighbors testing the New York visitor and wins match point on a diving bounce off the back glass while Garbanzo cheers from the bench. Walking down a sunlit street after, Clara sees a sleek silver cat tail flash on a brick wall beside a modern one-story three-bedroom home with solar panels, a garage for tools, a garden, and waving neighbors at a price that fits Saturday's yellow pad.
+7. `SC-0007` — `manuscript/007-the-midnight-tax-storm.md` (~740 words)
+   - **POV**: Jorge | **Place/Time**: New Jersey dining room, winter rainstorm.
+   - **Action & Turn**: Real human panic over two-country taxes, health coverage, and stock dips causes Garbanzo's Double-Counting Bug to go haywire, counting the New Jersey house twice and screaming about an ice-cream yacht. Jorge pops Garbanzo's back panel with a small screwdriver, plugs in his laptop, and deletes the duplicate-transfer bug for good. Marissa lays out their cash cushion; six-year-old Clara walks in wearing unicorn socks and suggests skipping big fancy trips during stormy market years. Jorge puts cross-border questions into a brown folder marked `CHECK WITH REAL TAX AND LEGAL ADVISORS FIRST`.
+8. `SC-0008` — `manuscript/008-the-hardest-friday-of-all.md` (~720 words)
+   - **POV**: Jorge | **Place/Time**: Manhattan office & New Jersey kitchen, early spring.
+   - **Action & Turn**: After real human advisors check treaties, taxes, and health insurance over winter, Jorge sits in a glass conference room on his last Friday as his boss offers a fat bonus and big raise for "just one more year." For ten seconds he wavers, wondering who he is without work titles. He feels Clara's folded crayon note, a yellow padel ball, and a snip of copper wire in his coat pocket, pictures himself still saying "next summer" in ten years, and kindly turns the bonus down. Back home in New Jersey, the copper pot chimes softly as the Golden Garbanzo splits open around a warm golden sun key charm.
+9. `SC-0009` — `manuscript/009-twelve-dragons-and-one-big-stew.md` (~700 words)
+   - **POV**: Clara & Marissa | **Place/Time**: New Jersey farewell dinner & flight to Madrid, late spring.
+   - **Action & Turn**: House sold, packing chaos hits when Clara's zipper bursts and twelve plush dragons rain down the stairs. Aunt Lidia makes a huge steaming pot of *cocido madrileño* (loudly banning Jorge from stirring it), cousins Denny and Isma tear through the hallway with Clara, grandparents beam, and Poki's gray windowsill stone and silver bell are packed gently alongside Clara's white pebble. The Madrid plane pushes back on time as Clara presses her white pebble against the window glass.
+10. `SC-0010` — `manuscript/010-tuesday-at-ten-oclock.md` (~730 words)
+    - **POV**: All three (rotating cleanly through the day) | **Place/Time**: Valladolid home, school path, patio, garden wall, Tuesday 7:45 a.m. to dusk.
+    - **Action & Turn**: No commuter alarm. Jorge turns the sun-charmed key in their front garden gate. Marissa sips morning coffee on the patio and chats with a neighbor. Jorge walks Clara to school listening to her bilingual dragon-hockey tale, comes home, and hooks up a solar patio light with one comical *POOF* of harmless blue smoke before fixing one wire cleanly. At **10:00 a.m. sharp**, Garbanzo chirps once with zero confetti and displays: `Tuesday Morning: Free and Paid For.` That evening, while the family eats together slowly and happily, sleek, costume-free Poki sits quietly in soft golden dusk light on the warm brick wall.

@@ -1,40 +1,40 @@
 # The Quest of the Golden Garbanzo — creative brief
 
 ## Working promise or thesis
-A dramatic, funny, magical 30-page family saga telling how Jorge, Marissa, and Clara fought through years of towering glass spires, crooked real-estate mirages, double-counting ledger bugs, and an Atlantic Hydra to earn a life of unhurried sunlit mornings together in Spain.
+A fun, dramatic, easy-to-read 30-page family adventure about how ordinary humans Jorge, Marissa, and six-year-old Clara worked together, dodged silly financial bugs and sneaky Spanish house traps, and earned calm, happy mornings in Spain.
 
 ## Reader and format
-- **Audience**: Private family keepsake written to be thrilling, hilarious, and readable aloud with six-year-old Clara while landing sly domestic and financial comedy for Jorge and Marissa.
-- **Genre**: Mock-heroic magical family fantasy grounded in real family life.
-- **Language**: English narration and dialogue, seasoned naturally with playful Spanish terms (*cocido madrileño*, *urbano consolidado*, *urbanizable*, *entrega de llaves*, *padel*) with immediate context cues so young readers never stumble.
-- **Edition**: 30-page keepsake novella (`reading_edition` target: 30 pages at roughly 265 words/page in 5.5 x 8.5 in format; ~7,800 to 8,300 words across 10 chapters), exported to Markdown, standalone HTML, and EPUB 3.
+- **Audience**: Built for a smart six-year-old and tired parents alike: plain, playful everyday English (~Grade 5–6 level) that reads aloud effortlessly while still delivering sharp grown-up laughs and real heart.
+- **Genre**: Grounded contemporary family adventure with three light touches of magic.
+- **Language**: Plain English narration and crisp dialogue, sprinkled with three easy Spanish phrases explained right on the page (*cocido madrileño*, *padel*, and *entrega de llaves*).
+- **Edition**: ~30 story pages (32 total PDF pages in 6 x 9 in reading trim; ~7,000 to 7,600 words across 10 short, punchy chapters), published in EPUB 3, PDF, and 10-chapter audio.
 
 ## Premise / scope
-Years of disciplined effort have brought the copper kettle holding the Golden Garbanzo close to boiling, yet two stubborn monsters stand in the way: fear of leaping too soon and fear of waiting until Clara's childhood slips past. Between Manhattan's Amber Terminal Citadel, a stubborn household Brass Scale of Honest Trade-Offs, deceptive Iberian mirage brokers, and a three-headed Atlantic Tax Hydra, all three family members (plus an overcaffeinated chickpea familiar named Garbanzo and the starlight trail of sleek, costume-free Poki) must prove that retirement is earned not by one last bonus, but by honest choices made together.
+Jorge, Marissa, and Clara are real humans trying to make the biggest leap of their lives: leaving stressful Manhattan commutes in New Jersey for a sunny, neighbor-rich new home in Spain without running out of money or trapping themselves in an empty house far from life. With a lucky golden chickpea that glows or rattles cold in its copper pot, Jorge's buggy mini desk-bot named Garbanzo, and sleek, costume-free Poki's gentle silver visits, all three family members tackle crooked house pitches, midnight tax panic, and one last big office bonus.
 
 ## Aesthetic intention
-- Theatrical mock-heroic stakes blended with crisp, affectionate family comedy.
-- Specific, lived-in sensory detail: humming emerald GPU star-crystals, steam over *cocido madrileño*, glass padel wall rebounds, crooked 251-square-meter parcel geometry, and morning light over a Spanish plaza.
-- Warmth without syrup: never use overblown romantic clichés ("you are my everything"), never preach morals at chapter ends, and keep humor sharp and visual.
+- Fast, lively scenes, short sentences, clear human stakes, and zero dense fantasy vocabulary.
+- Warmth grounded in real family comedy: Jorge banned from touching the stove, Garbanzo stuck under a coffee mug, Clara's plush dragons bursting out of a suitcase, and a diving glass-wall padel point.
+- No syrupy clichés ("you are my everything") and no preachy chapter endings.
 
 ## Visual scope, when relevant
-- **Reversible assumption**: First edition is **text-only** (`illustration-plan.json` uncommissioned). If the author later requests illustrated pages or a picture-book retrofit, route through `.studio/skills/illustrated-story/SKILL.md` with explicit cast/prop consistency sheets (including strictly costume-free Poki).
+- **Reversible assumption**: Text-only reading edition (`illustration-plan.json` uncommissioned). Future illustrated editions must use `.studio/skills/illustrated-story/SKILL.md` and keep Poki strictly costume-free.
 
 ## Structure and ending / takeaway
-Ten chapters moving from the stalled copper kettle in New Jersey and the Amber Terminal Citadel (Chapters 1–2), through the family war-table and Clara's Wizard Council with Poki's starlight visit (Chapters 3–4), across the Iberian Gauntlet and the discovery of Valladolid (Chapters 5–6), into the storm-bridge boss battle against Lord Double-Count and the final victory over the Someday Siren (Chapters 7–8), culminating in the joyful ocean crossing and a calm, bright Tuesday morning in Spain (Chapters 9–10).
+Ten chapters: Monday kitchen trouble and office temptation (Chapters 1–2), Saturday's yellow legal pad deal and Poki's fence visit for Clara (Chapters 3–4), house hunting in Spain and discovering Valladolid with a padel game (Chapters 5–6), fixing Garbanzo in a winter storm and saying no to one last bonus (Chapters 7–8), and Aunt Lidia's farewell stew plus a calm Tuesday morning in Spain (Chapters 9–10).
 
 ## Targets
-- **Word count**: 7,800 to 8,300 words total (~780 to 830 words per chapter; ~30 pages at ~265 words/page).
-- **POV & tense**: Close third-person past tense shifting smoothly among Jorge, Marissa, and Clara.
-- **Pace**: Every chapter delivers comic spark, emotional turn, and causal forward push toward the next step.
+- **Word count**: ~7,000 to 7,600 words total (~700 to 760 words per chapter; ~30 story pages with airy dialogue spacing).
+- **Readability**: Short sentences (target ~10–15 words average), short 2–4 sentence paragraphs, everyday concrete words, minimal adverbs/abstract nouns.
+- **POV & tense**: Close third-person past tense shifting cleanly among Jorge, Marissa, and Clara.
 
 ## Author constraints and delegated decisions
-- **Craft defaults (`.studio/craft.md`)**: Strictly **zero em dashes** (`—`) and **zero double-hyphen `--` stand-ins** in narration or dialogue. Use double quotation marks (`"..."`) for English dialogue, one speaker per paragraph.
-- **Privacy boundary (`DEC-GF-0002`)**: Exclude private medical records, legal/deposition details, exact residential street addresses, and real financial account credentials. Keep any hypothetical numbers clearly fictionalized or playful.
-- **Poki rule (`FACT-0010`)**: Poki appears sleek and natural in starlight, strictly with zero costume (never a dragon costume).
-- **Extended family nods**: Include warm cameo mentions of Aunt Lidia, nephews Denny and Isma, and grandparents without inventing dramatic conflicts for real relatives.
-- **Keep private**: Do not publish to `publications/` or commit/push to Git.
+- **Craft defaults (`.studio/craft.md`)**: Strictly **zero em dashes** (`—`), zero en dashes (`–`), and **zero `--` stand-ins** in narration or dialogue. Use standard double quotation marks (`"..."`), one speaker per paragraph.
+- **Human groundedness & readability (`DEC-GF-0008`)**: Family are ordinary humans; keep magic light and limited to the Golden Garbanzo pot, Garbanzo the desk-bot, and Poki's quiet starlight visits.
+- **Privacy boundary (`DEC-GF-0002`)**: Exclude private medical episodes, legal/deposition details, exact street addresses, and real financial account credentials/balances.
+- **Poki rule (`FACT-0010`)**: Sleek and unadorned, strictly with zero costume.
+- **Extended family nods**: Aunt Lidia (and her *cocido madrileño*), nephews Denny and Isma, and smiling grandparents.
 
 ## Assumptions and open questions
-- **Confirmed name (`DEC-GF-0006` / `DEC-QGG-0003`)**: Wife's canonical spelling confirmed by author as **Marissa**.
-- **Reversible assumption**: Ten chapters at ~800 words each represent the cleanest 30-page keepsake arc without crowding six-year-old read-aloud pacing.
+- **Confirmed name (`DEC-GF-0006` / `DEC-QGG-0003`)**: Wife's canonical spelling is **Marissa**.
+- **Public release hold (`DEC-GF-0008` workflow)**: Rebuild local exports, catalog staging, and audio now, then pause before Git push so the author can inspect first.

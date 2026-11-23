@@ -28,3 +28,10 @@
 - **Accepted choice**: Build publication EPUB 3, 32-page PDF, 720×1080 cover JPEG, and 10-chapter synthetic audiobook (`Kokoro-82M ONNX`, voice `af_heart`), stage in `publications/` and `site/`, set `stage: "released"`, and push release files to `origin/main`.
 - **Authority**: Explicit author instruction (`2026-11-23`; `DEC-GF-0007`).
 - **Affected paths**: `book.json`, `production/*`, `publications/*`, `site/*`, `reviews/gates.json`, `handoff.md`.
+
+## DEC-QGG-0005: Full rewrite as grounded human, easy-reading edition
+- **Date**: 2026-11-23
+- **Question**: Author asked to make the story less magical (family remain humans), lower the reading level so it is easy to read and understand (less dense), while staying fun and dramatic, via a full rewrite of the whole book.
+- **Accepted choice**: Rewrite all 10 chapters from scratch in plain, crisp Grade 5–6 English (~7,000–7,600 words targeting ~30 story pages), keeping the family completely human with only three warm light-magic touches (Golden Garbanzo pot, Garbanzo the mini desk-bot, Poki's gentle silver visits), rebuilding PDF/EPUB/cover/audiobook locally without pushing to Git until user review.
+- **Authority**: Explicit author instruction (`2026-11-23`; `DEC-GF-0008`).
+- **Affected paths**: `brief.md`, `style.md`, `outline.md`, `scenes.json`, `knowledge.json`, `threads.json`, `book.json`, `manuscript/*.md`, `production/*`, `reviews/*`, `publications/*`, `site/*`, `handoff.md`.

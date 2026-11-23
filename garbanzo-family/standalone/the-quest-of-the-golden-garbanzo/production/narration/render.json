@@ -4,110 +4,110 @@
   "engine": "Kokoro-82M ONNX (kokoro-onnx)",
   "voice": "af_heart",
   "format": "mono 24000 Hz 96 kbps CBR MP3",
-  "total_seconds": 3263.996,
-  "total_bytes": 39178520,
+  "total_seconds": 3105.262,
+  "total_bytes": 37273976,
   "public_page": "site/audiobook-the-quest-of-the-golden-garbanzo.html",
   "audio_dir": "site/audio/the-quest-of-the-golden-garbanzo",
   "chapters": [
     {
       "number": 1,
-      "title": "Chapter 1: The Kettle That Refused to Boil",
+      "title": "Chapter 1: The Golden Chickpea Goes Cold",
       "file": "chapter-01.mp3",
-      "seconds": 357.045,
-      "bytes": 4285484,
-      "sha256": "d06511d74cc3cbfe5e790a7eab84d8caad0be5cecad77f459b737abcb7311f75",
-      "source": "manuscript/001-the-kettle-that-refused-to-boil.md",
-      "source_sha256": "caed9959b963d3ae9a73f6454f8bd2cc9b3dc6718b35d3f9938a91092cd17bc8"
+      "seconds": 337.016,
+      "bytes": 4045292,
+      "sha256": "0397ad9bfecf7723cca35810ca6486bb2a7cbb888bde5949318a9323d3eb39e4",
+      "source": "manuscript/001-the-golden-chickpea-goes-cold.md",
+      "source_sha256": "6659dec680cbbdb2d534ee8bb1ad302f5e844e52f790d016dfdba575723a0568"
     },
     {
       "number": 2,
-      "title": "Chapter 2: The Tyranny of the Amber Terminal",
+      "title": "Chapter 2: The Train Home and the Crayon Warning",
       "file": "chapter-02.mp3",
-      "seconds": 330.65,
-      "bytes": 3968972,
-      "sha256": "2e003e272717afab02f7a1c697bf934f7ea6cd8e9fe42161269ad5fb3867d10a",
-      "source": "manuscript/002-the-tyranny-of-the-amber-terminal.md",
-      "source_sha256": "947d0c57ba9643c37df6cb7cf7b44721e877a7d6038f1c4a72b5bef4962a6939"
+      "seconds": 284.815,
+      "bytes": 3418892,
+      "sha256": "f69c0770a39681e9476bf40faa1b39613bbde67bf2b7495db111f246cc850c21",
+      "source": "manuscript/002-the-train-home-and-the-crayon-warning.md",
+      "source_sha256": "5aefc333b1fc379913db1e8e00484f8e276dfc1bcd6e24d3a3c8018dca0eef77"
     },
     {
       "number": 3,
-      "title": "Chapter 3: The Brass Scale of Honest Trade-Offs",
+      "title": "Chapter 3: The Kitchen Table Deal",
       "file": "chapter-03.mp3",
-      "seconds": 317.476,
-      "bytes": 3810860,
-      "sha256": "7b9402c0a76d39295e748a0f0708f696525271b66b610ffd18d8f07258ead47b",
-      "source": "manuscript/003-the-brass-scale-of-honest-trade-offs.md",
-      "source_sha256": "ee847f1575ad5cd8e0894be1479788f366bf6839b9c0a2c5093a28ea8a98a0cc"
+      "seconds": 316.229,
+      "bytes": 3795884,
+      "sha256": "22ca2899b9c892da91da1e0ff57e6673f6d5edeb9055762919f6a9d43a3eff49",
+      "source": "manuscript/003-the-kitchen-table-deal.md",
+      "source_sha256": "bc34748db61d7c741baa39f4c5b0207dbb508f493b06b3031c6bc23bee59c2c0"
     },
     {
       "number": 4,
-      "title": "Chapter 4: The Six-Year-Old Oracle and the Starlight Cat",
+      "title": "Chapter 4: Clara's Rules and a Silver Tail",
       "file": "chapter-04.mp3",
-      "seconds": 334.69,
-      "bytes": 4017356,
-      "sha256": "b281998d9e317b04e6d1edd4e2639a1d35549082db37e1a7c770cb565b665694",
-      "source": "manuscript/004-the-six-year-old-oracle-and-the-starlight-cat.md",
-      "source_sha256": "9e12fb9a4d867a4770e4daa1e574ef878ab2a24a401dd07e5ae999d3f244ad21"
+      "seconds": 312.232,
+      "bytes": 3747788,
+      "sha256": "a840252f2b87c94f9de6fd5d1fd8a6e03f635f00b5428c9c10c427903b619cf1",
+      "source": "manuscript/004-claras-rules-and-a-silver-tail.md",
+      "source_sha256": "1fc9417a93971552de8cb3b992fe754b8e0a042eac3f075fcae9b9634129904e"
     },
     {
       "number": 5,
-      "title": "Chapter 5: The Gauntlet of the Mirage Brokers",
+      "title": "Chapter 5: The Great Spanish House Trap",
       "file": "chapter-05.mp3",
-      "seconds": 329.506,
-      "bytes": 3955148,
-      "sha256": "7a950c06d82c6f1a21c791fcd8464dc11f28a5f888e56099ca544afa47ab1851",
-      "source": "manuscript/005-the-gauntlet-of-the-mirage-brokers.md",
-      "source_sha256": "7491c0b32d6ad471ed4c5f249b8a01d76a1899fcbfeb1708d9b5335e7fb8a935"
+      "seconds": 394.098,
+      "bytes": 4730156,
+      "sha256": "7cd6ba45e50222b1b89d8030acdd2ad93d531b2da2700469aa86d894c9087b84",
+      "source": "manuscript/005-the-great-spanish-house-trap.md",
+      "source_sha256": "66b5965848166a15c281f8a0823ee17a446dacf3b98ec6f2ea55eb6f87752e86"
     },
     {
       "number": 6,
-      "title": "Chapter 6: The Valley of the Living Streets",
+      "title": "Chapter 6: The Valladolid Bounce",
       "file": "chapter-06.mp3",
-      "seconds": 308.182,
-      "bytes": 3699116,
-      "sha256": "018dcae2ec0891a524ce2013a243999641ca675d59370640d12df568a798b67c",
-      "source": "manuscript/006-the-valley-of-the-living-streets.md",
-      "source_sha256": "c54778e3bfc3a8d5fe189d526e8a7c6004d061048ed4b99d3990a2e1586fe547"
+      "seconds": 293.148,
+      "bytes": 3518828,
+      "sha256": "07819e6b57ca6afe047686e38b8f75ce6d0431ca68a4e547df98f4ff6480b883",
+      "source": "manuscript/006-the-valladolid-bounce.md",
+      "source_sha256": "51d1b623729f9c8b9b078904e762c7ceac0d5479d4953be2b604879b832105d0"
     },
     {
       "number": 7,
-      "title": "Chapter 7: The Dragon of the Atlantic Toll",
+      "title": "Chapter 7: The Midnight Tax Storm",
       "file": "chapter-07.mp3",
-      "seconds": 328.998,
-      "bytes": 3949100,
-      "sha256": "aedcbcf61ed093f917ad467a7e6759cd1663ce4f0e9d72dc0f82d952bf02fe7e",
-      "source": "manuscript/007-the-dragon-of-the-atlantic-toll.md",
-      "source_sha256": "896fd2f84e6ced60e83924986bdb7ffa7041fb9f810d12d44bffdea6efd7358a"
+      "seconds": 346.203,
+      "bytes": 4155596,
+      "sha256": "4da077c12d5ae94df991c7c8c4aa040739890f6e4b98950a8f9d847e3b949e29",
+      "source": "manuscript/007-the-midnight-tax-storm.md",
+      "source_sha256": "f98e8719d58356cf1c24570d3856dbc5911f106fe234003ce4b78c4cad968585"
     },
     {
       "number": 8,
-      "title": "Chapter 8: The Last Stand of the Someday Siren",
+      "title": "Chapter 8: The Hardest Friday of All",
       "file": "chapter-08.mp3",
-      "seconds": 326.341,
-      "bytes": 3917132,
-      "sha256": "48eeaccfc3e8b3b5188ba3fd19e12dad132b145a07c206a422617cbe1adc9f23",
-      "source": "manuscript/008-the-last-stand-of-the-someday-siren.md",
-      "source_sha256": "04a86f89480701825460db4bd8e0627de6600aa46b43f0a32096c0d588ff57f1"
+      "seconds": 289.851,
+      "bytes": 3479372,
+      "sha256": "0a6eb4f3b8136435330feb658e11392964ddda6f0e7ebeed6cb604f7b3a21d65",
+      "source": "manuscript/008-the-hardest-friday-of-all.md",
+      "source_sha256": "c618673157fa5a5d1bea4301fb0aebb7d2c04186a2212e8ce5fab53814e3b705"
     },
     {
       "number": 9,
-      "title": "Chapter 9: The Flying Furniture and the Great Crossing",
+      "title": "Chapter 9: Twelve Dragons and One Big Stew",
       "file": "chapter-09.mp3",
-      "seconds": 282.565,
-      "bytes": 3391820,
-      "sha256": "242c41d9b3148e9e4cf0cafd397f1d0be45bdda35b7e3c33c6fb8350d77c1780",
-      "source": "manuscript/009-the-flying-furniture-and-the-great-crossing.md",
-      "source_sha256": "1337398d3caa40c29f0eab4feaba12c87e27d698baf4009c591018d3e93f274f"
+      "seconds": 258.569,
+      "bytes": 3103820,
+      "sha256": "081645c9254ddd8cd682dfa08d15b86fa72a3249bc68aa289114af98b1a133e5",
+      "source": "manuscript/009-twelve-dragons-and-one-big-stew.md",
+      "source_sha256": "c2545a70a26cec18d7e0b74828cd75863fff7070d9bf08c2606bc7ab25e7694c"
     },
     {
       "number": 10,
-      "title": "Chapter 10: The Kingdom of Free Mornings",
+      "title": "Chapter 10: Tuesday at Ten O'Clock",
       "file": "chapter-10.mp3",
-      "seconds": 348.543,
-      "bytes": 4183532,
-      "sha256": "305013c50c5252dd6d7f9eefb7f0d623c3c9a5fb02bc1e26de4ae1aef189414a",
-      "source": "manuscript/010-the-kingdom-of-free-mornings.md",
-      "source_sha256": "a2c10ef45d208806594cfdcce1d5644d5a0de8998ff196edf3c9ff439fcb90d3"
+      "seconds": 273.101,
+      "bytes": 3278348,
+      "sha256": "d101451f69a1b96316c636a23c63448841ccc84368d9a506dcb2c32582d118e4",
+      "source": "manuscript/010-tuesday-at-ten-oclock.md",
+      "source_sha256": "1a34111f4fa24d76c5fa59539977cd747952aafa20fa4575700e5a1443a00cf1"
     }
   ]
 }

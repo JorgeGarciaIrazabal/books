@@ -6,87 +6,87 @@
   "engine": "Kokoro-82M ONNX (kokoro-onnx)",
   "voice": "af_heart",
   "review_status": "Coverage, durations, sizes, and SHA-256 checksums verified; human listening review pending.",
-  "total_seconds": 3263.996,
+  "total_seconds": 3105.262,
   "chapters": [
     {
       "number": 1,
-      "title": "Chapter 1: The Kettle That Refused to Boil",
+      "title": "Chapter 1: The Golden Chickpea Goes Cold",
       "file": "chapter-01.mp3",
-      "seconds": 357.045,
-      "bytes": 4285484,
-      "sha256": "d06511d74cc3cbfe5e790a7eab84d8caad0be5cecad77f459b737abcb7311f75"
+      "seconds": 337.016,
+      "bytes": 4045292,
+      "sha256": "0397ad9bfecf7723cca35810ca6486bb2a7cbb888bde5949318a9323d3eb39e4"
     },
     {
       "number": 2,
-      "title": "Chapter 2: The Tyranny of the Amber Terminal",
+      "title": "Chapter 2: The Train Home and the Crayon Warning",
       "file": "chapter-02.mp3",
-      "seconds": 330.65,
-      "bytes": 3968972,
-      "sha256": "2e003e272717afab02f7a1c697bf934f7ea6cd8e9fe42161269ad5fb3867d10a"
+      "seconds": 284.815,
+      "bytes": 3418892,
+      "sha256": "f69c0770a39681e9476bf40faa1b39613bbde67bf2b7495db111f246cc850c21"
     },
     {
       "number": 3,
-      "title": "Chapter 3: The Brass Scale of Honest Trade-Offs",
+      "title": "Chapter 3: The Kitchen Table Deal",
       "file": "chapter-03.mp3",
-      "seconds": 317.476,
-      "bytes": 3810860,
-      "sha256": "7b9402c0a76d39295e748a0f0708f696525271b66b610ffd18d8f07258ead47b"
+      "seconds": 316.229,
+      "bytes": 3795884,
+      "sha256": "22ca2899b9c892da91da1e0ff57e6673f6d5edeb9055762919f6a9d43a3eff49"
     },
     {
       "number": 4,
-      "title": "Chapter 4: The Six-Year-Old Oracle and the Starlight Cat",
+      "title": "Chapter 4: Clara's Rules and a Silver Tail",
       "file": "chapter-04.mp3",
-      "seconds": 334.69,
-      "bytes": 4017356,
-      "sha256": "b281998d9e317b04e6d1edd4e2639a1d35549082db37e1a7c770cb565b665694"
+      "seconds": 312.232,
+      "bytes": 3747788,
+      "sha256": "a840252f2b87c94f9de6fd5d1fd8a6e03f635f00b5428c9c10c427903b619cf1"
     },
     {
       "number": 5,
-      "title": "Chapter 5: The Gauntlet of the Mirage Brokers",
+      "title": "Chapter 5: The Great Spanish House Trap",
       "file": "chapter-05.mp3",
-      "seconds": 329.506,
-      "bytes": 3955148,
-      "sha256": "7a950c06d82c6f1a21c791fcd8464dc11f28a5f888e56099ca544afa47ab1851"
+      "seconds": 394.098,
+      "bytes": 4730156,
+      "sha256": "7cd6ba45e50222b1b89d8030acdd2ad93d531b2da2700469aa86d894c9087b84"
     },
     {
       "number": 6,
-      "title": "Chapter 6: The Valley of the Living Streets",
+      "title": "Chapter 6: The Valladolid Bounce",
       "file": "chapter-06.mp3",
-      "seconds": 308.182,
-      "bytes": 3699116,
-      "sha256": "018dcae2ec0891a524ce2013a243999641ca675d59370640d12df568a798b67c"
+      "seconds": 293.148,
+      "bytes": 3518828,
+      "sha256": "07819e6b57ca6afe047686e38b8f75ce6d0431ca68a4e547df98f4ff6480b883"
     },
     {
       "number": 7,
-      "title": "Chapter 7: The Dragon of the Atlantic Toll",
+      "title": "Chapter 7: The Midnight Tax Storm",
       "file": "chapter-07.mp3",
-      "seconds": 328.998,
-      "bytes": 3949100,
-      "sha256": "aedcbcf61ed093f917ad467a7e6759cd1663ce4f0e9d72dc0f82d952bf02fe7e"
+      "seconds": 346.203,
+      "bytes": 4155596,
+      "sha256": "4da077c12d5ae94df991c7c8c4aa040739890f6e4b98950a8f9d847e3b949e29"
     },
     {
       "number": 8,
-      "title": "Chapter 8: The Last Stand of the Someday Siren",
+      "title": "Chapter 8: The Hardest Friday of All",
       "file": "chapter-08.mp3",
-      "seconds": 326.341,
-      "bytes": 3917132,
-      "sha256": "48eeaccfc3e8b3b5188ba3fd19e12dad132b145a07c206a422617cbe1adc9f23"
+      "seconds": 289.851,
+      "bytes": 3479372,
+      "sha256": "0a6eb4f3b8136435330feb658e11392964ddda6f0e7ebeed6cb604f7b3a21d65"
     },
     {
       "number": 9,
-      "title": "Chapter 9: The Flying Furniture and the Great Crossing",
+      "title": "Chapter 9: Twelve Dragons and One Big Stew",
       "file": "chapter-09.mp3",
-      "seconds": 282.565,
-      "bytes": 3391820,
-      "sha256": "242c41d9b3148e9e4cf0cafd397f1d0be45bdda35b7e3c33c6fb8350d77c1780"
+      "seconds": 258.569,
+      "bytes": 3103820,
+      "sha256": "081645c9254ddd8cd682dfa08d15b86fa72a3249bc68aa289114af98b1a133e5"
     },
     {
       "number": 10,
-      "title": "Chapter 10: The Kingdom of Free Mornings",
+      "title": "Chapter 10: Tuesday at Ten O'Clock",
       "file": "chapter-10.mp3",
-      "seconds": 348.543,
-      "bytes": 4183532,
-      "sha256": "305013c50c5252dd6d7f9eefb7f0d623c3c9a5fb02bc1e26de4ae1aef189414a"
+      "seconds": 273.101,
+      "bytes": 3278348,
+      "sha256": "d101451f69a1b96316c636a23c63448841ccc84368d9a506dcb2c32582d118e4"
     }
   ]
 }

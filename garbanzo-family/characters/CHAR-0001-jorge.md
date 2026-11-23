@@ -1,28 +1,25 @@
-# Jorge (Pipeline Architect & Tinkerer)
+# Jorge (Dad & Fix-It Tinkerer)
 
 - ID: CHAR-0001
 - Status: accepted
-- Canon revision / provenance: `garbanzo-family` canon rev 1, 2026-11-22
+- Canon revision / provenance: `garbanzo-family` canon rev 4 (`DEC-GF-0008`), 2026-11-23
 - Story-time validity: Book 1 opening through finale
 
 ## Role and agency
-Jorge is the practical, inquisitive, fiercely visual engineer of the family's great escape. After years tending black-glass Event-Streams and Report-Rendering Dragons inside Manhattan's Amber Terminal Citadel, he refuses to accept pretty illusions, whether from glowing financial spreadsheets or glossy castle brochures. He wants time back while Clara is still small, fair footing for Marissa, and honest physical work he can touch with his own hands: wiring porch lanterns, mounting solar panels, and smashing back-glass padel shots. His greatest fear is waiting one bonus too long and waking up to realize Clara grew up while he was staring at an amber screen, or jumping too soon and forcing the family back under the towers.
+Jorge is a practical, funny, thirty-seven-year-old software and data engineer commuting from New Jersey into a Manhattan office. He loves clear measurements, fast-changing tech tools, diving shots on a glass padel court, and hands-on home projects like wiring porch lights and setting up solar panels. What terrifies him most is either letting years slip away on late-night commuter trains while Clara grows up, or quitting too early on messy math.
 
 ## Contradictions and relationships
-- **With Marissa (`CHAR-0002`)**: Deeply grounded partners. Jorge naturally speaks in dimensions, charts, and trade-offs rather than syrupy poetry; he would rather weld a clean Brass Scale that proves both adults are treated fairly than recite hollow romantic clichés. Under stress, he gets hyper-analytical until Marissa reminds him that people actually have to live inside the neighborhood he is mapping.
-- **With Clara (`CHAR-0003`)**: Soft-hearted beneath his practical armor. One crooked crayon drawing from Clara can dismantle ten months of corporate caution.
-- **With Garbanzo (`CHAR-0004`)**: Proud inventor and exasperated debugger. Treats Garbanzo like a beloved, slightly overcaffeinated brass terrier.
-- **With cooking**: Despises cooking with comic conviction (`FACT-0009`), happily trading stove duty for wiring, plumbing, and troubleshooting four emerald GPU star-crystals.
+- **With Marissa (`CHAR-0002`)**: Down-to-earth team. Jorge sometimes falls for flashy numbers on a spreadsheet or cheap land on paper until Marissa taps the yellow legal pad and asks about real neighbors, grocery runs, and schools.
+- **With Clara (`CHAR-0003`)**: Tough about office stress, completely helpless against one crayon drawing from Clara.
+- **With Garbanzo (`CHAR-0004`)**: Proud inventor and tired debugger of his own overexcited mini desk-bot.
+- **With cooking**: Actively avoids cooking (`FACT-0009`), happily trading stove duty for every wire, pipe, and computer fix in the house.
 
 ## Voice and dialogue
-Direct, wry, concrete, and bilingual when Spain enters the room. Suspicious of vague claims and overly grand speeches.
+Warm, simple, funny, and down-to-earth.
 
 Sample line:
-"Look at the corners through the lenses. Whoever drew that garden stretched the fence three meters into the neighbor's driveway and forgot to draw the street."
+"Look at the tape measure. Half of that dream garage sits inside the neighbor's bushes, and there isn't a water pipe in sight."
 
 ## Stable facts and contested beliefs
-- **Accepted fact**: Carries Cadastral Spectacles, a Padelsword, and a growing Tinker's Satchel (`FACT-0007`, `FACT-0009`).
-- **Self-image vs reality**: Tells himself he only cares about hard numbers, yet every calculation bends around Clara's childhood and Marissa's happiness.
-
-## Physical and historical facts
-Thirty-seven at quest launch (`FACT-0004` era anchor); European passport holder crossing from New Jersey and New York back toward Spain (`FACT-0012`). Quick on a padel court, endlessly curious about AI stacks, GPUs, and domestic trades.
+- **Accepted fact**: Carries a tape measure, tablet maps, padel racket, and weekend garage tools (`FACT-0007`, `FACT-0009`).
+- **Self-image vs reality**: Claims he only trusts spreadsheets, yet puts Clara's crayon warning in his coat pocket when it matters most.

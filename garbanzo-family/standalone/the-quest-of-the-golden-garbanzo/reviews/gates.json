@@ -241,6 +241,112 @@
       ],
       "open_issues": [],
       "limits": "All text artifacts, EPUB XML/paragraphs, PDF header/EOF, cover JPEG, site links, and all 10 MP3 byte sizes/durations/SHA-256 hashes verified mechanically; synthetic Kokoro-82M ONNX narration has not undergone human listening review or physical-device/live-browser proof."
+    },
+    {
+      "id": "GATE-0008",
+      "checkpoint": "development",
+      "review_target": "manuscript (grounded-human rewrite initial draft)",
+      "status": "revise",
+      "reviewer": "Antigravity fresh developmental_editor subagent (ae16f586-492c-4377-9d08-22271d1cfd2c, Gemini 4 Neon, blind packet)",
+      "source_snapshot": "C:/Users/jorge/.gemini/antigravity/brain/aa453d77-8ea5-4a16-abcd-d1a86f5cc261/scratch/blind-rewrite-packet.md",
+      "evidence": [
+        "reviews/rewrite-dev-review.md"
+      ],
+      "read_in_full": [
+        "manuscript/001-the-golden-chickpea-goes-cold.md",
+        "manuscript/002-the-train-home-and-the-crayon-warning.md",
+        "manuscript/003-the-kitchen-table-deal.md",
+        "manuscript/004-claras-rules-and-a-silver-tail.md",
+        "manuscript/005-the-great-spanish-house-trap.md",
+        "manuscript/006-the-valladolid-bounce.md",
+        "manuscript/007-the-midnight-tax-storm.md",
+        "manuscript/008-the-hardest-friday-of-all.md",
+        "manuscript/009-twelve-dragons-and-one-big-stew.md",
+        "manuscript/010-tuesday-at-ten-oclock.md"
+      ],
+      "skimmed": [],
+      "not_assessed": [
+        "outline.md",
+        "handoff.md",
+        "scenes.json",
+        "decisions.md",
+        "reviews/"
+      ],
+      "open_issues": [],
+      "superseded_by": "GATE-0010",
+      "limits": "Same-model/family independence limit disclosed (Gemini 4 Neon subagent); outline and prior reviews strictly withheld."
+    },
+    {
+      "id": "GATE-0009",
+      "checkpoint": "continuity-evidence",
+      "review_target": "manuscript (grounded-human rewrite initial draft)",
+      "status": "revise",
+      "reviewer": "Antigravity fresh canon_keeper subagent (3c97e847-6d7c-4001-99ec-10e1fb85ded0, Gemini 4 Neon, blind packet)",
+      "source_snapshot": "C:/Users/jorge/.gemini/antigravity/brain/aa453d77-8ea5-4a16-abcd-d1a86f5cc261/scratch/blind-rewrite-packet.md",
+      "evidence": [
+        "reviews/rewrite-canon-audit.md"
+      ],
+      "read_in_full": [
+        "manuscript/001-the-golden-chickpea-goes-cold.md",
+        "manuscript/002-the-train-home-and-the-crayon-warning.md",
+        "manuscript/003-the-kitchen-table-deal.md",
+        "manuscript/004-claras-rules-and-a-silver-tail.md",
+        "manuscript/005-the-great-spanish-house-trap.md",
+        "manuscript/006-the-valladolid-bounce.md",
+        "manuscript/007-the-midnight-tax-storm.md",
+        "manuscript/008-the-hardest-friday-of-all.md",
+        "manuscript/009-twelve-dragons-and-one-big-stew.md",
+        "manuscript/010-tuesday-at-ten-oclock.md"
+      ],
+      "skimmed": [],
+      "not_assessed": [
+        "outline.md",
+        "handoff.md",
+        "scenes.json",
+        "knowledge.json",
+        "threads.json",
+        "reviews/"
+      ],
+      "open_issues": [],
+      "superseded_by": "GATE-0010",
+      "limits": "Same-model/family independence limit disclosed (Gemini 4 Neon subagent); blind manuscript scope preserved."
+    },
+    {
+      "id": "GATE-0010",
+      "checkpoint": "production",
+      "review_target": "rewritten manuscript (001-010); exports/*; publications/*; site/audiobook-the-quest-of-the-golden-garbanzo.html; site/audio/the-quest-of-the-golden-garbanzo/*",
+      "status": "pass",
+      "reviewer": "studio_director (Gemini 4 Neon), post-review repairs, readability/dash checks, package/hash/catalog/audio checks",
+      "source_snapshot": {
+        "book.json": "cb1c4e6dc38a904139a5c2835f41813b6159cecf71c78aa4dfdf75f40b9413fc",
+        "manuscript/001-the-golden-chickpea-goes-cold.md": "6659dec680cbbdb2d534ee8bb1ad302f5e844e52f790d016dfdba575723a0568",
+        "manuscript/002-the-train-home-and-the-crayon-warning.md": "5aefc333b1fc379913db1e8e00484f8e276dfc1bcd6e24d3a3c8018dca0eef77",
+        "manuscript/003-the-kitchen-table-deal.md": "bc34748db61d7c741baa39f4c5b0207dbb508f493b06b3031c6bc23bee59c2c0",
+        "manuscript/004-claras-rules-and-a-silver-tail.md": "1fc9417a93971552de8cb3b992fe754b8e0a042eac3f075fcae9b9634129904e",
+        "manuscript/005-the-great-spanish-house-trap.md": "66b5965848166a15c281f8a0823ee17a446dacf3b98ec6f2ea55eb6f87752e86",
+        "manuscript/006-the-valladolid-bounce.md": "51d1b623729f9c8b9b078904e762c7ceac0d5479d4953be2b604879b832105d0",
+        "manuscript/007-the-midnight-tax-storm.md": "f98e8719d58356cf1c24570d3856dbc5911f106fe234003ce4b78c4cad968585",
+        "manuscript/008-the-hardest-friday-of-all.md": "c618673157fa5a5d1bea4301fb0aebb7d2c04186a2212e8ce5fab53814e3b705",
+        "manuscript/009-twelve-dragons-and-one-big-stew.md": "c2545a70a26cec18d7e0b74828cd75863fff7070d9bf08c2606bc7ab25e7694c",
+        "manuscript/010-tuesday-at-ten-oclock.md": "1a34111f4fa24d76c5fa59539977cd747952aafa20fa4575700e5a1443a00cf1"
+      },
+      "output_sha256": {
+        "exports/manuscript.md": "3c533d0cd5a654a54963526fcb98db8f90d8df9e077764eea73ad7c670d7adcd",
+        "exports/manuscript.html": "7c3d44bc0d15b1dd82e2d7f583b78aaed47c4575a588f1ac44ba910bbddeffc2",
+        "exports/manuscript.epub": "481525503989e8de5d2d7ce60bc38255519feb5eb6832654918e4d91128716ef",
+        "publications/the-quest-of-the-golden-garbanzo.epub": "10753a01c30d241d9d53d893cf965916378d0ca39953f88d26d68321d9d99fe4",
+        "publications/the-quest-of-the-golden-garbanzo.pdf": "27961e2b2435a48bf54939d12cc7c2f1bc6d5c9547a7e22f784d0ac16030d7cb",
+        "publications/covers/the-quest-of-the-golden-garbanzo.jpg": "3d9f2a07841d923122199fa96d5d394fbdb8e4af5d0786b5b8073ea450080b47",
+        "site/audio/the-quest-of-the-golden-garbanzo/chapters.json": "1b6e49c6bee2a8850dce690878945ddce0a976247e363f2564cebd49c9c726c5"
+      },
+      "evidence": [
+        "reviews/issues.json",
+        "publications/manifest.json",
+        "production/narration/render.json",
+        "site/audio/the-quest-of-the-golden-garbanzo/chapters.json"
+      ],
+      "open_issues": [],
+      "limits": "All REW-DEV-* and REW-CANON-* targeted edits, readability stats (8,255 words, 11.88 avg words/sent, 0 em/en dashes), PDF/EPUB/cover/site links, and all 10 MP3 byte sizes/durations/SHA-256 hashes verified mechanically; synthetic Kokoro-82M ONNX narration has not undergone human listening review, and git push/publish is held pending author approval."
     }
   ]
 }

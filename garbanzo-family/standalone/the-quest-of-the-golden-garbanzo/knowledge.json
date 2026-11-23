@@ -11,7 +11,7 @@
         "Reader"
       ],
       "when": "SC-0001",
-      "note": "Exposed comically in Chapter 1; patched cleanly during battle in SC-0007."
+      "note": "Causes confetti explosions over checking-to-savings moves in Ch 1; cured cleanly with screwdriver and laptop in Ch 7."
     },
     {
       "id": "DISC-0002",
@@ -21,21 +21,21 @@
         "Reader"
       ],
       "when": "SC-0002",
-      "note": "Revealed through Clara's screen-free crayon drawing rather than a lecture."
+      "note": "Revealed through Clara's crayon warning on the monitor."
     },
     {
       "id": "DISC-0003",
-      "topic": "Poki travels in memory and starlight across oceans",
+      "topic": "Poki belongs to the family, not a street address",
       "learned_by": [
         "Clara",
         "Reader"
       ],
       "when": "SC-0004",
-      "note": "Confirmed wordlessly on the twilight fence; reinforced at SC-0006 and SC-0010."
+      "note": "Shown silently on the New Jersey fence and echoed in Valladolid in Ch 6 and Ch 10."
     },
     {
       "id": "DISC-0004",
-      "topic": "Real estate illusions vs urbano consolidado",
+      "topic": "Paper house dreams vs entrega de llaves and real pipes",
       "learned_by": [
         "Jorge",
         "Marissa",
@@ -43,18 +43,18 @@
         "Reader"
       ],
       "when": "SC-0005",
-      "note": "Demonstrated physically through the Cadastral Spectacles and Compass of Living Streets."
+      "note": "Exposed using a simple tape measure, tablet map, and asking for the real key-handover date."
     },
     {
       "id": "DISC-0005",
-      "topic": "Magic respects real-world human advisor verification",
+      "topic": "Real tax and health advisors check the numbers before the leap",
       "learned_by": [
         "Jorge",
         "Marissa",
         "Reader"
       ],
       "when": "SC-0007",
-      "note": "Atlantic Hydra shrinks into a checklist binder rather than pretending tax treaties dissolve by spellwork."
+      "note": "Explicitly handed to human professionals during winter between Ch 7 and Ch 8."
     }
   ]
 }

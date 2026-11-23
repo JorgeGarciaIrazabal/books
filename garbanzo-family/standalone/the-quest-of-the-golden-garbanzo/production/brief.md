@@ -3,24 +3,24 @@
 ## Edition
 - **Title**: *The Quest of the Golden Garbanzo*
 - **Universe**: Garbanzo Family (`garbanzo-family`)
-- **Format**: Private family keepsake edition (Markdown assembly, standalone HTML reader, reflowable EPUB 3).
-- **Target length**: ~30 pages (~7,800 to 8,300 words across 10 chapters).
-- **Language**: English (`en`) with light Spanish phrases.
+- **Format**: Public reading & audio edition (reflowable EPUB 3, 6 x 9 in reading PDF, 720x1080 cover JPEG, and 10-chapter synthetic audiobook).
+- **Target length**: ~30 story pages (~7,000 to 7,600 words across 10 easy-to-read chapters).
+- **Language**: Plain American English (`en`) with three clear Spanish terms explained in context.
 
 ## Front and back matter
-- Generated title page and table of contents via `tools/studio.py build`.
-- No fabricated blurbs, awards, reviews, or public catalog entries (`DEC-GF-0004`).
+- Cover JPEG, PDF title/contents pages, and EPUB 3 navigation built via `production/build_edition.py`.
+- Zero fabricated blurbs, awards, or external market claims.
 
 ## Cover and illustrations
-- Text-only initial edition (`production/illustration-plan.json` uncommissioned). Future illustrated retrofit can use `.studio/skills/illustrated-story/SKILL.md`.
+- Typographic parchment-and-gold sunburst cover (`720x1080` JPEG); interior remains clean reading text (`illustration-plan.json` uncommissioned).
 
 ## Reader-facing copy
-A warm, dramatic, slightly chaotic magical chronicle of how Jorge, Marissa, and six-year-old Clara braved towering amber screens, trickster property illusions, a double-counting pocket chickpea, and an Atlantic Tax Hydra to reach unhurried mornings in Spain.
+A fun, dramatic, easy-to-read family adventure about how ordinary humans Jorge, Marissa, and six-year-old Clara braved late-night spreadsheets, a confetti-blasting desk-bot, sneaky Spanish house pitches, and one last office bonus to earn sunny mornings together in Spain.
 
 ## Permissions and provenance
-- Original work created inside Book Studio for private family use (`DEC-GF-0002`, `DEC-GF-0004`). No third-party copyrighted images or quotations.
+- Original work created inside Book Studio (`DEC-GF-0002`, `DEC-GF-0007`, `DEC-GF-0008`). No third-party copyrighted artwork or quoted texts.
 
 ## Release checklist
-- Independent whole-book review recorded in `reviews/`.
-- All manuscript quality checks (zero em dashes, word budget, costume-free Poki, privacy exclusions) verified.
-- Clean Markdown, HTML, and EPUB 3 exports generated with matching SHA-256 manifests.
+- Independent whole-book blind review on the rewritten manuscript recorded in `reviews/`.
+- All mechanical checks (zero em/en dashes or `--`, readability stats, `Marissa`, costume-free Poki, non-cooking Jorge, privacy exclusions) verified.
+- Clean EPUB 3, PDF, cover JPEG, `publications/` manifest, `site/` pages, and 10-track Kokoro-82M ONNX audiobook verified locally.

@@ -120,6 +120,31 @@
         "TASK-0004"
       ],
       "owner": "antigravity/gemini-4-neon-high"
+    },
+    {
+      "id": "TASK-0006",
+      "role": "studio_director",
+      "status": "done",
+      "inputs": [
+        "garbanzo-family/decisions.md",
+        "brief.md",
+        "style.md",
+        "outline.md"
+      ],
+      "allowed_writes": [
+        "garbanzo-family/**",
+        "publications/**",
+        "site/**"
+      ],
+      "deliverable": "Grounded-human, easy-reading full 10-chapter rewrite (8,255 words, 11.88 avg words/sent), fresh blind dev/canon reviews + repairs, rebuilt PDF/EPUB/cover and 10-track audiobook without Git push",
+      "acceptance": [
+        "Zero em/en dashes or double-hyphens; Marissa spelling; costume-free Poki; non-cooking Jorge",
+        "studio.py check, build_catalog.py validate/build, and unit tests pass"
+      ],
+      "dependencies": [
+        "TASK-0005"
+      ],
+      "owner": "antigravity/gemini-4-neon-high"
     }
   ]
 }

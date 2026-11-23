@@ -3,9 +3,9 @@
   "events": [
     {
       "id": "EVT-0001",
-      "title": "The Copper Kettle Set to Simmer",
+      "title": "Saving Begins in New Jersey",
       "story_time": "Years before Book 1",
-      "summary": "Jorge and Marissa set the heirloom copper pot over a low steady flame in New Jersey, beginning years of disciplined saving, career climbs, and late-night planning.",
+      "summary": "Jorge and Marissa begin saving steadily in New Jersey while placing the lucky Golden Garbanzo chickpea inside a small copper pot on the kitchen counter.",
       "affected_entities": [
         "CHAR-0001",
         "CHAR-0002"
@@ -13,9 +13,9 @@
     },
     {
       "id": "EVT-0002",
-      "title": "Birth of the Six-Year-Old Oracle",
+      "title": "Clara Joins the Family",
       "story_time": "Six years before Book 1",
-      "summary": "Clara arrives, transforming the quest from an abstract gold-pile race into a search for a childhood full of parks, dancing, friends, and unicorn-bright mornings.",
+      "summary": "Clara is born, turning quiet saving into a joyful countdown toward shared mornings, bikes, dancing, and unhurried childhood years.",
       "affected_entities": [
         "CHAR-0001",
         "CHAR-0002",
@@ -24,9 +24,9 @@
     },
     {
       "id": "EVT-0003",
-      "title": "Forging of Garbanzo",
+      "title": "Building Garbanzo the Desk-Bot",
       "story_time": "Recent pre-quest months",
-      "summary": "Jorge assembles Garbanzo out of brass rings and four emerald GPU star-crystals to track family vaults every morning at ten, inadvertently baking in the Double-Counting Bug.",
+      "summary": "Jorge builds a chickpea-shaped desk-bot on his home computer to track daily savings at ten o'clock, unknowingly leaving in a Double-Counting Bug.",
       "affected_entities": [
         "CHAR-0001",
         "CHAR-0004"
@@ -34,9 +34,9 @@
     },
     {
       "id": "EVT-0004",
-      "title": "Poki Crosses the Silver Wall",
-      "story_time": "Autumn prior to Book 1",
-      "summary": "Poki departs peacefully past the Silver Wall, leaving behind a calm starlight presence and a protective knack for knocking bad brochures off tables.",
+      "title": "Saying Goodbye to Poki",
+      "story_time": "September prior to Book 1",
+      "summary": "Poki passes peacefully, leaving a small silver collar bell and smooth gray stone on the kitchen windowsill.",
       "affected_entities": [
         "CHAR-0001",
         "CHAR-0002",
@@ -46,9 +46,9 @@
     },
     {
       "id": "EVT-0005",
-      "title": "The Kettle Rattles and the Loom Creeps",
+      "title": "The Cold Chickpea & Kitchen Table Deal",
       "story_time": "Book 1, Chapters 1-4",
-      "summary": "The Automaton Loom swirls through the Amber Terminal Citadel while Clara pins up a crayon portrait of Papa without a screen, triggering the war-table reckoning on the Brass Scale.",
+      "summary": "Garbanzo misfires, Clara leaves a crayon warning against letting work eat Tuesdays, the parents agree on a fair 50/50 plan, and sleek costume-free Poki visits Clara in silver light.",
       "affected_entities": [
         "CHAR-0001",
         "CHAR-0002",
@@ -59,9 +59,9 @@
     },
     {
       "id": "EVT-0006",
-      "title": "The Iberian Gauntlet and the Valladolid Discovery",
+      "title": "House Hunting in Spain & Discovering Valladolid",
       "story_time": "Book 1, Chapters 5-6",
-      "summary": "Armed with Cadastral Spectacles and the Compass of Living Streets, the family defeats the Mirage Brokers and discovers a sunlit, neighbor-rich home in the Valladolid valley.",
+      "summary": "The family rejects empty tourist pools and overpriced crooked lots, plays a dramatic glass-wall padel game, and finds a sunny modern home near Valladolid.",
       "affected_entities": [
         "CHAR-0001",
         "CHAR-0002",
@@ -71,9 +71,9 @@
     },
     {
       "id": "EVT-0007",
-      "title": "The Battle of the Atlantic Storm-Bridge and the Resignation Seal",
+      "title": "Fixing Garbanzo & Saying Goodbye to Manhattan",
       "story_time": "Book 1, Chapters 7-8",
-      "summary": "After patching Garbanzo mid-storm to defeat Lord Double-Count's Hydra and resisting the Someday Siren's final March-bonus lure, Jorge stamps the Resignation Seal and the Golden Garbanzo blooms.",
+      "summary": "Jorge patches Garbanzo during a winter storm, checks cross-border tax and health rules with real advisors, turns down one last office bonus, and finds the golden sun key charm inside the pot.",
       "affected_entities": [
         "CHAR-0001",
         "CHAR-0002",
@@ -83,9 +83,9 @@
     },
     {
       "id": "EVT-0008",
-      "title": "The Crossing and the First Free Morning",
+      "title": "Aunt Lidia's Stew & Tuesday at Ten O'Clock",
       "story_time": "Book 1, Chapters 9-10",
-      "summary": "Following a joyous farewell cocido madrileño feast with extended family, the Garbanzo Family crosses the ocean and claims a crisp, unhurried Tuesday morning in Spain.",
+      "summary": "After a joyous farewell cocido madrileño dinner, the family flies to Spain and settles into calm, bright mornings together in Valladolid.",
       "affected_entities": [
         "CHAR-0001",
         "CHAR-0002",

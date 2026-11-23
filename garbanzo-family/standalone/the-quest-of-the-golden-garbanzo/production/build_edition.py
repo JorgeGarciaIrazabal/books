@@ -64,6 +64,7 @@ html { font-size: 100%; }
 body { margin: 5%; font-family: Georgia, "DejaVu Serif", serif; line-height: 1.55; color: #2b241d; }
 p { margin: 0 0 0.85em; orphans: 2; widows: 2; }
 h1 { font-size: 1.65em; line-height: 1.22; margin: 1em 0 0.9em; break-after: avoid; page-break-after: avoid; }
+code { font-family: system-ui, sans-serif; font-size: 0.9em; letter-spacing: 0.03em; }
 nav li { margin-bottom: 0.6em; }
 .cover-page { margin: 0; padding: 0; text-align: center; background: #fbf5e8; }
 .cover-page img { max-width: 100%; max-height: 98vh; height: auto; }
@@ -113,18 +114,21 @@ def load_chapters() -> tuple[dict, list[dict]]:
 def md_to_rl_xml(text: str) -> str:
     escaped = html.escape(text, quote=False)
     escaped = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", escaped)
-    return re.sub(r"(?<!\*)\*([^*]+?)\*(?!\*)", r"<i>\1</i>", escaped)
+    escaped = re.sub(r"(?<!\*)\*([^*]+?)\*(?!\*)", r"<i>\1</i>", escaped)
+    return re.sub(r"`([^`]+?)`", r"<font face='Label' size='9.5'>\1</font>", escaped)
 
 
 def md_to_xhtml_inline(text: str) -> str:
     escaped = html.escape(text, quote=False)
     escaped = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", escaped)
-    return re.sub(r"(?<!\*)\*([^*]+?)\*(?!\*)", r"<em>\1</em>", escaped)
+    escaped = re.sub(r"(?<!\*)\*([^*]+?)\*(?!\*)", r"<em>\1</em>", escaped)
+    return re.sub(r"`([^`]+?)`", r"<code>\1</code>", escaped)
 
 
 def strip_md_markers(text: str) -> str:
     cleaned = re.sub(r"\*\*(.+?)\*\*", r"\1", text)
-    return re.sub(r"(?<!\*)\*([^*]+?)\*(?!\*)", r"\1", cleaned)
+    cleaned = re.sub(r"(?<!\*)\*([^*]+?)\*(?!\*)", r"\1", cleaned)
+    return re.sub(r"`([^`]+?)`", r"\1", cleaned)
 
 
 def draw_centered_text(draw: ImageDraw.ImageDraw, text: str, y: int, font: ImageFont.FreeTypeFont, fill: str, width: int = 1440) -> int:
@@ -173,7 +177,7 @@ def build_cover(output: Path) -> bytes:
         y = draw_centered_text(draw, line, y, f_title, "#2b241d", w) + 16 * scale
 
     draw.line([(w // 2 - 70 * scale, y + 26 * scale), (w // 2 + 70 * scale, y + 26 * scale)], fill="#b5812a", width=2 * scale)
-    draw_centered_text(draw, "A Dramatic, Magical Family Chronicle", y + 54 * scale, f_sub, "#5a4d3f", w)
+    draw_centered_text(draw, "A Fun, Dramatic Family Adventure", y + 54 * scale, f_sub, "#5a4d3f", w)
     draw_centered_text(draw, "TEN CHAPTERS  ·  TEXT EDITION", h - 120 * scale, f_foot, "#6c5f4e", w)
 
     im = im.resize((720, 1080), Image.LANCZOS)
@@ -283,7 +287,7 @@ def build_pdf(meta: dict, chapters: list[dict], output: Path) -> tuple[bytes, in
         topMargin=MARGIN_TOP,
         bottomMargin=MARGIN_BOTTOM,
         title=meta["title"],
-        subject="Garbanzo Family magical chronicle",
+        subject="Garbanzo Family adventure story",
         author="Garbanzo Family",
         creator="Book Studio",
     )
@@ -298,7 +302,7 @@ def build_pdf(meta: dict, chapters: list[dict], output: Path) -> tuple[bytes, in
         Spacer(1, 95),
         Paragraph("GARBANZO FAMILY", series_style),
         Paragraph("The Quest of the<br/>Golden Garbanzo", title_style),
-        Paragraph("A Dramatic, Magical Family Chronicle", sub_style),
+        Paragraph("A Fun, Dramatic Family Adventure", sub_style),
         Paragraph("TEN CHAPTERS", notice_style),
         PageBreak(),
         NextPageTemplate("Body"),
@@ -358,7 +362,7 @@ def build_epub(meta: dict, chapters: list[dict], cover_bytes: bytes, output: Pat
         '  <p class="kicker">Garbanzo Family</p>\n'
         f'  <h1>{html.escape(meta["title"], quote=False)}</h1>\n'
         '  <hr class="rule" aria-hidden="true"/>\n'
-        '  <p class="subtitle">A Dramatic, Magical Family Chronicle</p>\n'
+        '  <p class="subtitle">A Fun, Dramatic Family Adventure</p>\n'
         '  <p class="note">Ten Chapters</p>\n'
         "</section>",
     )
@@ -399,9 +403,9 @@ def build_epub(meta: dict, chapters: list[dict], cover_bytes: bytes, output: Pat
 
     identifier = "urn:uuid:" + str(uuid.uuid5(uuid.NAMESPACE_URL, "garbanzo-family/standalone/" + meta["id"]))
     description = (
-        "A dramatic, funny, magical family saga telling how Jorge, Marissa, and six-year-old Clara "
-        "tamed double-counting bugs, deceptive mirage brokers, and an Atlantic Tax Hydra to earn "
-        "unhurried sunlit mornings in Spain."
+        "A fun, dramatic, easy-to-read story about how ordinary humans Jorge, Marissa, and six-year-old Clara "
+        "braved late-night spreadsheets, a confetti-blasting desk-bot, sneaky Spanish house pitches, and one last "
+        "office bonus to earn sunny mornings together in Spain."
     )
     manifest_items = [
         '<item id="style" href="style.css" media-type="text/css"/>',
@@ -425,7 +429,7 @@ def build_epub(meta: dict, chapters: list[dict], cover_bytes: bytes, output: Pat
         '    <dc:language>en</dc:language>\n'
         f'    <dc:description>{html.escape(description, quote=False)}</dc:description>\n'
         '    <meta property="rendition:layout">reflowable</meta>\n'
-        '    <meta property="dcterms:modified">2026-11-23T06:30:00Z</meta>\n'
+        '    <meta property="dcterms:modified">2026-11-23T23:30:00Z</meta>\n'
         '  </metadata>\n'
         '  <manifest>\n    ' + "\n    ".join(manifest_items) + "\n  </manifest>\n"
         '  <spine>\n    ' + "\n    ".join(spine_items) + "\n  </spine>\n"
@@ -442,7 +446,7 @@ def build_epub(meta: dict, chapters: list[dict], cover_bytes: bytes, output: Pat
 
     with ZipFile(output, "w") as zf:
         def add(name: str, val: str | bytes, comp: int = ZIP_DEFLATED):
-            info = ZipInfo(name, (2026, 11, 23, 6, 30, 0))
+            info = ZipInfo(name, (2026, 11, 23, 23, 30, 0))
             info.compress_type = comp
             zf.writestr(info, val if isinstance(val, bytes) else val.encode("utf-8"))
 
