@@ -20,6 +20,7 @@ are fine. Expand tracking when an actual continuity or research need appears.
 | line-copy | Stable structure, voice preserved, mechanics and citations checked | Line editor then copy editor |
 | continuity-evidence | Timeline/knowledge, promises, claims and citations reconciled | Canon keeper + researcher/nonfiction editor |
 | production | Complete assembly, metadata/rights, proof on actual export, open issues resolved | Production editor + fresh proofreader |
+| narration | Script strips back to the export word for word; cast provenance and licences; every page passes a transcript and pause check; reader plays page audio; EPUB/PDF contain no tags | voice_director + fresh reader_advocate listen + production_editor |
 
 The coordinator records these in `reviews/gates.json`. Use `revise` when blocked;
 use `not-applicable` with a reason. A report identifies an exact source snapshot
@@ -147,6 +148,51 @@ OpenCode currently uses explicitly labeled Ollama fallbacks because the connecte
 A scene’s word budget and the allowance for its state delta must be distinct. Keep handoff/process commentary out of manuscript or public-facing copy. Allow enough runtime steps for the assigned reads, writing and validation; a step-limit summary is not manuscript prose. In a review, distinguish definite errors from queries and preferences, and verify a quoted passage and its cited locator before reporting it as evidence.
 
 The author authorized provisional adoption despite incomplete trials. Short feasibility and evidence guards are editorial changes motivated by observed failures; the larger experimental instruction blocks have not passed a full A/B comparison and are not adopted wholesale. See `docs/model-routing.md`.
+
+## Read-aloud narration
+
+Read-aloud is optional. Add it when the author asks for audio or the reading
+promise includes listening. It comes **after** the words are stable: line, copy
+and proof first, because every tag follows the final text. See
+[`docs/narration.md`](../docs/narration.md) for the contract and tooling and
+[the read-aloud skill](skills/read-aloud/SKILL.md) for the step-by-step pass.
+
+The layer is separate by construction. `production/narration/script.md` holds
+the tagged script; `cast.json` holds voices and their provenance; **Fish Audio
+Drama 3** via local `audio.cpp` (Vulkan, driven by `tools/drama3.py`) is the
+default TTS engine on this computer for all book audio, writing `render.json`
+and working audio under `exports/`. For fixed-layout books, `tools/narration.py`
+packs public page MP3s into `narration/`; for reflowable books,
+`tools/drama3.py assemble-chapters` packs public chapter MP3s into
+`site/audio/<book-id>/`. The manuscript, export, EPUB and PDF are
+never inputs to the tagger and never receive a tag. `tools/build_catalog.py`
+fails the site build if a performance tag is found in a published EPUB or PDF.
+
+Order of work: `python3 tools/drama3.py doctor` → cast and direction brief →
+tagged script or chapter segments → word-exact check → one-page/segment pilot
+render and check → full Drama 3 render (with `split-retake` for any capped unit)
+→ per-unit transcript and pause check → independent listen → packaging. A single
+seed is not trusted: end-of-request drift can append or substitute a line, so
+retake failures with a new seed and re-check. Do not render a whole book before
+a pilot unit proves the cast, the tag density and the pacing.
+
+Casting and rights belong in the record. No identifiable person is imitated
+without consent; a public dataset clip is not consent. Synthetic stand-ins are
+labeled. Model licences are checked for redistribution and hosted-service use
+before audio ships (include "Built with Fish Audio" attribution for Drama 3).
+The author decides whether narration is published at all.
+
+The web reader streams page audio for fixed-layout books, follows the current
+page, preloads only the next page, never autoplays, and degrades to silent
+reading on any failure. Reflowable books ship chapter-level MP3 audiobooks under
+`site/audio/<book-id>/` with `chapters.json` and a static audiobook player page.
+EPUB media overlays are out of scope unless the author requests them; even then
+the tags stay outside the book files.
+
+Independence: the `voice_director` cannot certify their own performance. A fresh
+`reader_advocate` listens and reports; `production_editor` proves the actual
+package and the tag exclusion. Mechanical transcript checks catch dropped and
+inserted words, not warmth, timing or pronunciation.
 
 ## Illustrated stories and illustrated editions
 

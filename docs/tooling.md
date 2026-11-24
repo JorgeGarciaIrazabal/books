@@ -25,6 +25,30 @@ and [OpenCode v2 agents](https://opencode.ai/v2/docs/agents/).
 Project configuration follows [Codex configuration](https://learn.chatgpt.com/docs/config-file/config-basic)
 and [OpenCode v2 configuration](https://opencode.ai/v2/docs/config/).
 
+## Narration tools
+
+Read-aloud is a separate layer documented in [narration](narration.md). It adds one
+role, `voice_director`, and shared tools that do not touch the book files:
+
+- `tools/drama3.py`: shared local **Fish Audio Drama 3** (`audio.cpp` Vulkan)
+  TTS driver used on this computer for both fixed-layout page narration and
+  reflowable chapter audiobooks (`doctor`, `prepare-chapters`, `prepare-pages`,
+  `render`, `split-retake`, `check`, `assemble-chapters`). Auto-discovers
+  `~/.local/bin/audiocpp_cli` and `~/.cache/drama3/Drama-3-GGUF/drama-3-backbone-8bit-experts-Q4_K_S.gguf`
+  (overridable via `DRAMA3_CLI` / `DRAMA3_MODEL`).
+- `tools/narration.py`: `pack` encodes the rendered page WAVs into mono MP3s under
+  `narration/<book-id>/` and writes the reader manifest and public index;
+  `validate` checks hashes, page contiguity, durations, the script/export word
+  match, and that no performance tag appears in a manuscript, export, EPUB or
+  PDF.
+- `site/assets/js/reader.js`: plays page audio when `catalog.json` carries a
+  `narration` block for a fixed-layout book. `tools/build_catalog.py` copies
+  `narration/` into the build and fails on a tag found in a publication.
+
+Books may also keep book-specific helpers under `production/narration/tools/`.
+Local speech rendering needs the local Drama 3 runtime and weights and is not
+part of the GitHub Pages site build.
+
 ## Codex
 
 Launch `codex` at repository root. Project `.codex/config.toml` defaults to GPT-6.1 Sol high and a

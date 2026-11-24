@@ -2,91 +2,211 @@
   "schema_version": 1,
   "book_id": "the-quest-of-the-golden-garbanzo",
   "title": "The Quest of the Golden Garbanzo",
-  "credit": "Synthetic narration generated locally with Kokoro-82M ONNX (voice: af_heart); not a human performance.",
-  "engine": "Kokoro-82M ONNX (kokoro-onnx)",
-  "voice": "af_heart",
-  "review_status": "Coverage, durations, sizes, and SHA-256 checksums verified; human listening review pending.",
-  "total_seconds": 3105.262,
+  "credit": "Synthetic narration built with Fish Audio Drama 3 (local audio.cpp Vulkan; synthetic American narrator reference); not a human performance.",
+  "engine": "audio.cpp 04ce54d (vulkan) / Fish Audio Drama 3",
+  "model": "drama-3-backbone-8bit-experts-Q4_K_S.gguf",
+  "voice": "synthetic warm American narrator (Kokoro af_heart reference, Drama 3 rendering)",
+  "review_status": "Coverage, durations, hashes, and 97-segment faster-whisper ASR checked (5 retakes at seed 11; 1 remaining low-similarity flag u83 verified as ASR homophone/number formatting); human listening review pending.",
+  "asr_flagged_segments": 1,
+  "total_segments": 97,
+  "total_seconds": 3263.448,
   "chapters": [
     {
       "number": 1,
       "title": "Chapter 1: The Golden Chickpea Goes Cold",
       "file": "chapter-01.mp3",
-      "seconds": 337.016,
-      "bytes": 4045292,
-      "sha256": "0397ad9bfecf7723cca35810ca6486bb2a7cbb888bde5949318a9323d3eb39e4"
+      "seconds": 369.672,
+      "bytes": 4436396,
+      "sha256": "3bc50c9f03da52d64c3d2d9eb8838678b55f718b7d702b8e3fd53475609e4261",
+      "segments": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     {
       "number": 2,
       "title": "Chapter 2: The Train Home and the Crayon Warning",
       "file": "chapter-02.mp3",
-      "seconds": 284.815,
-      "bytes": 3418892,
-      "sha256": "f69c0770a39681e9476bf40faa1b39613bbde67bf2b7495db111f246cc850c21"
+      "seconds": 303.864,
+      "bytes": 3646700,
+      "sha256": "917ecd2e3cf0f67f4862a6a7d325fe6772155964fcb9b10b5eed07edc45a82f7",
+      "segments": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
     },
     {
       "number": 3,
       "title": "Chapter 3: The Kitchen Table Deal",
       "file": "chapter-03.mp3",
-      "seconds": 316.229,
-      "bytes": 3795884,
-      "sha256": "22ca2899b9c892da91da1e0ff57e6673f6d5edeb9055762919f6a9d43a3eff49"
+      "seconds": 342.696,
+      "bytes": 4112684,
+      "sha256": "5c351b1edc526b0190c9aacc64ea6cf0a175a49edf7c65927b50126efafb4ac8",
+      "segments": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
     },
     {
       "number": 4,
       "title": "Chapter 4: Clara's Rules and a Silver Tail",
       "file": "chapter-04.mp3",
-      "seconds": 312.232,
-      "bytes": 3747788,
-      "sha256": "a840252f2b87c94f9de6fd5d1fd8a6e03f635f00b5428c9c10c427903b619cf1"
+      "seconds": 339.072,
+      "bytes": 4069196,
+      "sha256": "bf7509e5e5508899f356f11d2c51076e5a9d6c067460b0a9fa37c3e7ec06892c",
+      "segments": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ]
     },
     {
       "number": 5,
       "title": "Chapter 5: The Great Spanish House Trap",
       "file": "chapter-05.mp3",
-      "seconds": 394.098,
-      "bytes": 4730156,
-      "sha256": "7cd6ba45e50222b1b89d8030acdd2ad93d531b2da2700469aa86d894c9087b84"
+      "seconds": 404.736,
+      "bytes": 4857164,
+      "sha256": "0743d66446ad8fe10f32b362645bfa35e7515d7414ade35e82338ddc07c3d173",
+      "segments": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ]
     },
     {
       "number": 6,
       "title": "Chapter 6: The Valladolid Bounce",
       "file": "chapter-06.mp3",
-      "seconds": 293.148,
-      "bytes": 3518828,
-      "sha256": "07819e6b57ca6afe047686e38b8f75ce6d0431ca68a4e547df98f4ff6480b883"
+      "seconds": 310.752,
+      "bytes": 3729356,
+      "sha256": "f25df94d017dac51b918f8fc23c61007baa3f6351b0d77726471511a90bd41ba",
+      "segments": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61
+      ]
     },
     {
       "number": 7,
       "title": "Chapter 7: The Midnight Tax Storm",
       "file": "chapter-07.mp3",
-      "seconds": 346.203,
-      "bytes": 4155596,
-      "sha256": "4da077c12d5ae94df991c7c8c4aa040739890f6e4b98950a8f9d847e3b949e29"
+      "seconds": 353.664,
+      "bytes": 4244300,
+      "sha256": "a5a5836a3145b110a6af806ed9a31eaf16fe7a4d11d88e09ac53242b777dc521",
+      "segments": [
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71
+      ]
     },
     {
       "number": 8,
       "title": "Chapter 8: The Hardest Friday of All",
       "file": "chapter-08.mp3",
-      "seconds": 289.851,
-      "bytes": 3479372,
-      "sha256": "0a6eb4f3b8136435330feb658e11392964ddda6f0e7ebeed6cb604f7b3a21d65"
+      "seconds": 303.696,
+      "bytes": 3644684,
+      "sha256": "b68e39df6009839af4b3a0e0e830d4f8686e561a046c4e4998165d5b90f2de61",
+      "segments": [
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81
+      ]
     },
     {
       "number": 9,
       "title": "Chapter 9: Twelve Dragons and One Big Stew",
       "file": "chapter-09.mp3",
-      "seconds": 258.569,
-      "bytes": 3103820,
-      "sha256": "081645c9254ddd8cd682dfa08d15b86fa72a3249bc68aa289114af98b1a133e5"
+      "seconds": 261.888,
+      "bytes": 3142988,
+      "sha256": "c332b76ee34378990df65b89b016819e023e499066109d8eb7a296d73ef908dd",
+      "segments": [
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
     },
     {
       "number": 10,
       "title": "Chapter 10: Tuesday at Ten O'Clock",
       "file": "chapter-10.mp3",
-      "seconds": 273.101,
-      "bytes": 3278348,
-      "sha256": "d101451f69a1b96316c636a23c63448841ccc84368d9a506dcb2c32582d118e4"
+      "seconds": 273.408,
+      "bytes": 3281228,
+      "sha256": "2625128d4df567fef842a80bf70bc8758689ddab24eeac1267280877619abd16",
+      "segments": [
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ]
     }
   ]
 }

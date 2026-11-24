@@ -23,4 +23,4 @@ A fun, dramatic, easy-to-read family adventure about how ordinary humans Jorge, 
 ## Release checklist
 - Independent whole-book blind review on the rewritten manuscript recorded in `reviews/`.
 - All mechanical checks (zero em/en dashes or `--`, readability stats, `Marissa`, costume-free Poki, non-cooking Jorge, privacy exclusions) verified.
-- Clean EPUB 3, PDF, cover JPEG, `publications/` manifest, `site/` pages, and 10-track Kokoro-82M ONNX audiobook verified locally.
+- Clean EPUB 3, PDF, cover JPEG, `publications/` manifest, `site/` pages, and 10-track Fish Audio Drama 3 audiobook (`tools/drama3.py`) verified locally.

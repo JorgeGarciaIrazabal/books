@@ -1,77 +1,44 @@
 #!/usr/bin/env python3
-"""Generate the 10-chapter MP3 audiobook, chapters.json manifest, render record,
-and dedicated site player page for The Quest of the Golden Garbanzo using local
-Kokoro-82M ONNX (voice: af_heart).
+"""Build or refresh the 10-chapter Fish Audio Drama 3 audiobook, chapters.json,
+render record, and static player page for The Quest of the Golden Garbanzo.
 
-Run with:
-    uv run --with kokoro-onnx --with soundfile python production/build_audiobook.py
+Uses the studio-wide Drama 3 pipeline (``tools/drama3.py`` + local ``audio.cpp``
+Vulkan runtime). Source chapters are never modified.
+
+Examples:
+    # Full Drama 3 render, ASR check, MP3 assembly, and player HTML refresh:
+    python3 production/build_audiobook.py
+
+    # Assemble & refresh player HTML from an already-rendered exports directory:
+    python3 production/build_audiobook.py --skip-render --skip-check
 """
 from __future__ import annotations
 
-import hashlib
+import argparse
 import json
-import os
-import re
 import subprocess
-import tempfile
-import urllib.request
+import sys
 from html import escape
 from pathlib import Path
 
-import numpy as np
-import soundfile as sf
-from kokoro_onnx import Kokoro
-
 BOOK = Path(__file__).resolve().parents[1]
 REPO = BOOK.parents[2]
-AUDIO_DIR = REPO / "site" / "audio" / "the-quest-of-the-golden-garbanzo"
+DRAMA3 = REPO / "tools" / "drama3.py"
+NARRATION_DIR = BOOK / "production" / "narration"
+SEGMENTS_JSON = NARRATION_DIR / "segments.json"
+SCRIPT_MD = NARRATION_DIR / "script.md"
+CAST_JSON = NARRATION_DIR / "cast.json"
+RENDER_RECORD = NARRATION_DIR / "render.json"
+WORK_AUDIO = BOOK / "exports" / "narration-drama3"
+PUBLIC_AUDIO = REPO / "site" / "audio" / "the-quest-of-the-golden-garbanzo"
 PLAYER_HTML = REPO / "site" / "audiobook-the-quest-of-the-golden-garbanzo.html"
-RENDER_RECORD = BOOK / "production" / "narration" / "render.json"
 
-CACHE_DIR = Path(os.environ.get("LOCALAPPDATA", Path.home() / "AppData" / "Local")) / "kokoro-onnx"
-MODEL_URL = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx"
-VOICES_URL = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin"
-
-VOICE = "af_heart"
-ENGINE = "Kokoro-82M ONNX (kokoro-onnx)"
-CREDIT = "Synthetic narration generated locally with Kokoro-82M ONNX (voice: af_heart); not a human performance."
-
-
-def ensure_file(url: str, dest: Path) -> Path:
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    if dest.is_file() and dest.stat().st_size > 1_000_000:
-        return dest
-    print(f"Downloading {dest.name}...")
-    tmp = dest.with_suffix(dest.suffix + ".part")
-    urllib.request.urlretrieve(url, tmp)
-    tmp.replace(dest)
-    return dest
-
-
-def sha256_file(path: Path) -> str:
-    h = hashlib.sha256()
-    with path.open("rb") as f:
-        for chunk in iter(lambda: f.read(1024 * 1024), b""):
-            h.update(chunk)
-    return h.hexdigest()
-
-
-ACRONYMS = {"AI", "IRS", "USB", "NJ"}
-
-
-def _fix_caps(match: re.Match[str]) -> str:
-    word = match.group(0)
-    if word in ACRONYMS:
-        return word
-    return word.lower()
-
-
-def strip_md(text: str) -> str:
-    cleaned = re.sub(r"\*\*(.+?)\*\*", r"\1", text)
-    cleaned = re.sub(r"(?<!\*)\*([^*]+?)\*(?!\*)", r"\1", cleaned)
-    cleaned = re.sub(r"`([^`]+?)`", r"\1", cleaned)
-    cleaned = re.sub(r"\b[A-Z]{2,}\b", _fix_caps, cleaned)
-    return cleaned.replace("50 / 50", "fifty-fifty")
+CREDIT = (
+    "Synthetic narration built with Fish Audio Drama 3 (local audio.cpp Vulkan; "
+    "synthetic American narrator reference); not a human performance."
+)
+VOICE_LABEL = "synthetic warm American narrator (Kokoro af_heart reference, Drama 3 rendering)"
+DIRECTION = "[warm, lively storyteller voice]"
 
 
 def clock(seconds: float) -> str:
@@ -83,42 +50,16 @@ def clock(seconds: float) -> str:
     return f"{minutes}:{secs:02d}"
 
 
-def load_chapters() -> tuple[dict, list[dict]]:
-    meta = json.loads((BOOK / "book.json").read_text(encoding="utf-8"))
-    paths = meta["chapters"]
-    if len(paths) != 10 or len(set(paths)) != len(paths):
-        raise ValueError("Expected 10 distinct chapters in book.json")
-    chapters = []
-    for idx, rel in enumerate(paths, 1):
-        raw = (BOOK / rel).read_text(encoding="utf-8").strip()
-        heading, body = raw.split("\n", 1)
-        if not heading.startswith("# "):
-            raise ValueError(f"Expected '# ' heading in {rel}")
-        title = heading[2:].strip()
-        paras = [strip_md(re.sub(r"\s+", " ", p).strip()) for p in re.split(r"\n\s*\n", body.strip()) if p.strip()]
-        chapters.append({
-            "number": idx,
-            "source": rel,
-            "title": title,
-            "paragraphs": paras,
-            "source_sha256": hashlib.sha256((BOOK / rel).read_bytes()).hexdigest(),
-        })
-    return meta, chapters
-
-
-def probe_duration(mp3_path: Path) -> float:
-    out = subprocess.check_output(
-        [
-            "ffprobe", "-v", "error", "-show_entries", "format=duration",
-            "-of", "default=noprint_wrappers=1:nokey=1", str(mp3_path),
-        ],
-        text=True,
-    ).strip()
-    return round(float(out), 3)
-
-
-def build_player_html(meta: dict, chapters_meta: list[dict], total_seconds: float) -> str:
+def build_player_html(meta: dict, manifest: dict) -> str:
     book_id = meta["id"]
+    chapters_meta = manifest["chapters"]
+    total_seconds = manifest["total_seconds"]
+    credit = manifest.get("credit") or CREDIT
+    review_status = manifest.get("review_status") or (
+        "Coverage, durations, byte sizes, SHA-256 checksums, and faster-whisper ASR "
+        "were checked after rendering; human listening review is pending."
+    )
+
     items = []
     for ch in chapters_meta:
         src = f"audio/{book_id}/{ch['file']}"
@@ -138,7 +79,7 @@ def build_player_html(meta: dict, chapters_meta: list[dict], total_seconds: floa
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#1e2634">
 <title>{escape(meta['title'])}: audiobook</title>
-<meta name="description" content="Chapter audio for The Quest of the Golden Garbanzo, a fun, dramatic Garbanzo Family adventure story. Synthetic narration.">
+<meta name="description" content="Chapter audio for The Quest of the Golden Garbanzo, a fun, dramatic Garbanzo Family adventure story. Synthetic narration built with Fish Audio Drama 3.">
 <link rel="stylesheet" href="assets/css/styles.css">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/css/audiobook.css">
@@ -150,7 +91,7 @@ def build_player_html(meta: dict, chapters_meta: list[dict], total_seconds: floa
 <main class="wrap audio-shell">
   <div class="audio-layout">
     <aside class="chapter-section" aria-labelledby="chapters-title">
-      <div class="section-heading"><div><p class="audio-eyebrow">GARBANZO FAMILY · STANDALONE</p><h2 id="chapters-title">Chapters</h2></div><span>10 TRACKS</span></div>
+      <div class="section-heading"><div><p class="audio-eyebrow">GARBANZO FAMILY · STANDALONE</p><h2 id="chapters-title">Chapters</h2></div><span>{len(chapters_meta)} TRACKS</span></div>
       <p class="chapter-instruction">Choose a chapter, then press play.</p>
       <ol class="chapter-audio">
 {chr(10).join(items)}
@@ -177,7 +118,7 @@ def build_player_html(meta: dict, chapters_meta: list[dict], total_seconds: floa
           <a href="publications/{escape(book_id)}.pdf" download>PDF</a>
         </div>
       </section>
-      <details class="audio-notice"><summary>About this narration</summary><p><strong>Synthetic narration.</strong> {escape(CREDIT)} File coverage, durations, byte sizes, and SHA-256 checksums were verified after rendering; human listening review is pending. The EPUB and PDF remain the authoritative text.</p></details>
+      <details class="audio-notice"><summary>About this narration</summary><p><strong>Synthetic narration.</strong> {escape(credit)} {escape(review_status)} The EPUB and PDF remain the authoritative text.</p></details>
     </div>
   </div>
 </main>
@@ -193,107 +134,72 @@ def build_player_html(meta: dict, chapters_meta: list[dict], total_seconds: floa
 '''
 
 
-def main() -> int:
-    model_path = ensure_file(MODEL_URL, CACHE_DIR / "kokoro-v1.0.onnx")
-    voices_path = ensure_file(VOICES_URL, CACHE_DIR / "voices-v1.0.bin")
+def run(cmd: list[str]) -> None:
+    subprocess.run(cmd, check=True)
 
-    meta, chapters = load_chapters()
-    AUDIO_DIR.mkdir(parents=True, exist_ok=True)
-    RENDER_RECORD.parent.mkdir(parents=True, exist_ok=True)
 
-    print("Loading Kokoro-82M ONNX model...")
-    kokoro = Kokoro(str(model_path), str(voices_path))
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--max-words", type=int, default=95)
+    parser.add_argument("--seed", type=int, default=7)
+    parser.add_argument("--batch-size", type=int, default=30)
+    parser.add_argument("--skip-prep", action="store_true")
+    parser.add_argument("--skip-render", action="store_true")
+    parser.add_argument("--skip-check", action="store_true")
+    parser.add_argument("--review-status", default=(
+        "Coverage, durations, hashes, and faster-whisper ASR checked; human listening review pending."
+    ))
+    args = parser.parse_args(argv)
 
-    chapters_meta = []
-    total_seconds = 0.0
-    sample_rate = 24000
+    meta = json.loads((BOOK / "book.json").read_text(encoding="utf-8"))
 
-    with tempfile.TemporaryDirectory(prefix="garbanzo-tts-", ignore_cleanup_errors=True) as tmp:
-        tmp_dir = Path(tmp)
-        title_gap = np.zeros(int(sample_rate * 0.75), dtype=np.float32)
-        para_gap = np.zeros(int(sample_rate * 0.45), dtype=np.float32)
+    if not args.skip_prep:
+        run([
+            sys.executable, str(DRAMA3), "prepare-chapters",
+            "--book", str(BOOK),
+            "--out", str(SEGMENTS_JSON),
+            "--script", str(SCRIPT_MD),
+            "--max-words", str(args.max_words),
+            "--direction", DIRECTION,
+        ])
 
-        for ch in chapters:
-            fname = f"chapter-{ch['number']:02d}.mp3"
-            final_mp3 = AUDIO_DIR / fname
-            print(f"Synthesizing {fname}: {ch['title']}...")
+    if not args.skip_render:
+        run([sys.executable, str(DRAMA3), "doctor"])
+        run([
+            sys.executable, str(DRAMA3), "render", str(SEGMENTS_JSON),
+            "--out-dir", str(WORK_AUDIO),
+            "--cast", str(CAST_JSON),
+            "--direction", DIRECTION,
+            "--seed", str(args.seed),
+            "--batch-size", str(args.batch_size),
+            "--resume",
+        ])
 
-            pieces: list[np.ndarray] = []
-            title_audio, sr = kokoro.create(ch["title"], voice=VOICE, speed=1.0, lang="en-us")
-            if sr != sample_rate:
-                sample_rate = sr
-                title_gap = np.zeros(int(sample_rate * 0.75), dtype=np.float32)
-                para_gap = np.zeros(int(sample_rate * 0.45), dtype=np.float32)
-            pieces.append(np.asarray(title_audio, dtype=np.float32))
-            pieces.append(title_gap)
+    if not args.skip_check:
+        run([
+            sys.executable, str(DRAMA3), "check",
+            str(SEGMENTS_JSON), str(WORK_AUDIO),
+        ])
 
-            for i, para in enumerate(ch["paragraphs"]):
-                audio, _ = kokoro.create(para, voice=VOICE, speed=1.0, lang="en-us")
-                pieces.append(np.asarray(audio, dtype=np.float32))
-                if i + 1 < len(ch["paragraphs"]):
-                    pieces.append(para_gap)
+    run([
+        sys.executable, str(DRAMA3), "assemble-chapters",
+        str(SEGMENTS_JSON),
+        "--audio", str(WORK_AUDIO),
+        "--out", str(PUBLIC_AUDIO),
+        "--book-id", meta["id"],
+        "--title", meta["title"],
+        "--credit", CREDIT,
+        "--voice", VOICE_LABEL,
+        "--review-status", args.review_status,
+        "--checks", str(WORK_AUDIO / "checks.json"),
+        "--render-record", str(RENDER_RECORD),
+        "--public-page", f"site/{PLAYER_HTML.name}",
+        "--audio-rel-dir", f"site/audio/{meta['id']}",
+    ])
 
-            full_audio = np.concatenate(pieces)
-            wav_path = tmp_dir / f"chapter-{ch['number']:02d}.wav"
-            sf.write(wav_path, full_audio, sample_rate)
-            subprocess.run(
-                [
-                    "ffmpeg", "-y", "-v", "error", "-i", str(wav_path),
-                    "-ac", "1", "-ar", str(sample_rate), "-b:a", "96k", "-map_metadata", "-1",
-                    str(final_mp3),
-                ],
-                check=True,
-            )
-
-            secs = probe_duration(final_mp3)
-            size = final_mp3.stat().st_size
-            digest = sha256_file(final_mp3)
-            total_seconds += secs
-            print(f"  -> {fname}: {secs}s, {size} bytes")
-            chapters_meta.append({
-                "number": ch["number"],
-                "title": ch["title"],
-                "file": fname,
-                "seconds": secs,
-                "bytes": size,
-                "sha256": digest,
-                "source": ch["source"],
-                "source_sha256": ch["source_sha256"],
-            })
-
-    total_seconds = round(total_seconds, 3)
-    manifest = {
-        "schema_version": 1,
-        "book_id": meta["id"],
-        "title": meta["title"],
-        "credit": CREDIT,
-        "engine": ENGINE,
-        "voice": VOICE,
-        "review_status": "Coverage, durations, sizes, and SHA-256 checksums verified; human listening review pending.",
-        "total_seconds": total_seconds,
-        "chapters": [
-            {k: c[k] for k in ("number", "title", "file", "seconds", "bytes", "sha256")}
-            for c in chapters_meta
-        ],
-    }
-    (AUDIO_DIR / "chapters.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-
-    render_info = {
-        "schema_version": 1,
-        "status": "Published synthetic audiobook; coverage, durations, and hashes verified; human listening pending",
-        "engine": ENGINE,
-        "voice": VOICE,
-        "format": "mono 24000 Hz 96 kbps CBR MP3",
-        "total_seconds": total_seconds,
-        "total_bytes": sum(c["bytes"] for c in chapters_meta),
-        "public_page": f"site/{PLAYER_HTML.name}",
-        "audio_dir": "site/audio/the-quest-of-the-golden-garbanzo",
-        "chapters": chapters_meta,
-    }
-    RENDER_RECORD.write_text(json.dumps(render_info, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-
-    PLAYER_HTML.write_text(build_player_html(meta, chapters_meta, total_seconds), encoding="utf-8")
-    print(f"Done: 10 chapters, total {clock(total_seconds)} ({total_seconds} s), {render_info['total_bytes']} bytes")
+    manifest = json.loads((PUBLIC_AUDIO / "chapters.json").read_text(encoding="utf-8"))
+    PLAYER_HTML.write_text(build_player_html(meta, manifest), encoding="utf-8")
+    print(f"Updated player page -> {PLAYER_HTML}")
     return 0
 
 

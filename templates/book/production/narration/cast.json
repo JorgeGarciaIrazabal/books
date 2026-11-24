@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "book": "{{book}}",
+  "status": "uncast",
+  "voices": [
+    {
+      "id": 0,
+      "role": "Narrator",
+      "engine": "Fish Audio Drama 3 (local audio.cpp Vulkan); synthetic reference",
+      "voice": "replace-with-reference-voice-id",
+      "reference": "cast/narrator.wav",
+      "reference_text": "A different sentence per voice, exactly as recorded.",
+      "reference_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "provenance": "who or what made this reference clip, where, and when",
+      "licence_note": "Fish Audio Community License v1.0 (include 'Built with Fish Audio' attribution) plus consent for a human voice or synthetic reference terms"
+    }
+  ],
+  "rules": [
+    "one distinct reference sentence per voice",
+    "no identifiable person is imitated without documented consent",
+    "synthetic stand-ins are labeled as such"
+  ]
+}

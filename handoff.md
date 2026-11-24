@@ -1,5 +1,20 @@
 # Workspace handoff
 
+## Default Drama 3 TTS workflow and Golden Garbanzo audiobook update, 2026-11-23
+
+- The author requested updating the studio workflow so **Fish Audio Drama 3** is used as the default TTS engine for book audio on this computer, and then updating the audios for *The Quest of the Golden Garbanzo*.
+- **Persistent local Drama 3 runtime (outside repo):**
+  - Built `0xShug0/audio.cpp` (`04ce54d0d22b`, Vulkan backend, `fish_drama3`) in `~/.local/opt/audio.cpp/build-vk` using LunarG Vulkan SDK (`glslc` + headers + `spirv.hpp`) staged in `~/.local/opt/vulkan-sdk`, and symlinked `~/.local/bin/audiocpp_cli`. Verified GPU detection: `Vulkan:0 "Radeon 8060S Graphics (RADV GFX1151)"` and cached 22.91 GiB weights at `~/.cache/drama3/Drama-3-GGUF/drama-3-backbone-8bit-experts-Q4_K_S.gguf`.
+- **Shared studio TTS tooling & workflow updates:**
+  - Added `tools/drama3.py` (`doctor`, `prepare-chapters`, `prepare-pages`, `render`, `split-retake`, `check`, `assemble-chapters`) and regression tests `tests/test_drama3.py`.
+  - Updated `AGENTS.md`, `.studio/workflow.md`, `.studio/skills/read-aloud/SKILL.md`, `.studio/agents/voice_director.md`, `docs/narration.md`, `docs/tooling.md`, and `templates/book/production/narration/{cast.json,notes.md}` to standardize on Fish Audio Drama 3 via `tools/drama3.py` for both fixed-layout page audio and reflowable chapter audiobooks.
+- **Golden Garbanzo audiobook updated to Drama 3:**
+  - Updated `garbanzo-family/standalone/the-quest-of-the-golden-garbanzo/production/build_audiobook.py`, `production/brief.md`, `production/narration/{segments.json,script.md,cast.json,cast/narrator.wav,render.json,notes.md}`, `handoff.md`, `site/audio/the-quest-of-the-golden-garbanzo/{chapters.json,chapter-01..10.mp3}`, and `site/audiobook-the-quest-of-the-golden-garbanzo.html`.
+  - Rendered all 97 word-exact segments (`<=95` words each, 0 capped) on Vulkan (`seed=7`), ran full `faster-whisper` `small.en` + silence checks, and retook 5 segments (`u26, u35, u47, u80, u81`) at `seed=11` (all 5 retakes passed with 0 flags; 1 remaining mechanical flag `u83` verified as ASR homophones/digits). Assembled 10 mono 96 kbps chapter MP3s (`54:23` / `3,263.448` s, `39,164,696` bytes, `"Built with Fish Audio"` attribution included). Manuscript, EPUB, and PDF are untouched.
+- **Verification:** `python3 tools/drama3.py doctor`, `python3 tools/narration.py validate` (0 leaked tags across 5 EPUBs/5 PDFs), `python3 tools/build_catalog.py build` (5 books into `_site/`), and `python3 -m unittest discover -s tests -v` (60/60 tests) all passed. **Human listening review is pending.** Published to origin/main per author authorization.
+- **Next action:** Spot-listen to the updated Golden Garbanzo audiobook locally (`python3 -m http.server 8000 --directory _site`) and authorize committing/pushing when ready.
+
+
 ## Goblin Wars text release and Drama 3 audiobook render, 2026-10-27
 
 - The author asked to publish the Goblin Wars series to GitHub Pages. Only Book One, *The Ledger of Ashes*, is complete; the author selected Book One in EPUB, PDF and audio, and authorized public fan publication. Books Two and Three remain roadmap plans.

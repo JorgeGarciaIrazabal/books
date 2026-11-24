@@ -1,11 +1,38 @@
 {
   "schema_version": 1,
-  "status": "Published synthetic audiobook; coverage, durations, and hashes verified; human listening pending",
-  "engine": "Kokoro-82M ONNX (kokoro-onnx)",
-  "voice": "af_heart",
-  "format": "mono 24000 Hz 96 kbps CBR MP3",
-  "total_seconds": 3105.262,
-  "total_bytes": 37273976,
+  "book": "the-quest-of-the-golden-garbanzo",
+  "generated": "2026-11-23",
+  "status": "Coverage, durations, hashes, and 97-segment faster-whisper ASR checked (5 retakes at seed 11; 1 remaining low-similarity flag u83 verified as ASR homophone/number formatting); human listening review pending.",
+  "engine": {
+    "name": "audio.cpp",
+    "commit": "04ce54d0d22b29f2982cb6b931331d00c98a1d91",
+    "cli": "/home/jgarcairaza/.local/bin/audiocpp_cli",
+    "backend": "vulkan",
+    "model": "drama-3-backbone-8bit-experts-Q4_K_S.gguf",
+    "model_sha256": "05af716baf78e7c20863b9ccebb3ebdeca9607dd3ea7d0b72c35079e675b212b",
+    "model_license": "Fish Audio Community License v1.0"
+  },
+  "settings": {
+    "seed": 11,
+    "text_chunk_size": 4000,
+    "max_tokens": 1400,
+    "context_length": 4096,
+    "threads": 8,
+    "direction": "[warm, lively storyteller voice]"
+  },
+  "voice": "synthetic warm American narrator (Kokoro af_heart reference, Drama 3 rendering)",
+  "voice_reference": {
+    "mode": "single_voice",
+    "cast": "/home/jgarcairaza/code/books/garbanzo-family/standalone/the-quest-of-the-golden-garbanzo/production/narration/cast.json",
+    "voice": "af_heart",
+    "reference": "/home/jgarcairaza/code/books/garbanzo-family/standalone/the-quest-of-the-golden-garbanzo/production/narration/cast/narrator.wav",
+    "reference_sha256": "75e8edd35b2f86d0309b3aa6925699603e1f562f0934194e9a949874688fdec2"
+  },
+  "format": "mono 24000 Hz 96k CBR MP3",
+  "total_segments": 97,
+  "total_seconds": 3263.448,
+  "total_bytes": 39164696,
+  "asr_flagged_segments": 1,
   "public_page": "site/audiobook-the-quest-of-the-golden-garbanzo.html",
   "audio_dir": "site/audio/the-quest-of-the-golden-garbanzo",
   "chapters": [
@@ -13,101 +40,218 @@
       "number": 1,
       "title": "Chapter 1: The Golden Chickpea Goes Cold",
       "file": "chapter-01.mp3",
-      "seconds": 337.016,
-      "bytes": 4045292,
-      "sha256": "0397ad9bfecf7723cca35810ca6486bb2a7cbb888bde5949318a9323d3eb39e4",
+      "seconds": 369.672,
+      "bytes": 4436396,
+      "sha256": "3bc50c9f03da52d64c3d2d9eb8838678b55f718b7d702b8e3fd53475609e4261",
       "source": "manuscript/001-the-golden-chickpea-goes-cold.md",
-      "source_sha256": "6659dec680cbbdb2d534ee8bb1ad302f5e844e52f790d016dfdba575723a0568"
+      "source_sha256": "6659dec680cbbdb2d534ee8bb1ad302f5e844e52f790d016dfdba575723a0568",
+      "segments": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     {
       "number": 2,
       "title": "Chapter 2: The Train Home and the Crayon Warning",
       "file": "chapter-02.mp3",
-      "seconds": 284.815,
-      "bytes": 3418892,
-      "sha256": "f69c0770a39681e9476bf40faa1b39613bbde67bf2b7495db111f246cc850c21",
+      "seconds": 303.864,
+      "bytes": 3646700,
+      "sha256": "917ecd2e3cf0f67f4862a6a7d325fe6772155964fcb9b10b5eed07edc45a82f7",
       "source": "manuscript/002-the-train-home-and-the-crayon-warning.md",
-      "source_sha256": "5aefc333b1fc379913db1e8e00484f8e276dfc1bcd6e24d3a3c8018dca0eef77"
+      "source_sha256": "5aefc333b1fc379913db1e8e00484f8e276dfc1bcd6e24d3a3c8018dca0eef77",
+      "segments": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
     },
     {
       "number": 3,
       "title": "Chapter 3: The Kitchen Table Deal",
       "file": "chapter-03.mp3",
-      "seconds": 316.229,
-      "bytes": 3795884,
-      "sha256": "22ca2899b9c892da91da1e0ff57e6673f6d5edeb9055762919f6a9d43a3eff49",
+      "seconds": 342.696,
+      "bytes": 4112684,
+      "sha256": "5c351b1edc526b0190c9aacc64ea6cf0a175a49edf7c65927b50126efafb4ac8",
       "source": "manuscript/003-the-kitchen-table-deal.md",
-      "source_sha256": "bc34748db61d7c741baa39f4c5b0207dbb508f493b06b3031c6bc23bee59c2c0"
+      "source_sha256": "bc34748db61d7c741baa39f4c5b0207dbb508f493b06b3031c6bc23bee59c2c0",
+      "segments": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
     },
     {
       "number": 4,
       "title": "Chapter 4: Clara's Rules and a Silver Tail",
       "file": "chapter-04.mp3",
-      "seconds": 312.232,
-      "bytes": 3747788,
-      "sha256": "a840252f2b87c94f9de6fd5d1fd8a6e03f635f00b5428c9c10c427903b619cf1",
+      "seconds": 339.072,
+      "bytes": 4069196,
+      "sha256": "bf7509e5e5508899f356f11d2c51076e5a9d6c067460b0a9fa37c3e7ec06892c",
       "source": "manuscript/004-claras-rules-and-a-silver-tail.md",
-      "source_sha256": "1fc9417a93971552de8cb3b992fe754b8e0a042eac3f075fcae9b9634129904e"
+      "source_sha256": "1fc9417a93971552de8cb3b992fe754b8e0a042eac3f075fcae9b9634129904e",
+      "segments": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ]
     },
     {
       "number": 5,
       "title": "Chapter 5: The Great Spanish House Trap",
       "file": "chapter-05.mp3",
-      "seconds": 394.098,
-      "bytes": 4730156,
-      "sha256": "7cd6ba45e50222b1b89d8030acdd2ad93d531b2da2700469aa86d894c9087b84",
+      "seconds": 404.736,
+      "bytes": 4857164,
+      "sha256": "0743d66446ad8fe10f32b362645bfa35e7515d7414ade35e82338ddc07c3d173",
       "source": "manuscript/005-the-great-spanish-house-trap.md",
-      "source_sha256": "66b5965848166a15c281f8a0823ee17a446dacf3b98ec6f2ea55eb6f87752e86"
+      "source_sha256": "66b5965848166a15c281f8a0823ee17a446dacf3b98ec6f2ea55eb6f87752e86",
+      "segments": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ]
     },
     {
       "number": 6,
       "title": "Chapter 6: The Valladolid Bounce",
       "file": "chapter-06.mp3",
-      "seconds": 293.148,
-      "bytes": 3518828,
-      "sha256": "07819e6b57ca6afe047686e38b8f75ce6d0431ca68a4e547df98f4ff6480b883",
+      "seconds": 310.752,
+      "bytes": 3729356,
+      "sha256": "f25df94d017dac51b918f8fc23c61007baa3f6351b0d77726471511a90bd41ba",
       "source": "manuscript/006-the-valladolid-bounce.md",
-      "source_sha256": "51d1b623729f9c8b9b078904e762c7ceac0d5479d4953be2b604879b832105d0"
+      "source_sha256": "51d1b623729f9c8b9b078904e762c7ceac0d5479d4953be2b604879b832105d0",
+      "segments": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61
+      ]
     },
     {
       "number": 7,
       "title": "Chapter 7: The Midnight Tax Storm",
       "file": "chapter-07.mp3",
-      "seconds": 346.203,
-      "bytes": 4155596,
-      "sha256": "4da077c12d5ae94df991c7c8c4aa040739890f6e4b98950a8f9d847e3b949e29",
+      "seconds": 353.664,
+      "bytes": 4244300,
+      "sha256": "a5a5836a3145b110a6af806ed9a31eaf16fe7a4d11d88e09ac53242b777dc521",
       "source": "manuscript/007-the-midnight-tax-storm.md",
-      "source_sha256": "f98e8719d58356cf1c24570d3856dbc5911f106fe234003ce4b78c4cad968585"
+      "source_sha256": "f98e8719d58356cf1c24570d3856dbc5911f106fe234003ce4b78c4cad968585",
+      "segments": [
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71
+      ]
     },
     {
       "number": 8,
       "title": "Chapter 8: The Hardest Friday of All",
       "file": "chapter-08.mp3",
-      "seconds": 289.851,
-      "bytes": 3479372,
-      "sha256": "0a6eb4f3b8136435330feb658e11392964ddda6f0e7ebeed6cb604f7b3a21d65",
+      "seconds": 303.696,
+      "bytes": 3644684,
+      "sha256": "b68e39df6009839af4b3a0e0e830d4f8686e561a046c4e4998165d5b90f2de61",
       "source": "manuscript/008-the-hardest-friday-of-all.md",
-      "source_sha256": "c618673157fa5a5d1bea4301fb0aebb7d2c04186a2212e8ce5fab53814e3b705"
+      "source_sha256": "c618673157fa5a5d1bea4301fb0aebb7d2c04186a2212e8ce5fab53814e3b705",
+      "segments": [
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81
+      ]
     },
     {
       "number": 9,
       "title": "Chapter 9: Twelve Dragons and One Big Stew",
       "file": "chapter-09.mp3",
-      "seconds": 258.569,
-      "bytes": 3103820,
-      "sha256": "081645c9254ddd8cd682dfa08d15b86fa72a3249bc68aa289114af98b1a133e5",
+      "seconds": 261.888,
+      "bytes": 3142988,
+      "sha256": "c332b76ee34378990df65b89b016819e023e499066109d8eb7a296d73ef908dd",
       "source": "manuscript/009-twelve-dragons-and-one-big-stew.md",
-      "source_sha256": "c2545a70a26cec18d7e0b74828cd75863fff7070d9bf08c2606bc7ab25e7694c"
+      "source_sha256": "c2545a70a26cec18d7e0b74828cd75863fff7070d9bf08c2606bc7ab25e7694c",
+      "segments": [
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
     },
     {
       "number": 10,
       "title": "Chapter 10: Tuesday at Ten O'Clock",
       "file": "chapter-10.mp3",
-      "seconds": 273.101,
-      "bytes": 3278348,
-      "sha256": "d101451f69a1b96316c636a23c63448841ccc84368d9a506dcb2c32582d118e4",
+      "seconds": 273.408,
+      "bytes": 3281228,
+      "sha256": "2625128d4df567fef842a80bf70bc8758689ddab24eeac1267280877619abd16",
       "source": "manuscript/010-tuesday-at-ten-oclock.md",
-      "source_sha256": "1a34111f4fa24d76c5fa59539977cd747952aafa20fa4575700e5a1443a00cf1"
+      "source_sha256": "1a34111f4fa24d76c5fa59539977cd747952aafa20fa4575700e5a1443a00cf1",
+      "segments": [
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ]
     }
   ]
 }

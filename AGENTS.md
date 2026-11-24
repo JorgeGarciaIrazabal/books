@@ -81,7 +81,12 @@ templates/{universe,series,book}/  # reusable templates; not actual books
       reviews/{issues,gates}.json  # findings and evidence-backed checkpoints
       reviews/                    # snapshot-specific editorial reports
       production/brief.md         # packaging, metadata, rights, export notes
+      production/narration/       # read-aloud layer: script.md, cast.json, render.json
       exports/                    # generated manuscript builds; not source
+narration/                        # public read-aloud packages, NOT the book files
+  manifest.json                   # index: book id, pages, seconds, credit, hashes
+  {book-id}/narration.json        # page -> MP3 map consumed by the web reader
+  {book-id}/page-NN.mp3           # mono page audio; never referenced by EPUB/PDF
 ```
 
 Native agents can copy the relevant templates, replace their placeholders, and
@@ -119,6 +124,7 @@ The human author is the creative director; `studio_director` is the AI coordinat
 | `art_director` | Cover/series visual identity and accessibility | Cover and illustration briefs |
 | `illustrator` | Reference-led narrative image execution | Scene art, prompts, provenance, alt text |
 | `illustration_reviewer` | Independent image/prose and final-layout proof | Visual findings with exact coverage |
+| `voice_director` | Read-aloud casting, speaker/emotion tags, voice provenance | Tagged script, cast record, rendered audio and take checks |
 
 ## Orchestration and file ownership
 
@@ -165,6 +171,31 @@ The human author is the creative director; `studio_director` is the AI coordinat
 - For factual writing, cited evidence outranks generated confidence. Distinguish
   a source from the claim it supports; include locator, scope, date, limitations,
   and contradictory evidence. No invented quotations, citations, or credentials.
+
+## Narration and read-aloud
+
+- Narration is a **separate layer**, not prose. Speaker tags, directions and
+  delivery spans live only in `production/narration/`. They must never appear in
+  the manuscript, the export Markdown, the EPUB or the PDF.
+- On this computer, **Fish Audio Drama 3** via local `audio.cpp` (Vulkan) and
+  `tools/drama3.py` is the default TTS engine for all book audio (both
+  fixed-layout page narration under `narration/` and reflowable chapter
+  audiobooks under `site/audio/<book-id>/`). Verify with
+  `python3 tools/drama3.py doctor`.
+- `voice_director` owns the tagged `script.md`, `cast.json`, `render.json` and
+  take checks. The script or chapter segments must strip back to the book text
+  word for word; the renderer's output is not trusted until every unit passes a
+  transcript diff and a pause check.
+- Voices need provenance: reference clip, exact transcript, hash, engine and
+  licence. Never imitate an identifiable person without documented consent, and
+  record model licence limits before publication (include `"Built with Fish Audio"`
+  attribution for Drama 3). Synthetic stand-ins are labeled as such.
+- `production_editor` packages page audio (or chapter MP3s for reflowable books)
+  for the web reader and proves the EPUB and PDF contain no performance tags.
+  The reader may stream audio; it must never autoplay, and a missing file cannot
+  block reading.
+- `reader_advocate` listens in a fresh session. Casting and publish decisions
+  remain the author's. See `docs/narration.md` and `.studio/skills/read-aloud/`.
 
 ## Quality and creative authority
 
