@@ -1,5 +1,13 @@
 # Workspace handoff
 
+## Removed Mila books and Nell and the Pocket-Sized Storm, 2026-11-26
+
+- Per the author's request, removed and deleted *Mila and the Missing Moon*, *Mila y la luna perdida*, and *Nell and the Pocket-Sized Storm*:
+  - Deleted source workspaces `willow-lane/` and `little-weather/`.
+  - Deleted public artifacts `publications/{mila-and-the-missing-moon,mila-y-la-luna-perdida,nell-and-the-pocket-sized-storm}.{epub,pdf}` and `publications/covers/{mila-and-the-missing-moon,mila-y-la-luna-perdida,nell-and-the-pocket-sized-storm}.jpg`.
+  - Updated `publications/manifest.json` (leaving `the-ledger-of-ashes`, `the-quest-of-the-golden-garbanzo`, and `the-hot-potato-of-corporate-castle`), `site/index.html` (removed the three catalog cards and updated the static count to `3 books`), and `tests/test_catalog.py`.
+- Published to `origin/main` per author authorization.
+
 ## Illustrated edition retrofit for The Quest of the Golden Garbanzo, 2026-11-25
 
 - Added 8 interior illustrations (Chapters 1, 3, 4, 5, 6, 7, 9, 10) plus a new illustrated cover to *The Quest of the Golden Garbanzo* using **4 total image-generation calls** (`ref-cast.png`, two 2 × 2 story grids `sheet-01.png`/`sheet-02.png` cleanly cropped into `ill-0001.png`–`ill-0008.png`, and `cover-art.png`) per the author's quota-saving preference. Source manuscript prose is untouched.

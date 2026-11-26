@@ -37,13 +37,13 @@ spec = importlib.util.spec_from_file_location("build_catalog", MODULE_PATH)
 bc = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(bc)
 
-# The initial release set. Tests treat these as a *subset* so new editions can
+# The selected release set. Tests treat these as a *subset* so new editions can
 # be added to the manifest without editing tests; everything else is derived
 # from publications/manifest.json itself.
-INITIAL_IDS = {
-    "nell-and-the-pocket-sized-storm",
-    "mila-and-the-missing-moon",
-    "mila-y-la-luna-perdida",
+SELECTED_IDS = {
+    "the-ledger-of-ashes",
+    "the-quest-of-the-golden-garbanzo",
+    "the-hot-potato-of-corporate-castle",
 }
 
 
@@ -116,9 +116,9 @@ class RealRepoTests(unittest.TestCase):
     def test_manifest_ids_are_the_selected_editions(self):
         ids = {b["id"] for b in self.books}
         self.assertTrue(ids, "manifest lists no books")
-        # The initial release set must still be present; the catalog may grow
+        # The selected release set must be present; the catalog may grow
         # without test edits, but never lose a selected edition silently.
-        self.assertTrue(INITIAL_IDS <= ids, f"missing selected editions: {INITIAL_IDS - ids}")
+        self.assertTrue(SELECTED_IDS <= ids, f"missing selected editions: {SELECTED_IDS - ids}")
 
     def test_languages_and_layouts_are_labeled_honestly(self):
         for book in self.books:
@@ -126,9 +126,9 @@ class RealRepoTests(unittest.TestCase):
             self.assertIn(book["layout"], ("fixed", "reflowable"), f"{book['id']}: unexpected layout")
         by_id = {b["id"]: b for b in self.books}
         for book_id, lang, layout in (
-            ("nell-and-the-pocket-sized-storm", "en", "fixed"),
-            ("mila-and-the-missing-moon", "en", "reflowable"),
-            ("mila-y-la-luna-perdida", "es", "reflowable"),
+            ("the-ledger-of-ashes", "en", "reflowable"),
+            ("the-quest-of-the-golden-garbanzo", "en", "reflowable"),
+            ("the-hot-potato-of-corporate-castle", "en", "reflowable"),
         ):
             if book_id in by_id:
                 self.assertEqual(by_id[book_id]["language"], lang, book_id)
