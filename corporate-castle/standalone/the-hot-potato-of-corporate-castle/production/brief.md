@@ -8,4 +8,7 @@
   - `publications/the-hot-potato-of-corporate-castle.pdf` (`169678` bytes, SHA-256 `c30a4181f3779d1802bc573378035673106162b0f36880ae85364af01afe160f`, 4 pages, 6×9 reading trim)
   - `publications/covers/the-hot-potato-of-corporate-castle.jpg` (`66971` bytes, SHA-256 `c666c4f71a3f751987e2f5a4f372d6d441abf03df19540d6f4c0f0d87cab91cd`, 720×1080 typographic cover)
 - **Visual proof coverage**: Cover (`page-1.png`) and body pages (`page-2.png`–`page-4.png`) rendered at 120 dpi via `pdftoppm` and visually inspected; zero orphan lines, zero clipped text, zero performance tags.
-- **Author / rights & privacy (`DEC-CC-0004`)**: Owned by the human author; strictly fictionalized. Staged locally in `publications/`, `site/index.html`, and `_site/`; Git commit/push to `origin/main` held pending explicit author go-ahead because unrelated local changes also exist in the working tree.
+- **Audiobook (Prologue Preview)**:
+  - Rendered locally with **Fish Audio Drama 3** (`audio.cpp` Vulkan, synthetic `af_heart` narrator reference) across 11 word-exact Prologue segments (seed 7, plus seed 11 retakes for `u02` and `u10`; 0 flagged, 0 word errors, 0.0s runaway pauses, mean 155.6 wpm).
+  - Assembled to `site/audio/the-hot-potato-of-corporate-castle/chapter-01.mp3` (`5:05`, `304.878s`, `3,659,660` bytes, mono 24 kHz 96 kbps CBR MP3) + `chapters.json` and `site/audiobook-the-hot-potato-of-corporate-castle.html` (with `"Built with Fish Audio"` attribution and synthetic narration disclosure; EPUB and PDF verified tag-free).
+- **Author / rights & privacy (`DEC-CC-0004`)**: Owned by the human author; strictly fictionalized. Published live on GitHub Pages (`origin/main`).

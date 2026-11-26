@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "book": "the-hot-potato-of-corporate-castle",
+  "generated": "2026-11-26",
+  "status": "Coverage, durations, hashes, and 11-segment faster-whisper ASR checked (2 retakes at seed 11 for u02 and u10; 0 flagged, 0 word errors, mean 155.6 wpm); human listening review pending.",
+  "engine": {
+    "name": "audio.cpp",
+    "commit": "04ce54d0d22b29f2982cb6b931331d00c98a1d91",
+    "cli": "/home/jgarcairaza/.local/bin/audiocpp_cli",
+    "backend": "vulkan",
+    "model": "drama-3-backbone-8bit-experts-Q4_K_S.gguf",
+    "model_sha256": "05af716baf78e7c20863b9ccebb3ebdeca9607dd3ea7d0b72c35079e675b212b",
+    "model_license": "Fish Audio Community License v1.0"
+  },
+  "settings": {
+    "seed": 11,
+    "text_chunk_size": 4000,
+    "max_tokens": 1400,
+    "context_length": 4096,
+    "threads": 8,
+    "direction": "[clear, poised, dryly witty storyteller voice]"
+  },
+  "voice": "synthetic American narrator (Kokoro af_heart reference, Drama 3 rendering)",
+  "voice_reference": {
+    "mode": "single_voice",
+    "cast": "/home/jgarcairaza/code/books/corporate-castle/standalone/the-hot-potato-of-corporate-castle/production/narration/cast.json",
+    "voice": "af_heart",
+    "reference": "/home/jgarcairaza/code/books/corporate-castle/standalone/the-hot-potato-of-corporate-castle/production/narration/cast/narrator.wav",
+    "reference_sha256": "75e8edd35b2f86d0309b3aa6925699603e1f562f0934194e9a949874688fdec2"
+  },
+  "format": "mono 24000 Hz 96k CBR MP3",
+  "total_segments": 11,
+  "total_seconds": 304.878,
+  "total_bytes": 3659660,
+  "asr_flagged_segments": 0,
+  "public_page": "site/audiobook-the-hot-potato-of-corporate-castle.html",
+  "audio_dir": "site/audio/the-hot-potato-of-corporate-castle",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Prologue: The Hot Potato of Corporate Castle",
+      "file": "chapter-01.mp3",
+      "seconds": 304.878,
+      "bytes": 3659660,
+      "sha256": "f829e50cf387d7187c26fb08b171a9a4692146fabfa351fed67eb4e6cb5f5ba3",
+      "source": "manuscript/000-prologue-the-hot-potato-of-corporate-castle.md",
+      "source_sha256": "e90e98259a5bc665f082af6df8597f61b5a631d21fb30105a7d7be73e2886a4d",
+      "segments": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    }
+  ]
+}

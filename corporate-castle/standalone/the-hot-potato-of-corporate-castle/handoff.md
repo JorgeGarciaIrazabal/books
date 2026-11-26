@@ -2,21 +2,21 @@
 
 - **Date**: 2026-11-26
 - **Role**: `studio_director`
-- **Canon revision**: `3` (`corporate-castle/universe.json`; includes `DEC-CC-0007` honoring Liability's branch of Deep Magic and contrasting Lois's personal failure with Sir Leo).
+- **Canon revision**: `3` (`corporate-castle/universe.json`).
 
 ## Completed work
-- Built, visually proofed, and published the **Prologue Preview Edition** (strictly `manuscript/000-prologue-the-hot-potato-of-corporate-castle.md`, excluding draft Chapter 1):
-  - Created `production/build_edition.py` generating a 720×1080 typographic cover, a 4-page 6×9 reading PDF, and a reflowable EPUB 3 with word-exact prose verification.
-  - Visually inspected rendered cover and PDF pages (tightened body leading/margins to eliminate a two-line Page 5 widow; centered the `PROLOGUE PREVIEW` badge and title spacing).
-  - Copied verified exports to `publications/the-hot-potato-of-corporate-castle.{epub,pdf}` and `publications/covers/the-hot-potato-of-corporate-castle.jpg`.
-  - Registered the edition in `publications/manifest.json` and added its catalog card to `site/index.html` (`6 books`).
-  - Rebuilt `_site/` via `tools/build_catalog.py build` and ran `tests/test_catalog.py` + `tools/studio.py check`.
-- Updated `manuscript/001-the-reluctant-steward.md` (still draft/unpublished) with live on-page Squire Deep Magic moments for Victoria and Riley and `DEC-CC-0007` Liability respect.
+- Published **Prologue Preview Edition** (EPUB 3, 4-page PDF, 720×1080 cover) live to GitHub Pages (`91712e2`).
+- Rendered, ASR-checked, retaken, assembled, and published **Prologue Preview Audiobook** (strictly Prologue only, excluding draft Chapter 1):
+  - Engine: local **Fish Audio Drama 3** (`audio.cpp` Vulkan, synthetic `af_heart` narrator reference).
+  - 11 word-exact segments (`production/narration/segments.json`, `script.md`, `cast.json`, `cast/narrator.wav`, `render.json`, `notes.md`).
+  - Faster-whisper ASR check caught two stumbles (`u02` *"full-blown"*, `u10` *"Volun-telling"*) — retaken cleanly at seed 11 -> final check: **0 flagged, 0 word errors, 0.0s runaway pauses, mean 155.6 wpm**.
+  - Assembled `site/audio/the-hot-potato-of-corporate-castle/chapter-01.mp3` (`5:05`, `3,659,660` bytes) + `chapters.json`, created `site/audiobook-the-hot-potato-of-corporate-castle.html`, and linked from `site/index.html`.
+  - Validated EPUB/PDF tag exclusion (`tools/narration.py validate`), rebuilt `_site/`, passed all 60 unit tests, and pushed live to `origin/main`.
 
 ## Remaining open items
-- Confirm whether the author wants to commit and push to GitHub Pages (`origin/main`) now (and whether to push only Corporate Castle or also include existing uncommitted local edits such as the Golden Garbanzo illustrated update).
+- Human listening review of the synthetic Prologue audio (mechanical ASR/pause checks pass; warmth/pronunciation of proper nouns like `Sarai` and `Okta` still benefit from human ear).
 - Author feedback on draft Chapter 1 (`manuscript/001-the-reluctant-steward.md`) before drafting Chapter 2 (*The Fracture*).
 - Final title selection and later reexamination of Tab 3 back-half drafts (Chapters 5+).
 
 ## Next concrete action
-Await author go-ahead to commit/push the Prologue Preview to GitHub Pages, or continue refining Chapter 1 and drafting Chapter 2.
+Review draft Chapter 1 with the author, incorporate any notes, and draft **Chapter 2: The Fracture** (or retake any Prologue audio segment if human listening catches a pronunciation tweak).

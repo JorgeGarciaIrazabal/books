@@ -1,14 +1,71 @@
-# Narration script
+# Narration script — The Hot Potato of Corporate Castle (Prologue Preview)
 
-Read-aloud layer for **The Hot Potato of Corporate Castle**. This file is not the story and never feeds the
-EPUB or PDF. Tags are performance directions; the words must match the export
-exactly. See `docs/narration.md`.
+Separate read-aloud layer. Never feeds the manuscript, EPUB, or PDF.
 
-Replace this example with one fenced block per story page once the text is final.
-
-## Page 1
+## Chapter 1 · Segment 1 (Unit 01)
 
 ```text
-<|speaker:0|> [warm, unhurried storyteller] Narrator reads every unquoted word.
-<|speaker:1|> [quiet, certain] "Characters speak only their own quoted lines."
+<|speaker:0|> [clear, poised, dryly witty storyteller voice] Prologue: The Hot Potato of Corporate Castle
+
+Corporate Castle was a bustling, glass-walled tech kingdom powered by endless Slack-runes, glowing Zoom lairs, and the quiet hum of The Equity Vault. High above the courtyard rose two very different spires. On one side stood the Tower of Vibes, a pastel fortress draped in cashmere and buzzwords, home to the Courtiers of Optics, the Human Capital partners whose primary craft was enabling and pampering the High Lords who ruled the castle’s four fiefdoms: Engineering, Product, Sales, and Customer Service.
+```
+
+## Chapter 1 · Segment 2 (Unit 02)
+
+```text
+<|speaker:0|> [clear, poised, dryly witty storyteller voice] Across the moat loomed Liability Tower, the austere stronghold where the Counsel of Liability practiced Deep Magic to insulate the realm from subpoenas and regulatory fire. Far beneath the pastel lounges and ring lights of the Tower of Vibes sat the Employee Relations Watch. They were known more simply as the ER Watch, which felt fitting enough given that they spent their days triaging workplace escalations before they bled into full-blown lawsuits.
+```
+
+## Chapter 1 · Segment 3 (Unit 03)
+
+```text
+<|speaker:0|> [clear, poised, dryly witty storyteller voice] While the Courtiers of Optics floated through the upper floors misting High Lord crises with Illusion Magic and lavender-scented jargon, the Watch worked in the ER Dungeon, using their natural gift for Deep Magic to do the actual, unglamorous work of keeping the castle from burning to the ground. ER was a thankless craft, yet each had chosen to keep faith with the spirit of Deep Magic, refusing to kneel to the theater of Vibes.
+```
+
+## Chapter 1 · Segment 4 (Unit 04)
+
+```text
+<|speaker:0|> [clear, poised, dryly witty storyteller voice] At the heart of the dungeon was Marissa, Royal Inquisitor, a sharp, licensed practitioner of Deep Magic who owned the castle’s highest-stakes Formal Inquiries into Crimes Against the Codex: discrimination claims, harassment complaints, and Crown-Level landmines that could flatten the skyline, every Scroll of Findings locked safely inside the ER Vault.
+```
+
+## Chapter 1 · Segment 5 (Unit 05)
+
+```text
+<|speaker:0|> [clear, poised, dryly witty storyteller voice] She had also somehow been conscripted into serving as the reluctant translator and referee between Liability Tower and the Courtiers of Optics whenever a High Lord decided to execute a messy reorg with Headcount Pruning, or needed to be Okta Excommunicated himself. Beside her sat Sarai, Captain of the ER Watch. Sarai led the ER Squires, Riley and Victoria, the valiant, overworked crew who held the line between trigger-happy Warlords and frontline employees, fielding Trials by PIP, Writs of Warning, and day-to-day workplace skirmishes.
+```
+
+## Chapter 1 · Segment 6 (Unit 06)
+
+```text
+<|speaker:0|> [clear, poised, dryly witty storyteller voice] For years, Marissa and Sarai had reported to High Lady Lexi of Vibe Operations. Lexi had risen from the ER Watch herself, choosing the High Lord path as the booming tech kingdom piled one org after another onto her crest until her ER title quietly vanished altogether. Yet she never lost her respect for Deep Magic, keeping a protective ward between the ER Dungeon and the upper floors while Marissa and Sarai carried the Watch below.
+```
+
+## Chapter 1 · Segment 7 (Unit 07)
+
+```text
+<|speaker:0|> [clear, poised, dryly witty storyteller voice] As the years passed, however, standing that close to the throne proved intolerable to anyone with even a spark of the gift. Disgusted at last, Lexi decided she had served the Court long enough. One autumn evening, knowing the Courtiers of Optics could never be trusted once her ward fell, she slipped across the moat to Doctor Lois, Grand Archivist of Liability, and secured a private Offline Oath: Lois would shelter the Watch until the dust settled.
+```
+
+## Chapter 1 · Segment 8 (Unit 08)
+
+```text
+<|speaker:0|> [clear, poised, dryly witty storyteller voice] From there, Lexi descended to the ER Dungeon one last time to say farewell to Marissa and Sarai. The next morning, she pulled off the greatest feat of Illusion Magic the Tower had ever seen, quitting cleanly and vanishing into thin air without so much as a sparkle-dusted Slack-rune. The moment her ward collapsed, panic rippled through the Tower of Vibes.
+```
+
+## Chapter 1 · Segment 9 (Unit 09)
+
+```text
+<|speaker:0|> [clear, poised, dryly witty storyteller voice] Steeped in Illusion Magic and High Lord pampering, not a single Courtier spoke a word of Deep Magic, let alone dared descend into the ER Dungeon to hold the hot potato of the ER Watch. Peering out from the shadows, Lord Sterling, Grand Chancellor of Human Capital, watched the chaos unfold. Having always felt that the ER craft smelled suspiciously like Liability anyway, he summoned Doctor Lois to his Zoom lair.
+```
+
+## Chapter 1 · Segment 10 (Unit 10)
+
+```text
+<|speaker:0|> [clear, poised, dryly witty storyteller voice] Caught between her Offline Oath to Lexi and a Royal Volun-telling from Sterling, Lois was in no position to refuse. Either way, she expected a brief, orderly loan of a quarter at most. Sterling did not waste a breath. He promptly rebranded the punt as a "temporary cross-tower experiment" and casually kicked the entire ER Watch across the moat to Liability Tower without sending a single gold coin of budget.
+```
+
+## Chapter 1 · Segment 11 (Unit 11)
+
+```text
+<|speaker:0|> [clear, poised, dryly witty storyteller voice] Left to fend for themselves, Marissa and Sarai found an abandoned wooden barge moored outside Liability Tower’s drawbridge and moved the Watch aboard without a shred of help from Lois. It was supposed to be an interim measure. Instead, it was the first crack in the foundation of Corporate Castle.
 ```
