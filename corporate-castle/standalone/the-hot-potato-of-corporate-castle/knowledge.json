@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "disclosures": [
+    {
+      "id": "DISC-0001",
+      "topic": "Doctor Lois's private Offline Oath to High Lady Lexi",
+      "learned_by": [
+        "High Lady Lexi",
+        "Doctor Lois",
+        "Lord Sterling",
+        "Reader"
+      ],
+      "when": "SC-0000",
+      "note": "Revealed to the reader in the Prologue; Marissa sees the unfunded punt's effects rather than the private corridor bargain."
+    },
+    {
+      "id": "DISC-0002",
+      "topic": "Doctor Lois's Deep Magic fails when pointing upward at a High Lord",
+      "learned_by": [
+        "Marissa",
+        "Doctor Lois",
+        "Reader"
+      ],
+      "when": "SC-0002 (planned — The Fracture)",
+      "note": "Must NOT be exposed before Ch 1 establishes genuine Marissa–Lois Deep Magic sync on ordinary risk."
+    },
+    {
+      "id": "DISC-0003",
+      "topic": "Baroness Orla's plan to rebrand Sarai's seat into Chief Steward of ER and layer Marissa",
+      "learned_by": [
+        "Lord Sterling",
+        "Baroness Orla",
+        "Doctor Lois",
+        "Reader"
+      ],
+      "when": "SC-0003 (planned — Cashmere Coup cutaway)",
+      "note": "Explicitly withheld from Marissa until Orla drops Ziva's start date at minute 28 of a 1:1 in SC-0004."
+    }
+  ]
+}

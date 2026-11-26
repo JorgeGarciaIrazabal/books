@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "events": [
+    {
+      "id": "EVT-0001",
+      "story_time": "Several years pre-Prologue",
+      "status": "accepted",
+      "event": "High Lady Lexi rises from the ER Watch into High Lord governance under Vibe Operations, maintaining a protective ward over the ER Dungeon while Marissa and Sarai carry daily ER Watch operations.",
+      "entities": [
+        "CHAR-0001",
+        "CHAR-0003",
+        "CHAR-0004"
+      ],
+      "provenance": "Tab 4 Locked Prologue (`FACT-0011`)"
+    },
+    {
+      "id": "EVT-0002",
+      "story_time": "Prologue — Autumn evening",
+      "status": "accepted",
+      "event": "Disgusted at last by upper court politics, High Lady Lexi crosses the moat to Liability Tower, secures an Offline Oath from Doctor Lois to shelter the ER Watch if the Courtiers panic, and descends to the ER Dungeon to say goodbye to Marissa and Sarai.",
+      "entities": [
+        "CHAR-0001",
+        "CHAR-0002",
+        "CHAR-0003",
+        "CHAR-0004"
+      ],
+      "provenance": "Prologue (`FACT-0012`, `DEC-CC-0005`)"
+    },
+    {
+      "id": "EVT-0003",
+      "story_time": "Prologue — Next morning",
+      "status": "accepted",
+      "event": "High Lady Lexi quits cleanly and vanishes without leaving the upper floors a farewell Slack-rune. Her protective ward over the ER Dungeon collapses, triggering panic in the Tower of Vibes.",
+      "entities": [
+        "CHAR-0004"
+      ],
+      "provenance": "Tab 4 Locked Prologue (`FACT-0012`)"
+    },
+    {
+      "id": "EVT-0004",
+      "story_time": "Prologue — Immediately following Lexi's exit",
+      "status": "accepted",
+      "event": "In the leadership vacuum left by Lexi, Doctor Lois is caught between her Offline Oath and a Royal Volun-telling from Lord Sterling; Sterling rebrands the punt as a 'temporary cross-tower experiment' and kicks the ER Watch across the moat to Liability Tower with zero gold coin of budget. Left to fend for themselves, Marissa and Sarai find an abandoned wooden barge moored outside Liability Tower's drawbridge and move the Watch aboard without Lois's help.",
+      "entities": [
+        "CHAR-0001",
+        "CHAR-0002",
+        "CHAR-0003",
+        "CHAR-0005",
+        "CHAR-0009",
+        "CHAR-0010"
+      ],
+      "provenance": "Prologue (`FACT-0013`)"
+    }
+  ]
+}

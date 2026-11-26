@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "the-hot-potato-of-corporate-castle",
+  "universe": "corporate-castle",
+  "series": "standalone",
+  "title": "The Hot Potato of Corporate Castle",
+  "kind": "fiction",
+  "stage": "sample",
+  "language": "en",
+  "chapters": [
+    "manuscript/000-prologue-the-hot-potato-of-corporate-castle.md",
+    "manuscript/001-the-reluctant-steward.md"
+  ]
+}

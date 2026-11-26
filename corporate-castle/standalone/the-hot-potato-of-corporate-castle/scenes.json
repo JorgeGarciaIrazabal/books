@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "scenes": [
+    {
+      "id": "SC-0000",
+      "chapter": "manuscript/000-prologue-the-hot-potato-of-corporate-castle.md",
+      "status": "drafted-locked",
+      "pov": "Third-person omniscient frame",
+      "place": "Corporate Castle (Tower of Vibes, Liability Tower, ER Dungeon)",
+      "story_time": "Autumn — Prologue",
+      "incoming_state": "High Lady Lexi maintains a protective ward over the ER Dungeon while Marissa and Sarai carry daily ER Watch operations.",
+      "turn": "Disgusted at last by upper court politics, Lexi secures an Offline Oath from Doctor Lois, says farewell to Marissa and Sarai, and vanishes, leaving a leadership vacuum in Vibes. Caught between her Offline Oath and a Royal Volun-telling from Sterling, Lois cannot refuse; Sterling kicks the unfunded ER Watch across the moat to Liability Tower, where Marissa and Sarai find an abandoned wooden barge moored outside Liability Tower's drawbridge and move the Watch aboard without Lois's help.",
+      "outgoing_state": "ER Watch is moored on an abandoned wooden barge outside Liability Tower's drawbridge with zero budget."
+    },
+    {
+      "id": "SC-0001",
+      "chapter": "manuscript/001-the-reluctant-steward.md",
+      "status": "drafted-sample",
+      "pov": "Marissa + comedic cutaways (Tower of Vibes: Brittany/Sienna/Orla; Liability Tower: Lois/Leo)",
+      "place": "Abandoned wooden barge / Zoom lairs / Tower of Vibes / Liability Tower",
+      "story_time": "October (early post-punt, two-week stretch)",
+      "incoming_state": "ER Watch is newly settled on the abandoned wooden barge outside Liability Tower's drawbridge with zero budget; Courtiers of Optics still flood Marissa with fire drills.",
+      "turn": "Marissa and Doctor Lois lock shields in seamless Deep Magic sync to block Brittany's retaliatory firing pitch (zero Cold Alchemy); comedic cutaways reveal Orla's cashmere arrival in Vibes and Lois intentionally keeping the Watch 'packed by the door' on the leaking barge; Sarai takes the Courtier queue so Marissa can experience the oxygen of her calling in a Product Formal Inquiry (Velvet Snare, Credibility Scales, Ancient Precedent, Vault-Sealing, Lois signing off in 12 minutes); Sarai then informs Marissa she is going out on Protected Exile for 'only three weeks.'",
+      "outgoing_state": "Marissa genuinely respects Lois's crisp rigor on ordinary risk, feels why Deep Magic is her calling, and steps up out of loyalty to cover the barge while Sarai leaves for Protected Exile."
+    },
+    {
+      "id": "SC-0002",
+      "chapter": "manuscript/002-the-fracture.md",
+      "status": "planned",
+      "pov": "Marissa + comedic cutaways (Lois, Sterling, Vibes)",
+      "place": "ER Dungeon / Liability Tower Zoom lairs",
+      "story_time": "Autumn through late Q4 (three-month stretch)",
+      "incoming_state": "Sarai goes out on Protected Exile and Marissa absorbs two full-time seats while Lois refuses to fight Sterling for contractor gold coin.",
+      "turn": "Marissa completes an airtight Formal Inquiry proving a High Lord is bullying their fiefdom and recommends Okta Excommunication; Lois does not dispute the evidence but folds to High Table politics and pressures Marissa to downgrade to hollow 'coaching.'",
+      "outgoing_state": "Marissa's respect for Doctor Lois collapses completely; Lois loses all invisible authority over Marissa."
+    },
+    {
+      "id": "SC-0003",
+      "chapter": "manuscript/003-the-mirror-shield-and-the-cashmere-coup.md",
+      "status": "planned",
+      "pov": "Marissa + comedic cutaways (Lois, Orla, Sterling)",
+      "place": "Zoom lairs across ER Dungeon, Liability Tower, and Tower of Vibes",
+      "story_time": "Late autumn (Sarai's return)",
+      "incoming_state": "Sarai returns from Protected Exile and resigns; Lois must break the news to Marissa and ship the Watch back to the Tower of Vibes.",
+      "turn": "Lois fishes and deploys botched Illusion Magic ('Interim Captain'); Marissa raises The Mirror Shield, asks whether Orla is backfilling Sarai, refuses an immediate call with Orla, and hangs up on Lois. Afterward, before speaking with Orla, Marissa sends a calm severance scroll request offering an orderly transition as a peace offering. In a cutaway war-room scene, Sterling rejects it and approves Orla's zero-gold-coin Cashmere Coup to pull ER back to Vibes and quietly layer Marissa before Orla's call with Marissa.",
+      "outgoing_state": "Peace offering rejected; ER Watch returns to the Tower of Vibes; Orla claims the Squires and leaves Riley exposed."
+    },
+    {
+      "id": "SC-0004",
+      "chapter": "manuscript/004-the-silent-chess-match.md",
+      "status": "planned",
+      "pov": "Marissa + comedic cutaways (Orla, Lois, Sterling, Leo)",
+      "place": "Home office / Tower of Vibes / Liability Tower",
+      "story_time": "Late November",
+      "incoming_state": "Orla runs secret interviews for Ziva, drops the Chief Steward layering news with ninety seconds left in a 1:1, and Marissa cites Ancient Precedent on prior layering severance scrolls.",
+      "turn": "Lois hides behind Orla as a 'velvet human shield' and ignores Sir Leo's candid warning; in Monday's 1:1, Marissa shatters Orla's Buzzword Hypnosis and ignores her panicked offer of Lois's org chart; Lois decrees 'do not poke the bear, they always stay.'",
+      "outgoing_state": "Truce is dead; Marissa quietly plays her side of the board."
+    },
+    {
+      "id": "SC-0005",
+      "chapter": "manuscript/005-back-half-placeholder.md",
+      "status": "parked-for-author-review",
+      "pov": "TBD",
+      "place": "Corporate Castle",
+      "story_time": "December onward (unfinalized)",
+      "incoming_state": "Earlier Tab 3 drafts (Dec 17 vest, Leo leave, Ziva vetting, Jan collapse, March Reckoning, April Boomerang Retainer) preserved in research/notes.md.",
+      "turn": "Parked until the author reexamines the later chapters.",
+      "outgoing_state": "TBD"
+    }
+  ]
+}

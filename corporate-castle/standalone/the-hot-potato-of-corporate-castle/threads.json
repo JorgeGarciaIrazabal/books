@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "threads": [
+    {
+      "id": "THR-0001",
+      "name": "The Hot Potato of the ER Watch",
+      "setup": "SC-0000",
+      "payoff": "TBD (Back half parked for author review)",
+      "status": "open",
+      "note": "ER Watch punted from Vibes -> Liability (unfunded) -> back to Vibes (layered under Chief Steward)."
+    },
+    {
+      "id": "THR-0002",
+      "name": "Marissa and Doctor Lois: Sync to Fracture to Mirror Shield",
+      "setup": "SC-0001",
+      "payoff": "SC-0003 (and later back-half reckoning)",
+      "status": "open",
+      "note": "Seamless Deep Magic sync on ordinary risk (Ch 1) -> shattered by Bullying High Lord coaching fold (Ch 2) -> Mirror Shield defeat during Sarai Resignation 1:1 (Ch 3)."
+    },
+    {
+      "id": "THR-0003",
+      "name": "The Peace Offering Severance Scroll & Ancient Precedent",
+      "setup": "SC-0003",
+      "payoff": "SC-0004 (and later back-half reckoning)",
+      "status": "open",
+      "note": "Marissa offers an orderly transition for a severance scroll after Lois's 1:1 and before her call with Orla; leadership rejects it, then rejects her Ancient Precedent layering request in Ch 4."
+    },
+    {
+      "id": "THR-0004",
+      "name": "The Two-Way Law of Free Will & The Equity Vault",
+      "setup": "SC-0001",
+      "payoff": "TBD (Back half parked for author review)",
+      "status": "open",
+      "note": "Quiet realization dialed back at Ch 1 ending (per Tab 4 checklist); Sterling and Lois assume The Equity Vault traps Marissa indefinitely."
+    }
+  ]
+}
