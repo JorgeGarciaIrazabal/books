@@ -1,9 +1,27 @@
 # Handoff — The Quest of the Golden Garbanzo
 
 ## Current objective
-Updated the 10-chapter audiobook for *The Quest of the Golden Garbanzo* (`stage: "released"`) from Kokoro-82M ONNX to **Fish Audio Drama 3** (local `audio.cpp` `04ce54d0d22b` on Vulkan via `tools/drama3.py`), keeping the manuscript, EPUB 3, PDF, and cover unchanged.
+Published the illustrated edition of *The Quest of the Golden Garbanzo* (`stage: "released"`) to `origin/main` and GitHub Pages: 8 interior illustrations at the book's most pivotal moments plus a new illustrated cover, rebuilt 36-page 6 × 9 in PDF, reflowable EPUB 3, and 720 × 1080 cover JPEG with zero changes to manuscript prose.
 
-## Completed and changed paths (2026-11-23 Drama 3 audiobook update)
+## Completed and changed paths (2026-11-25 Illustrated edition retrofit)
+- **Quota-efficient illustration assets (`assets/illustrations/`, 4 total image-generator calls)**:
+  - `assets/illustrations/ref-cast.png` (1376 × 768 cast/prop reference sheet; duplicate Clara figure masked cleanly onto cream paper).
+  - `assets/illustrations/sheet-01.png` & `assets/illustrations/sheet-02.png` (two 1264 × 848 2 × 2 grids, 1 generation call each referencing `ref-cast.png`), cropped cleanly into `ill-0001.png`–`ill-0008.png` (`625 × 417` / `626 × 418`, Ch 1, 3, 4, 5, 6, 7, 9, 10; tiny `"ZERO"` brochure text cleaned from `ill-0004.png`).
+  - `assets/illustrations/cover-art.png` (848 × 1264 portrait cover artwork, 1 single call referencing `ref-cast.png`).
+- **Design records & edition builder**:
+  - `production/visual-style.md`, `production/illustration-plan.json` (hashes, pixel sizes, placement, disclosure boundaries, alt text, PDF page numbers), `production/brief.md`, `book.json` (`pages: 36`, `illustrated: true`, `interior_illustrations: 8`).
+  - `production/build_edition.py` — updated with cross-platform Linux/Windows fonts, illustrated cover composition, JPEG-compressed framed PDF illustrations (`KeepTogether` with captions), and semantic `<figure class="story-art">` EPUB 3 embedding with strict prose-fidelity and alt-text verification.
+- **Updated publication artifacts (`publications/` & `site/index.html`, published to `origin/main`)**:
+  - `publications/the-quest-of-the-golden-garbanzo.epub` (`1,032,927` bytes, sha256 `09bb23c41e460b567cbbae35558bbc06b1c4dc5d9562c73d928b11fbc1cd9c0d`, 8 embedded illustrations + illustrated cover).
+  - `publications/the-quest-of-the-golden-garbanzo.pdf` (`1,480,469` bytes, 36 pages, sha256 `e2e626dc64f16659fb85533c9ffbcf39e182dc83e77ae2b35444b6645658eb19`, cover on p. 1, interior illustrations on pp. 5, 12, 16, 19, 22, 25, 32, 36).
+  - `publications/covers/the-quest-of-the-golden-garbanzo.jpg` (`279,321` bytes, 720 × 1080, sha256 `20745a5a9aa6642432cdc4e10057b65f4b56876c6e9af23bebc39ad3e46814f1`).
+  - `publications/manifest.json` & `site/index.html` updated (file sizes, hashes, Illustrated badge, cover alt text).
+- **Verification**:
+  - Visual inspection covered `ref-cast.png`, `cover-art.png`, both 2 × 2 sheets, all 8 cropped interior panels (`ill-0001.png`–`ill-0008.png`), and all 9 picture-bearing PDF pages rendered at 110 dpi via `pdftoppm` (`p. 1` cover twice after typography spacing polish, plus `pp. 5, 12, 16, 19, 22, 25, 32, 36`). Verified consistent character identities, sleek costume-free Poki (`FACT-0010`), non-cooking Jorge (`FACT-0009`), disclosure timing (no unicorn sticker on Garbanzo in Ch 1/3, zero confetti in Ch 10), and zero layout collisions.
+  - `validate_plan.py --check-assets`, `tools/narration.py validate`, `tools/build_catalog.py build` (`_site/`), and `python3 -m unittest discover -s tests -v` (60/60 tests) all passed.
+  - Limit: visual proofing was done by the same coordinator session (no separate `illustration_reviewer` subagent session), and browser visual inspection of the EPUB reader was not run yet.
+
+## Completed and changed paths (2026-11-23 Drama 3 audiobook update, published in `f1dd633`)
 - **Narration layer (`garbanzo-family/standalone/the-quest-of-the-golden-garbanzo/production/`)**:
   - `production/build_audiobook.py` — updated to invoke `tools/drama3.py` (Fish Audio Drama 3) instead of Kokoro-82M ONNX.
   - `production/brief.md` — updated release checklist entry for Fish Audio Drama 3.

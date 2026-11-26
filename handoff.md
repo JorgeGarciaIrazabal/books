@@ -1,5 +1,13 @@
 # Workspace handoff
 
+## Illustrated edition retrofit for The Quest of the Golden Garbanzo, 2026-11-25
+
+- Added 8 interior illustrations (Chapters 1, 3, 4, 5, 6, 7, 9, 10) plus a new illustrated cover to *The Quest of the Golden Garbanzo* using **4 total image-generation calls** (`ref-cast.png`, two 2 × 2 story grids `sheet-01.png`/`sheet-02.png` cleanly cropped into `ill-0001.png`–`ill-0008.png`, and `cover-art.png`) per the author's quota-saving preference. Source manuscript prose is untouched.
+- Updated `garbanzo-family/standalone/the-quest-of-the-golden-garbanzo/{assets/illustrations/**,production/visual-style.md,production/illustration-plan.json,production/brief.md,production/build_edition.py,book.json,handoff.md}`, `publications/{the-quest-of-the-golden-garbanzo.epub,the-quest-of-the-golden-garbanzo.pdf,covers/the-quest-of-the-golden-garbanzo.jpg,manifest.json}`, and `site/index.html`.
+- Visually inspected every individual cropped asset and all 9 picture-bearing PDF pages rendered via `pdftoppm` (`p. 1` cover + `pp. 5, 12, 16, 19, 22, 25, 32, 36`). Passed `validate_plan.py --check-assets`, `tools/narration.py validate`, `tools/build_catalog.py build`, and all 60 unit tests. Same-session visual review limit disclosed; published to origin/main per author authorization.
+- Next action: preview the illustrated edition locally (`python3 -m http.server 8000 --directory _site`) and authorize commit/push when ready.
+
+
 ## Default Drama 3 TTS workflow and Golden Garbanzo audiobook update, 2026-11-23
 
 - The author requested updating the studio workflow so **Fish Audio Drama 3** is used as the default TTS engine for book audio on this computer, and then updating the audios for *The Quest of the Golden Garbanzo*.

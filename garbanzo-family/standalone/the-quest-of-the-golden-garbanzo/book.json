@@ -21,12 +21,14 @@
   ],
   "word_count": 8255,
   "reading_edition": {
-    "pages": 33,
-    "story_pages": 31,
+    "pages": 36,
+    "story_pages": 33,
+    "illustrated": true,
+    "interior_illustrations": 8,
     "trim_inches": [
       6,
       9
     ],
-    "words_per_page_estimate": 266
+    "words_per_page_estimate": 250
   }
 }

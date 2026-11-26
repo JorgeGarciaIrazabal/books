@@ -1,6 +1,456 @@
 {
   "schema_version": 1,
-  "chapter_paths": [],
+  "chapter_paths": [
+    "manuscript/001-the-golden-chickpea-goes-cold.md",
+    "manuscript/002-the-train-home-and-the-crayon-warning.md",
+    "manuscript/003-the-kitchen-table-deal.md",
+    "manuscript/004-claras-rules-and-a-silver-tail.md",
+    "manuscript/005-the-great-spanish-house-trap.md",
+    "manuscript/006-the-valladolid-bounce.md",
+    "manuscript/007-the-midnight-tax-storm.md",
+    "manuscript/008-the-hardest-friday-of-all.md",
+    "manuscript/009-twelve-dragons-and-one-big-stew.md",
+    "manuscript/010-tuesday-at-ten-oclock.md"
+  ],
   "art_per_chapter": null,
-  "illustrations": []
+  "quota_strategy": "4 image-generation calls total: 1 cast/prop reference sheet, 2 2x2 story grids (8 cropped interior illustrations at the book's most pivotal moments), and 1 dedicated portrait cover artwork.",
+  "reference_assets": [
+    {
+      "id": "ref-cast",
+      "role": "cast-and-prop-reference",
+      "asset": "assets/illustrations/ref-cast.png",
+      "status": "accepted",
+      "asset_sha256": "3c9752f55673252bd51eeea805af6b2a6000e78a2c6cd2b29010930cbcc8ec1f",
+      "pixels": [
+        1376,
+        768
+      ],
+      "provenance": "Generated locally via Antigravity built-in image-generator subagent (2026-11-25), duplicate Clara figure masked onto background paper; original design assumptions reconciled with garbanzo-family canon rev 4."
+    }
+  ],
+  "cover_illustration": {
+    "id": "cov-0001",
+    "asset": "assets/illustrations/cover-art.png",
+    "composed_cover": "exports/cover.jpg",
+    "alt_text": "Warm storybook illustration for The Quest of the Golden Garbanzo showing Jorge, Marissa, and six-year-old Clara walking happily toward a sunlit white Spanish home with solar panels, joined by tiny chickpea-shaped desk-bot Garbanzo, a glowing copper pot holding a golden chickpea, and sleek dark costume-free cat Poki resting in soft silver light on a brick garden wall.",
+    "status": "accepted",
+    "asset_sha256": "952b7f960d1b43fb162ea4fcc71e58a28195166b705ffa558810eb4411e3b9a7",
+    "pixels": [
+      848,
+      1264
+    ],
+    "reference_hashes": {
+      "ref-cast.png": "3c9752f55673252bd51eeea805af6b2a6000e78a2c6cd2b29010930cbcc8ec1f"
+    },
+    "provenance": "Generated via Antigravity built-in image-generator subagent (1 single call, referencing ref-cast.png, 2026-11-25).",
+    "composed_cover_sha256": "20745a5a9aa6642432cdc4e10057b65f4b56876c6e9af23bebc39ad3e46814f1"
+  },
+  "illustrations": [
+    {
+      "id": "ill-0001",
+      "chapter": "manuscript/001-the-golden-chickpea-goes-cold.md",
+      "scene_ref": "SC-0001",
+      "page": 5,
+      "anchor_after_paragraph": 10,
+      "asset": "assets/illustrations/ill-0001.png",
+      "source_sheet": "assets/illustrations/sheet-01.png",
+      "sheet_quadrant": "top-left",
+      "narrative_purpose": "Establish the family's morning comedy and central inciting contrast: Garbanzo's joyful confetti malfunction versus the chilly, dark Golden Garbanzo pot.",
+      "subjects_state": {
+        "included": [
+          "Jorge blinking at confetti in his coffee mug (never near stove)",
+          "Marissa holding plate of pancakes well away from Jorge in warm fleece sweater",
+          "Clara (6) in purple unicorn socks pointing toward the back counter",
+          "Garbanzo (palm-sized golden-tan chickpea robot, 4 stubby green metal feet, NO unicorn sticker yet) spraying gold confetti",
+          "Small copper pot beside toaster rattling cold and dark with unlit golden chickpea"
+        ],
+        "excluded": [
+          "Poki (not visible in Ch 1)",
+          "Unicorn sticker on Garbanzo (added in Ch 4)",
+          "Sunburst key charm (Ch 8 reveal)"
+        ]
+      },
+      "disclosure": {
+        "permitted": "Garbanzo's confetti bug, cold copper pot, family kitchen dynamic",
+        "prohibited": "Valladolid home, sun key charm, Poki appearing in person, unicorn sticker on Garbanzo"
+      },
+      "alt_text": "In a bright New Jersey kitchen, palm-sized chickpea-shaped robot Garbanzo pops shiny gold confetti straight into Jorge's coffee mug while Marissa holds pancakes out of Jorge's reach and six-year-old Clara in purple unicorn socks points toward a chilly, unlit copper pot beside the toaster.",
+      "caption": "Garbanzo celebrates a savings transfer while the copper pot rattles cold.",
+      "status": "accepted",
+      "asset_sha256": "4c3751dff7c27c15532c2fc08feddd9fc53e1f09cac8d037697d8cee3a48d889",
+      "pixels": [
+        625,
+        417
+      ],
+      "placement": {
+        "anchor_after_paragraph": 10,
+        "width_inches": 4.35,
+        "height_inches": 2.9,
+        "effective_ppi": [
+          143.7,
+          143.8
+        ],
+        "style": "bounded rectangular panel with 0.5pt warm-gold border and italic caption"
+      },
+      "reference_hashes": {
+        "ref-cast.png": "3c9752f55673252bd51eeea805af6b2a6000e78a2c6cd2b29010930cbcc8ec1f",
+        "assets/illustrations/sheet-01.png": "8448bacbb1d9b115f60a1ab675b688776f1a90d30172c6b9d261fa186421e96d"
+      },
+      "provenance": "Cropped from assets/illustrations/sheet-01.png (top-left quadrant), generated in 1 single 2x2 call via Antigravity built-in image-generator subagent referencing ref-cast.png (2026-11-25)."
+    },
+    {
+      "id": "ill-0002",
+      "chapter": "manuscript/003-the-kitchen-table-deal.md",
+      "scene_ref": "SC-0003",
+      "page": 12,
+      "anchor_after_paragraph": 16,
+      "asset": "assets/illustrations/ill-0002.png",
+      "source_sheet": "assets/illustrations/sheet-01.png",
+      "sheet_quadrant": "top-right",
+      "narrative_purpose": "Show the honest Saturday planning deal: yellow legal pad, unfolded Spain map, Garbanzo peeking from under an upside-down coffee mug, and the warm amber glow returning to the copper pot.",
+      "subjects_state": {
+        "included": [
+          "Jorge and Marissa leaning over a wooden dining table with an unfolded map of Spain and a yellow legal pad",
+          "Garbanzo peeking indignantly out from under a lifted upside-down ceramic coffee mug (plain golden-tan shell, NO unicorn sticker yet)",
+          "Copper pot on counter behind them glowing warm amber-gold",
+          "Coffee mugs and pens"
+        ],
+        "excluded": [
+          "Poki in person",
+          "Unicorn sticker on Garbanzo",
+          "Readable garbled AI text on the legal pad"
+        ]
+      },
+      "disclosure": {
+        "permitted": "Yellow legal pad trade-offs, Spain map, mug timeout, warm amber pot",
+        "prohibited": "Valladolid house itself, sun key charm"
+      },
+      "alt_text": "At the Saturday dining table covered with a large unfolded map of Spain and a yellow legal pad, Jorge and Marissa compare real numbers over coffee while tiny Garbanzo peeks dramatically out from beneath an upside-down ceramic mug and the copper pot glows warm gold behind them.",
+      "caption": "Saturday morning math on the yellow legal pad, with Garbanzo in mug timeout.",
+      "status": "accepted",
+      "asset_sha256": "5617fded1785e794c98480962f03b9a3eb1d8e2e2715da23d3fb7382a467e9da",
+      "pixels": [
+        625,
+        417
+      ],
+      "placement": {
+        "anchor_after_paragraph": 16,
+        "width_inches": 4.35,
+        "height_inches": 2.9,
+        "effective_ppi": [
+          143.7,
+          143.8
+        ],
+        "style": "bounded rectangular panel with 0.5pt warm-gold border and italic caption"
+      },
+      "reference_hashes": {
+        "ref-cast.png": "3c9752f55673252bd51eeea805af6b2a6000e78a2c6cd2b29010930cbcc8ec1f",
+        "assets/illustrations/sheet-01.png": "8448bacbb1d9b115f60a1ab675b688776f1a90d30172c6b9d261fa186421e96d"
+      },
+      "provenance": "Cropped from assets/illustrations/sheet-01.png (top-right quadrant), generated in 1 single 2x2 call via Antigravity built-in image-generator subagent referencing ref-cast.png (2026-11-25)."
+    },
+    {
+      "id": "ill-0003",
+      "chapter": "manuscript/004-claras-rules-and-a-silver-tail.md",
+      "scene_ref": "SC-0004",
+      "page": 16,
+      "anchor_after_paragraph": 25,
+      "asset": "assets/illustrations/ill-0003.png",
+      "source_sheet": "assets/illustrations/sheet-01.png",
+      "sheet_quadrant": "bottom-left",
+      "narrative_purpose": "Capture the tender emotional heart of Act I: six-year-old Clara's twilight reassurance from sleek, costume-free Poki in gentle silver starlight.",
+      "subjects_state": {
+        "included": [
+          "Clara (6) in bright yellow raincoat crouching on damp autumn grass by wooden backyard fence",
+          "Smooth round white pebble cupped in Clara's hands",
+          "Sleek, glossy ink-dark cat Poki with steady amber eyes and white-tipped paw, glowing softly in pale silver starlight, touching one paw gently to Clara's white pebble",
+          "Deep blue November twilight sky with first stars and autumn oak leaves"
+        ],
+        "excluded": [
+          "Any costume, collar, hat, or cape on Poki (STRICT FACT-0010)",
+          "Garbanzo or parents",
+          "Spanish scenery"
+        ]
+      },
+      "disclosure": {
+        "permitted": "Poki's silver starlight visit and tapping Clara's white pebble",
+        "prohibited": "Valladolid brick wall, any costume on Poki"
+      },
+      "alt_text": "Under a deep blue twilight sky with the first stars, six-year-old Clara crouches in her yellow raincoat by the wooden backyard fence as sleek, glossy dark costume-free cat Poki glows softly in silver starlight and gently taps one white-tipped paw onto the smooth white pebble in her hands.",
+      "caption": "Poki's quiet silver visit by the backyard fence.",
+      "status": "accepted",
+      "asset_sha256": "81747bb9ed4c5e6796751fcf7a58638ebd2696510168457b1042d28c44be262f",
+      "pixels": [
+        625,
+        417
+      ],
+      "placement": {
+        "anchor_after_paragraph": 25,
+        "width_inches": 4.35,
+        "height_inches": 2.9,
+        "effective_ppi": [
+          143.7,
+          143.8
+        ],
+        "style": "bounded rectangular panel with 0.5pt warm-gold border and italic caption"
+      },
+      "reference_hashes": {
+        "ref-cast.png": "3c9752f55673252bd51eeea805af6b2a6000e78a2c6cd2b29010930cbcc8ec1f",
+        "assets/illustrations/sheet-01.png": "8448bacbb1d9b115f60a1ab675b688776f1a90d30172c6b9d261fa186421e96d"
+      },
+      "provenance": "Cropped from assets/illustrations/sheet-01.png (bottom-left quadrant), generated in 1 single 2x2 call via Antigravity built-in image-generator subagent referencing ref-cast.png (2026-11-25)."
+    },
+    {
+      "id": "ill-0004",
+      "chapter": "manuscript/005-the-great-spanish-house-trap.md",
+      "scene_ref": "SC-0005",
+      "page": 19,
+      "anchor_after_paragraph": 26,
+      "asset": "assets/illustrations/ill-0004.png",
+      "source_sheet": "assets/illustrations/sheet-01.png",
+      "sheet_quadrant": "bottom-right",
+      "narrative_purpose": "Deliver the comic real-estate satire: Jorge's yellow tape measure and tablet exposing Señor Flashy Suit's muddy wedge lot.",
+      "subjects_state": {
+        "included": [
+          "Jorge crouched in weeds beside a rusty wooden stake measuring with a yellow tape measure and holding a tablet map",
+          "Marissa standing beside him with arms crossed and Clara peeking over Jorge's shoulder",
+          "Tiny Garbanzo (with crooked unicorn sticker) peeking out of Jorge's zipped backpack",
+          "Slick Spanish real-estate agent Mateo in shiny blue suit, dark sunglasses, and pointed shoes gesturing nervously beside a glossy poster on a white hatchback hood"
+        ],
+        "excluded": [
+          "Valladolid home (not found until Ch 6)",
+          "Poki"
+        ]
+      },
+      "disclosure": {
+        "permitted": "Crooked dusty unpiped wedge lot, yellow tape measure, tablet boundary check",
+        "prohibited": "Finished Valladolid home or padel club"
+      },
+      "alt_text": "Beside a tiny dusty weedy lot in Spain, Jorge crouches with a yellow tape measure and tablet map while Clara peeks over his shoulder, Marissa looks on skeptically with crossed arms, Garbanzo pokes out of Jorge's backpack, and a flashy blue-suited agent in sunglasses gestures nervously beside a glossy brochure.",
+      "caption": "Measuring Señor Flashy Suit's 'wide green estate' with real tools.",
+      "status": "accepted",
+      "asset_sha256": "49a7b3ff3cc9f5a87cd55bcb5fe2b827c91d40c7cad67a8c1b698205863bfe94",
+      "pixels": [
+        625,
+        417
+      ],
+      "placement": {
+        "anchor_after_paragraph": 26,
+        "width_inches": 4.35,
+        "height_inches": 2.9,
+        "effective_ppi": [
+          143.7,
+          143.8
+        ],
+        "style": "bounded rectangular panel with 0.5pt warm-gold border and italic caption"
+      },
+      "reference_hashes": {
+        "ref-cast.png": "3c9752f55673252bd51eeea805af6b2a6000e78a2c6cd2b29010930cbcc8ec1f",
+        "assets/illustrations/sheet-01.png": "8448bacbb1d9b115f60a1ab675b688776f1a90d30172c6b9d261fa186421e96d"
+      },
+      "provenance": "Cropped from assets/illustrations/sheet-01.png (bottom-right quadrant), generated in 1 single 2x2 call via Antigravity built-in image-generator subagent referencing ref-cast.png (2026-11-25)."
+    },
+    {
+      "id": "ill-0005",
+      "chapter": "manuscript/006-the-valladolid-bounce.md",
+      "scene_ref": "SC-0006",
+      "page": 22,
+      "anchor_after_paragraph": 13,
+      "asset": "assets/illustrations/ill-0005.png",
+      "source_sheet": "assets/illustrations/sheet-02.png",
+      "sheet_quadrant": "top-left",
+      "narrative_purpose": "Show the kinetic joy and community warmth of Valladolid through Jorge's diving glass-wall padel bounce.",
+      "subjects_state": {
+        "included": [
+          "Bright sunlit Spanish blue-turf padel court with clear back glass walls",
+          "Jorge diving mid-stride with padel racket to lob a yellow ball cleanly off the back glass",
+          "Two grinning Spanish local players across the net",
+          "Marissa and Clara cheering from outside the glass/bleachers with Garbanzo peeking from a sports duffel waving his stubby arms"
+        ],
+        "excluded": [
+          "Poki (appears later in Ch 6)",
+          "Snow or winter gear"
+        ]
+      },
+      "disclosure": {
+        "permitted": "Sunny Valladolid padel club, friendly local players, joyful energy",
+        "prohibited": "Sunburst key charm (Ch 8)"
+      },
+      "alt_text": "On a sunny blue glass-walled padel court in Valladolid, Jorge dives to whip a yellow ball off the back glass against two grinning local neighbors while Marissa, Clara, and tiny Garbanzo peeking from a sports bag cheer joyfully from the sidelines.",
+      "caption": "Match point off the back glass in sunny Valladolid.",
+      "status": "accepted",
+      "asset_sha256": "31b721bb45f1736cfa37ba9196e35628beadae291ca9018afecb25b1f1e77535",
+      "pixels": [
+        626,
+        418
+      ],
+      "placement": {
+        "anchor_after_paragraph": 13,
+        "width_inches": 4.35,
+        "height_inches": 2.9,
+        "effective_ppi": [
+          143.9,
+          144.1
+        ],
+        "style": "bounded rectangular panel with 0.5pt warm-gold border and italic caption"
+      },
+      "reference_hashes": {
+        "ref-cast.png": "3c9752f55673252bd51eeea805af6b2a6000e78a2c6cd2b29010930cbcc8ec1f",
+        "assets/illustrations/sheet-02.png": "c629ef061016f96451f77b0d8368ed7b6d9d196ed5961a90218652d59ba6fcd1"
+      },
+      "provenance": "Cropped from assets/illustrations/sheet-02.png (top-left quadrant), generated in 1 single 2x2 call via Antigravity built-in image-generator subagent referencing ref-cast.png (2026-11-25)."
+    },
+    {
+      "id": "ill-0006",
+      "chapter": "manuscript/007-the-midnight-tax-storm.md",
+      "scene_ref": "SC-0007",
+      "page": 25,
+      "anchor_after_paragraph": 14,
+      "asset": "assets/illustrations/ill-0006.png",
+      "source_sheet": "assets/illustrations/sheet-02.png",
+      "sheet_quadrant": "top-right",
+      "narrative_purpose": "Visualize turning panic into practical teamwork during the January rainstorm: debugging Garbanzo's Double-Counting Bug and Clara's calm sleepy wisdom.",
+      "subjects_state": {
+        "included": [
+          "Rain-streaked dark night window in the New Jersey dining room lit by warm lamp",
+          "Jorge leaning over laptop connected by silver USB cord to Garbanzo, holding a miniature screwdriver while pink confetti flecks scatter on folders",
+          "Marissa holding a flashlight / steadying notebooks beside stacks of folders",
+          "Clara (6) in red flannel pajamas and purple unicorn socks rubbing an eye and smiling from a chair",
+          "Copper pot glowing gently in the background"
+        ],
+        "excluded": [
+          "Poki",
+          "Split golden sun charm (Ch 8)"
+        ]
+      },
+      "disclosure": {
+        "permitted": "Debugging Garbanzo's back panel, pink confetti mess, rainy-night advisor folders",
+        "prohibited": "Sunburst key charm, Spanish house interior"
+      },
+      "alt_text": "During a rainy January night in the New Jersey dining room, Jorge uses a miniature screwdriver and laptop cable to debug tiny Garbanzo amid scattered folders and pink confetti while Marissa holds a flashlight and sleepy Clara looks on in red flannel pajamas and purple unicorn socks.",
+      "caption": "Fixing the Double-Counting Bug during the January storm.",
+      "status": "accepted",
+      "asset_sha256": "ba9fb8f75dd1d1baf90a24e7372c7b72cb087576c6d47764c6a84db1c6e6d150",
+      "pixels": [
+        626,
+        418
+      ],
+      "placement": {
+        "anchor_after_paragraph": 14,
+        "width_inches": 4.35,
+        "height_inches": 2.9,
+        "effective_ppi": [
+          143.9,
+          144.1
+        ],
+        "style": "bounded rectangular panel with 0.5pt warm-gold border and italic caption"
+      },
+      "reference_hashes": {
+        "ref-cast.png": "3c9752f55673252bd51eeea805af6b2a6000e78a2c6cd2b29010930cbcc8ec1f",
+        "assets/illustrations/sheet-02.png": "c629ef061016f96451f77b0d8368ed7b6d9d196ed5961a90218652d59ba6fcd1"
+      },
+      "provenance": "Cropped from assets/illustrations/sheet-02.png (top-right quadrant), generated in 1 single 2x2 call via Antigravity built-in image-generator subagent referencing ref-cast.png (2026-11-25)."
+    },
+    {
+      "id": "ill-0007",
+      "chapter": "manuscript/009-twelve-dragons-and-one-big-stew.md",
+      "scene_ref": "SC-0009",
+      "page": 32,
+      "anchor_after_paragraph": 8,
+      "asset": "assets/illustrations/ill-0007.png",
+      "source_sheet": "assets/illustrations/sheet-02.png",
+      "sheet_quadrant": "bottom-left",
+      "narrative_purpose": "Celebrate joyful family chaos and love before departure: the bursting pink unicorn suitcase raining twelve plush dragons and Aunt Lidia's lively farewell feast.",
+      "subjects_state": {
+        "included": [
+          "Hallway stacked with brown moving boxes",
+          "Jorge laughing in surprise as an overstuffed pink suitcase pops open on the stairs raining colorful plush dragons, unicorn headbands, and mismatched socks",
+          "Clara diving joyfully at the bottom step to catch a pink plush dragon (Captain Sparklewing)",
+          "Warm kitchen archway behind showing Aunt Lidia waving a wooden spoon over a steaming stew pot with smiling Marissa and family"
+        ],
+        "excluded": [
+          "Jorge touching the stove or cooking",
+          "Poki"
+        ]
+      },
+      "disclosure": {
+        "permitted": "Packed boxes, bursting dragon suitcase, Aunt Lidia's farewell stew",
+        "prohibited": "Valladolid arrival (Ch 10)"
+      },
+      "alt_text": "Amid stacked moving boxes in the hallway, Clara's overstuffed pink suitcase bursts open on the stairs in a comical shower of colorful plush dragons, unicorn headbands, and socks while Clara dives to catch a pink dragon, Jorge laughs in surprise, and Aunt Lidia stirs a steaming pot of cocido in the warm kitchen beyond.",
+      "caption": "Twelve plush dragons burst free before Aunt Lidia's farewell feast.",
+      "status": "accepted",
+      "asset_sha256": "d06ac0d548f7c59041ae7e93b79a092fd4e60d480f5d83b9e8880e309cafff51",
+      "pixels": [
+        626,
+        418
+      ],
+      "placement": {
+        "anchor_after_paragraph": 8,
+        "width_inches": 4.35,
+        "height_inches": 2.9,
+        "effective_ppi": [
+          143.9,
+          144.1
+        ],
+        "style": "bounded rectangular panel with 0.5pt warm-gold border and italic caption"
+      },
+      "reference_hashes": {
+        "ref-cast.png": "3c9752f55673252bd51eeea805af6b2a6000e78a2c6cd2b29010930cbcc8ec1f",
+        "assets/illustrations/sheet-02.png": "c629ef061016f96451f77b0d8368ed7b6d9d196ed5961a90218652d59ba6fcd1"
+      },
+      "provenance": "Cropped from assets/illustrations/sheet-02.png (bottom-left quadrant), generated in 1 single 2x2 call via Antigravity built-in image-generator subagent referencing ref-cast.png (2026-11-25)."
+    },
+    {
+      "id": "ill-0008",
+      "chapter": "manuscript/010-tuesday-at-ten-oclock.md",
+      "scene_ref": "SC-0010",
+      "page": 36,
+      "anchor_after_paragraph": 25,
+      "asset": "assets/illustrations/ill-0008.png",
+      "source_sheet": "assets/illustrations/sheet-02.png",
+      "sheet_quadrant": "bottom-right",
+      "narrative_purpose": "Deliver the warm, earned closing image: unhurried dusk dinner on the sunny Valladolid patio, Garbanzo calm with zero confetti, and sleek costume-free Poki resting peacefully on the warm red brick garden wall.",
+      "subjects_state": {
+        "included": [
+          "White one-story Spanish home in Valladolid with roof solar panels and warm glowing patio lantern in soft orange-gold dusk light",
+          "Jorge, Marissa, and Clara lingering happily around a patio dinner table with bread, olives, and stew (no laptops, zero rush)",
+          "Palm-sized Garbanzo (with crooked unicorn sticker) sitting calmly on the patio table with a clean green screen and ZERO confetti",
+          "Sleek, glossy ink-dark cat Poki with amber eyes and white-tipped paws sitting peacefully on the warm red brick garden wall in soft evening silver light — STRICTLY COSTUME-FREE"
+        ],
+        "excluded": [
+          "Confetti",
+          "Laptops or office screens",
+          "Any costume, collar, hat, or cape on Poki (STRICT FACT-0010)"
+        ]
+      },
+      "disclosure": {
+        "permitted": "Full book payoff: Valladolid home, solar panels, calm Garbanzo, costume-free Poki on brick garden wall",
+        "prohibited": "Confetti or any costume on Poki"
+      },
+      "alt_text": "At golden dusk outside their white one-story Valladolid home with solar panels and a glowing patio lantern, Jorge, Marissa, and Clara laugh slowly over dinner while Garbanzo sits calmly on the table with zero confetti and sleek, glossy dark costume-free Poki rests peacefully in soft silver light atop the warm red brick garden wall.",
+      "caption": "Tuesday evening in Valladolid: unhurried dinner and a quiet friend on the warm brick wall.",
+      "status": "accepted",
+      "asset_sha256": "e8a3e70e994b7fb2f2c934cbac7c160fa6b523cfbb31075504bdd8c41e358e41",
+      "pixels": [
+        626,
+        418
+      ],
+      "placement": {
+        "anchor_after_paragraph": 25,
+        "width_inches": 4.35,
+        "height_inches": 2.9,
+        "effective_ppi": [
+          143.9,
+          144.1
+        ],
+        "style": "bounded rectangular panel with 0.5pt warm-gold border and italic caption"
+      },
+      "reference_hashes": {
+        "ref-cast.png": "3c9752f55673252bd51eeea805af6b2a6000e78a2c6cd2b29010930cbcc8ec1f",
+        "assets/illustrations/sheet-02.png": "c629ef061016f96451f77b0d8368ed7b6d9d196ed5961a90218652d59ba6fcd1"
+      },
+      "provenance": "Cropped from assets/illustrations/sheet-02.png (bottom-right quadrant), generated in 1 single 2x2 call via Antigravity built-in image-generator subagent referencing ref-cast.png (2026-11-25)."
+    }
+  ]
 }

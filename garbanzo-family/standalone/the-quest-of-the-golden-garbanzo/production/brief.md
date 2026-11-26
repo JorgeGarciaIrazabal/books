@@ -12,7 +12,7 @@
 - Zero fabricated blurbs, awards, or external market claims.
 
 ## Cover and illustrations
-- Typographic parchment-and-gold sunburst cover (`720x1080` JPEG); interior remains clean reading text (`illustration-plan.json` uncommissioned).
+- Illustrated watercolor/ink cover (`720x1080` JPEG composited from `assets/illustrations/cover-art.png`) and 8 interior story illustrations (`ill-0001.png`–`ill-0008.png`, cropped from two 2×2 grids anchored to `ref-cast.png`, recorded in `production/illustration-plan.json` and `production/visual-style.md`). Poki remains strictly costume-free (`FACT-0010`).
 
 ## Reader-facing copy
 A fun, dramatic, easy-to-read family adventure about how ordinary humans Jorge, Marissa, and six-year-old Clara braved late-night spreadsheets, a confetti-blasting desk-bot, sneaky Spanish house pitches, and one last office bonus to earn sunny mornings together in Spain.
