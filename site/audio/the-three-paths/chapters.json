@@ -31,6 +31,25 @@
         10,
         11,
         12
+      ],
+      "start_seconds": 0.0,
+      "scenes": [
+        {
+          "id": "ill-0001",
+          "at_seconds": 36.3,
+          "image": "scenes/ill-0001.jpg",
+          "caption": "Silver mist parted like curtains, and Clara saw Glassvale Academy for the first time.",
+          "alt": "Clara steps completely dry out from behind a shimmering mountain waterfall into golden morning mist, looking up in wonder at Glassvale Academy's central Bell-Tower, copper wind-sail spire, glass oak dome, and floating-crown Starlight Tower.",
+          "book_seconds": 36.3
+        },
+        {
+          "id": "ill-0002",
+          "at_seconds": 175.3,
+          "image": "scenes/ill-0002.jpg",
+          "caption": "Only show-offs buy the most expensive teapot, Monica said as Sam's cup began to wobble.",
+          "alt": "In the sunlit oak Great Hall, Headmistress Monica pours steaming tea from a silver teapot while curly ginger-haired Sam reaches after a wobbling floating teacup and Maya laughs with tiny turquoise frog Pebble on her wrist.",
+          "book_seconds": 175.3
+        }
       ]
     },
     {
@@ -52,6 +71,17 @@
         21,
         22,
         23
+      ],
+      "start_seconds": 407.608,
+      "scenes": [
+        {
+          "id": "ill-0003",
+          "at_seconds": 284.8,
+          "image": "scenes/ill-0003.jpg",
+          "caption": "Fear makes starlight scatter, Peter told her gently. Breathe out, and hold the shape.",
+          "alt": "Inside the starry midnight-blue observatory, warm smiling teacher Peter gently steadies Clara's wrist as bright violet-gold sparks curl above her palm, while Sam peeks over books and blond Victor watches smugly.",
+          "book_seconds": 692.4
+        }
       ]
     },
     {
@@ -71,6 +101,17 @@
         30,
         31,
         32
+      ],
+      "start_seconds": 760.054,
+      "scenes": [
+        {
+          "id": "ill-0004",
+          "at_seconds": 199.4,
+          "image": "scenes/ill-0004.jpg",
+          "caption": "Behind the iron bars, a masked figure in a gray coat stood watching in green-violet mist.",
+          "alt": "Outside the locked wrought-iron Deep Gate at night, Clara, Sam, and Maya watch Whisper-Moths snuff the stair candles while Pebble's throat flashes gold and masked Silas looms behind the bars in eerie green-violet mist.",
+          "book_seconds": 959.5
+        }
       ]
     },
     {
@@ -92,6 +133,25 @@
         41,
         42,
         43
+      ],
+      "start_seconds": 1068.729,
+      "scenes": [
+        {
+          "id": "ill-0005",
+          "at_seconds": 107.4,
+          "image": "scenes/ill-0005.jpg",
+          "caption": "For twenty steady minutes, Clara did not use a single spark of magic.",
+          "alt": "In the golden Brass Spire boiler room, Clara holds a warm lantern and passes a brass shim while Jorge grins beside her, wrenching a frosted black clamp off a steaming copper pipe as Sam records measurements.",
+          "book_seconds": 1176.1
+        },
+        {
+          "id": "ill-0006",
+          "at_seconds": 210.0,
+          "image": "scenes/ill-0006.jpg",
+          "caption": "She did not push the tree. She held gentle warmth steady until the roots softened.",
+          "alt": "Inside the sunlit glass Living Dome, Clara kneels in damp moss coaxing a gentle golden thread of warmth into an oak root beside smiling Maya, turquoise frog Pebble, Asian teacher Marissa, and moss-feathered owl-fox Pip.",
+          "book_seconds": 1278.7
+        }
       ]
     },
     {
@@ -112,6 +172,17 @@
         51,
         52,
         53
+      ],
+      "start_seconds": 1397.107,
+      "scenes": [
+        {
+          "id": "ill-0007",
+          "at_seconds": 94.8,
+          "image": "scenes/ill-0007.jpg",
+          "caption": "Clara held the starlight dome firm while Jorge fired his woven copper snare-net from above.",
+          "alt": "In the dusk-lit courtyard, Clara raises a glowing violet-gold starlight shield over Maya and Sam while two green-eyed stone sparrow gargoyles swoop into a woven copper net fired by Jorge from the balcony above.",
+          "book_seconds": 1491.9
+        }
       ]
     },
     {
@@ -131,6 +202,17 @@
         60,
         61,
         62
+      ],
+      "start_seconds": 1721.241,
+      "scenes": [
+        {
+          "id": "ill-0008",
+          "at_seconds": 138.4,
+          "image": "scenes/ill-0008.jpg",
+          "caption": "Two smoky Ink-Hounds with emerald eyes crouched beside Silas and the golden Crown Seal.",
+          "alt": "Inside the stone Bell-Vault beneath a crystal prism chandelier, masked Silas and two smoky emerald-eyed Ink-Hounds confront Clara, Maya, and Sam beside a triple-locked pedestal holding the glowing golden Crown Seal.",
+          "book_seconds": 1859.6
+        }
       ]
     },
     {
@@ -149,6 +231,17 @@
         68,
         69,
         70
+      ],
+      "start_seconds": 2033.595,
+      "scenes": [
+        {
+          "id": "ill-0009",
+          "at_seconds": 184.7,
+          "image": "scenes/ill-0009.jpg",
+          "caption": "You do not burn wind, Maya grinned, calling one clean mountain gale down the tower.",
+          "alt": "High in the storm-lashed belfry beneath the Brass, Leaf, and Star bells, Maya leans toward the rain with glowing Pebble while Clara and Sam channel starlight into a brass Clock-Beetle atop the frozen wooden hatch.",
+          "book_seconds": 2218.3
+        }
       ]
     },
     {
@@ -168,6 +261,17 @@
         77,
         78,
         79
+      ],
+      "start_seconds": 2290.254,
+      "scenes": [
+        {
+          "id": "ill-0010",
+          "at_seconds": 158.9,
+          "image": "scenes/ill-0010.jpg",
+          "caption": "Clara wove violet-gold starlight through copper spark and living vines as the three bells sang as one.",
+          "alt": "In the Bell-Vault climax, Clara threads glowing violet-gold magic through Jorge's amber flash-drum beam and Marissa's sunlit living vines while Pip swoops overhead, Maya and Sam pull the bell ropes, and the Ink-Hounds dissolve as Silas fades into smoke.",
+          "book_seconds": 2449.2
+        }
       ]
     },
     {
@@ -186,7 +290,33 @@
         85,
         86,
         87
+      ],
+      "start_seconds": 2609.854,
+      "scenes": [
+        {
+          "id": "ill-0011",
+          "at_seconds": 28.4,
+          "image": "scenes/ill-0011.jpg",
+          "caption": "In honor of tonight's feast, Monica said, I ordered the second most expensive cider in Mistmarket.",
+          "alt": "At the autumn feast in the Great Hall, Headmistress Monica raises a silver-rimmed cider pitcher as Jorge hands Clara a brass pocket-compass, Marissa and Peter smile beside them, Maya laughs with Pebble on her mug, and Sam floats a sugar cookie.",
+          "book_seconds": 2638.3
+        },
+        {
+          "id": "ill-0012",
+          "at_seconds": 187.6,
+          "image": "scenes/ill-0012.jpg",
+          "caption": "Rest easy tonight, Peter promised warmly. Glassvale is well guarded.",
+          "alt": "On a starlit stone balcony overlooking Glassvale Academy and the glowing Mistgate waterfall, tall warm-smiling teacher Peter rests a steady hand on Clara's shoulder with his antique brass sand-timer clipped at his belt.",
+          "book_seconds": 2797.5
+        }
       ]
     }
-  ]
+  ],
+  "full_book": {
+    "file": "full-book.mp3",
+    "seconds": 2858.464,
+    "bytes": 34302572,
+    "sha256": "ba3562b01e56abdb6f4d42318330e5483788edff5703431a71a6ad67298618d6",
+    "chapter_gap_seconds": 1.5
+  }
 }

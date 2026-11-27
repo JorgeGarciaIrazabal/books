@@ -30,6 +30,17 @@
         9,
         10,
         11
+      ],
+      "start_seconds": 0.0,
+      "scenes": [
+        {
+          "id": "ill-0001",
+          "at_seconds": 98.4,
+          "image": "scenes/ill-0001.jpg",
+          "caption": "Garbanzo celebrates a savings transfer while the copper pot rattles cold.",
+          "alt": "In a bright New Jersey kitchen, palm-sized chickpea-shaped robot Garbanzo pops shiny gold confetti straight into Jorge's coffee mug while Marissa holds pancakes out of Jorge's reach and six-year-old Clara in purple unicorn socks points toward a chilly, unlit copper pot beside the toaster.",
+          "book_seconds": 98.4
+        }
       ]
     },
     {
@@ -49,7 +60,9 @@
         18,
         19,
         20
-      ]
+      ],
+      "start_seconds": 371.172,
+      "scenes": []
     },
     {
       "number": 3,
@@ -69,6 +82,17 @@
         28,
         29,
         30
+      ],
+      "start_seconds": 676.536,
+      "scenes": [
+        {
+          "id": "ill-0002",
+          "at_seconds": 130.3,
+          "image": "scenes/ill-0002.jpg",
+          "caption": "Saturday morning math on the yellow legal pad, with Garbanzo in mug timeout.",
+          "alt": "At the Saturday dining table covered with a large unfolded map of Spain and a yellow legal pad, Jorge and Marissa compare real numbers over coffee while tiny Garbanzo peeks dramatically out from beneath an upside-down ceramic mug and the copper pot glows warm gold behind them.",
+          "book_seconds": 806.8
+        }
       ]
     },
     {
@@ -89,6 +113,17 @@
         38,
         39,
         40
+      ],
+      "start_seconds": 1020.732,
+      "scenes": [
+        {
+          "id": "ill-0003",
+          "at_seconds": 276.9,
+          "image": "scenes/ill-0003.jpg",
+          "caption": "Poki's quiet silver visit by the backyard fence.",
+          "alt": "Under a deep blue twilight sky with the first stars, six-year-old Clara crouches in her yellow raincoat by the wooden backyard fence as sleek, glossy dark costume-free cat Poki glows softly in silver starlight and gently taps one white-tipped paw onto the smooth white pebble in her hands.",
+          "book_seconds": 1297.6
+        }
       ]
     },
     {
@@ -111,6 +146,17 @@
         50,
         51,
         52
+      ],
+      "start_seconds": 1361.304,
+      "scenes": [
+        {
+          "id": "ill-0004",
+          "at_seconds": 309.5,
+          "image": "scenes/ill-0004.jpg",
+          "caption": "Measuring Señor Flashy Suit's 'wide green estate' with real tools.",
+          "alt": "Beside a tiny dusty weedy lot in Spain, Jorge crouches with a yellow tape measure and tablet map while Clara peeks over his shoulder, Marissa looks on skeptically with crossed arms, Garbanzo pokes out of Jorge's backpack, and a flashy blue-suited agent in sunglasses gestures nervously beside a glossy brochure.",
+          "book_seconds": 1670.8
+        }
       ]
     },
     {
@@ -130,6 +176,17 @@
         59,
         60,
         61
+      ],
+      "start_seconds": 1767.54,
+      "scenes": [
+        {
+          "id": "ill-0005",
+          "at_seconds": 168.7,
+          "image": "scenes/ill-0005.jpg",
+          "caption": "Match point off the back glass in sunny Valladolid.",
+          "alt": "On a sunny blue glass-walled padel court in Valladolid, Jorge dives to whip a yellow ball off the back glass against two grinning local neighbors while Marissa, Clara, and tiny Garbanzo peeking from a sports bag cheer joyfully from the sidelines.",
+          "book_seconds": 1936.2
+        }
       ]
     },
     {
@@ -150,6 +207,17 @@
         69,
         70,
         71
+      ],
+      "start_seconds": 2079.792,
+      "scenes": [
+        {
+          "id": "ill-0006",
+          "at_seconds": 157.8,
+          "image": "scenes/ill-0006.jpg",
+          "caption": "Fixing the Double-Counting Bug during the January storm.",
+          "alt": "During a rainy January night in the New Jersey dining room, Jorge uses a miniature screwdriver and laptop cable to debug tiny Garbanzo amid scattered folders and pink confetti while Marissa holds a flashlight and sleepy Clara looks on in red flannel pajamas and purple unicorn socks.",
+          "book_seconds": 2237.6
+        }
       ]
     },
     {
@@ -170,7 +238,9 @@
         79,
         80,
         81
-      ]
+      ],
+      "start_seconds": 2434.956,
+      "scenes": []
     },
     {
       "number": 9,
@@ -188,6 +258,17 @@
         87,
         88,
         89
+      ],
+      "start_seconds": 2740.152,
+      "scenes": [
+        {
+          "id": "ill-0007",
+          "at_seconds": 78.9,
+          "image": "scenes/ill-0007.jpg",
+          "caption": "Twelve plush dragons burst free before Aunt Lidia's farewell feast.",
+          "alt": "Amid stacked moving boxes in the hallway, Clara's overstuffed pink suitcase bursts open on the stairs in a comical shower of colorful plush dragons, unicorn headbands, and socks while Clara dives to catch a pink dragon, Jorge laughs in surprise, and Aunt Lidia stirs a steaming pot of cocido in the warm kitchen beyond.",
+          "book_seconds": 2819.1
+        }
       ]
     },
     {
@@ -206,7 +287,25 @@
         95,
         96,
         97
+      ],
+      "start_seconds": 3003.54,
+      "scenes": [
+        {
+          "id": "ill-0008",
+          "at_seconds": 230.2,
+          "image": "scenes/ill-0008.jpg",
+          "caption": "Tuesday evening in Valladolid: unhurried dinner and a quiet friend on the warm brick wall.",
+          "alt": "At golden dusk outside their white one-story Valladolid home with solar panels and a glowing patio lantern, Jorge, Marissa, and Clara laugh slowly over dinner while Garbanzo sits calmly on the table with zero confetti and sleek, glossy dark costume-free Poki rests peacefully in soft silver light atop the warm red brick garden wall.",
+          "book_seconds": 3233.7
+        }
       ]
     }
-  ]
+  ],
+  "full_book": {
+    "file": "full-book.mp3",
+    "seconds": 3276.324,
+    "bytes": 39316940,
+    "sha256": "9846f28970b4e86cb7add56bec05787211380c86e4b69093f5cc0fbca12db719",
+    "chapter_gap_seconds": 1.5
+  }
 }

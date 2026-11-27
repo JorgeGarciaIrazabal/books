@@ -191,6 +191,62 @@ class Drama3AudioGapTests(unittest.TestCase):
             manifest = json.loads((out_dir / "chapters.json").read_text(encoding="utf-8"))
             self.assertGreaterEqual(manifest["chapters"][0]["seconds"], 1.35)
 
+    @unittest.skipUnless(shutil.which("ffmpeg") and shutil.which("ffprobe"), "ffmpeg/ffprobe required")
+    def test_assemble_chapters_builds_full_book_and_respects_max_mb(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            p = Path(tmp)
+            audio = p / "audio"
+            audio.mkdir()
+            _write_test_wav(audio / "page-01.wav", lead_ms=30, tone_ms=300, trail_ms=30)
+            _write_test_wav(audio / "page-02.wav", lead_ms=30, tone_ms=300, trail_ms=30)
+            segments = p / "segments.json"
+            segments.write_text(
+                json.dumps({
+                    "schema_version": 1,
+                    "kind": "chapter_segments",
+                    "book_id": "test-book",
+                    "title": "Test Book",
+                    "chapters": [
+                        {
+                            "chapter": 1, "path": "manuscript/001.md", "title": "Ch 1",
+                            "source_sha256": "0" * 64, "spoken_sha256": "0" * 64, "words": 5, "segments": 1,
+                        },
+                        {
+                            "chapter": 2, "path": "manuscript/002.md", "title": "Ch 2",
+                            "source_sha256": "0" * 64, "spoken_sha256": "0" * 64, "words": 5, "segments": 1,
+                        },
+                    ],
+                    "pages": [
+                        {"page": 1, "chapter": 1, "segment": 1, "text": "Hello.", "ends_paragraph": True},
+                        {"page": 2, "chapter": 2, "segment": 1, "text": "World.", "ends_paragraph": True},
+                    ],
+                }),
+                encoding="utf-8",
+            )
+            out_dir = p / "site_audio"
+            rc = drama3.main([
+                "assemble-chapters", str(segments),
+                "--audio", str(audio), "--out", str(out_dir),
+                "--chapter-gap-seconds", "1.0",
+            ])
+            self.assertEqual(rc, 0)
+            manifest = json.loads((out_dir / "chapters.json").read_text(encoding="utf-8"))
+            self.assertIn("full_book", manifest)
+            self.assertTrue((out_dir / "full-book.mp3").is_file())
+            self.assertEqual(manifest["chapters"][0]["start_seconds"], 0.0)
+            self.assertGreater(manifest["chapters"][1]["start_seconds"], manifest["chapters"][0]["seconds"])
+
+            out_skip = p / "site_audio_skip"
+            rc2 = drama3.main([
+                "assemble-chapters", str(segments),
+                "--audio", str(audio), "--out", str(out_skip),
+                "--full-book-max-mb", "0",
+            ])
+            self.assertEqual(rc2, 0)
+            manifest2 = json.loads((out_skip / "chapters.json").read_text(encoding="utf-8"))
+            self.assertNotIn("full_book", manifest2)
+            self.assertFalse((out_skip / "full-book.mp3").exists())
+
 
 if __name__ == "__main__":
     unittest.main()

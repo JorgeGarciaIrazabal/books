@@ -1201,6 +1201,87 @@ def cmd_check(args: argparse.Namespace) -> int:
 # assemble-chapters (reflowable chapter audiobook MP3s + manifests)
 # ---------------------------------------------------------------------------
 
+DEFAULT_CHAPTER_GAP_SECONDS = 1.5
+DEFAULT_FULL_BOOK_MAX_MB = 48.0
+
+
+def build_full_book_mp3(
+    out_dir: Path,
+    chapters_out: list[dict],
+    sample_rate: int,
+    bitrate: str,
+    chapter_gap_s: float = DEFAULT_CHAPTER_GAP_SECONDS,
+    max_mb: float = DEFAULT_FULL_BOOK_MAX_MB,
+) -> dict | None:
+    """Concatenate chapter MP3s into one continuous full-book.mp3 when under max_mb."""
+    if len(chapters_out) <= 1 or max_mb <= 0:
+        return None
+    total_chapter_bytes = sum(int(c["bytes"]) for c in chapters_out)
+    if total_chapter_bytes > int(max_mb * 1024 * 1024):
+        return None
+
+    full_path = out_dir / "full-book.mp3"
+    with tempfile.TemporaryDirectory(prefix="drama3-full-") as tmp_dir:
+        tmp_path = Path(tmp_dir)
+        actual_gap_s = 0.0
+        gap_mp3 = None
+        if chapter_gap_s > 0:
+            gap_mp3 = tmp_path / "chapter-gap.mp3"
+            subprocess.run(
+                [
+                    "ffmpeg", "-nostdin", "-hide_banner", "-loglevel", "error", "-y",
+                    "-f", "lavfi", "-i", f"anullsrc=r={sample_rate}:cl=mono",
+                    "-t", f"{chapter_gap_s:.3f}",
+                    "-ac", "1", "-ar", str(sample_rate),
+                    "-codec:a", "libmp3lame", "-b:a", bitrate,
+                    "-map_metadata", "-1",
+                    str(gap_mp3),
+                ],
+                check=True,
+            )
+            actual_gap_s = probe_duration(gap_mp3)
+
+        list_path = tmp_path / "full-concat.txt"
+        lines: list[str] = []
+        cursor = 0.0
+        for idx, ch in enumerate(chapters_out):
+            ch["start_seconds"] = round(cursor, 3)
+            ch_mp3 = out_dir / ch["file"]
+            lines.append(f"file '{ch_mp3.resolve().as_posix()}'\n")
+            cursor += float(ch["seconds"])
+            if idx < len(chapters_out) - 1 and gap_mp3 is not None:
+                lines.append(f"file '{gap_mp3.resolve().as_posix()}'\n")
+                cursor += actual_gap_s
+        list_path.write_text("".join(lines), encoding="utf-8")
+
+        subprocess.run(
+            [
+                "ffmpeg", "-nostdin", "-hide_banner", "-loglevel", "error", "-y",
+                "-f", "concat", "-safe", "0", "-i", str(list_path),
+                "-ac", "1", "-ar", str(sample_rate),
+                "-codec:a", "libmp3lame", "-b:a", bitrate,
+                "-map_metadata", "-1",
+                str(full_path),
+            ],
+            check=True,
+        )
+
+    size = full_path.stat().st_size
+    if size > int(max_mb * 1024 * 1024):
+        full_path.unlink(missing_ok=True)
+        for ch in chapters_out:
+            ch.pop("start_seconds", None)
+        return None
+
+    return {
+        "file": full_path.name,
+        "seconds": probe_duration(full_path),
+        "bytes": size,
+        "sha256": sha256_file(full_path),
+        "chapter_gap_seconds": round(actual_gap_s, 3),
+    }
+
+
 def cmd_assemble_chapters(args: argparse.Namespace) -> int:
     segments_path = Path(args.segments).resolve()
     audio_dir = Path(args.audio).resolve()
@@ -1278,10 +1359,30 @@ def cmd_assemble_chapters(args: argparse.Namespace) -> int:
     engine_label = f"{engine_info.get('name', 'audio.cpp')} {commit_short} ({engine_info.get('backend', 'vulkan')}) / Fish Audio Drama 3"
     total_seconds = round(sum(c["seconds"] for c in chapters_out), 3)
 
+    full_book = build_full_book_mp3(
+        out_dir=out_dir,
+        chapters_out=chapters_out,
+        sample_rate=args.sample_rate,
+        bitrate=args.bitrate,
+        chapter_gap_s=args.chapter_gap_seconds,
+        max_mb=args.full_book_max_mb,
+    )
+    if full_book:
+        print(
+            f"{full_book['file']}: {clock_fmt(full_book['seconds'])} "
+            f"({full_book['seconds']}s, {full_book['bytes']} bytes, "
+            f"gap={full_book['chapter_gap_seconds']}s)",
+            flush=True,
+        )
+
     checks_flagged = None
     if args.checks and Path(args.checks).is_file():
         checks_data = json.loads(Path(args.checks).read_text(encoding="utf-8"))
         checks_flagged = checks_data.get("flagged")
+
+    chapter_fields = ("number", "title", "file", "seconds", "bytes", "sha256", "segments")
+    if full_book:
+        chapter_fields = chapter_fields + ("start_seconds",)
 
     manifest = {
         "schema_version": 1,
@@ -1296,10 +1397,12 @@ def cmd_assemble_chapters(args: argparse.Namespace) -> int:
         "total_segments": len(rows),
         "total_seconds": total_seconds,
         "chapters": [
-            {k: c[k] for k in ("number", "title", "file", "seconds", "bytes", "sha256", "segments")}
+            {k: c[k] for k in chapter_fields}
             for c in chapters_out
         ],
     }
+    if full_book:
+        manifest["full_book"] = full_book
     (out_dir / "chapters.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
@@ -1330,6 +1433,8 @@ def cmd_assemble_chapters(args: argparse.Namespace) -> int:
             "audio_dir": args.audio_rel_dir,
             "chapters": chapters_out,
         }
+        if full_book:
+            record["full_book"] = full_book
         rec_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(f"Updated render record -> {rec_path}")
 
@@ -1443,6 +1548,8 @@ def main(argv: list[str] | None = None) -> int:
     p_asm.add_argument("--audio-rel-dir", default=None)
     p_asm.add_argument("--sentence-gap-ms", type=int, default=DEFAULT_SENTENCE_GAP_MS)
     p_asm.add_argument("--paragraph-gap-ms", type=int, default=DEFAULT_PARAGRAPH_GAP_MS)
+    p_asm.add_argument("--chapter-gap-seconds", type=float, default=DEFAULT_CHAPTER_GAP_SECONDS)
+    p_asm.add_argument("--full-book-max-mb", type=float, default=DEFAULT_FULL_BOOK_MAX_MB)
 
     args = parser.parse_args(argv)
     try:

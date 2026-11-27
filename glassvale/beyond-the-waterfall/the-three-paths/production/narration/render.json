@@ -69,7 +69,8 @@
         "min_raw_gap_ms": 30,
         "min_final_gap_ms": 500,
         "total_added_ms": 6260
-      }
+      },
+      "start_seconds": 0.0
     },
     {
       "number": 2,
@@ -99,7 +100,8 @@
         "min_raw_gap_ms": 80,
         "min_final_gap_ms": 750,
         "total_added_ms": 6130
-      }
+      },
+      "start_seconds": 407.608
     },
     {
       "number": 3,
@@ -127,7 +129,8 @@
         "min_raw_gap_ms": 140,
         "min_final_gap_ms": 500,
         "total_added_ms": 4340
-      }
+      },
+      "start_seconds": 760.054
     },
     {
       "number": 4,
@@ -157,7 +160,8 @@
         "min_raw_gap_ms": 100,
         "min_final_gap_ms": 500,
         "total_added_ms": 5370
-      }
+      },
+      "start_seconds": 1068.729
     },
     {
       "number": 5,
@@ -186,7 +190,8 @@
         "min_raw_gap_ms": 70,
         "min_final_gap_ms": 500,
         "total_added_ms": 5030
-      }
+      },
+      "start_seconds": 1397.107
     },
     {
       "number": 6,
@@ -214,7 +219,8 @@
         "min_raw_gap_ms": 120,
         "min_final_gap_ms": 500,
         "total_added_ms": 4490
-      }
+      },
+      "start_seconds": 1721.241
     },
     {
       "number": 7,
@@ -241,7 +247,8 @@
         "min_raw_gap_ms": 100,
         "min_final_gap_ms": 500,
         "total_added_ms": 3640
-      }
+      },
+      "start_seconds": 2033.595
     },
     {
       "number": 8,
@@ -269,7 +276,8 @@
         "min_raw_gap_ms": 130,
         "min_final_gap_ms": 500,
         "total_added_ms": 4120
-      }
+      },
+      "start_seconds": 2290.254
     },
     {
       "number": 9,
@@ -296,7 +304,15 @@
         "min_raw_gap_ms": 120,
         "min_final_gap_ms": 500,
         "total_added_ms": 3500
-      }
+      },
+      "start_seconds": 2609.854
     }
-  ]
+  ],
+  "full_book": {
+    "file": "full-book.mp3",
+    "seconds": 2858.464,
+    "bytes": 34302572,
+    "sha256": "ba3562b01e56abdb6f4d42318330e5483788edff5703431a71a6ad67298618d6",
+    "chapter_gap_seconds": 1.5
+  }
 }
