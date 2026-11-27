@@ -2,6 +2,7 @@
   "schema_version": 1,
   "gates": [
     {
+      "id": "GATE-0001",
       "checkpoint": "brief",
       "status": "pass",
       "reviewer": "studio_director + author",
@@ -10,6 +11,7 @@
       "open_issues": []
     },
     {
+      "id": "GATE-0002",
       "checkpoint": "structure",
       "status": "pass",
       "reviewer": "studio_director",
@@ -18,6 +20,7 @@
       "open_issues": []
     },
     {
+      "id": "GATE-0003",
       "checkpoint": "draft",
       "status": "pass",
       "reviewer": "research_subagent (fresh session; same model family disclosed)",
@@ -26,6 +29,7 @@
       "open_issues": []
     },
     {
+      "id": "GATE-0004",
       "checkpoint": "continuity-evidence",
       "status": "pass",
       "reviewer": "research_subagent + studio_director",
@@ -34,6 +38,7 @@
       "open_issues": []
     },
     {
+      "id": "GATE-0005",
       "checkpoint": "production",
       "status": "pass",
       "reviewer": "studio_director (visual inspection of cover + all 12 blended PDF pages; independent human/different-model reader_advocate listen/read pending)",
