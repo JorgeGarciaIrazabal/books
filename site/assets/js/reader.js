@@ -110,6 +110,33 @@
     var currentHref = "";
     var currentCfi = "";
     var currentIndex = 0;
+    var currentDisplayedPage = 0;
+    var currentDisplayedTotal = 0;
+    var atStart = false;
+    var atEnd = false;
+    var turning = false;
+    var pendingBeforeKey = "";
+    var turnRetryTimer = null;
+    var turnSafetyTimer = null;
+
+    function locationKey() {
+      return [currentCfi, currentHref, currentIndex, currentDisplayedPage].join("|");
+    }
+
+    function clearTurnState() {
+      window.clearTimeout(turnRetryTimer);
+      window.clearTimeout(turnSafetyTimer);
+      turnRetryTimer = null;
+      turnSafetyTimer = null;
+      turning = false;
+      pendingBeforeKey = "";
+    }
+
+    function onLocationSettled() {
+      if (turning && locationKey() !== pendingBeforeKey) {
+        clearTurnState();
+      }
+    }
     var textSections = [];
     var textSectionsPromise = null;
     var textModeReady = false;
@@ -361,9 +388,25 @@
         width: "100%",
         height: "100%",
         flow: "paginated",
-        spread: book.layout === "fixed" ? "none" : "auto",
-        minSpreadWidth: 1200
+        spread: "none"
       });
+      if (!fixed) {
+        try {
+          rendition.themes.default({
+            "img": {
+              "max-width": "100% !important",
+              "max-height": "78vh !important",
+              "width": "auto !important",
+              "height": "auto !important",
+              "object-fit": "contain"
+            },
+            "figure": {
+              "break-inside": "avoid",
+              "page-break-inside": "avoid"
+            }
+          });
+        } catch (err) { /* not all renditions support default theme injection */ }
+      }
     } catch (err) {
       say("The reader could not start for this book.", true);
       hideLoading();
@@ -496,6 +539,7 @@
         button.textContent = String(item.label || "").trim();
         button.setAttribute("data-href", item.href || "");
         button.addEventListener("click", function () {
+          clearTurnState();
           if (fixed && currentMode === "text") {
             var index = hrefToIndex(item.href);
             if (index >= 0) { scrollToTextIndex(index, "auto"); }
@@ -579,6 +623,11 @@
       currentHref = location.start.href || "";
       currentCfi = location.start.cfi || "";
       currentIndex = location.start.index != null ? location.start.index : 0;
+      currentDisplayedPage = (location.start.displayed && location.start.displayed.page) || 0;
+      currentDisplayedTotal = (location.start.displayed && location.start.displayed.total) || 0;
+      atStart = Boolean(location.atStart);
+      atEnd = Boolean(location.atEnd);
+      onLocationSettled();
 
       /* The text view owns progress, status and position while it is active. */
       if (fixed && currentMode === "text" && textModeReady) {
@@ -1095,24 +1144,60 @@
       return rendition.display(href || index).catch(function () { /* keep the page */ });
     }
 
+    /* Serialize page turns and verify relocation against the full displayed
+       location (including in-chapter page number), not just the chapter href,
+       so a settled turn inside a multi-page chapter never re-fires next()/prev(). */
     function turnPage(direction, attempt) {
       attempt = attempt || 0;
+      if (turning && attempt === 0) { return; }
+
       if (fixed) {
         var total = spineCount();
         var target = currentIndex + direction;
-        if (total && (target < 0 || target >= total)) { return; }
-        displayPage(target);
+        if (total && (target < 0 || target >= total)) {
+          clearTurnState();
+          return;
+        }
+        clearTurnState();
+        turning = true;
+        pendingBeforeKey = locationKey();
+        turnSafetyTimer = window.setTimeout(clearTurnState, 1000);
+        Promise.resolve(displayPage(target)).then(function () {
+          if (locationKey() !== pendingBeforeKey) { clearTurnState(); }
+        }).catch(clearTurnState);
         return;
       }
-      var before = currentHref;
-      var step = direction > 0 ? rendition.next() : rendition.prev();
-      function retryIfStuck() {
-        if (attempt < 1 && currentHref === before) {
-          turnPage(direction, attempt + 1);
-        }
+
+      if ((direction < 0 && atStart) || (direction > 0 && atEnd)) {
+        clearTurnState();
+        return;
       }
-      if (step && step.then) { step.then(function () { window.setTimeout(retryIfStuck, 260); }).catch(function () {}); }
-      else { window.setTimeout(retryIfStuck, 260); }
+
+      var beforeKey = attempt === 0 ? locationKey() : pendingBeforeKey;
+      window.clearTimeout(turnRetryTimer);
+      window.clearTimeout(turnSafetyTimer);
+      turnRetryTimer = null;
+      turning = true;
+      pendingBeforeKey = beforeKey;
+      turnSafetyTimer = window.setTimeout(clearTurnState, 1200);
+
+      var step = direction > 0 ? rendition.next() : rendition.prev();
+      Promise.resolve(step).then(function () {
+        if (!turning || locationKey() !== beforeKey) {
+          clearTurnState();
+          return;
+        }
+        turnRetryTimer = window.setTimeout(function () {
+          turnRetryTimer = null;
+          if (!turning) { return; }
+          if (attempt < 1 && locationKey() === beforeKey &&
+              !((direction < 0 && atStart) || (direction > 0 && atEnd))) {
+            turnPage(direction, attempt + 1);
+          } else {
+            clearTurnState();
+          }
+        }, 200);
+      }).catch(clearTurnState);
     }
 
     if (textView) {
@@ -1128,7 +1213,8 @@
       turnPage(1);
     });
 
-    document.addEventListener("keydown", function (event) {
+    function handleKeydown(event) {
+      if (event.repeat) { return; }
       var tag = event.target && event.target.tagName;
       if (tag && /input|textarea|select/i.test(tag)) { return; }
       if (event.ctrlKey || event.metaKey || event.altKey) { return; }
@@ -1153,9 +1239,22 @@
       } else if (event.key === "Escape") {
         if (tocPanel.classList.contains("is-open")) { closeToc(true); }
       }
+    }
+
+    document.addEventListener("keydown", handleKeydown);
+    rendition.on("keydown", handleKeydown);
+
+    var resizeTimer = null;
+    window.addEventListener("resize", function () {
+      if (fixed && currentMode === "text") { return; }
+      window.clearTimeout(resizeTimer);
+      resizeTimer = window.setTimeout(function () {
+        try { rendition.resize(); } catch (err) { /* keep current size */ }
+      }, 200);
     });
 
     startOverBtn.addEventListener("click", function () {
+      clearTurnState();
       if (narrationOn) { stopNarration(true); }
       if (canStore) {
         try { window.localStorage.removeItem("reader-position:" + bookId); }
