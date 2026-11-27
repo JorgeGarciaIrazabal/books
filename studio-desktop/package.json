@@ -1,6 +1,6 @@
 {
   "name": "book-studio-desktop",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "description": "Book Studio Desktop — writer-first WYSIWYG book workspace for Windows and Linux",
   "homepage": "https://jorgegarciairazabal.github.io/books/",
