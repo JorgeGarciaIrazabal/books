@@ -1,6 +1,24 @@
-# Glossary
+# Glassvale Glossary
 
-| Term / ID | Accepted spelling | Meaning / pronunciation | Source / status |
-| --- | --- | --- | --- |
-
-Add entries when needed. Preserve variant in-world names with their speaker/culture.
+- **Bell-Choosing Ceremony:** The first-year ritual beneath Glassvale's central Bell-Tower when students complete Common Term and choose the Path of Makers, Path of Nature, or Path of Pure Magic.
+- **Bell-Vault:** The circular stone room beneath the Bell-Tower where the three founding bells' ropes hang and the Crown Seal of the World-Glass is hidden.
+- **Bramble-Owl:** A fluffy moss-feathered owl-fox hybrid with amber eyes and a russet tail. Marissa's companion is **Pip**.
+- **Clock-Beetle:** A palm-sized brass-and-glass mechanical beetle built by Makers students to carry notes and glow in dark halls.
+- **Cold-Iron:** The forbidden dark side of the Path of Makers, built on draining power from living things or forcing unsafe coils.
+- **Common Term:** The opening weeks at Glassvale Academy when eleven-year-old newcomers try basics from all three Paths before choosing one.
+- **Crown Seal:** The golden top lock-piece of the World-Glass, hidden beneath Glassvale's Bell-Tower until Book 1.
+- **Deep Gate:** The locked wrought-iron archway beneath the Starlight Tower that seals away old forbidden rooms of Shadow Magic.
+- **Glassvale Academy:** The hidden magical school nestled behind the Mistgate waterfall in Glassvale valley.
+- **Glow-Frog:** A pocket-sized turquoise tree-frog whose throat glows warm gold near rain or hidden illusions. Maya's companion is **Pebble**.
+- **Ink-Hound:** A silent, smoky shadow-wolf with cold emerald-violet eyes conjured by Shadow Magic.
+- **Lantern-Fox:** A gentle golden forest fox whose curling tail glows like a lantern in mountain fog.
+- **Mistgate:** The shimmering waterfall archway hiding Glassvale from the ordinary world.
+- **Pass-Token:** A smooth coin of clear river-glass that lets a student step dry through the Mistgate.
+- **Path of Makers:** The engineering and science Path led by Jorge, built on blueprints, tools, and trial and error.
+- **Path of Nature:** The living-world Path led by Marissa, built on weather, animals, plants, balance, and teamwork.
+- **Path of Pure Magic:** The raw-spark Path led by Peter, mighty and mysterious yet hard to control.
+- **Shadow Magic:** The dangerous dark side of Pure Magic that drains warmth and light, wakes shadow creatures, and tempts casters with easy shortcuts.
+- **The Blight:** The forbidden dark side of the Path of Nature, forcing plants and weather through fear rather than partnership.
+- **The Hollow Circle:** The secret villainous association hunting the five split pieces of the World-Glass (Peter is secretly one of them, hidden until Book 5).
+- **The World-Glass:** An ancient three-chambered hourglass of golden clockwork dust, living emerald seeds, and liquid starlight, split into five hidden pieces long ago.
+- **Whisper-Moth:** A spooky pale-violet shadow-moth that drinks candle flames and mimics familiar voices.

@@ -1,4 +1,26 @@
 {
   "schema_version": 1,
-  "events": []
+  "events": [
+    {
+      "id": "EVT-0001",
+      "story_time": "Centuries before Book 1",
+      "title": "Founding of Glassvale and Forging of the World-Glass",
+      "summary": "Three founders from Makers, Nature, and Pure Magic raise the Mistgate waterfall and forge the World-Glass to keep the valley hidden and balanced.",
+      "status": "accepted"
+    },
+    {
+      "id": "EVT-0002",
+      "story_time": "Two centuries before Book 1",
+      "title": "The Splitting of the World-Glass",
+      "summary": "After a rogue Pure Magic scholar tries to turn the World-Glass alone using Shadow Magic, the founders seal the Deep Gate and split the World-Glass into five hidden pieces locked behind three-Path wards.",
+      "status": "accepted"
+    },
+    {
+      "id": "EVT-0003",
+      "story_time": "Book 1, Autumn Term (Clara age 11)",
+      "title": "Clara Crosses the Mistgate",
+      "summary": "Eleven-year-old Clara arrives at Glassvale Academy for Common Term, befriends Maya and Sam, chooses the Path of Pure Magic, earns the trust of Jorge and Marissa, and helps foil Silas (The Gray Coat) when he hunts the Crown Seal beneath the Bell-Tower.",
+      "status": "accepted"
+    }
+  ]
 }

@@ -1,4 +1,85 @@
 {
   "schema_version": 1,
-  "facts": []
+  "facts": [
+    {
+      "id": "FACT-0001",
+      "text": "Glassvale Academy is a hidden magical school tucked inside a mountain valley behind a shimmering waterfall curtain called The Mistgate.",
+      "scope": "universe",
+      "status": "accepted",
+      "provenance": "Author creative brief (2026-11-27), DEC-GV-0001",
+      "effective_story_time": "Pre-Book 1 onward"
+    },
+    {
+      "id": "FACT-0002",
+      "text": "Students enter Glassvale Academy at age eleven, learn basics of all three disciplines in Common Term, and then specialize in one of three Paths: Path of Makers (engineering and science), Path of Nature (weather, animals, plants, teamwork), or Path of Pure Magic (powerful, mysterious, hard-to-control raw magic).",
+      "scope": "universe",
+      "status": "accepted",
+      "provenance": "Author creative brief (2026-11-27), DEC-GV-0001",
+      "effective_story_time": "Pre-Book 1 onward"
+    },
+    {
+      "id": "FACT-0003",
+      "text": "Each Path has a forbidden dark section: Cold-Iron (Makers) and The Blight (Nature) are milder and easier to contain, while Shadow Magic (Pure Magic) is far deeper, spookier, and more dangerous.",
+      "scope": "universe",
+      "status": "accepted",
+      "provenance": "Author creative brief (2026-11-27), DEC-GV-0001",
+      "effective_story_time": "Pre-Book 1 onward"
+    },
+    {
+      "id": "FACT-0004",
+      "text": "Headmistress Monica leads all of Glassvale Academy, mentors Clara, and insists on buying the second most expensive version of everything because she thinks only show-offs buy the first.",
+      "scope": "universe",
+      "status": "accepted",
+      "provenance": "Author creative brief (2026-11-27), DEC-GV-0001",
+      "effective_story_time": "Pre-Book 1 onward"
+    },
+    {
+      "id": "FACT-0005",
+      "text": "The three Path Leader Teachers are Jorge (Path of Makers), Marissa (Path of Nature), and Peter (Path of Pure Magic). Clara does not start out close to Jorge or Marissa; she builds strong trust with them during Book 1.",
+      "scope": "universe",
+      "status": "accepted",
+      "provenance": "Author creative brief (2026-11-27), DEC-GV-0001",
+      "effective_story_time": "Book 1 opening onward"
+    },
+    {
+      "id": "FACT-0006",
+      "text": "The World-Glass is an ancient three-chambered hourglass (golden clockwork dust, living emerald seeds, liquid starlight) split long ago into five hidden pieces: Crown Seal, Maker Chamber, Nature Chamber, Starlight Chamber, and Silver Frame.",
+      "scope": "universe",
+      "status": "accepted",
+      "provenance": "Author creative brief (2026-11-27), DEC-GV-0001",
+      "effective_story_time": "Pre-Book 1 onward"
+    },
+    {
+      "id": "FACT-0007",
+      "text": "SECRET (DO NOT DISCLOSE BEFORE BOOK 5): Peter is secretly a member of The Hollow Circle, the evil association hunting the five pieces of the World-Glass. His small antique brass sand-timer acts as a quiet seeker dial, though to everyone at Glassvale he looks completely warm, fit, noble, and trustworthy.",
+      "scope": "universe",
+      "status": "accepted",
+      "provenance": "Author creative brief (2026-11-27), DEC-GV-0001",
+      "effective_story_time": "Pre-Book 1 through Book 5 reveal"
+    },
+    {
+      "id": "FACT-0008",
+      "text": "Clara's core best friends at Glassvale Academy are Maya (Path of Nature, sporty with a turquoise Glow-Frog named Pebble) and Sam (Path of Pure Magic, quirky ginger-haired friend with crooked glasses). Makers students such as Ben and Nora appear only as secondary classmates alongside Jorge.",
+      "scope": "universe",
+      "status": "accepted",
+      "provenance": "Author creative brief (2026-11-27), DEC-GV-0001",
+      "effective_story_time": "Book 1 onward"
+    },
+    {
+      "id": "FACT-0009",
+      "text": "Visual appearances locked by author-approved concept sheets: Clara (11, straight light-brown hair with bangs, silver-star clip, slate-blue cloak), Maya (11, sporty Black girl, bouncy curls, mustard bandana, olive utility vest, muddy boots, turquoise Glow-Frog Pebble), Sam (11, curly ginger hair, crooked round glasses, burgundy sweater under open navy waistcoat), Monica (adult, silver-streaked hair in bun, thin silver glasses on chain, teal-and-silver robes), Jorge (witty inventor, tousled dark hair, goggles, leather tool vest), Marissa (Asian, leaf-woven dark braid, emerald cloak, moss-feathered Bramble-Owl Pip), Peter (tall, fit, athletic Black man, deep-plum and gold robes, small antique brass sand-timer), Victor (12, neat blond hair, crisp navy-and-silver jacket, leather gloves).",
+      "scope": "universe",
+      "status": "accepted",
+      "provenance": "Author visual review (2026-11-27), DEC-GV-0001",
+      "effective_story_time": "Book 1 onward"
+    },
+    {
+      "id": "FACT-0010",
+      "text": "The Crown Seal is the first piece of the World-Glass, hidden beneath Glassvale's central Bell-Tower behind three Path locks and defended by the three academy bells (Brass, Leaf, Star) ringing together.",
+      "scope": "universe",
+      "status": "accepted",
+      "provenance": "Book 1 creative design (2026-11-27), DEC-GV-0001",
+      "effective_story_time": "Pre-Book 1 through Book 1"
+    }
+  ]
 }
