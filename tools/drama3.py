@@ -27,15 +27,19 @@ Environment overrides (auto-discovered by default on this computer):
 from __future__ import annotations
 
 import argparse
+import array
 import difflib
 import hashlib
 import json
+import math
 import os
 import re
 import shutil
 import subprocess
 import sys
+import tempfile
 import time
+import wave
 from datetime import date
 from pathlib import Path
 
@@ -57,6 +61,10 @@ DEFAULT_CONTEXT = 4096
 DEFAULT_SEED = 7
 DEFAULT_THREADS = 8
 DEFAULT_BACKEND = "vulkan"
+DEFAULT_SENTENCE_GAP_MS = 500
+DEFAULT_PARAGRAPH_GAP_MS = 750
+EDGE_SILENCE_THRESHOLD_DB = -40.0
+EDGE_FADE_MS = 5
 MODEL_LICENSE = "Fish Audio Community License v1.0"
 
 TAG_PATTERNS = [
@@ -185,6 +193,156 @@ def detect_silences(path: Path, threshold: float) -> list[tuple[float, float]]:
         for line in out.stderr.splitlines() if "silence_duration:" in line
     ]
     return list(zip(starts, lengths))
+
+
+def measure_wav_edge_silence(
+    path: Path,
+    threshold_db: float = EDGE_SILENCE_THRESHOLD_DB,
+    window_ms: int = 10,
+) -> tuple[int, int]:
+    """Measure leading and trailing near-silence (ms) in a 16-bit PCM WAV."""
+    with wave.open(str(path), "rb") as wf:
+        nchannels = wf.getnchannels()
+        sampwidth = wf.getsampwidth()
+        framerate = wf.getframerate()
+        nframes = wf.getnframes()
+        if sampwidth != 2:
+            fail(f"{path}: expected 16-bit PCM WAV, got sampwidth={sampwidth}")
+        raw = wf.readframes(nframes)
+    if nframes == 0 or framerate <= 0:
+        return (0, 0)
+    samples = array.array("h")
+    samples.frombytes(raw)
+    if sys.byteorder != "little":
+        samples.byteswap()
+    win_frames = max(1, int(round(framerate * window_ms / 1000.0)))
+    step = win_frames * nchannels
+    threshold = 32768.0 * (10.0 ** (threshold_db / 20.0))
+    rms_windows = []
+    for i in range(0, len(samples), step):
+        chunk = samples[i:i + step]
+        if not chunk:
+            continue
+        rms_windows.append(math.sqrt(sum(s * s for s in chunk) / len(chunk)))
+    if not rms_windows:
+        return (0, 0)
+    total_ms = int(round((nframes / framerate) * 1000.0))
+    first_active = next((idx for idx, val in enumerate(rms_windows) if val > threshold), None)
+    if first_active is None:
+        return (total_ms, total_ms)
+    last_active = next(
+        len(rms_windows) - 1 - idx
+        for idx, val in enumerate(reversed(rms_windows))
+        if val > threshold
+    )
+    lead_ms = first_active * window_ms
+    trail_ms = (len(rms_windows) - 1 - last_active) * window_ms
+    return (lead_ms, trail_ms)
+
+
+def _fade_edges_pcm16(
+    raw: bytes,
+    nchannels: int,
+    sample_rate: int,
+    fade_in: bool,
+    fade_out: bool,
+    fade_ms: int = EDGE_FADE_MS,
+) -> bytes:
+    """Apply short linear ramps to prevent clicks when padding tight WAV cuts."""
+    if not (fade_in or fade_out) or not raw:
+        return raw
+    samples = array.array("h")
+    samples.frombytes(raw)
+    if sys.byteorder != "little":
+        samples.byteswap()
+    total_frames = len(samples) // nchannels
+    fade_frames = min(int(round(sample_rate * fade_ms / 1000.0)), total_frames // 2)
+    if fade_frames <= 0:
+        return raw
+    if fade_in:
+        for f in range(fade_frames):
+            scale = f / fade_frames
+            base = f * nchannels
+            for c in range(nchannels):
+                samples[base + c] = int(round(samples[base + c] * scale))
+    if fade_out:
+        start = total_frames - fade_frames
+        for offset in range(fade_frames):
+            scale = (fade_frames - 1 - offset) / fade_frames
+            base = (start + offset) * nchannels
+            for c in range(nchannels):
+                samples[base + c] = int(round(samples[base + c] * scale))
+    if sys.byteorder != "little":
+        samples.byteswap()
+    return samples.tobytes()
+
+
+def concat_wavs_with_gaps(
+    wavs: list[Path],
+    target_gaps_ms: list[int],
+    out_wav: Path,
+    threshold_db: float = EDGE_SILENCE_THRESHOLD_DB,
+) -> dict:
+    """Concatenate 16-bit PCM WAVs while ensuring minimum silence at joins."""
+    if not wavs:
+        fail("concat_wavs_with_gaps requires at least one WAV")
+    if len(target_gaps_ms) != len(wavs) - 1:
+        fail(
+            f"target_gaps_ms length ({len(target_gaps_ms)}) must equal len(wavs) - 1 ({len(wavs) - 1})"
+        )
+    params: tuple[int, int, int, str] | None = None
+    edges: list[tuple[int, int]] = []
+    for w in wavs:
+        with wave.open(str(w), "rb") as wf:
+            cur = (wf.getnchannels(), wf.getsampwidth(), wf.getframerate(), wf.getcomptype())
+        if cur[1] != 2 or cur[3] != "NONE":
+            fail(f"{w}: expected uncompressed 16-bit PCM WAV, got width={cur[1]} comp={cur[3]}")
+        if params is None:
+            params = cur
+        elif cur != params:
+            fail(f"{w}: WAV format {cur} differs from {params}")
+        edges.append(measure_wav_edge_silence(w, threshold_db=threshold_db))
+
+    assert params is not None
+    nchannels, sampwidth, framerate, _ = params
+    frame_bytes = nchannels * sampwidth
+
+    pad_plan: list[int] = []
+    raw_gaps: list[int] = []
+    final_gaps: list[int] = []
+    for idx, target in enumerate(target_gaps_ms):
+        raw_gap = edges[idx][1] + edges[idx + 1][0]
+        target_ms = max(0, int(target))
+        pad_ms = max(0, target_ms - raw_gap)
+        pad_plan.append(pad_ms)
+        raw_gaps.append(raw_gap)
+        final_gaps.append(raw_gap + pad_ms)
+
+    out_wav.parent.mkdir(parents=True, exist_ok=True)
+    with wave.open(str(out_wav), "wb") as out_wf:
+        out_wf.setnchannels(nchannels)
+        out_wf.setsampwidth(sampwidth)
+        out_wf.setframerate(framerate)
+        for idx, w in enumerate(wavs):
+            with wave.open(str(w), "rb") as in_wf:
+                raw = in_wf.readframes(in_wf.getnframes())
+            need_fade_in = idx > 0 and pad_plan[idx - 1] > 0 and edges[idx][0] < 15
+            need_fade_out = idx < len(wavs) - 1 and pad_plan[idx] > 0 and edges[idx][1] < 15
+            if need_fade_in or need_fade_out:
+                raw = _fade_edges_pcm16(raw, nchannels, framerate, need_fade_in, need_fade_out)
+            out_wf.writeframes(raw)
+            if idx < len(wavs) - 1 and pad_plan[idx] > 0:
+                silence_frames = int(round(pad_plan[idx] * framerate / 1000.0))
+                if silence_frames > 0:
+                    out_wf.writeframes(b"\x00" * (silence_frames * frame_bytes))
+
+    return {
+        "joins": len(target_gaps_ms),
+        "padded_joins": sum(1 for p in pad_plan if p > 0),
+        "min_raw_gap_ms": min(raw_gaps) if raw_gaps else None,
+        "min_final_gap_ms": min(final_gaps) if final_gaps else None,
+        "total_added_ms": sum(pad_plan),
+    }
 
 
 def page_wav_name(page: int) -> str:
