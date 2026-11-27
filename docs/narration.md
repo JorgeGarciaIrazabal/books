@@ -177,6 +177,8 @@ python3 tools/drama3.py check <book>/production/narration/segments.json \
   <book>/exports/narration-drama3
 
 # 5. Assemble verified WAVs into mono 96 kbps chapter MP3s, chapters.json, and render.json.
+#    Adaptive join padding (--sentence-gap-ms 500, --paragraph-gap-ms 750) prevents rushed
+#    transitions after periods at segment joins without double-padding existing silence.
 python3 tools/drama3.py assemble-chapters <book>/production/narration/segments.json \
   --audio <book>/exports/narration-drama3 \
   --out site/audio/<book-id> \
@@ -191,6 +193,10 @@ Rules learned the hard way:
   default of 128 characters a take inserted a line and left an 11 s silence.
 - Keep chapter segments around `90–95` words when using `max_tokens=1400` so
   takes stay well under the ~65 s cap; use `split-retake` if any segment caps.
+- Drama 3 renders each segment with only ~30–140 ms of edge silence, so raw
+  concatenation rushes right after a period; `assemble-chapters` and `split-retake`
+  now apply adaptive join padding (500 ms sentence, 750 ms paragraph, overridable)
+  and add 5 ms micro-fades when an edge has <15 ms of silence.
 - Every take needs a transcript diff. End-of-request drift is real and
   seed-dependent; a repeated line at the end of page 1 appeared at seed 1234 and
   not at seed 7.

@@ -1,20 +1,24 @@
 {
   "schema_version": 1,
   "book": "the-three-paths",
-  "status": "uncast",
+  "status": "synthetic American narrator reference for Fish Audio Drama 3 rendering; human listening pending",
   "voices": [
     {
       "id": 0,
-      "role": "Narrator",
-      "engine": "Fish Audio Drama 3 (local audio.cpp Vulkan); synthetic reference",
-      "voice": "replace-with-reference-voice-id",
+      "role": "Narrator, including dialogue",
+      "engine": "Fish Audio Drama 3 (local audio.cpp Vulkan); Kokoro-82M af_heart reference",
+      "voice": "af_heart",
+      "speed": 0.96,
+      "pitch_ratio": 1.0,
       "reference": "cast/narrator.wav",
-      "reference_text": "A different sentence per voice, exactly as recorded.",
-      "reference_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-      "provenance": "who or what made this reference clip, where, and when",
-      "licence_note": "Fish Audio Community License v1.0 (include 'Built with Fish Audio' attribution) plus consent for a human voice or synthetic reference terms"
+      "reference_seconds": 5.5,
+      "reference_text": "The kitchen was bright in the morning light, and the yellow notebook lay open beside the coffee cup.",
+      "reference_sha256": "75e8edd35b2f86d0309b3aa6925699603e1f562f0934194e9a949874688fdec2",
+      "provenance": "Synthetic American English preset generated locally with Kokoro-82M ONNX (af_heart, Apache-2.0) on 2026-11-23 as a voice-conditioning reference for Fish Audio Drama 3. Not a human recording and not an impersonation target.",
+      "licence_note": "Fish Audio Community License v1.0 (include 'Built with Fish Audio' attribution; separate licence required for hosted TTS service). Kokoro-82M model is Apache-2.0; verify individual voice-pack dataset terms before commercial use."
     }
   ],
+  "direction_style": "single warm, expressive adventure storyteller direction per segment via tools/drama3.py",
   "rules": [
     "one distinct reference sentence per voice",
     "no identifiable person is imitated without documented consent",

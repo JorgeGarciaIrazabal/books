@@ -404,7 +404,20 @@ SENTENCE_SPLIT_RE = re.compile(
 )
 
 
-def split_chapter_markdown(path: Path, max_words: int, keep_markdown: bool = False) -> tuple[str, str, str, list[str]]:
+def _flush_segment(items: list[tuple[int, str, bool]]) -> dict:
+    groups: list[list[str]] = []
+    prev_para: int | None = None
+    for para_idx, text, _ in items:
+        if prev_para is None or para_idx != prev_para:
+            groups.append([text])
+            prev_para = para_idx
+        else:
+            groups[-1].append(text)
+    seg_text = "\n\n".join(" ".join(group) for group in groups)
+    return {"text": seg_text, "ends_paragraph": items[-1][2]}
+
+
+def split_chapter_markdown(path: Path, max_words: int, keep_markdown: bool = False) -> tuple[str, str, str, list[dict]]:
     raw = path.read_text(encoding="utf-8")
     lines = raw.splitlines()
     if not lines or not lines[0].startswith("# "):
@@ -415,44 +428,48 @@ def split_chapter_markdown(path: Path, max_words: int, keep_markdown: bool = Fal
 
     # Keep paragraph structure; split paragraphs into sentences without losing words.
     paragraphs = [normalize_ws(p) for p in re.split(r"\n\s*\n", body) if p.strip()]
-    units: list[str] = [title]
-    for para in paragraphs:
+    units: list[tuple[int, str, bool]] = [(0, title, True)]
+    para_word_counts: dict[int, int] = {0: len(title.split())}
+    for p_idx, para in enumerate(paragraphs, 1):
+        para_word_counts[p_idx] = len(para.split())
         sentences = [s.strip() for s in SENTENCE_SPLIT_RE.split(para) if s.strip()]
-        units.extend(sentences)
+        for s_idx, sent in enumerate(sentences):
+            units.append((p_idx, sent, s_idx == len(sentences) - 1))
 
     spoken_full = normalize_ws(title + " " + " ".join(paragraphs))
 
-    segments: list[str] = []
-    current: list[str] = []
-    title_attached = False
-    for idx, unit in enumerate(units):
-        w = unit.split()
+    segments: list[dict] = []
+    current: list[tuple[int, str, bool]] = []
+    for idx, (para_idx, unit_text, is_para_end) in enumerate(units):
+        w = unit_text.split()
         # Keep the chapter heading attached to the opening sentence(s) with a
         # paragraph break so Drama 3 pauses naturally after the chapter title.
         if idx == 0:
-            current.append(unit)
-            title_attached = True
+            current.append((para_idx, unit_text, is_para_end))
             continue
-        cur_words = sum(len(part.split()) for part in current)
-        if current and cur_words + len(w) > max_words:
-            if title_attached and len(current) > 1:
-                segments.append(current[0] + "\n\n" + " ".join(current[1:]))
-            else:
-                segments.append(" ".join(current))
+        cur_words = sum(len(part[1].split()) for part in current)
+        if (
+            current
+            and para_idx != current[-1][0]
+            and current[-1][0] != 0
+            and cur_words >= int(max_words * 0.65)
+            and cur_words + para_word_counts[para_idx] > max_words
+        ):
+            segments.append(_flush_segment(current))
             current = []
-            title_attached = False
+            cur_words = 0
+        if current and cur_words + len(w) > max_words:
+            segments.append(_flush_segment(current))
+            current = []
         while len(w) > max_words:
-            segments.append(" ".join(w[:max_words]))
+            segments.append({"text": " ".join(w[:max_words]), "ends_paragraph": False})
             w = w[max_words:]
         if w:
-            current.append(" ".join(w))
+            current.append((para_idx, " ".join(w), is_para_end))
     if current:
-        if title_attached and len(current) > 1:
-            segments.append(current[0] + "\n\n" + " ".join(current[1:]))
-        else:
-            segments.append(" ".join(current))
+        segments.append(_flush_segment(current))
 
-    if normalize_ws(" ".join(segments)) != spoken_full:
+    if normalize_ws(" ".join(seg["text"] for seg in segments)) != spoken_full:
         fail(f"{path}: segment reassembly mismatch against chapter text")
     return raw, title, spoken_full, segments
 
@@ -485,12 +502,14 @@ def cmd_prepare_chapters(args: argparse.Namespace) -> int:
             "words": len(spoken.split()),
             "segments": len(segments),
         })
-        for seg_idx, seg_text in enumerate(segments, 1):
+        for seg_idx, seg in enumerate(segments, 1):
+            seg_text = seg["text"]
             rows.append({
                 "page": len(rows) + 1,
                 "chapter": ch_num,
                 "segment": seg_idx,
                 "text": seg_text,
+                "ends_paragraph": seg["ends_paragraph"],
                 "words": len(seg_text.split()),
                 "text_sha256": sha256_text(seg_text),
             })
@@ -994,19 +1013,9 @@ def cmd_split_retake(args: argparse.Namespace) -> int:
         for w in wavs:
             if not w.is_file():
                 fail(f"missing split wav {w}")
-        list_path = sub_out / f"concat-{page:02d}.txt"
-        list_path.write_text(
-            "".join(f"file '{w.resolve().as_posix()}'\n" for w in wavs),
-            encoding="utf-8",
-        )
         target = out_dir / page_wav_name(page)
-        subprocess.run(
-            [
-                "ffmpeg", "-nostdin", "-hide_banner", "-loglevel", "error", "-y",
-                "-f", "concat", "-safe", "0", "-i", str(list_path),
-                "-c", "copy", str(target),
-            ],
-            check=True,
+        join_stats = concat_wavs_with_gaps(
+            wavs, [args.sentence_gap_ms] * (len(wavs) - 1), target
         )
         secs = probe_duration(target)
         summary.setdefault("files", {})[str(page)] = {
@@ -1015,6 +1024,7 @@ def cmd_split_retake(args: argparse.Namespace) -> int:
             "seconds": secs,
             "seed": args.seed,
             "split_parts": len(sub_items),
+            "join_stats": join_stats,
             "capped": False,
             "sha256": sha256_file(target),
         }
@@ -1128,6 +1138,7 @@ def cmd_check(args: argparse.Namespace) -> int:
 
         gaps = detect_silences(wav, args.pause_threshold)
         longest_pause = max((length for _, length in gaps), default=0.0)
+        lead_ms, trail_ms = measure_wav_edge_silence(wav)
         wpm = round((len(expected_tokens) / secs) * 60.0, 1) if secs > 0 else 0.0
         capped = bool(summary_files.get(str(r["page"]), {}).get("capped", False))
 
@@ -1151,6 +1162,8 @@ def cmd_check(args: argparse.Namespace) -> int:
             "words": len(expected_tokens),
             "wpm": wpm,
             "similarity": ratio,
+            "lead_ms": lead_ms,
+            "trail_ms": trail_ms,
             "longest_pause_s": round(longest_pause, 2),
             "pauses": [[round(s, 2), round(d, 2)] for s, d in gaps],
             "capped": capped,
@@ -1212,43 +1225,53 @@ def cmd_assemble_chapters(args: argparse.Namespace) -> int:
 
     out_dir.mkdir(parents=True, exist_ok=True)
     chapters_out = []
-    list_path = out_dir / ".concat-list.txt"
 
-    for ch in source["chapters"]:
-        ch_rows = [r for r in rows if r["chapter"] == ch["chapter"]]
-        if not ch_rows:
-            fail(f"chapter {ch['chapter']} has no segments")
-        list_path.write_text(
-            "".join(
-                f"file '{(audio_dir / page_wav_name(r['page'])).resolve().as_posix()}'\n"
-                for r in ch_rows
-            ),
-            encoding="utf-8",
-        )
-        target = out_dir / f"chapter-{ch['chapter']:02d}.mp3"
-        cmd = [
-            "ffmpeg", "-nostdin", "-hide_banner", "-loglevel", "error", "-y",
-            "-f", "concat", "-safe", "0", "-i", str(list_path),
-            "-ac", "1", "-ar", str(args.sample_rate),
-            "-codec:a", "libmp3lame", "-b:a", args.bitrate,
-            "-map_metadata", "-1",
-            str(target),
-        ]
-        subprocess.run(cmd, check=True)
-        secs = probe_duration(target)
-        chapters_out.append({
-            "number": ch["chapter"],
-            "title": ch["title"],
-            "file": target.name,
-            "seconds": secs,
-            "bytes": target.stat().st_size,
-            "sha256": sha256_file(target),
-            "source": ch["path"],
-            "source_sha256": ch["source_sha256"],
-            "segments": [r["page"] for r in ch_rows],
-        })
-        print(f"{target.name}: {clock_fmt(secs)} ({secs}s, {target.stat().st_size} bytes)", flush=True)
-    list_path.unlink(missing_ok=True)
+    with tempfile.TemporaryDirectory(prefix="drama3-asm-") as tmp_dir:
+        tmp_path = Path(tmp_dir)
+        for ch in source["chapters"]:
+            ch_rows = [r for r in rows if r["chapter"] == ch["chapter"]]
+            if not ch_rows:
+                fail(f"chapter {ch['chapter']} has no segments")
+            wavs = [audio_dir / page_wav_name(r["page"]) for r in ch_rows]
+            target_gaps = [
+                args.paragraph_gap_ms if r.get("ends_paragraph") else args.sentence_gap_ms
+                for r in ch_rows[:-1]
+            ]
+            combined_wav = tmp_path / f"chapter-{ch['chapter']:02d}.wav"
+            join_stats = concat_wavs_with_gaps(wavs, target_gaps, combined_wav)
+            target = out_dir / f"chapter-{ch['chapter']:02d}.mp3"
+            cmd = [
+                "ffmpeg", "-nostdin", "-hide_banner", "-loglevel", "error", "-y",
+                "-i", str(combined_wav),
+                "-ac", "1", "-ar", str(args.sample_rate),
+                "-codec:a", "libmp3lame", "-b:a", args.bitrate,
+                "-map_metadata", "-1",
+                str(target),
+            ]
+            subprocess.run(cmd, check=True)
+            secs = probe_duration(target)
+            chapters_out.append({
+                "number": ch["chapter"],
+                "title": ch["title"],
+                "file": target.name,
+                "seconds": secs,
+                "bytes": target.stat().st_size,
+                "sha256": sha256_file(target),
+                "source": ch["path"],
+                "source_sha256": ch["source_sha256"],
+                "segments": [r["page"] for r in ch_rows],
+                "join_stats": join_stats,
+            })
+            gap_note = (
+                f", joins {join_stats['min_raw_gap_ms']}->{join_stats['min_final_gap_ms']}ms min "
+                f"(+{join_stats['total_added_ms']}ms)"
+                if join_stats["joins"]
+                else ""
+            )
+            print(
+                f"{target.name}: {clock_fmt(secs)} ({secs}s, {target.stat().st_size} bytes{gap_note})",
+                flush=True,
+            )
 
     engine_info = summary.get("engine") or {}
     commit_short = (engine_info.get("commit") or "unknown")[:7]
@@ -1284,13 +1307,18 @@ def cmd_assemble_chapters(args: argparse.Namespace) -> int:
     if args.render_record:
         rec_path = Path(args.render_record).resolve()
         rec_path.parent.mkdir(parents=True, exist_ok=True)
+        rec_settings = dict(summary.get("settings") or {})
+        rec_settings["join_padding"] = {
+            "sentence_gap_ms": args.sentence_gap_ms,
+            "paragraph_gap_ms": args.paragraph_gap_ms,
+        }
         record = {
             "schema_version": 1,
             "book": manifest["book_id"],
             "generated": str(date.today()),
             "status": args.review_status,
             "engine": engine_info,
-            "settings": summary.get("settings") or {},
+            "settings": rec_settings,
             "voice": args.voice,
             "voice_reference": summary.get("voice") or {},
             "format": f"mono {args.sample_rate} Hz {args.bitrate} CBR MP3",
@@ -1373,6 +1401,7 @@ def main(argv: list[str] | None = None) -> int:
     p_spl.add_argument("--pages", required=True, help="comma-separated unit numbers to split")
     p_spl.add_argument("--out-dir", required=True)
     p_spl.add_argument("--part-limit", type=int, default=55)
+    p_spl.add_argument("--sentence-gap-ms", type=int, default=DEFAULT_SENTENCE_GAP_MS)
     add_common_engine_args(p_spl)
 
     p_chk = sub.add_parser("check", help="check duration, WPM, silence, and faster-whisper ASR")
@@ -1412,6 +1441,8 @@ def main(argv: list[str] | None = None) -> int:
     p_asm.add_argument("--render-record", default=None, help="optional production/narration/render.json path")
     p_asm.add_argument("--public-page", default=None)
     p_asm.add_argument("--audio-rel-dir", default=None)
+    p_asm.add_argument("--sentence-gap-ms", type=int, default=DEFAULT_SENTENCE_GAP_MS)
+    p_asm.add_argument("--paragraph-gap-ms", type=int, default=DEFAULT_PARAGRAPH_GAP_MS)
 
     args = parser.parse_args(argv)
     try:

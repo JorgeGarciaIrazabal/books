@@ -1,0 +1,875 @@
+{
+  "schema_version": 1,
+  "kind": "chapter_segments",
+  "book_id": "the-three-paths",
+  "title": "The Three Paths",
+  "max_words": 95,
+  "chapters": [
+    {
+      "chapter": 1,
+      "path": "manuscript/001-behind-the-waterfall.md",
+      "title": "Chapter 1: Behind the Waterfall",
+      "source_sha256": "955809ee16e45c1bcd0e6ac1b765f823cb20ffba5a3d9aa9663d478120e2afe0",
+      "spoken_sha256": "21c97a6993a21ff0374fd5bbf6c7fd41bac559702c84e4a1dc534a3f87282dd9",
+      "words": 960,
+      "segments": 12
+    },
+    {
+      "chapter": 2,
+      "path": "manuscript/002-the-week-of-three-sparks.md",
+      "title": "Chapter 2: The Week of Three Sparks",
+      "source_sha256": "9f36286eacc2976bc7fc48f37d7af8c019fe610216531781204fe5f23096fdb1",
+      "spoken_sha256": "706bd83668854bace61db8c72ac1accfd5dc8cf18d89cbd3b25e28103e9a3a78",
+      "words": 855,
+      "segments": 11
+    },
+    {
+      "chapter": 3,
+      "path": "manuscript/003-the-whisper-beneath-the-stairs.md",
+      "title": "Chapter 3: The Whisper Beneath the Stairs",
+      "source_sha256": "00024098a8d6f2db75f380133809031d7810534c9e5fc5f980f276782b22116b",
+      "spoken_sha256": "44adb3b6676f050e8cc8f911855a597114a4f942af67c7d394940dff9c5635b4",
+      "words": 730,
+      "segments": 9
+    },
+    {
+      "chapter": 4,
+      "path": "manuscript/004-cold-iron-and-broken-roots.md",
+      "title": "Chapter 4: Cold-Iron and Broken Roots",
+      "source_sha256": "37c3f7b3f9360493abc20686b42131c2f72a7f91195161cba8f2e275a1f55953",
+      "spoken_sha256": "b4ed33a198f0ff60561fecc45225363d303afa19ba068265446f890456a21560",
+      "words": 837,
+      "segments": 11
+    },
+    {
+      "chapter": 5,
+      "path": "manuscript/005-victors-shortcut.md",
+      "title": "Chapter 5: Victor's Shortcut",
+      "source_sha256": "ce57b5a374e85f23f9d0e00c2d38a9b84306b090bfa55540e4cfaab515f66da2",
+      "spoken_sha256": "45ae8fd1dd9571a8036660bca32c8cdc1f4c110e9f744887e5de21601976ccfb",
+      "words": 764,
+      "segments": 10
+    },
+    {
+      "chapter": 6,
+      "path": "manuscript/006-the-gray-coat-in-the-mist.md",
+      "title": "Chapter 6: The Gray Coat in the Mist",
+      "source_sha256": "82b2a4d0e68a5a09a04707986c55d96e79e13f72e4272e70e67288d470aae378",
+      "spoken_sha256": "703cdaf4a4d8ca0eab3c5ff2e64358c774bc152a6bd73b52fce2b8b008f851cc",
+      "words": 763,
+      "segments": 9
+    },
+    {
+      "chapter": 7,
+      "path": "manuscript/007-three-locks-three-paths.md",
+      "title": "Chapter 7: Three Locks, Three Paths",
+      "source_sha256": "535c67435740dc23af2f9471cac07d47445c666b91e707c65ac79df962d45da2",
+      "spoken_sha256": "87ac4b8e266181eb791fbd6b6b4215f806105c7c11ab8596f1747a6449ca7e27",
+      "words": 628,
+      "segments": 8
+    },
+    {
+      "chapter": 8,
+      "path": "manuscript/008-the-song-of-the-three-bells.md",
+      "title": "Chapter 8: The Song of the Three Bells",
+      "source_sha256": "8d1c023fb5e899d855901c67e65d2beb9ddae4b244ddc5fa465a219063d818ec",
+      "spoken_sha256": "ba905be5223d0fd1e06aa6121c8b9e809ad9b414480a77f311c4d111cba49f5d",
+      "words": 740,
+      "segments": 9
+    },
+    {
+      "chapter": 9,
+      "path": "manuscript/009-the-second-best-celebration.md",
+      "title": "Chapter 9: The Second-Best Celebration",
+      "source_sha256": "866bcfef16277546f224b1faafed824f422866584fbc0c8a51c1527363dc8b0f",
+      "spoken_sha256": "7f49003c97e4cc28610bc359812757ee27c3f3705036992a2496d136a30c4275",
+      "words": 599,
+      "segments": 8
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "chapter": 1,
+      "segment": 1,
+      "text": "Chapter 1: Behind the Waterfall\n\nThe waterfall roared like a hungry giant, and Clara stood three steps from getting soaked.\n\nShe pressed her thumb against the smooth river-glass coin in her pocket. Her letter from Glassvale Academy had promised one simple rule: hold the Pass-Token, keep your eyes open, and walk straight through the water.\n\n\"Easy for a piece of paper to say,\" Clara muttered, pushing her straight light-brown bangs out of her eyes.\n\nShe tightened the strap of her leather satchel, adjusted her tiny silver-star hair clip, and stepped into the cold white spray.",
+      "ends_paragraph": true,
+      "words": 95,
+      "text_sha256": "3530ea265a5bf481d816efa45cdbedea2c33d285a5937899ec7fc1bca9c629b2"
+    },
+    {
+      "page": 2,
+      "chapter": 1,
+      "segment": 2,
+      "text": "No freezing water hit her coat. Instead, a warm hum buzzed through her boots, like standing inside a giant ringing bell. Silver mist parted like curtains, and Clara walked out into bright golden morning light, completely dry.\n\nIn front of her spread a hidden mountain valley that made her breath catch. Tall terraced waterfalls tumbled past mossy cliffs toward a cluster of soaring towers. Right in the middle stood a grand stone Bell-Tower.",
+      "ends_paragraph": false,
+      "words": 73,
+      "text_sha256": "0a11e2f605f950c9d6d75a8e32cccdc3de7774e31b74646d8624e2aa57612a5f"
+    },
+    {
+      "page": 3,
+      "chapter": 1,
+      "segment": 3,
+      "text": "Around it rose three very different wings: a copper spire covered in spinning wind-sails, a giant glass dome wrapped around a living oak tree, and a tall midnight-stone tower whose pointed stone crown floated six inches above the roof without touching it.\n\nA sleek carriage painted teal and silver rolled up beside the cobblestone path. The door swung open, and out stepped a tall woman with silver-streaked dark hair in a loose bun and thin silver glasses dangling on a chain.",
+      "ends_paragraph": true,
+      "words": 81,
+      "text_sha256": "d3300d2a6e206e4fc8278ff41b1258449eb731b6754555439a5ff592a9e750aa"
+    },
+    {
+      "page": 4,
+      "chapter": 1,
+      "segment": 4,
+      "text": "\"Welcome to Glassvale Academy,\" said Headmistress Monica, smoothing her teal robes with a knowing smile. \"I would have sent the gold-plated carriage to meet you, Clara, but only show-offs buy the most expensive things. The second most expensive carriage has much softer seats.\"\n\nClara laughed, surprised by how quickly her nervousness melted away. \"It looks pretty grand to me.\"\n\n\"Wait until you taste the tea,\" Monica said, guiding her up the wide stone steps into the Great Hall.",
+      "ends_paragraph": true,
+      "words": 78,
+      "text_sha256": "b912da5c981e17fa1dd9b29f87c4717799085c74ca0481aa2fce1991bb7cd103"
+    },
+    {
+      "page": 5,
+      "chapter": 1,
+      "segment": 5,
+      "text": "Long oak tables gleamed under tall arched windows. At the nearest table, a boy with wild curly ginger hair and crooked round glasses was staring intently at a blue-and-white teacup. With a quick flick of his fingers, the cup hopped off its saucer, rose two feet into the air, and began wobbling like a spinning top.\n\n\"Hold still, hold still,\" the boy whispered through clenched teeth. A tiny gold spark popped near his nose with a puff of silver smoke, and the teacup tilted sideways.",
+      "ends_paragraph": true,
+      "words": 85,
+      "text_sha256": "2ebc4e41b574f35c97a63e064f974e277424a6a5bd24ea92e5ca4dc2083e1ae1"
+    },
+    {
+      "page": 6,
+      "chapter": 1,
+      "segment": 6,
+      "text": "Clara darted forward and caught the cup with both hands just before the tea could splash onto his burgundy knit sweater.\n\nThe boy let out a huge breath. \"Technically, floating the teacup worked,\" he said, adjusting his glasses. \"Nobody said anything about catching the tea. I am Sam.\"\n\n\"Clara,\" she said, setting the cup gently down. \"Nice wobble.\"\n\n\"She has fast hands, too!\" called a bright voice across the bench. A sporty girl with bouncy dark curls tied back in a mustard-yellow bandana leaned over in an olive utility vest and muddy hiking boots.",
+      "ends_paragraph": false,
+      "words": 94,
+      "text_sha256": "60ac761ef56bb0d6e9067a31e8ad71709a10db155c77c5a80193d9bf7a9c6e33"
+    },
+    {
+      "page": 7,
+      "chapter": 1,
+      "segment": 7,
+      "text": "Perched calmly on her raised wrist sat a tiny, bright turquoise frog. \"I am Maya. That little show-off on my arm is Pebble. Watch out if his throat turns gold, because he spots trouble before anyone else.\"\n\nPebble blinked big dark eyes and let out one polite squeak.\n\n\"Clara, come meet your Path leaders,\" Monica said, pouring steaming tea from a handsome silver teapot. \"My second most expensive teapot, naturally. Keeps the leaves twice as warm.\"\n\nShe led Clara toward three teachers waiting near the high stone hearth.",
+      "ends_paragraph": true,
+      "words": 88,
+      "text_sha256": "718d62bcf76f47ae181efb821267126e1869116e439af6c37e73925a4143b054"
+    },
+    {
+      "page": 8,
+      "chapter": 1,
+      "segment": 8,
+      "text": "The first man wore brass goggles pushed up into tousled dark hair and a leather vest stuffed with shiny calipers, screwdrivers, and glowing vials. A small brass clockwork sphere spun slowly above his open palm. \"Jorge,\" he said briskly, squinting at Clara's satchel as if checking how well the buckles were stitched. \"Path of Makers. If you break something in my workshop next week, bring me the pieces and a notebook, not excuses.\"",
+      "ends_paragraph": true,
+      "words": 73,
+      "text_sha256": "cf42299b0e9ab5680e514d493e154baf3d1e3499e56f20b1f24dce17eb18916c"
+    },
+    {
+      "page": 9,
+      "chapter": 1,
+      "segment": 9,
+      "text": "Beside him knelt a calm woman in an emerald-and-moss cloak clasped with a silver leaf pin. A fluffy, moss-feathered creature that looked half owl and half fox sat on her forearm with bright amber eyes. \"I am Marissa, Path of Nature,\" she said softly, though her gaze measured Clara cleanly from boots to bangs. \"Do not rush my greenhouse, and Pip here will let you pass.\"\n\nClara stiffened a tiny bit. Both teachers sounded sharp and hard to impress.",
+      "ends_paragraph": true,
+      "words": 79,
+      "text_sha256": "604d28136324470ee7c79fa192799e4b03f3cfdead95daa648d4c533eed80f2d"
+    },
+    {
+      "page": 10,
+      "chapter": 1,
+      "segment": 10,
+      "text": "Then the third teacher stepped forward. He was a tall, fit, broad-shouldered Black man in tailored deep-plum and gold-trimmed robes, and his smile was so warm and steady that the whole stone hearth seemed brighter.\n\n\"Welcome home, Clara,\" said Peter, Leader of the Path of Pure Magic. \"I know the first day feels huge. Take your time. Every great spark begins with one honest step.\"\n\nA small antique brass sand-timer hung cleanly at his belt, its pale golden sand resting quietly inside the glass. Clara smiled back right away. \"Thank you, sir.\"",
+      "ends_paragraph": true,
+      "words": 92,
+      "text_sha256": "b4a98f1498cd6f109be1a507da7eb255aa78fad43ee0bcc2b703ae60c65a573d"
+    },
+    {
+      "page": 11,
+      "chapter": 1,
+      "segment": 11,
+      "text": "Later at dusk, after unpacking in her sunlit tower room, Clara walked back across the courtyard with Maya and Sam to find the dining hall. The evening wind turned sharp near the central Bell-Tower. Just above an iron floor grate, the lantern light flickered blue.\n\n\"Did you hear that?\" Clara asked, stopping short.\n\nFrom beneath the iron bars came a thin, papery whisper that sounded eerily like Headmistress Monica's voice: \"Come down, Clara. Down here.\"\n\nMaya froze. On Maya's wrist, Pebble's turquoise throat flashed a sudden, bright warning gold.",
+      "ends_paragraph": true,
+      "words": 89,
+      "text_sha256": "e947ffe7b7a3a68eea83d06044f5dabd006b2ae545bcd2968e8aba6eed8634b2"
+    },
+    {
+      "page": 12,
+      "chapter": 1,
+      "segment": 12,
+      "text": "Before Clara could step closer, a pale violet moth no bigger than a plum fluttered straight up through the grate, drank the nearest candle flame into darkness, and vanished into the twilight mist.",
+      "ends_paragraph": true,
+      "words": 33,
+      "text_sha256": "5a460e5a8fd7f88306ef93ab51c89e18bd82fb67537de02ff8c2770d8807bce8"
+    },
+    {
+      "page": 13,
+      "chapter": 2,
+      "segment": 1,
+      "text": "Chapter 2: The Week of Three Sparks\n\nEvery eleven-year-old at Glassvale spent Common Term testing all three Paths before choosing one beneath the central bells.\n\nOn Tuesday morning, Clara climbed into the Brass Spire, where giant wooden gears clicked high overhead and warm golden steam puffed harmlessly from copper pipes. Each workbench held brass pliers, tiny screws, and glass jars glowing with steady amber spark.\n\n\"Today you build a simple latch-spring,\" Jorge announced, clapping his hands. \"Measure twice, wind three turns, and test until it holds.\"",
+      "ends_paragraph": true,
+      "words": 86,
+      "text_sha256": "b87986e1b2363a6adb28e42d76b77cb5774f6de148d80d6b5ced01f049ece479"
+    },
+    {
+      "page": 14,
+      "chapter": 2,
+      "segment": 2,
+      "text": "Across the bench, a neat girl with short copper hair and safety spectacles named Nora was already counting gear teeth aloud. \"Twenty-four teeth on the wheel, Jorge! Ready for test one!\"\n\nClara tried winding her tiny brass spring, missed a notch, and watched the spring ping straight across the bench into Sam's hair. Frustrated, she cupped her hand and coaxed a quick violet-gold spark from her fingertips to fuse the latch shut in one instant.",
+      "ends_paragraph": true,
+      "words": 75,
+      "text_sha256": "d2f5ffc6f4932cc2fd6690e148647722ca6020655e951057103bee85241bc9f2"
+    },
+    {
+      "page": 15,
+      "chapter": 2,
+      "segment": 3,
+      "text": "A sharp crack echoed off the ceiling. Black soot puffed over her workbench, and the brass spring slumped crooked and useless.\n\nJorge walked over, picked up the warped spring with copper tongs, and shook his head. \"Pure Magic guesses fast and leaves a mess,\" he said crisply. \"In the Path of Makers, you earn the click by testing step by step. Reset your board and measure again.\"",
+      "ends_paragraph": true,
+      "words": 67,
+      "text_sha256": "3186156f96c72dbcfb231669cbfb9eb280ea63baa86f7f6141265c38d9e89e72"
+    },
+    {
+      "page": 16,
+      "chapter": 2,
+      "segment": 4,
+      "text": "Clara's cheeks burned hot. Behind her, Nora muffled a snicker. Clara wanted to snap back that raw magic was faster than tiny brass screws, yet she bit her lip and reached for the calipers.\n\nWednesday brought the Path of Nature inside the Living Dome, where warm indoor rainclouds floated high under the glass roof and clear streams wound around giant oak roots.",
+      "ends_paragraph": true,
+      "words": 62,
+      "text_sha256": "9d52a9ca0bc68e2d9593074afabea78f4e377d3568c97d9537943f5a55cde097"
+    },
+    {
+      "page": 17,
+      "chapter": 2,
+      "segment": 5,
+      "text": "\"A rope-bridge across the creek has come loose,\" Marissa told the class as Pip the Bramble-Owl blinked sleepily on a branch above her. \"Do not yank the vines. Listen to the root-pulse, ask politely, and weave together.\"\n\nMaya knelt right into the damp moss beside the stream, grinning as mud splashed her knees. Within two minutes, green tendrils curled gently around Maya's fingers and knotted firmly onto the bridge post.",
+      "ends_paragraph": true,
+      "words": 70,
+      "text_sha256": "927e37b001d754f54fdbf5ad64dc6d006a25750ba03e1d9f6fd8f99492d9b0de"
+    },
+    {
+      "page": 18,
+      "chapter": 2,
+      "segment": 6,
+      "text": "Clara wanted to catch up fast. She leaned over the next post, pointed both hands at a stubborn vine, and pushed a bright burst of spark toward the leaves, shouting, \"Up! Tie onto the wood!\"\n\nInstantly the vine whipped backward like an angry spring and dropped Clara flat onto the mossy bank, soaked to her elbows.\n\nMarissa did not laugh, though her calm eyes stayed guarded. \"Stop shouting at living things, Clara,\" she said quietly. \"Nature is not a servant. If you bring impatience into the dome, the forest closes its doors.\"",
+      "ends_paragraph": true,
+      "words": 92,
+      "text_sha256": "5aa9ddeed7bbad280dedd5ad718a4fe39bef76b4ee8ca228cc8aab489995d062"
+    },
+    {
+      "page": 19,
+      "chapter": 2,
+      "segment": 7,
+      "text": "Clara trudged out of the conservatory with mud on her cloak and a tight knot in her throat. Makers thought she was sloppy. Nature thought she was loud.\n\nBy Friday afternoon, when she finally climbed into the midnight-blue observatory of the Starlight Tower, she felt ready to prove she belonged somewhere.\n\nTall brass constellation rings turned slowly beneath painted stars. At the front of the room stood a neat blond boy wearing a crisp navy-and-silver jacket and dark leather gloves. He looked twelve and carried himself like he already owned the tower.",
+      "ends_paragraph": true,
+      "words": 92,
+      "text_sha256": "c0285b6e52bdbb6af90e0a02a005bc887f41a2dd9781cf77710fe061fa0040f3"
+    },
+    {
+      "page": 20,
+      "chapter": 2,
+      "segment": 8,
+      "text": "\"Watch closely, first-years,\" Victor said, lifting his gloved fingers with a smooth smirk. He snapped once. A razor-sharp star of silver-violet light zipped between two hanging mirrors and snuffed three candles without spilling a drop of wax.\n\n\"Neat control, Victor,\" Peter said warmly from the center circle. \"Now let us see how the newest students call their spark. Remember: imagine a simple lantern, not a storm.\"\n\nClara stepped into the star-circle. She pictured a bright lantern and opened her palm.",
+      "ends_paragraph": true,
+      "words": 80,
+      "text_sha256": "b606f30e513b591fd1d190192830b39e9dec775e404882e253c54b488114b8a6"
+    },
+    {
+      "page": 21,
+      "chapter": 2,
+      "segment": 9,
+      "text": "Violet and gold light poured out far faster than she expected. It swirled up past her elbows like a rising wind, lifting stray pages off Sam's notebook until his crooked glasses slid sideways and he ducked behind a bookshelf.\n\n\"Whoa, Clara!\" Sam yelped, peeking around a stack of charts.\n\nVictor chuckled softly. \"Careful, first-year. Try not to set the roof on fire.\"\n\nClara panicked, and the swirling light crackled hotter, rattling the glass mirrors along the wall.",
+      "ends_paragraph": true,
+      "words": 77,
+      "text_sha256": "eef17eebc7d1285c90a6a860f673a75f8068bd7782a95ea45946b6d48ff79310"
+    },
+    {
+      "page": 22,
+      "chapter": 2,
+      "segment": 10,
+      "text": "Before the surge could snap, a large, steady hand closed gently around Clara's wrist. Peter stood beside her, completely unhurried, his kind eyes crinkling. \"Easy now, Clara,\" he murmured in his deep, reassuring voice. \"Fear makes starlight scatter, and pride makes it burn. Breathe out, picture one quiet star, and hold the shape.\"\n\nClara breathed out slowly. The wild storm folded inward until a single bright violet-gold star hovered calm and warm above her palm.",
+      "ends_paragraph": true,
+      "words": 75,
+      "text_sha256": "a9e378acaf876dbff61f678071cdc48d77af5c08e11786f9cb9045d61b09ce3b"
+    },
+    {
+      "page": 23,
+      "chapter": 2,
+      "segment": 11,
+      "text": "As Peter leaned down beside her, Clara noticed the small antique brass sand-timer clipped to his belt give a brief warm glint in the starlight, like an ordinary pocket watch catching a candle flame.\n\n\"There she is,\" Peter said proudly, clapping a gentle hand on her shoulder. \"Strong magic takes courage to steer, Clara. You have plenty of both.\"\n\nFor the first time all week, Clara stood tall. She knew right then which bell she was going to ring.",
+      "ends_paragraph": true,
+      "words": 79,
+      "text_sha256": "4e945945095970a646b8237ae421a3334303b1c437bc3b4ecf6d2385a4c310cd"
+    },
+    {
+      "page": 24,
+      "chapter": 3,
+      "segment": 1,
+      "text": "Chapter 3: The Whisper Beneath the Stairs\n\nOn Saturday evening, every lantern in Glassvale burned gold for the Bell-Choosing Ceremony.\n\nFirst-years gathered inside the circular hall of the central Bell-Tower. High in the rafters hung three ancient bells: a hammered Brass Bell etched with gears, a wide Leaf Bell carved from living green bronze, and a shimmering Star Bell cut from pale sky-stone.\n\nWhen Nora stepped forward, she gave the Brass Bell one brisk pull. A clean, bright ring filled the hall, and Jorge pinned a tiny brass wheel onto her collar.",
+      "ends_paragraph": true,
+      "words": 92,
+      "text_sha256": "cf239094b92a3abfac78a0dd30d90d685267586e3a3ffea08cdda54cf6f2809d"
+    },
+    {
+      "page": 25,
+      "chapter": 3,
+      "segment": 2,
+      "text": "Maya marched up next in clean boots, pulled the Leaf Bell's woven vine rope, and smiled wide as a warm, deep forest chime rolled overhead like distant thunder. Even Pebble hopped proudly on her shoulder while Marissa fastened a silver leaf pin to Maya's olive vest.\n\nThen Sam tugged the Star Bell's silver cord with both hands, squinting nervously behind his crooked glasses. A high, singing starlight note rippled through the air, lifting his ginger curls straight up for one funny second until he patted them flat with a tiny squeak.",
+      "ends_paragraph": true,
+      "words": 91,
+      "text_sha256": "f5a6e18c561c7570d56772571f0f07c0162fcc4a9363c35c4e55b74658e0f43c"
+    },
+    {
+      "page": 26,
+      "chapter": 3,
+      "segment": 3,
+      "text": "Clara stepped forward last. Her hands felt damp against her slate-blue cloak, yet she wrapped her fingers around the silver cord and pulled.\n\nThe Star Bell sang clear and strong, sending bright violet sparks dancing around the rafters like fireflies. Monica clapped warmly from the high balcony, and Peter pinned the shining star emblem onto Clara's cloak with a proud nod.\n\n\"Path of Pure Magic,\" Peter said warmly. \"Use it wisely.\"",
+      "ends_paragraph": true,
+      "words": 71,
+      "text_sha256": "ed656510bbf00fa187be1f6644df0f76ce3463b94ff2f4529def66a6c5c06536"
+    },
+    {
+      "page": 27,
+      "chapter": 3,
+      "segment": 4,
+      "text": "Later that night, when the dormitories went quiet, Clara slipped out to the balcony to cool her excited cheeks. Down in the courtyard, she spotted Maya crouched near the shrubbery with Sam tiptoeing right behind her, clutching his Star-Notebook.\n\nClara hurried down the side stairs. \"What are you two doing out after lights?\"\n\n\"Pebble went bright gold again,\" Maya whispered, pointing toward the Starlight Tower's lower staircase. \"Look. Every candle on those steps just went out by itself.\"",
+      "ends_paragraph": true,
+      "words": 78,
+      "text_sha256": "369e3ce61b168b83f0df69ea2ba5657e29eaac42d21f2a34bd7c67c3805be509"
+    },
+    {
+      "page": 28,
+      "chapter": 3,
+      "segment": 5,
+      "text": "Sam pushed his glasses up his nose and checked a sketched map in his notebook. \"Wait. That staircase leads down to the Deep Gate. Peter told us nobody goes down there. It seals off old Shadow Magic vaults from two hundred years ago.\"\n\n\"Then why are Whisper-Moths flying up from it?\" Clara asked softly.\n\nThree pale-violet moths drifted past the stone archways. Where their powdery wings brushed the air, frost formed on the moss.",
+      "ends_paragraph": false,
+      "words": 74,
+      "text_sha256": "01bf2101d8814912af76715b8dbd92309dd0dc954b54b92087f387ff51a2d452"
+    },
+    {
+      "page": 29,
+      "chapter": 3,
+      "segment": 6,
+      "text": "Worst of all, soft voices curled around the pillars, whispering Clara's name in Sam's voice, then Maya's name in Monica's voice, trying to pull them apart toward separate dark corners.\n\n\"Stick together!\" Maya hissed, grabbing Clara's sleeve with one hand and Sam's sleeve with the other. \"Ignore the voices. Watch Pebble's light!\"\n\nThey crept down the narrow spiral stairs until wrought-iron bars blocked the corridor ahead. Beyond the gate lay a drowned shadow hall where eerie emerald-violet mist swirled ankle-deep across cracked flagstones.\n\nA tall figure stood just inside the iron gate.",
+      "ends_paragraph": true,
+      "words": 92,
+      "text_sha256": "d72e9537cea9fbd31ad1af67f71f96be04de2da6f2993f6349b3b86e53770c84"
+    },
+    {
+      "page": 30,
+      "chapter": 3,
+      "segment": 7,
+      "text": "He wore a rain-dark slate-gray coat with a high storm collar and a smooth silver-etched mask that hid everything except two cold, narrow eyes. When he raised one gloved hand, the Whisper-Moths settled quietly onto his sleeves like sleeping leaves.\n\nClara's heart hammered against her ribs. She wanted to raise a spark, yet every warm thought felt sluggish near that green-purple fog.",
+      "ends_paragraph": true,
+      "words": 62,
+      "text_sha256": "ac0ddc462770e800193d6d9195b5dc94284fb58b3479e8c91b871ced03a4760a"
+    },
+    {
+      "page": 31,
+      "chapter": 3,
+      "segment": 8,
+      "text": "The masked man tilted his head toward the iron bars, studying the fresh silver star pin on Clara's cloak. He did not shout or rush. Slowly, he pressed two gloved fingers against the lock. Sparks of sickly dark frost crackled over the iron, testing its strength, before a distant bell chimed midnight far above.\n\nWith one sharp gesture, the intruder stepped backward into the swirling green-violet mist and vanished completely, as if the stone floor had swallowed him whole.\n\n\"Wait!\" Sam squeaked, holding up a trembling ball of starlight. \"Look by the gate!\"",
+      "ends_paragraph": true,
+      "words": 93,
+      "text_sha256": "9ce4e8521c24359eb7b54a4240602fd85c71aecaf19df4267d7f2311d2656727"
+    },
+    {
+      "page": 32,
+      "chapter": 3,
+      "segment": 9,
+      "text": "Lying right beside the wrought-iron threshold was a heavy black-iron coin stamped with an empty ring, cold enough to numb Clara's fingers even through her sleeve.\n\n\"Cold-Iron,\" Maya breathed, her eyes wide. \"Someone forged that in the dark side of Makers. Why is a shadow wizard carrying dark Makers tools?\"\n\nClara stared down into the empty mist, shivering from head to toe. For the first time since walking through the waterfall, Glassvale did not feel completely safe.",
+      "ends_paragraph": true,
+      "words": 77,
+      "text_sha256": "3f77b7ebe197dfae654161afa9c8edc1c010f25ccd0ff94606045dce1911916d"
+    },
+    {
+      "page": 33,
+      "chapter": 4,
+      "segment": 1,
+      "text": "Chapter 4: Cold-Iron and Broken Roots\n\nBreakfast bells never rang at all on Monday morning, because half the academy's water pipes groaned dry and cold.\n\nDown in the lower Brass Spire boiler room, steam hissed angrily around a tall brass pressure pump. Jorge stood knee-deep in puddles with his sleeves rolled past his elbows, wrench in one hand and magnifying goggles clamped tight over his eyes. Nora and a tall Makers boy named Ben were scrambling to drain burst jars before they cracked.",
+      "ends_paragraph": true,
+      "words": 83,
+      "text_sha256": "864a4456379e1b0499f2c6c08c8651953e5ea908045d0ac76eeb31f5fc2b6601"
+    },
+    {
+      "page": 34,
+      "chapter": 4,
+      "segment": 2,
+      "text": "\"I tell you, Monica, somebody wedged a Cold-Iron drain-clamp straight onto the main intake!\" Jorge called out as Clara, Maya, and Sam hurried down the iron steps behind the Headmistress. \"It is sucking the spark out of every pipe under the courtyard. If I yank it loose without measuring, the whole boiler blows.\"\n\nClara looked at the freezing black clamp biting into the copper valve. It hummed with the exact same icy chill as the ring-stamped coin from the Deep Gate.",
+      "ends_paragraph": false,
+      "words": 81,
+      "text_sha256": "7901b917a3a006754e4571ec80b3aab59cf359394637b391826e30a525fe1715"
+    },
+    {
+      "page": 35,
+      "chapter": 4,
+      "segment": 3,
+      "text": "She pulled the coin out of her pocket and held it up, careful not to touch the bare metal. \"We found this downstairs last night. A man in a gray coat dropped it.\"\n\nMonica's eyes sharpened behind her silver spectacles. \"Leave that coin with me after breakfast, Clara. I am going to check the upper wards at once,\" she said, turning briskly back toward the stairs.",
+      "ends_paragraph": true,
+      "words": 66,
+      "text_sha256": "04bd09c04ac5c55f9fc960b686f2a85da2d72dbc0e61e333ec246ee3a5bfab56"
+    },
+    {
+      "page": 36,
+      "chapter": 4,
+      "segment": 4,
+      "text": "Jorge stopped mid-turn and stared at the coin, then up at Clara's smudge-free Pure Magic cloak. \"You stayed out of the way and brought real evidence instead of blasting the pipe?\"\n\n\"I figured blasting brass pipes leaves a mess,\" Clara said, remembering his words from Tuesday.\n\nA tiny grin tugged at Jorge's bearded cheek. \"Fair enough. Want to learn how a real fix works? Hold that lantern two inches left, count the gear teeth with me, and pass the brass shim when I say three.\"",
+      "ends_paragraph": true,
+      "words": 85,
+      "text_sha256": "047bb808f284e5486c50ff28d93bd64ae437ab634584b44c5d336f1ee6ea7ddb"
+    },
+    {
+      "page": 37,
+      "chapter": 4,
+      "segment": 5,
+      "text": "For twenty steady minutes, Clara did not use a single spark of magic. She held the light completely steady, called out wheel measurements while Sam wrote down numbers, and handed Jorge the exact brass shim while Nora released the side valve. With one crisp snap, the Cold-Iron clamp popped loose into an iron bucket of salt water, and the great brass pump thrummed warmly back to life.",
+      "ends_paragraph": true,
+      "words": 67,
+      "text_sha256": "3be128078288d68a3eb32560a557435ddbae6b88bf363aa46b86209b79e4e066"
+    },
+    {
+      "page": 38,
+      "chapter": 4,
+      "segment": 6,
+      "text": "Jorge wiped grease across his brow and offered Clara a soot-smudged fist bump. \"Good eyes, Pure Magic. Anytime you want to build something that lasts, my workbench is open.\"\n\nBefore Clara could stop grinning, Maya came racing down the boiler stairs with Pebble clinging tight to her bandana. \"Clara! Hurry! The oak tree inside the Living Dome is turning gray!\"\n\nThey sprinted across the wet cobblestones into the glass conservatory. High overhead, the indoor rainclouds hung bruised and dark instead of white.",
+      "ends_paragraph": false,
+      "words": 82,
+      "text_sha256": "b349aa185548074ec33cde2b4d5d6e640498a7bbaef976e63e240afe6c73ded8"
+    },
+    {
+      "page": 39,
+      "chapter": 4,
+      "segment": 7,
+      "text": "Around the base of the great oak, thick green moss had shriveled into dry brown ribbons, and Marissa knelt in the mud beside a split root, one hand pressed gently against the bark while Pip fluttered anxiously above her shoulder.\n\n\"Someone drove a Blight-pin deep beneath the taproot,\" Marissa said softly, her voice tight with worry. \"If I pull it roughly, the poisoned root tears in half. I need gentle warmth to soothe the sap, not a wild blast.\"",
+      "ends_paragraph": true,
+      "words": 79,
+      "text_sha256": "397b56d62a4970153131e984f42337d4350c262d5e6e5aa5f2ba33c63b128a6a"
+    },
+    {
+      "page": 40,
+      "chapter": 4,
+      "segment": 8,
+      "text": "Clara knelt right beside Maya in the damp dirt, letting the mud soak straight through the hem of her slate-blue cloak without caring one bit. Last week she had shouted at the vines. Now she closed her eyes, listened to the slow thump of water dripping off fern leaves, and coaxed out the smallest, warmest thread of golden starlight she could hold.",
+      "ends_paragraph": true,
+      "words": 62,
+      "text_sha256": "75245123d3941e4a26d266670874f8603e68dd01def80a93fbd7502e73974f9b"
+    },
+    {
+      "page": 41,
+      "chapter": 4,
+      "segment": 9,
+      "text": "She did not push the tree. She simply held the gentle warmth steady against the gray bark, waiting beside Marissa and Maya until the tight knotted roots softened like waking fingers in spring sun.\n\nMarissa slid two fingers smoothly under the dark thorn-pin and lifted it clean out.\n\nInstantly, green color flowed back up the trunk. Pip swooped down, landed neatly on Clara's knee for one soft blink, and gave a pleased chirrup before hopping back to Marissa.",
+      "ends_paragraph": true,
+      "words": 78,
+      "text_sha256": "7440d3abaa00207d9f2de4c27e75445786b476ddcbd3021b71185c425c923fa1"
+    },
+    {
+      "page": 42,
+      "chapter": 4,
+      "segment": 10,
+      "text": "Marissa brushed a muddy leaf-woven braid off her cheek and looked at Clara with real warmth in her dark eyes. \"Thank you, Clara. Most Pure Magic students forget how to listen. You heard the tree.\"\n\nSam, crouched beside a mossy bench with his Star-Notebook flat across his knees, suddenly tapped his pencil against the paper. \"Wait a second. Look where both traps hit.\"\n\nClara and Maya leaned over his sketch. One red dot marked the Brass Spire's lower boiler pipe. Another marked the Living Dome's north root tunnel.",
+      "ends_paragraph": true,
+      "words": 88,
+      "text_sha256": "5ffb3c8a81135bbc0895f757e50fc0fdf3609f83ddb670bdc8393979c59e86fb"
+    },
+    {
+      "page": 43,
+      "chapter": 4,
+      "segment": 11,
+      "text": "Sam drew two straight lines out from the dots, and his crooked glasses slid down his nose. \"They were not random pranks. Whoever is sneaking around Glassvale is breaking the outer wards from both sides, aiming straight toward the center.\"\n\nClara looked up through the glass roof toward the tall stone Bell-Tower rising dead center above the courtyard.\n\n\"He is going under the bells,\" Clara whispered.",
+      "ends_paragraph": true,
+      "words": 66,
+      "text_sha256": "fed04602f3956d2231589873d6b5ad3454ae1eb729cf9a050cbceb5ae3c6917a"
+    },
+    {
+      "page": 44,
+      "chapter": 5,
+      "segment": 1,
+      "text": "Chapter 5: Victor's Shortcut\n\nWednesday afternoon brought outdoor shield drills in the flagged courtyard, and Victor arrived wearing his sharpest smirk.\n\n\"Watch how fast a real spell finishes,\" Victor muttered to two older students as Peter walked across the yard to check the chalk rings.\n\nClara noticed a pale purple smudge along the corner of Victor's rolled-up parchment scroll. Before she could call out a warning, Victor stepped into the center ring, raised his leather-gloved hand, and read three jagged words aloud that sounded nothing like Starlight Tower lessons.",
+      "ends_paragraph": true,
+      "words": 89,
+      "text_sha256": "66a75307488d39cfd9eb388bdfdc0d48ec3086af904c1da57cabccf4e582c5de"
+    },
+    {
+      "page": 45,
+      "chapter": 5,
+      "segment": 2,
+      "text": "The warm afternoon sun dimmed as if a cloud had swallowed it. Cold gray frost raced across the courtyard stones, straight up the fountain wall, and wrapped around two carved stone sparrow statues perched above the archways.\n\nBoth stone birds snapped their heads sideways with glowing green eyes, spread heavy granite wings, and shrieked down at the courtyard.\n\n\"Duck!\" Peter shouted, sprinting across the tiles as students scattered.",
+      "ends_paragraph": true,
+      "words": 68,
+      "text_sha256": "6fd3332f600a8d925110a704b64dbf6b7f61c7cd8d6d2fde4208905bb01cbd34"
+    },
+    {
+      "page": 46,
+      "chapter": 5,
+      "segment": 3,
+      "text": "One stone sparrow dived straight for Sam, who tripped backward over his own satchel. Maya grabbed Sam's waistcoat collar and hauled him sideways while Pebble flashed gold from her vest pocket. Before either of them could stand, the second stone bird banked sharply around the fountain right toward Maya's head.\n\nVictor stood frozen in shock, his smug smile wiped clean off his face as the dark scroll burned to cold gray ash between his gloves.",
+      "ends_paragraph": true,
+      "words": 75,
+      "text_sha256": "11450c085a6bd103bf1a7b9cfcc3bb6157e3c4cf70d001749d89cae20e84747d"
+    },
+    {
+      "page": 47,
+      "chapter": 5,
+      "segment": 4,
+      "text": "Clara did not shout or panic. Inside her head, she heard Marissa's quiet voice: listen first, then hold steady. She planted both boots firmly on the cold stone, raised both hands, and wove a clear dome of violet-gold starlight right over Maya and Sam.\n\nThe stone sparrow slammed headfirst into Clara's glowing shield with a teeth-rattling CLANG! Sparks showered over her hair, pushing her back half a step, yet the dome held firm.\n\n\"Keep it steady, Clara!\" a crisp voice boomed from the Makers balcony above.",
+      "ends_paragraph": true,
+      "words": 86,
+      "text_sha256": "ee6688c84e452ff8c973ad8572be2410d150584c02c6c647b4bea57ce1bc3f25"
+    },
+    {
+      "page": 48,
+      "chapter": 5,
+      "segment": 5,
+      "text": "Jorge leaned over the iron rail beside a coiled brass launcher, cranked a lever twice, and fired a shimmering woven copper snare-net straight across the courtyard. The heavy net wrapped cleanly around both thrashing stone sparrows in midair and hauled them clattering onto the grass.\n\nAn instant later, Peter reached the fountain, swept one strong hand through the air in a calm wide arc, and called down bright warm gold light that melted the frost and turned the statues back to quiet gray stone.",
+      "ends_paragraph": true,
+      "words": 84,
+      "text_sha256": "2a864a00169eaa78640e64bca4e863ff6fcea43b3a45a6c1474d5edcb6186f49"
+    },
+    {
+      "page": 49,
+      "chapter": 5,
+      "segment": 6,
+      "text": "\"Are you hurt?\" Peter asked immediately, kneeling beside Clara, Maya, and Sam with deep concern in his eyes while his tall frame shielded them from the lingering chill. \"That shield saved Maya and Sam from a dreadful hit, Clara.\"\n\nVictor stared at the ash on his gloves, white-faced and silent, as Monica stepped briskly onto the courtyard steps with her silver spectacles perched firmly on her nose.\n\n\"My office, Victor,\" Monica said in a voice sharper than winter wind. \"And Clara, Maya, Sam, come upstairs once you catch your breath.\"",
+      "ends_paragraph": true,
+      "words": 90,
+      "text_sha256": "47904eae637f2530a0cbf3371e231ef3884a19ec33655e5600ec516513310b56"
+    },
+    {
+      "page": 50,
+      "chapter": 5,
+      "segment": 7,
+      "text": "Ten minutes later, inside Monica's sunny circular office filled with neat bookshelves and her second most expensive velvet armchairs, the Headmistress poured four cups of honey-lemon tea and locked the heavy oak door.\n\n\"Victor found that cursed scrap tucked inside his satchel this morning,\" Monica said quietly. \"Whisper-Moths carried it in. Shadow Magic tempts proud casters with easy shortcuts, and it nearly cost us dearly today.\"\n\n\"Why would someone help a Whisper-Moth sneak into Glassvale?\" Sam asked, gripping his teacup with both hands this time.",
+      "ends_paragraph": true,
+      "words": 85,
+      "text_sha256": "351a09129b206c8aaf2a67dfe32f4fdfa670b36c5c9fc5c4f5cb54139dab1016"
+    },
+    {
+      "page": 51,
+      "chapter": 5,
+      "segment": 8,
+      "text": "Monica walked to a wall cabinet and tapped a brass plate, revealing a carved wooden model of an ancient three-chambered hourglass. Inside the carving sparkled tiny painted flecks of gold dust, green leaves, and silver stars.\n\n\"Long before any of us were born,\" Monica told them softly, \"the three founders forged The World-Glass. One chamber held Makers clockwork dust, one held living Nature seeds, and one held Pure Magic starlight. Together, it guarded the Mistgate and kept every Path in balance.",
+      "ends_paragraph": false,
+      "words": 81,
+      "text_sha256": "05b9fe3ae335e354dc37a3c56fa76f9041af8d44f81341b93f46a91d7c4a611a"
+    },
+    {
+      "page": 52,
+      "chapter": 5,
+      "segment": 9,
+      "text": "When a greedy wizard tried to seize it alone, the founders broke it into five hidden pieces.\"\n\nClara leaned forward on the edge of her chair. \"And one of those pieces is here?\"\n\nMonica nodded gravely. \"The Crown Seal sleeps inside the Bell-Vault directly beneath our central tower, protected by locks from all three Paths. Someone calling themselves The Hollow Circle sent that gray-coated intruder to steal it. Until we find out how he crossed the Mistgate, stay close to your teachers, and never go near the Bell-Tower alone.\"",
+      "ends_paragraph": true,
+      "words": 89,
+      "text_sha256": "5fa069f3a2d35af09520e15c4405e63362a094f72933fff3ab55fda61e61210d"
+    },
+    {
+      "page": 53,
+      "chapter": 5,
+      "segment": 10,
+      "text": "Clara glanced toward the tall window. Outside, storm clouds were already gathering blue-black over the mountain waterfalls.",
+      "ends_paragraph": true,
+      "words": 17,
+      "text_sha256": "3cae2963dbf5edc6f67c526525056db9cbbb766bb2f9432bf75e382aecbe3e87"
+    },
+    {
+      "page": 54,
+      "chapter": 6,
+      "segment": 1,
+      "text": "Chapter 6: The Gray Coat in the Mist\n\nBy midnight, wind rattled every windowpane in Glassvale Academy, and thunder rolled down from the peaks like crashing carts.\n\nClara woke to a sudden, urgent scratching against her bedside table. Sitting on her pillow was Maya's bright turquoise frog, Pebble, glowing so fiercely gold that Clara could see every raindrop streaking down the glass.\n\nSeconds later, her door eased open. Maya stood in the hallway with muddy boots already laced, holding Sam by his sweater sleeve while Sam clutched his Star-Notebook.",
+      "ends_paragraph": true,
+      "words": 89,
+      "text_sha256": "61ee156980145bb5d430b02b57b6c71f090b6274ab34201474fb939368dbb6a2"
+    },
+    {
+      "page": 55,
+      "chapter": 6,
+      "segment": 2,
+      "text": "\"Marissa went down to secure the conservatory roof, Jorge is in the Makers cellar, and Peter rode up to the mountain Mistgate to check the storm-wards,\" Maya whispered fast. \"Every lantern around the Bell-Tower just went dead at once. Look out the arch!\"\n\nClara leaned into the cold corridor window. Across the rain-whipped courtyard, the central Bell-Tower stood pitch black. Pale shapes swirled around its high belfry windows like snow: dozens of Whisper-Moths choking out the storm-lanterns so no warning bell could summon the valley.",
+      "ends_paragraph": true,
+      "words": 85,
+      "text_sha256": "865c407559017176f10a60bb7d4e72fe35613b57967e745471eda41575e8d9e6"
+    },
+    {
+      "page": 56,
+      "chapter": 6,
+      "segment": 3,
+      "text": "\"If Silas takes the Crown Seal while the teachers are split up,\" Sam stammered, adjusting his wet glasses, \"the whole valley barrier could crack!\"\n\n\"Go wake Monica,\" Clara told Sam, pulling her slate-blue cloak tight over her shoulders. \"Maya and I will watch the Bell-Tower door so he cannot slip out.\"\n\n\"Wait,\" Sam said, squaring his shoulders despite his shaking knees. \"Two pairs of Pure Magic eyes are better than one. I will send a spark-flare toward Monica's tower from the bridge, then come right down with you.\"",
+      "ends_paragraph": true,
+      "words": 88,
+      "text_sha256": "07c6db98d263d2847a113496458f8a642c654e12f7b2c39827a18bca7458676c"
+    },
+    {
+      "page": 57,
+      "chapter": 6,
+      "segment": 4,
+      "text": "Together they dashed across the streaming cobblestones. Sam fired a high bright violet flare up toward Monica's tall window before sprinting after Clara and Maya through the open stone doorway of the Bell-Tower.\n\nThe grand ground hall lay silent and icy cold. The three founding bell ropes hung down from the belfry loft beside a wide stone staircase, ending right above an open iron trapdoor in the center of the floor.\n\nClara raised a cautious orb of violet-gold light and led the way down narrow spiral stairs into the circular Bell-Vault.",
+      "ends_paragraph": true,
+      "words": 91,
+      "text_sha256": "fae1700a5e6ce65226b3e030cc7c6c310259df9b16c846170aa52364112f2cc0"
+    },
+    {
+      "page": 58,
+      "chapter": 6,
+      "segment": 5,
+      "text": "Halfway across the vaulted room stood Silas, his rain-dark gray coat dripping mist onto the carved floor. Behind him crouched two huge, smoky wolf-shaped creatures made of swirling black ink with cold emerald-violet eyes: Ink-Hounds.\n\nAt the center of the room rose a stone pedestal holding a shimmering dome of layered light. Two outer iron and root locks lay snapped open beside broken Cold-Iron clamps and dried Blight-pins. Only the shimmering Pure Magic cage still guarded a small, gleaming golden crown-cap pulsing quietly inside.\n\nSilas turned slowly, his silver-etched mask catching Clara's faint starlight.",
+      "ends_paragraph": true,
+      "words": 94,
+      "text_sha256": "b92371983abe72bcf9d6e36d652d1c311df1aa0fff447527de1b79b77a935e69"
+    },
+    {
+      "page": 59,
+      "chapter": 6,
+      "segment": 6,
+      "text": "\"Well,\" Silas murmured in a voice as smooth and cold as wet stone. \"Two brave little moths wandered into the cellar. One Maker lock broken. One Nature lock broken. Now only Pure Magic remains.\"\n\nMaya stepped forward with a pocket full of dried storm-seeds, yet both Ink-Hounds snarled soundlessly and surged forward, cutting off the stairs behind them.\n\n\"Wait!\" Silas called softly, lifting one gloved hand to pause the beasts an inch from Sam's heels. \"They do not need to bite, child.",
+      "ends_paragraph": false,
+      "words": 82,
+      "text_sha256": "ea80951143ea14fd066b3b53ed071ce1b3bcb1e83e8bf84647560a40f7b04add"
+    },
+    {
+      "page": 60,
+      "chapter": 6,
+      "segment": 7,
+      "text": "One bright Pure Magic burst from you against that central dome will crack the final lock. Break it for me, and you and your friends walk out untouched.\"\n\nClara looked at the gleaming Crown Seal, then at the two cold-eyed Ink-Hounds crouching inches from Maya and Sam. If she fired at the dome, Silas got everything. If she froze, the hounds would rush them.\n\nThen she looked straight up above Silas's head, where an enormous brass-and-crystal prism chandelier hung unlit from the vault ceiling.\n\n\"Maya! Cover your eyes!\" Clara yelled.",
+      "ends_paragraph": true,
+      "words": 90,
+      "text_sha256": "3138e11cb17bfbb1510499015927a927af743fdf805dc6875c62138899fc4903"
+    },
+    {
+      "page": 61,
+      "chapter": 6,
+      "segment": 8,
+      "text": "Clara pointed both palms straight upward and poured every ounce of bright, clean Pure Magic starlight she had straight into the crystal prisms.\n\nBlinding white-gold brilliance exploded across the stone vault like noon sunshine inside a cave. The Ink-Hounds shrieked silently, curling backward as the clear light scorched their smoky hides.\n\n\"Run!\" Clara shouted, grabbing Sam's arm while Maya scooped Pebble safely under her vest.",
+      "ends_paragraph": true,
+      "words": 65,
+      "text_sha256": "b2151be29b09838b36b34c76ad6cd267a6be8ecc0a65bb63ca1cd60eec41af16"
+    },
+    {
+      "page": 62,
+      "chapter": 6,
+      "segment": 9,
+      "text": "All three kids bolted back up the spiral staircase into the ground hall just as Silas hurled a blast of frost behind them. Black ice slammed across the outer courtyard door, sealing their escape, while smoky Ink-Hounds surged up out of the vault trapdoor. Driven upward step by step, Clara, Maya, and Sam scrambled into the storm-dark belfry loft overhead and slammed the heavy wooden belfry hatch, only for Silas's frost to freeze the catch shut beneath their boots.",
+      "ends_paragraph": true,
+      "words": 79,
+      "text_sha256": "1dbaede7c114ca7f170f25ad81aa12f528abfb4a7b92604e298f2fc8fc2449aa"
+    },
+    {
+      "page": 63,
+      "chapter": 7,
+      "segment": 1,
+      "text": "Chapter 7: Three Locks, Three Paths\n\nCold emerald eyes gleamed up through the stone cracks beneath the belfry floor, and thick black smoke spilled through the air vents like rising water.\n\nClara threw a quick spark bolt down past the jammed wooden hatch, yet the smoky Ink-Hounds prowling the stairs below merely split around the wild burst and kept climbing.\n\n\"Pure Magic alone burns too fast in the dark!\" Sam yelled over the thunder banging against the belfry shutters. \"Every time you throw a loose spark, it fades before it pushes them back!\"",
+      "ends_paragraph": true,
+      "words": 93,
+      "text_sha256": "ccf406d96bc152316ef79d9b79aaba41f323ce503f1ccd9b972d1f2157e3037b"
+    },
+    {
+      "page": 64,
+      "chapter": 7,
+      "segment": 2,
+      "text": "\"And the belfry hatch latch is frozen solid from underneath!\" Maya added, tugging hard at the bronze ring while wind whistled through the high arched windows above them.\n\nClara looked up toward the rain-lashed arch. Through the storm, two warm amber pinpricks moved across the courtyard below: Jorge's storm-vane crew checking the Brass Spire cables.\n\n\"Sam! Help me send a steady star-signal out the arch!\" Clara shouted, bracing her back against the Bell-Tower pillar. \"Maya, hold that shutter wide!\"",
+      "ends_paragraph": true,
+      "words": 79,
+      "text_sha256": "6f77668a8a37cdacb7351afcc68becfad7af2d74ff9f9a1d5c4c90f1ab888ee3"
+    },
+    {
+      "page": 65,
+      "chapter": 7,
+      "segment": 3,
+      "text": "Sam tore a blank diagram page from his notebook, folded it fast into a funnel, and aimed alongside Clara's hands. Together they sent three steady violet-gold rings pulsing straight down into the rainy courtyard.\n\nDown below, Nora spotted the triple ring immediately. Beside her, Ben from Jorge's workshop swung up a heavy brass launch-cradle. Within ten seconds, something small, golden, and furious buzzed straight upward through the rain like an angry hornet.\n\nA palm-sized brass Clock-Beetle flew neatly through the open belfry arch, shook raindrops off its copper wings, and clicked twice onto Clara's palm.",
+      "ends_paragraph": true,
+      "words": 95,
+      "text_sha256": "0941d808857fa67a7e5a4432bddc3a96695131de32afeaac44bdf1493c36320d"
+    },
+    {
+      "page": 66,
+      "chapter": 7,
+      "segment": 4,
+      "text": "Clamped beneath its brass belly sat a coiled copper spark-lens and a waterproof wax note in Jorge's neat handwriting: Three turns of the brass key, not four! Connect Pure Magic behind the glass, and aim straight!\n\n\"Three turns of the brass key, Clara, not four!\" Sam read aloud from Nora's scribbled reminder on the back of the slip. \"Four melts the spring!\"\n\nClara knelt beside the jammed floor hatch while the first Ink-Hound's smoking claws scraped the wood right below. Hands steady, she counted out loud over the thunder: \"One, two, three!\"",
+      "ends_paragraph": true,
+      "words": 92,
+      "text_sha256": "a2a7fc556da7f6525e6bc61128006b2289bfa29c8cc407c8a4545a35167456fd"
+    },
+    {
+      "page": 67,
+      "chapter": 7,
+      "segment": 5,
+      "text": "She clicked the tiny copper coil onto the back of the beetle's crystal lens and fed a calm, steady thread of violet-gold spark into the copper ring. Instead of scattering wildly, the Makers coil focused her magic into one razor-bright beam of warm starlight that held solid without draining her breath.\n\nThe beam sliced straight through the vents and down the dark staircase. Both Ink-Hounds recoiled down the steps, hissing like hot iron in snow, yet smoke still clogged the narrow stairwell and kept the frozen hatch jammed from below.",
+      "ends_paragraph": true,
+      "words": 90,
+      "text_sha256": "93ea99c02e036bef2cdf44413fa83fce69328cf7a8a235d780a2e6f3f274e932"
+    },
+    {
+      "page": 68,
+      "chapter": 7,
+      "segment": 6,
+      "text": "\"I cannot burn through the smoke fast enough!\" Clara called out.\n\n\"You do not burn wind, Clara!\" Maya grinned fiercely, leaning out into the open rain-soaked arch with Pebble glowing like a small turquoise star on her bandana. \"You ask it to sweep the room!\"\n\nMaya closed her eyes, ignored the terrifying howl of the storm, and rested one palm gently against the wet stone sill. She did not yell at the thunder.",
+      "ends_paragraph": false,
+      "words": 73,
+      "text_sha256": "8f6aa5d5e42a8ddc398c9622844820b171e19c02d14a3362ca6c795f931678a4"
+    },
+    {
+      "page": 69,
+      "chapter": 7,
+      "segment": 7,
+      "text": "She breathed in the smell of wet cedar and ozone, whistled three clear notes like a mountain hawk, and asked the gale politely for one clean breath down the tower.\n\nThe storm answered.\n\nA rush of cool, crisp mountain wind plunged straight down through the belfry arches, roared past the Brass, Leaf, and Star bells overhead, and slammed against the belfry hatch behind Clara's blazing starlight beam.",
+      "ends_paragraph": false,
+      "words": 67,
+      "text_sha256": "6e16c5f9f1e6b18c9dee025e39c96f0cf50b5e064f9256f31e218b1356fab853"
+    },
+    {
+      "page": 70,
+      "chapter": 7,
+      "segment": 8,
+      "text": "The frozen catch snapped clean off, the hatch flew open, and thick shadow-smoke shredded to rags as the trio spilled down into the ground hall just as two familiar voices boomed past the splintering ice of the outer doorway.",
+      "ends_paragraph": true,
+      "words": 39,
+      "text_sha256": "d4b4f5ec5460c3bc4a15b0b0eff612a4a92da0f026fe2afcc720b8c8ff73afe7"
+    },
+    {
+      "page": 71,
+      "chapter": 8,
+      "segment": 1,
+      "text": "Chapter 8: The Song of the Three Bells\n\n\"Get clear of the stairs!\" Jorge shouted, blasting the frost off the outer doorway as he stormed into the ground hall with a roaring brass flash-drum strapped over his shoulder.\n\nRight behind him swept Marissa, her emerald cloak whipping dry in the draft while Pip swooped overhead and thick living ivy vines raced like green snakes across the cold flagstones.\n\n\"Silas is still inside the vault!\" Clara cried, pointing down the open trapdoor as Maya and Sam leaped off the bottom steps.",
+      "ends_paragraph": true,
+      "words": 90,
+      "text_sha256": "aab96d117c48e799aefd3204138b7d73ddd8792cecea4226db39d49a282ba84a"
+    },
+    {
+      "page": 72,
+      "chapter": 8,
+      "segment": 2,
+      "text": "All five charged back down into the circular Bell-Vault.\n\nInside, Silas stood inches from the shimmering pedestal. The Pure Magic cage was cracked halfway down the middle, trembling under a swirling spear of dark emerald-violet Shadow Magic. Behind him, both Ink-Hounds crouched low, snarling silently.\n\n\"Stay back!\" Silas snapped, sweeping one gloved hand sideways.\n\nA wall of biting black frost slammed across the floor, freezing Jorge's brass boots to the tiles and turning Marissa's rushing vines brittle as winter glass. Even Jorge's flash-drum sputtered low under the crushing shadow chill.",
+      "ends_paragraph": true,
+      "words": 90,
+      "text_sha256": "d81d9a28e7505ac0585809dbf19ebc092bb5c5a3fce229ef715ae8ea4168888a"
+    },
+    {
+      "page": 73,
+      "chapter": 8,
+      "segment": 3,
+      "text": "Silas turned back toward the trembling golden Crown Seal, raising both hands for the final blow.\n\n\"Wait!\" Sam yelled, flipping frantically to the very back page of his rain-spotted Star-Notebook, where he had copied the old Bell-Tower carving from Common Term. \"Look at the three bells! Walls and locks are not the room's true guard. The founders protected it with a song! Brass, Leaf, and Star together!\"",
+      "ends_paragraph": true,
+      "words": 67,
+      "text_sha256": "99504b7b2c15475cf650f57b9ac639f396791d2c8e30f45b113a373288e54bd8"
+    },
+    {
+      "page": 74,
+      "chapter": 8,
+      "segment": 4,
+      "text": "Clara looked at Jorge straining against the ice on his flash-drum, then at Marissa coaxing warmth back into her frozen ivy beside Pip. Pure Magic could not break Silas's dark shield alone. Makers could not reach the pedestal past the frost. Nature could not cut through Shadow Magic without starlight.\n\n\"Jorge! Aim your copper coil at Marissa's vines!\" Clara shouted, dropping into a steady stance in the middle of the vault. \"Maya, Sam, sprint up to the bell ropes!\"",
+      "ends_paragraph": true,
+      "words": 79,
+      "text_sha256": "07370c81100755c01b539b31ab9eab06c5bfc0e95385ef898ca101b8bade3f21"
+    },
+    {
+      "page": 75,
+      "chapter": 8,
+      "segment": 5,
+      "text": "Jorge did not waste a second doubting her. He cranked his flash-drum lever hard, sending a thick golden beam of steady Maker spark across the frosty floor straight into Marissa's outstretched palm.\n\nMarissa smiled fiercely, let the warm spark run through living green sap, and flung three bright, sunlit ivy stems whipping forward across the vault toward Clara's lifted hands.\n\nClara caught the living vines without flinching. Instead of pushing raw magic blindly outward, she remembered every lesson from all three Paths: Jorge's calm measurement, Marissa's quiet listening, and Peter's steady shape.",
+      "ends_paragraph": false,
+      "words": 92,
+      "text_sha256": "0cbe6ee247d1f59481ff2b13e24da288ddbd8624e6580244ef9238c1cce097bd"
+    },
+    {
+      "page": 76,
+      "chapter": 8,
+      "segment": 6,
+      "text": "She wove her bright violet-gold Pure Magic spark cleanly through the copper-lit vines, turning them into a glowing three-colored braid of gold, emerald, and starlight.\n\n\"Now!\" Clara shouted.\n\nJust above the open trapdoor in the ground hall, Maya hauled the thick vine rope of the Leaf Bell. Sam threw all his weight onto the silver cord of the Star Bell. And across the flagstones, Nora and Ben burst in from the courtyard and yanked the Brass Bell together with all their might!\n\nBONG! CHIME! RING!",
+      "ends_paragraph": true,
+      "words": 85,
+      "text_sha256": "b56885a1a424024bd9eab2d59a593d2e8c2ba782d55e7714c68549942f164f48"
+    },
+    {
+      "page": 77,
+      "chapter": 8,
+      "segment": 7,
+      "text": "Three mighty notes crashed down through the stone vault as one single, shaking chord.\n\nBright three-colored light erupted from Clara's braided beam, sweeping across the entire room like sunrise breaking through fog. Both smoky Ink-Hounds shattered into harmless mist. The black frost melted off Jorge's boots in one hiss of warm steam.\n\nHeadmistress Monica herself hurried down the vault stairs in answer to Sam's signal flare, holding an iron ward-box open just as the golden Crown Seal snapped smoothly inside and the lid slammed shut.",
+      "ends_paragraph": true,
+      "words": 85,
+      "text_sha256": "ee016e7cdb531c241b5a747cf74d3f1d0e6429bc10b016da3b668c5d8f6f782d"
+    },
+    {
+      "page": 78,
+      "chapter": 8,
+      "segment": 8,
+      "text": "\"This is not finished, Headmistress!\" Silas hissed, backing fast into a swirling pocket of cold green smoke. \"Glassvale holds four more pieces of the World-Glass, and The Hollow Circle never forgets a lock!\"\n\nWith one sharp snap of his cloak, Silas vanished into empty air, leaving only faint gray frost fading slowly off the flagstones.\n\nSeconds later, rain-soaked footsteps pounded down the stairs behind Monica. Peter arrived breathless in drenched plum robes, his bright gold shield already raised.",
+      "ends_paragraph": false,
+      "words": 78,
+      "text_sha256": "9cf30944689094bf012d3d2f422979a170e0b6bcf9c620241411bb67510fdaaa"
+    },
+    {
+      "page": 79,
+      "chapter": 8,
+      "segment": 9,
+      "text": "Seeing the trio safe and the ward-box locked, he lowered his arm and let out a huge, relieved breath. \"Monica! Something tripped the Mistgate outer alarm in the storm, and by the time I cleared the rocks, I feared I was too late. Are you all unharmed?\"\n\nSilence settled over the vault for one heartbeat. Then Pebble let out a loud, triumphant PEEP! and everybody cheered until the ancient bells overhead hummed softly back.",
+      "ends_paragraph": true,
+      "words": 74,
+      "text_sha256": "a27ba9a4b356d3a5bd6bbc6c0c77fa9585d1e7b3c40672b7afb4b20b12ff39fc"
+    },
+    {
+      "page": 80,
+      "chapter": 9,
+      "segment": 1,
+      "text": "Chapter 9: The Second-Best Celebration\n\nTwo nights later, every candle in Glassvale's Great Hall burned warm amber for the Autumn Feast.\n\nLong oak tables groaned under roasted apples, buttered rolls, honey tarts, and tall silver-rimmed pitchers steaming with spiced cinnamon cider.\n\nHeadmistress Monica tapped her spoon cleanly against her porcelain teacup, and the cheerful roar faded to quiet grins.\n\n\"Our Crown Seal rests safe in deeper wards,\" Monica told the hall, her silver spectacles gleaming warmly in the candlelight.",
+      "ends_paragraph": false,
+      "words": 79,
+      "text_sha256": "fc7b74fd83098dc208a39d5baf478af8de8a8ccc6f15336431dc908208f3207b"
+    },
+    {
+      "page": 81,
+      "chapter": 9,
+      "segment": 2,
+      "text": "\"Our pipes run hot, our great oak stands green, and three stubborn first-years reminded all of us why Glassvale has three Paths instead of one. In honor of tonight's feast, I ordered the second most expensive spiced cider in Mistmarket. Naturally, the apples are far sweeter.\"\n\nThe whole hall erupted into laughter and raised their mugs high.",
+      "ends_paragraph": true,
+      "words": 57,
+      "text_sha256": "52bdd324e14c65421e63cc796a1ad19f0dbbf19d0e3a1653e57b7b3f50a28914"
+    },
+    {
+      "page": 82,
+      "chapter": 9,
+      "segment": 3,
+      "text": "Across the table, Sam carefully floated a sugar cookie onto his plate without wobbling a single crumb, beaming proudly behind his crooked glasses until Maya clapped him so hard on the back that the cookie hopped into his lap anyway. Pebble glowed a happy turquoise on the rim of Maya's cider cup and let out a contented chirp.\n\nHalfway through dessert, Jorge strolled over to Clara's bench with grease still smudged politely behind one ear and set a small, gleaming brass pocket-compass beside her plate.",
+      "ends_paragraph": true,
+      "words": 85,
+      "text_sha256": "c75f255168586d2e1c20343bd343c8cdd5df3b3581016aa6c43106a9bb294831"
+    },
+    {
+      "page": 83,
+      "chapter": 9,
+      "segment": 4,
+      "text": "\"Tested four times,\" Jorge said with a warm grin. \"Never freezes, never spins in mist, and always points back toward your own Path tower if a storm rolls in. Not bad for a Pure Magic kid, huh?\"\n\n\"Thank you, Jorge,\" Clara said, holding the cool brass case carefully between both palms. \"I counted every turn.\"\n\nRight behind him stood Marissa with Pip curled sleepily around her shoulder. \"Tomorrow morning,\" Marissa said softly, smiling at both Clara and Maya, \"the Lantern-Foxes usually sun themselves along the Living Dome's upper roof.",
+      "ends_paragraph": false,
+      "words": 89,
+      "text_sha256": "83d7c23f3f5d39694644230113522e86d547fb75d542740da3acc71bf358433b"
+    },
+    {
+      "page": 84,
+      "chapter": 9,
+      "segment": 5,
+      "text": "You are both welcome anytime, even if you bring violet sparks.\"\n\nEven Victor lingered awkwardly near the oak pillars on his way out, hands tucked inside his pockets. \"Look, first-year,\" he muttered quickly without quite meeting Clara's eyes. \"That shield in the courtyard was not terrible.\"\n\nClara bit back a grin and nodded solemnly. \"Thanks, Victor.\"\n\nAfter the feast wound down, Clara stepped out onto the open stone balcony overlooking the canyon. Down below, the great Mistgate waterfall glowed pale silver under the rising autumn stars, humming softly like a distant lullaby.",
+      "ends_paragraph": true,
+      "words": 92,
+      "text_sha256": "878d6c4b3db3cbf2bd790eb8463732764b71a3b318c922295e73bd19624b7905"
+    },
+    {
+      "page": 85,
+      "chapter": 9,
+      "segment": 6,
+      "text": "Heavy, unhurried footsteps approached behind her, and Clara turned to see Peter standing in the archway in his plum-and-gold robes, looking out across the valley with that warm, steady smile that had cheered her through her very first week.\n\n\"It has been quite a first two weeks, Clara,\" Peter said gently, resting one large, reassuring hand on her shoulder. \"You walked into Pure Magic with wild bright sparks, and tonight you learned how to weave them with makers and living roots alike. You have made me very proud.\"",
+      "ends_paragraph": true,
+      "words": 88,
+      "text_sha256": "644da6b879d98822ccafd82cc2129f61e4d7d4781226635545668c2b66983d90"
+    },
+    {
+      "page": 86,
+      "chapter": 9,
+      "segment": 7,
+      "text": "\"We have four more pieces of the World-Glass to keep safe, though,\" Clara said, looking up at him earnestly. \"Silas said The Hollow Circle is not done.\"\n\n\"Then we will be ready for them,\" Peter promised warmly, his kind eyes crinkling in the starlight. \"Rest easy tonight. Glassvale is well guarded.\"\n\nHe gave her shoulder one last encouraging pat, wished her good night, and walked calmly back into the candlelit corridor, the small antique brass sand-timer at his belt catching warm golden light like an ordinary pocket watch.",
+      "ends_paragraph": true,
+      "words": 88,
+      "text_sha256": "e44a64588a78dc0be9a8db074b5a2695e6efe52f3c1c0c67517d1b42fb39cce5"
+    },
+    {
+      "page": 87,
+      "chapter": 9,
+      "segment": 8,
+      "text": "Clara leaned happily against the stone railing, spinning her new brass compass between her fingers and watching the Mistgate shimmer below.",
+      "ends_paragraph": true,
+      "words": 21,
+      "text_sha256": "7898b8f52b531ab091fa7e78b276c898bcf6b1de39277eb3b4a63c4fb1841c1c"
+    }
+  ]
+}
