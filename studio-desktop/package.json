@@ -1,0 +1,50 @@
+{
+  "name": "book-studio-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Book Studio Desktop — writer-first WYSIWYG book workspace for Windows and Linux",
+  "homepage": "https://jorgegarciairazabal.github.io/books/",
+  "author": "Book Studio <book-studio@users.noreply.github.com>",
+  "main": "dist-electron/electron/main.js",
+  "scripts": {
+    "dev": "npm run build:electron && concurrently -k -n vite,electron \"vite\" \"wait-on http://localhost:5173 && node -e \\\"require('child_process').spawn(require('electron'), ['.'], { stdio: 'inherit', env: { ...process.env, NODE_ENV: 'development' } })\\\"\"",
+    "dev:win": "npm run build:electron && concurrently -k -n vite,electron \"vite\" \"wait-on http://localhost:5173 && set NODE_ENV=development&& electron .\"",
+    "dev:linux": "npm run build:electron && concurrently -k -n vite,electron \"vite\" \"wait-on http://localhost:5173 && NODE_ENV=development electron .\"",
+    "build:electron": "tsc -p tsconfig.electron.json",
+    "build:renderer": "vite build",
+    "build": "npm run build:electron && npm run build:renderer",
+    "start": "npm run build && electron .",
+    "preview:web": "npm run build && node dist-electron/electron/httpBridge.js",
+    "typecheck": "tsc --noEmit && tsc -p tsconfig.electron.json --noEmit",
+    "test": "vitest run",
+    "dist:linux": "npm run build && electron-builder --linux",
+    "dist:win": "npm run build && electron-builder --win"
+  },
+  "dependencies": {
+    "@tiptap/extension-placeholder": "^2.11.5",
+    "@tiptap/pm": "^2.11.5",
+    "@tiptap/react": "^2.11.5",
+    "@tiptap/starter-kit": "^2.11.5",
+    "chokidar": "^4.0.3",
+    "lucide-react": "^0.475.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "electron": "^35.0.0",
+    "electron-builder": "^25.1.8",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0",
+    "vitest": "^3.0.7",
+    "wait-on": "^8.0.2"
+  },
+  "allowScripts": {
+    "electron@35.7.5": true,
+    "esbuild@0.25.12": true
+  }
+}

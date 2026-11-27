@@ -8,3 +8,8 @@ __pycache__/
 !**/exports/.gitkeep
 .DS_Store
 /_site/
+.studio-desktop/
+studio-desktop/node_modules/
+studio-desktop/dist/
+studio-desktop/dist-electron/
+studio-desktop/release/

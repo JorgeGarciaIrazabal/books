@@ -1,0 +1,3769 @@
+<!doctype html>
+<html lang="en" data-theme="warm">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book Studio Desktop — Interactive Writer Workspace Mockup</title>
+<style>
+:root {
+  --bg: #f6f1e7;
+  --bg-deep: #ece3d2;
+  --sidebar: #f2ebdd;
+  --panel: #fffdf7;
+  --panel-alt: #faf5ea;
+  --ink: #26262b;
+  --ink-soft: #4a4a53;
+  --muted: #6d6d76;
+  --line: #e2d8c5;
+  --line-strong: #cfc1a7;
+  --accent: #a04a2f;
+  --accent-deep: #7f3822;
+  --accent-soft: #f2e1d6;
+  --gold: #d9a53a;
+  --gold-hl: rgba(217, 165, 58, 0.26);
+  --gold-hl-active: rgba(217, 165, 58, 0.48);
+  --sage: #2d6a4f;
+  --sage-bg: rgba(45, 106, 79, 0.14);
+  --sage-border: rgba(45, 106, 79, 0.35);
+  --writer: #2457a6;
+  --writer-bg: rgba(36, 87, 166, 0.12);
+  --writer-border: rgba(36, 87, 166, 0.32);
+  --rose: #b42318;
+  --rose-bg: rgba(180, 35, 24, 0.13);
+  --shadow-sm: 0 2px 8px rgba(38, 38, 43, 0.06);
+  --shadow-md: 0 12px 32px rgba(38, 38, 43, 0.14);
+  --shadow-lg: 0 22px 54px rgba(24, 24, 30, 0.24);
+  --serif: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  --radius: 10px;
+  --radius-sm: 6px;
+}
+
+[data-theme="light"] {
+  --bg: #f6f7f9;
+  --bg-deep: #ebedf2;
+  --sidebar: #f1f3f6;
+  --panel: #ffffff;
+  --panel-alt: #f8f9fb;
+  --ink: #1c1f24;
+  --ink-soft: #434954;
+  --muted: #68707d;
+  --line: #e1e5ec;
+  --line-strong: #c9d0dc;
+  --accent: #9a3f27;
+  --accent-deep: #7a2f1c;
+  --accent-soft: #faeae5;
+}
+
+[data-theme="dark"] {
+  --bg: #141820;
+  --bg-deep: #0f1218;
+  --sidebar: #181d27;
+  --panel: #1d2330;
+  --panel-alt: #232a39;
+  --ink: #ece6da;
+  --ink-soft: #c9c3b8;
+  --muted: #939aa6;
+  --line: #2b3344;
+  --line-strong: #3b465c;
+  --accent: #e07b58;
+  --accent-deep: #c9623f;
+  --accent-soft: rgba(224, 123, 88, 0.16);
+  --gold: #eab94f;
+  --gold-hl: rgba(234, 185, 79, 0.22);
+  --gold-hl-active: rgba(234, 185, 79, 0.44);
+  --sage: #5ec291;
+  --sage-bg: rgba(94, 194, 145, 0.16);
+  --sage-border: rgba(94, 194, 145, 0.35);
+  --writer: #6ca4f8;
+  --writer-bg: rgba(108, 164, 248, 0.15);
+  --writer-border: rgba(108, 164, 248, 0.35);
+  --rose: #f2746b;
+  --rose-bg: rgba(242, 116, 107, 0.16);
+  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.42);
+  --shadow-lg: 0 22px 54px rgba(0, 0, 0, 0.6);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  font-family: var(--sans);
+  font-size: 13.5px;
+  color: var(--ink);
+  background: var(--bg);
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Topbar */
+.topbar {
+  height: 46px;
+  background: var(--sidebar);
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  gap: 10px;
+  flex-shrink: 0;
+  z-index: 30;
+}
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-weight: 700;
+  font-size: 13.5px;
+  letter-spacing: -0.01em;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+.brand-mark {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 13px;
+}
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12.5px;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.crumb-btn {
+  border: none;
+  background: transparent;
+  color: var(--ink-soft);
+  padding: 3px 6px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.crumb-btn:hover { background: var(--bg-deep); color: var(--ink); }
+.crumb-current { color: var(--ink); font-weight: 600; }
+
+.sync-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  font-size: 11.5px;
+  font-weight: 500;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+.sync-pill.is-saving { border-color: var(--gold); color: var(--ink); }
+.sync-pill.is-external { border-color: var(--sage-border); background: var(--sage-bg); color: var(--sage); }
+.sync-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--sage);
+  box-shadow: 0 0 0 2px var(--sage-bg);
+}
+.sync-pill.is-saving .sync-dot { background: var(--gold); }
+
+.topbar-center { display: flex; align-items: center; gap: 8px; }
+.cmd-trigger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 4px 10px;
+  min-width: 205px;
+  color: var(--muted);
+  font-size: 12px;
+  justify-content: space-between;
+}
+.cmd-trigger:hover { border-color: var(--line-strong); color: var(--ink); }
+.kbd {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: var(--bg-deep);
+  border: 1px solid var(--line-strong);
+  color: var(--ink-soft);
+}
+
+.topbar-right { display: flex; align-items: center; gap: 6px; }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--ink-soft);
+  padding: 5px 9px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 500;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+.btn:hover { background: var(--bg-deep); color: var(--ink); border-color: var(--line-strong); }
+.btn.is-active { background: var(--accent-soft); color: var(--accent-deep); border-color: rgba(160, 74, 47, 0.35); }
+[data-theme="dark"] .btn.is-active { color: var(--accent); }
+.btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  font-weight: 600;
+}
+.btn-primary:hover { background: var(--accent-deep); border-color: var(--accent-deep); color: #fff; }
+.btn-sage {
+  background: var(--sage-bg);
+  border-color: var(--sage-border);
+  color: var(--sage);
+  font-weight: 600;
+}
+.btn-sage:hover { filter: brightness(0.95); }
+.btn-sm { padding: 3px 8px; font-size: 11.5px; }
+.badge-count {
+  background: rgba(255,255,255,0.22);
+  padding: 0 5px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+}
+.btn:not(.btn-primary) .badge-count {
+  background: var(--bg-deep);
+  color: var(--ink);
+}
+
+.seg {
+  display: inline-flex;
+  background: var(--bg-deep);
+  padding: 2px;
+  border-radius: 7px;
+  border: 1px solid var(--line);
+}
+.seg button {
+  border: none;
+  background: transparent;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 11.5px;
+  font-weight: 500;
+  color: var(--muted);
+}
+.seg button.is-active {
+  background: var(--panel);
+  color: var(--ink);
+  font-weight: 600;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Workspace */
+.workspace {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  position: relative;
+}
+
+/* Left Sidebar */
+.sidebar-left {
+  width: 268px;
+  background: var(--sidebar);
+  border-right: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  transition: width 0.2s ease, opacity 0.2s ease;
+}
+.app.is-focus .sidebar-left,
+.app.is-focus .sidebar-right {
+  width: 0;
+  overflow: hidden;
+  border: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.book-switcher-wrap {
+  padding: 10px;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+}
+.book-switcher-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-radius: var(--radius);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  text-align: left;
+}
+.book-switcher-btn:hover { border-color: var(--line-strong); }
+.book-cover-mini {
+  width: 30px;
+  height: 40px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  font-family: var(--serif);
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: var(--shadow-sm);
+}
+.book-meta { min-width: 0; flex: 1; }
+.book-universe-label {
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  font-weight: 600;
+}
+.book-title-label {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.book-stage-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 2px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.stage-pill {
+  padding: 0 5px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: var(--accent-soft);
+  color: var(--accent-deep);
+}
+[data-theme="dark"] .stage-pill { color: var(--accent); }
+
+.book-dropdown {
+  position: absolute;
+  top: calc(100% - 2px);
+  left: 10px;
+  right: 10px;
+  background: var(--panel);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  z-index: 50;
+  padding: 6px;
+}
+.book-option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 8px;
+  border: none;
+  background: transparent;
+  border-radius: 7px;
+  text-align: left;
+}
+.book-option:hover, .book-option.is-selected { background: var(--bg); }
+
+.nav-scroll { flex: 1; overflow-y: auto; padding: 10px 8px 14px; }
+.nav-group { margin-bottom: 14px; }
+.nav-group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px 5px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.nav-add-btn {
+  border: none;
+  background: transparent;
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 1px 5px;
+  border-radius: 4px;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.nav-add-btn:hover { background: var(--accent-soft); }
+.nav-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 6px 8px;
+  border: none;
+  background: transparent;
+  border-radius: 7px;
+  color: var(--ink-soft);
+  font-size: 12.5px;
+  text-align: left;
+  margin-bottom: 1px;
+}
+.nav-item:hover { background: var(--bg-deep); color: var(--ink); }
+.nav-item.is-active {
+  background: var(--panel);
+  color: var(--ink);
+  font-weight: 600;
+  box-shadow: var(--shadow-sm);
+}
+.nav-item-main { display: flex; align-items: center; gap: 7px; min-width: 0; flex: 1; }
+.nav-item-label { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.nav-item-meta { display: flex; align-items: center; gap: 5px; flex-shrink: 0; font-size: 11px; color: var(--muted); }
+.dot-indicator { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+.dot-writer { background: var(--writer); }
+.dot-agent { background: var(--sage); }
+.cmt-pill {
+  padding: 0 5px;
+  border-radius: 999px;
+  font-size: 10.5px;
+  font-weight: 700;
+  background: var(--gold-hl);
+  color: var(--ink);
+}
+.sidebar-footer {
+  padding: 8px 12px;
+  border-top: 1px solid var(--line);
+  font-size: 11px;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Center Stage */
+.center-stage {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+}
+.doc-toolbar {
+  padding: 8px 20px;
+  border-bottom: 1px solid var(--line);
+  background: var(--panel-alt);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.doc-toolbar-left, .doc-toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.version-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--panel);
+  border: 1px solid var(--line-strong);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.version-pill:hover { border-color: var(--accent); }
+.baseline-select {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 3px 8px;
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+.change-stepper {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 2px 6px;
+  font-size: 11.5px;
+}
+.change-stepper button {
+  border: none;
+  background: transparent;
+  padding: 2px 5px;
+  border-radius: 4px;
+  color: var(--ink-soft);
+  font-weight: 600;
+}
+.change-stepper button:hover { background: var(--bg-deep); color: var(--ink); }
+
+.center-body { flex: 1; min-height: 0; display: flex; }
+.canvas-scroll { flex: 1; min-width: 0; overflow-y: auto; padding: 24px 28px 80px; }
+
+/* Sync Banner */
+.sync-banner {
+  max-width: 740px;
+  margin: 0 auto 16px;
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  background: var(--sage-bg);
+  border: 1px solid var(--sage-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.sync-banner-text { font-size: 12.5px; color: var(--ink); }
+.sync-banner-text strong { color: var(--sage); }
+.sync-banner-actions { display: flex; align-items: center; gap: 6px; }
+
+/* Paper Sheet */
+.paper {
+  max-width: 740px;
+  margin: 0 auto;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  padding: 38px 48px 54px;
+}
+.paper-wide { max-width: 1160px; padding: 28px 30px 44px; }
+.chapter-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+.chapter-title-input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--ink);
+  padding: 0;
+  margin: 0 0 10px;
+  outline: none;
+}
+.chapter-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 18px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid var(--line);
+  font-size: 12px;
+  color: var(--muted);
+}
+.file-chip {
+  font-family: var(--mono);
+  font-size: 11px;
+  background: var(--bg);
+  padding: 2px 7px;
+  border-radius: 5px;
+  border: 1px solid var(--line);
+  color: var(--ink-soft);
+}
+
+/* Prose */
+.prose-body {
+  font-family: var(--serif);
+  font-size: 16.5px;
+  line-height: 1.72;
+  color: var(--ink);
+}
+.prose-block {
+  position: relative;
+  padding: 4px 10px 4px 14px;
+  margin: 0 -10px 14px -14px;
+  border-radius: 6px;
+  border-left: 3px solid transparent;
+  transition: background 0.2s, border-color 0.2s;
+}
+.prose-block.has-writer-edit { border-left-color: var(--writer); }
+.prose-block.has-agent-edit { border-left-color: var(--sage); }
+.prose-block.is-flash { background: var(--gold-hl); }
+.prose-p { margin: 0; outline: none; }
+.prose-p:focus { background: rgba(160, 74, 47, 0.03); }
+.block-attribution {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--sans);
+  font-size: 10.5px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  padding: 1px 7px;
+  border-radius: 999px;
+}
+.attr-writer { background: var(--writer-bg); color: var(--writer); }
+.attr-agent { background: var(--sage-bg); color: var(--sage); }
+
+.cmt-mark {
+  background: var(--gold-hl);
+  border-bottom: 2px solid var(--gold);
+  border-radius: 2px;
+  padding: 0 1px;
+  cursor: pointer;
+}
+.cmt-mark.is-active { background: var(--gold-hl-active); }
+.canon-hint { border-bottom: 1.5px dotted var(--accent); cursor: pointer; }
+.canon-hint:hover { background: var(--accent-soft); }
+
+/* Diff Styles */
+.diff-ins {
+  background: var(--sage-bg);
+  color: var(--sage);
+  border-bottom: 1.5px solid var(--sage);
+  padding: 0 2px;
+  border-radius: 3px;
+}
+.diff-ins-writer {
+  background: var(--writer-bg);
+  color: var(--writer);
+  border-bottom: 1.5px solid var(--writer);
+  padding: 0 2px;
+  border-radius: 3px;
+}
+.diff-del {
+  background: var(--rose-bg);
+  color: var(--rose);
+  text-decoration: line-through;
+  padding: 0 2px;
+  border-radius: 3px;
+}
+.hunk-bar { display: inline-flex; align-items: center; gap: 4px; margin-left: 6px; font-family: var(--sans); }
+.hunk-btn {
+  border: 1px solid var(--line-strong);
+  background: var(--panel);
+  font-size: 10.5px;
+  font-weight: 600;
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+.hunk-btn:hover { background: var(--bg-deep); }
+
+/* Side-by-Side */
+.sbs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.sbs-col {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel-alt);
+  padding: 16px 18px;
+}
+.sbs-col-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+  font-size: 12px;
+  font-weight: 700;
+}
+.sbs-row {
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-family: var(--serif);
+  font-size: 15px;
+  line-height: 1.65;
+  background: var(--panel);
+  border: 1px solid transparent;
+}
+.sbs-row.is-changed { border-color: var(--line-strong); }
+
+.raw-md-note {
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  font-size: 12px;
+  color: var(--ink-soft);
+  margin-bottom: 14px;
+}
+.raw-md-pre {
+  width: 100%;
+  min-height: 480px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px;
+  background: var(--bg);
+  font-family: var(--mono);
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--ink);
+  resize: vertical;
+}
+
+/* Split Reference */
+.split-pane {
+  width: 340px;
+  border-left: 1px solid var(--line);
+  background: var(--panel-alt);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.split-pane-header {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.split-pane-body { flex: 1; overflow-y: auto; padding: 14px; font-size: 13px; line-height: 1.55; }
+
+/* Right Rail */
+.sidebar-right {
+  width: 346px;
+  background: var(--sidebar);
+  border-left: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  transition: width 0.2s ease, opacity 0.2s ease;
+}
+.rail-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid var(--line);
+  background: var(--panel-alt);
+}
+.rail-tab {
+  border: none;
+  background: transparent;
+  padding: 10px 4px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--muted);
+  border-bottom: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.rail-tab:hover { color: var(--ink); }
+.rail-tab.is-active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+  background: var(--panel);
+}
+.rail-scroll { flex: 1; overflow-y: auto; padding: 12px; }
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 12px;
+  margin-bottom: 10px;
+  box-shadow: var(--shadow-sm);
+}
+.card.is-highlighted { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
+.card-quote {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  border-left: 3px solid var(--gold);
+  padding: 4px 8px;
+  margin: 6px 0 6px;
+  background: var(--bg);
+  border-radius: 0 4px 4px 0;
+}
+.anchor-meta {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--muted);
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  font-size: 10.5px;
+  font-weight: 600;
+  background: var(--bg-deep);
+  color: var(--ink-soft);
+}
+.pill-role { background: var(--accent-soft); color: var(--accent-deep); }
+[data-theme="dark"] .pill-role { color: var(--accent); }
+.pill-sage { background: var(--sage-bg); color: var(--sage); }
+.pill-writer { background: var(--writer-bg); color: var(--writer); }
+.pill-rose { background: var(--rose-bg); color: var(--rose); }
+.pill-gold { background: var(--gold-hl); color: var(--ink); }
+
+.agent-reply-box {
+  margin-top: 8px;
+  padding: 8px 10px;
+  border-radius: 7px;
+  background: var(--sage-bg);
+  border: 1px solid var(--sage-border);
+  font-size: 12px;
+  line-height: 1.45;
+}
+.composer {
+  background: var(--panel);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  padding: 10px;
+  margin-bottom: 12px;
+}
+.composer textarea, .composer input, .composer select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 7px 9px;
+  background: var(--bg);
+  font-size: 12.5px;
+  margin-bottom: 7px;
+}
+.composer-row { display: flex; gap: 6px; margin-bottom: 7px; }
+.composer-row select { margin-bottom: 0; }
+
+/* Semantic Views */
+.view-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+.view-title { font-family: var(--serif); font-size: 24px; font-weight: 700; margin: 0 0 4px; }
+.grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 12px; }
+.char-card { cursor: pointer; transition: transform 0.12s, border-color 0.15s; }
+.char-card:hover { transform: translateY(-1px); border-color: var(--accent); }
+.rel-pill {
+  border: 1px solid var(--line-strong);
+  background: var(--bg);
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 600;
+  margin: 0 6px 6px 0;
+}
+.rel-pill:hover { border-color: var(--accent); color: var(--accent); }
+.field-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  font-weight: 700;
+  margin: 12px 0 4px;
+}
+.editable-box {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 8px 10px;
+  background: var(--panel-alt);
+  line-height: 1.5;
+  font-size: 13px;
+}
+.data-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.data-table th, .data-table td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.data-table th { font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+
+/* Floating Selection Toolbar */
+.selection-bar {
+  position: fixed;
+  z-index: 80;
+  background: #1e2634;
+  color: #fff;
+  border-radius: 8px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  box-shadow: var(--shadow-lg);
+}
+.selection-bar button {
+  border: none;
+  background: transparent;
+  color: #f4efe6;
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.selection-bar button:hover { background: rgba(255,255,255,0.14); }
+.selection-bar .sep { width: 1px; height: 16px; background: rgba(255,255,255,0.2); margin: 0 2px; }
+
+.entity-popover {
+  position: fixed;
+  z-index: 85;
+  width: 300px;
+  background: var(--panel);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  padding: 12px;
+}
+
+/* Modals */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 18, 24, 0.52);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 11vh;
+  z-index: 100;
+}
+.cmd-modal {
+  width: 560px;
+  max-width: 92vw;
+  background: var(--panel);
+  border: 1px solid var(--line-strong);
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+.cmd-input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--line);
+  padding: 14px 16px;
+  font-size: 14.5px;
+  background: var(--panel);
+  outline: none;
+}
+.cmd-results { max-height: 360px; overflow-y: auto; padding: 6px; }
+.cmd-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border: none;
+  background: transparent;
+  border-radius: 7px;
+  text-align: left;
+  font-size: 13px;
+}
+.cmd-item:hover, .cmd-item.is-selected { background: var(--accent-soft); }
+
+.modal-card {
+  width: 440px;
+  max-width: 92vw;
+  background: var(--panel);
+  border: 1px solid var(--line-strong);
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
+  padding: 18px;
+}
+
+.toast {
+  position: fixed;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1e2634;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 12.5px;
+  font-weight: 500;
+  box-shadow: var(--shadow-md);
+  z-index: 120;
+}
+
+[hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<div class="app" id="appRoot">
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="brand">
+        <span class="brand-mark">B</span>
+        <span>Book Studio</span>
+      </div>
+      <div class="breadcrumbs" id="breadcrumbs"></div>
+      <button type="button" class="sync-pill" id="syncPill" title="Live local sync + GitHub push/pull (tools/studio_sync.py)" style="cursor:pointer;">
+        <span class="sync-dot"></span>
+        <span id="syncText">Synced · GitHub ↑1 ↓0 · 1m ago</span>
+      </button>
+    </div>
+
+    <div class="topbar-center">
+      <button type="button" class="cmd-trigger" id="cmdTrigger">
+        <span>Jump to chapter, character, canon…</span>
+        <span class="kbd">Ctrl K</span>
+      </button>
+    </div>
+
+    <div class="topbar-right">
+      <div class="seg" role="group" aria-label="Editor format">
+        <button type="button" id="btnModeRich" class="is-active">Rich</button>
+        <button type="button" id="btnModeMd">Markdown</button>
+      </div>
+      <button type="button" class="btn" id="btnSplitRef" title="Open side-by-side reference">Split Ref</button>
+      <button type="button" class="btn is-active" id="btnCanonHints" title="Underline recognized characters & world rules">Canon Hints</button>
+      <button type="button" class="btn" id="btnFocus" title="Hide sidebars for distraction-free writing">Focus</button>
+      <button type="button" class="btn" id="btnTheme" title="Cycle Warm Paper / Crisp Light / Evening Ink">Warm Paper</button>
+      <button type="button" class="btn btn-sage" id="btnSimExternal" title="Simulate Antigravity editing the .md file externally on disk">Simulate External Sync</button>
+      <button type="button" class="btn btn-primary" id="btnCopyAntigravity" title="Copy prompt for Antigravity's address-comments skill">
+        <span>Copy for Antigravity</span>
+        <span class="badge-count" id="topOpenCommentBadge">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- 3-COLUMN WORKSPACE -->
+  <div class="workspace">
+    <!-- LEFT NAVIGATOR -->
+    <aside class="sidebar-left" aria-label="Story Navigator">
+      <div class="book-switcher-wrap">
+        <button type="button" class="book-switcher-btn" id="bookSwitcherBtn">
+          <div class="book-cover-mini" id="bookCoverMini">CC</div>
+          <div class="book-meta">
+            <div class="book-universe-label" id="bookUniverseLabel">Corporate Castle</div>
+            <div class="book-title-label" id="bookTitleLabel">The Hot Potato of Corporate Castle</div>
+            <div class="book-stage-row">
+              <span class="stage-pill" id="bookStagePill">Draft</span>
+              <span id="bookStatsLabel">2 ch · 5 chars</span>
+            </div>
+          </div>
+          <span style="color:var(--muted);font-size:12px;">▾</span>
+        </button>
+        <div class="book-dropdown" id="bookDropdown" hidden></div>
+      </div>
+
+      <nav class="nav-scroll" id="leftNav"></nav>
+
+      <div class="sidebar-footer">
+        <span id="repoFooterStatus">Shadow history: active</span>
+        <span style="color:var(--sage);font-weight:600;">check: OK</span>
+      </div>
+    </aside>
+
+    <!-- CENTER STAGE -->
+    <main class="center-stage">
+      <div class="doc-toolbar" id="docToolbar"></div>
+      <div class="center-body">
+        <div class="canvas-scroll" id="centerCanvas"></div>
+        <aside class="split-pane" id="splitPane" hidden>
+          <div class="split-pane-header">
+            <select id="splitRefSelect" class="baseline-select" style="flex:1;"></select>
+            <button type="button" class="btn btn-sm" id="closeSplitBtn">Close</button>
+          </div>
+          <div class="split-pane-body" id="splitPaneBody"></div>
+        </aside>
+      </div>
+    </main>
+
+    <!-- RIGHT COMPANION RAIL -->
+    <aside class="sidebar-right" aria-label="Story Companion">
+      <div class="rail-tabs">
+        <button type="button" class="rail-tab is-active" data-rail="comments">Comments <span class="badge-count" id="railCmtCount">0</span></button>
+        <button type="button" class="rail-tab" data-rail="history">History <span class="badge-count" id="railVerCount">0</span></button>
+        <button type="button" class="rail-tab" data-rail="context">Context</button>
+        <button type="button" class="rail-tab" data-rail="sync">Sync</button>
+      </div>
+      <div class="rail-scroll" id="railBody"></div>
+    </aside>
+  </div>
+</div>
+
+<!-- FLOATING SELECTION TOOLBAR -->
+<div class="selection-bar" id="selectionBar" hidden>
+  <button type="button" id="selBold"><strong>B</strong></button>
+  <button type="button" id="selItalic"><em>I</em></button>
+  <span class="sep"></span>
+  <button type="button" id="selComment">+ Comment</button>
+  <button type="button" id="selAskCanon">Ask @canon_keeper</button>
+</div>
+
+<!-- ENTITY POPOVER -->
+<div class="entity-popover" id="entityPopover" hidden></div>
+
+<!-- COMMAND PALETTE MODAL -->
+<div class="modal-backdrop" id="cmdModal" hidden>
+  <div class="cmd-modal" role="dialog" aria-label="Quick Jump">
+    <input type="text" class="cmd-input" id="cmdInput" placeholder="Search chapters, characters, canon rules, versions, or actions...">
+    <div class="cmd-results" id="cmdResults"></div>
+  </div>
+</div>
+
+<!-- SAVE VERSION MODAL -->
+<div class="modal-backdrop" id="versionModal" hidden>
+  <div class="modal-card" role="dialog" aria-label="Save Named Version">
+    <h3 style="margin:0 0 6px;font-family:var(--serif);font-size:18px;">Save Named Version</h3>
+    <p style="margin:0 0 12px;font-size:12.5px;color:var(--muted);">Create an explicit milestone on this chapter's timeline so you can compare or restore it anytime.</p>
+    <div class="field-label">Version label</div>
+    <input type="text" id="verLabelInput" class="editable-box" style="margin-bottom:10px;background:var(--bg);" placeholder="e.g., Tightened Elliot's Zoom interrogation">
+    <label style="display:flex;align-items:center;gap:8px;font-size:12.5px;margin-bottom:14px;cursor:pointer;">
+      <input type="checkbox" id="verGitCheck"> Also record a Git milestone commit in repo
+    </label>
+    <div style="display:flex;justify-content:flex-end;gap:8px;">
+      <button type="button" class="btn" id="verCancelBtn">Cancel</button>
+      <button type="button" class="btn btn-primary" id="verConfirmBtn">Save Version</button>
+    </div>
+  </div>
+</div>
+
+<!-- PUBLISH CONFIRMATION MODAL -->
+<div class="modal-backdrop" id="publishModal" hidden>
+  <div class="modal-card" role="dialog" aria-label="Publish Edition">
+    <h3 style="margin:0 0 6px;font-family:var(--serif);font-size:18px;">Publish Edition to GitHub Pages</h3>
+    <p id="publishModalDesc" style="margin:0 0 10px;font-size:12.5px;color:var(--ink-soft);line-height:1.45;"></p>
+    <div id="publishModalChecks" class="editable-box" style="margin-bottom:10px;font-size:12px;"></div>
+    <label style="display:flex;align-items:center;gap:8px;font-size:12.5px;margin-bottom:14px;cursor:pointer;">
+      <input type="checkbox" id="publishAudioCheck"> Include separate audio narration layer (0 tags in EPUB/PDF)
+    </label>
+    <div style="display:flex;justify-content:flex-end;gap:8px;">
+      <button type="button" class="btn" id="pubCancelBtn">Cancel</button>
+      <button type="button" class="btn btn-primary" id="pubConfirmBtn">Authorize &amp; Push Release</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+
+<script>
+(function () {
+  "use strict";
+
+  const BOOKS = {
+    "corporate-castle": {
+      id: "corporate-castle",
+      short: "CC",
+      color: "#a04a2f",
+      universe: "Corporate Castle",
+      series: "Standalone",
+      title: "The Hot Potato of Corporate Castle",
+      stage: "Draft",
+      brief: {
+        promise: "A razor-sharp corporate-fantasy satire following Marissa, Royal Inquisitor of the ER Watch, as her thankless, underfunded team gets punted like a hot potato between the Tower of Vibes and Liability Tower.",
+        audience: "Adult readers who enjoy workplace satire, dry legal and HR realism translated into high-fantasy allegory, and earned professional boundary payoffs.",
+        constraints: "Zero em dashes (DEC-CC-0006). Strictly two magic schools: Deep Magic and Illusion Magic, plus Marissa's Mirror Shield (DEC-CC-0001). Keep dialogue crisp and restrained.",
+        style: "Third-person limited past tense anchored in Marissa, with sharp comedic cutaways inside the twin towers."
+      },
+      chapters: [
+        {
+          id: "ch-000",
+          label: "Prologue: The Hot Potato",
+          title: "Prologue: The Hot Potato of Corporate Castle",
+          file: "manuscript/000-prologue-the-hot-potato-of-corporate-castle.md",
+          pov: "Third-person omniscient frame",
+          sceneId: "SC-0000",
+          dirtyWriter: false,
+          dirtyExternal: false,
+          lastSyncBanner: null,
+          paragraphs: [
+            {
+              id: "p-000-1",
+              text: "Corporate Castle was a bustling, glass-walled tech kingdom powered by endless Slack-runes, glowing Zoom lairs, and the quiet hum of The Equity Vault. High above the courtyard rose two very different spires. On one side stood the Tower of Vibes, a pastel fortress draped in cashmere and buzzwords, home to the Courtiers of Optics, the Human Capital partners whose primary craft was enabling and pampering the High Lords who ruled the castle's four fiefdoms: Engineering, Product, Sales, and Customer Service. Across the moat loomed Liability Tower, the austere stronghold where the Counsel of Liability practiced Deep Magic to insulate the realm from subpoenas and regulatory fire."
+            },
+            {
+              id: "p-000-2",
+              text: "Far beneath the pastel lounges and ring lights of the Tower of Vibes sat the Employee Relations Watch. They were known more simply as the ER Watch, which felt fitting enough given that they spent their days triaging workplace escalations before they bled into full-blown lawsuits. While the Courtiers of Optics floated through the upper floors misting High Lord crises with Illusion Magic and lavender-scented jargon, the Watch worked in the ER Dungeon, using their natural gift for Deep Magic to do the actual, unglamorous work of keeping the castle from burning to the ground."
+            },
+            {
+              id: "p-000-3",
+              text: "The moment her ward collapsed, panic rippled through the Tower of Vibes. Lord Sterling promptly rebranded the punt as a \"temporary cross-tower experiment\" and casually kicked the entire ER Watch across the moat to Liability Tower without sending a single gold coin of budget. Left to fend for themselves, Marissa and Sarai found an abandoned wooden barge moored outside Liability Tower's drawbridge and moved the Watch aboard without a shred of help from Lois."
+            }
+          ],
+          versions: [
+            { id: "v2", num: 2, author: "You", role: "writer", time: "Yesterday, 18:10", summary: "Locked Prologue per DEC-CC-0006 (zero em dashes)", delta: "+12 / -14 words", paragraphs: null },
+            { id: "v1", num: 1, author: "@drafter", role: "agent", time: "Nov 25, 21:40", summary: "Imported from Tab 4 canon", delta: "+245 words", paragraphs: null }
+          ]
+        },
+        {
+          id: "ch-001",
+          label: "Ch 1: The Reluctant Steward",
+          title: "Chapter One: The Reluctant Steward",
+          file: "manuscript/001-the-reluctant-steward.md",
+          pov: "Marissa",
+          sceneId: "SC-0001",
+          dirtyWriter: false,
+          dirtyExternal: false,
+          lastSyncBanner: null,
+          paragraphs: [
+            {
+              id: "p-001-1",
+              text: "\"What do you recall happening that day?\""
+            },
+            {
+              id: "p-001-2",
+              text: "Marissa kept her voice mild and open, giving him every chance to handle this like an adult."
+            },
+            {
+              id: "p-001-3",
+              text: "Across the Zoom lair, Elliot, High Lord of Engineering, leaned back with a matte-black espresso cup, his eyes flicking toward a second monitor as he half-listened. Behind him hung two sleek, minimalist prints: First Principles and Disagree and Submit. He wore the relaxed, faintly bored expression of a man used to being the smartest person in every room he entered."
+            },
+            {
+              id: "p-001-4",
+              text: "\"I don't recall,\" Elliot said smoothly, taking a slow sip. \"We were in the middle of a massive platform migration that week, and I was preoccupied with keeping the castle's infrastructure upright. Beyond that, I really have nothing to add.\""
+            },
+            {
+              id: "p-001-5",
+              text: "\"Okay,\" Marissa said. \"Can you tell me who was there that day?\""
+            },
+            {
+              id: "p-001-6",
+              text: "Elliot smiled lazily, resting an elbow on the desk as if humoring a junior clerk's technicality. \"Well, that's a different question. Shall I pull up the calendar invite to check who was invited?\""
+            },
+            {
+              id: "p-001-7",
+              text: "This was the moment Marissa decided Elliot had chosen The Hard Way. Her fingers stopped on the keyboard, and her voice whipped across the Zoom lair, razor sharp."
+            },
+            {
+              id: "p-001-8",
+              text: "\"You can't recall who your most senior engineers are?\""
+            },
+            {
+              id: "p-001-9",
+              text: "The smug half-smile froze on Elliot's face. His eyes stopped flicking toward his second monitor. In a single heartbeat, the faint boredom drained away, replaced by the sudden, icy realization that he had severely misjudged the situation he was in."
+            },
+            {
+              id: "p-001-10",
+              text: "\"I... Marcus was there,\" Elliot said, sitting upright fast. \"Devon. Priya. And two of my directors.\""
+            },
+            {
+              id: "p-001-11",
+              text: "\"I received the concern that when harassment in your fiefdom was brought directly to you, an employee looked at you and said, 'Elliot, protect me.'\""
+            },
+            {
+              id: "p-001-12",
+              text: "Elliot swallowed, scrambling back for his smooth armor. \"I don't recall anyone saying that to me.\""
+            },
+            {
+              id: "p-001-13",
+              text: "\"I also received the concern that when it was brought to you, you laughed and did nothing,\" Marissa continued."
+            },
+            {
+              id: "p-001-14",
+              text: "\"I don't recall that either,\" Elliot said, losing the easy sprawl completely. \"I was preoccupied with keeping production alive. I know it sounds horrible. I don't recall.\""
+            }
+          ],
+          versions: [
+            {
+              id: "v4", num: 4, author: "Antigravity (@line_editor)", role: "agent", time: "Today, 20:55",
+              summary: "Latest clean draft: tightened Elliot's technicality line",
+              delta: "+4 / -5 words",
+              paragraphs: [
+                { id: "p-001-1", text: "\"What do you recall happening that day?\"" },
+                { id: "p-001-2", text: "Marissa kept her voice mild and open, giving him every chance to handle this like an adult." },
+                { id: "p-001-3", text: "Across the Zoom lair, Elliot, High Lord of Engineering, leaned back with a matte-black espresso cup, his eyes flicking toward a second monitor as he half-listened. Behind him hung two sleek, minimalist prints: First Principles and Disagree and Submit. He wore the relaxed, faintly bored expression of a man used to being the smartest person in every room he entered." },
+                { id: "p-001-4", text: "\"I don't recall,\" Elliot said smoothly, taking a slow sip. \"We were in the middle of a massive platform migration that week, and I was preoccupied with keeping the castle's infrastructure upright. Beyond that, I really have nothing to add.\"" },
+                { id: "p-001-5", text: "\"Okay,\" Marissa said. \"Can you tell me who was there that day?\"" },
+                { id: "p-001-6", text: "Elliot smiled lazily, resting an elbow on the desk as if humoring a junior clerk's technicality. \"Well, that's a different question. Shall I pull up the calendar invite to check who was invited?\"" },
+                { id: "p-001-7", text: "This was the moment Marissa decided Elliot had chosen The Hard Way. Her fingers stopped on the keyboard, and her voice whipped across the Zoom lair, razor sharp." },
+                { id: "p-001-8", text: "\"You can't recall who your most senior engineers are?\"" },
+                { id: "p-001-9", text: "The smug half-smile froze on Elliot's face. His eyes stopped flicking toward his second monitor. In a single heartbeat, the faint boredom drained away, replaced by the sudden, icy realization that he had severely misjudged the situation he was in." },
+                { id: "p-001-10", text: "\"I... Marcus was there,\" Elliot said, sitting upright fast. \"Devon. Priya. And two of my directors.\"" },
+                { id: "p-001-11", text: "\"I received the concern that when harassment in your fiefdom was brought directly to you, an employee looked at you and said, 'Elliot, protect me.'\"" },
+                { id: "p-001-12", text: "Elliot swallowed, scrambling back for his smooth armor. \"I don't recall anyone saying that to me.\"" },
+                { id: "p-001-13", text: "\"I also received the concern that when it was brought to you, you laughed and did nothing,\" Marissa continued." },
+                { id: "p-001-14", text: "\"I don't recall that either,\" Elliot said, losing the easy sprawl completely. \"I was preoccupied with keeping production alive. I know it sounds horrible. I don't recall.\"" }
+              ]
+            },
+            {
+              id: "v3", num: 3, author: "You", role: "writer", time: "Today, 20:41",
+              summary: "Milestone: Sharpened Zoom lair cold open & repeated denials",
+              delta: "+44 / -12 words",
+              paragraphs: [
+                { id: "p-001-1", text: "\"What do you recall happening that day?\"" },
+                { id: "p-001-2", text: "Marissa kept her voice mild and level, letting the silence do its work." },
+                { id: "p-001-3", text: "Across the Zoom lair, Elliot, High Lord of Engineering, leaned back with a matte-black espresso cup, his eyes flicking toward a second monitor as he half-listened. Behind him hung two sleek, minimalist prints: First Principles and Disagree and Submit. He wore the relaxed, faintly bored expression of a man used to being the smartest person in every room he entered." },
+                { id: "p-001-4", text: "\"I don't recall,\" Elliot said smoothly, taking a slow sip. \"We were in the middle of a massive platform migration that week, and I was preoccupied with keeping the castle's infrastructure upright. Beyond that, I really have nothing to add.\"" },
+                { id: "p-001-5", text: "\"Okay,\" Marissa said. \"Can you tell me who was there that day?\"" },
+                { id: "p-001-6", text: "Elliot smiled lazily, leaning an elbow onto his desk as if humoring a clever technicality. \"Well, that's a different question. Do you want me to pull up the calendar invite to see who was invited?\"" },
+                { id: "p-001-7", text: "This was the moment Marissa decided Elliot had chosen The Hard Way. Her fingers stopped on the keyboard, and her voice whipped across the Zoom lair, razor sharp." },
+                { id: "p-001-8", text: "\"You can't recall who your most senior engineers are?\"" },
+                { id: "p-001-9", text: "The smug half-smile froze on Elliot's face. His eyes stopped flicking toward his second monitor. In a single heartbeat, the faint boredom drained away." },
+                { id: "p-001-10", text: "\"I... Marcus was there,\" Elliot said, sitting upright fast. \"Devon. Priya. And two of my directors.\"" },
+                { id: "p-001-11", text: "\"I received the concern that when harassment in your fiefdom was brought directly to you, an employee looked at you and said, 'Elliot, protect me.'\"" },
+                { id: "p-001-12", text: "Elliot swallowed, scrambling back for his smooth armor. \"I don't recall anyone saying that to me.\"" },
+                { id: "p-001-13", text: "\"I also received the concern that when it was brought to you, you laughed and did nothing,\" Marissa continued." },
+                { id: "p-001-14", text: "\"I don't recall that either,\" Elliot said, losing the easy sprawl completely. \"I was preoccupied with keeping production alive. I know it sounds horrible. I don't recall.\"" }
+              ]
+            },
+            {
+              id: "v2", num: 2, author: "@character_director", role: "agent", time: "Today, 19:15",
+              summary: "Added witness confidentiality beat & Elliot posture shift",
+              delta: "+42 / -18 words",
+              paragraphs: [
+                { id: "p-001-1", text: "\"What do you recall happening that day?\"" },
+                { id: "p-001-2", text: "Marissa kept her voice calm, giving him space to answer." },
+                { id: "p-001-3", text: "Across the Zoom lair, Elliot leaned back with a mug, glancing at a second screen. Behind him hung two prints: First Principles and Disagree and Submit." },
+                { id: "p-001-4", text: "\"I don't recall,\" Elliot said smoothly. \"We had a platform migration that week. I have nothing to add.\"" },
+                { id: "p-001-5", text: "\"Okay,\" Marissa said. \"Can you tell me who was there?\"" },
+                { id: "p-001-6", text: "Elliot smiled. \"Do you want me to pull up the calendar invite?\"" },
+                { id: "p-001-7", text: "Marissa decided Elliot had chosen The Hard Way. Her voice cut across the call." },
+                { id: "p-001-8", text: "\"You can't recall who your most senior engineers are?\"" },
+                { id: "p-001-9", text: "The smile froze on Elliot's face." },
+                { id: "p-001-10", text: "\"Marcus was there,\" Elliot said fast. \"Devon. Priya. And two directors.\"" },
+                { id: "p-001-11", text: "\"An employee asked you to protect them.\"" },
+                { id: "p-001-12", text: "\"I don't recall anyone saying that to me.\"" },
+                { id: "p-001-13", text: "\"And you laughed.\"" },
+                { id: "p-001-14", text: "\"I don't recall that either.\"" }
+              ]
+            }
+          ]
+        }
+      ],
+      comments: [
+        {
+          id: "CMT-0001",
+          targetKind: "chapter",
+          chapterId: "ch-001",
+          anchor: {
+            paragraphId: "p-001-12",
+            startOffset: 54,
+            endOffset: 68,
+            quote: "I don't recall",
+            originalQuote: "I don't recall",
+            prefix: "scrambling back for his smooth armor. \"",
+            suffix: " anyone saying that to me.\"",
+            autoUpdated: false,
+            orphaned: false
+          },
+          role: "@line_editor",
+          intent: "revise",
+          status: "open",
+          authorNote: "Notice this is the 2nd 'I don't recall' in this scene—should we vary the phrasing slightly or keep the verbatim repetition as a tell? (Try editing inside the yellow highlight!)",
+          agentReply: null,
+          createdAt: "6 mins ago"
+        },
+        {
+          id: "CMT-0002",
+          targetKind: "chapter",
+          chapterId: "ch-001",
+          anchor: {
+            paragraphId: "p-001-7",
+            startOffset: 43,
+            endOffset: 55,
+            quote: "The Hard Way",
+            originalQuote: "The Hard Way",
+            prefix: "This was the moment Marissa decided Elliot had chosen ",
+            suffix: ". Her fingers stopped on the keyboard",
+            autoUpdated: false,
+            orphaned: false
+          },
+          role: "@canon_keeper",
+          intent: "check-canon",
+          status: "open",
+          authorNote: "Confirm Marissa's Mirror Shield & Two-Way Law of Free Will (FACT-0005 / FACT-0006) stay consistent here—facts only, zero coercion.",
+          agentReply: null,
+          createdAt: "14 mins ago"
+        },
+        {
+          id: "CMT-0003",
+          targetKind: "chapter",
+          chapterId: "ch-001",
+          anchor: {
+            paragraphId: "p-001-14",
+            startOffset: 132,
+            endOffset: 146,
+            quote: "I don't recall",
+            originalQuote: "I don't recall",
+            prefix: "I know it sounds horrible. ",
+            suffix: ".\"",
+            autoUpdated: false,
+            orphaned: false
+          },
+          role: "@character_director",
+          intent: "critique",
+          status: "open",
+          authorNote: "Anchored specifically to the 4th 'I don't recall' at the end of ¶14—let Antigravity check whether ending on this echo lands cleanly.",
+          agentReply: null,
+          createdAt: "24 mins ago"
+        },
+        {
+          id: "CMT-0004",
+          targetKind: "canon",
+          recordId: "FACT-0005",
+          recordTitle: "The Mirror Shield",
+          anchor: {
+            quote: "unblinking stillness paired with surgical, unspinnable truth",
+            originalQuote: "unblinking stillness paired with surgical, unspinnable truth"
+          },
+          role: "@canon_keeper",
+          intent: "check-canon",
+          status: "open",
+          authorNote: "Clarify in canon whether Marissa uses The Mirror Shield only in formal inquiries or also casual 1:1s with Lois.",
+          agentReply: null,
+          createdAt: "18 mins ago"
+        }
+      ],
+      publish: {
+        privacy: "Private local draft (unpublished)",
+        isPublic: false,
+        epubReady: false,
+        pdfReady: false,
+        catalogValidated: false,
+        lastPublished: "Not published yet"
+      },
+      audio: {
+        enabled: false,
+        doctorOk: true,
+        step: "idle", // idle | prepared | pilot | rendered | verified
+        duration: "0:00"
+      },
+      githubSync: {
+        remote: "origin/main",
+        ahead: 1,
+        behind: 0,
+        lastSynced: "1m ago",
+        interval: "2m",
+        privacyMode: "private-auto"
+      },
+      characters: [
+        {
+          id: "CHAR-0001",
+          name: "Marissa",
+          title: "Royal Inquisitor of the ER Watch",
+          status: "accepted",
+          file: "characters/CHAR-0001-marissa.md",
+          role: "Licensed practitioner of Deep Magic and keeper of Formal Inquiries into Crimes Against the Codex inside the ER Vault. Reluctant referee between Liability Tower and the Courtiers of Optics.",
+          want: "To practice Deep Magic cleanly in service of truth and the people doing the actual work, with clear boundaries and leadership that backs the Codex regardless of rank.",
+          limits: "Bound by the Two-Way Law of Free Will (FACT-0006): cannot force a High Lord to do right, only expose the truth and leave them holding ownership.",
+          voice: "Calm, clinical, unhurried, allergic to theater. Sir Leo calls her interview style \"like a knife through butter\".",
+          sampleLine: "\"If Orla isn't backfilling Sarai's seat, everything continues to fall on me.\"",
+          relations: ["CHAR-0002", "CHAR-0003", "CHAR-0007", "CHAR-0005"]
+        },
+        {
+          id: "CHAR-0002",
+          name: "Doctor Lois",
+          title: "Grand Archivist of Liability",
+          status: "accepted",
+          file: "characters/CHAR-0002-doctor-lois.md",
+          role: "Leader of Liability Tower. Sharp statutory Deep Magic practitioner on ordinary risk, yet folds upward whenever Deep Magic threatens a High Lord.",
+          want: "Zero regulatory fire and zero personal political confrontation with Lord Sterling or the High Table.",
+          limits: "Personal failure of courage when accountability points upward; hides behind red-pen edits and botched Illusion Magic under pressure.",
+          voice: "Crisp, icy, brisk; snaps red fountain pens behind closed doors.",
+          sampleLine: "\"Welcome to Liability Tower. Keep your heads down and your scrolls dry.\"",
+          relations: ["CHAR-0001", "CHAR-0007", "CHAR-0005"]
+        },
+        {
+          id: "CHAR-0003",
+          name: "Sarai",
+          title: "Captain of the ER Watch",
+          status: "accepted",
+          file: "characters/CHAR-0003-sarai.md",
+          role: "True peer, friend, and co-carrier of the ER Watch after Lexi's departure; leads frontline Squires Riley and Victoria.",
+          want: "Protect the Squires from burnout while navigating Protected Exile.",
+          limits: "Exhausted by carrying an unfunded watch across two hostile towers.",
+          voice: "Direct, protective, darkly funny under siege.",
+          sampleLine: "\"Notice he didn't send a single gold coin with the barge.\"",
+          relations: ["CHAR-0001", "CHAR-0005"]
+        },
+        {
+          id: "CHAR-0007",
+          name: "Sir Leo",
+          title: "Counsel of Liability",
+          status: "accepted",
+          file: "characters/CHAR-0007-sir-leo.md",
+          role: "Knight of Deep Magic inside Liability Tower. Candid ally whose dry wit Marissa enjoys, despite his out-of-touch venting from inside the tower.",
+          want: "Practice sound legal Deep Magic and quietly shield Marissa when the stakes turn real.",
+          limits: "Cannot unilaterally overrule Doctor Lois without burning his own standing.",
+          voice: "Wry, precise, understated legal candor.",
+          sampleLine: "\"Like a knife through butter, Marissa.\"",
+          relations: ["CHAR-0001", "CHAR-0002"]
+        },
+        {
+          id: "CHAR-0005",
+          name: "Lord Sterling",
+          title: "Grand Chancellor of Human Capital",
+          status: "accepted",
+          file: "characters/CHAR-0005-lord-sterling.md",
+          role: "Architect of the unfunded punt across the moat and guardian of executive optics.",
+          want: "Zero friction for High Lords and zero gold coin spent on accountability.",
+          limits: "Blind to operational truth; treats headcount like grain ledgers.",
+          voice: "Breezy, transactional, euphemistic.",
+          sampleLine: "\"Think of it as a temporary cross-tower experiment.\"",
+          relations: ["CHAR-0002", "CHAR-0001"]
+        }
+      ],
+      canon: [
+        { id: "FACT-0001", status: "accepted", title: "Corporate Castle & Twin Spires", scope: "corporate-castle", text: "Corporate Castle is a glass-walled tech kingdom powered by Slack-runes, Zoom lairs, and The Equity Vault. Two spires face across a moat: the Tower of Vibes and Liability Tower. Beneath Vibes sits the ER Dungeon." },
+        { id: "FACT-0002", status: "accepted", title: "Deep Magic (Truth & Justice)", scope: "corporate-castle", text: "Deep Magic, practiced by Marissa and the ER Watch, is grounded in unvarnished truth, objective fact-finding, and applying The Codex equally to frontline guild members and High Lords alike." },
+        { id: "FACT-0003", status: "accepted", title: "Counsel of Liability Discipline", scope: "corporate-castle", text: "Liability Tower practices a legitimate branch of Deep Magic focused on statutory counsel and legal risk insulation. Doctor Lois's failure upward is a personal failure of courage, not a flaw in Liability's craft." },
+        { id: "FACT-0004", status: "accepted", title: "Illusion Magic", scope: "corporate-castle", text: "Lavender-scented jargon, corporate theater, and hollow remedies used by the Courtiers of Optics—and by Doctor Lois when cornered—to mask institutional rot." },
+        { id: "FACT-0005", status: "accepted", title: "The Mirror Shield", scope: "corporate-castle", text: "Marissa's signature Deep Magic technique: unblinking stillness paired with surgical, unspinnable truth so political evasion rebounds onto the caster." },
+        { id: "FACT-0006", status: "accepted", title: "No Coercion (Two-Way Free Will)", scope: "corporate-castle", text: "Neither Deep Magic nor the towers can override free will. The Watch cannot force a High Lord to act justly—only expose truth—and employees can walk out the gates on their own terms." },
+        { id: "PROP-0001", status: "proposed", title: "Baroness Orla & The Cashmere Coup", scope: "corporate-castle", text: "Baroness Orla of Optics practices Buzzword Hypnosis from The Grimoire of Optics and later orchestrates pulling ER back into Vibes by rebranding Sarai's seat into Chief Steward." }
+      ],
+      scenes: [
+        { id: "SC-0000", chapterId: "ch-000", title: "The Punt Across the Moat", pov: "Omniscient", incoming: "Lexi holds a protective ward over ER.", turn: "Lexi vanishes; Sterling punts ER Watch to Liability with zero budget.", outgoing: "Watch moves onto an abandoned barge outside Liability's drawbridge." },
+        { id: "SC-0001", chapterId: "ch-001", title: "The Reluctant Steward", pov: "Marissa", incoming: "ER Watch is on the barge; High Lord Elliot dodges a harassment inquiry.", turn: "Marissa traps Elliot's 'I don't recall' deflection with witness-safe facts.", outgoing: "Elliot folds; Marissa and Lois work in crisp Deep Magic sync on ordinary risk." },
+        { id: "SC-0002", chapterId: "ch-001", title: "The Fracture (Planned)", pov: "Marissa", incoming: "Sarai leaves on Protected Exile; Marissa carries two seats.", turn: "Lois explodes behind closed doors and forces hollow coaching on a High Lord.", outgoing: "Marissa's respect for Lois collapses permanently." }
+      ],
+      disclosures: [
+        { id: "DISC-0001", topic: "Lois's private Offline Oath to High Lady Lexi", characters: "Lexi, Lois, Sterling", reader: "Revealed in Prologue", guard: "Marissa sees effects, not corridor bargain" },
+        { id: "DISC-0002", topic: "Lois's Deep Magic fails pointing upward at a High Lord", characters: "Lois (later Marissa)", reader: "Withheld until SC-0002", guard: "Do not expose before Ch 1 establishes sync" },
+        { id: "DISC-0003", topic: "Orla's secret plan to layer Marissa via Ziva", characters: "Sterling, Orla, Lois", reader: "SC-0003 cutaway", guard: "Withheld from Marissa until SC-0004 1:1" }
+      ],
+      gates: [
+        { name: "Brief", status: "pass", owner: "acquisitions_editor", note: "Premise, tone, and DEC-CC-0006 locked" },
+        { name: "Structure", status: "pass", owner: "story_architect", note: "Prologue + Acts I–II causal outline complete" },
+        { name: "Sample", status: "in-review", owner: "reader_advocate", note: "Ch 1 Zoom lair cold open under line polish" },
+        { name: "Draft", status: "pending", owner: "drafter", note: "Chapters 2–4 planned in scenes.json" },
+        { name: "Continuity", status: "pending", owner: "canon_keeper", note: "Open check (CMT-0002) queued for Antigravity skill" }
+      ],
+      issues: [
+        { id: "ISS-001", severity: "minor", file: "ch-001", title: "Three open margin comments queued for Antigravity", detail: "CMT-0001, CMT-0002, and CMT-0003 anchored in reviews/comments.json." }
+      ],
+      syncEvents: [
+        { id: "SYNC-12", source: "Antigravity (@line_editor)", time: "Today, 20:55", summary: "Updated p-001-6 in 001-the-reluctant-steward.md via address-comments skill; cursor preserved.", snapshot: "v4" },
+        { id: "SYNC-11", source: "Desktop Auto-Save", time: "Today, 20:41", summary: "Saved writer milestone v3 & updated reviews/comments.json anchors.", snapshot: "v3" }
+      ],
+      entityHints: {
+        "Marissa": { type: "Character · CHAR-0001", targetView: "characters", targetId: "CHAR-0001", blurb: "Royal Inquisitor of the ER Watch; licensed practitioner of Deep Magic." },
+        "Zoom lair": { type: "World · FACT-0001", targetView: "canon", targetId: "FACT-0001", blurb: "Remote video chamber where castle fiefdoms conduct inquiries and court politics." },
+        "The Hard Way": { type: "Technique · FACT-0005", targetView: "canon", targetId: "FACT-0005", blurb: "Precursor to Marissa's Mirror Shield: unblinking facts leaving zero room for spin." },
+        "Deep Magic": { type: "World Rule · FACT-0002", targetView: "canon", targetId: "FACT-0002", blurb: "Truth, evidentiary clarity, and equal application of The Codex." },
+        "Liability Tower": { type: "Location · FACT-0001", targetView: "canon", targetId: "FACT-0001", blurb: "Austere stronghold of the Counsel of Liability across the moat." }
+      }
+    },
+
+    "ledger-of-ashes": {
+      id: "ledger-of-ashes",
+      short: "LA",
+      color: "#2d6a4f",
+      universe: "Wizarding World",
+      series: "Goblin Wars",
+      title: "The Ledger of Ashes",
+      stage: "Production",
+      brief: {
+        promise: "In 1752, goblin accountant Ragna finds a false charge on the day Ministry officials seize the iron ledger holding her community's wages.",
+        audience: "Adult readers of historical fantasy and grounded political mysteries.",
+        constraints: "Close third person (Ragna), past tense, concrete detail, dry humor, no em dashes, dialogue in double quotation marks.",
+        style: "Restrained, material-focused prose grounded in metalwork, ledger ink, and institutional power."
+      },
+      chapters: [
+        {
+          id: "la-001",
+          label: "Ch 1: The Audit",
+          title: "Chapter One: The Audit",
+          file: "manuscript/001-the-audit.md",
+          pov: "Ragna",
+          sceneId: "SC-0001",
+          dirtyWriter: false,
+          dirtyExternal: false,
+          lastSyncBanner: null,
+          paragraphs: [
+            { id: "la-p-1", text: "The first body arrived with the morning accounts." },
+            { id: "la-p-2", text: "It lay on a handcart beneath a wool blanket, its feet sticking out where the cloth had been pulled over its face. One boot was polished. The other had a split sole, and each time the porter negotiated a bend in the passage, the sole opened and shut as if the dead man were trying to speak." },
+            { id: "la-p-3", text: "Ragna let the cart pass before she went into the counting room. The porter was a goblin she recognised from the lower furnaces. Soot had settled in the creases around his eyes." },
+            { id: "la-p-4", text: "\"Who is it?\" she asked. \"Dorrik.\"" },
+            { id: "la-p-5", text: "Ragna gave him the wage books. \"Check the furnace deductions. Every one.\" Tavin opened the first book with an exaggerated sigh. The metal clasp had been bent back and forth so often that the hinge was white." }
+          ],
+          versions: [
+            {
+              id: "v2", num: 2, author: "You", role: "writer", time: "Oct 28, 16:40",
+              summary: "Final production lock after copy-edit pass",
+              delta: "+8 / -6 words",
+              paragraphs: [
+                { id: "la-p-1", text: "The first body arrived with the morning accounts." },
+                { id: "la-p-2", text: "It lay on a handcart beneath a wool blanket, its feet sticking out where the cloth had been pulled over its face. One boot was polished. The other had a split sole, and each time the porter negotiated a bend in the passage, the sole opened and shut as if the dead man were trying to speak." },
+                { id: "la-p-3", text: "Ragna let the cart pass before she went into the counting room. The porter was a goblin she recognised from the lower furnaces. Soot had settled in the creases around his eyes." },
+                { id: "la-p-4", text: "\"Who is it?\" she asked. \"Dorrik.\"" },
+                { id: "la-p-5", text: "Ragna gave him the wage books. \"Check the furnace deductions. Every one.\" Tavin opened the first book with an exaggerated sigh. The metal clasp had been bent back and forth so often that the hinge was white." }
+              ]
+            },
+            {
+              id: "v1", num: 1, author: "@drafter", role: "agent", time: "Oct 26, 11:20",
+              summary: "Opening chapter draft",
+              delta: "+135 words",
+              paragraphs: [
+                { id: "la-p-1", text: "The first body arrived with the morning accounts." },
+                { id: "la-p-2", text: "It lay on a handcart beneath a wool blanket, its feet sticking out. One boot was polished and the other had a split sole." },
+                { id: "la-p-3", text: "Ragna watched the cart pass before entering the counting room." },
+                { id: "la-p-4", text: "\"Who is it?\" she asked. \"Dorrik.\"" },
+                { id: "la-p-5", text: "Ragna handed Tavin the wage books to check the furnace deductions." }
+              ]
+            }
+          ]
+        }
+      ],
+      comments: [
+        {
+          id: "CMT-LA-01",
+          targetKind: "chapter",
+          chapterId: "la-001",
+          anchor: {
+            paragraphId: "la-p-5",
+            startOffset: 111,
+            endOffset: 179,
+            quote: "The metal clasp had been bent back and forth so often that the hinge",
+            originalQuote: "The metal clasp had been bent back and forth so often that the hinge",
+            prefix: "exaggerated sigh. ",
+            suffix: " was white.",
+            autoUpdated: false,
+            orphaned: false
+          },
+          role: "@reader_advocate",
+          intent: "critique",
+          status: "resolved",
+          authorNote: "Keep this tactile detail—it grounds the counting room's tight budget immediately.",
+          agentReply: "Verified intact in production reading master.",
+          createdAt: "Oct 28"
+        }
+      ],
+      publish: {
+        privacy: "Public GitHub Pages catalog",
+        isPublic: true,
+        epubReady: true,
+        pdfReady: true,
+        catalogValidated: true,
+        lastPublished: "Oct 28"
+      },
+      audio: {
+        enabled: true,
+        doctorOk: true,
+        step: "verified",
+        duration: "3h 42m (22 chapters)"
+      },
+      githubSync: {
+        remote: "origin/main",
+        ahead: 0,
+        behind: 0,
+        lastSynced: "Just now",
+        interval: "2m",
+        privacyMode: "public-manual"
+      },
+      characters: [
+        {
+          id: "CHAR-LA-01",
+          name: "Ragna",
+          title: "Goblin Accountant",
+          status: "accepted",
+          file: "characters/ragna.md",
+          role: "Competent, cautious keeper of quarterly wage ledgers who uncovers the Blackwater iron diversion.",
+          want: "Close the quarterly wages accurately and protect the families who depend on them.",
+          limits: "Must learn that guarding records quietly can shield an injustice.",
+          voice: "Dry, observant, anchored in numbers and physical craft.",
+          sampleLine: "\"And today we'll know whether you were right.\"",
+          relations: ["CHAR-LA-02"]
+        },
+        {
+          id: "CHAR-LA-02",
+          name: "Tavin",
+          title: "Apprentice Clerk",
+          status: "accepted",
+          file: "characters/tavin.md",
+          role: "Nineteen-year-old apprentice who can add columns twice as fast as Ragna and believes in public openness.",
+          want: "Publish proof immediately once he sees the hidden ledger balance.",
+          limits: "Still assumes people who sign accounts actually read them.",
+          voice: "Quick, earnest, lightly irreverent.",
+          sampleLine: "\"Asked her to stop.\"",
+          relations: ["CHAR-LA-01"]
+        }
+      ],
+      canon: [
+        { id: "WW-01", status: "accepted", title: "1752 Historical Setting", scope: "wizarding-world", text: "Ministry of Magic exists by 1752. Goblins possess magic and practice metalwork; individual views on ownership vary." },
+        { id: "WW-02", status: "accepted", title: "Twenty-Bar Iron Discrepancy", scope: "the-ledger-of-ashes", text: "Dorrik signed for forty bars at Blackwater, while only twenty reached the household; Venn redirected the second twenty to Thorn depot." }
+      ],
+      scenes: [
+        { id: "SC-0001", chapterId: "la-001", title: "The Audit", pov: "Ragna", incoming: "Quarterly wage accounts due; Dorrik dead.", turn: "Ministry seizes the iron ledger; Ilva passes a fragment.", outgoing: "Ragna holds a clue linking Dorrik's death to a concealed entry." }
+      ],
+      disclosures: [
+        { id: "KN-0001", topic: "The hidden transaction", characters: "Ragna, Ilva, Tavin", reader: "Sees only what Ragna observes", guard: "Dorrik's cause of death remains unknown" },
+        { id: "KN-0002", topic: "Household iron discrepancy (20 vs 40 bars)", characters: "Sella, Neri, Ragna", reader: "Knows discrepancy exists", guard: "Destination not yet proven" }
+      ],
+      gates: [
+        { name: "Development", status: "revise", owner: "whole_book_edit", note: "22 chapters read; targeted line edits applied" },
+        { name: "Continuity", status: "revise", owner: "whole_book_canon", note: "Snapshot recheck after ch 6, 8, 13 edits" },
+        { name: "Production", status: "pass", owner: "production_editor", note: "EPUB & PDF built in site/publications/" }
+      ],
+      issues: [],
+      syncEvents: [
+        { id: "SYNC-44", source: "Production Build", time: "Oct 28", summary: "Built clean EPUB (144 KB) and PDF (471 KB) with 0 performance tags.", snapshot: "sha256 verified" }
+      ],
+      entityHints: {
+        "Ragna": { type: "Character", targetView: "characters", targetId: "CHAR-LA-01", blurb: "Goblin accountant guarding quarterly wage books." },
+        "Tavin": { type: "Character", targetView: "characters", targetId: "CHAR-LA-02", blurb: "Ragna's nineteen-year-old apprentice." }
+      }
+    }
+  };
+
+  const state = {
+    bookId: "corporate-castle",
+    view: "chapter",
+    chapterId: "ch-001",
+    selectedCharId: "CHAR-0001",
+    editorFormat: "rich",
+    diffMode: "clean", // DEFAULT: latest clean version
+    baselineVersionId: "v3",
+    splitRefOpen: false,
+    splitRefKey: "CHAR-0001",
+    canonHints: true,
+    focusMode: false,
+    themeIdx: 0,
+    themes: [
+      { id: "warm", label: "Warm Paper" },
+      { id: "light", label: "Crisp Light" },
+      { id: "dark", label: "Evening Ink" }
+    ],
+    railTab: "comments",
+    cmtFilter: "all",
+    cmtScope: "all", // all | view
+    activeCmtId: null,
+    activeChangeIdx: 0,
+    bookDropdownOpen: false,
+    draftAnchor: null, // { kind, paragraphId, startOffset, endOffset, quote, recordId, recordTitle }
+    audioPlaying: false,
+    cmdSelectedIdx: 0
+  };
+
+  const $ = (id) => document.getElementById(id);
+  const currentBook = () => BOOKS[state.bookId];
+  const currentChapter = () => {
+    const b = currentBook();
+    return b.chapters.find((c) => c.id === state.chapterId) || b.chapters[0];
+  };
+
+  function escapeHtml(str) {
+    return String(str)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function countWords(text) {
+    const clean = text.trim();
+    return clean ? clean.split(/\s+/).length : 0;
+  }
+
+  function chapterWordCount(ch) {
+    return ch.paragraphs.reduce((acc, p) => acc + countWords(p.text), 0);
+  }
+
+  function showToast(msg) {
+    const el = $("toast");
+    el.textContent = msg;
+    el.hidden = false;
+    clearTimeout(showToast._t);
+    showToast._t = setTimeout(() => { el.hidden = true; }, 3000);
+  }
+
+  function pulseSync(label, mode) {
+    const pill = $("syncPill");
+    const txt = $("syncText");
+    pill.classList.remove("is-saving", "is-external");
+    if (mode === "saving") pill.classList.add("is-saving");
+    if (mode === "external") pill.classList.add("is-external");
+    txt.textContent = label;
+    pulseSync._busy = true;
+    clearTimeout(pulseSync._t);
+    pulseSync._t = setTimeout(() => {
+      pulseSync._busy = false;
+      const b = currentBook();
+      if (b && b.githubSync) {
+        pill.classList.remove("is-saving", "is-external");
+        txt.textContent = `Synced · GitHub ↑${b.githubSync.ahead} ↓${b.githubSync.behind} · ${b.githubSync.lastSynced}`;
+      }
+    }, 2400);
+  }
+
+  // Word-level diff for Inline & Side-by-Side
+  function diffWords(oldStr, newStr) {
+    if (oldStr === newStr) return [{ type: "same", text: newStr }];
+    const a = oldStr.split(/(\s+)/);
+    const b = newStr.split(/(\s+)/);
+    const n = a.length, m = b.length;
+    if (n * m > 35000) return [{ type: "del", text: oldStr }, { type: "ins", text: newStr }];
+    const dp = Array.from({ length: n + 1 }, () => new Uint16Array(m + 1));
+    for (let i = n - 1; i >= 0; i--) {
+      for (let j = m - 1; j >= 0; j--) {
+        dp[i][j] = a[i] === b[j] ? 1 + dp[i + 1][j + 1] : Math.max(dp[i + 1][j], dp[i][j + 1]);
+      }
+    }
+    const out = [];
+    let i = 0, j = 0;
+    while (i < n && j < m) {
+      if (a[i] === b[j]) { pushDiff(out, "same", a[i]); i++; j++; }
+      else if (dp[i + 1][j] >= dp[i][j + 1]) { pushDiff(out, "del", a[i++]); }
+      else { pushDiff(out, "ins", b[j++]); }
+    }
+    while (i < n) pushDiff(out, "del", a[i++]);
+    while (j < m) pushDiff(out, "ins", b[j++]);
+    return out;
+  }
+
+  function pushDiff(arr, type, text) {
+    if (!text) return;
+    if (arr.length && arr[arr.length - 1].type === type) arr[arr.length - 1].text += text;
+    else arr.push({ type, text });
+  }
+
+  // Character-level diff projection so external rewrites preserve comment anchors
+  function projectRangeThroughDiff(oldText, newText, start, end) {
+    if (oldText === newText) return { start, end, quote: newText.slice(start, end), orphaned: false };
+    let pre = 0;
+    const minLen = Math.min(oldText.length, newText.length);
+    while (pre < minLen && oldText[pre] === newText[pre]) pre++;
+    let oldEnd = oldText.length, newEnd = newText.length;
+    while (oldEnd > pre && newEnd > pre && oldText[oldEnd - 1] === newText[newEnd - 1]) {
+      oldEnd--;
+      newEnd--;
+    }
+
+    const oldMid = oldText.slice(pre, oldEnd);
+    const newMid = newText.slice(pre, newEnd);
+    const n = oldMid.length, m = newMid.length;
+
+    // Map each index 0..oldText.length -> new index using LCS on the changed middle slice
+    const mapIdx = new Int32Array(oldText.length + 1);
+    for (let k = 0; k <= pre; k++) mapIdx[k] = k;
+
+    if (n * m <= 90000) {
+      const dp = Array.from({ length: n + 1 }, () => new Int32Array(m + 1));
+      for (let i = n - 1; i >= 0; i--) {
+        for (let j = m - 1; j >= 0; j--) {
+          dp[i][j] = oldMid[i] === newMid[j] ? 1 + dp[i + 1][j + 1] : Math.max(dp[i + 1][j], dp[i][j + 1]);
+        }
+      }
+      let i = 0, j = 0;
+      while (i < n && j < m) {
+        if (oldMid[i] === newMid[j]) {
+          mapIdx[pre + i] = pre + j;
+          i++; j++;
+        } else if (dp[i + 1][j] >= dp[i][j + 1]) {
+          mapIdx[pre + i] = pre + j;
+          i++;
+        } else {
+          j++;
+        }
+      }
+      while (i <= n) {
+        mapIdx[pre + i] = pre + m;
+        i++;
+      }
+    } else {
+      for (let i = 0; i <= n; i++) mapIdx[pre + i] = pre + Math.min(m, Math.round((i / Math.max(1, n)) * m));
+    }
+
+    const deltaAfter = newText.length - oldText.length;
+    for (let k = oldEnd; k <= oldText.length; k++) mapIdx[k] = k + deltaAfter;
+
+    const projStart = Math.max(0, Math.min(newText.length, mapIdx[Math.min(start, oldText.length)]));
+    let projEnd = Math.max(projStart, Math.min(newText.length, mapIdx[Math.min(end, oldText.length)]));
+
+    // If start/end sat inside a replaced region, expand to the replacement boundaries
+    if (start >= pre && end <= oldEnd && projStart === projEnd && newMid.length > 0) {
+      const sWord = Math.max(pre, projStart);
+      const eWord = Math.min(newEnd, sWord + Math.max(4, newMid.length));
+      projEnd = Math.max(projStart, eWord);
+    }
+
+    const quote = newText.slice(projStart, projEnd);
+    return { start: projStart, end: projEnd, quote, orphaned: quote.trim().length === 0 };
+  }
+
+  // Compute occurrence index of an anchor across the whole chapter (for duplicate-text clarity)
+  function getAnchorLocationStats(ch, anchor) {
+    const pIdx = ch.paragraphs.findIndex((p) => p.id === anchor.paragraphId);
+    const pNum = pIdx >= 0 ? pIdx + 1 : "?";
+    const q = anchor.quote;
+    if (!q || anchor.orphaned) return { pNum, occ: null, total: 0 };
+    let total = 0, occ = 0;
+    ch.paragraphs.forEach((p) => {
+      let from = 0;
+      while (true) {
+        const found = p.text.indexOf(q, from);
+        if (found === -1) break;
+        total++;
+        if (p.id === anchor.paragraphId && found === anchor.startOffset) occ = total;
+        from = found + Math.max(1, q.length);
+      }
+    });
+    return { pNum, occ: occ || null, total };
+  }
+
+  function getBaselineVersion(ch) {
+    return ch.versions.find((v) => v.id === state.baselineVersionId) || ch.versions[Math.min(1, ch.versions.length - 1)] || ch.versions[0];
+  }
+
+  function getChangesList(ch) {
+    const base = getBaselineVersion(ch);
+    const baseMap = new Map((base && base.paragraphs ? base.paragraphs : []).map((p) => [p.id, p.text]));
+    const list = [];
+    ch.paragraphs.forEach((p, idx) => {
+      if (p.externalEdit) {
+        list.push({ idx, pid: p.id, kind: "agent", label: p.externalEdit.agent });
+      } else if (base && base.paragraphs) {
+        const oldT = baseMap.get(p.id);
+        if (oldT !== undefined && oldT !== p.text) list.push({ idx, pid: p.id, kind: "writer", label: "You" });
+        else if (oldT === undefined) list.push({ idx, pid: p.id, kind: "writer", label: "You (new)" });
+      }
+    });
+    return list;
+  }
+
+  // Render clean HTML with exact offset-based comment marks + canon hints
+  function applyCanonHints(rawText) {
+    let html = escapeHtml(rawText);
+    if (!state.canonHints) return html;
+    const b = currentBook();
+    Object.keys(b.entityHints).forEach((term) => {
+      const safeTerm = escapeHtml(term);
+      const re = new RegExp(`\\b(${safeTerm.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})\\b`, "g");
+      html = html.replace(re, `<span class="canon-hint" data-entity="${safeTerm}">$1</span>`);
+    });
+    return html;
+  }
+
+  function renderParagraphSegments(p, ch) {
+    const b = currentBook();
+    const cmts = b.comments
+      .filter((c) => c.chapterId === ch.id && c.status !== "resolved" && !c.anchor.orphaned && c.anchor.paragraphId === p.id)
+      .slice()
+      .sort((a, z) => a.anchor.startOffset - z.anchor.startOffset);
+
+    if (!cmts.length) return applyCanonHints(p.text);
+
+    let cursor = 0;
+    let out = "";
+    cmts.forEach((c) => {
+      const s = Math.max(cursor, Math.min(p.text.length, c.anchor.startOffset));
+      const e = Math.max(s, Math.min(p.text.length, c.anchor.endOffset));
+      if (s > cursor) out += applyCanonHints(p.text.slice(cursor, s));
+      if (e > s) {
+        const cls = state.activeCmtId === c.id ? "cmt-mark is-active" : "cmt-mark";
+        out += `<mark class="${cls}" data-cmt-id="${c.id}">${escapeHtml(p.text.slice(s, e))}</mark>`;
+      }
+      cursor = e;
+    });
+    if (cursor < p.text.length) out += applyCanonHints(p.text.slice(cursor));
+    return out;
+  }
+
+  // Extract updated anchor positions from live contenteditable DOM so cursor never resets
+  function syncAnchorsFromParagraphDom(pEl, pObj, ch) {
+    const b = currentBook();
+    const oldText = pObj.text;
+    const newText = pEl.innerText.replace(/\n+$/, "");
+    pObj.text = newText;
+
+    const pComments = b.comments.filter((c) => c.chapterId === ch.id && c.anchor.paragraphId === pObj.id && c.status !== "resolved");
+    if (!pComments.length) return;
+
+    // Walk DOM text offsets to measure exact mark ranges
+    const markRanges = new Map();
+    let offset = 0;
+    function walk(node) {
+      if (node.nodeType === Node.TEXT_NODE) {
+        offset += node.nodeValue.length;
+      } else if (node.nodeType === Node.ELEMENT_NODE) {
+        const cmtId = node.dataset ? node.dataset.cmtId : null;
+        const start = offset;
+        for (let child = node.firstChild; child; child = child.nextSibling) walk(child);
+        if (cmtId) markRanges.set(cmtId, { start, end: offset });
+      }
+    }
+    walk(pEl);
+
+    pComments.forEach((c) => {
+      const found = markRanges.get(c.id);
+      if (found && found.end > found.start) {
+        c.anchor.startOffset = found.start;
+        c.anchor.endOffset = found.end;
+        c.anchor.quote = newText.slice(found.start, found.end);
+        c.anchor.prefix = newText.slice(Math.max(0, found.start - 36), found.start);
+        c.anchor.suffix = newText.slice(found.end, Math.min(newText.length, found.end + 36));
+        c.anchor.orphaned = false;
+        c.anchor.autoUpdated = c.anchor.quote !== c.anchor.originalQuote;
+      } else {
+        // Fallback: project via diff if browser collapsed or removed the <mark> node
+        const proj = projectRangeThroughDiff(oldText, newText, c.anchor.startOffset, c.anchor.endOffset);
+        c.anchor.startOffset = proj.start;
+        c.anchor.endOffset = proj.end;
+        c.anchor.quote = proj.quote;
+        c.anchor.orphaned = proj.orphaned;
+        c.anchor.autoUpdated = true;
+      }
+    });
+  }
+
+  // Render Chrome
+  function renderChrome() {
+    const b = currentBook();
+    const ch = currentChapter();
+    const openCmts = b.comments.filter((c) => c.status !== "resolved").length;
+    $("topOpenCommentBadge").textContent = openCmts;
+    $("railCmtCount").textContent = openCmts;
+    $("railVerCount").textContent = ch ? ch.versions.length : 0;
+
+    $("bookCoverMini").textContent = b.short;
+    $("bookCoverMini").style.background = b.color;
+    $("bookUniverseLabel").textContent = b.universe;
+    $("bookTitleLabel").textContent = b.title;
+    $("bookStagePill").textContent = b.stage;
+    $("bookStatsLabel").textContent = `${b.chapters.length} ch · ${b.characters.length} chars`;
+
+    const viewNames = {
+      chapter: ch ? ch.label : "Manuscript",
+      brief: "Book Brief",
+      scenes: "Outline & Scene Cards",
+      style: "Style & Voice",
+      characters: "Characters",
+      bible: "World Bible & Glossary",
+      canon: "Canon Vault",
+      knowledge: "Knowledge & Spoilers",
+      gates: "Editorial Gates & Issues",
+      exports: "Publish & Audio"
+    };
+
+    if (!pulseSync._busy && b.githubSync) {
+      $("syncText").textContent = `Synced · GitHub ↑${b.githubSync.ahead} ↓${b.githubSync.behind} · ${b.githubSync.lastSynced}`;
+    }
+
+    $("breadcrumbs").innerHTML = `
+      <button type="button" class="crumb-btn" id="crumbBookBtn">${escapeHtml(b.universe)}</button>
+      <span>›</span>
+      <button type="button" class="crumb-btn" id="crumbTitleBtn">${escapeHtml(b.title)}</button>
+      <span>›</span>
+      <span class="crumb-current">${escapeHtml(viewNames[state.view] || "Workspace")}</span>
+    `;
+    $("crumbBookBtn").onclick = () => { state.bookDropdownOpen = !state.bookDropdownOpen; renderBookDropdown(); };
+    $("crumbTitleBtn").onclick = () => { state.view = "brief"; renderAll(); };
+
+    renderBookDropdown();
+
+    $("btnModeRich").classList.toggle("is-active", state.editorFormat === "rich");
+    $("btnModeMd").classList.toggle("is-active", state.editorFormat === "markdown");
+    $("btnSplitRef").classList.toggle("is-active", state.splitRefOpen);
+    $("btnCanonHints").classList.toggle("is-active", state.canonHints);
+    $("btnFocus").classList.toggle("is-active", state.focusMode);
+    $("appRoot").classList.toggle("is-focus", state.focusMode);
+    $("btnTheme").textContent = state.themes[state.themeIdx].label;
+  }
+
+  function renderBookDropdown() {
+    const dd = $("bookDropdown");
+    dd.hidden = !state.bookDropdownOpen;
+    if (dd.hidden) return;
+    dd.innerHTML = Object.values(BOOKS).map((b) => `
+      <button type="button" class="book-option ${b.id === state.bookId ? "is-selected" : ""}" data-book="${b.id}">
+        <div class="book-cover-mini" style="background:${b.color};width:26px;height:34px;font-size:10px;">${b.short}</div>
+        <div style="min-width:0;flex:1;">
+          <div style="font-size:12px;font-weight:700;">${escapeHtml(b.title)}</div>
+          <div style="font-size:11px;color:var(--muted);">${escapeHtml(b.universe)} · ${b.stage}</div>
+        </div>
+      </button>
+    `).join("");
+    dd.querySelectorAll("[data-book]").forEach((btn) => {
+      btn.onclick = () => {
+        state.bookId = btn.dataset.book;
+        const nb = currentBook();
+        state.chapterId = nb.chapters[0].id;
+        state.selectedCharId = nb.characters[0].id;
+        state.splitRefKey = nb.characters[0].id;
+        state.baselineVersionId = nb.chapters[0].versions[1] ? nb.chapters[0].versions[1].id : nb.chapters[0].versions[0].id;
+        state.view = "chapter";
+        state.diffMode = "clean";
+        state.bookDropdownOpen = false;
+        pulseSync("Live Sync · Switched book", "ok");
+        renderAll();
+      };
+    });
+  }
+
+  // Left Navigator
+  function renderLeftNav() {
+    const b = currentBook();
+    const openByChap = {};
+    b.comments.filter((c) => c.status !== "resolved").forEach((c) => {
+      openByChap[c.chapterId] = (openByChap[c.chapterId] || 0) + 1;
+    });
+
+    const chapItems = b.chapters.map((ch) => {
+      const active = state.view === "chapter" && state.chapterId === ch.id;
+      const wc = chapterWordCount(ch);
+      const cmts = openByChap[ch.id] || 0;
+      const dot = ch.dirtyExternal
+        ? '<span class="dot-indicator dot-agent" title="Recent external/Antigravity sync"></span>'
+        : ch.dirtyWriter
+          ? '<span class="dot-indicator dot-writer" title="Edited since last milestone"></span>'
+          : "";
+      return `
+        <button type="button" class="nav-item ${active ? "is-active" : ""}" data-nav="chapter" data-ch="${ch.id}">
+          <span class="nav-item-main">${dot}<span class="nav-item-label">${escapeHtml(ch.label)}</span></span>
+          <span class="nav-item-meta">
+            <span>${wc}w</span>
+            ${cmts ? `<span class="cmt-pill">${cmts}</span>` : ""}
+          </span>
+        </button>`;
+    }).join("");
+
+    const navBtn = (id, label, meta) => `
+      <button type="button" class="nav-item ${state.view === id ? "is-active" : ""}" data-nav="${id}">
+        <span class="nav-item-main"><span class="nav-item-label">${label}</span></span>
+        ${meta ? `<span class="nav-item-meta">${meta}</span>` : ""}
+      </button>`;
+
+    const canonCmts = b.comments.filter((c) => c.targetKind === "canon" && c.status !== "resolved").length;
+    const canonMeta = canonCmts ? `${b.canon.length} · ${canonCmts} cmt` : `${b.canon.length}`;
+
+    $("leftNav").innerHTML = `
+      <div class="nav-group">
+        <div class="nav-group-header">
+          <span>Manuscript</span>
+          <button type="button" class="nav-add-btn" id="addChapterBtn">+ Chapter</button>
+        </div>
+        ${chapItems}
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-header"><span>Story Craft</span></div>
+        ${navBtn("brief", "Book Brief")}
+        ${navBtn("scenes", "Outline & Scene Cards", `${b.scenes.length}`)}
+        ${navBtn("style", "Style & Voice")}
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-header"><span>World & Lore</span></div>
+        ${navBtn("characters", "Characters", `${b.characters.length}`)}
+        ${navBtn("bible", "World Bible & Glossary")}
+        ${navBtn("canon", "Canon Vault", canonMeta)}
+        ${navBtn("knowledge", "Knowledge & Spoilers", `${b.disclosures.length}`)}
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-header"><span>Editorial & Studio</span></div>
+        ${navBtn("gates", "Editorial Gates & Issues", `${b.issues.length ? b.issues.length + " open" : "clean"}`)}
+        ${navBtn("exports", "Publish & Audio", b.audio && b.audio.enabled ? "audio on" : "")}
+      </div>
+    `;
+
+    $("leftNav").querySelectorAll("[data-nav]").forEach((btn) => {
+      btn.onclick = () => {
+        const nav = btn.dataset.nav;
+        if (nav === "chapter") {
+          state.view = "chapter";
+          state.chapterId = btn.dataset.ch;
+          const ch = currentChapter();
+          state.baselineVersionId = ch.versions[1] ? ch.versions[1].id : ch.versions[0].id;
+        } else {
+          state.view = nav;
+        }
+        renderAll();
+      };
+    });
+
+    $("addChapterBtn").onclick = () => {
+      const idx = b.chapters.length + 1;
+      const slug = `ch-new-${Date.now()}`;
+      const ch = {
+        id: slug,
+        label: `Ch ${idx}: Untitled Scene`,
+        title: `Chapter ${idx}: Untitled Scene`,
+        file: `manuscript/00${idx}-untitled-scene.md`,
+        pov: b.characters[0].name,
+        sceneId: "SC-NEW",
+        dirtyWriter: true,
+        dirtyExternal: false,
+        lastSyncBanner: null,
+        paragraphs: [{ id: `${slug}-p1`, text: "Begin writing directly here. Every edit syncs automatically to disk and creates clean Markdown." }],
+        versions: [{ id: "v1", num: 1, author: "You", role: "writer", time: "Just now", summary: "Created chapter", delta: "+15 words", paragraphs: null }]
+      };
+      b.chapters.push(ch);
+      state.view = "chapter";
+      state.chapterId = slug;
+      state.diffMode = "clean";
+      state.baselineVersionId = "v1";
+      pulseSync("Live Sync · Created & registered in book.json", "ok");
+      showToast(`Added ${ch.file}`);
+      renderAll();
+    };
+  }
+
+  // Document Toolbar
+  function renderDocToolbar() {
+    const bar = $("docToolbar");
+    if (state.view !== "chapter") {
+      bar.hidden = true;
+      return;
+    }
+    bar.hidden = false;
+    const ch = currentChapter();
+    const base = getBaselineVersion(ch);
+    const changes = getChangesList(ch);
+
+    const versionOpts = ch.versions.map((v) =>
+      `<option value="${v.id}" ${base && v.id === base.id ? "selected" : ""}>Compare vs ${v.id} (${escapeHtml(v.author)})</option>`
+    ).join("");
+
+    bar.innerHTML = `
+      <div class="doc-toolbar-left">
+        <button type="button" class="version-pill" id="openHistoryPill" title="Open Version Timeline">
+          <span>v${ch.versions[0].num} · Latest</span>
+          <span style="color:var(--muted);font-weight:400;">(${ch.versions.length} versions)</span>
+        </button>
+        <div class="seg" role="group" aria-label="Change visibility mode">
+          <button type="button" data-dmode="clean" class="${state.diffMode === "clean" ? "is-active" : ""}">Clean</button>
+          <button type="button" data-dmode="inline" class="${state.diffMode === "inline" ? "is-active" : ""}">Inline Diff</button>
+          <button type="button" data-dmode="sidebyside" class="${state.diffMode === "sidebyside" ? "is-active" : ""}">Side-by-Side</button>
+        </div>
+        <select class="baseline-select" id="baselineSelect" aria-label="Baseline version to compare">
+          ${versionOpts}
+        </select>
+      </div>
+      <div class="doc-toolbar-right">
+        ${changes.length ? `
+          <div class="change-stepper">
+            <span style="padding:0 4px;font-weight:600;color:var(--ink);">${changes.length} diff${changes.length > 1 ? "s" : ""} vs ${base ? base.id : ""}</span>
+            <button type="button" id="prevChangeBtn" title="Previous change">↑</button>
+            <button type="button" id="nextChangeBtn" title="Next change">↓</button>
+          </div>
+        ` : `<span style="font-size:11.5px;color:var(--muted);">Matches ${base ? base.id : "latest"}</span>`}
+        <button type="button" class="btn btn-sm" id="saveVersionBtn">+ Save Version</button>
+      </div>
+    `;
+
+    $("openHistoryPill").onclick = () => { state.railTab = "history"; renderRail(); };
+    $("baselineSelect").onchange = (e) => {
+      state.baselineVersionId = e.target.value;
+      if (state.diffMode === "clean") state.diffMode = "inline";
+      renderAll();
+    };
+    bar.querySelectorAll("[data-dmode]").forEach((b) => {
+      b.onclick = () => {
+        state.diffMode = b.dataset.dmode;
+        state.editorFormat = "rich";
+        renderAll();
+      };
+    });
+    if ($("prevChangeBtn")) $("prevChangeBtn").onclick = () => stepChange(-1);
+    if ($("nextChangeBtn")) $("nextChangeBtn").onclick = () => stepChange(1);
+    $("saveVersionBtn").onclick = openSaveVersionModal;
+  }
+
+  function stepChange(dir) {
+    const ch = currentChapter();
+    const changes = getChangesList(ch);
+    if (!changes.length) return;
+    if (state.diffMode === "clean") {
+      state.diffMode = "inline";
+      renderAll();
+    }
+    state.activeChangeIdx = (state.activeChangeIdx + dir + changes.length) % changes.length;
+    const target = changes[state.activeChangeIdx];
+    const el = document.querySelector(`[data-pid="${target.pid}"]`);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
+      el.classList.add("is-flash");
+      setTimeout(() => el.classList.remove("is-flash"), 900);
+    }
+  }
+
+  // Render Center Canvas
+  function renderCenter() {
+    const el = $("centerCanvas");
+    if (state.view === "chapter") renderChapterView(el);
+    else if (state.view === "characters") renderCharactersView(el);
+    else if (state.view === "canon") renderCanonView(el);
+    else if (state.view === "scenes") renderScenesView(el);
+    else if (state.view === "knowledge") renderKnowledgeView(el);
+    else if (state.view === "gates") renderGatesView(el);
+    else if (state.view === "brief" || state.view === "style" || state.view === "bible") renderDocInfoView(el);
+    else if (state.view === "exports") renderExportsView(el);
+  }
+
+  function renderChapterView(container) {
+    const b = currentBook();
+    const ch = currentChapter();
+    const wc = chapterWordCount(ch);
+
+    if (state.editorFormat === "markdown") {
+      const mdText = `# ${ch.title}\n\n` + ch.paragraphs.map((p) => p.text).join("\n\n") + "\n";
+      container.innerHTML = `
+        <div class="paper">
+          <div class="chapter-eyebrow">RAW MARKDOWN SOURCE · ${escapeHtml(ch.file)}</div>
+          <div class="raw-md-note">
+            <strong>Clean Repository Guarantee:</strong> Comments, anchors, and version snapshots live in <code>reviews/comments.json</code> and local history — never inside your <code>.md</code> manuscript or exports.
+          </div>
+          <textarea class="raw-md-pre" id="rawMdArea">${escapeHtml(mdText)}</textarea>
+        </div>`;
+      $("rawMdArea").oninput = (e) => {
+        const lines = e.target.value.split(/\n\n+/);
+        if (lines[0] && lines[0].startsWith("# ")) {
+          ch.title = lines[0].slice(2).trim();
+          lines.shift();
+        }
+        ch.paragraphs = lines.filter((x) => x.trim()).map((t, i) => ({
+          id: (ch.paragraphs[i] && ch.paragraphs[i].id) || `${ch.id}-p-${i}`,
+          text: t.trim()
+        }));
+        ch.dirtyWriter = true;
+        pulseSync("Saving to disk…", "saving");
+        clearTimeout(renderChapterView._t);
+        renderChapterView._t = setTimeout(() => {
+          pulseSync(`Live Sync · Saved ${ch.file}`, "ok");
+          renderLeftNav();
+        }, 450);
+      };
+      return;
+    }
+
+    const bannerHtml = ch.lastSyncBanner ? `
+      <div class="sync-banner">
+        <div class="sync-banner-text">${ch.lastSyncBanner}</div>
+        <div class="sync-banner-actions">
+          <button type="button" class="btn btn-sm btn-sage" id="bannerInlineDiff">Inspect Inline Diff</button>
+          <button type="button" class="btn btn-sm" id="bannerSideBySide">Side-by-Side</button>
+          <button type="button" class="btn btn-sm" id="bannerDismiss">Dismiss</button>
+        </div>
+      </div>` : "";
+
+    const base = getBaselineVersion(ch);
+    const baseMap = new Map((base && base.paragraphs ? base.paragraphs : []).map((p) => [p.id, p.text]));
+
+    if (state.diffMode === "sidebyside") {
+      const leftRows = ch.paragraphs.map((p) => {
+        const oldText = baseMap.get(p.id) ?? "(paragraph added later)";
+        const changed = oldText !== p.text;
+        const tokens = changed && baseMap.has(p.id) ? diffWords(oldText, p.text) : [{ type: "same", text: oldText }];
+        const leftHtml = tokens.filter((t) => t.type !== "ins").map((t) =>
+          t.type === "del" ? `<span class="diff-del">${escapeHtml(t.text)}</span>` : escapeHtml(t.text)
+        ).join("");
+        return `<div class="sbs-row ${changed ? "is-changed" : ""}">${leftHtml}</div>`;
+      }).join("");
+
+      const rightRows = ch.paragraphs.map((p) => {
+        const oldText = baseMap.get(p.id) ?? "";
+        const changed = oldText !== p.text;
+        const tokens = changed ? diffWords(oldText, p.text) : [{ type: "same", text: p.text }];
+        const cls = p.externalEdit ? "diff-ins" : "diff-ins-writer";
+        const rightHtml = tokens.filter((t) => t.type !== "del").map((t) =>
+          t.type === "ins" ? `<span class="${cls}">${escapeHtml(t.text)}</span>` : escapeHtml(t.text)
+        ).join("");
+        return `
+          <div class="sbs-row ${changed ? "is-changed" : ""}" data-pid="${p.id}">
+            ${changed ? `
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;font-family:var(--sans);">
+                <span class="pill ${p.externalEdit ? "pill-sage" : "pill-writer"}">${p.externalEdit ? escapeHtml(p.externalEdit.agent) : "You"}</span>
+                ${baseMap.has(p.id) ? `<button type="button" class="hunk-btn" data-restore-p="${p.id}">Restore from ${base.id}</button>` : ""}
+              </div>` : ""}
+            <div>${rightHtml}</div>
+          </div>`;
+      }).join("");
+
+      container.innerHTML = `
+        ${bannerHtml}
+        <div class="paper paper-wide">
+          <div class="chapter-eyebrow">${escapeHtml(ch.pov)} · ${escapeHtml(ch.sceneId)} · SIDE-BY-SIDE COMPARE</div>
+          <h1 class="chapter-title-input" style="margin-bottom:14px;">${escapeHtml(ch.title)}</h1>
+          <div class="sbs-grid">
+            <div class="sbs-col">
+              <div class="sbs-col-header">
+                <span>Baseline: ${base ? `${base.id} (${escapeHtml(base.author)})` : "Original"}</span>
+                <span style="color:var(--muted);font-weight:500;">${base ? base.time : ""}</span>
+              </div>
+              ${leftRows}
+            </div>
+            <div class="sbs-col">
+              <div class="sbs-col-header">
+                <span>Latest Version (v${ch.versions[0].num})</span>
+                <span style="color:var(--sage);font-weight:600;">${wc} words</span>
+              </div>
+              ${rightRows}
+            </div>
+          </div>
+        </div>`;
+
+      bindBannerActions(ch);
+      container.querySelectorAll("[data-restore-p]").forEach((btn) => {
+        btn.onclick = () => {
+          const p = ch.paragraphs.find((x) => x.id === btn.dataset.restoreP);
+          if (p && baseMap.has(p.id)) {
+            p.text = baseMap.get(p.id);
+            delete p.externalEdit;
+            ch.dirtyWriter = true;
+            pulseSync("Live Sync · Restored paragraph from " + base.id, "ok");
+            renderAll();
+          }
+        };
+      });
+      return;
+    }
+
+    // Clean (Default) or Inline Diff mode
+    const blocksHtml = ch.paragraphs.map((p) => {
+      const oldBaseText = baseMap.get(p.id);
+      const changedVsBase = oldBaseText !== undefined && oldBaseText !== p.text;
+      const isExt = Boolean(p.externalEdit);
+
+      let blockClass = "prose-block";
+      if (isExt) blockClass += " has-agent-edit";
+      else if (changedVsBase) blockClass += " has-writer-edit";
+
+      let attrHtml = "";
+      let bodyHtml = "";
+
+      if (state.diffMode === "inline" && (isExt || changedVsBase)) {
+        const prior = isExt ? p.externalEdit.oldText : oldBaseText;
+        const tokens = diffWords(prior, p.text);
+        const insCls = isExt ? "diff-ins" : "diff-ins-writer";
+        const diffRendered = tokens.map((t) => {
+          if (t.type === "del") return `<span class="diff-del">${escapeHtml(t.text)}</span>`;
+          if (t.type === "ins") return `<span class="${insCls}">${escapeHtml(t.text)}</span>`;
+          return escapeHtml(t.text);
+        }).join("");
+        attrHtml = `
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+            <span class="block-attribution ${isExt ? "attr-agent" : "attr-writer"}">
+              ${isExt ? escapeHtml(p.externalEdit.agent) + " · synced from disk" : "You · edited vs " + base.id}
+            </span>
+            <span class="hunk-bar">
+              <button type="button" class="hunk-btn" data-revert-p="${p.id}">Revert to ${isExt ? "pre-sync" : base.id}</button>
+            </span>
+          </div>`;
+        bodyHtml = `<p class="prose-p" contenteditable="true" data-edit-pid="${p.id}">${diffRendered}</p>`;
+      } else {
+        bodyHtml = `<p class="prose-p" contenteditable="true" data-edit-pid="${p.id}">${renderParagraphSegments(p, ch)}</p>`;
+      }
+
+      return `<div class="${blockClass}" data-pid="${p.id}">${attrHtml}${bodyHtml}</div>`;
+    }).join("");
+
+    container.innerHTML = `
+      ${bannerHtml}
+      <article class="paper">
+        <div class="chapter-eyebrow">${escapeHtml(b.series)} · POV: ${escapeHtml(ch.pov)} · ${escapeHtml(ch.sceneId)}</div>
+        <input type="text" class="chapter-title-input" id="chTitleInput" value="${escapeHtml(ch.title)}" aria-label="Chapter Title">
+        <div class="chapter-meta-row">
+          <span><strong id="liveWordCount">${wc}</strong> words · Latest version (Clean) · Direct WYSIWYG editing</span>
+          <span class="file-chip">${escapeHtml(ch.file)}</span>
+        </div>
+        <div class="prose-body" id="proseBody">
+          ${blocksHtml}
+        </div>
+      </article>`;
+
+    bindBannerActions(ch);
+
+    $("chTitleInput").oninput = (e) => {
+      ch.title = e.target.value;
+      ch.dirtyWriter = true;
+      pulseSync("Saving title…", "saving");
+      clearTimeout(renderChapterView._titleTimer);
+      renderChapterView._titleTimer = setTimeout(() => {
+        pulseSync(`Live Sync · Saved ${ch.file}`, "ok");
+      }, 450);
+    };
+
+    // Live WYSIWYG editing with automatic anchor preservation (caret never jumps!)
+    container.querySelectorAll("[data-edit-pid]").forEach((pEl) => {
+      pEl.addEventListener("input", () => {
+        const pid = pEl.dataset.editPid;
+        const pObj = ch.paragraphs.find((x) => x.id === pid);
+        if (!pObj) return;
+        syncAnchorsFromParagraphDom(pEl, pObj, ch);
+        ch.dirtyWriter = true;
+        const wcEl = $("liveWordCount");
+        if (wcEl) wcEl.textContent = chapterWordCount(ch);
+        pulseSync("Saving prose + updating anchors…", "saving");
+        clearTimeout(renderChapterView._saveTimer);
+        renderChapterView._saveTimer = setTimeout(() => {
+          pulseSync(`Live Sync · Saved ${ch.file} & comments.json`, "ok");
+          renderLeftNav();
+          renderDocToolbar();
+          if (state.railTab === "comments") renderRail();
+        }, 350);
+      });
+    });
+
+    container.querySelectorAll("[data-revert-p]").forEach((btn) => {
+      btn.onclick = () => {
+        const p = ch.paragraphs.find((x) => x.id === btn.dataset.revertP);
+        if (!p) return;
+        if (p.externalEdit) {
+          p.text = p.externalEdit.oldText;
+          delete p.externalEdit;
+        } else if (baseMap.has(p.id)) {
+          p.text = baseMap.get(p.id);
+        }
+        pulseSync("Live Sync · Reverted paragraph", "ok");
+        renderAll();
+      };
+    });
+
+    container.querySelectorAll("[data-cmt-id]").forEach((mark) => {
+      mark.onclick = (e) => {
+        e.stopPropagation();
+        state.activeCmtId = mark.dataset.cmtId;
+        state.railTab = "comments";
+        renderRail();
+      };
+    });
+
+    container.querySelectorAll("[data-entity]").forEach((span) => {
+      span.onclick = (e) => {
+        e.stopPropagation();
+        const info = b.entityHints[span.dataset.entity];
+        if (!info) return;
+        const rect = span.getBoundingClientRect();
+        const pop = $("entityPopover");
+        pop.innerHTML = `
+          <div style="font-size:10.5px;font-weight:700;text-transform:uppercase;color:var(--accent);margin-bottom:4px;">${escapeHtml(info.type)}</div>
+          <div style="font-weight:700;font-size:14px;margin-bottom:5px;">${escapeHtml(span.dataset.entity)}</div>
+          <p style="margin:0 0 10px;font-size:12.5px;color:var(--ink-soft);line-height:1.45;">${escapeHtml(info.blurb)}</p>
+          <div style="display:flex;gap:6px;">
+            <button type="button" class="btn btn-sm btn-primary" id="popOpenFull">Open Record</button>
+            <button type="button" class="btn btn-sm" id="popPinSplit">Pin in Split Ref</button>
+          </div>`;
+        pop.style.left = Math.min(window.innerWidth - 320, rect.left) + "px";
+        pop.style.top = (rect.bottom + 8) + "px";
+        pop.hidden = false;
+        $("popOpenFull").onclick = () => {
+          pop.hidden = true;
+          state.view = info.targetView;
+          if (info.targetView === "characters") state.selectedCharId = info.targetId;
+          renderAll();
+        };
+        $("popPinSplit").onclick = () => {
+          pop.hidden = true;
+          state.splitRefOpen = true;
+          state.splitRefKey = info.targetId;
+          renderAll();
+        };
+      };
+    });
+  }
+
+  function bindBannerActions(ch) {
+    if ($("bannerInlineDiff")) $("bannerInlineDiff").onclick = () => { state.diffMode = "inline"; renderAll(); };
+    if ($("bannerSideBySide")) $("bannerSideBySide").onclick = () => { state.diffMode = "sidebyside"; renderAll(); };
+    if ($("bannerDismiss")) $("bannerDismiss").onclick = () => { ch.lastSyncBanner = null; renderCenter(); };
+  }
+
+  // Characters View
+  function renderCharactersView(container) {
+    const b = currentBook();
+    const sel = b.characters.find((c) => c.id === state.selectedCharId) || b.characters[0];
+    const cards = b.characters.map((c) => `
+      <div class="card char-card ${c.id === sel.id ? "is-highlighted" : ""}" data-char="${c.id}">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+          <strong style="font-size:14px;">${escapeHtml(c.name)}</strong>
+          <span class="pill ${c.status === "accepted" ? "pill-sage" : "pill-gold"}">${c.status}</span>
+        </div>
+        <div style="font-size:12px;color:var(--accent);font-weight:600;margin-bottom:4px;">${escapeHtml(c.title)}</div>
+        <div style="font-size:12px;color:var(--muted);">${escapeHtml(c.role.slice(0, 96))}…</div>
+      </div>`).join("");
+
+    const relHtml = sel.relations.map((rid) => {
+      const target = b.characters.find((x) => x.id === rid);
+      return target ? `<button type="button" class="rel-pill" data-jump-char="${target.id}">${escapeHtml(target.name)} (${target.id}) →</button>` : "";
+    }).join("");
+
+    container.innerHTML = `
+      <div class="paper paper-wide">
+        <div class="view-header">
+          <div>
+            <div class="chapter-eyebrow">WORLD & LORE · CHARACTER SHEETS</div>
+            <h1 class="view-title">Cast & Voice Profiles</h1>
+          </div>
+          <span class="file-chip">${escapeHtml(sel.file)}</span>
+        </div>
+        <div class="grid-2" style="margin-bottom:20px;">${cards}</div>
+        <div class="card" style="padding:18px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
+            <div>
+              <span class="pill">${sel.id}</span>
+              <h2 style="margin:6px 0 2px;font-family:var(--serif);">${escapeHtml(sel.name)} — ${escapeHtml(sel.title)}</h2>
+            </div>
+            <button type="button" class="btn btn-sm btn-primary" id="cmtCharBtn">+ Comment for @character_director</button>
+          </div>
+          <div class="field-label">Role & Agency (Editable — syncs to character file)</div>
+          <textarea class="editable-box" rows="2" id="charRoleEdit">${escapeHtml(sel.role)}</textarea>
+          <div class="field-label">Desire / Want</div>
+          <textarea class="editable-box" rows="2" id="charWantEdit">${escapeHtml(sel.want)}</textarea>
+          <div class="field-label">Limits & Canon Constraints</div>
+          <div class="editable-box">${escapeHtml(sel.limits)}</div>
+          <div class="field-label">Voice & Sample Line</div>
+          <div class="editable-box"><strong>Tone:</strong> ${escapeHtml(sel.voice)}<br><em>${escapeHtml(sel.sampleLine)}</em></div>
+          <div class="field-label">Connected Characters</div>
+          <div>${relHtml || "<span style='color:var(--muted)'>None linked yet</span>"}</div>
+        </div>
+      </div>`;
+
+    container.querySelectorAll("[data-char]").forEach((el) => {
+      el.onclick = () => { state.selectedCharId = el.dataset.char; renderAll(); };
+    });
+    container.querySelectorAll("[data-jump-char]").forEach((el) => {
+      el.onclick = () => { state.selectedCharId = el.dataset.jumpChar; renderAll(); };
+    });
+    $("charRoleEdit").oninput = (e) => { sel.role = e.target.value; pulseSync(`Live Sync · Saved ${sel.file}`, "ok"); };
+    $("charWantEdit").oninput = (e) => { sel.want = e.target.value; pulseSync(`Live Sync · Saved ${sel.file}`, "ok"); };
+    $("cmtCharBtn").onclick = () => {
+      state.railTab = "comments";
+      state.draftAnchor = { paragraphId: null, startOffset: 0, endOffset: 0, quote: `${sel.name}: ${sel.sampleLine}`, orphaned: false };
+      renderRail();
+      showToast("Prepared comment for Antigravity (@character_director)");
+    };
+  }
+
+  // Canon Vault View (with direct commenting on canon items)
+  function renderCanonView(container) {
+    const b = currentBook();
+    const activeCmt = b.comments.find((c) => c.id === state.activeCmtId);
+    const cards = b.canon.map((f) => {
+      const openCount = b.comments.filter((c) => c.targetKind === "canon" && c.recordId === f.id && c.status !== "resolved").length;
+      const isActive = activeCmt && activeCmt.targetKind === "canon" && activeCmt.recordId === f.id;
+      return `
+      <div class="card ${isActive ? "is-highlighted" : ""}" data-canon-card="${f.id}">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;gap:8px;flex-wrap:wrap;">
+          <div>
+            <span class="pill">${f.id}</span>
+            <strong style="margin-left:6px;">${escapeHtml(f.title)}</strong>
+          </div>
+          <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;">
+            ${openCount ? `<span class="cmt-pill">${openCount} comment${openCount > 1 ? "s" : ""}</span>` : ""}
+            <span class="pill ${f.status === "accepted" ? "pill-sage" : "pill-gold"}">${f.status}</span>
+            <button type="button" class="btn btn-sm" data-comment-canon="${f.id}">+ Comment</button>
+            ${f.status === "proposed" ? `<button type="button" class="btn btn-sm btn-sage" data-accept-canon="${f.id}">Accept into Canon</button>` : ""}
+          </div>
+        </div>
+        <p style="margin:0;color:var(--ink-soft);line-height:1.5;">${escapeHtml(f.text)}</p>
+      </div>`;
+    }).join("");
+
+    container.innerHTML = `
+      <div class="paper paper-wide">
+        <div class="view-header">
+          <div>
+            <div class="chapter-eyebrow">UNIVERSE LEDGER · CANON &amp; PROPOSALS</div>
+            <h1 class="view-title">Canon Vault (${b.canon.length} rules)</h1>
+          </div>
+          <span class="file-chip">${b.id}/canon.json + canon/proposals.json</span>
+        </div>
+        ${cards}
+      </div>`;
+
+    container.querySelectorAll("[data-comment-canon]").forEach((btn) => {
+      btn.onclick = () => {
+        const fact = b.canon.find((x) => x.id === btn.dataset.commentCanon);
+        if (!fact) return;
+        state.railTab = "comments";
+        state.draftAnchor = {
+          kind: "canon",
+          recordId: fact.id,
+          recordTitle: fact.title,
+          quote: fact.text.slice(0, 90)
+        };
+        renderRail();
+        if ($("newCmtRole")) $("newCmtRole").value = "@canon_keeper";
+        if ($("newCmtIntent")) $("newCmtIntent").value = "check-canon";
+        if ($("newCmtBody")) $("newCmtBody").focus();
+        showToast(`Ready to comment on ${fact.id}: ${fact.title}`);
+      };
+    });
+
+    container.querySelectorAll("[data-accept-canon]").forEach((btn) => {
+      btn.onclick = () => {
+        const fact = b.canon.find((x) => x.id === btn.dataset.acceptCanon);
+        if (fact) {
+          fact.status = "accepted";
+          b.githubSync.ahead += 1;
+          pulseSync("Live Sync · Promoted to canon.json (rev +1)", "ok");
+          showToast(`${fact.id} accepted into canon.json`);
+          renderAll();
+        }
+      };
+    });
+  }
+
+  // Scenes View
+  function renderScenesView(container) {
+    const b = currentBook();
+    const cards = b.scenes.map((sc) => `
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+          <div><span class="pill">${sc.id}</span> <strong style="margin-left:6px;">${escapeHtml(sc.title)}</strong></div>
+          <div style="display:flex;gap:6px;align-items:center;">
+            <span class="pill pill-role">POV: ${escapeHtml(sc.pov)}</span>
+            <button type="button" class="btn btn-sm" data-open-ch="${sc.chapterId}">Open Chapter →</button>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:8px;">
+          <div class="editable-box"><strong>Incoming:</strong><br>${escapeHtml(sc.incoming)}</div>
+          <div class="editable-box"><strong>Turn:</strong><br>${escapeHtml(sc.turn)}</div>
+          <div class="editable-box"><strong>Outgoing:</strong><br>${escapeHtml(sc.outgoing)}</div>
+        </div>
+      </div>`).join("");
+
+    container.innerHTML = `
+      <div class="paper paper-wide">
+        <div class="view-header">
+          <div>
+            <div class="chapter-eyebrow">STORY CRAFT · CAUSAL OUTLINE</div>
+            <h1 class="view-title">Scene Cards & Turning Points</h1>
+          </div>
+          <span class="file-chip">scenes.json</span>
+        </div>
+        ${cards}
+      </div>`;
+
+    container.querySelectorAll("[data-open-ch]").forEach((btn) => {
+      btn.onclick = () => {
+        state.view = "chapter";
+        state.chapterId = btn.dataset.openCh;
+        renderAll();
+      };
+    });
+  }
+
+  // Knowledge Matrix View
+  function renderKnowledgeView(container) {
+    const b = currentBook();
+    const rows = b.disclosures.map((d) => `
+      <tr>
+        <td><span class="pill">${d.id}</span></td>
+        <td><strong>${escapeHtml(d.topic)}</strong></td>
+        <td>${escapeHtml(d.characters)}</td>
+        <td><span class="pill pill-sage">${escapeHtml(d.reader)}</span></td>
+        <td style="color:var(--muted);">${escapeHtml(d.guard)}</td>
+      </tr>`).join("");
+
+    container.innerHTML = `
+      <div class="paper paper-wide">
+        <div class="view-header">
+          <div>
+            <div class="chapter-eyebrow">DISCLOSURE & SPOILER GUARDRAILS</div>
+            <h1 class="view-title">Who Knows What & When</h1>
+          </div>
+          <span class="file-chip">knowledge.json</span>
+        </div>
+        <div class="card">
+          <table class="data-table">
+            <thead><tr><th>ID</th><th>Fact / Secret</th><th>Known By Characters</th><th>Reader Learns</th><th>Spoiler Guard</th></tr></thead>
+            <tbody>${rows}</tbody>
+          </table>
+        </div>
+      </div>`;
+  }
+
+  // Editorial Gates & Issues View
+  function renderGatesView(container) {
+    const b = currentBook();
+    const gatesHtml = b.gates.map((g) => {
+      const cls = g.status === "pass" ? "pill-sage" : g.status === "revise" ? "pill-rose" : "pill-gold";
+      return `
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;">
+            <strong>${escapeHtml(g.name)}</strong>
+            <span class="pill ${cls}">${g.status}</span>
+          </div>
+          <div style="font-size:11.5px;color:var(--accent);font-weight:600;margin-bottom:4px;">@${escapeHtml(g.owner)}</div>
+          <div style="font-size:12.5px;color:var(--ink-soft);">${escapeHtml(g.note)}</div>
+        </div>`;
+    }).join("");
+
+    const issuesHtml = b.issues.length ? b.issues.map((iss) => `
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div><span class="pill pill-rose">${iss.severity}</span> <strong style="margin-left:6px;">${escapeHtml(iss.title)}</strong></div>
+          <button type="button" class="btn btn-sm btn-primary" data-jump-issue="${iss.file}">Open Chapter</button>
+        </div>
+        <p style="margin:6px 0 0;color:var(--ink-soft);font-size:12.5px;">${escapeHtml(iss.detail)}</p>
+      </div>`).join("") : `<div class="card" style="color:var(--sage);font-weight:600;">No open blocking editorial issues.</div>`;
+
+    container.innerHTML = `
+      <div class="paper paper-wide">
+        <div class="view-header">
+          <div>
+            <div class="chapter-eyebrow">QUALITY CHECKPOINTS</div>
+            <h1 class="view-title">Editorial Gates & Issues</h1>
+          </div>
+          <span class="file-chip">reviews/gates.json · reviews/issues.json</span>
+        </div>
+        <div class="grid-2" style="margin-bottom:18px;">${gatesHtml}</div>
+        <h3 style="font-family:var(--serif);margin:0 0 10px;">Open Editorial Findings</h3>
+        ${issuesHtml}
+      </div>`;
+
+    container.querySelectorAll("[data-jump-issue]").forEach((btn) => {
+      btn.onclick = () => {
+        state.view = "chapter";
+        state.chapterId = btn.dataset.jumpIssue;
+        renderAll();
+      };
+    });
+  }
+
+  function renderDocInfoView(container) {
+    const b = currentBook();
+    container.innerHTML = `
+      <div class="paper">
+        <div class="chapter-eyebrow">STORY FOUNDATION · ${state.view.toUpperCase()}</div>
+        <h1 class="view-title" style="margin-bottom:16px;">${escapeHtml(b.title)}</h1>
+        <div class="field-label">Working Promise</div>
+        <textarea class="editable-box" rows="3">${escapeHtml(b.brief.promise)}</textarea>
+        <div class="field-label">Target Audience</div>
+        <textarea class="editable-box" rows="2">${escapeHtml(b.brief.audience)}</textarea>
+        <div class="field-label">Style & Craft Voice</div>
+        <textarea class="editable-box" rows="2">${escapeHtml(b.brief.style)}</textarea>
+        <div class="field-label">Hard Author Constraints</div>
+        <textarea class="editable-box" rows="3">${escapeHtml(b.brief.constraints)}</textarea>
+      </div>`;
+  }
+
+  // Publish & Optional Drama 3 Audio Studio
+  function renderExportsView(container) {
+    const b = currentBook();
+    const pub = b.publish;
+    const aud = b.audio;
+
+    const audioSteps = [
+      { id: "prepared", label: "1. Prepare Chapters", cmd: "drama3.py prepare-chapters" },
+      { id: "pilot", label: "2. Render Pilot Sample", cmd: "drama3.py render (pilot)" },
+      { id: "rendered", label: "3. Build Full Audio", cmd: "drama3.py render + split-retake" },
+      { id: "verified", label: "4. Verify & Package", cmd: "drama3.py check + assemble-chapters" }
+    ];
+    const stepOrder = ["idle", "prepared", "pilot", "rendered", "verified"];
+    const curStepIdx = stepOrder.indexOf(aud.step);
+
+    container.innerHTML = `
+      <div class="paper paper-wide">
+        <div class="view-header">
+          <div>
+            <div class="chapter-eyebrow">PUBLISHING &amp; READ-ALOUD STUDIO</div>
+            <h1 class="view-title">Publish &amp; Audio</h1>
+          </div>
+          <span class="pill ${pub.isPublic ? "pill-sage" : "pill-gold"}">${escapeHtml(pub.privacy)}</span>
+        </div>
+
+        <div class="card" style="padding:16px;margin-bottom:14px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:8px;">
+            <div>
+              <strong style="font-size:15px;">Edition Build &amp; GitHub Pages Publishing</strong>
+              <div style="font-size:12px;color:var(--muted);">Reuses <code>tools/studio.py</code> &amp; <code>tools/build_catalog.py</code> · Last published: ${escapeHtml(pub.lastPublished)}</div>
+            </div>
+            <span class="pill pill-sage">studio.py check: 0 errors</span>
+          </div>
+          <div class="editable-box" style="margin-bottom:12px;font-size:12.5px;">
+            • Chapter order verified in <code>book.json</code> (${b.chapters.length} chapters)<br>
+            • EPUB / PDF status: <strong>${pub.epubReady ? "Built &amp; SHA-256 verified" : "Not built yet"}</strong> · Catalog check: <strong>${pub.catalogValidated ? "Passed (0 leaked comment/narration tags)" : "Pending validation"}</strong>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <button type="button" class="btn btn-sm" id="runBuildBtn">Build Markdown + EPUB/PDF</button>
+            <button type="button" class="btn btn-sm" id="runValidateCatalogBtn">Validate Catalog (build_catalog.py)</button>
+            <button type="button" class="btn btn-sm btn-primary" id="openPublishModalBtn">Publish to GitHub Pages…</button>
+          </div>
+        </div>
+
+        <div class="card" style="padding:16px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;flex-wrap:wrap;gap:8px;">
+            <div>
+              <strong style="font-size:15px;">Optional Read-Aloud Audio (Fish Audio Drama 3)</strong>
+              <div style="font-size:12px;color:var(--muted);">Separate narration layer (<code>production/narration/</code> &amp; <code>site/audio/</code>) — never touches prose, EPUB, or PDF.</div>
+            </div>
+            <label style="display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;cursor:pointer;">
+              <input type="checkbox" id="toggleAudioEnabled" ${aud.enabled ? "checked" : ""}> Enable Audio for this Book
+            </label>
+          </div>
+
+          ${aud.enabled ? `
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;">
+              <span class="pill pill-sage">drama3.py doctor: OK</span>
+              <span class="pill">audiocpp_cli (Vulkan)</span>
+              <span class="pill">ffmpeg</span>
+              <span class="pill">faster-whisper ASR</span>
+            </div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;">
+              ${audioSteps.map((st, idx) => {
+                const done = curStepIdx >= idx + 1;
+                return `<button type="button" class="btn btn-sm ${done ? "btn-sage" : ""}" data-audio-step="${st.id}" title="${st.cmd}">${done ? "✓ " : ""}${st.label}</button>`;
+              }).join("")}
+            </div>
+            <div class="editable-box" style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;">
+              <div>
+                <strong>Audio Status:</strong> ${aud.step === "idle" ? "Ready to prepare segments" : aud.step === "verified" ? `Ready (${aud.duration}) · Attribution: "Built with Fish Audio"` : `Step completed: ${aud.step}`}
+              </div>
+              <button type="button" class="btn btn-sm btn-primary" id="previewAudioBtn" ${curStepIdx < 2 ? "disabled" : ""}>
+                ${state.audioPlaying ? "Pause Sample Preview" : "Play Sample Preview"}
+              </button>
+            </div>
+          ` : `
+            <div class="editable-box" style="color:var(--muted);">
+              Audio narration is off for this draft. Toggle <strong>Enable Audio for this Book</strong> above whenever you want to cast voices and build read-aloud audio via <code>tools/drama3.py</code>.
+            </div>
+          `}
+        </div>
+      </div>`;
+
+    $("runBuildBtn").onclick = () => {
+      pub.epubReady = true;
+      pub.pdfReady = true;
+      b.githubSync.ahead += 1;
+      showToast(`Built EPUB & PDF for ${b.title} with SHA-256 manifest`);
+      renderExportsView(container);
+      renderChrome();
+    };
+    $("runValidateCatalogBtn").onclick = () => {
+      pub.catalogValidated = true;
+      showToast("build_catalog.py validate: 0 errors, 0 comment/narration tags in exports");
+      renderExportsView(container);
+    };
+    $("openPublishModalBtn").onclick = () => {
+      $("publishModalDesc").textContent = pub.isPublic
+        ? `Update the public GitHub Pages catalog edition for "${b.title}" and push via tools/studio_sync.py.`
+        : `Warning: "${b.title}" is currently marked as "${pub.privacy}". Only proceed if you want to authorize a public release on GitHub Pages.`;
+      $("publishModalChecks").innerHTML = `
+        • <code>studio.py check</code>: <strong>0 errors</strong><br>
+        • EPUB &amp; PDF built: <strong>${pub.epubReady ? "Yes" : "Will build on publish"}</strong><br>
+        • Zero comment/narration tags in EPUB/PDF: <strong>Verified</strong>`;
+      $("publishAudioCheck").checked = aud.enabled && aud.step === "verified";
+      $("publishModal").hidden = false;
+    };
+    $("toggleAudioEnabled").onchange = (e) => {
+      aud.enabled = e.target.checked;
+      state.audioPlaying = false;
+      renderAll();
+    };
+    container.querySelectorAll("[data-audio-step]").forEach((btn) => {
+      btn.onclick = () => {
+        aud.step = btn.dataset.audioStep;
+        if (aud.step === "verified") aud.duration = `${b.chapters.length * 11}m (${b.chapters.length} chapters)`;
+        showToast(`Ran ${btn.title}`);
+        renderExportsView(container);
+      };
+    });
+    if ($("previewAudioBtn")) {
+      $("previewAudioBtn").onclick = () => {
+        state.audioPlaying = !state.audioPlaying;
+        showToast(state.audioPlaying ? "Playing Drama 3 sample preview…" : "Paused sample preview");
+        renderExportsView(container);
+      };
+    }
+  }
+
+  // Split Reference Pane
+  function renderSplitPane() {
+    const pane = $("splitPane");
+    pane.hidden = !state.splitRefOpen;
+    if (pane.hidden) return;
+    const b = currentBook();
+    const sel = $("splitRefSelect");
+    const options = [
+      ...b.characters.map((c) => ({ key: c.id, label: `Character: ${c.name}` })),
+      ...b.canon.map((f) => ({ key: f.id, label: `Canon: ${f.title}` })),
+      { key: "BRIEF", label: "Book Brief & Constraints" }
+    ];
+    sel.innerHTML = options.map((o) => `<option value="${o.key}" ${o.key === state.splitRefKey ? "selected" : ""}>${escapeHtml(o.label)}</option>`).join("");
+    sel.onchange = (e) => { state.splitRefKey = e.target.value; renderSplitPane(); };
+
+    const body = $("splitPaneBody");
+    const char = b.characters.find((c) => c.id === state.splitRefKey);
+    const fact = b.canon.find((f) => f.id === state.splitRefKey);
+    if (char) {
+      body.innerHTML = `
+        <span class="pill">${char.id}</span>
+        <h3 style="font-family:var(--serif);margin:6px 0 4px;">${escapeHtml(char.name)}</h3>
+        <div style="font-size:12px;color:var(--accent);font-weight:600;margin-bottom:10px;">${escapeHtml(char.title)}</div>
+        <p><strong>Role:</strong> ${escapeHtml(char.role)}</p>
+        <p><strong>Want:</strong> ${escapeHtml(char.want)}</p>
+        <p><strong>Voice:</strong> ${escapeHtml(char.voice)}</p>
+        <div class="card-quote">${escapeHtml(char.sampleLine)}</div>`;
+    } else if (fact) {
+      body.innerHTML = `
+        <span class="pill">${fact.id}</span> <span class="pill pill-sage">${fact.status}</span>
+        <h3 style="font-family:var(--serif);margin:8px 0 6px;">${escapeHtml(fact.title)}</h3>
+        <p>${escapeHtml(fact.text)}</p>`;
+    } else {
+      body.innerHTML = `
+        <h3 style="font-family:var(--serif);margin:0 0 8px;">Brief & Constraints</h3>
+        <p>${escapeHtml(b.brief.promise)}</p>
+        <p><strong>Constraints:</strong> ${escapeHtml(b.brief.constraints)}</p>`;
+    }
+  }
+
+  // Right Companion Rail
+  function renderRail() {
+    document.querySelectorAll(".rail-tab").forEach((t) => {
+      t.classList.toggle("is-active", t.dataset.rail === state.railTab);
+    });
+    const body = $("railBody");
+    const b = currentBook();
+    const ch = currentChapter();
+
+    if (state.railTab === "comments") {
+      const viewCmts = b.comments.filter((c) => {
+        if (state.cmtScope === "all") return true;
+        if (state.view === "canon") return c.targetKind === "canon";
+        if (state.view === "chapter") return c.targetKind !== "canon" && c.chapterId === ch.id;
+        return true;
+      });
+      const filtered = viewCmts.filter((c) => state.cmtFilter === "all" || c.status === state.cmtFilter);
+
+      let anchorHintHtml = "";
+      if (state.draftAnchor && state.draftAnchor.kind === "canon") {
+        anchorHintHtml = `<div class="anchor-meta" style="color:var(--accent);">Anchored to Canon · ${escapeHtml(state.draftAnchor.recordId)} (${escapeHtml(state.draftAnchor.recordTitle)})</div>`;
+      } else if (state.draftAnchor && state.draftAnchor.paragraphId) {
+        const stats = getAnchorLocationStats(ch, state.draftAnchor);
+        const dupInfo = stats.total > 1 ? ` · occurrence #${stats.occ} of ${stats.total}` : "";
+        anchorHintHtml = `<div class="anchor-meta" style="color:var(--sage);">Anchored to ¶${stats.pNum} · chars ${state.draftAnchor.startOffset}–${state.draftAnchor.endOffset}${dupInfo}</div>`;
+      }
+
+      const composerHtml = `
+        <div class="composer">
+          <div style="font-size:11.5px;font-weight:700;margin-bottom:6px;display:flex;justify-content:space-between;">
+            <span>New Anchored Comment</span>
+            <span style="color:var(--muted);font-weight:400;">reviews/comments.json</span>
+          </div>
+          <input type="text" id="newCmtQuote" value="${escapeHtml(state.draftAnchor ? state.draftAnchor.quote : "")}" placeholder="Highlight prose or click + Comment on a Canon rule...">
+          ${anchorHintHtml}
+          <div class="composer-row">
+            <select id="newCmtRole">
+              <option value="@line_editor">@line_editor</option>
+              <option value="@canon_keeper">@canon_keeper</option>
+              <option value="@character_director">@character_director</option>
+              <option value="@drafter">@drafter</option>
+              <option value="@reader_advocate">@reader_advocate</option>
+            </select>
+            <select id="newCmtIntent">
+              <option value="revise">revise</option>
+              <option value="check-canon">check-canon</option>
+              <option value="critique">critique</option>
+            </select>
+          </div>
+          <textarea id="newCmtBody" rows="2" placeholder="Note for Antigravity's address-comments skill..."></textarea>
+          <button type="button" class="btn btn-primary btn-sm" style="width:100%;justify-content:center;" id="addCmtSubmit">Anchor Comment</button>
+        </div>`;
+
+      const scopeHtml = `
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;margin-bottom:6px;">
+          <div class="seg" style="width:100%;display:grid;grid-template-columns:1fr 1fr;">
+            <button type="button" data-cscope="all" class="${state.cmtScope === "all" ? "is-active" : ""}">All (Book + Canon)</button>
+            <button type="button" data-cscope="view" class="${state.cmtScope === "view" ? "is-active" : ""}">This View Only</button>
+          </div>
+        </div>`;
+
+      const filtersHtml = `
+        <div style="display:flex;gap:4px;margin-bottom:10px;flex-wrap:wrap;">
+          ${[["all","All"],["open","Open"],["needs-review","Needs Review"],["resolved","Resolved"]].map(([k, lbl]) =>
+            `<button type="button" class="btn btn-sm ${state.cmtFilter === k ? "is-active" : ""}" data-cf="${k}">${lbl}</button>`
+          ).join("")}
+        </div>`;
+
+      const listHtml = filtered.map((c) => {
+        let metaLine = "";
+        if (c.targetKind === "canon") {
+          metaLine = `<span class="pill pill-role" style="font-family:var(--sans);">Canon · ${escapeHtml(c.recordId)}</span> <span>${escapeHtml(c.recordTitle || "")}</span>`;
+        } else {
+          const targetCh = b.chapters.find((x) => x.id === c.chapterId) || ch;
+          const stats = getAnchorLocationStats(targetCh, c.anchor);
+          const dupBadge = stats.total > 1 ? ` · #${stats.occ} of ${stats.total}` : "";
+          metaLine = `<span>¶${stats.pNum} · chars ${c.anchor.startOffset}–${c.anchor.endOffset}${dupBadge}</span>`;
+        }
+        return `
+        <div class="card ${state.activeCmtId === c.id ? "is-highlighted" : ""}" data-card-cmt="${c.id}">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:4px;margin-bottom:4px;">
+            <div style="display:flex;gap:4px;align-items:center;">
+              <span class="pill pill-role">${escapeHtml(c.role)}</span>
+              <span class="pill">${escapeHtml(c.intent)}</span>
+            </div>
+            <span class="pill ${c.status === "resolved" ? "pill-sage" : c.status === "needs-review" ? "pill-gold" : ""}">${c.status}</span>
+          </div>
+          <div class="anchor-meta">
+            ${metaLine}
+            ${c.anchor.autoUpdated ? `<span class="pill pill-writer">Anchor auto-updated</span>` : ""}
+            ${c.anchor.orphaned ? `<span class="pill pill-rose">Passage deleted</span>` : ""}
+          </div>
+          ${c.anchor.quote ? `<div class="card-quote">"${escapeHtml(c.anchor.quote)}"</div>` : `<div class="card-quote" style="border-left-color:var(--rose);">Original: "${escapeHtml(c.anchor.originalQuote)}"</div>`}
+          <div style="font-size:12.5px;line-height:1.45;margin-bottom:8px;">${escapeHtml(c.authorNote)}</div>
+          ${c.agentReply ? `<div class="agent-reply-box"><strong>${escapeHtml(c.role)}:</strong> ${escapeHtml(c.agentReply)}</div>` : ""}
+          <div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap;">
+            ${c.status !== "resolved" ? `<button type="button" class="btn btn-sm" data-resolve-cmt="${c.id}">Resolve</button>` : ""}
+            <span style="font-size:11px;color:var(--muted);margin-left:auto;align-self:center;">${c.createdAt}</span>
+          </div>
+        </div>`;
+      }).join("") || `<div class="card" style="color:var(--muted);text-align:center;">No comments in this filter.</div>`;
+
+      body.innerHTML = composerHtml + scopeHtml + filtersHtml + listHtml;
+
+      $("addCmtSubmit").onclick = () => {
+        const note = $("newCmtBody").value.trim();
+        if (!note) { showToast("Write a comment first"); return; }
+        const quote = $("newCmtQuote").value.trim();
+        const id = `CMT-000${b.comments.length + 1}`;
+        if (state.draftAnchor && state.draftAnchor.kind === "canon") {
+          b.comments.unshift({
+            id,
+            targetKind: "canon",
+            recordId: state.draftAnchor.recordId,
+            recordTitle: state.draftAnchor.recordTitle,
+            anchor: { quote: quote || state.draftAnchor.quote, originalQuote: quote || state.draftAnchor.quote },
+            role: $("newCmtRole").value,
+            intent: $("newCmtIntent").value,
+            status: "open",
+            authorNote: note,
+            agentReply: null,
+            createdAt: "Just now"
+          });
+        } else {
+          let anchor = state.draftAnchor;
+          if (!anchor || anchor.quote !== quote) {
+            const matchP = ch.paragraphs.find((p) => quote && p.text.includes(quote)) || ch.paragraphs[0];
+            const s = quote && matchP ? Math.max(0, matchP.text.indexOf(quote)) : 0;
+            const e = quote ? s + quote.length : 0;
+            anchor = {
+              paragraphId: matchP ? matchP.id : null,
+              startOffset: s,
+              endOffset: e,
+              quote,
+              originalQuote: quote,
+              prefix: matchP ? matchP.text.slice(Math.max(0, s - 32), s) : "",
+              suffix: matchP ? matchP.text.slice(e, Math.min(matchP.text.length, e + 32)) : "",
+              autoUpdated: false,
+              orphaned: false
+            };
+          }
+          b.comments.unshift({
+            id,
+            targetKind: "chapter",
+            chapterId: ch.id,
+            anchor: {
+              paragraphId: anchor.paragraphId,
+              startOffset: anchor.startOffset,
+              endOffset: anchor.endOffset,
+              quote: anchor.quote,
+              originalQuote: anchor.quote,
+              prefix: anchor.prefix || "",
+              suffix: anchor.suffix || "",
+              autoUpdated: false,
+              orphaned: false
+            },
+            role: $("newCmtRole").value,
+            intent: $("newCmtIntent").value,
+            status: "open",
+            authorNote: note,
+            agentReply: null,
+            createdAt: "Just now"
+          });
+        }
+        state.draftAnchor = null;
+        state.activeCmtId = id;
+        b.githubSync.ahead += 1;
+        pulseSync("Live Sync · Saved reviews/comments.json", "ok");
+        showToast(`Anchored ${id} in reviews/comments.json`);
+        renderAll();
+      };
+
+      body.querySelectorAll("[data-cscope]").forEach((btn) => {
+        btn.onclick = () => { state.cmtScope = btn.dataset.cscope; renderRail(); };
+      });
+      body.querySelectorAll("[data-cf]").forEach((btn) => {
+        btn.onclick = () => { state.cmtFilter = btn.dataset.cf; renderRail(); };
+      });
+      body.querySelectorAll("[data-card-cmt]").forEach((card) => {
+        card.onclick = () => {
+          state.activeCmtId = card.dataset.cardCmt;
+          const target = b.comments.find((x) => x.id === state.activeCmtId);
+          if (target && target.targetKind === "canon") {
+            state.view = "canon";
+            renderAll();
+            const cCard = document.querySelector(`[data-canon-card="${target.recordId}"]`);
+            if (cCard) cCard.scrollIntoView({ behavior: "smooth", block: "center" });
+          } else {
+            if (target && target.chapterId) state.chapterId = target.chapterId;
+            state.view = "chapter";
+            state.diffMode = "clean";
+            renderAll();
+            const m = document.querySelector(`[data-cmt-id="${state.activeCmtId}"]`);
+            if (m) m.scrollIntoView({ behavior: "smooth", block: "center" });
+          }
+        };
+      });
+      body.querySelectorAll("[data-resolve-cmt]").forEach((btn) => {
+        btn.onclick = (e) => {
+          e.stopPropagation();
+          const c = b.comments.find((x) => x.id === btn.dataset.resolveCmt);
+          if (c) c.status = "resolved";
+          b.githubSync.ahead += 1;
+          pulseSync("Live Sync · Updated comments.json", "ok");
+          renderAll();
+        };
+      });
+      return;
+    }
+
+    if (state.railTab === "history") {
+      const base = getBaselineVersion(ch);
+      const versHtml = ch.versions.map((v, idx) => `
+        <div class="card ${base && base.id === v.id ? "is-highlighted" : ""}">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;">
+            <div style="display:flex;align-items:center;gap:6px;">
+              <strong>${v.id}</strong>
+              <span class="pill ${v.role === "agent" ? "pill-sage" : "pill-writer"}">${escapeHtml(v.author)}</span>
+              ${idx === 0 ? `<span class="pill pill-gold">Latest</span>` : ""}
+            </div>
+            <span style="font-size:11px;color:var(--muted);">${v.time}</span>
+          </div>
+          <div style="font-size:12.5px;margin-bottom:5px;">${escapeHtml(v.summary)}</div>
+          <div style="font-size:11px;color:var(--muted);margin-bottom:8px;">Delta: ${escapeHtml(v.delta)}</div>
+          <div style="display:flex;gap:5px;flex-wrap:wrap;">
+            <button type="button" class="btn btn-sm" data-cmp-inline="${v.id}">Compare Inline</button>
+            <button type="button" class="btn btn-sm" data-cmp-sbs="${v.id}">Side-by-Side</button>
+            ${idx > 0 && v.paragraphs ? `<button type="button" class="btn btn-sm btn-primary" data-restore-ver="${v.id}">Restore</button>` : ""}
+          </div>
+        </div>`).join("");
+
+      body.innerHTML = `
+        <div class="card" style="background:var(--panel-alt);">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+            <strong style="font-size:12.5px;">Chapter Version Timeline</strong>
+            <button type="button" class="btn btn-sm btn-primary" id="railSaveVerBtn">+ Save Version</button>
+          </div>
+          <div style="font-size:11.5px;color:var(--muted);line-height:1.45;">
+            Automatic snapshots capture every writer milestone and external Antigravity update. Restoring always creates a new latest version.
+          </div>
+        </div>
+        ${versHtml}`;
+
+      $("railSaveVerBtn").onclick = openSaveVersionModal;
+      body.querySelectorAll("[data-cmp-inline]").forEach((btn) => {
+        btn.onclick = () => { state.view = "chapter"; state.baselineVersionId = btn.dataset.cmpInline; state.diffMode = "inline"; renderAll(); };
+      });
+      body.querySelectorAll("[data-cmp-sbs]").forEach((btn) => {
+        btn.onclick = () => { state.view = "chapter"; state.baselineVersionId = btn.dataset.cmpSbs; state.diffMode = "sidebyside"; renderAll(); };
+      });
+      body.querySelectorAll("[data-restore-ver]").forEach((btn) => {
+        btn.onclick = () => {
+          const ver = ch.versions.find((v) => v.id === btn.dataset.restoreVer);
+          if (!ver || !ver.paragraphs) return;
+          const nextNum = ch.versions[0].num + 1;
+          ch.paragraphs = ver.paragraphs.map((p) => ({ id: p.id, text: p.text }));
+          ch.versions.unshift({
+            id: "v" + nextNum,
+            num: nextNum,
+            author: "You",
+            role: "writer",
+            time: "Just now",
+            summary: `Restored from ${ver.id} (${ver.author})`,
+            delta: "non-destructive restore",
+            paragraphs: ch.paragraphs.map((p) => ({ id: p.id, text: p.text }))
+          });
+          ch.dirtyExternal = false;
+          ch.dirtyWriter = false;
+          state.baselineVersionId = ver.id;
+          state.diffMode = "clean";
+          pulseSync(`Live Sync · Restored ${ver.id} as v${nextNum}`, "ok");
+          showToast(`Created v${nextNum} from ${ver.id} without losing earlier drafts`);
+          renderAll();
+        };
+      });
+      return;
+    }
+
+    if (state.railTab === "context") {
+      const hints = Object.entries(b.entityHints).map(([term, info]) => `
+        <div class="card">
+          <div style="font-size:10.5px;font-weight:700;color:var(--accent);text-transform:uppercase;">${escapeHtml(info.type)}</div>
+          <div style="font-weight:700;margin:3px 0;">${escapeHtml(term)}</div>
+          <div style="font-size:12px;color:var(--ink-soft);margin-bottom:8px;">${escapeHtml(info.blurb)}</div>
+          <button type="button" class="btn btn-sm" data-ctx-pin="${info.targetId}">Pin in Split Ref</button>
+        </div>`).join("");
+      body.innerHTML = `
+        <div class="card" style="background:var(--panel-alt);">
+          <strong style="font-size:12.5px;">Auto-Detected Story Context</strong>
+          <div style="font-size:11.5px;color:var(--muted);margin-top:3px;">Entities & world rules referenced in ${escapeHtml(ch.label)}.</div>
+        </div>
+        ${hints}`;
+      body.querySelectorAll("[data-ctx-pin]").forEach((btn) => {
+        btn.onclick = () => { state.splitRefOpen = true; state.splitRefKey = btn.dataset.ctxPin; renderAll(); };
+      });
+      return;
+    }
+
+    // Sync & GitHub Push/Pull + Antigravity Skill Tab
+    const gs = b.githubSync;
+    const runsHtml = b.syncEvents.map((r) => `
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+          <span class="pill pill-sage">${escapeHtml(r.source)}</span>
+          <span style="font-size:11px;color:var(--muted);">${r.time}</span>
+        </div>
+        <div style="font-size:12.5px;line-height:1.45;">${escapeHtml(r.summary)}</div>
+        <div style="font-size:11px;color:var(--muted);margin-top:5px;">Snapshot: ${escapeHtml(r.snapshot)}</div>
+      </div>`).join("");
+
+    body.innerHTML = `
+      <div class="card" style="background:var(--panel-alt);">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+          <strong style="font-size:12.5px;">GitHub Sync (<code>tools/studio_sync.py</code>)</strong>
+          <span class="pill ${gs.ahead || gs.behind ? "pill-gold" : "pill-sage"}">↑${gs.ahead} ↓${gs.behind}</span>
+        </div>
+        <div style="font-size:11.5px;color:var(--muted);margin-bottom:8px;">
+          Branch: <code>${escapeHtml(gs.remote)}</code> · Last synced: <strong>${escapeHtml(gs.lastSynced)}</strong>
+        </div>
+        <div class="composer-row" style="margin-bottom:7px;">
+          <select id="ghIntervalSel" class="baseline-select" style="flex:1;" aria-label="Auto-sync frequency">
+            <option value="1m" ${gs.interval === "1m" ? "selected" : ""}>Auto-sync: Every 1 min</option>
+            <option value="2m" ${gs.interval === "2m" ? "selected" : ""}>Auto-sync: Every 2 min</option>
+            <option value="5m" ${gs.interval === "5m" ? "selected" : ""}>Auto-sync: Every 5 min</option>
+            <option value="manual" ${gs.interval === "manual" ? "selected" : ""}>Auto-sync: Manual only</option>
+          </select>
+        </div>
+        <div style="margin-bottom:9px;">
+          <select id="ghPrivacySel" class="baseline-select" style="width:100%;" aria-label="Remote privacy mode">
+            <option value="private-auto" ${gs.privacyMode === "private-auto" ? "selected" : ""}>Private draft branch (Auto Push + Pull)</option>
+            <option value="public-manual" ${gs.privacyMode === "public-manual" ? "selected" : ""}>Public catalog origin (Auto Pull · Manual Push)</option>
+          </select>
+        </div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;">
+          <button type="button" class="btn btn-sm btn-primary" style="flex:1;justify-content:center;" id="ghPullPushBtn">Pull &amp; Push Now</button>
+          <button type="button" class="btn btn-sm" id="ghSimPullBtn">Simulate Remote Pull</button>
+        </div>
+      </div>
+
+      <div class="card" style="background:var(--panel-alt);">
+        <strong style="font-size:12.5px;">Antigravity Skill Handoff</strong>
+        <div style="font-size:11.5px;color:var(--muted);margin:4px 0 10px;line-height:1.45;">
+          Manuscript &amp; canon comments save to <code>reviews/comments.json</code>. Address them from Antigravity using <code>address-comments</code>—this app live-syncs disk writes and projects anchors automatically.
+        </div>
+        <div style="display:flex;flex-direction:column;gap:6px;">
+          <button type="button" class="btn btn-sm btn-primary" id="syncCopyPromptBtn">Copy Prompt for Antigravity</button>
+          <button type="button" class="btn btn-sm btn-sage" id="syncSimExtBtn">Simulate External Antigravity Edit</button>
+        </div>
+      </div>
+      ${runsHtml}`;
+
+    $("ghIntervalSel").onchange = (e) => {
+      gs.interval = e.target.value;
+      showToast(`GitHub auto-sync set to ${gs.interval}`);
+    };
+    $("ghPrivacySel").onchange = (e) => {
+      gs.privacyMode = e.target.value;
+      showToast(gs.privacyMode === "public-manual" ? "Public origin guard: auto-pull only, manual push" : "Private branch: frequent auto pull + push enabled");
+    };
+    $("ghPullPushBtn").onclick = pullAndPushGitHub;
+    $("ghSimPullBtn").onclick = simulateRemotePull;
+    $("syncCopyPromptBtn").onclick = copyPromptForAntigravity;
+    $("syncSimExtBtn").onclick = simulateExternalSync;
+  }
+
+  function pullAndPushGitHub() {
+    const b = currentBook();
+    const gs = b.githubSync;
+    pulseSync("studio_sync.py refresh → save → share…", "saving");
+    setTimeout(() => {
+      const pushed = gs.ahead;
+      const pulled = gs.behind;
+      gs.ahead = 0;
+      gs.behind = 0;
+      gs.lastSynced = "Just now";
+      b.syncEvents.unshift({
+        id: `SYNC-${b.syncEvents.length + 20}`,
+        source: "GitHub Sync",
+        time: "Just now",
+        summary: `studio_sync.py completed (pulled ${pulled}, pushed ${pushed} scoped change${pushed === 1 ? "" : "s"}) on ${gs.remote}.`,
+        snapshot: "HEAD synced"
+      });
+      pulseSync("Synced · GitHub ↑0 ↓0 · Just now", "external");
+      showToast("Pulled & pushed cleanly to GitHub via studio_sync.py");
+      renderAll();
+    }, 450);
+  }
+
+  function simulateRemotePull() {
+    const b = currentBook();
+    const gs = b.githubSync;
+    gs.behind += 1;
+    pulseSync("Auto-pulling remote commit from GitHub…", "saving");
+    setTimeout(() => {
+      gs.behind = 0;
+      gs.lastSynced = "Just now";
+      b.syncEvents.unshift({
+        id: `SYNC-${b.syncEvents.length + 21}`,
+        source: "GitHub Auto-Pull",
+        time: "Just now",
+        summary: "Fast-forwarded 1 remote commit from another workstation via studio_sync.py refresh.",
+        snapshot: "remote HEAD"
+      });
+      pulseSync("Pulled remote update · GitHub ↑" + gs.ahead + " ↓0", "external");
+      showToast("Pulled incoming commit from GitHub automatically");
+      renderAll();
+    }, 450);
+  }
+
+  function copyPromptForAntigravity() {
+    const b = currentBook();
+    const open = b.comments.filter((c) => c.status === "open");
+    const msCount = open.filter((c) => c.targetKind !== "canon").length;
+    const canonCount = open.filter((c) => c.targetKind === "canon").length;
+    const ids = open.map((c) => c.id).join(", ") || "none";
+    const prompt = `Use the address-comments skill on ${b.id} (${b.title}) to address open comments in reviews/comments.json (${msCount} manuscript, ${canonCount} canon): ${ids}.`;
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(prompt).catch(() => {});
+    }
+    showToast(`Copied Antigravity prompt (${msCount} manuscript, ${canonCount} canon open)`);
+  }
+
+  // Simulate Antigravity writing externally to disk (including rewriting a commented span!)
+  function simulateExternalSync() {
+    const b = currentBook();
+    const ch = currentChapter();
+    if (!ch) return;
+    state.view = "chapter";
+
+    // Target a paragraph that has an active comment so user sees Tier 3 diff-projected anchor survival!
+    const targetP = ch.paragraphs.find((p) => p.id === "p-001-12") || ch.paragraphs[0];
+    if (!targetP) return;
+
+    pulseSync("Watcher detected external disk write…", "saving");
+    setTimeout(() => {
+      const oldText = targetP.text;
+      let newText;
+      if (oldText.includes("I don't recall anyone saying")) {
+        newText = oldText.replace("I don't recall anyone saying", "I have no memory of anyone saying");
+      } else {
+        newText = oldText + " (Refined externally via Antigravity.)";
+      }
+
+      // Project any anchored comments in this paragraph through the diff!
+      b.comments.filter((c) => c.targetKind !== "canon" && c.chapterId === ch.id && c.anchor.paragraphId === targetP.id).forEach((c) => {
+        const proj = projectRangeThroughDiff(oldText, newText, c.anchor.startOffset, c.anchor.endOffset);
+        c.anchor.startOffset = proj.start;
+        c.anchor.endOffset = proj.end;
+        c.anchor.quote = proj.quote;
+        c.anchor.prefix = newText.slice(Math.max(0, proj.start - 36), proj.start);
+        c.anchor.suffix = newText.slice(proj.end, Math.min(newText.length, proj.end + 36));
+        c.anchor.autoUpdated = true;
+        c.anchor.orphaned = proj.orphaned;
+        c.status = "needs-review";
+        c.agentReply = "Updated phrasing per comment; anchor automatically projected to new text.";
+      });
+
+      targetP.text = newText;
+      targetP.externalEdit = { agent: "Antigravity (@line_editor)", oldText };
+      ch.dirtyExternal = true;
+
+      const nextNum = ch.versions[0].num + 1;
+      ch.versions.unshift({
+        id: "v" + nextNum,
+        num: nextNum,
+        author: "Antigravity (@line_editor)",
+        role: "agent",
+        time: "Just now",
+        summary: "Addressed CMT-0001 via address-comments skill (anchor auto-projected)",
+        delta: "+4 / -3 words",
+        paragraphs: ch.paragraphs.map((p) => ({ id: p.id, text: p.text }))
+      });
+
+      ch.lastSyncBanner = `<strong>Antigravity (@line_editor)</strong> synced edits to <code>${escapeHtml(ch.file)}</code> · Saved <strong>v${nextNum}</strong> · Anchored comments auto-updated.`;
+      b.syncEvents.unshift({
+        id: `SYNC-${b.syncEvents.length + 13}`,
+        source: "Antigravity (@line_editor)",
+        time: "Just now",
+        summary: `External write synced on ${ch.file}; projected comment anchors automatically.`,
+        snapshot: `v${nextNum}`
+      });
+
+      state.diffMode = "clean"; // Keep clean default view, banner lets user inspect diff anytime
+      pulseSync("External write synced · v" + nextNum, "external");
+      showToast(`Live Sync applied Antigravity edit as v${nextNum} & updated comment anchor`);
+      renderAll();
+    }, 420);
+  }
+
+  // Save Named Version Modal
+  function openSaveVersionModal() {
+    $("verLabelInput").value = "";
+    $("verGitCheck").checked = false;
+    $("versionModal").hidden = false;
+    $("verLabelInput").focus();
+  }
+
+  $("verCancelBtn").onclick = () => { $("versionModal").hidden = true; };
+  $("verConfirmBtn").onclick = () => {
+    const ch = currentChapter();
+    const label = $("verLabelInput").value.trim() || "Writer milestone";
+    const withGit = $("verGitCheck").checked;
+    const nextNum = ch.versions[0].num + 1;
+    ch.versions.unshift({
+      id: "v" + nextNum,
+      num: nextNum,
+      author: "You",
+      role: "writer",
+      time: "Just now",
+      summary: label + (withGit ? " (Git commit recorded)" : ""),
+      delta: "snapshot",
+      paragraphs: ch.paragraphs.map((p) => ({ id: p.id, text: p.text }))
+    });
+    ch.dirtyWriter = false;
+    state.baselineVersionId = "v" + nextNum;
+    $("versionModal").hidden = true;
+    pulseSync(`Live Sync · Saved milestone v${nextNum}`, "ok");
+    showToast(`Saved v${nextNum}: ${label}`);
+    renderAll();
+  };
+
+  // Command Palette
+  function getCmdItems(query) {
+    const b = currentBook();
+    const q = query.trim().toLowerCase();
+    const items = [
+      ...b.chapters.map((ch) => ({ kind: "Chapter", label: ch.label, sub: ch.file, act: () => { state.view = "chapter"; state.chapterId = ch.id; } })),
+      ...b.characters.map((c) => ({ kind: "Character", label: `${c.name} — ${c.title}`, sub: c.id, act: () => { state.view = "characters"; state.selectedCharId = c.id; } })),
+      ...b.canon.map((f) => ({ kind: "Canon", label: `${f.id}: ${f.title}`, sub: f.status, act: () => { state.view = "canon"; } })),
+      { kind: "Action", label: "Show Clean Latest Version", sub: "View", act: () => { state.view = "chapter"; state.diffMode = "clean"; } },
+      { kind: "Action", label: "Toggle Inline Diff (Writer & External Changes)", sub: "View", act: () => { state.view = "chapter"; state.diffMode = "inline"; } },
+      { kind: "Action", label: "Toggle Side-by-Side Version Compare", sub: "View", act: () => { state.view = "chapter"; state.diffMode = "sidebyside"; } },
+      { kind: "Action", label: "Open Version Timeline (History)", sub: "Iterate", act: () => { state.railTab = "history"; } },
+      { kind: "Action", label: "Save Named Version Milestone", sub: "Iterate", act: () => { openSaveVersionModal(); } },
+      { kind: "Action", label: "Toggle Focus Mode", sub: "Layout", act: () => { state.focusMode = !state.focusMode; } }
+    ];
+    return q ? items.filter((i) => (i.label + " " + i.kind + " " + i.sub).toLowerCase().includes(q)) : items;
+  }
+
+  function renderCmdResults() {
+    const items = getCmdItems($("cmdInput").value);
+    if (state.cmdSelectedIdx >= items.length) state.cmdSelectedIdx = 0;
+    $("cmdResults").innerHTML = items.map((it, idx) => `
+      <button type="button" class="cmd-item ${idx === state.cmdSelectedIdx ? "is-selected" : ""}" data-cmd-idx="${idx}">
+        <span><strong>${escapeHtml(it.label)}</strong></span>
+        <span class="pill">${escapeHtml(it.kind)}</span>
+      </button>`).join("") || `<div style="padding:14px;color:var(--muted);text-align:center;">No matching records.</div>`;
+    $("cmdResults").querySelectorAll("[data-cmd-idx]").forEach((btn) => {
+      btn.onclick = () => {
+        const chosen = items[Number(btn.dataset.cmdIdx)];
+        if (chosen) { $("cmdModal").hidden = true; chosen.act(); renderAll(); }
+      };
+    });
+  }
+
+  // Exact DOM Offset Capture on Selection (fixes duplicate text!)
+  document.addEventListener("mouseup", () => {
+    setTimeout(() => {
+      const sel = window.getSelection();
+      const bar = $("selectionBar");
+      if (!sel || sel.isCollapsed || state.view !== "chapter" || state.editorFormat !== "rich") {
+        bar.hidden = true;
+        return;
+      }
+      const prose = $("proseBody");
+      if (!prose || !prose.contains(sel.anchorNode)) {
+        bar.hidden = true;
+        return;
+      }
+      const text = sel.toString().trim();
+      if (text.length < 2) { bar.hidden = true; return; }
+
+      const range = sel.getRangeAt(0);
+      const startEl = range.startContainer.nodeType === 1 ? range.startContainer : range.startContainer.parentElement;
+      const pEl = startEl ? startEl.closest("[data-edit-pid]") : null;
+      if (!pEl) { bar.hidden = true; return; }
+
+      const preRange = document.createRange();
+      preRange.selectNodeContents(pEl);
+      preRange.setEnd(range.startContainer, range.startOffset);
+      const startOffset = preRange.toString().length;
+      const rawSel = sel.toString();
+      const leadTrim = rawSel.length - rawSel.trimStart().length;
+      const finalStart = startOffset + leadTrim;
+      const finalEnd = finalStart + text.length;
+      const pText = pEl.innerText.replace(/\n+$/, "");
+
+      state._pendingSelectionAnchor = {
+        paragraphId: pEl.dataset.editPid,
+        startOffset: finalStart,
+        endOffset: finalEnd,
+        quote: text,
+        prefix: pText.slice(Math.max(0, finalStart - 36), finalStart),
+        suffix: pText.slice(finalEnd, Math.min(pText.length, finalEnd + 36))
+      };
+
+      const rect = range.getBoundingClientRect();
+      bar.style.left = Math.max(12, Math.min(window.innerWidth - 320, rect.left)) + "px";
+      bar.style.top = Math.max(52, rect.top - 42) + "px";
+      bar.hidden = false;
+    }, 10);
+  });
+
+  $("selBold").onclick = () => { document.execCommand("bold"); $("selectionBar").hidden = true; };
+  $("selItalic").onclick = () => { document.execCommand("italic"); $("selectionBar").hidden = true; };
+  $("selComment").onclick = () => {
+    state.draftAnchor = state._pendingSelectionAnchor || null;
+    state.railTab = "comments";
+    $("selectionBar").hidden = true;
+    renderRail();
+    if ($("newCmtBody")) $("newCmtBody").focus();
+  };
+  $("selAskCanon").onclick = () => {
+    state.draftAnchor = state._pendingSelectionAnchor || null;
+    state.railTab = "comments";
+    $("selectionBar").hidden = true;
+    renderRail();
+    if ($("newCmtRole")) $("newCmtRole").value = "@canon_keeper";
+    if ($("newCmtIntent")) $("newCmtIntent").value = "check-canon";
+    if ($("newCmtBody")) $("newCmtBody").focus();
+  };
+
+  // Global Listeners
+  $("bookSwitcherBtn").onclick = (e) => {
+    e.stopPropagation();
+    state.bookDropdownOpen = !state.bookDropdownOpen;
+    renderBookDropdown();
+  };
+  $("btnModeRich").onclick = () => { state.view = "chapter"; state.editorFormat = "rich"; renderAll(); };
+  $("btnModeMd").onclick = () => { state.view = "chapter"; state.editorFormat = "markdown"; renderAll(); };
+  $("btnSplitRef").onclick = () => { state.splitRefOpen = !state.splitRefOpen; renderAll(); };
+  $("closeSplitBtn").onclick = () => { state.splitRefOpen = false; renderAll(); };
+  $("btnCanonHints").onclick = () => { state.canonHints = !state.canonHints; renderAll(); };
+  $("btnFocus").onclick = () => { state.focusMode = !state.focusMode; renderChrome(); };
+  $("btnTheme").onclick = () => {
+    state.themeIdx = (state.themeIdx + 1) % state.themes.length;
+    document.documentElement.setAttribute("data-theme", state.themes[state.themeIdx].id);
+    renderChrome();
+  };
+  $("btnSimExternal").onclick = simulateExternalSync;
+  $("btnCopyAntigravity").onclick = copyPromptForAntigravity;
+  $("syncPill").onclick = () => { state.railTab = "sync"; renderRail(); };
+
+  $("pubCancelBtn").onclick = () => { $("publishModal").hidden = true; };
+  $("pubConfirmBtn").onclick = () => {
+    const b = currentBook();
+    b.publish.epubReady = true;
+    b.publish.pdfReady = true;
+    b.publish.catalogValidated = true;
+    b.publish.isPublic = true;
+    b.publish.privacy = "Public GitHub Pages catalog";
+    b.publish.lastPublished = "Just now";
+    b.githubSync.ahead = 0;
+    b.githubSync.lastSynced = "Just now";
+    b.syncEvents.unshift({
+      id: `SYNC-${b.syncEvents.length + 25}`,
+      source: "Publish & Sync",
+      time: "Just now",
+      summary: `Built catalog via build_catalog.py & pushed authorized release for ${b.title}.`,
+      snapshot: "published"
+    });
+    $("publishModal").hidden = true;
+    pulseSync("Published & pushed to GitHub Pages", "external");
+    showToast(`Published "${b.title}" to GitHub Pages`);
+    renderAll();
+  };
+  $("publishModal").onclick = (e) => { if (e.target === $("publishModal")) $("publishModal").hidden = true; };
+
+  document.querySelectorAll(".rail-tab").forEach((tab) => {
+    tab.onclick = () => { state.railTab = tab.dataset.rail; renderRail(); };
+  });
+
+  $("cmdTrigger").onclick = () => {
+    $("cmdModal").hidden = false;
+    $("cmdInput").value = "";
+    state.cmdSelectedIdx = 0;
+    renderCmdResults();
+    $("cmdInput").focus();
+  };
+  $("cmdInput").oninput = () => { state.cmdSelectedIdx = 0; renderCmdResults(); };
+  $("cmdInput").onkeydown = (e) => {
+    const items = getCmdItems($("cmdInput").value);
+    if (e.key === "ArrowDown") { e.preventDefault(); state.cmdSelectedIdx = (state.cmdSelectedIdx + 1) % Math.max(1, items.length); renderCmdResults(); }
+    if (e.key === "ArrowUp") { e.preventDefault(); state.cmdSelectedIdx = (state.cmdSelectedIdx - 1 + Math.max(1, items.length)) % Math.max(1, items.length); renderCmdResults(); }
+    if (e.key === "Enter" && items[state.cmdSelectedIdx]) {
+      e.preventDefault();
+      $("cmdModal").hidden = true;
+      items[state.cmdSelectedIdx].act();
+      renderAll();
+    }
+    if (e.key === "Escape") $("cmdModal").hidden = true;
+  };
+  $("cmdModal").onclick = (e) => { if (e.target === $("cmdModal")) $("cmdModal").hidden = true; };
+  $("versionModal").onclick = (e) => { if (e.target === $("versionModal")) $("versionModal").hidden = true; };
+
+  document.addEventListener("keydown", (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
+      e.preventDefault();
+      $("cmdTrigger").click();
+    }
+    if (e.key === "Escape") {
+      $("cmdModal").hidden = true;
+      $("versionModal").hidden = true;
+      $("publishModal").hidden = true;
+      $("entityPopover").hidden = true;
+      state.bookDropdownOpen = false;
+      renderBookDropdown();
+    }
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".book-switcher-wrap")) {
+      state.bookDropdownOpen = false;
+      renderBookDropdown();
+    }
+    if (!e.target.closest(".entity-popover") && !e.target.closest(".canon-hint")) {
+      $("entityPopover").hidden = true;
+    }
+  });
+
+  function renderAll() {
+    renderChrome();
+    renderLeftNav();
+    renderDocToolbar();
+    renderCenter();
+    renderSplitPane();
+    renderRail();
+  }
+
+  renderAll();
+})();
+</script>
+</body>
+</html>

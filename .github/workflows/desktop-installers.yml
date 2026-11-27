@@ -1,0 +1,107 @@
+name: Build Book Studio Desktop installers
+
+on:
+  push:
+    tags:
+      - "desktop-v*"
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: "Optional tag name (e.g. desktop-v0.1.0) to publish a GitHub Release; leave blank for Actions artifacts only"
+        required: false
+        type: string
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  build-installers:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            script: dist:linux
+            artifact: book-studio-linux
+            paths: |
+              studio-desktop/release/*.AppImage
+              studio-desktop/release/*.deb
+          - os: windows-latest
+            script: dist:win
+            artifact: book-studio-windows
+            paths: |
+              studio-desktop/release/*.exe
+
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install dependencies and build installer
+        working-directory: studio-desktop
+        run: |
+          npm install
+          npm test
+          npm run ${{ matrix.script }}
+
+      - name: Upload installer artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.artifact }}
+          path: ${{ matrix.paths }}
+
+  publish-release:
+    needs: build-installers
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/desktop-v') || inputs.release_tag != ''
+    permissions:
+      contents: write
+    steps:
+      - name: Download built installers
+        uses: actions/download-artifact@v4
+        with:
+          pattern: book-studio-*
+          path: release-assets
+          merge-multiple: true
+
+      - name: Publish GitHub Release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REF_TYPE: ${{ github.ref_type }}
+          GITHUB_REF_NAME: ${{ github.ref_name }}
+          INPUT_RELEASE_TAG: ${{ inputs.release_tag }}
+        run: |
+          set -euo pipefail
+          if [ "${GITHUB_REF_TYPE}" = "tag" ]; then
+            TAG="${GITHUB_REF_NAME}"
+          else
+            TAG="${INPUT_RELEASE_TAG}"
+          fi
+
+          if ! [[ "${TAG}" =~ ^[A-Za-z0-9._-]+$ ]]; then
+            echo "Invalid release tag: '${TAG}'" >&2
+            exit 1
+          fi
+
+          mapfile -t files < <(find release-assets -type f \( -name '*.AppImage' -o -name '*.deb' -o -name '*.exe' \) | sort)
+          if [ "${#files[@]}" -eq 0 ]; then
+            echo "No installer files found under release-assets/" >&2
+            exit 1
+          fi
+
+          if gh release view "${TAG}" --repo "${GITHUB_REPOSITORY}" >/dev/null 2>&1; then
+            gh release upload "${TAG}" "${files[@]}" --clobber --repo "${GITHUB_REPOSITORY}"
+          else
+            gh release create "${TAG}" "${files[@]}" \
+              --repo "${GITHUB_REPOSITORY}" \
+              --target "${GITHUB_SHA}" \
+              --title "Book Studio Desktop ${TAG}" \
+              --generate-notes
+          fi

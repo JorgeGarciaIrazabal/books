@@ -1,0 +1,31 @@
+appId: com.bookstudio.desktop
+productName: Book Studio
+directories:
+  output: release
+files:
+  - dist/**
+  - dist-electron/**
+  - assets/**
+  - package.json
+linux:
+  icon: assets/icon.png
+  maintainer: Book Studio <book-studio@users.noreply.github.com>
+  target:
+    - AppImage
+    - deb
+  category: Office
+  desktop:
+    Name: Book Studio
+    Comment: Writer-first workspace for books, series, and shared worlds
+    Categories: Office;Utility;
+win:
+  icon: assets/icon.ico
+  target:
+    - nsis
+    - portable
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  shortcutName: Book Studio
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
