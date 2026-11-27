@@ -1,26 +1,6 @@
-# Glasshaven Glossary
+# Glossary
 
-- **Aether** (*EE-ther*): Raw starlight magic used on the Path of Stars. Powerful, mysterious, and hard to steer.
-- **Blight / Thornwork**: The milder dark side of the Path of Roots, when fear or greed twists plants, fog, or animals.
-- **Breath**: The living pulse shared by soil, wind, rain, plants, and creatures in the Path of Roots.
-- **Choosing Bell**: The bright copper-and-silver bell rung at the Mid-Term Crossing when first-years step onto their chosen Path.
-- **Cloud-Owl**: A pale silver owl with mist-soft feathers that delivers letters and senses storms or dark magic.
-- **Emberfox**: A cat-sized cinnamon fox whose bushy tail glows like a warm lantern.
-- **Fog Arch**: The mist-filled stone doorway on Platform Zero leading into Glasshaven.
-- **Glimmer**: Measurable energy stored in spark-cells, springs, and copper coils for the Path of Spark.
-- **Heart-Vault**: An ancient locked chamber far below Lanternhold's Star Spire, sealed by the Threefold Keys.
-- **Hollow Magic**: The dangerous dark side of Pure Magic: ink-black smoke with pale violet edges that eats light, warmth, sound, and memories.
-- **Lanternhold Academy**: The cliffside island school where young students train in Spark, Roots, and Stars.
-- **Mistwall**: The shimmering sea-fog barrier hiding Glasshaven from the ordinary world.
-- **Mossback**: A gentle, dog-sized turtle with tiny glowing ferns sprouting on its shell.
-- **Path of Roots**: The Nature Path (weather, plants, animals, teamwork), led by Master Marissa.
-- **Path of Spark**: The Engineering and Science Path (clockwork, lenses, testing), led by Master Jorge.
-- **Path of Stars**: The Pure Magic Path (raw spells, shields, light, mysteries), led by Master Peter.
-- **Quiet Crown**: An ancient, dangerous Hollow Magic power sealed long ago under Lanternhold.
-- **Rustwork**: The milder dark side of the Path of Spark, using unsafe shortcuts or warmth-stealing machines.
-- **Seed-Stone**: A warm river pebble sung to by Root-walkers to sprout helpful vines or moss cushions.
-- **Shadow-Moth**: A spooky pale-black moth with silver eye-spots that swallows all sound for ten seconds near Hollow Magic.
-- **Spark-Compass**: A brass gadget that measures Glimmer leaks and points toward magical north.
-- **Star-Pin**: A silver pin worn by Star apprentices to steady their Aether spells.
-- **Stone Hound**: A carved guardian statue on the Star Spire that only wakes when dark magic stirs it.
-- **Whispering Bell**: A cracked tower bell above the Star Spire whose silent chime warns Star-students when Hollow Magic is near.
+| Term / ID | Accepted spelling | Meaning / pronunciation | Source / status |
+| --- | --- | --- | --- |
+
+Add entries when needed. Preserve variant in-world names with their speaker/culture.
