@@ -1,4 +1,29 @@
 {
   "schema_version": 1,
-  "issues": []
+  "issues": [
+    {
+      "id": "ISS-0001",
+      "severity": "major",
+      "location": "manuscript/002-the-week-of-three-sparks.md, manuscript/009-the-second-best-celebration.md",
+      "summary": "Close-third POV break around Peter's sand-timer risked hinting prematurely at FACT-0007 / KNO-0002.",
+      "status": "resolved",
+      "resolution": "Anchored both sand-timer beats strictly on Clara's ordinary perception."
+    },
+    {
+      "id": "ISS-0002",
+      "severity": "major",
+      "location": "manuscript/006-the-gray-coat-in-the-mist.md through 008-the-song-of-the-three-bells.md",
+      "summary": "Bell-Tower trapdoor vs. belfry hatch spatial knot and missing Peter/Monica entrance accounting.",
+      "status": "resolved",
+      "resolution": "Aligned courtyard door, vault trapdoor, belfry hatch, and bell-rope geometry; accounted for Peter at the Mistgate outer alarm and Monica's arrival."
+    },
+    {
+      "id": "ISS-0003",
+      "severity": "minor",
+      "location": "manuscript/004, 005, 007, 009",
+      "summary": "Minor continuity/read-aloud details (Pebble color in Ch 7, gloved palm slip, shim metal match, fortnight timeline, action sentence split).",
+      "status": "resolved",
+      "resolution": "Corrected all minor slips and verified zero em/en/double dashes across all 9 chapters."
+    }
+  ]
 }

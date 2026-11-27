@@ -2,17 +2,19 @@
 
 Breakfast bells never rang at all on Monday morning, because half the academy's water pipes groaned dry and cold.
 
-Down in the lower Brass Spire boiler room, steam hissed angrily around a tall brass pressure pump. Jorge stood knee-deep in puddles with his sleeves rolled past his elbows, wrench in one hand and magnifying goggles clamped tight over his eyes. Nora and another Makers student were scrambling to drain burst jars before they cracked.
+Down in the lower Brass Spire boiler room, steam hissed angrily around a tall brass pressure pump. Jorge stood knee-deep in puddles with his sleeves rolled past his elbows, wrench in one hand and magnifying goggles clamped tight over his eyes. Nora and a tall Makers boy named Ben were scrambling to drain burst jars before they cracked.
 
-"I tell you, Monica, somebody wedged a Cold-Iron drain-clamp straight onto the main intake!" Jorge called out as Clara, Maya, and Sam hurried down the iron steps behind the Headmistress. "It is sucking the spark out of every pipe under the courtyard. If I pry it loose blind, the coil blows."
+"I tell you, Monica, somebody wedged a Cold-Iron drain-clamp straight onto the main intake!" Jorge called out as Clara, Maya, and Sam hurried down the iron steps behind the Headmistress. "It is sucking the spark out of every pipe under the courtyard. If I yank it loose without measuring, the whole boiler blows."
 
 Clara looked at the freezing black clamp biting into the copper valve. It hummed with the exact same icy chill as the ring-stamped coin from the Deep Gate. She pulled the coin out of her pocket and held it up, careful not to touch the bare metal. "We found this downstairs last night. A man in a gray coat dropped it."
+
+Monica's eyes sharpened behind her silver spectacles. "Leave that coin with me after breakfast, Clara. I am going to check the upper wards at once," she said, turning briskly back toward the stairs.
 
 Jorge stopped mid-turn and stared at the coin, then up at Clara's smudge-free Pure Magic cloak. "You stayed out of the way and brought real evidence instead of blasting the pipe?"
 
 "I figured blasting brass pipes leaves a mess," Clara said, remembering his words from Tuesday.
 
-A tiny grin tugged at Jorge's bearded cheek. "Fair enough. Want to learn how a real fix works? Hold that lantern two inches left, count the gear teeth with me, and pass the copper shim when I say three."
+A tiny grin tugged at Jorge's bearded cheek. "Fair enough. Want to learn how a real fix works? Hold that lantern two inches left, count the gear teeth with me, and pass the brass shim when I say three."
 
 For twenty steady minutes, Clara did not use a single spark of magic. She held the light completely steady, called out wheel measurements while Sam wrote down numbers, and handed Jorge the exact brass shim while Nora released the side valve. With one crisp snap, the Cold-Iron clamp popped loose into an iron bucket of salt water, and the great brass pump thrummed warmly back to life.
 
@@ -32,7 +34,7 @@ Marissa slid two fingers smoothly under the dark thorn-pin and lifted it clean o
 
 Instantly, green color flowed back up the trunk. Pip swooped down, landed neatly on Clara's knee for one soft blink, and gave a pleased chirrup before hopping back to Marissa.
 
-Marissa brushed muddy hair off her cheek and looked at Clara with real warmth in her dark eyes. "Thank you, Clara. Most Pure Magic students forget how to listen. You heard the tree."
+Marissa brushed a muddy leaf-woven braid off her cheek and looked at Clara with real warmth in her dark eyes. "Thank you, Clara. Most Pure Magic students forget how to listen. You heard the tree."
 
 Sam, crouched beside a mossy bench with his Star-Notebook flat across his knees, suddenly tapped his pencil against the paper. "Wait a second. Look where both traps hit."
 

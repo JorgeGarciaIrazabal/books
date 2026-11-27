@@ -8,7 +8,7 @@ When Nora stepped forward, she gave the Brass Bell one brisk pull. A clean, brig
 
 Maya marched up next in clean boots, pulled the Leaf Bell's woven vine rope, and smiled wide as a warm, deep forest chime rolled overhead like distant thunder. Even Pebble hopped proudly on her shoulder while Marissa fastened a silver leaf pin to Maya's olive vest.
 
-Then Sam tugged the Star Bell's silver cord with both hands, squinting nervously behind his crooked glasses. A high, singing starlight note rippled through the air, lifting his ginger curls straight up for one funny second before settling down.
+Then Sam tugged the Star Bell's silver cord with both hands, squinting nervously behind his crooked glasses. A high, singing starlight note rippled through the air, lifting his ginger curls straight up for one funny second until he patted them flat with a tiny squeak.
 
 Clara stepped forward last. Her hands felt damp against her slate-blue cloak, yet she wrapped her fingers around the silver cord and pulled.
 

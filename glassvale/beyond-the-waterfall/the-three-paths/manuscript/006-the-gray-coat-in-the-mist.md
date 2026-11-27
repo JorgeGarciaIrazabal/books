@@ -6,7 +6,7 @@ Clara woke to a sudden, urgent scratching against her bedside table. Sitting on 
 
 Seconds later, her door eased open. Maya stood in the hallway with muddy boots already laced, holding Sam by his sweater sleeve while Sam clutched his Star-Notebook.
 
-"Marissa went down to secure the conservatory roof, and Jorge is in the Makers cellar," Maya whispered fast. "Every lantern around the Bell-Tower just went dead at once. Look out the arch!"
+"Marissa went down to secure the conservatory roof, Jorge is in the Makers cellar, and Peter rode up to the mountain Mistgate to check the storm-wards," Maya whispered fast. "Every lantern around the Bell-Tower just went dead at once. Look out the arch!"
 
 Clara leaned into the cold corridor window. Across the rain-whipped courtyard, the central Bell-Tower stood pitch black. Pale shapes swirled around its high belfry windows like snow: dozens of Whisper-Moths choking out the storm-lanterns so no warning bell could summon the valley.
 
@@ -14,11 +14,11 @@ Clara leaned into the cold corridor window. Across the rain-whipped courtyard, t
 
 "Go wake Monica," Clara told Sam, pulling her slate-blue cloak tight over her shoulders. "Maya and I will watch the Bell-Tower door so he cannot slip out."
 
-"Wait," Sam said, squaring his shoulders despite his shaking knees. "Two Pure Magic eyes are better than one. I will send a spark-flare toward Monica's tower from the bridge, then come right down with you."
+"Wait," Sam said, squaring his shoulders despite his shaking knees. "Two pairs of Pure Magic eyes are better than one. I will send a spark-flare toward Monica's tower from the bridge, then come right down with you."
 
 Together they dashed across the streaming cobblestones. Sam fired a high bright violet flare up toward Monica's tall window before sprinting after Clara and Maya through the open stone doorway of the Bell-Tower.
 
-The grand hall lay silent and icy cold. Where the three founding bell ropes usually hung straight and dry, dark frost crept up the flagstones toward an open stone trapdoor in the center of the floor.
+The grand ground hall lay silent and icy cold. The three founding bell ropes hung down from the belfry loft beside a wide stone staircase, ending right above an open iron trapdoor in the center of the floor.
 
 Clara raised a cautious orb of violet-gold light and led the way down narrow spiral stairs into the circular Bell-Vault.
 
@@ -46,4 +46,4 @@ Blinding white-gold brilliance exploded across the stone vault like noon sunshin
 
 "Run!" Clara shouted, grabbing Sam's arm while Maya scooped Pebble safely under her vest.
 
-All three kids bolted back up the spiral staircase just as Silas roared in fury and hurled a wave of dark force behind them. Heavy iron trapdoor hinges slammed shut with a boom that shook dust from the roof beams, trapping the trio inside the storm-dark Bell-Tower above as hungry emerald eyes began creeping up through the side vents.
+All three kids bolted back up the spiral staircase into the ground hall just as Silas hurled a blast of frost behind them. Black ice slammed across the outer courtyard door, sealing their escape, while smoky Ink-Hounds surged up out of the vault trapdoor. Driven upward step by step, Clara, Maya, and Sam scrambled into the storm-dark belfry loft overhead and slammed the heavy wooden belfry hatch, only for Silas's frost to freeze the catch shut beneath their boots.

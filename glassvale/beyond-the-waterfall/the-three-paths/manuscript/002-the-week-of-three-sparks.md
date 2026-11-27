@@ -40,7 +40,7 @@ Tall brass constellation rings turned slowly beneath painted stars. At the front
 
 Clara stepped into the star-circle. She pictured a bright lantern and opened her palm.
 
-Violet and gold light poured out far faster than she expected. It swirled up past her elbows like a rising wind, lifting stray pages off Sam's notebook until Sam ducked behind a bookshelf.
+Violet and gold light poured out far faster than she expected. It swirled up past her elbows like a rising wind, lifting stray pages off Sam's notebook until his crooked glasses slid sideways and he ducked behind a bookshelf.
 
 "Whoa, Clara!" Sam yelped, peeking around a stack of charts.
 
@@ -52,7 +52,7 @@ Before the surge could snap, a large, steady hand closed gently around Clara's w
 
 Clara breathed out slowly. The wild storm folded inward until a single bright violet-gold star hovered calm and warm above her palm.
 
-As Peter leaned down beside her, the small antique brass sand-timer clipped to his belt gave one tiny, silent shiver against his robes, as if a gust of wind had brushed only the glass. Neither Clara nor Sam noticed it in the glow.
+As Peter leaned down beside her, Clara noticed the small antique brass sand-timer clipped to his belt give a brief warm glint in the starlight, like an ordinary pocket watch catching a candle flame.
 
 "There she is," Peter said proudly, clapping a gentle hand on her shoulder. "Strong magic takes courage to steer, Clara. You have plenty of both."
 

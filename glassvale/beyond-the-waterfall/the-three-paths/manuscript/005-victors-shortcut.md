@@ -12,7 +12,7 @@ Both stone birds snapped their heads sideways with glowing green eyes, spread he
 
 "Duck!" Peter shouted, sprinting across the tiles as students scattered.
 
-One stone sparrow dived straight for Sam, who tripped backward over his own satchel. Maya grabbed Sam's waistcoat collar and hauled him sideways, while Pebble flashed gold from her vest pocket, yet the second stone bird banked sharply around the fountain right toward Maya's head.
+One stone sparrow dived straight for Sam, who tripped backward over his own satchel. Maya grabbed Sam's waistcoat collar and hauled him sideways while Pebble flashed gold from her vest pocket. Before either of them could stand, the second stone bird banked sharply around the fountain right toward Maya's head.
 
 Victor stood frozen in shock, his smug smile wiped clean off his face as the dark scroll burned to cold gray ash between his gloves.
 
@@ -32,7 +32,7 @@ Victor stared at the ash on his gloves, white-faced and silent, as Monica steppe
 
 "My office, Victor," Monica said in a voice sharper than winter wind. "And Clara, Maya, Sam, come upstairs once you catch your breath."
 
-Ten minutes later, inside Monica's sunny circular office filled with neat bookshelves and her second-most-expensive velvet armchairs, the Headmistress poured four cups of honey-lemon tea and locked the heavy oak door.
+Ten minutes later, inside Monica's sunny circular office filled with neat bookshelves and her second most expensive velvet armchairs, the Headmistress poured four cups of honey-lemon tea and locked the heavy oak door.
 
 "Victor found that cursed scrap tucked inside his satchel this morning," Monica said quietly. "Whisper-Moths carried it in. Shadow Magic tempts proud casters with easy shortcuts, and it nearly cost us dearly today."
 
