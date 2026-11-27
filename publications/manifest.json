@@ -115,6 +115,42 @@
           "role": "pdf"
         }
       ]
+    },
+    {
+      "id": "the-three-paths",
+      "title": "The Three Paths",
+      "summary": "Eleven-year-old Clara steps through a hidden waterfall into Glassvale Academy, where students train across the Path of Makers, the Path of Nature, and the wild Path of Pure Magic. With her friends Maya and Sam, she must earn the trust of skeptical teachers and unite all three Paths to stop a masked intruder hunting a piece of the ancient World-Glass. First book of Beyond the Waterfall; nine illustrated chapters.",
+      "language": "en",
+      "layout": "reflowable",
+      "edition_note": "Illustrated reading edition: 9 chapters, 12 interior illustrations, illustrated cover, 47 blended-text PDF pages; reflowable EPUB 3 with linked contents (text and illustrations only, no audio).",
+      "downloads": {
+        "epub": {
+          "path": "the-three-paths.epub",
+          "bytes": 2493693,
+          "sha256": "440a1a7bf020de23dc07b3b05930bee240f24eda7c13d84ed2c46bc674d55704"
+        },
+        "pdf": {
+          "path": "the-three-paths.pdf",
+          "bytes": 9001418,
+          "sha256": "4f0d6ae7c6048986ac81c395f0286c0474e157c9bc82bf28575786a2d7091a8f"
+        }
+      },
+      "cover": {
+        "path": "covers/the-three-paths.jpg",
+        "bytes": 239527,
+        "sha256": "5e32a9ddd58fb81d597f03e6880a5a43be169ccf861dc009647c4220fbba0df6",
+        "derived_from": "EPUB/images/cover.jpg inside the published EPUB, a 720x1080 illustrated cover composited from assets/illustrations/cover-art.png"
+      },
+      "sources": [
+        {
+          "path": "glassvale/beyond-the-waterfall/the-three-paths/exports/the-three-paths.epub",
+          "role": "epub"
+        },
+        {
+          "path": "glassvale/beyond-the-waterfall/the-three-paths/exports/the-three-paths.pdf",
+          "role": "pdf"
+        }
+      ]
     }
   ]
 }

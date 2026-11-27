@@ -13,5 +13,5 @@
    - Rendered all 47 PDF pages via `pdftoppm` and visually inspected the cover, TOC, openers, and all 12 blended-text illustrated pages; verified EPUB XML and alt text; verified `studio.py check` passes with 0 structural errors.
 
 ## Remaining / Next Concrete Action
-- Share the reading PDF, EPUB, and page previews with the author and Clara for bedtime reading and feedback.
-- Once approved (or after any requested story/art tweaks), optionally prepare read-aloud audio (`tools/drama3.py`) or stage into `publications/` and `site/` for publishing.
+- Publicly released without audio on `origin/main` and GitHub Pages (`publications/the-three-paths.{epub,pdf}`, `publications/covers/the-three-paths.jpg`, and `site/index.html`).
+- Next whenever desired: prepare read-aloud narration (`tools/drama3.py`) or begin Book 2 (*The Sky-Forge of Copper Peaks*).
