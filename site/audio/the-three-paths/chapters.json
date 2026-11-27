@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "book_id": "the-three-paths",
+  "title": "The Three Paths",
+  "credit": "Synthetic narration built with Fish Audio Drama 3 (local audio.cpp Vulkan; synthetic American narrator reference); not a human performance.",
+  "engine": "audio.cpp 04ce54d (vulkan) / Fish Audio Drama 3",
+  "model": "drama-3-backbone-8bit-experts-Q4_K_S.gguf",
+  "voice": "synthetic warm American narrator (Kokoro af_heart reference, Drama 3 rendering)",
+  "review_status": "Coverage, durations, hashes, adaptive join pauses (500 ms sentence / 750 ms paragraph), and 87-segment faster-whisper ASR checked (0 flagged; u43 split-retake and u59 retake at seed 11); human listening review pending.",
+  "asr_flagged_segments": 0,
+  "total_segments": 87,
+  "total_seconds": 2846.464,
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Chapter 1: Behind the Waterfall",
+      "file": "chapter-01.mp3",
+      "seconds": 406.108,
+      "bytes": 4874444,
+      "sha256": "14b32757d2b08787ef5b4cc73c5b2d21352fab0b6ee549946741e70d8dd8f958",
+      "segments": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Chapter 2: The Week of Three Sparks",
+      "file": "chapter-02.mp3",
+      "seconds": 350.946,
+      "bytes": 4212332,
+      "sha256": "6511de30df98d2e01421ce11c4f42e0acf6d91a96a369af0f5419e0eb78d5a63",
+      "segments": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Chapter 3: The Whisper Beneath the Stairs",
+      "file": "chapter-03.mp3",
+      "seconds": 307.175,
+      "bytes": 3687020,
+      "sha256": "9d32211c5ee2841c02c2ec42eff7b3fcf7b3716d124499414be22d680b7884cf",
+      "segments": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Chapter 4: Cold-Iron and Broken Roots",
+      "file": "chapter-04.mp3",
+      "seconds": 326.878,
+      "bytes": 3923468,
+      "sha256": "33cac70472ad979fa71892b50e37ce2e4aa4d3dd1797446a7493622c82577088",
+      "segments": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Chapter 5: Victor's Shortcut",
+      "file": "chapter-05.mp3",
+      "seconds": 322.634,
+      "bytes": 3872780,
+      "sha256": "01c01eb11b5f6b87733886f21cf5a613143a33269e13d45eec9cb2e9ca6ef562",
+      "segments": [
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Chapter 6: The Gray Coat in the Mist",
+      "file": "chapter-06.mp3",
+      "seconds": 310.854,
+      "bytes": 3731372,
+      "sha256": "0050e521a8aabce7c91ea9184997549daf3a24e4aa2fa20d75351a9b98d28c59",
+      "segments": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Chapter 7: Three Locks, Three Paths",
+      "file": "chapter-07.mp3",
+      "seconds": 255.159,
+      "bytes": 3062924,
+      "sha256": "22ce16f1e04705eb906c7148de4c7c9efd606bda5fb2fb0328f4b1a011fcda03",
+      "segments": [
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Chapter 8: The Song of the Three Bells",
+      "file": "chapter-08.mp3",
+      "seconds": 318.1,
+      "bytes": 3818348,
+      "sha256": "3166b88d82ac05de6bac07b3ab14f1e5ecdf26d9206074545589d6c079bb5536",
+      "segments": [
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Chapter 9: The Second-Best Celebration",
+      "file": "chapter-09.mp3",
+      "seconds": 248.61,
+      "bytes": 2984300,
+      "sha256": "561ed1177611f67a72bc5d76d11675dcc310b7af6704043589693cd2b9cfdce0",
+      "segments": [
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87
+      ]
+    }
+  ]
+}

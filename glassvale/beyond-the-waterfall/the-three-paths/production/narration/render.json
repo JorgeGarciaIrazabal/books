@@ -1,0 +1,302 @@
+{
+  "schema_version": 1,
+  "book": "the-three-paths",
+  "generated": "2026-11-27",
+  "status": "Coverage, durations, hashes, adaptive join pauses (500 ms sentence / 750 ms paragraph), and 87-segment faster-whisper ASR checked (0 flagged; u43 split-retake and u59 retake at seed 11); human listening review pending.",
+  "engine": {
+    "name": "audio.cpp",
+    "commit": "04ce54d0d22b29f2982cb6b931331d00c98a1d91",
+    "cli": "/home/jgarcairaza/.local/bin/audiocpp_cli",
+    "backend": "vulkan",
+    "model": "drama-3-backbone-8bit-experts-Q4_K_S.gguf",
+    "model_sha256": "05af716baf78e7c20863b9ccebb3ebdeca9607dd3ea7d0b72c35079e675b212b",
+    "model_license": "Fish Audio Community License v1.0"
+  },
+  "settings": {
+    "seed": 11,
+    "text_chunk_size": 4000,
+    "max_tokens": 1400,
+    "context_length": 4096,
+    "threads": 8,
+    "direction": "[warm, expressive adventure storyteller voice]",
+    "join_padding": {
+      "sentence_gap_ms": 500,
+      "paragraph_gap_ms": 750
+    }
+  },
+  "voice": "synthetic warm American narrator (Kokoro af_heart reference, Drama 3 rendering)",
+  "voice_reference": {
+    "mode": "single_voice",
+    "cast": "/home/jgarcairaza/code/books/glassvale/beyond-the-waterfall/the-three-paths/production/narration/cast.json",
+    "voice": "af_heart",
+    "reference": "/home/jgarcairaza/code/books/glassvale/beyond-the-waterfall/the-three-paths/production/narration/cast/narrator.wav",
+    "reference_sha256": "75e8edd35b2f86d0309b3aa6925699603e1f562f0934194e9a949874688fdec2"
+  },
+  "format": "mono 24000 Hz 96k CBR MP3",
+  "total_segments": 87,
+  "total_seconds": 2846.464,
+  "total_bytes": 34166988,
+  "asr_flagged_segments": 0,
+  "public_page": "audiobook-the-three-paths.html",
+  "audio_dir": "site/audio/the-three-paths",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Chapter 1: Behind the Waterfall",
+      "file": "chapter-01.mp3",
+      "seconds": 406.108,
+      "bytes": 4874444,
+      "sha256": "14b32757d2b08787ef5b4cc73c5b2d21352fab0b6ee549946741e70d8dd8f958",
+      "source": "manuscript/001-behind-the-waterfall.md",
+      "source_sha256": "955809ee16e45c1bcd0e6ac1b765f823cb20ffba5a3d9aa9663d478120e2afe0",
+      "segments": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "join_stats": {
+        "joins": 11,
+        "padded_joins": 11,
+        "min_raw_gap_ms": 30,
+        "min_final_gap_ms": 500,
+        "total_added_ms": 6260
+      }
+    },
+    {
+      "number": 2,
+      "title": "Chapter 2: The Week of Three Sparks",
+      "file": "chapter-02.mp3",
+      "seconds": 350.946,
+      "bytes": 4212332,
+      "sha256": "6511de30df98d2e01421ce11c4f42e0acf6d91a96a369af0f5419e0eb78d5a63",
+      "source": "manuscript/002-the-week-of-three-sparks.md",
+      "source_sha256": "9f36286eacc2976bc7fc48f37d7af8c019fe610216531781204fe5f23096fdb1",
+      "segments": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "join_stats": {
+        "joins": 10,
+        "padded_joins": 10,
+        "min_raw_gap_ms": 80,
+        "min_final_gap_ms": 750,
+        "total_added_ms": 6130
+      }
+    },
+    {
+      "number": 3,
+      "title": "Chapter 3: The Whisper Beneath the Stairs",
+      "file": "chapter-03.mp3",
+      "seconds": 307.175,
+      "bytes": 3687020,
+      "sha256": "9d32211c5ee2841c02c2ec42eff7b3fcf7b3716d124499414be22d680b7884cf",
+      "source": "manuscript/003-the-whisper-beneath-the-stairs.md",
+      "source_sha256": "00024098a8d6f2db75f380133809031d7810534c9e5fc5f980f276782b22116b",
+      "segments": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "join_stats": {
+        "joins": 8,
+        "padded_joins": 8,
+        "min_raw_gap_ms": 140,
+        "min_final_gap_ms": 500,
+        "total_added_ms": 4340
+      }
+    },
+    {
+      "number": 4,
+      "title": "Chapter 4: Cold-Iron and Broken Roots",
+      "file": "chapter-04.mp3",
+      "seconds": 326.878,
+      "bytes": 3923468,
+      "sha256": "33cac70472ad979fa71892b50e37ce2e4aa4d3dd1797446a7493622c82577088",
+      "source": "manuscript/004-cold-iron-and-broken-roots.md",
+      "source_sha256": "37c3f7b3f9360493abc20686b42131c2f72a7f91195161cba8f2e275a1f55953",
+      "segments": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "join_stats": {
+        "joins": 10,
+        "padded_joins": 10,
+        "min_raw_gap_ms": 100,
+        "min_final_gap_ms": 500,
+        "total_added_ms": 5370
+      }
+    },
+    {
+      "number": 5,
+      "title": "Chapter 5: Victor's Shortcut",
+      "file": "chapter-05.mp3",
+      "seconds": 322.634,
+      "bytes": 3872780,
+      "sha256": "01c01eb11b5f6b87733886f21cf5a613143a33269e13d45eec9cb2e9ca6ef562",
+      "source": "manuscript/005-victors-shortcut.md",
+      "source_sha256": "ce57b5a374e85f23f9d0e00c2d38a9b84306b090bfa55540e4cfaab515f66da2",
+      "segments": [
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53
+      ],
+      "join_stats": {
+        "joins": 9,
+        "padded_joins": 9,
+        "min_raw_gap_ms": 70,
+        "min_final_gap_ms": 500,
+        "total_added_ms": 5030
+      }
+    },
+    {
+      "number": 6,
+      "title": "Chapter 6: The Gray Coat in the Mist",
+      "file": "chapter-06.mp3",
+      "seconds": 310.854,
+      "bytes": 3731372,
+      "sha256": "0050e521a8aabce7c91ea9184997549daf3a24e4aa2fa20d75351a9b98d28c59",
+      "source": "manuscript/006-the-gray-coat-in-the-mist.md",
+      "source_sha256": "82b2a4d0e68a5a09a04707986c55d96e79e13f72e4272e70e67288d470aae378",
+      "segments": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62
+      ],
+      "join_stats": {
+        "joins": 8,
+        "padded_joins": 8,
+        "min_raw_gap_ms": 120,
+        "min_final_gap_ms": 500,
+        "total_added_ms": 4490
+      }
+    },
+    {
+      "number": 7,
+      "title": "Chapter 7: Three Locks, Three Paths",
+      "file": "chapter-07.mp3",
+      "seconds": 255.159,
+      "bytes": 3062924,
+      "sha256": "22ce16f1e04705eb906c7148de4c7c9efd606bda5fb2fb0328f4b1a011fcda03",
+      "source": "manuscript/007-three-locks-three-paths.md",
+      "source_sha256": "535c67435740dc23af2f9471cac07d47445c666b91e707c65ac79df962d45da2",
+      "segments": [
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70
+      ],
+      "join_stats": {
+        "joins": 7,
+        "padded_joins": 7,
+        "min_raw_gap_ms": 100,
+        "min_final_gap_ms": 500,
+        "total_added_ms": 3640
+      }
+    },
+    {
+      "number": 8,
+      "title": "Chapter 8: The Song of the Three Bells",
+      "file": "chapter-08.mp3",
+      "seconds": 318.1,
+      "bytes": 3818348,
+      "sha256": "3166b88d82ac05de6bac07b3ab14f1e5ecdf26d9206074545589d6c079bb5536",
+      "source": "manuscript/008-the-song-of-the-three-bells.md",
+      "source_sha256": "8d1c023fb5e899d855901c67e65d2beb9ddae4b244ddc5fa465a219063d818ec",
+      "segments": [
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79
+      ],
+      "join_stats": {
+        "joins": 8,
+        "padded_joins": 8,
+        "min_raw_gap_ms": 130,
+        "min_final_gap_ms": 500,
+        "total_added_ms": 4120
+      }
+    },
+    {
+      "number": 9,
+      "title": "Chapter 9: The Second-Best Celebration",
+      "file": "chapter-09.mp3",
+      "seconds": 248.61,
+      "bytes": 2984300,
+      "sha256": "561ed1177611f67a72bc5d76d11675dcc310b7af6704043589693cd2b9cfdce0",
+      "source": "manuscript/009-the-second-best-celebration.md",
+      "source_sha256": "866bcfef16277546f224b1faafed824f422866584fbc0c8a51c1527363dc8b0f",
+      "segments": [
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87
+      ],
+      "join_stats": {
+        "joins": 7,
+        "padded_joins": 7,
+        "min_raw_gap_ms": 120,
+        "min_final_gap_ms": 500,
+        "total_added_ms": 3500
+      }
+    }
+  ]
+}
