@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "facts": [
+    {
+      "id": "FACT-0001",
+      "status": "accepted",
+      "scope": "glasshaven",
+      "story_time": "founding through present",
+      "provenance": "DEC-GH-0001",
+      "text": "Glasshaven is a hidden coastal realm concealed behind the shimmering Mistwall; invited eleven-year-olds enter through the Fog Arch on Platform Zero or hidden coastal brass-hinged doors."
+    },
+    {
+      "id": "FACT-0002",
+      "status": "accepted",
+      "scope": "glasshaven",
+      "story_time": "founding through present",
+      "provenance": "DEC-GH-0001",
+      "text": "Lanternhold Academy sits on a sea-cliff island divided into four connected zones: The Brass Terraces (Path of Spark), The Living Cloister (Path of Roots), The Star Spire (Path of Stars), and The Crossroads Court around the Threefold Lantern."
+    },
+    {
+      "id": "FACT-0003",
+      "status": "accepted",
+      "scope": "glasshaven",
+      "story_time": "school year opening",
+      "provenance": "DEC-GH-0001",
+      "text": "All eleven-year-old first-years begin in First-Term Foundations studying all three disciplines before specializing by ringing the Choosing Bell at the Mid-Term Crossing."
+    },
+    {
+      "id": "FACT-0004",
+      "status": "accepted",
+      "scope": "glasshaven",
+      "story_time": "founding through present",
+      "provenance": "DEC-GH-0001",
+      "text": "The Path of Spark (Engineering and Science, led by Master Jorge) channels Glimmer through gears, lenses, springs, and blueprints; it is the most reliable Path through trial and error, and its milder dark side is Rustwork."
+    },
+    {
+      "id": "FACT-0005",
+      "status": "accepted",
+      "scope": "glasshaven",
+      "story_time": "founding through present",
+      "provenance": "DEC-GH-0001",
+      "text": "The Path of Roots (Nature, led by Master Marissa) partners with Breath across weather, plants, and animals through balance and teamwork; it refuses domination, and its milder dark side is Thornwork or Blight."
+    },
+    {
+      "id": "FACT-0006",
+      "status": "accepted",
+      "scope": "glasshaven",
+      "story_time": "founding through present",
+      "provenance": "DEC-GH-0001",
+      "text": "The Path of Stars (Pure Magic, led by Master Peter) channels raw Aether via willpower and a focus such as a Star-Pin; it is the strongest yet hardest-to-control Path, and its dangerous dark side is Hollow Magic (ink-black smoke with pale violet edges that eats warmth, sound, light, and memory)."
+    },
+    {
+      "id": "FACT-0007",
+      "status": "accepted",
+      "scope": "glasshaven",
+      "story_time": "book 1 onward",
+      "provenance": "DEC-GH-0001",
+      "text": "Clara (eleven at arrival) joins the Path of Stars, begins Book 1 with no personal relationship with Master Jorge or Master Marissa, and builds deep trust with both across Book 1 while keeping friendships across all three Paths."
+    },
+    {
+      "id": "FACT-0008",
+      "status": "accepted",
+      "scope": "glasshaven",
+      "story_time": "founding through present",
+      "provenance": "DEC-GH-0001",
+      "text": "Master Jorge leads the Path of Spark (copper goggles, rolled sleeves, leather tool apron); Master Marissa leads the Path of Roots (braided chestnut hair with green cord, moss-green cloak, silver Cloud-Owl companion)."
+    },
+    {
+      "id": "FACT-0009",
+      "status": "accepted",
+      "scope": "glasshaven",
+      "story_time": "book 1 through book 5",
+      "provenance": "DEC-GH-0001",
+      "text": "Master Peter, Leader Teacher of the Path of Stars, is a big, Black, strong, broad-shouldered man in his early forties with close-cropped hair, silver at the temples, kind crinkled eyes, a warm booming laugh, a midnight-indigo coat with silver clasps, and a carved wooden lantern-staff. He looks genuinely trustworthy."
+    },
+    {
+      "id": "FACT-0010",
+      "status": "accepted",
+      "scope": "author-secret-series-finale",
+      "public_to_reader_book_1": false,
+      "story_time": "series arc Books 1 through 5",
+      "provenance": "DEC-GH-0001",
+      "text": "AUTHOR SECRET (DO NOT REVEAL BEFORE BOOK 5): Master Peter secretly serves the Quiet Crown faction and uses his warm, trustworthy position as Head of the Path of Stars to gather the Threefold Keys and unseal the Heart-Vault across Books 1 to 5."
+    },
+    {
+      "id": "FACT-0011",
+      "status": "accepted",
+      "scope": "glasshaven",
+      "story_time": "founding through present",
+      "provenance": "DEC-GH-0001",
+      "text": "Magical creatures of Glasshaven include Emberfoxes (lantern-tailed cinnamon foxes), Cloud-Owls (storm-sensing mist owls), Mossbacks (fern-shelled dog-sized turtles), Shadow-Moths (sound-stealing dark moths), and Stone Hounds (carved spire guardians woken by dark magic)."
+    },
+    {
+      "id": "FACT-0012",
+      "status": "accepted",
+      "scope": "glasshaven",
+      "story_time": "founding through present",
+      "provenance": "DEC-GH-0001",
+      "text": "The Whispering Bell above the Star Spire rings silently inside Star-students' minds whenever Hollow Magic touches the island."
+    },
+    {
+      "id": "FACT-0013",
+      "status": "accepted",
+      "scope": "glasshaven",
+      "story_time": "founding through present",
+      "provenance": "DEC-GH-0001",
+      "text": "The Heart-Vault beneath Lanternhold seals away the ancient Quiet Crown behind three locks: the Brass Key, the Living Wood Key, and the Star-Glass Key."
+    },
+    {
+      "id": "FACT-0014",
+      "status": "accepted",
+      "scope": "glasshaven",
+      "story_time": "book 1 onward",
+      "provenance": "DEC-GH-0001",
+      "text": "Glasshaven cast names are grounded and kid-friendly (Clara, Jorge, Marissa, Peter, Leo, Maya, Sam, Nora, Owen) and this universe is completely original with zero continuity ties to other studio universes."
+    }
+  ]
+}

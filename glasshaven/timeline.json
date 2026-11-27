@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "events": [
+    {
+      "id": "EVT-0001",
+      "date": "Centuries before Book 1",
+      "title": "Founding of Lanternhold and Sealing of the Quiet Crown",
+      "summary": "Three founders from Spark, Roots, and Stars seal the Quiet Crown inside the Heart-Vault behind the Threefold Keys and build Lanternhold Academy above the cliffs.",
+      "visibility": "public-legend"
+    },
+    {
+      "id": "EVT-0002",
+      "date": "20 years before Book 1",
+      "title": "The Whispering Bell Cracks",
+      "summary": "During a fierce winter gale near the Sunken Bells, the tower bell cracks and begins chiming silently in Star-casters' minds whenever Hollow Magic stirs.",
+      "visibility": "public-history"
+    },
+    {
+      "id": "EVT-0003",
+      "date": "Year 1, Autumn (Book 1 Start)",
+      "title": "Clara Crosses the Fog Arch",
+      "summary": "Eleven-year-old Clara enters Glasshaven for First-Term Foundations alongside Leo, Maya, and Sam, with no prior bond to Master Jorge or Master Marissa.",
+      "visibility": "book-1-opening"
+    }
+  ]
+}
