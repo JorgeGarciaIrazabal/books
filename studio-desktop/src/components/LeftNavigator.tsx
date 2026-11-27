@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import type { BookDetail, BookSummary } from "../../shared/types";
+import type { AppUpdateStatus, BookDetail, BookSummary } from "../../shared/types";
 
 export type AppView =
   | "chapter"
@@ -18,9 +18,12 @@ interface LeftNavigatorProps {
   book: BookDetail;
   activeView: AppView;
   activeChapterRel: string;
+  appUpdateStatus: AppUpdateStatus;
   onSelectBook: (bookRelPath: string) => void;
   onChooseLibraryFolder: () => void;
   onSelectView: (view: AppView, chapterRel?: string) => void;
+  onOpenExternalUrl: (url: string) => void;
+  onOpenUpdatePanel: () => void;
   onCreateChapter: () => void;
   onMoveChapter: (index: number, dir: -1 | 1) => void;
 }
@@ -30,9 +33,12 @@ export const LeftNavigator: React.FC<LeftNavigatorProps> = ({
   book,
   activeView,
   activeChapterRel,
+  appUpdateStatus,
   onSelectBook,
   onChooseLibraryFolder,
   onSelectView,
+  onOpenExternalUrl,
+  onOpenUpdatePanel,
   onCreateChapter,
   onMoveChapter
 }) => {
@@ -252,12 +258,49 @@ export const LeftNavigator: React.FC<LeftNavigatorProps> = ({
             <span className="nav-item-label">Publish &amp; Audio</span>
             {book.hasNarrationConfig && <span className="nav-item-meta">audio</span>}
           </button>
+          {book.isPublicEdition && book.publishedReaderUrl && (
+            <button
+              type="button"
+              className="nav-item"
+              onClick={() => onOpenExternalUrl(book.publishedReaderUrl!)}
+              title={book.publishedReaderUrl}
+            >
+              <span className="nav-item-label">Open Published Book ↗</span>
+              <span className="nav-item-meta">web</span>
+            </button>
+          )}
+          {book.publishedLibraryUrl && (
+            <button
+              type="button"
+              className="nav-item"
+              onClick={() => onOpenExternalUrl(book.publishedLibraryUrl!)}
+              title={book.publishedLibraryUrl}
+            >
+              <span className="nav-item-label">Open Public Library ↗</span>
+              <span className="nav-item-meta">site</span>
+            </button>
+          )}
         </div>
       </nav>
 
       <div className="sidebar-footer">
-        <span>Draft history active</span>
-        <span style={{ color: "var(--sage)", fontWeight: 600 }}>Ready</span>
+        <span>
+          {appUpdateStatus.currentVersion
+            ? `Book Studio v${appUpdateStatus.currentVersion}`
+            : "Draft history active"}
+        </span>
+        {appUpdateStatus.state === "downloaded" || appUpdateStatus.state === "available" ? (
+          <button
+            type="button"
+            className="pill pill-gold"
+            style={{ border: "none", cursor: "pointer" }}
+            onClick={onOpenUpdatePanel}
+          >
+            Update ready
+          </button>
+        ) : (
+          <span style={{ color: "var(--sage)", fontWeight: 600 }}>Ready</span>
+        )}
       </div>
     </aside>
   );

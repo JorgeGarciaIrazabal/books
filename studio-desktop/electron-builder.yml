@@ -7,9 +7,15 @@ files:
   - dist-electron/**
   - assets/**
   - package.json
+publish:
+  - provider: github
+    owner: JorgeGarciaIrazabal
+    repo: books
+    releaseType: release
 linux:
   icon: assets/icon.png
   maintainer: Book Studio <book-studio@users.noreply.github.com>
+  artifactName: "Book-Studio-${version}.${ext}"
   target:
     - AppImage
     - deb
@@ -18,14 +24,21 @@ linux:
     Name: Book Studio
     Comment: Writer-first workspace for books, series, and shared worlds
     Categories: Office;Utility;
+deb:
+  artifactName: "book-studio-desktop_${version}_${arch}.${ext}"
+  afterInstall: scripts/linux-after-install.sh
+  afterRemove: scripts/linux-after-remove.sh
 win:
   icon: assets/icon.ico
   target:
     - nsis
     - portable
 nsis:
+  artifactName: "Book-Studio-Setup-${version}.${ext}"
   oneClick: false
   allowToChangeInstallationDirectory: true
   shortcutName: Book Studio
   createDesktopShortcut: true
   createStartMenuShortcut: true
+portable:
+  artifactName: "Book-Studio-Portable-${version}.${ext}"

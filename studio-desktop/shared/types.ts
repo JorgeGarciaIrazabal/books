@@ -186,6 +186,28 @@ export interface BookDetail {
   glossaryMarkdown: string;
   isPublicEdition: boolean;
   hasNarrationConfig: boolean;
+  publishedLibraryUrl: string | null;
+  publishedReaderUrl: string | null;
+  publishedAudiobookUrl: string | null;
+}
+
+export interface AppUpdateStatus {
+  state:
+    | "idle"
+    | "checking"
+    | "up-to-date"
+    | "available"
+    | "downloading"
+    | "downloaded"
+    | "error";
+  currentVersion: string;
+  latestVersion?: string;
+  releaseUrl?: string;
+  downloadPercent?: number;
+  canAutoInstall: boolean;
+  installKind: "native" | "deb" | "manual";
+  message: string;
+  checkedAt?: string;
 }
 
 export interface BackupStatus {
@@ -270,6 +292,11 @@ export interface StudioApi {
     step: "prepare" | "pilot" | "render" | "verify"
   ) => Promise<CommandResult>;
   copyToClipboard: (text: string) => Promise<void>;
+  openExternalUrl: (url: string) => Promise<void>;
+  getAppUpdateStatus: () => Promise<AppUpdateStatus>;
+  checkForAppUpdates: () => Promise<AppUpdateStatus>;
+  installAppUpdate: () => Promise<CommandResult>;
   onExternalChange: (cb: (event: ExternalChangeEvent) => void) => () => void;
   onBackupStatus: (cb: (status: BackupStatus) => void) => () => void;
+  onAppUpdateStatus: (cb: (status: AppUpdateStatus) => void) => () => void;
 }

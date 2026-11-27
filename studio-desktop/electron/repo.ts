@@ -17,6 +17,11 @@ import type {
 import { countWords, splitChapterMarkdown } from "../shared/markdown";
 import { reanchorMarkdownComment } from "../shared/anchors";
 import {
+  extractBaseUrlFromText,
+  githubPagesUrlFromRemote,
+  resolvePublishedBookUrls
+} from "../shared/version";
+import {
   ensureInitialSnapshot,
   listVersions,
   readVersionBlob,
@@ -363,10 +368,11 @@ export function loadBook(repoRoot: string, bookRelPath: string): BookDetail {
     suggestion: String(i.suggestion ?? "")
   }));
 
-  const pubManifest = safeReadJson<{ books?: Array<{ id?: string }> }>(
-    path.join(repoRoot, "publications", "manifest.json"),
-    { books: [] }
-  );
+  const pubManifest = safeReadJson<{
+    site_url?: string;
+    description?: string;
+    books?: Array<{ id?: string }>;
+  }>(path.join(repoRoot, "publications", "manifest.json"), { books: [] });
   const isPublicEdition = Boolean(
     (pubManifest.books ?? []).some((item) => item.id === summary.id) ||
       fs.existsSync(path.join(repoRoot, "publications", `${summary.id}.epub`))
@@ -376,6 +382,34 @@ export function loadBook(repoRoot: string, bookRelPath: string): BookDetail {
     Boolean(bookJson.narration) ||
     fs.existsSync(path.join(bookDir, "production", "narration", "script.md")) ||
     fs.existsSync(path.join(repoRoot, "site", "audio", summary.id));
+
+  let baseUrl: string | null =
+    (pubManifest.site_url ? extractBaseUrlFromText(pubManifest.site_url) : null) ??
+    (pubManifest.description ? extractBaseUrlFromText(pubManifest.description) : null);
+  if (!baseUrl) {
+    const gitConfigText = safeReadText(path.join(repoRoot, ".git", "config"));
+    const originMatch = gitConfigText.match(/\[remote\s+"origin"\][^[]*?\burl\s*=\s*([^\r\n]+)/i);
+    if (originMatch?.[1]) {
+      baseUrl = githubPagesUrlFromRemote(originMatch[1].trim());
+    }
+  }
+
+  let audiobookHref: string | null = null;
+  if (fs.existsSync(path.join(repoRoot, "site", `audiobook-${summary.id}.html`))) {
+    audiobookHref = `audiobook-${summary.id}.html`;
+  } else if (
+    fs.existsSync(path.join(repoRoot, "site", "audio", summary.id)) &&
+    fs.existsSync(path.join(repoRoot, "site", "audiobook.html"))
+  ) {
+    audiobookHref = `audiobook.html?book=${encodeURIComponent(summary.id)}`;
+  }
+
+  const publishedUrls = resolvePublishedBookUrls(
+    baseUrl,
+    summary.id,
+    isPublicEdition,
+    audiobookHref
+  );
 
   return {
     summary,
@@ -393,7 +427,10 @@ export function loadBook(repoRoot: string, bookRelPath: string): BookDetail {
     bibleMarkdown: safeReadText(path.join(universeDir, "bible.md")),
     glossaryMarkdown: safeReadText(path.join(universeDir, "glossary.md")),
     isPublicEdition,
-    hasNarrationConfig
+    hasNarrationConfig,
+    publishedLibraryUrl: publishedUrls.libraryUrl,
+    publishedReaderUrl: publishedUrls.readerUrl,
+    publishedAudiobookUrl: publishedUrls.audiobookUrl
   };
 }
 

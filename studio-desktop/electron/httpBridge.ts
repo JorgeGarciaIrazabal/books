@@ -3,7 +3,14 @@ import http from "node:http";
 import os from "node:os";
 import path from "node:path";
 import chokidar, { type FSWatcher } from "chokidar";
-import type { BackupStatus, CommentRecord, ExternalChangeEvent } from "../shared/types";
+import type {
+  AppUpdateStatus,
+  BackupStatus,
+  CommandResult,
+  CommentRecord,
+  ExternalChangeEvent
+} from "../shared/types";
+import { formatReleaseVersion, isNewerVersion } from "../shared/version";
 import { readVersionText, recordSnapshot } from "./history";
 import {
   acceptCanonProposal,
@@ -56,10 +63,26 @@ function resolveInitialRoot(): string {
 
 const port = Number(readArg("--port") ?? 4173);
 const distDir = path.resolve(__dirname, "..", "..", "dist");
+const pkgPath = path.resolve(__dirname, "..", "..", "package.json");
+let appVersion = "0.1.1";
+try {
+  const pkg = JSON.parse(fs.readFileSync(pkgPath, "utf-8")) as { version?: string };
+  if (pkg.version) appVersion = pkg.version;
+} catch {
+  // ignore
+}
+
 let repoRoot = resolveInitialRoot();
 let autoIntervalMinutes = 2;
 let privacyMode: "private-auto" | "public-pull-only" = "private-auto";
 let lastClipboardText = "";
+let appUpdateStatus: AppUpdateStatus = {
+  state: "idle",
+  currentVersion: appVersion,
+  canAutoInstall: false,
+  installKind: "manual",
+  message: `Book Studio v${appVersion}`
+};
 
 const recentEvents: BackupStatus["recentEvents"] = [
   {
@@ -262,6 +285,87 @@ async function handleApi(method: string, args: unknown[]): Promise<unknown> {
     case "copyToClipboard":
       lastClipboardText = String(args[0]);
       return lastClipboardText;
+    case "openExternalUrl": {
+      const parsed = new URL(String(args[0] ?? ""));
+      if (parsed.protocol !== "https:" && parsed.protocol !== "http:") {
+        throw new Error("Only web links can be opened externally.");
+      }
+      return parsed.toString();
+    }
+    case "getAppUpdateStatus":
+      return appUpdateStatus;
+    case "checkForAppUpdates": {
+      appUpdateStatus = {
+        ...appUpdateStatus,
+        state: "checking",
+        message: "Checking for app updates…"
+      };
+      broadcastSse("app-update-status", appUpdateStatus);
+      try {
+        const res = await fetch(
+          "https://api.github.com/repos/JorgeGarciaIrazabal/books/releases/latest",
+          {
+            headers: {
+              "User-Agent": `Book-Studio-Desktop/${appVersion}`,
+              Accept: "application/vnd.github+json"
+            }
+          }
+        );
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const release = (await res.json()) as { tag_name?: string; html_url?: string };
+        const latestVersion = formatReleaseVersion(release.tag_name ?? "");
+        const releaseUrl =
+          release.html_url || "https://github.com/JorgeGarciaIrazabal/books/releases";
+        const checkedAt = new Date().toLocaleTimeString([], {
+          hour: "2-digit",
+          minute: "2-digit"
+        });
+        if (latestVersion && isNewerVersion(latestVersion, appVersion)) {
+          appUpdateStatus = {
+            state: "available",
+            currentVersion: appVersion,
+            latestVersion,
+            releaseUrl,
+            canAutoInstall: false,
+            installKind: "manual",
+            checkedAt,
+            message: `Book Studio v${latestVersion} is available`
+          };
+        } else {
+          appUpdateStatus = {
+            state: "up-to-date",
+            currentVersion: appVersion,
+            latestVersion: latestVersion || appVersion,
+            releaseUrl,
+            canAutoInstall: false,
+            installKind: "manual",
+            checkedAt,
+            message: `You're up to date (v${appVersion})`
+          };
+        }
+      } catch (err) {
+        appUpdateStatus = {
+          ...appUpdateStatus,
+          state: "error",
+          message:
+            err instanceof Error
+              ? `Update check paused: ${err.message}`
+              : "Could not check for updates."
+        };
+      }
+      broadcastSse("app-update-status", appUpdateStatus);
+      return appUpdateStatus;
+    }
+    case "installAppUpdate": {
+      const res: CommandResult = {
+        ok: true,
+        summary: "Opened the Book Studio downloads page in your browser.",
+        details:
+          appUpdateStatus.releaseUrl ||
+          "https://github.com/JorgeGarciaIrazabal/books/releases"
+      };
+      return res;
+    }
     default:
       throw new Error(`Unknown API method: ${method}`);
   }

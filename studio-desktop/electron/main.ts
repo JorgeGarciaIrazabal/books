@@ -6,6 +6,14 @@ import chokidar, { type FSWatcher } from "chokidar";
 import type { BackupStatus, CommentRecord, ExternalChangeEvent } from "../shared/types";
 import { readVersionText, recordSnapshot } from "./history";
 import {
+  checkForAppUpdates,
+  getAppUpdateStatus,
+  initAppUpdater,
+  installAppUpdate,
+  openSafeExternalUrl,
+  stopAppUpdater
+} from "./updater";
+import {
   acceptCanonProposal,
   atomicWriteFile,
   confinedPath,
@@ -260,6 +268,9 @@ app.whenReady().then(() => {
 
   startWatcher();
   resetBackupTimer();
+  initAppUpdater((nextStatus) => {
+    mainWindow?.webContents.send("studio:app-update-status", nextStatus);
+  });
 
   ipcMain.handle("studio:getRepoRoot", () => repoRoot);
   ipcMain.handle("studio:chooseRepoFolder", async () => {
@@ -384,6 +395,10 @@ app.whenReady().then(() => {
   ipcMain.handle("studio:copyToClipboard", (_, text: string) => {
     clipboard.writeText(text);
   });
+  ipcMain.handle("studio:openExternalUrl", (_, url: string) => openSafeExternalUrl(url));
+  ipcMain.handle("studio:getAppUpdateStatus", () => getAppUpdateStatus());
+  ipcMain.handle("studio:checkForAppUpdates", () => checkForAppUpdates());
+  ipcMain.handle("studio:installAppUpdate", () => installAppUpdate());
 
   createWindow();
 
@@ -395,5 +410,6 @@ app.whenReady().then(() => {
 app.on("window-all-closed", () => {
   if (watcher) void watcher.close();
   if (backupTimer) clearInterval(backupTimer);
+  stopAppUpdater();
   if (process.platform !== "darwin") app.quit();
 });

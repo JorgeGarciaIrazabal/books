@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from "react";
 import type {
+  AppUpdateStatus,
   BackupStatus,
   BookDetail,
   ChapterContent,
@@ -35,6 +36,7 @@ interface RightCompanionProps {
   baselineVersionId: string;
   pendingTarget: PendingNoteTarget | null;
   backupStatus: BackupStatus;
+  appUpdateStatus: AppUpdateStatus;
   onChangeTab: (tab: RailTab) => void;
   onAddComment: (cmt: CommentRecord) => void;
   onResolveComment: (cmtId: string) => void;
@@ -49,6 +51,9 @@ interface RightCompanionProps {
   }) => void;
   onBackupNow: (mode: "refresh" | "save-and-share") => void;
   onCopyForAssistant: () => void;
+  onCheckAppUpdates: () => void;
+  onInstallAppUpdate: () => void;
+  onOpenExternalUrl: (url: string) => void;
 }
 
 const ROLE_LABELS: Record<string, string> = {
@@ -67,6 +72,7 @@ export const RightCompanion: React.FC<RightCompanionProps> = ({
   baselineVersionId,
   pendingTarget,
   backupStatus,
+  appUpdateStatus,
   onChangeTab,
   onAddComment,
   onResolveComment,
@@ -77,7 +83,10 @@ export const RightCompanion: React.FC<RightCompanionProps> = ({
   onPinSplitRef,
   onChangeBackupSettings,
   onBackupNow,
-  onCopyForAssistant
+  onCopyForAssistant,
+  onCheckAppUpdates,
+  onInstallAppUpdate,
+  onOpenExternalUrl
 }) => {
   const [scope, setScope] = useState<"all" | "page">("all");
   const [filter, setFilter] = useState<"all" | "open" | "needs-review" | "resolved">("all");
@@ -504,6 +513,56 @@ export const RightCompanion: React.FC<RightCompanionProps> = ({
                 >
                   Check for Updates
                 </button>
+              </div>
+            </div>
+
+            <div className="card" style={{ background: "var(--panel-alt)" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "6px" }}>
+                <strong style={{ fontSize: "12.5px" }}>App Updates</strong>
+                <span className="pill">
+                  {appUpdateStatus.currentVersion ? `v${appUpdateStatus.currentVersion}` : "Desktop"}
+                </span>
+              </div>
+              <div style={{ fontSize: "12px", color: "var(--ink-soft)", marginBottom: "6px", lineHeight: 1.45 }}>
+                {appUpdateStatus.message}
+              </div>
+              {appUpdateStatus.state === "downloading" && typeof appUpdateStatus.downloadPercent === "number" && (
+                <div className="update-progress" style={{ marginBottom: "8px" }}>
+                  <div className="update-progress-bar" style={{ width: `${appUpdateStatus.downloadPercent}%` }} />
+                </div>
+              )}
+              {appUpdateStatus.checkedAt && (
+                <div style={{ fontSize: "11px", color: "var(--muted)", marginBottom: "8px" }}>
+                  Last checked: <strong>{appUpdateStatus.checkedAt}</strong>
+                </div>
+              )}
+              <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
+                <button
+                  type="button"
+                  className="btn btn-sm"
+                  disabled={appUpdateStatus.state === "checking" || appUpdateStatus.state === "downloading"}
+                  onClick={onCheckAppUpdates}
+                >
+                  {appUpdateStatus.state === "checking" ? "Checking…" : "Check for App Updates"}
+                </button>
+                {appUpdateStatus.canAutoInstall && appUpdateStatus.state === "downloaded" ? (
+                  <button
+                    type="button"
+                    className="btn btn-sm btn-primary"
+                    onClick={onInstallAppUpdate}
+                  >
+                    Restart &amp; Update
+                  </button>
+                ) : (appUpdateStatus.state === "available" || appUpdateStatus.releaseUrl) &&
+                  appUpdateStatus.releaseUrl ? (
+                  <button
+                    type="button"
+                    className="btn btn-sm btn-primary"
+                    onClick={() => onOpenExternalUrl(appUpdateStatus.releaseUrl!)}
+                  >
+                    Open Downloads Page ↗
+                  </button>
+                ) : null}
               </div>
             </div>
 

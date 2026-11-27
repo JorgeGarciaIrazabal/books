@@ -23,6 +23,8 @@ interface SemanticViewsProps {
   onOpenPublishModal: () => void;
   onRunAudioDoctor: () => Promise<CommandResult>;
   onRunAudioStep: (step: "prepare" | "pilot" | "render" | "verify") => Promise<CommandResult>;
+  onOpenExternalUrl: (url: string) => void;
+  onCopyText: (text: string, notice: string) => void;
 }
 
 export const SemanticViews: React.FC<SemanticViewsProps> = ({
@@ -41,7 +43,9 @@ export const SemanticViews: React.FC<SemanticViewsProps> = ({
   onRunCatalogValidate,
   onOpenPublishModal,
   onRunAudioDoctor,
-  onRunAudioStep
+  onRunAudioStep,
+  onOpenExternalUrl,
+  onCopyText
 }) => {
   const [audioEnabled, setAudioEnabled] = useState(book.hasNarrationConfig);
   const [statusLog, setStatusLog] = useState<CommandResult | null>(null);
@@ -429,7 +433,7 @@ export const SemanticViews: React.FC<SemanticViewsProps> = ({
                 </div>
               </div>
             </div>
-            <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", marginBottom: statusLog ? "10px" : 0 }}>
+            <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", marginBottom: statusLog || book.publishedLibraryUrl ? "10px" : 0 }}>
               <button type="button" className="btn btn-sm" disabled={busy} onClick={() => runAction(onRunStudioCheck, setStatusLog)}>
                 Check Book Readiness
               </button>
@@ -443,6 +447,53 @@ export const SemanticViews: React.FC<SemanticViewsProps> = ({
                 Publish to Readers…
               </button>
             </div>
+            {(book.isPublicEdition || book.publishedLibraryUrl) && (
+              <div className="published-link-bar" style={{ marginBottom: statusLog ? "10px" : 0 }}>
+                {book.isPublicEdition && book.publishedReaderUrl && (
+                  <div style={{ fontSize: "12px", color: "var(--ink-soft)", wordBreak: "break-all" }}>
+                    <strong>Published reader page:</strong> {book.publishedReaderUrl}
+                  </div>
+                )}
+                <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
+                  {book.isPublicEdition && book.publishedReaderUrl && (
+                    <>
+                      <button
+                        type="button"
+                        className="btn btn-sm btn-sage"
+                        onClick={() => onOpenExternalUrl(book.publishedReaderUrl!)}
+                      >
+                        Open Published Book ↗
+                      </button>
+                      <button
+                        type="button"
+                        className="btn btn-sm"
+                        onClick={() => onCopyText(book.publishedReaderUrl!, "Copied published reader link")}
+                      >
+                        Copy Reader Link
+                      </button>
+                    </>
+                  )}
+                  {book.isPublicEdition && book.publishedAudiobookUrl && (
+                    <button
+                      type="button"
+                      className="btn btn-sm"
+                      onClick={() => onOpenExternalUrl(book.publishedAudiobookUrl!)}
+                    >
+                      Open Audiobook Page ↗
+                    </button>
+                  )}
+                  {book.publishedLibraryUrl && (
+                    <button
+                      type="button"
+                      className="btn btn-sm"
+                      onClick={() => onOpenExternalUrl(book.publishedLibraryUrl!)}
+                    >
+                      Open Public Library ↗
+                    </button>
+                  )}
+                </div>
+              </div>
+            )}
             {statusLog && (
               <div className="editable-box" style={{ fontSize: "12px" }}>
                 <strong style={{ color: statusLog.ok ? "var(--sage)" : "var(--rose)" }}>{statusLog.summary}</strong>

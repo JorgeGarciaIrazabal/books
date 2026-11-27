@@ -1,5 +1,5 @@
 import { contextBridge, ipcRenderer } from "electron";
-import type { BackupStatus, ExternalChangeEvent, StudioApi } from "../shared/types";
+import type { AppUpdateStatus, BackupStatus, ExternalChangeEvent, StudioApi } from "../shared/types";
 
 const api: StudioApi = {
   getRepoRoot: () => ipcRenderer.invoke("studio:getRepoRoot"),
@@ -46,6 +46,10 @@ const api: StudioApi = {
   runAudioStep: (bookRelPath, step) =>
     ipcRenderer.invoke("studio:runAudioStep", bookRelPath, step),
   copyToClipboard: (text) => ipcRenderer.invoke("studio:copyToClipboard", text),
+  openExternalUrl: (url) => ipcRenderer.invoke("studio:openExternalUrl", url),
+  getAppUpdateStatus: () => ipcRenderer.invoke("studio:getAppUpdateStatus"),
+  checkForAppUpdates: () => ipcRenderer.invoke("studio:checkForAppUpdates"),
+  installAppUpdate: () => ipcRenderer.invoke("studio:installAppUpdate"),
   onExternalChange: (cb) => {
     const listener = (_: unknown, payload: ExternalChangeEvent) => cb(payload);
     ipcRenderer.on("studio:external-change", listener);
@@ -55,6 +59,11 @@ const api: StudioApi = {
     const listener = (_: unknown, payload: BackupStatus) => cb(payload);
     ipcRenderer.on("studio:backup-status", listener);
     return () => ipcRenderer.removeListener("studio:backup-status", listener);
+  },
+  onAppUpdateStatus: (cb) => {
+    const listener = (_: unknown, payload: AppUpdateStatus) => cb(payload);
+    ipcRenderer.on("studio:app-update-status", listener);
+    return () => ipcRenderer.removeListener("studio:app-update-status", listener);
   }
 };
 

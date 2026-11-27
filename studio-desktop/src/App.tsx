@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import type {
+  AppUpdateStatus,
   BackupStatus,
   BookDetail,
   BookSummary,
@@ -60,7 +61,15 @@ export const App: React.FC = () => {
   const [publishOpen, setPublishOpen] = useState(false);
 
   const [externalBanner, setExternalBanner] = useState<string | null>(null);
+  const [updateBannerDismissed, setUpdateBannerDismissed] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
+  const [appUpdateStatus, setAppUpdateStatus] = useState<AppUpdateStatus>({
+    state: "idle",
+    currentVersion: "",
+    canAutoInstall: false,
+    installKind: "manual",
+    message: "Book Studio"
+  });
   const [backupStatus, setBackupStatus] = useState<BackupStatus>({
     state: "saved",
     message: "All changes saved",
@@ -103,10 +112,14 @@ export const App: React.FC = () => {
   };
 
   const initLibrary = async () => {
-    const list = await api.scanLibrary();
+    const [list, status, updStatus] = await Promise.all([
+      api.scanLibrary(),
+      api.getBackupStatus(),
+      api.getAppUpdateStatus()
+    ]);
     setBooks(list);
-    const status = await api.getBackupStatus();
     setBackupStatus(status);
+    setAppUpdateStatus(updStatus);
     if (list.length > 0) {
       const preferred =
         list.find((b) => b.id === "the-hot-potato-of-corporate-castle") ?? list[0];
@@ -137,9 +150,16 @@ export const App: React.FC = () => {
     const unsubBackup = api.onBackupStatus((st) => {
       setBackupStatus(st);
     });
+    const unsubUpdate = api.onAppUpdateStatus((st) => {
+      setAppUpdateStatus(st);
+      if (st.state === "downloaded" || st.state === "available") {
+        setUpdateBannerDismissed(false);
+      }
+    });
     return () => {
       unsubExt();
       unsubBackup();
+      unsubUpdate();
     };
   }, []);
 
@@ -252,6 +272,28 @@ export const App: React.FC = () => {
     showToast(`Copied prompt for assistant (${open.length} open note${open.length === 1 ? "" : "s"})`);
   };
 
+  const handleOpenExternalUrl = (url: string) => {
+    void api.openExternalUrl(url).catch((err) => {
+      showToast(err instanceof Error ? err.message : "Could not open link.");
+    });
+  };
+
+  const handleCheckAppUpdates = async () => {
+    const st = await api.checkForAppUpdates();
+    setAppUpdateStatus(st);
+    showToast(st.message);
+  };
+
+  const handleInstallAppUpdate = async () => {
+    const res = await api.installAppUpdate();
+    showToast(res.summary);
+  };
+
+  const showUpdateBanner =
+    !updateBannerDismissed &&
+    (appUpdateStatus.state === "downloaded" ||
+      (appUpdateStatus.state === "available" && !appUpdateStatus.canAutoInstall));
+
   const splitChar = book.characters.find((c) => c.id === splitRefKey);
   const splitRule = book.canon.find((f) => f.id === splitRefKey);
 
@@ -332,12 +374,44 @@ export const App: React.FC = () => {
         </div>
       </header>
 
+      {showUpdateBanner && (
+        <div className="update-banner">
+          <span>
+            <strong>{appUpdateStatus.message}</strong>
+            {appUpdateStatus.latestVersion ? ` (v${appUpdateStatus.latestVersion})` : ""}
+          </span>
+          <div style={{ display: "flex", gap: "6px", alignItems: "center" }}>
+            {appUpdateStatus.canAutoInstall && appUpdateStatus.state === "downloaded" ? (
+              <button type="button" className="btn btn-sm btn-primary" onClick={() => void handleInstallAppUpdate()}>
+                Restart &amp; Update
+              </button>
+            ) : (
+              <button
+                type="button"
+                className="btn btn-sm btn-primary"
+                onClick={() =>
+                  appUpdateStatus.releaseUrl
+                    ? handleOpenExternalUrl(appUpdateStatus.releaseUrl)
+                    : void handleInstallAppUpdate()
+                }
+              >
+                Download Update ↗
+              </button>
+            )}
+            <button type="button" className="btn btn-sm" onClick={() => setUpdateBannerDismissed(true)}>
+              Later
+            </button>
+          </div>
+        </div>
+      )}
+
       <div className="workspace">
         <LeftNavigator
           books={books}
           book={book}
           activeView={activeView}
           activeChapterRel={chapter?.relPath ?? ""}
+          appUpdateStatus={appUpdateStatus}
           onSelectBook={(rel) => void loadBookAndFirstChapter(rel)}
           onChooseLibraryFolder={async () => {
             const folder = await api.chooseRepoFolder();
@@ -350,6 +424,8 @@ export const App: React.FC = () => {
               setActiveView(view);
             }
           }}
+          onOpenExternalUrl={handleOpenExternalUrl}
+          onOpenUpdatePanel={() => setRailTab("backups")}
           onCreateChapter={async () => {
             const { relPath } = await api.createChapter(
               book.summary.relPath,
@@ -512,6 +588,11 @@ export const App: React.FC = () => {
                 onOpenPublishModal={() => setPublishOpen(true)}
                 onRunAudioDoctor={() => api.runAudioDoctor()}
                 onRunAudioStep={(step) => api.runAudioStep(book.summary.relPath, step)}
+                onOpenExternalUrl={handleOpenExternalUrl}
+                onCopyText={(text, notice) => {
+                  void api.copyToClipboard(text);
+                  showToast(notice);
+                }}
               />
             )}
           </div>
@@ -525,6 +606,7 @@ export const App: React.FC = () => {
           baselineVersionId={baselineVersionId}
           pendingTarget={pendingTarget}
           backupStatus={backupStatus}
+          appUpdateStatus={appUpdateStatus}
           onChangeTab={setRailTab}
           onAddComment={async (cmt) => {
             const next = [cmt, ...book.comments];
@@ -586,6 +668,9 @@ export const App: React.FC = () => {
             showToast(st.message);
           }}
           onCopyForAssistant={() => void handleCopyForAssistant()}
+          onCheckAppUpdates={() => void handleCheckAppUpdates()}
+          onInstallAppUpdate={() => void handleInstallAppUpdate()}
+          onOpenExternalUrl={handleOpenExternalUrl}
         />
       </div>
 
@@ -604,6 +689,7 @@ export const App: React.FC = () => {
           setDiffMode(m);
         }}
         onToggleFocus={() => setFocusMode((v) => !v)}
+        onOpenExternalUrl={handleOpenExternalUrl}
       />
 
       <SaveMilestoneModal

@@ -16,6 +16,7 @@ export const QuickJumpModal: React.FC<{
   onOpenCanon: () => void;
   onChangeDiffMode: (mode: "clean" | "inline" | "sidebyside") => void;
   onToggleFocus: () => void;
+  onOpenExternalUrl?: (url: string) => void;
 }> = ({
   open,
   book,
@@ -24,7 +25,8 @@ export const QuickJumpModal: React.FC<{
   onOpenCharacter,
   onOpenCanon,
   onChangeDiffMode,
-  onToggleFocus
+  onToggleFocus,
+  onOpenExternalUrl
 }) => {
   const [query, setQuery] = useState("");
   const [selectedIdx, setSelectedIdx] = useState(0);
@@ -47,6 +49,24 @@ export const QuickJumpModal: React.FC<{
       label: `${f.id}: ${f.title}`,
       action: () => onOpenCanon()
     })),
+    ...(book.isPublicEdition && book.publishedReaderUrl && onOpenExternalUrl
+      ? [
+          {
+            kind: "Published",
+            label: "Open Published Book in Browser",
+            action: () => onOpenExternalUrl(book.publishedReaderUrl!)
+          }
+        ]
+      : []),
+    ...(book.publishedLibraryUrl && onOpenExternalUrl
+      ? [
+          {
+            kind: "Published",
+            label: "Open Public Library Website",
+            action: () => onOpenExternalUrl(book.publishedLibraryUrl!)
+          }
+        ]
+      : []),
     { kind: "View", label: "Show Clean Latest Draft", action: () => onChangeDiffMode("clean") },
     { kind: "View", label: "Show Changes Since Earlier Draft", action: () => onChangeDiffMode("inline") },
     { kind: "View", label: "Compare Two Drafts Side-by-Side", action: () => onChangeDiffMode("sidebyside") },

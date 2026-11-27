@@ -1,4 +1,4 @@
-import type { BackupStatus, ExternalChangeEvent, StudioApi } from "../shared/types";
+import type { AppUpdateStatus, BackupStatus, ExternalChangeEvent, StudioApi } from "../shared/types";
 
 async function postApi<T>(method: string, ...args: unknown[]): Promise<T> {
   const res = await fetch(`/api/${method}`, {
@@ -59,6 +59,16 @@ function createHttpStudioApi(): StudioApi {
       }
       await postApi("copyToClipboard", text);
     },
+    openExternalUrl: async (url) => {
+      const parsed = new URL(url);
+      if (parsed.protocol !== "https:" && parsed.protocol !== "http:") {
+        throw new Error("Only web links can be opened externally.");
+      }
+      window.open(parsed.toString(), "_blank", "noopener,noreferrer");
+    },
+    getAppUpdateStatus: () => postApi("getAppUpdateStatus"),
+    checkForAppUpdates: () => postApi("checkForAppUpdates"),
+    installAppUpdate: () => postApi("installAppUpdate"),
     onExternalChange: (cb) => {
       const es = ensureSource();
       const handler = (ev: MessageEvent) => {
@@ -74,6 +84,14 @@ function createHttpStudioApi(): StudioApi {
       };
       es.addEventListener("backup-status", handler);
       return () => es.removeEventListener("backup-status", handler);
+    },
+    onAppUpdateStatus: (cb) => {
+      const es = ensureSource();
+      const handler = (ev: MessageEvent) => {
+        cb(JSON.parse(ev.data) as AppUpdateStatus);
+      };
+      es.addEventListener("app-update-status", handler);
+      return () => es.removeEventListener("app-update-status", handler);
     }
   };
 }
