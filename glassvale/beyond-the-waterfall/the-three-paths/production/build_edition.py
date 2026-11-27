@@ -14,13 +14,14 @@ import hashlib
 import html
 import io
 import json
+import math
 import re
 import uuid
 import xml.etree.ElementTree as ET
 from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZIP_STORED, ZipFile, ZipInfo
 
-from PIL import Image, ImageDraw, ImageFilter, ImageFont
+from PIL import Image, ImageDraw, ImageFilter, ImageFont, ImageOps
 from reportlab.lib.colors import HexColor
 from reportlab.lib.enums import TA_CENTER, TA_LEFT
 from reportlab.lib.styles import ParagraphStyle
@@ -198,7 +199,6 @@ def build_blended_page_image(ill: dict) -> Path:
     src = Image.open(BOOK / ill["asset"]).convert("RGB")
     target_w, target_h = 1400, 1800  # 200 px per inch for 7x9 in
     scale_h = round(src.height * target_w / src.width)
-    # If taller than page, fit height; otherwise fit width and anchor bottom
     if scale_h > target_h:
         resized = src.resize((target_w, target_h), Image.LANCZOS)
         y_top = 0
@@ -206,29 +206,42 @@ def build_blended_page_image(ill: dict) -> Path:
         resized = src.resize((target_w, scale_h), Image.LANCZOS)
         y_top = target_h - scale_h
 
-    # Build ambient upper sky/wall extension from top strip of illustration
-    top_strip = resized.crop((0, 0, target_w, min(48, resized.height)))
-    # Stretch top strip smoothly upward and blur heavily so sky/wall tone continues naturally
-    ambient_h = max(1, y_top + 96)
-    ambient = top_strip.resize((target_w, ambient_h), Image.BILINEAR)
-    ambient = ambient.filter(ImageFilter.GaussianBlur(radius=38))
-
+    # Build a completely seamless full-height ambient backdrop (mirrored top band + blur)
+    # so the illustration's top edge melts invisibly with zero horizontal seam.
     canvas_im = Image.new("RGB", (target_w, target_h))
-    canvas_im.paste(ambient, (0, 0))
-
-    # Feather top edge of resized illustration seamlessly into ambient extension
-    feather_px = min(130, resized.height // 4)
-    mask = Image.new("L", resized.size, 255)
-    m_draw = ImageDraw.Draw(mask)
     if y_top > 0:
+        mirror_src_h = min(resized.height, y_top + 180)
+        mirrored = ImageOps.flip(resized.crop((0, 0, target_w, mirror_src_h)))
+        # Ensure ambient layer covers from y=0 all the way past y_top + 200
+        ambient_bg = Image.new("RGB", (target_w, target_h))
+        ambient_bg.paste(resized, (0, y_top))
+        # Tile mirrored strip upward from y_top
+        paste_y = y_top - mirrored.height
+        ambient_bg.paste(mirrored, (0, max(0, paste_y)), None)
+        if paste_y < 0:
+            cropped_m = mirrored.crop((0, -paste_y, target_w, mirrored.height))
+            ambient_bg.paste(cropped_m, (0, 0))
+        elif paste_y > 0:
+            top_px = mirrored.crop((0, 0, target_w, 24)).resize((target_w, paste_y), Image.BILINEAR)
+            ambient_bg.paste(top_px, (0, 0))
+        ambient_bg = ambient_bg.filter(ImageFilter.GaussianBlur(radius=40))
+        canvas_im.paste(ambient_bg, (0, 0))
+
+        # Smooth cosine feather from y_top down over 180 px
+        feather_px = min(180, resized.height // 3)
+        mask = Image.new("L", resized.size, 255)
+        m_draw = ImageDraw.Draw(mask)
         for y in range(feather_px):
-            val = int(255 * (y / float(feather_px)) ** 1.35)
+            t = y / float(feather_px)
+            val = int(255 * 0.5 * (1.0 - math.cos(math.pi * t)))
             m_draw.line([(0, y), (target_w, y)], fill=val)
-    canvas_im.paste(resized, (0, y_top), mask)
+        canvas_im.paste(resized, (0, y_top), mask)
+    else:
+        canvas_im.paste(resized, (0, 0))
 
     # Apply soft feathered readability veil ONLY around the mapped text box
     bx, by, bw, bh = ill["box_pt"]
-    px_scale = target_w / PAGE_W  # 200/72
+    px_scale = target_w / PAGE_W
     x0 = int((bx - 22) * px_scale)
     y0 = int((by - 20) * px_scale)
     x1 = int((bx + bw + 22) * px_scale)
@@ -237,16 +250,15 @@ def build_blended_page_image(ill: dict) -> Path:
     theme = ill["text_theme"]
     if theme == "dark_on_light":
         veil_rgb = (250, 244, 231)
-        core_alpha = 188
+        core_alpha = 195
     else:
         veil_rgb = (20, 25, 48)
-        core_alpha = 185
+        core_alpha = 190
 
-    veil = Image.new("RGBA", (target_w, target_h), (0, 0, 0, 0))
     v_mask = Image.new("L", (target_w, target_h), 0)
     vm_draw = ImageDraw.Draw(v_mask)
-    vm_draw.rounded_rectangle([x0, y0, x1, y1], radius=46, fill=core_alpha)
-    v_mask = v_mask.filter(ImageFilter.GaussianBlur(radius=36))
+    vm_draw.rounded_rectangle([x0, y0, x1, y1], radius=48, fill=core_alpha)
+    v_mask = v_mask.filter(ImageFilter.GaussianBlur(radius=38))
     veil_color = Image.new("RGBA", (target_w, target_h), veil_rgb + (255,))
     veil_color.putalpha(v_mask)
 
@@ -342,11 +354,18 @@ def build_pdf(book_meta: dict, plan: dict, cover_jpg: Path, out_pdf: Path) -> tu
             c.setFillColor(HexColor(PAPER_HEX))
             c.rect(0, 0, PAGE_W, PAGE_H, stroke=0, fill=1)
 
-        def draw_footer(num: int, light: bool = False) -> None:
+        def draw_footer(num: int, light: bool = False, over_art: bool = False) -> None:
             c.saveState()
-            c.setFont("StorySans", 8.8)
-            c.setFillColor(HexColor("#E8DFC9" if light else "#7A7062"))
-            c.drawCentredString(PAGE_W / 2, 26, str(num))
+            if over_art:
+                c.setFillColor(HexColor("#141930" if light else "#FBF6EC"), alpha=0.72)
+                c.roundRect(PAGE_W / 2 - 14, 18, 28, 16, 7, stroke=0, fill=1)
+                c.setFont("StorySans-Bold", 8.5)
+                c.setFillColor(HexColor("#FBF6EC" if light else "#231F20"), alpha=1.0)
+                c.drawCentredString(PAGE_W / 2, 23, str(num))
+            else:
+                c.setFont("StorySans", 8.8)
+                c.setFillColor(HexColor("#7A7062"))
+                c.drawCentredString(PAGE_W / 2, 26, str(num))
             c.restoreState()
 
         # Page 1: Full-bleed cover
@@ -469,7 +488,7 @@ def build_pdf(book_meta: dict, plan: dict, cover_jpg: Path, out_pdf: Path) -> tu
                         p_obj.drawOn(c, bx, cur_y - ph)
                         cur_y -= ph + style.spaceAfter
 
-                    draw_footer(page_num, light=(ill["text_theme"] == "light_on_dark"))
+                    draw_footer(page_num, light=(ill["text_theme"] == "light_on_dark"), over_art=True)
                     c.showPage()
                     # Advance past blended paragraphs
                     i = ill["blended_paragraphs"][-1] + 1

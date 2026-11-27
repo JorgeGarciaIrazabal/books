@@ -1,4 +1,45 @@
 {
   "schema_version": 1,
-  "gates": []
+  "gates": [
+    {
+      "checkpoint": "brief",
+      "status": "pass",
+      "reviewer": "studio_director + author",
+      "date": "2026-11-27",
+      "evidence": ["brief.md", "glassvale/canon.json", "beyond-the-waterfall/roadmap.md"],
+      "open_issues": []
+    },
+    {
+      "checkpoint": "structure",
+      "status": "pass",
+      "reviewer": "studio_director",
+      "date": "2026-11-27",
+      "evidence": ["outline.md", "scenes.json", "knowledge.json", "threads.json"],
+      "open_issues": []
+    },
+    {
+      "checkpoint": "draft",
+      "status": "pass",
+      "reviewer": "research_subagent (fresh session; same model family disclosed)",
+      "date": "2026-11-27",
+      "evidence": ["reviews/editorial-review.md", "reviews/issues.json", "manuscript/001-009 (6,885 words, 0 dashes)"],
+      "open_issues": []
+    },
+    {
+      "checkpoint": "continuity-evidence",
+      "status": "pass",
+      "reviewer": "research_subagent + studio_director",
+      "date": "2026-11-27",
+      "evidence": ["knowledge.json (KNO-0002 Peter secret verified concealed)", "glassvale/canon.json (FACT-0001..FACT-0010)"],
+      "open_issues": []
+    },
+    {
+      "checkpoint": "production",
+      "status": "pass",
+      "reviewer": "studio_director (visual inspection of cover + all 12 blended PDF pages; independent human/different-model reader_advocate listen/read pending)",
+      "date": "2026-11-27",
+      "evidence": ["exports/cover.jpg", "exports/the-three-paths.pdf (47 pages)", "exports/the-three-paths.epub", "production/illustration-plan.json"],
+      "open_issues": []
+    }
+  ]
 }
