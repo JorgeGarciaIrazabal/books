@@ -1,4 +1,37 @@
 {
   "schema_version": 1,
-  "promises": []
+  "promises": [
+    {
+      "id": "PRM-0001",
+      "title": "Peter's antique brass sand-timer",
+      "setup_book": "the-three-paths",
+      "payoff_book": "book-5-the-world-glass",
+      "status": "open",
+      "notes": "Peter's pocket sand-timer subtly shivers or tilts toward nearby World-Glass pieces in Books 1-4; revealed in Book 5 as his Hollow Circle seeker dial."
+    },
+    {
+      "id": "PRM-0002",
+      "title": "Who unlatched the Mistgate side ward for Silas",
+      "setup_book": "the-three-paths",
+      "payoff_book": "book-5-the-world-glass",
+      "status": "open",
+      "notes": "Silas slips past Glassvale's outer wards in Book 1 with uncanny ease. Monica suspects an inside leak in Book 4; confirmed as Peter in Book 5."
+    },
+    {
+      "id": "PRM-0003",
+      "title": "The five hidden pieces of the World-Glass",
+      "setup_book": "the-three-paths",
+      "payoff_book": "book-5-the-world-glass",
+      "status": "open",
+      "notes": "Crown Seal (Book 1) through Silver Frame (Book 5)."
+    },
+    {
+      "id": "PRM-0004",
+      "title": "Victor's temptation vs. loyalty",
+      "setup_book": "the-three-paths",
+      "payoff_book": "book-4-the-cold-star",
+      "status": "open",
+      "notes": "Victor nearly falls for a Shadow shortcut in Book 1 Ch 5; pays off in Book 4 when he finally turns down The Hollow Circle."
+    }
+  ]
 }

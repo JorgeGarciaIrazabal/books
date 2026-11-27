@@ -1,4 +1,9 @@
 {
   "schema_version": 1,
-  "threads": []
+  "threads": [
+    {"id": "THR-0001", "title": "Clara earning Jorge and Marissa's trust", "status": "resolved_in_book", "setup": "SC-0002", "payoff": "SC-0004, SC-0008"},
+    {"id": "THR-0002", "title": "Silas hunting the Crown Seal", "status": "resolved_in_book", "setup": "SC-0003", "payoff": "SC-0008"},
+    {"id": "THR-0003", "title": "Peter's antique brass sand-timer", "status": "open", "series_promise": "PRM-0001", "setup": "SC-0002, SC-0009"},
+    {"id": "THR-0004", "title": "Who helped Silas past the outer wards", "status": "open", "series_promise": "PRM-0002", "setup": "SC-0008"}
+  ]
 }

@@ -1,4 +1,14 @@
 {
   "schema_version": 1,
-  "scenes": []
+  "scenes": [
+    {"id": "SC-0001", "chapter": "manuscript/001-behind-the-waterfall.md", "pov": "Clara", "purpose": "Enter Glassvale through the Mistgate, meet Monica, Maya, Sam, and leaders; plant first Whisper-Moth clue."},
+    {"id": "SC-0002", "chapter": "manuscript/002-the-week-of-three-sparks.md", "pov": "Clara", "purpose": "Experience all three Paths in Common Term; establish friction with Jorge/Marissa, rivalry with Victor, warmth from Peter."},
+    {"id": "SC-0003", "chapter": "manuscript/003-the-whisper-beneath-the-stairs.md", "pov": "Clara", "purpose": "Bell-Choosing Ceremony and spooky Deep Gate encounter with Silas and Whisper-Moths."},
+    {"id": "SC-0004", "chapter": "manuscript/004-cold-iron-and-broken-roots.md", "pov": "Clara", "purpose": "Clara earns real trust with Jorge (fixing Cold-Iron pump) and Marissa (healing Blighted oak root)."},
+    {"id": "SC-0005", "chapter": "manuscript/005-victors-shortcut.md", "pov": "Clara", "purpose": "Victor's Shadow shortcut unleashes stone gargoyles; trio + Jorge defend courtyard; Monica reveals World-Glass & Crown Seal."},
+    {"id": "SC-0006", "chapter": "manuscript/006-the-gray-coat-in-the-mist.md", "pov": "Clara", "purpose": "Stormy Bell-Vault confrontation with Silas and Ink-Hounds; Clara refuses his trap and escapes up the belfry."},
+    {"id": "SC-0007", "chapter": "manuscript/007-three-locks-three-paths.md", "pov": "Clara", "purpose": "Trio combines Pure Magic, Nora's Clock-Beetle coil, and Maya's storm-wind teamwork to break free and descend."},
+    {"id": "SC-0008", "chapter": "manuscript/008-the-song-of-the-three-bells.md", "pov": "Clara", "purpose": "Climax: Clara threads Pure Magic through Jorge's coil and Marissa's vines as Maya and Sam ring all three bells together."},
+    {"id": "SC-0009", "chapter": "manuscript/009-the-second-best-celebration.md", "pov": "Clara", "purpose": "Autumn feast resolution, earned friendships, Monica's second-best toast, and warm closing with Peter's silent sand-timer hint."}
+  ]
 }

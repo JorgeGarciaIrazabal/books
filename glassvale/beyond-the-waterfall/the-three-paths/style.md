@@ -1,22 +1,15 @@
-# Style and voice
+# The Three Paths — Style Guide
 
-## Narrative / explanatory approach
-POV, tense, distance, register, audience relationship.
+## POV and Tense
+Close third-person past tense anchored tightly on eleven-year-old **Clara**. Show only what Clara notices, hears, guesses, or feels.
 
-## Original voice samples
-Accepted passages and why they work. Preserve distinctive choices during revision.
+## Vocabulary and Sentence Rhythm
+- Use clear, vivid, concrete words easy for a seven-year-old to understand when read aloud (no dense tongue-twister fantasy jargon).
+- Mix brisk short sentences during action with atmospheric sensory details (damp stone, brass oil, pine needles, cold mist, warm cinnamon tea).
+- Keep paragraphs short (2 to 4 sentences) with lively back-and-forth dialogue.
 
-## Dialogue, rhythm, and imagery
-Attention, subtext, sentence movement, purposeful variation; no catchphrase quotas.
-
-## House style
-Spelling variant, punctuation, numerals, units, headings, capitalization, citation style.
-Inherit the author's defaults in `.studio/craft.md`: no em dashes; quotation marks
-for dialogue (English double quotes, Spanish guillemets); concrete, varied prose
-without assistant boilerplate or formulaic padding. Record explicit author exceptions.
-
-## Terminology
-Link universe glossary; record local exceptions with rationale.
-
-## Editorial queries
-Separate errors from intentional irregularities and taste.
+## Punctuation and House Rules (`.studio/craft.md`)
+- **Zero em dashes (`—`), zero en dashes (`–`), zero `--` stand-ins** in prose or dialogue. Use commas, periods, or colons cleanly.
+- Standard double quotation marks (`"..."`), one speaker per paragraph.
+- Keep Monica's humor crisp and dry ("Only show-offs buy the most expensive one").
+- Keep spooky moments thrilling (Whisper-Moths mimicking voices, snuffed candles, cold emerald mist, smoky Ink-Hounds) while staying squarely in the Harry Potter / Narnia adventurous sweet spot.

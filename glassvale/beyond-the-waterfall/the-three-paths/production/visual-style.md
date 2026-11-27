@@ -1,19 +1,16 @@
-# Visual style and book design
+# The Three Paths — Production & Visual Style Guide
 
-## Edition and narrative purpose
-Record audience, reading use, page/trim target, chapter/page/spread distinction, requested art frequency, and format. Explain what images contribute and how the dummy reserves type and picture space.
+## Edition and Narrative Purpose
+- **Audience:** Read together by parent and seven-year-old Clara; bright, atmospheric, spooky-cozy fantasy adventure.
+- **Format:** 7 × 9 in illustrated storybook PDF (blended-text spreads where story prose sits directly inside soft painted open zones of the illustrations) plus reflowable EPUB 3 and composed 720 × 1080 JPEG cover.
+- **Art Frequency:** 12 interior illustrations (3 sheets generated as 2×2 grids, cleanly cropped) + 1 dedicated portrait cover + 3 approved reference sheets in `assets/references/`.
 
-## Cast, setting and prop reference
-Record inspected reference paths and stable visual identities: silhouette, apparent age, hair, costume, palette, proportions, expressive range, key props, setting and time progression. Label design assumptions separately from accepted canon. Reference-only art does not count as story illustration.
+## Cast, Setting and Prop Reference
+- `assets/references/ref-leaders-2x2.png` (Jorge, Marissa + Pip, Peter + sand-timer, Headmistress Monica)
+- `assets/references/ref-students-2x2.png` (Clara, Maya + Pebble, Sam, Victor)
+- `assets/references/ref-world-2x2.png` (Glassvale Academy exterior, Brass Spire workshop, Living Dome, Starlight Tower + Deep Gate)
 
-## Medium, composition and pacing
-Specify original broad visual traits, palette, texture, line, light, focal hierarchy and narrative variation. Record disclosure boundaries, page-turn reveals and essential safe areas. Keep story typography separate from generated art unless explicitly commissioned otherwise.
-
-## Layout and reproduction
-Record actual dimensions, margins, type size, image fit/crop intent and contrast. Track native image pixels, placed inches and effective PPI. For a print edition, obtain the actual printer's bleed, binding/gutter, color and export requirements. Avoid universal print-ready claims.
-
-## Provenance, accessibility and review
-Link prompt/reference/asset hashes, actual tool or artist and rights status; alt text belongs with illustration records. Record independent image and final-export review coverage and exact snapshots. Distinguish thumbnail cohesion, full-image inspection, final-page proof and an actual accessibility audit.
-
-## Observed lessons
-After use, record concrete evidence, the specific workflow adjustment, and the scope where it helps. Keep guesses and unresolved experiments labeled.
+## Medium, Composition and Blended-Text Rules
+- **Medium:** Rich painterly watercolor, gouache, and expressive crisp ink linework on warm subtly textured storybook paper.
+- **Zero Text Inside Raw Art:** Never allow letters, labels, or captions inside generated illustrations.
+- **Open Text-Safe Zone (Crucial):** Every interior panel must leave a calm, uncluttered softly painted wash (~35–40% of the panel in the specified upper-left or upper-right zone) so `build_edition.py` can blend story prose right over that quiet painted sky/wall/mist with high contrast and zero collision with faces or action.

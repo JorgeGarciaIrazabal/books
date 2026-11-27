@@ -5,8 +5,18 @@
   "series": "beyond-the-waterfall",
   "title": "The Three Paths",
   "kind": "fiction",
-  "stage": "brief",
+  "stage": "draft",
   "language": "en",
-  "chapters": [],
+  "chapters": [
+    "manuscript/001-behind-the-waterfall.md",
+    "manuscript/002-the-week-of-three-sparks.md",
+    "manuscript/003-the-whisper-beneath-the-stairs.md",
+    "manuscript/004-cold-iron-and-broken-roots.md",
+    "manuscript/005-victors-shortcut.md",
+    "manuscript/006-the-gray-coat-in-the-mist.md",
+    "manuscript/007-three-locks-three-paths.md",
+    "manuscript/008-the-song-of-the-three-bells.md",
+    "manuscript/009-the-second-best-celebration.md"
+  ],
   "narration": null
 }

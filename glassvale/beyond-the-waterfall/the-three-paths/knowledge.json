@@ -1,4 +1,19 @@
 {
   "schema_version": 1,
-  "disclosures": []
+  "disclosures": [
+    {
+      "id": "KNO-0001",
+      "fact_ref": "FACT-0006",
+      "chapter": "manuscript/005-victors-shortcut.md",
+      "who_learns": ["Clara", "Maya", "Sam", "Reader"],
+      "how": "Monica explains the split World-Glass and the hidden Crown Seal beneath the Bell-Tower."
+    },
+    {
+      "id": "KNO-0002",
+      "fact_ref": "FACT-0007",
+      "chapter": "FORBIDDEN_IN_BOOK_1",
+      "who_learns": [],
+      "how": "NEVER disclose Peter's Hollow Circle allegiance in Book 1. Only show his warm mentorship and innocent antique brass sand-timer."
+    }
+  ]
 }

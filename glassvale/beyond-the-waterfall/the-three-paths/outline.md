@@ -1,24 +1,20 @@
-# The Three Paths — outline
+# The Three Paths — 9-Chapter Causal Outline
 
-## Throughline
-A causal chain of choices, or a sequence of reader questions and supported claims.
-
-## Beginning, development, and ending
-Use a structure suited to the book, with meaningful progression and earned payoff.
-
-## Chapters and scenes / sections
-Link stable scene IDs and intended manuscript paths. Source order lives in book.json.
-
-## Scene / section contract
-- ID, chapter, local purpose, approximate length:
-- POV / reader prerequisites:
-- Place and story time / subject context:
-- Incoming state / question:
-- Desire, resistance, choice / claim, evidence, objection:
-- Turn and outgoing consequence / changed reader understanding:
-- Allowed disclosures and forbidden early revelations:
-- Relevant canon/source IDs and voice references:
-- Dependencies and uncertainties:
-
-## Tests and alternatives
-A sample may reveal a stronger solution; revise the plan rather than protect it.
+1. **Chapter 1: Behind the Waterfall**
+   Clara uses her glass Pass-Token to step dry through the Mistgate waterfall into Glassvale Academy. She meets Headmistress **Monica** (arriving in Glassvale's *second* most expensive carriage and pouring tea from her second-most-expensive silver teapot), spirited Nature student **Maya** (with glowing turquoise frog **Pebble**), and nervous-funny **Sam** (who accidentally wobbles a floating teacup). She catches first impressions of brisk **Jorge**, quiet **Marissa** (with Bramble-Owl **Pip**), and warm, smiling **Peter** with his brass sand-timer. At dusk near the Bell-Tower, Clara hears a faint cold whisper mimic Monica's voice and sees a pale Whisper-Moth slip under an iron grate.
+2. **Chapter 2: The Week of Three Sparks**
+   Common Term puts first-years through all three Paths. In the Brass Spire, **Jorge** snaps at Clara when she tries to force a gear-lock with raw sparks instead of testing springs; competitive **Nora** smirks while Jorge insists on careful measurement. In the Living Dome, **Marissa** stops Clara from rushing a vine-bridge ("Stop shouting at the wind"), leaving Clara stung. In the Starlight Tower, **Peter** warmly encourages Clara's wild violet-gold spark while **Victor** shows off a razor-sharp silver flare. When Peter steadies Clara's wrist, his pocket sand-timer gives a tiny, innocent golden shimmer.
+3. **Chapter 3: The Whisper Beneath the Stairs**
+   At the Bell-Choosing Ceremony, the three bells chime as Maya chooses **Path of Nature** and Clara and Sam choose **Path of Pure Magic**. That night, following odd cold drafts to the wrought-iron **Deep Gate** below the Starlight Tower, Clara, Maya, and Sam watch Whisper-Moths snuff every torch. Pebble's throat flashes bright gold (illusion warning!) just as **Silas (The Gray Coat)** glides out of emerald-violet mist, locks eyes with them across the gate, and vanishes, dropping a Cold-Iron coin marked with a hollow circle.
+4. **Chapter 4: Cold-Iron and Broken Roots**
+   Next morning, trouble hits both other Paths: a Brass Spire water-pump freezes under a Cold-Iron clamp, and the Living Dome's heart-oak wilts around a black Blight-pin. Instead of bragging about Pure Magic, Clara rolls up her sleeves beside **Jorge**, counting teeth on brass gears and learning to trust trial and error until the pump purrs—earning Jorge's first genuine grin. Then Clara kneels with **Maya** and **Marissa** in warm mud, holding her spark completely still so Marissa can coax the oak roots open and pull the Blight-pin free—earning Pip's soft hoot and Marissa's real trust. Sam sketches both symbols in his notebook and realizes both raids were timed to map the **Bell-Tower**.
+5. **Chapter 5: Victor's Shortcut**
+   During courtyard spell practice, jealous **Victor** secretly reads a Shadow-inked scroll slipped into his bag by a Whisper-Moth. Cold darkness snaps out, waking two carved stone gargoyle-sparrows that dive straight at Maya and Sam. Clara remembers Marissa's stillness and holds a firm violet-gold starlight shield while Jorge fires a reliable brass snare-net from the workshop balcony. Peter rushes up to banish the chill with warm gold light. Afterward, Monica brings Clara, Maya, and Sam to her office and reveals the truth: **The World-Glass** was split long ago, and its **Crown Seal** sleeps inside the Bell-Vault beneath the central tower, protected by three Path locks.
+6. **Chapter 6: The Gray Coat in the Mist**
+   A fierce mountain squall sweeps Glassvale at night, and Whisper-Moths snuff the Bell-Tower lanterns before Monica's alarm bells can ring. Clara, Maya, and Sam sprint through the storm into the underground **Bell-Vault**, where **Silas** stands beside two smoky emerald-eyed **Ink-Hounds**. Silas has already pried open the Makers and Nature locks with Cold-Iron and Blight-pins, leaving only the Pure Magic seal. He tries to trick Clara into firing raw spark at the pedestal to "save" her friends; instead, Clara blasts the overhead glass chandelier, dazzling the Ink-Hounds in blinding white light so the trio bolts up the Bell-Tower stairs as Silas slams the iron vault door shut.
+7. **Chapter 7: Three Locks, Three Paths**
+   Trapped in the storm-lashed belfry while Ink-Hounds prowl up the dark steps, the trio cannot break out by Pure Magic alone. Below in the rainy courtyard, **Nora** and a Makers classmate (sent by Jorge to check the storm-vanes) spot Clara's flare and launch a buzzing brass **Clock-Beetle** up to the belfry window carrying a copper spark-coil and Jorge's scribbled diagram. Clara and Sam wire the coil to focus steady light down the stair, while Maya and Pebble ask the mountain gale for help—guiding a clean blast of storm-wind down the shaft that scatters the hounds' smoke and sweeps open the upper landing hatch.
+8. **Chapter 8: The Song of the Three Bells**
+   Racing back down with the storm behind them, Clara's trio meets **Jorge** (armed with a glowing brass flash-drum) and **Marissa** (with Pip and surging living ivy) bursting through the side door. Inside the Bell-Vault, Silas unleashes a freezing wave of Shadow Magic that pins Jorge and Marissa back as the Crown Seal trembles above its pedestal. Sam shouts from his notebook: the founders locked the vault with *harmony*, not force. Clara threads her violet-gold Pure Magic spark straight through Jorge's copper coil and Marissa's living vines while Maya and Sam haul the Brass, Leaf, and Star bell-ropes together! One massive three-Path chord shakes the stones, shatters the Ink-Hounds into harmless mist, snaps the Crown Seal safely back into Monica's ward-box, and forces Silas to flee into smoke—warning that **The Hollow Circle** has only begun.
+9. **Chapter 9: The Second-Best Celebration**
+   The academy celebrates in a warm, lantern-lit Great Hall with Monica's *second* most expensive spiced cider pitchers! Jorge gives Clara a reliable brass pocket-compass she helped calibrate; Marissa and Pip invite Maya and Clara onto the conservatory roof to watch Lantern-Foxes; even Victor offers a stiff, half-grudging nod before grabbing a pastry. Out on the twilight balcony overlooking the glowing waterfall, heroic, smiling **Peter** rests a warm hand on Clara's shoulder and tells her she made Pure Magic proud. As he turns away into the hall, his small antique brass sand-timer gives one silent, unnoticed tilt inside his pocket.
