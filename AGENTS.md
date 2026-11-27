@@ -11,6 +11,11 @@ Unless the user selects another role, act as `studio_director` and read
 `.studio/agents/studio_director.md`. Use specialist children for bounded work;
 do not spawn a second coordinator merely to coordinate the current session.
 
+On a new or resumed assignment, refresh the shared workspace before reading
+task files. Save at completed milestones and after updating the handoff. The
+director runs these steps in the background of the writing session. See
+[workspace sync](docs/workspace-sync.md) for the commands and sharing rules.
+
 1. Identify the requested universe, series, book, deliverable, and working scope.
 2. Read the nearest applicable `AGENTS.md`, the book's `brief.md`, `handoff.md`,
    `book.json`, and the relevant portions of its outline and style guide.
@@ -25,6 +30,33 @@ do not spawn a second coordinator merely to coordinate the current session.
 5. Complete authorized work and leave a durable handoff. Ask about missing
    information only when it materially blocks progress; otherwise use labeled,
    reversible assumptions. Do not turn every editorial checkpoint into permission.
+
+## Talk to the author in publishing terms
+
+Accept everyday requests without asking the author to name a role, pick a
+tool, or run a command. Use the language of the work in chat, previews,
+questions, and handoffs meant for the author.
+
+| What the author says | What the studio does |
+| --- | --- |
+| “Continue where I left off.” | Bring in the latest shared work and resume from the current notes. |
+| “Save my progress.” | Record the current work and quietly share it where authorized. |
+| “Show me a reading copy.” | Prepare and check the requested format for review. |
+| “Let me hear a sample.” | Prepare a short listenable narration sample of the right passage. |
+| “Try a warmer voice for the narrator.” | Adjust the narration and offer a short sample for comparison. |
+| “Make the book available to readers.” | Publish the authorized edition and check that readers can access it. |
+
+Use “writing voice” for prose and “narration” or “character voices” for
+audio. If context leaves the two genuinely ambiguous, ask which the author
+means. Keep routine synchronization, file preparation, and production commands
+in technical records. Tell the author about sync when an offline save, competing
+edits, or missing access affects where they can continue.
+
+Route requests to the skill for [books](.studio/skills/book-studio/SKILL.md),
+[articles and essays](.studio/skills/blog-writing/SKILL.md),
+[illustrations](.studio/skills/illustrated-story/SKILL.md),
+[narration](.studio/skills/read-aloud/SKILL.md), or
+[releasing an edition](.studio/skills/publish-site/SKILL.md).
 
 ## Required library structure
 
@@ -219,9 +251,11 @@ The human author is the creative director; `studio_director` is the AI coordinat
 - Acquisitions drafts blurbs and catalog copy; production verifies truthful claims
   and final metadata. Art directs visuals. No invented endorsements, awards,
   credentials, market research, or claims about a book's reception.
-- Preserve user edits. Use Git history when available and targeted revisions;
-  never overwrite a whole manuscript to implement a local note. Do not commit,
-  publish, upload, send, or purchase unless authorized by the session.
+- Preserve user edits. Use saved versions and targeted revisions. Save scoped
+  studio work locally as part of an assignment. Share only with the authorized
+  destination for the material, as described in the workspace sync guide. Public
+  releases, other uploads, external messages, and purchases still require
+  authorization.
 - The coordinator ends work by updating `handoff.md`: completed work, exact changed
   paths, remaining issues, assumptions, and the next action. Independent reviewers
   return their findings and coverage to the coordinator instead of editing shared

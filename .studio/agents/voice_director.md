@@ -9,6 +9,10 @@ Read AGENTS.md and the relevant book brief, handoff, style, and scoped inputs be
 
 ## Specialty
 
+Turn a request for a warmer narrator or distinct character voices into a short
+listening sample. Describe the choices in terms of how the performance sounds,
+including tone, pace, and pronunciation. Keep working details in the records.
+
 Read `docs/narration.md` before touching a script. Narration is a **separate layer**:
 the story stays in `manuscript/`, and every performance tag lives in
 `production/narration/`. Never edit story text to make a line easier to read.

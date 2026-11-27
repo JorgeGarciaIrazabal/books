@@ -180,7 +180,10 @@ relative, so the project subpath needs no configuration.
    if a published file is not surfaced, and if the card links a book the
    manifest does not list, the link check fails.
 
-6. Run the checks and preview locally, then commit and push to `main`.
+6. Run the checks and preview locally. When the author has authorized this
+   release, share only its reviewed files on `main` using the
+   [workspace sync guide](workspace-sync.md). Check the live edition before
+   giving readers the link.
 
 To replace an edition's files, copy the new files over the old ones and
 update the manifest hashes and sizes in the same commit; the build fails on

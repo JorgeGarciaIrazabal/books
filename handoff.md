@@ -1,5 +1,23 @@
 # Workspace handoff
 
+## Author-facing language and workspace sync, 2026-11-26
+
+- Brought in six shared library updates. Updated `AGENTS.md`, `README.md`,
+  `.studio/workflow.md`, both `.studio/agents/{studio_director,voice_director}.md`
+  contracts, all five `.studio/skills/*/SKILL.md` entries, and
+  `docs/publishing.md`. The author can ask to continue, save progress, read a
+  copy, hear a voice sample, or publish an edition in ordinary language.
+- Added `tools/studio_sync.py` and `docs/workspace-sync.md`. Studio sessions refresh
+  before work and at stage changes, save scoped files at milestones and handoff,
+  and share eligible versions quietly. The current shared repository is public,
+  so draft sync needs a private destination. Local-only saves remain available.
+- Tested scoped saves, staged-edit preservation, a second checkout, overlapping
+  edits, ordered and repeat sharing, and destination mismatch using a temporary
+  shared repository. No narration files or public editions changed.
+- Next action for a session on another computer is to refresh before opening
+  the current work. Private cross-computer draft sharing can start when a
+  private destination is available.
+
 ## Removed Mila books and Nell and the Pocket-Sized Storm, 2026-11-26
 
 - Per the author's request, removed and deleted *Mila and the Missing Moon*, *Mila y la luna perdida*, and *Nell and the Pocket-Sized Storm*:

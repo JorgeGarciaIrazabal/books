@@ -7,6 +7,12 @@ description: Create or revise illustrated storybooks and chapter books, includin
 
 Deliver a readable story in which pictures carry narrative work and remain consistent across the book. Preserve the author's prose, format, art count, creative direction, and publication authority. Work from the repository root when a Book Studio workspace is present; read applicable AGENTS.md and scoped book records. Outside that workspace, use equivalent source, order, style, and output records without imposing its directory scheme.
 
+Begin with requests such as “Add a picture to each chapter” or “Show me how the
+first two pages will look.” Show actual pages when the question is about how
+text and art read together. Describe visible choices such as character design,
+placement, scale, and page turns in the author conversation. Keep asset records,
+layout commands, and file fingerprints in the production notes.
+
 ## Establish the edition
 
 Distinguish a picture book, an illustrated chapter book, and an illustrated retrofit. A source file, a chapter, a scene, a page, and a spread are different units. Read actual content and declared order before counting art. If the text has no chapters, choose transparent chapter boundaries where useful; do not silently reinterpret a request for pictures per chapter as pictures per page. Keep an existing page target unless the author changes it. Record language, intended age/use, page/trim target, reading medium, art frequency, and whether front matter is included. Use labeled reversible choices when preferences are missing.

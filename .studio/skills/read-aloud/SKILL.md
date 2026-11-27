@@ -1,18 +1,26 @@
 ---
 name: read-aloud
-description: Add or revise read-aloud narration for a finished book, including speaker tags, emotion directions, casting records, local rendering, take checks, and web-reader page audio. Keeps every performance tag out of the manuscript, EPUB and PDF.
+description: Give an author a voice sample, revise a narrator or character voice, or create and check a read-aloud edition.
 ---
 
 # Read-aloud
 
-Use when the author wants a book read aloud, asks for speaker or emotion tags, or
-wants audio in the web reader. The narration layer never changes the book. Full
-contract and tool reference: `docs/narration.md`.
+“Let me hear the narrator,” “Give the characters distinct voices,” and “Make an
+audiobook” are narration requests. A request to change the writing voice belongs
+in prose editing. Keep performance directions outside the book text and files.
+Use [the narration guide](../../../docs/narration.md) for tooling.
+
+For a voice sample or a change to an existing voice, use one representative
+passage with the current text. Provide a listenable clip and say who speaks
+and what changes the author can hear. Compare alternatives when requested, using
+the same words for both. For a full audiobook, check a sample before rendering
+the rest. Ask about tone, pace, pronunciation, or separate character voices
+when the decision matters. Keep tags and engine details in production records.
 
 ## Before you tag
 
-1. Read the book's `brief.md`, `handoff.md`, `book.json` and the final export. The
-   words must be stable: line, copy and proof first. Tags follow final text.
+1. Read the book's `brief.md`, `handoff.md`, `book.json` and the text to be read.
+   Use the proofed edition for a full audiobook or the current draft for a sample.
 2. Verify the default local TTS engine (**Fish Audio Drama 3** via `audio.cpp`
    Vulkan) is ready on this computer:
    ```sh

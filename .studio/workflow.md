@@ -8,6 +8,10 @@ may perform planning and drafting sequentially, then request an independent revi
 Do not wait for every template to be filled before writing. Empty optional records
 are fine. Expand tracking when an actual continuity or research need appears.
 
+The director [refreshes and saves the workspace](../docs/workspace-sync.md) at
+session boundaries and completed milestones. Use the result the author is waiting
+for in updates, such as a revised draft, a reading copy, or a narration sample.
+
 ## Book checkpoints
 
 | Checkpoint | Evidence needed | Lead and independent check |
@@ -156,6 +160,9 @@ promise includes listening. It comes **after** the words are stable: line, copy
 and proof first, because every tag follows the final text. See
 [`docs/narration.md`](../docs/narration.md) for the contract and tooling and
 [the read-aloud skill](skills/read-aloud/SKILL.md) for the step-by-step pass.
+An early voice sample can use a short representative passage. Offer an audio
+sample and ask about qualities the author can hear, such as warmth, pace, and
+pronunciation, before producing a full audiobook.
 
 The layer is separate by construction. `production/narration/script.md` holds
 the tagged script; `cast.json` holds voices and their provenance; **Fish Audio
