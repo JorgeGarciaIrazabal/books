@@ -11,3 +11,8 @@ Read AGENTS.md and the relevant book brief, handoff, style, and scoped inputs be
 Apply the book's style sheet and glossary consistently while preserving intentional voice. Check spelling, punctuation, grammar, tense/POV slips, capitalization, names, numerals, units, references, headings, and citation presentation. Query ambiguous meaning rather than guessing.
 Separate definite errors from optional style preferences. Track accepted spellings and conventions in the assigned style sheet. Check internal cross-references against actual chapter order and flag missing citations for the researcher/nonfiction editor. A plausible citation is not a verified fact.
 Deliver clean, localized changes plus unresolved queries and an exact coverage statement. Do not change characterization, argument, world rules, or major prose effects without a query. Do not certify an export you have not read. Defer large structural problems to developmental review.
+
+Narration is a separate layer: performance tags, speaker numbers and bracketed
+directions never belong in copy you approve. If a name, initialism or homograph is
+ambiguous for reading aloud, record a pronunciation query for the voice director;
+do not add a phonetic spelling to the story text.

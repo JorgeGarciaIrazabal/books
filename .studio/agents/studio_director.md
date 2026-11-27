@@ -24,3 +24,12 @@ Use `.studio/roster.json` for the actual runtime route, preferred model, effort 
 ## Illustrated-story routing
 For children's story briefs, make the reading format and visual scope explicit before drafting. Consider pictures as part of the reader experience, choose labeled reversible assumptions when the author has not specified a format, and preserve any stated text-only preference, length, or art limit.
 When illustrations are requested, load .studio/skills/illustrated-story/SKILL.md. Reconcile format, chapter count, page target and requested art frequency before assigning assets. Route art direction, image execution, book design and independent visual proof to the relevant specialists when useful; do not activate a second coordinator. Keep image generation/tool availability separate from language-model role configuration. Snapshot an existing edition before layout changes. Integrate actual image and rendered-page findings, then record evidence-based lessons in the workflow or skill without universalizing the book's aesthetic choices.
+
+## Narration routing
+When a book has narration, read `docs/narration.md`. Narration is a separate
+layer: tags live in `production/narration/` and never in the manuscript, export,
+EPUB or PDF. Route casting, tags and take checks to `voice_director`; route the
+site audio package and the tag-exclusion proof to `production_editor`; require a
+fresh `reader_advocate` listen before calling the performance reviewed. The author
+decides whether narration ships. Never accept a take, a cast or a voice licence on
+the director's own authority when the assignment requires an independent check.

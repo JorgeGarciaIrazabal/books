@@ -22,8 +22,8 @@
 
 - Per the author's request, removed and deleted *Mila and the Missing Moon*, *Mila y la luna perdida*, and *Nell and the Pocket-Sized Storm*:
   - Deleted source workspaces `willow-lane/` and `little-weather/`.
-  - Deleted public artifacts `publications/{mila-and-the-missing-moon,mila-y-la-luna-perdida,nell-and-the-pocket-sized-storm}.{epub,pdf}` and `publications/covers/{mila-and-the-missing-moon,mila-y-la-luna-perdida,nell-and-the-pocket-sized-storm}.jpg`.
-  - Updated `publications/manifest.json` (leaving `the-ledger-of-ashes`, `the-quest-of-the-golden-garbanzo`, and `the-hot-potato-of-corporate-castle`), `site/index.html` (removed the three catalog cards and updated the static count to `3 books`), and `tests/test_catalog.py`.
+  - Deleted public artifacts `publications/{mila-and-the-missing-moon,mila-y-la-luna-perdida,nell-and-the-pocket-sized-storm}.{epub,pdf}`, `publications/covers/{mila-and-the-missing-moon,mila-y-la-luna-perdida,nell-and-the-pocket-sized-storm}.jpg`, and `narration/nell-and-the-pocket-sized-storm/`.
+  - Updated `publications/manifest.json` (removed the 3 books, leaving `the-ledger-of-ashes`, `the-quest-of-the-golden-garbanzo`, and `the-hot-potato-of-corporate-castle`), `narration/manifest.json` (`books: []`), `site/index.html` (removed the 3 catalog cards and updated the static book count to `3 books`), and `tests/test_catalog.py` (`SELECTED_IDS` and layout/language assertions updated for the 3 remaining editions).
 - Published to `origin/main` per author authorization.
 
 ## Illustrated edition retrofit for The Quest of the Golden Garbanzo, 2026-11-25
@@ -32,7 +32,6 @@
 - Updated `garbanzo-family/standalone/the-quest-of-the-golden-garbanzo/{assets/illustrations/**,production/visual-style.md,production/illustration-plan.json,production/brief.md,production/build_edition.py,book.json,handoff.md}`, `publications/{the-quest-of-the-golden-garbanzo.epub,the-quest-of-the-golden-garbanzo.pdf,covers/the-quest-of-the-golden-garbanzo.jpg,manifest.json}`, and `site/index.html`.
 - Visually inspected every individual cropped asset and all 9 picture-bearing PDF pages rendered via `pdftoppm` (`p. 1` cover + `pp. 5, 12, 16, 19, 22, 25, 32, 36`). Passed `validate_plan.py --check-assets`, `tools/narration.py validate`, `tools/build_catalog.py build`, and all 60 unit tests. Same-session visual review limit disclosed; published to origin/main per author authorization.
 - Next action: preview the illustrated edition locally (`python3 -m http.server 8000 --directory _site`) and authorize commit/push when ready.
-
 
 ## Default Drama 3 TTS workflow and Golden Garbanzo audiobook update, 2026-11-23
 
@@ -48,7 +47,6 @@
 - **Verification:** `python3 tools/drama3.py doctor`, `python3 tools/narration.py validate` (0 leaked tags across 5 EPUBs/5 PDFs), `python3 tools/build_catalog.py build` (5 books into `_site/`), and `python3 -m unittest discover -s tests -v` (60/60 tests) all passed. **Human listening review is pending.** Published to origin/main per author authorization.
 - **Next action:** Spot-listen to the updated Golden Garbanzo audiobook locally (`python3 -m http.server 8000 --directory _site`) and authorize committing/pushing when ready.
 
-
 ## Goblin Wars text release and Drama 3 audiobook render, 2026-10-27
 
 - The author asked to publish the Goblin Wars series to GitHub Pages. Only Book One, *The Ledger of Ashes*, is complete; the author selected Book One in EPUB, PDF and audio, and authorized public fan publication. Books Two and Three remain roadmap plans.
@@ -60,6 +58,64 @@
 - Deployment: text release commit `8e3fd86`; Pages run [40608512713](https://github.com/JorgeGarciaIrazabal/books/actions/runs/40608512713) succeeded. Audio release commit `7a0da7d`; Pages run [40645325596](https://github.com/JorgeGarciaIrazabal/books/actions/runs/40645325596) succeeded. Live checks passed: four catalogue cards, the goblin reader title/About page, EPUB/PDF/cover sizes and SHA-256 matching the manifest, and an audiobook page with 22 players, 0 autoplay, all `preload="none"`, no phone overflow/no JavaScript errors, and chapter 1 byte size and SHA-256 matching the published manifest. Evidence: `.studio/reviews/goblin-wars-pages-2026-10-27/live-verification.json` and `live-audio-verification.json`.
 - Local state: the text release was prepared and committed in the clean worktree `/tmp/opencode/books-pages`. The main workspace still has the earlier uncommitted narration/adaptive-reader work from 2026-10-26; it is not part of this release. Do not claim that work was published.
 - Next action: listen to chapter 1 and spot-check the names. If the voice is accepted, keep it; otherwise re-render with a chosen voice. Add Books Two and Three only when written.
+
+## Read-aloud layer and web Listen control, 2026-10-26
+
+- The author asked the studio to absorb the speaker/emotion tags, give the web app a read-aloud control, and keep the tags out of the EPUB and PDF. All three landed, and Nell now has a complete 30-page narration package.
+- **Layer, not prose.** `production/narration/` holds the tagged `script.md`, `cast.json` (voices, reference clips, transcripts, hashes, licences), `render.json` and the adapter tools. `narration/<book-id>/` holds the public mono MP3s and manifests. The story files, export, EPUB and PDF never receive a tag.
+- **Proof.** `build_script_pages.py` strips tags and refuses output unless the words match the export; all 30 pages pass. `tools/narration.py validate` also scans 3 published EPUBs and 3 PDFs (`pdftotext`) for tag tokens and reports none. `tools/build_catalog.py` fails the build if a tag appears in a publication.
+- **Reader.** A **Listen** bar appears only for fixed-layout books with a narration block in `catalog.json`. It starts on a click (never autoplay), follows the page, switches track on a page turn, turns the page when a track ends, preloads only the next page, marks the narrated page in the text view, and degrades to silent reading on failure. The catalogue card gains a "Read aloud" badge and credit line.
+- **The package.** Synthetic Kokoro-82M cast (five voices, distinct reference sentences), Drama 3 Q4_K_S on Vulkan, seed 7, 30 pages, 16.8 minutes, 12.1 MB, 96 kbps mono, -22.4 LUFS, -0.7 dBFS. Pages 7, 17 and 27 were retaken at seed 11 (repeat/stall, pace, truncation). 28/30 pages transcribe back exactly; page 18's high "PIP-pip-PIP" is audible but not transcribed.
+- **Pacing** is 100-169 wpm, mean 123, because speaker turns carry 1.3-2.1 s of silence; nine pages are flagged for pace and none for content. Trimming pauses is an author decision.
+- **Rights.** The published cast is synthetic; the earlier Common Voice clone is not published because a public dataset clip is not consent. Credits name "built with Fish Audio Drama 3" and Kokoro-82M. Kokoro is Apache-2.0; per-voice terms still need a check before any commercial use.
+- **Studio and docs.** New `voice_director` contract plus native Codex/OpenCode definitions; `studio_director`, `production_editor`, `drafter`, `line_editor`, `copy_editor`, `canon_keeper` and `reader_advocate` updated; `AGENTS.md`, `.studio/workflow.md`, `.studio/craft.md`, `.studio/skills/read-aloud/`, `docs/narration.md`, `docs/publishing.md`, `docs/tooling.md`, `README.md` and the book templates carry the rules.
+- **Verification.** 57 unit tests pass (five new narration cases: valid package, hash mismatch, page count versus EPUB spine, reflowable refusal, tag inside EPUB rejected). Site build copies 32 narration files and passes all package/hash/link checks. Headless Chrome at 390x844 and 1440x900 ran 17 checks with 0 page errors, including a real request for `page-01.mp3` and preload of `page-02.mp3`.
+- **Not done.** No human listen; no casting decision; dog and twins unvoiced; reflowable books have no read-aloud; no commit or publish. Evidence: `.studio/reviews/narration-layer-2026-10-26/`.
+- Next: listen locally, then decide casting, pause trimming and whether the page audio is published.
+
+
+## Tagged full-cast narration pilot for Nell, 2026-10-26
+
+- Follow-up to the Drama 3 trial: the author asked to add speaker and emotion tags and see the result. A tagged script now exists for 11 of the 30 pages, and it was rendered with five synthetic voices.
+- Tagged script: `production/tts/tagged-pilot.md` at the time (pages 1-4, 12-13, 16, 18, 21, 26, 30), with tag legend, cast table, measured results and listening questions. The pilot was later folded into `production/narration/script.md`; the old `production/tts/` path no longer exists. `build_tagged_pages.py` strips the tags and refuses output unless the words match the untagged page exactly, so the story text is untouched.
+- Cast: five Kokoro-82M reference voices, each reading a **different** neutral sentence (narrator bf_emma 182 Hz, Nell af_bella +4% 203 Hz, Grumble am_puck +30% 152 Hz, Grandma af_heart -18% 147 Hz, Mr. Moss am_onyx -4% 84 Hz). Synthetic stand-ins, not casting.
+- Runtime change: `render_drama3.py` gained `--references`, `--no-direction` and `--session`; five references plus 1,400 max tokens needs `fish_drama3.context_length=4096` because the 2,048 default rejects the request. Everything else is the same audio.cpp/Vulkan/Q4_K_S setup as the previous entry.
+- Result: 11 pages, 5:58, seed 7, -21.9 LUFS, -0.7 dBFS peak in `little-weather/standalone/nell-and-the-pocket-sized-storm/exports/tts-drama3-pilot-tagged/`, including `emotion-probes.mp3`, a same-line reel of eight directions and tags.
+- Evidence that tags work: the five-voice probe separates 180 / 195 / 241 / 165 / 102 Hz; page 18 mixes 134 Hz Grandma, 201 Hz Grumble and 161-180 Hz narration. Directions change duration, level and pitch measurably: whisper to a third of the level, `[laughs]` adds 2 s, `[sighs]` lowers pitch, `<emphasis>`/`<stress>` raise it.
+- Two defects recorded: identical reference transcripts for every voice collapsed the cast toward the narrator and appended a repeat (distinct transcripts fixed it), and seed 1234 appended a repeated line at the end of page 1 (seed 7 clean). Per-page ASR diffs stay mandatory.
+- Pacing: 106-135 wpm versus 155 wpm for the single narrator, because speaker turns carry 1.3-2.1 s of silence. Merging consecutive narrator lines did not shorten page 1 (29.4 s vs 29.6 s).
+- Transcript check: 9/11 pages exact; page 16 only splits "flowerpots", page 26 hears "Brrrumble" as "Brumble", page 18's high "PIP-pip-PIP" is in the waveform but not transcribed.
+- Still open: pages 5-11, 14-15, 17, 19-20, 22-25, 27-29 are untagged; no human listening; no narrator chosen; dog and twins have no voices. Manuscript, canon, art, EPUB/PDF, site and published editions unchanged; nothing committed or published.
+- Evidence: `.studio/reviews/tts-drama3-tags-2026-10-26/{verification.md,metrics.json}`.
+- Next action: listen to the pilot and probe MP3s, then rule on direction density, pacing and the narrator so the remaining 19 pages can be tagged.
+
+
+## Fish Audio Drama 3 narration trial for Nell, 2026-10-25
+
+- The author asked to check whether the Drama 3 TTS model can run on this computer and to try it on *Nell and the Pocket-Sized Storm*. It runs, and it produced a complete 30-page draft narration.
+- Working path: the unquantized `fishaudio/drama-3` checkpoint and its FP8/int4 re-releases need SGLang-Omni or vLLM-Omni, both CUDA-oriented, and this machine has no CUDA and no ROCm toolkit (`hipcc`, `/opt/rocm` absent). Drama 3 was run instead through [audio.cpp](https://github.com/0xShug0/audio.cpp) `c7230db` on the Vulkan backend: locally built `audiocpp_cli`, `Jmica/Drama-3-GGUF` `drama-3-backbone-8bit-experts-Q4_K_S.gguf` (22.91 GiB). Hardware confirmed: Ryzen AI Max+ 395 / Radeon 8060S (RADV GFX1151), 96 GiB VRAM carve-out (`mem_info_vram_total` 103079215104), 32 GiB host RAM; ggml sees a ~37 GiB Vulkan heap, which fits the package.
+- Build detail that cost time: Ubuntu's `glslc` 2025.2 cannot compile ggml's `GL_EXT_integer_dot_product`/`GL_EXT_bfloat16` shaders, and there is no passwordless `sudo`. LunarG SDK 1.4.363 was extracted to `/tmp/opencode/1.4.363.0` and its `glslc`, headers and loader symlink were pointed at by CMake.
+- Result: 30/30 pages in one session, 13:35 of audio, about 15 minutes wall including a 13 s model load, 0.954x real-time generation, 27.9 s mean per page. Master `nell-narration-draft.wav` (sha256 `4483cbc18bd63b36ecc456377109871fc158a53c3bb299d3f68ee5d52e194818`), an MP3 listening copy, per-page WAVs, `checks.json` and the batch manifest are in `little-weather/standalone/nell-and-the-pocket-sized-storm/exports/tts-drama3-v1/` (gitignored).
+- Fidelity: every take was transcribed with faster-whisper and diffed against the source. Page 16 exposed the important setting: at the model's 128-character chunk default it inserted "Watch them now." and left an 11 s silence, so `text_chunk_size=4000` is required for page-level takes. Page 22 rendered "Grandma let out the breath" instead of "Nell" and was re-rendered at seed 7. Page 20's "His rain stopped" transcribes as "reins/reign" at both seeds and is unresolved without a human listen.
+- Added: `production/tts/{build_narration_pages.py,render_drama3.py,check_narration.py,notes.md}` in the book, `.studio/reviews/tts-drama3-2026-10-25/{verification.md,metrics.json}`, both `tasks.json`, both handoffs. Manuscript, canon, illustrations, EPUB/PDF, site and published editions unchanged.
+- Not established: no human listening, no approved narrator reference (the trial uses the Common Voice clip published in the model card), Q4_K community quantisation rather than the FP8 original, and per-character timbre only plumbing-tested. Nothing was committed, published or uploaded.
+- Next action: listen to the draft MP3, mark bad pages, then choose or record a 10–30 s narrator reference and decide on character voices before any narration edition exists.
+
+
+## Adaptive text reading for fixed-layout books, 2026-10-25
+
+- The author asked to use phone and tablet space better: stop forcing a fixed picture-book page into one screen, let the text adapt to the screen, and allow larger text. The change adds a continuous text view for fixed-layout books while keeping the illustrated page view.
+- Changed paths: `site/reader.html`, `site/assets/css/styles.css`, `site/assets/js/reader.js`, `docs/publishing.md`, `tasks.json`, `handoff.md`, and `.studio/reviews/site-adaptive-reader-2026-10-25/**`. No catalog HTML/JS, manuscript, EPUB, PDF, cover, manifest, build tool, vendored library, or workflow changed.
+- The text view reads the book's own 30 page documents through the EPUB.js archive already in memory. It keeps the real text, chapter headings, 12 illustrations, alt text, and reading order, and presents them in one continuous scroll with page rules, page numbers, a page-aware status, contents jumps, saved section/scroll, and 90–170% text sizing.
+- A `Text` / `Pages` button appears for fixed-layout books. Text is the default on phones (390px and 320px), phone landscape, tablet landscape, and short landscape laptops up to 1399×820. Tablet portrait and a 1440px desktop keep the illustrated page by default. The choice is saved per book, and switching preserves the current page.
+- The illustrated page view is unchanged: it still measures the rendered page body and fits the native 720:912 ratio.
+- Reflowable Mila editions now start at 115% on phones (18.4px), 110% on tablets (17.6px), and 100% on desktop (16px); the existing 90–170% controls and saved preference remain.
+- Measured: Nell's phone fixed page was 380×482 with about 11.8px text and 244px of unused vertical space. The text view now fills 390×676 with 19px text (32.3px at 170%). The 320px header was initially 155px from a three-row wrap and is now 106px with a 472px reading area. Tablet landscape now uses an 800×624 text view instead of a height-limited 512×649 page. Laptop 1280×800 uses an 800×650 text view. The 1440px desktop keeps the 589×746 page at 0.789 and offers a 736×746 text view with a 672px reading measure.
+- Verification: 51 unit tests passed; `tools/build_catalog.py build` passed all manifest, package, hash, and link checks; `node --check` passed; Playwright covered 320×640, 390×844, 844×390, 768×1024, 1024×768, 1280×800, 1366×768, and 1440×900, all three books, both reader modes, all 12 illustrations, catalog filters/empty state, saved positions, font persistence, Start over, contents jumps, and page turns. No horizontal overflow or JavaScript page/console errors were observed. At 320px and 170% text, the body is 32.3px with no overflow; PageDown scrolls the focused text view.
+- Evidence: `.studio/reviews/site-adaptive-reader-2026-10-25/verification.md`, `metrics.json`, two reproducible Playwright scripts, and curated screenshots.
+- Limits: browser QA used headless Chrome with emulated viewports, not physical phones/tablets or every browser. It is not a new literary review or an accessibility certification. The text view is an additional reading mode; the illustrated pages remain available.
+- Publishing: **not performed.** This follow-up change is in the local working tree only and has not been committed or pushed. The previous release remains live at commit `a135b26` (site `f045b63`, Pages run 40258816097).
+- Next action: author review and explicit approval to publish; then commit only the site/docs/tasks/handoff/review paths, push `main`, watch the Pages run, and verify the live phone text view and tablet page view. Do not include the unrelated uncommitted `.opencode/agents/*.md` and `.studio/workflow.md` step-budget edits.
 
 ## Responsive catalog and reader redesign, 2026-10-25
 

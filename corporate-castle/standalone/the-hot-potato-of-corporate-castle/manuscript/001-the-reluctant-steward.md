@@ -1,96 +1,202 @@
 # Chapter One: The Reluctant Steward
 
-The wooden barge had a faint, stubborn lean to the left.
+"What do you recall happening that day?"
 
-Marissa had tried shimming her folding table with two outdated editions of The Codex, which leveled her coffee mug well enough, though every time a delivery boat passed down the moat, her monitor tilted a quarter inch toward Liability Tower’s sheer stone wall. Outside the narrow porthole, the tower’s drawbridge rose like a raised eyebrow. Nobody from inside had come down to welcome the ER Watch, offer them desks, or even ask whether the barge leaked.
+Marissa kept her voice mild and open, giving him every chance to handle this like an adult.
 
-It did, slightly, near the far corner where Sarai had propped an umbrella over a stack of intake binders.
+Across the Zoom lair, Elliot, High Lord of Engineering, leaned back with a matte-black espresso cup, his eyes flicking toward a second monitor as he half-listened. Behind him hung two sleek, minimalist prints: *First Principles* and *Disagree and Submit*. He wore the relaxed, faintly bored expression of a man used to being the smartest person in every room he entered, radiating the quiet contempt of a High Lord who had decided the woman on his screen was some compliance clerk wasting fifteen minutes of his Friday checking a box because she did not know who he was.
 
-"Think of it as waterfront property," Sarai said from across the cabin, tapping a steady rhythm against her keyboard. "Fresh air. Minimal Courtier foot traffic. And if Lord Sterling ever decides to untie the rope, we float straight into early retirement."
+"I don't recall," Elliot said smoothly, taking a slow sip. "We were in the middle of a massive platform migration that week, and I was preoccupied with keeping the castle’s infrastructure upright. Beyond that, I really have nothing to add."
 
-"Check the mooring line before lunch," Marissa said without looking up from her screen. "I do not trust the knot."
+"Okay," Marissa said. "Can you tell me who was there that day?"
 
-Even on a listing barge with zero budget, working under Doctor Lois, Grand Archivist of Liability, was not actually so bad. Marissa missed High Lady Lexi more than she cared to admit, especially the quiet shield Lexi had kept over the dungeon for years. Yet professionally speaking, reporting across the moat came with an unexpected relief. Doctor Lois did not ask anyone to hold space, circle back with radical warmth, or align on feelings. Draped in a razor-sharp charcoal blazer with a glowing red fountain pen tucked behind her ear, Lois presided over towering shelves of ironbound Spellbooks of Deep Magic like a winter storm in tailored wool. She offered zero mentorship, zero advocacy, and the unmistakable posture of an aristocrat waiting for someone to come collect four borrowed children left outside her front gate.
+Elliot smiled lazily, leaning an elbow onto his desk as if humoring a clever technicality. "Well, that's a different question. Do you want me to pull up the calendar invite to see who was invited?"
 
-Still, Lois spoke Deep Magic fluently. On a crisp Tuesday morning in October, a single thirty-minute Zoom lair reminded Marissa why she would take Lois’s frostbite over pastel theater any day of the week.
+This was the moment Marissa decided Elliot had chosen The Hard Way. Her fingers stopped on the keyboard, and her voice whipped across the Zoom lair, razor sharp.
 
-The call had been summoned by Brittany, Sales Courtier of Optics, who floated onto the grid bathed in flattering ring light, clutching a lavender-scented copy of The Grimoire of Optics bound in ivory linen and dotted with tiny sparkle icons.
+"You can't recall who your most senior engineers are?"
 
-"Thanks so much for holding space with me, team," Brittany chirped, already releasing a shimmering haze of Buzzword Hypnosis across the Zoom lair. "One of our Sales Warlords needs to move swiftly on an Okta Excommunication before Friday’s pipeline review. The rep is just creating a real energy-alignment friction on the floor. Totally a vibes mismatch. We would love a quick green light so we can protect the team’s psychological safety."
+The smug half-smile froze on Elliot’s face. His eyes stopped flicking toward his second monitor. In a single heartbeat, the faint boredom drained away, replaced by the sudden, icy realization that he had severely misjudged the situation he was in.
 
-A wave of synthetic lavender rolled out of the speakers. Up in the Tower of Vibes, that sort of Illusion Magic could lull an entire committee into nodding along before lunch. Down on the barge, it barely lasted three seconds.
+"I... Marcus was there," Elliot said, sitting upright fast. "Devon. Priya. And two of my directors."
 
-Marissa did not interrupt, lean forward, or raise her voice. She stayed completely still, letting Brittany’s smile hang in the quiet air until the silence itself began to pull at the edges of the glamour. Then she opened her True-Sight.
+Marissa did not give him a second to catch his breath.
 
-The pastel fog dissolved on the spot. Beneath Brittany’s shimmering cloud of energy-alignment friction, the actual record snapped into unforgiving relief: the rep had exceeded quota two quarters running, carried not a single Writ of Warning in his file, and forty-eight hours earlier had sent a Slack-rune reporting his Warlord for shaving commission splits off junior reps.
+"I received the concern that when harassment in your fiefdom was brought directly to you, an employee looked at you and said, 'Elliot, protect me.'"
 
-"This is not a vibes mismatch, Brittany," Marissa said mildly, her tone so even it could have been a weather report. "There is zero performance history here, no coaching record, and no Trial by PIP. What there is, however, is a protected wage complaint filed two days ago."
+Elliot swallowed, scrambling back for his smooth armor. "I don't recall anyone saying that to me."
 
-Brittany’s smile stiffened, a curl of pink illusion-smoke sputtering out beside her ring light. "Well, the Warlord feels the trust is broken, and he really wants to rip the band-aid off before the weekend."
+"I also received the concern that when it was brought to you, you laughed and did nothing," Marissa continued.
 
-Marissa raised The Mirror Ward. She did not lecture or scold. She simply held up the clean glass of what Brittany’s quick green light would actually build. "If your Warlord executes an Okta Excommunication seventy-two hours after a commission complaint, he is not protecting anyone’s psychological safety. He is handing a plaintiff’s attorney an open-and-shut retaliation claim wrapped in ribbon. Every judge in the realm will look at that timeline and conclude he fired the rep for speaking up."
+"I don't recall that either," Elliot said, losing the easy sprawl completely. "I was preoccupied with keeping production alive. I know it sounds horrible. I don't recall."
 
-Brittany blinked at the reflection of a tribunal staring back at her and sank half an inch into her velvet chair. "Right, totally hear that, love the rigor, super helpful context. Just thinking out loud, though, what if the Warlord frames it as a role restructuring?"
+"So you're telling me you didn't hear these things because you weren't paying attention?"
 
-Across the grid, Doctor Lois had not shifted a millimeter in her leather chair. She did not sigh or soften the blow. She simply unclipped the glowing red fountain pen from behind her ear and tapped it once against the spine of an ironbound Spellbook.
+Elliot blinked, his jaw tightening. "That's correct."
 
-"No," Lois said flatly.
+"Do you have any thoughts as to why I would be receiving these types of concerns about you?"
 
-Brittany froze. "No?"
+He opened his mouth, hesitated, and said, "I don't know."
 
-"Marissa’s analysis is exact," Lois said, her voice cool and clipped as a guillotine blade. "Calling a retaliatory firing a restructure two days after a wage complaint does not hide the timeline. It adds pretext to the file and triples the damage. Tell your Sales Warlord the answer is no. He does not touch the rep’s access, he does not alter his territory, and he waits until ER completes its Formal Inquiry into the commission splits."
+"Are you saying these people are making inaccurate statements about you?"
 
-In the bottom square of the Zoom lair, Sir Leo, Counsel of Liability, unmuted just long enough to offer a dry, appreciative nod. "Plus one to Marissa and Lois. Keep the Warlord away from Okta until the inquiry closes."
+The air left the Zoom lair all at once.
 
-"Got it," Brittany squeaked, her ring light seeming to lose half its wattage. "So aligned. Super grateful for the thought partnership. I will go socialize that with Sales!"
+Elliot leaned forward, then back, suddenly trapped between calling his own senior staff liars and admitting he had heard every word of harassment and laughed anyway.
 
-Her square winked out.
+"No!" he sputtered, color surging fast above his quarter-zip. "No, I'm not saying anyone is lying. I'm saying I don't recall."
 
-For two quiet seconds, Marissa and Lois looked at each other across the remaining tiles. There was no warmth in Lois’s eyes, no praise, no camaraderie. There was only clean, shared precision.
+Marissa let the silence hang.
 
-"Send the recap E-parchment before noon," Lois said, already glancing at her second monitor. "Include the Warlord’s High Lord if Brittany tries to soften the wording."
+"Elliot," she asked simply, "do you know what your obligation is as a High Lord when you receive this type of concern?"
 
-"Already drafting it," Marissa said.
+His head snapped up.
 
-Lois gave a single brisk nod and clicked off.
+Every last shred of High Lord polish evaporated in an instant. For years, Illusion Magic had bounced straight off Elliot’s skull. Today he learned that Deep Magic did not bounce. It cut straight through the title to the bone.
 
-Marissa exhaled slowly, a small, genuine flicker of relief settling in her chest. That was why she could work with Lois. No lavender fog, no pretending a retaliation trap was an energy misalignment, no wrestling over basic reality. They read the same Codex and landed on the same line in sixty seconds flat.
+"To tell someone like you," he said low, staring straight into the camera, "so that it can be looked into, and you can determine whether it's a Crime Against the Codex." He swallowed hard. "And I'm glad you're doing what you're doing."
 
-The moment the Zoom lair closed, Marissa practiced her favorite piece of everyday survival magic: The Ink-Bind. Unwritten magic evaporated by sundown in Corporate Castle, and the Tower of Vibes suffered from chronic selective amnesia. She opened a crisp E-parchment, copied Brittany, Lois, and Leo, and froze the entire call in permanent ink: *Per our discussion today, ER and Liability advised against termination given the protected wage complaint filed forty-eight hours ago and the absence of any prior performance documentation. An ER Formal Inquiry is now open.*
+Marissa held his gaze, keeping a tight leash on the cold, righteous anger creeping into her voice. She was done being polite to his ego.
 
-She hit Send, and took a sip of coffee.
+"You are a High Lord and a leader, Elliot," she said. "Your team looked to you for leadership in that moment, and they felt that you dismissed them. Can you understand that perspective?"
+
+Elliot looked down at his desk, suddenly small beneath *First Principles* and *Disagree and Submit*. "Absolutely," he said quietly. "Absolutely."
+
+"Thank you for your candor," Marissa said, typing the final line into her case log. "I will follow up once the Formal Inquiry concludes."
+
+She clicked End Meeting. Fifteen minutes on the dot. Marissa was not the Royal Inquisitor for nothing.
+
+Before the echo of the call had faded across the courtyard, Marissa opened a Slack-rune channel to Sienna, Engineering Courtier of Optics, and typed three brisk lines: *Finished with Elliot. He acknowledged the failure and admitted he dropped the ball. Please connect with him today to reinforce strict non-retaliation. Do not name the complainant, keep it general, and make sure he does not touch her scope or team.*
+
+Nobody had to spell out the complainant’s name. Everyone in the loop unspokenly knew Elliot already knew who she was.
+
+Marissa hit Send and let out a quiet breath. Across her desk, the record was clean, unspinnable, and sealed tight.
+
+Before she could even open her draft Scroll of Findings, a piercing shriek of audio feedback rattled every windowpane in the cabin.
+
+*SCREEEEECH.*
+
+Outside the porthole, two moat ducks flapped indignantly off the water as a brass loudspeaker bolted halfway up Liability Tower’s sheer stone wall cleared its throat.
+
+A cool, clipped voice crackled across the moat. "Attention. Effective immediately, the Employee Relations Watch is joining the Counsel of Liability on an interim basis under the oversight of the Grand Archivist. Please direct all standard docket escalations accordingly. That is all."
+
+The loudspeaker clicked dead.
+
+Inside the leaking cabin of the abandoned wooden barge, Marissa, Sarai, Riley, and Victoria froze over their keyboards and exchanged a long, incredulous look.
+
+"Was that our welcome orientation?" Victoria whispered.
+
+Sarai stood up, grabbed her rain jacket, and gestured toward the narrow deck door. "Come on. Let us see if anybody actually plans to let us off this boat."
+
+The four of them stepped out onto the damp wooden planks shoulder to shoulder, squinting up at sixty feet of sheer gray masonry. Nobody had sent a welcome E-parchment. Nobody had unlocked a badge. Nobody had even thrown down a fresh rope.
+
+Sarai cleared her throat, plastered on the brightest corporate smile she could muster beneath an overcast sky, and cupped her hands around her mouth.
+
+"Hello up there!" Sarai called cheerfully toward the narrow stone windows. "We are *so* excited to join the org and get to know everyone!"
+
+Riley and Victoria hesitantly lifted their hands in small, hopeful waves, testing the waters with gamely faked enthusiasm. "Thrilled to partner with you all!" Riley shouted up the tower wall. "Happy to grab coffee chats whenever!"
+
+Along the third and fourth floors, three or four curious Counsel of Liability attorneys leaned toward their glass panes, squinting mildly down at the four people yelling up from an abandoned wooden barge with cardboard file boxes stacked around their ankles. One gave a polite, baffled half-nod before drifting back to his desk.
+
+High above them on the sixth floor, a pair of tall leaded windows stood open behind dark drapery. There stood Doctor Lois, Grand Archivist of Liability, crisp in a razor-sharp charcoal blazer with a glowing red fountain pen tucked behind her ear.
+
+Lois peered down over the stone sill. She did not wave. She did not smile. She paused just long enough to verify two essential facts: first, that the crew on the barge had heard the required announcement, and second, that none of them were marching toward the drawbridge expecting to be let inside.
+
+Satisfied that the mandatory message had been delivered, Doctor Lois reached up and calmly pulled the heavy velvet curtain shut.
+
+Below her, Liability Tower’s iron drawbridge did not budge an inch.
+
+Silence settled back over the moat. Slowly, four waving hands dropped back to four rain-jacket pockets as the reality sank in: nobody was coming to usher them off the abandoned barge.
+
+"Well," Sarai said brightly, turning back toward the leaking cabin door, "I feel *deeply* onboarded."
+
+"Check the mooring line before lunch," Marissa said dryly, stepping back inside toward Elliot’s case file. "I do not trust the knot."
 
 ***
 
-High across the moat, inside the pastel atrium of the Tower of Vibes, Brittany burst out of a frosted-glass sound booth clutching her Grimoire of Optics to her chest as though it had failed to stop an arrow.
+Two hours later, high across the moat inside a frosted-glass lounge in the Tower of Vibes, Sienna stared at the wall clock in quiet horror as her oat-milk matcha went completely cold.
 
-"They did it again!" Brittany hissed, dropping onto a blush-velvet banquette beside Sienna, Engineering Courtier of Optics. "Not even five minutes into the call! I barely got past *holding space* before Marissa dismantled the whole deck, and Lois backed her up without blinking! What is the point of shipping ER over to Liability Tower if they just become twice as allergic to velocity?"
+Across the blush-velvet sofa, the untouchable High Lord of Engineering sat with his elbows on his knees, clutching a lavender stress ball like a life preserver.
 
-Sienna did not look up from her matcha latte. "Did your Warlord actually have a Writ of Warning?"
+"I completely messed up, Sienna," Elliot said for the ninth time in ninety minutes. "I went in there thinking she was just checking a box! I tried to ask if she wanted me to pull the calendar invite, and she shredded me right through the screen. She threw my own word *preoccupied* right back in my face, asked if I knew my obligation as a High Lord, and before I knew it I was staring at my desk apologizing! Fifteen minutes! I folded in fifteen minutes!"
 
-"He had *concerns*, Sienna! Deep, intuitive, leadership concerns!" Brittany flipped frantically through the lavender-scented pages of her Grimoire, showering tiny silver sparkles onto the marble coffee table. "There has to be a workaround in Chapter Four. Maybe *mutual role evolution*? What about *strategic uncoupling*?"
+Sienna flipped frantically through her ivory-linen copy of The Grimoire of Optics, scattering tiny silver sparkles across her lap while praying her ring light did not overheat. "Breathe, Elliot. We are holding space for this growth moment. You are *not* ruined. You just need to walk back onto the engineering floor with radical steadiness."
 
-"Neither of those survives a wage complaint," Sienna muttered, though she lowered her voice so none of the passing High Lords would hear her sounding dangerously close to a blocker. "Wait until the new Lead Courtier finishes onboarding. Word is Sterling hired her to bring real executive polish back to the floor."
+"What if I go pull her aside right now and apologize?" Elliot asked, half-rising off the velvet cushions. "Just clear the air! Show leadership!"
 
-As if summoned by the mention of polish, the glass elevator doors chimed open.
+"Sit down!" Sienna yelped, dropping the Grimoire onto the coffee table as her soothing Courtier cadence snapped completely in half. "Do *not* pull anyone aside! Do not send a late-night Slack-rune, do not change her sprint assignments, do not look sideways at her code reviews, and do not mention the inquiry to a living soul unless you want to hand Marissa a retaliation claim before dinner!"
 
-Out floated a vision in head-to-toe ivory cashmere, trailing a faint scent of sandalwood and freshly pressed vision statements. Her ring light had not yet been unpacked, yet she somehow appeared lit from above. In one hand she balanced an oat-milk cortado; in the other, a tablet glowing with a freshly drafted castle-wide welcome E-parchment.
+Elliot sank back into the sofa, staring blankly at a diffuser puffing synthetic eucalyptus into the air. "I have survived three board reorganizations," he whispered. "Nobody in this castle has ever talked to me like that."
 
-"Good morning, team!" Baroness Orla of Optics beamed, her smile bright enough to trigger a glare warning. "I am just *so* thrilled to step into this sanctuary and co-create synergistic, human-centric alignment journeys with every single one of you!"
+It took Sienna another forty-five minutes, two fresh cups of chamomile tea, and every calming platitude in Chapter Six of the Grimoire to glue Elliot’s ego back together enough to walk him safely to the elevator without triggering a federal lawsuit.
 
-Brittany gasped softly, clutching her Grimoire as though witnessing an angel descend into a dark quarter. "Oh, thank goodness. Do you happen to know a good spell for getting past Liability?"
+The moment the elevator doors slid shut, Sienna sagged against the glass wall and ran straight into Baroness Orla of Optics, gliding past in head-to-toe ivory cashmere with an oat-milk cortado in hand.
 
-Orla tilted her head with practiced, radiant empathy. "Darling, we never fight friction. We elevate executive clarity through radical warmth until friction simply dissolves." She floated gracefully down the corridor toward a corner lounge, pausing only to tap Send on her tablet.
+"Sienna, darling, you look positively frazzled," Orla beamed beneath her effortless glow. "Everything aligned in Engineering?"
 
-Back on the banquette, Brittany’s phone chimed. She scanned the welcome E-parchment, eyes wide with reverence. "She used *co-create* three times in one paragraph," Brittany whispered. "We are finally saved."
+"Elliot just spent two hours on my couch having a full existential meltdown," Sienna breathed, still blinking. "The Royal Inquisitor down on the barge dismantled him in fifteen minutes flat. He admitted everything."
+
+Orla’s practiced smile froze halfway to her cheekbones. Every Courtier in the Tower of Vibes knew Elliot was notoriously immune to Illusion Magic; buzzwords bounced straight off his engineering skull like rain off granite.
+
+"The investigator on the *barge*?" Orla murmured, her eyes sharpening with sudden, glittering calculation. "Fascinating."
+
+***
+
+Three days later, Marissa closed Elliot’s Formal Inquiry in a thirty-minute Zoom lair with Doctor Lois, Sir Leo, and Baroness Orla.
+
+On screen, Marissa walked cleanly through the Scroll of Findings she had prepared from the ER Vault: the harassment complaint in Elliot’s fiefdom was substantiated and carried an immediate Okta Excommunication for the offending manager; Elliot’s dismissal of the concerns brought directly to him was substantiated as a Crime Against the Codex, carrying a Final Writ of Warning, mandatory leadership remediation, and formal removal from his next calibration cycle.
+
+Across the grid, Doctor Lois did not ask to soften a single line, hedge a verb, or protect Elliot’s feelings. Draped in her razor-sharp charcoal blazer, she glanced down at Marissa’s findings, tapped her glowing red fountain pen once against her mahogany desk, and gave a single crisp nod.
+
+"Clean record," Lois said flatly. "The manager goes today. The Final Writ for Elliot holds. Make sure the non-retaliation warning is bound in ink before five o’clock."
+
+"Already drafted," Marissa said.
+
+In the corner square, Sir Leo offered a quiet, approving grin. "Plus one to Marissa and Lois. Airtight."
+
+For half a beat, Marissa felt a genuine wave of respect settle behind her ribs. This was what it looked like when Deep Magic worked the way it was meant to. No lavender fog, no bending to rank, no pretending a High Lord’s amnesia was leadership. They read the same Codex and landed on the same truth in minutes.
+
+In the fourth square, Baroness Orla sat bathed in her blinding ring light, staring at Marissa with something dangerously close to awe.
+
+"Marissa, I just have to pause and honor this moment," Orla said, clasping her hands beneath her chin. "Sienna told me how Elliot walked out of your lair. That man has shrugged off every Courtier in this castle for four years, and you broke straight through him in fifteen minutes without raising your voice."
+
+Orla leaned closer to her camera, her eyes gleaming. "Between us, Elliot is up for a major elevation at the High Table next quarter. Would you mind if I share this outcome with Lord Sterling so leadership has the full picture before they move him any higher?"
+
+Marissa looked back at Orla through the screen without a flicker of triumph or political heat. She had already neutralized the threat to Elliot’s guild, removed the harasser, protected the complainant, and balanced The Credibility Scales. Whether Elliot climbed another rung on the castle’s ladder was Sterling’s business, not hers.
+
+"Sure," Marissa said with an easy, unbothered shrug. "Go ahead."
+
+Orla blinked, visibly startled that the woman who had just felled an untouchable High Lord had zero interest in cashing in the political trophy. "Amazing. Truly, such grounded clarity. Thank you, team!"
+
+The squares winked out one by one.
+
+Marissa performed Vault-Sealing on Elliot’s Scroll of Findings, locking every verified note and exhibit inside the ER Vault, and fired off her Ink-Bind recap E-parchment copying Lois, Leo, and Orla so unwritten magic could not evaporate by sundown.
+
+Ten seconds later, a private Slack-rune pinged from Sir Leo.
+
+*Like a knife through butter,* Leo typed. *You just saved me at least six hours of cleaning up an Engineering lawsuit, and watching Orla’s jaw hit her cashmere was worth the price of admission alone. Always a joy watching a fellow licensed practitioner cook.*
+
+Marissa let out a quiet laugh. Leo was one of the few knights of Deep Magic in the castle who truly respected her craft as an equal, and his dry wit made gray mornings bearable. Then a second Slack-rune popped up right underneath.
+
+*Also, did you hear Lois barely even glanced up when I chimed in on that call? She has been freezing me out all week since I flagged a gap in her vendor template. Honestly, Marissa, you have no idea how exhausting it is getting zero warmth or recognition from her up here.*
+
+Marissa stared at the glowing text for two slow seconds. Above her left shoulder, a steady drop of rainwater plinked off the barge’s roof beam onto the open umbrella Sarai had propped over their intake binders. Her folding table tilted a quarter inch every time a delivery boat passed down the moat, and the ER Watch did not even have a budget line for dry folders, let alone recognition.
+
+She felt that familiar, quiet prickle of irritation behind her ribs. Leo knew perfectly well how much heavy lifting she carried off his plate, and he gladly took advantage of the lighter load even while venting to her about frostbite from inside a dry stone tower with real chairs.
+
+Still, she breathed out and let the sting pass. Leo was her friend, he genuinely had her back when real trouble hit, and putting up with his blind spot was simply the unspoken tax of his allyship.
+
+*Truly tragic conditions inside the stone walls,* Marissa typed back deadpan. *Let me know if you need us to row up a space heater.*
+
+*Haha, fair,* Leo replied instantly. *Send me the next ugly docket file whenever it lands. I have got your back.*
 
 ***
 
 Across the moat, six floors above the bobbing wooden barge, Doctor Lois sat behind her mahogany desk in Liability Tower, reading Marissa’s crisp Ink-Bind E-parchment with quiet, clinical satisfaction.
 
-Not a wasted word. Clean chronology, airtight risk framing, zero emotional clutter. Having a licensed practitioner of Deep Magic sitting outside her drawbridge had saved Lois at least four hours of cleaning up Sales’s stupidity this week alone.
+Not a wasted word. Clean chronology, airtight risk framing, zero emotional clutter. Having a licensed practitioner of Deep Magic sitting outside her drawbridge had just defused an Engineering harassment time bomb without Lois having to break a sweat.
 
-Sir Leo leaned in through her open doorway holding a stack of severance templates. "Marissa handled that cleanly. By the way, Facilities pinged me about the ER Watch’s space. Apparently the barge roof leaks whenever it rains, and their budget code is still frozen under Vibes. Do you want me to send a note to Lord Sterling about moving them into the third-floor annex or unlocking a contractor stipend?"
+Sir Leo leaned in through her open doorway holding a stack of severance templates. "Marissa handled Elliot cleanly. By the way, Facilities pinged me about the ER Watch’s space. Apparently the barge roof leaks whenever it rains, and their budget code is still frozen under Vibes. Do you want me to send a note to Lord Sterling about moving them into the third-floor annex or unlocking a contractor stipend?"
 
 Lois did not even glance up from her Spellbook. "No."
 
@@ -104,13 +210,13 @@ Leo studied her for a beat, recognizing the exact point where logic hit the ston
 
 ***
 
-Down on the barge, Friday afternoon arrived with a steady barrage of frantic pings. Every ten minutes, another Courtier of Optics sent a Royal Summons for a "quick five-minute sync" about a High Lord performance plan, a messy reorg, or an impulsive Warlord looking for a shortcut around The Codex.
+Down on the barge, Friday afternoon brought a steady barrage of frantic pings. Every ten minutes, another Courtier of Optics sent a Royal Summons for a "quick five-minute sync" about a High Lord performance plan, a messy reorg, or an impulsive Warlord looking for a shortcut around The Codex.
 
-By three o’clock, Marissa rubbed the bridge of her nose and took a long pull of cold black coffee. Across the tilted cabin, Victoria leaned calmly into her headset as a Customer Service Warlord’s voice crackled loud enough to rattle the porthole glass.
+By three o’clock, Marissa rubbed the bridge of her nose and stared at her overflowing calendar. Across the tilted cabin, Victoria leaned calmly into her headset as a Customer Service Warlord’s voice crackled loud enough to rattle the porthole glass.
 
 "I hear that you are frustrated," Victoria said evenly, her fingers steady over a blank Writ of Warning template. "The Codex still requires coaching notes and a formal warning before we even discuss an Okta Excommunication. If you want to skip those steps, that is your call. I am only giving you a recommendation. You are the decision-maker."
 
-The Warlord sputtered, lost all momentum, and muttered that he would start with coaching notes. Victoria muted her mic and raised a triumphant coffee mug toward the ceiling.
+The Warlord sputtered, lost all momentum, and muttered that he would start with coaching notes. Victoria muted her mic and pumped a triumphant fist toward the ceiling.
 
 Two paces to her left, Riley was quietly talking an Engineering Warlord off a cliff of his own, walking him back line by line from issuing a surprise Trial by PIP to an engineer whose ticket counts had dipped the exact week she asked for a flexible schedule. Riley did not cite a single statute or case number. Riley simply asked two calm, honest questions until the Warlord heard how ridiculous his own draft sounded aloud and deleted it on the spot.
 
@@ -122,51 +228,31 @@ Marissa turned back to her screen and pulled Sarai into a private Zoom lair from
 
 Sarai laughed, a warm, grounded sound that immediately loosened the knot behind Marissa’s shoulders. "You should not even be in those calls, Marissa. You belong inside the ER Vault, not refereeing Warlords who skipped every single chapter of The Codex."
 
-"I have three crown-level Formal Inquiries stacking up," Marissa admitted, gesturing toward her stacked monitors. "Every time I get halfway through a witness timeline, Brittany or Sienna drops a *quick check-in* on my calendar that turns into an hour of decoding The Grimoire of Optics."
+"I have three crown-level Formal Inquiries stacking up behind Elliot’s," Marissa admitted, gesturing toward her stacked monitors. "Every time I get halfway through a witness timeline, another Courtier drops a *quick check-in* on my calendar that turns into an hour of decoding The Grimoire of Optics."
 
 "Hand me the baton," Sarai said without hesitating. "Seriously. Give me the Courtier advising queue. Riley and Victoria are already holding the courtyard line like veterans."
 
-"Are you sure?" Marissa asked quietly. "The Courtiers are relentless right now, especially with that new Baroness floating around upstairs."
+"Are you sure?" Marissa asked quietly. "The Courtiers are relentless right now, especially with Baroness Orla floating around upstairs."
 
-As if on cue, a Slack-rune from Sarai pinged in the corner of Marissa’s screen, forwarding Baroness Orla’s castle-wide welcome E-parchment.
+Sarai grinned across the cabin and forwarded Orla’s latest castle-wide Slack-rune, dotted with silver sparkles and thanking everyone for *co-creating synergistic, human-centric alignment journeys*.
 
-*Did she really just write that she is "thrilled to co-create synergistic, human-centric alignment journeys"?* Sarai typed, grinning across the cabin.
+*Did she really use "co-create" three times in one paragraph?* Marissa typed back.
 
-*Three times in one paragraph,* Marissa typed back. *And apparently her favorite superpower is "elevating executive clarity through radical warmth."*
-
-*Pray for the Squires if she ever finds the gangplank to the barge,* Sarai replied.
+*And apparently her favorite superpower is "elevating executive clarity through radical warmth,"* Sarai replied. *Pray for the Squires if she ever finds the gangplank to the barge.*
 
 "I have got the queue," Sarai said aloud, her voice steady and firm. "Go do what you were built for. Let me guard the door."
 
 ***
 
-For the next two weeks, the barge felt less like an exile and more like a sanctuary.
+With Sarai shielding the front door, the next week on the barge felt less like an exile and more like a sanctuary.
 
-With Sarai absorbing the frantic Slack-runes from the Tower of Vibes, Marissa could finally breathe. She stepped back into the quiet, exacting craft that had drawn her to Employee Relations in the first place.
+Marissa closed her final debrief with the junior engineer from Elliot’s fiefdom, confirming that the harassing manager was gone, her transfer request was approved, and strict non-retaliation safeguards were locked in writing. The young woman did not cry or deliver a speech. She simply let out a long, shaking breath she looked as though she had been holding since spring, and said, "Thank you. I honestly did not think anyone could touch them."
 
-On Wednesday morning, a Senior Director in Product marched into her Zoom lair, jaw tight and posture bristling. Two female engineering leads had filed a complaint alleging he had systematically buried their promotion packets after they pushed back on an unrealistic product timeline, then quietly reassigned their flagship work to a junior male favorite. He arrived spoiling for a brawl, cutting straight across Marissa’s opening remarks to rant about *oversensitive juniors* and *bureaucratic witch hunts*.
-
-Marissa did not flinch, argue, or match his volume. She sat in complete, unhurried stillness and cast The Velvet Snare.
-
-Her voice dropped into a steady, polite cadence completely stripped of heat or judgment. His anger had nothing to grip. She let him talk until his own shouting echoed awkwardly in the quiet room, waiting a full beat after he ran out of breath so the silence did the heavy work. Then, with gentle precision, she laid down one simple chronological question after another: when the timeline feedback was sent, who held edit access to the calibration deck, why two ratings had been downgraded forty-eight hours after the architecture review, and why the stated "communication gap" never appeared in a single one-on-one note all year.
-
-She never accused him. She simply sealed off each exit in calm, numbered order until, twenty minutes in, he casually contradicted his own Slack-runes from April and sat staring at his webcam in sudden, sweating silence.
-
-When the final witness interviews wrapped on Thursday afternoon, Marissa cleared her desk and laid every transcript, timestamp, and calibration edit across The Credibility Scales.
-
-The beam tipped cleanly and unmistakably. A substantiated Crime Against the Codex.
-
-Rather than guessing at the remedy or bending to the Director’s tenure, Marissa reached into the deep well of HR Lore stored in her head. She remembered two nearly identical retaliation-and-calibration cases from eighteen months prior, opened the ER Vault, and Summoned Ancient Precedent. The ghosts of those prior rulings anchored her recommendation in ironclad consistency: a Final Writ of Warning, immediate removal from the promotion calibration committee, and a formal review of both leads’ buried packets. No special discount for a favored Product leader.
-
-She drafted the Scroll of Findings, sent it up to Liability Tower where Doctor Lois signed off in twelve minutes flat without changing a syllable, and performed Vault-Sealing, locking every verified note, exhibit, and timeline behind an unbreakable seal so neither tower could ever rewrite the history if a subpoena arrived.
-
-Then she logged into one last five-minute Zoom lair to tell the two engineering leads that their complaint had been substantiated and their promotion reviews were being restored. Neither woman cried or gave a speech. The older one simply let out a long, shaking breath she looked as though she had been holding since April, and said, "Thank you. I thought nobody actually read these."
-
-When the call ended, Marissa sat alone at her slightly tilted folding table while rain tapped softly against the barge’s wooden roof.
+When the call ended, Marissa sat alone at her slightly tilted folding table while light rain tapped softly against the barge’s wooden roof.
 
 It felt like oxygen.
 
-This was why she had chosen ER instead of chasing a gilded crest upstairs or staying behind a desk in Liability Tower. Both practices had real weight, and good practitioners like Leo belonged across the moat. Marissa belonged here, in the rare, clean moment when the noise stopped, the scales balanced, and two people doing honest work did not get crushed in the dark.
+This was why she had chosen ER instead of chasing a gilded crest upstairs or staying behind a desk in Liability Tower. Both practices had real weight, and good practitioners like Leo belonged across the moat. Marissa belonged here, in the rare, clean moment when the noise stopped, the scales balanced, and someone doing honest work did not get crushed by rank.
 
 At 4:45 PM, a Royal Summons pinged in the corner of her screen.
 

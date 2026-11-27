@@ -2,7 +2,7 @@
 description: "Designs coherent worlds or subject collections with constraints and consequences."
 mode: subagent
 model: ollama/kimi-k3:cloud#high
-steps: 40
+steps: 200
 permissions:
   - action: subagent
     resource: "*"

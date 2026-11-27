@@ -109,8 +109,16 @@
       "id": "FACT-0014",
       "scope": "corporate-castle",
       "status": "accepted",
-      "fact": "Doctor Lois's singular, consistent defining flaw is that she will never spend her own political capital to defend the truth—explaining both her neglect of the unfunded ER Watch (refusing to fight Lord Sterling for gold) and her willingness to bend Deep Magic to protect favored High Lords.",
-      "provenance": "Google Doc 1HW7Fu6Ug32OM7qx7lF1E63ePWXa_6iTr3MPqXo0T3MY, Tab 4 (t.k04gx9f8116z) Section 3 (Character Engines), 2026-11-25",
+      "fact": "Doctor Lois's singular, consistent defining flaw is that she will never spend her own political capital to defend the truth—using Deep Magic to mask fear and cowardice, exposing her as a hidden High Lord of Vibes hiding behind her glowing red pen who ultimately tries and fails to use Illusion Magic on Marissa.",
+      "provenance": "Google Doc Tab 4 refined by author rulings 2026-11-25 and 2026-11-26 (`DEC-CC-0008`)",
+      "effective_story_time": "Standing character engine"
+    },
+    {
+      "id": "FACT-0015",
+      "scope": "corporate-castle",
+      "status": "accepted",
+      "fact": "Sir Leo, Counsel of Liability, is a knight of Deep Magic and far more learned in the intricacies of its spells than Doctor Lois. He shows what Liability should be when wielded properly—dry wit, candor, genuine respect for Marissa as a fellow licensed practitioner, and willingness to go to bat and take the hit for her when it counts—balanced by human foibles: venting out-of-touch complaints about Lois's coldness from inside Liability Tower while knowing Marissa carries heavy weight even for him and quietly taking advantage of it (the unspoken tax of his allyship).",
+      "provenance": "Author character architecture ruling `DEC-CC-0008`, 2026-11-26",
       "effective_story_time": "Standing character engine"
     }
   ]

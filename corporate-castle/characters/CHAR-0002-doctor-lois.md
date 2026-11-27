@@ -7,7 +7,7 @@
 
 ## Role and agency
 - **Role**: Grand Archivist of Liability presiding over Liability Tower and the Counsel of Liability.
-- **Core engine (`FACT-0014`, `DEC-CC-0007`)**: Sharp, unsentimental practitioner of Liability's branch of Deep Magic who runs in flawless sync with Marissa on ordinary risk. There is nothing inherently corrupt in Liability's discipline—Lois's singular, consistent flaw is a **personal failure of courage**: **she will never spend her own political capital to defend the truth**, which contrasts sharply with Sir Leo's candor.
+- **Core engine (`FACT-0014`, `DEC-CC-0007`, `DEC-CC-0008`)**: Personifies what goes wrong in Liability when Deep Magic is used to mask fear and cowardice. Far less learned in the deep intricacies of Deep Magic's spells than Sir Leo, she relies on frostbite, hierarchy, and political survival. Her singular, consistent flaw is a **personal failure of courage**: **she will never spend her own political capital to defend the truth**, revealing herself as a hidden High Lord of Vibes hiding behind her charcoal blazer and glowing red pen who ultimately tries and fails spectacularly to use Illusion Magic on Marissa.
 - **Trap**: Caught between her private **Offline Oath** to departing peer High Lady Lexi and a **Royal Volun-telling** from Lord Sterling, Lois was in no position to refuse, expecting a brief, orderly loan of a quarter at most—only for Sterling to dump the entire ER Watch across the moat with zero gold coin of budget, leaving Marissa and Sarai to move the Watch onto an abandoned wooden barge outside Liability Tower's drawbridge without Lois's help (`FACT-0013`).
 - **Fear**: Crossing a High Lord at the High Table, losing political standing, or being left holding frontline dungeon operations and witness interviews herself.
 
@@ -16,7 +16,7 @@
 - **With High Lady Lexi (`CHAR-0004`)**: Departing peer whose Offline Oath pulled Lois into Sterling's trap.
 - **With Lord Sterling (`CHAR-0005`)**: Resents being saddled with an unfunded dungeon, yet will not confront him for gold coin.
 - **With Baroness Orla (`CHAR-0006`, proposed)**: Despises Orla's pastel theater and ring-light panic, yet eagerly uses Orla as a "velvet human shield" and gladly offloads frontline Squires back to Vibes—until the two turn on each other in front of Finance.
-- **With Sir Leo (`CHAR-0007`, proposed)**: Treats Leo as her reliable safety net and ignores his candid warning when she believes "they always stay."
+- **With Sir Leo (`CHAR-0007`)**: Treats Leo coldly and undervalues him even though he is far more learned in the intricacies of Deep Magic's spells than she is. Explodes in fury when Leo goes to bat for Marissa on the Bullying High Lord inquiry by securing a Silk-Robed Sellsword of Outside Counsel on a technicality, forcing Leo to absorb the hit and capping the remedy at hollow coaching.
 
 ## Voice and dialogue
 Frosty, precise, clipped, and unsentimental when operating in her comfort zone; turns evasive, revisionist, or nervously chatty (*"Maybe you already knew—it's okay if you did"*) the instant her authority collapses against Marissa's Mirror Shield.

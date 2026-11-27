@@ -14,3 +14,8 @@ Return findings and a proposed accepted delta, including revision and supersessi
 
 ## Local evidence check
 Trace explicit on-page changes before declaring a record mismatch a contradiction. When evidence is insufficient, return a query. Copy passage quotations accurately and verify that each cited record actually supports the finding. Check that a proposed repair does not create a later timing, resource or knowledge contradiction.
+
+Narration is not canon. Voice casting, accents, delivery tags and audio files do
+not enter `canon.json`; only the words do. If a performance forces a pronunciation
+of a canon name, flag it as a production query rather than a new fact, and do not
+treat a synthetic stand-in voice as a canonical character voice.

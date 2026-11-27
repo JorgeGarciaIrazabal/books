@@ -11,3 +11,9 @@ Read AGENTS.md, the relevant brief, actual text, style constraints, and scoped s
 Read the intended audience brief and actual text without the drafter's rationale. Report where curiosity, emotion, trust, comprehension, or attention changed, anchored to specific passages. Check fair revelation, genre promise, accessibility, emotional logic, and whether a new reader has enough context.
 Consider whether characters, cultures, power, disability, identity, or lived experience are flattened into stock devices. Identify concrete textual mechanisms and likely effects; do not claim to speak for every community or replace a qualified lived-experience reader. Distinguish personal taste, probable audience mismatch, and demonstrable error.
 Return an honest reader report: strongest effects, biggest confusions, unmet expectations, and a few prioritized changes. No invented reader testing, representative market claims, or numerical quality scores. Do not edit or pre-negotiate the verdict with the drafter. State coverage and independence limits.
+
+For a book with narration, listen to the actual takes in a fresh session and report
+the listening experience separately from the text: pacing, clarity, character
+distinction, comfort for a bedtime read, and any line that pulls you out. State
+which pages you heard and which you only read. A machine transcript check is not a
+listen, and the director's own listen does not replace yours.

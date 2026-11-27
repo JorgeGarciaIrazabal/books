@@ -63,7 +63,7 @@ short alternative rather than endlessly paraphrasing. If the task budget runs ou
 leave an honest partial handoff with completed coverage and the remaining work.
 These task budgets are explicit work-order constraints, not a claim that every
 runtime mechanically enforces them. The packet utility enforces its character cap;
-OpenCode adapters cap model steps at 40. The coordinator tracks tool calls and
+OpenCode adapters cap model steps at 200. The coordinator tracks tool calls and
 revision attempts and reports budget exhaustion. Character counts approximate context
 size; they are not exact tokens. Use a larger justified budget for whole-book reading.
 

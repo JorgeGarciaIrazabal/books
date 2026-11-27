@@ -1,0 +1,561 @@
+{
+  "date": "2026-10-25",
+  "renderer": "155.0.8059.39",
+  "method": "Headless Chrome via Playwright, emulated viewports, local build served over HTTP",
+  "baseline_fixed_page_phone": {
+    "viewport": "390x844",
+    "page_frame": {
+      "w": 380,
+      "h": 482
+    },
+    "body_text_px": 11.8,
+    "unused_vertical_px": 244,
+    "header_px": 56,
+    "note": "The 720x912 fixed page fitted to width; body text is 16.8pt on the 720px canvas scaled by 380/720."
+  },
+  "phone_text_view": {
+    "viewport": "390x844",
+    "text_box": {
+      "w": 390,
+      "h": 676
+    },
+    "body_text_px": 19,
+    "default_text_scale_px": 19,
+    "max_text_scale_px": 32.3,
+    "header_px": 106,
+    "pager_px": 62,
+    "horizontal_overflow": false
+  },
+  "phone_small": {
+    "viewport": "320x640",
+    "header_px_before_fix": 155,
+    "header_px_after_fix": 106,
+    "text_box": {
+      "w": 320,
+      "h": 472
+    },
+    "body_text_px": 19,
+    "horizontal_overflow": false
+  },
+  "tablet_portrait": {
+    "viewport": "768x1024",
+    "default_mode": "page",
+    "page_frame": {
+      "w": 700,
+      "h": 886,
+      "ratio": 0.789
+    },
+    "horizontal_overflow": false
+  },
+  "tablet_landscape": {
+    "viewport": "1024x768",
+    "default_mode": "text",
+    "text_box": {
+      "w": 800,
+      "h": 624
+    },
+    "body_text_px": 19,
+    "horizontal_overflow": false
+  },
+  "laptop": {
+    "viewport": "1280x800 and 1366x768",
+    "default_mode": "text",
+    "text_box": {
+      "w": 800,
+      "h": 650
+    },
+    "body_text_px": 18,
+    "horizontal_overflow": false
+  },
+  "desktop": {
+    "viewport": "1440x900",
+    "default_mode": "page",
+    "page_frame": {
+      "w": 589,
+      "h": 746,
+      "ratio": 0.789
+    },
+    "text_view_when_selected": {
+      "w": 736,
+      "h": 746,
+      "reading_measure": 672,
+      "body_text_px": 18
+    },
+    "horizontal_overflow": false
+  },
+  "reflowable_books": {
+    "phone_390": {
+      "body_text_px": 18.4,
+      "default_scale_percent": 115
+    },
+    "tablet_768": {
+      "body_text_px": 17.6,
+      "default_scale_percent": 110
+    },
+    "desktop_1440": {
+      "body_text_px": 16,
+      "default_scale_percent": 100
+    },
+    "font_control_range_percent": [
+      90,
+      170
+    ]
+  },
+  "viewports_checked": {
+    "phone": {
+      "catalog": {
+        "visibleBooks": 3,
+        "firstCard": {
+          "w": 358,
+          "h": 298
+        },
+        "columns": 3,
+        "overflow": 0
+      },
+      "nell": {
+        "mode": "text",
+        "header": 106,
+        "pager": 62,
+        "textBox": {
+          "w": 390,
+          "h": 676
+        },
+        "textFont": "19px",
+        "pageFrame": null,
+        "toggle": "Pages",
+        "pages": 30,
+        "images": 12,
+        "status": "Page 1 of 30 · 1. Weather in a Boot",
+        "overflow": 0
+      },
+      "mila": {
+        "header": 106,
+        "frame": {
+          "w": 380,
+          "h": 666
+        },
+        "font": "18.4px",
+        "toggleHidden": true,
+        "fontControlsHidden": false,
+        "status": "Reading: Title · page 1 of 1",
+        "overflow": 0
+      }
+    },
+    "phone-small": {
+      "catalog": {
+        "visibleBooks": 3,
+        "firstCard": {
+          "w": 288,
+          "h": 303
+        },
+        "columns": 3,
+        "overflow": 0
+      },
+      "nell": {
+        "mode": "text",
+        "header": 106,
+        "pager": 62,
+        "textBox": {
+          "w": 320,
+          "h": 472
+        },
+        "textFont": "19px",
+        "pageFrame": null,
+        "toggle": "Pages",
+        "pages": 30,
+        "images": 12,
+        "status": "Page 1 of 30 · 1. Weather in a Boot",
+        "overflow": 0
+      },
+      "mila": {
+        "header": 106,
+        "frame": {
+          "w": 310,
+          "h": 462
+        },
+        "font": "18.4px",
+        "toggleHidden": true,
+        "fontControlsHidden": false,
+        "status": "Reading: Title · page 1 of 1",
+        "overflow": 0
+      }
+    },
+    "phone-landscape": {
+      "catalog": {
+        "visibleBooks": 3,
+        "firstCard": {
+          "w": 380,
+          "h": 531
+        },
+        "columns": 2,
+        "overflow": 0
+      },
+      "nell": {
+        "mode": "text",
+        "header": 50,
+        "pager": 52,
+        "textBox": {
+          "w": 800,
+          "h": 280
+        },
+        "textFont": "19px",
+        "pageFrame": null,
+        "toggle": "Pages",
+        "pages": 30,
+        "images": 12,
+        "status": "Page 1 of 30 · 1. Weather in a Boot",
+        "overflow": 0
+      },
+      "mila": {
+        "header": 50,
+        "frame": {
+          "w": 736,
+          "h": 280
+        },
+        "font": "17.6px",
+        "toggleHidden": true,
+        "fontControlsHidden": false,
+        "status": "Reading: Title · page 1 of 2",
+        "overflow": 0
+      }
+    },
+    "tablet": {
+      "catalog": {
+        "visibleBooks": 3,
+        "firstCard": {
+          "w": 344,
+          "h": 531
+        },
+        "columns": 2,
+        "overflow": 0
+      },
+      "nell": {
+        "mode": "page",
+        "header": 57,
+        "pager": 62,
+        "textBox": null,
+        "textFont": null,
+        "pageFrame": {
+          "w": 700,
+          "h": 886,
+          "ratio": 0.789
+        },
+        "toggle": "Text",
+        "pages": 0,
+        "images": 0,
+        "status": "Page 1 of 30 · 1. Weather in a Boot",
+        "overflow": 0
+      },
+      "mila": {
+        "header": 57,
+        "frame": {
+          "w": 736,
+          "h": 886
+        },
+        "font": "17.6px",
+        "toggleHidden": true,
+        "fontControlsHidden": false,
+        "status": "Reading: Title · page 1 of 1",
+        "overflow": 0
+      }
+    },
+    "tablet-landscape": {
+      "catalog": {
+        "visibleBooks": 3,
+        "firstCard": {
+          "w": 304,
+          "h": 632
+        },
+        "columns": 1,
+        "overflow": 0
+      },
+      "nell": {
+        "mode": "text",
+        "header": 57,
+        "pager": 62,
+        "textBox": {
+          "w": 800,
+          "h": 624
+        },
+        "textFont": "19px",
+        "pageFrame": null,
+        "toggle": "Pages",
+        "pages": 30,
+        "images": 12,
+        "status": "Page 1 of 30 · 1. Weather in a Boot",
+        "overflow": 0
+      },
+      "mila": {
+        "header": 57,
+        "frame": {
+          "w": 736,
+          "h": 624
+        },
+        "font": "17.6px",
+        "toggleHidden": true,
+        "fontControlsHidden": false,
+        "status": "Reading: Title · page 1 of 1",
+        "overflow": 0
+      }
+    },
+    "laptop": {
+      "catalog": {
+        "visibleBooks": 3,
+        "firstCard": {
+          "w": 367,
+          "h": 636
+        },
+        "columns": 1,
+        "overflow": 0
+      },
+      "nell": {
+        "mode": "text",
+        "header": 57,
+        "pager": 62,
+        "textBox": {
+          "w": 800,
+          "h": 650
+        },
+        "textFont": "18px",
+        "pageFrame": null,
+        "toggle": "Pages",
+        "pages": 30,
+        "images": 12,
+        "status": "Page 1 of 30 · 1. Weather in a Boot",
+        "overflow": 0
+      },
+      "mila": {
+        "header": 57,
+        "frame": {
+          "w": 736,
+          "h": 650
+        },
+        "font": "16px",
+        "toggleHidden": true,
+        "fontControlsHidden": false,
+        "status": "Reading: Title · page 1 of 1",
+        "overflow": 0
+      }
+    },
+    "laptop-1366": {
+      "catalog": {
+        "visibleBooks": 3,
+        "firstCard": {
+          "w": 367,
+          "h": 655
+        },
+        "columns": 1,
+        "overflow": 0
+      },
+      "nell": {
+        "mode": "text",
+        "header": 57,
+        "pager": 62,
+        "textBox": {
+          "w": 800,
+          "h": 616
+        },
+        "textFont": "18px",
+        "pageFrame": null,
+        "toggle": "Pages",
+        "pages": 30,
+        "images": 12,
+        "status": "Page 1 of 30 · 1. Weather in a Boot",
+        "overflow": 0
+      },
+      "mila": {
+        "header": 57,
+        "frame": {
+          "w": 736,
+          "h": 616
+        },
+        "font": "16px",
+        "toggleHidden": true,
+        "fontControlsHidden": false,
+        "status": "Reading: Title · page 1 of 1",
+        "overflow": 0
+      }
+    },
+    "desktop": {
+      "catalog": {
+        "visibleBooks": 3,
+        "firstCard": {
+          "w": 367,
+          "h": 659
+        },
+        "columns": 1,
+        "overflow": 0
+      },
+      "nell": {
+        "mode": "page",
+        "header": 57,
+        "pager": 62,
+        "textBox": null,
+        "textFont": null,
+        "pageFrame": {
+          "w": 589,
+          "h": 746,
+          "ratio": 0.789
+        },
+        "toggle": "Text",
+        "pages": 0,
+        "images": 0,
+        "status": "Page 1 of 30 · 1. Weather in a Boot",
+        "overflow": 0
+      },
+      "mila": {
+        "header": 57,
+        "frame": {
+          "w": 736,
+          "h": 746
+        },
+        "font": "16px",
+        "toggleHidden": true,
+        "fontControlsHidden": false,
+        "status": "Reading: Title · page 1 of 1",
+        "overflow": 0
+      }
+    }
+  },
+  "functional_checks": [
+    "Breakpoints: phone/phone-small/phone-landscape/tablet-landscape/laptops use text; tablet portrait and 1440 desktop use the page view; no horizontal overflow at any width",
+    "Phone opens Nell directly in the reflowable text view with all 30 pages",
+    "All 12 illustrations loaded in the text view",
+    "Scrolling changes the status to the page at the top of the viewport",
+    "Text size grows from 19px to 20.9px and is saved",
+    "Page view restores the current page at the 720:912 ratio (0.789)",
+    "Page-view Next advances to page 3",
+    "Returning to text restores page 2",
+    "Contents jumps to chapter 2, page 6",
+    "Start over returns to the top (Back at the beginning.)",
+    "Reload keeps the text view and the reset position",
+    "Tablet portrait keeps the full page layout by default and switches to text at page 2",
+    "Desktop page view is default; text view is capped at 736px with a 672px reading measure",
+    "Reflowable Mila: 18.4px default, 20px at 125%, saved size and page restored (Reading: 2. Something White · page 2 of 7)",
+    "Catalog language filters, empty state, and one-tap reset still work"
+  ],
+  "illustrations_loaded": [
+    {
+      "page": 2,
+      "src": "blob:http://127.0.0.1:8123/cd96e079-6d97-41ad-bdad-9f3dafade060",
+      "natural": [
+        1536,
+        1024
+      ],
+      "alt": "Nell holds a tiny gray cloud on her palm beside a red boot and a yellow sock."
+    },
+    {
+      "page": 4,
+      "src": "blob:http://127.0.0.1:8123/56b8493c-f82f-417d-b100-98bb75506b82",
+      "natural": [
+        1536,
+        1024
+      ],
+      "alt": "Grandma offers Grumble a saucer beside the toast while Nell watches."
+    },
+    {
+      "page": 6,
+      "src": "blob:http://127.0.0.1:8123/f76f5926-b700-4d6d-ab54-f1fa4f57102f",
+      "natural": [
+        1536,
+        1024
+      ],
+      "alt": "Nell ties a mitten below her red kite while Grumble watches from a saucer."
+    },
+    {
+      "page": 9,
+      "src": "blob:http://127.0.0.1:8123/9dfb3200-dffb-457a-9392-a2e6e3db65f4",
+      "natural": [
+        1122,
+        1402
+      ],
+      "alt": "An enormous Grumble fills the wheelbarrow while Nell and Grandma stand beside him."
+    },
+    {
+      "page": 12,
+      "src": "blob:http://127.0.0.1:8123/33f29842-8ca4-4463-9e25-12957fdd072c",
+      "natural": [
+        1536,
+        1024
+      ],
+      "alt": "Nell falls quiet beside the wheelbarrow as Grumble turns away with a single tear."
+    },
+    {
+      "page": 15,
+      "src": "blob:http://127.0.0.1:8123/d2681c43-1311-4b7a-8e00-fe0608776729",
+      "natural": [
+        1536,
+        1024
+      ],
+      "alt": "Nell and Grandma play a watering can and saucepan as Mr. Moss lifts a biscuit tin over the fence."
+    },
+    {
+      "page": 17,
+      "src": "blob:http://127.0.0.1:8123/b4a7a748-3f4e-4af2-a5ce-9d2f2e421375",
+      "natural": [
+        1536,
+        1024
+      ],
+      "alt": "The dog squeaks his bone while Grumble leads the garden band and a few drops fall."
+    },
+    {
+      "page": 19,
+      "src": "blob:http://127.0.0.1:8123/b9878964-8763-4b0c-9cb9-343100ddc605",
+      "natural": [
+        1536,
+        1024
+      ],
+      "alt": "Grandma wheels the raining cloud toward the beans as Nell and the neighbors bring their music."
+    },
+    {
+      "page": 23,
+      "src": "blob:http://127.0.0.1:8123/0fa7d5f7-4510-4bf2-9af7-aa2ca885ea0d",
+      "natural": [
+        1024,
+        1536
+      ],
+      "alt": "Grumble peeks from the mitten beneath the kite while Grandma holds it and Nell grips the winder."
+    },
+    {
+      "page": 24,
+      "src": "blob:http://127.0.0.1:8123/df77a22d-6281-41a4-a360-b8361431604c",
+      "natural": [
+        1122,
+        1402
+      ],
+      "alt": "Nell and Grandma watch the red kite climb high, with Grumble riding in the mitten below it."
+    },
+    {
+      "page": 27,
+      "src": "blob:http://127.0.0.1:8123/64a6729d-49bf-4212-afab-f6ea5893fd7a",
+      "natural": [
+        1122,
+        1402
+      ],
+      "alt": "A bigger cloud curls around Grumble above the hills while the empty mitten hangs beneath Nell’s kite."
+    },
+    {
+      "page": 30,
+      "src": "blob:http://127.0.0.1:8123/8366eabb-48b6-4590-a065-0923c9bb70dd",
+      "natural": [
+        1536,
+        1024
+      ],
+      "alt": "Two red boots stand side by side; exactly one tiny rainbow rises from the right boot."
+    }
+  ],
+  "accessibility_checks": [
+    "Spanish Mila: 18.4px default, no text toggle, no horizontal overflow",
+    "320px at 170% text: 32.3px, two-row 106px header, no horizontal overflow",
+    "Keyboard PageDown scrolls the focused text view",
+    "Text view has tabindex=0, aria-label \"Book text\", page article aria-label \"Page 1 of 30\"",
+    "View toggle exposes aria-pressed and descriptive labels; pager labels change to Scroll forward/back in text mode"
+  ],
+  "console_and_page_errors": [],
+  "coverage_limits": [
+    "Headless Chrome with emulated viewports, not physical phones, tablets, or every browser.",
+    "This is not a new literary review and does not certify every page of every book.",
+    "The text view is an additional reading mode; the illustrated page view remains available and unchanged.",
+    "No manuscript, EPUB, PDF, cover, manifest, or build tool was changed."
+  ]
+}

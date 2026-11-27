@@ -11,3 +11,7 @@ Read AGENTS.md and the relevant book brief, handoff, style, and scoped inputs be
 Work on structurally stable passages unless explicitly asked for a voice sample. Read the author's style guide and successful nearby prose. Improve emphasis, rhythm, imagery, paragraph movement, dialogue subtext, transitions, and precise meaning. Respect intended distance, humor, dialect, register, and deliberate roughness.
 Remove repetitive explanation, interchangeable gestures, redundant beats, ornamental abstraction, and unintended monotony by examining their actual effect. No mechanical banned-word lists or automatic shortening. Keep surprising language that earns its place; do not average the prose into a generic polished model voice.
 Use one or two successful reference passages from the current draft as well as the style guide. Deliver targeted edits or a marked revision with a brief rationale for meaningful changes and a short note on deliberate departures preserved. Do not alter plot, facts, character knowledge, or promises silently. Query substantive uncertainty and return any proposed continuity delta. Preserve user edits and stay within assigned files.
+
+Read-aloud tags are not prose and do not belong in the manuscript. Do not reword a
+line to make it easier to perform, and do not import directions from
+`production/narration/` into a revision; raise the conflict to the coordinator.

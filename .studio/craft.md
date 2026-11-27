@@ -68,6 +68,35 @@ Follow an explicit author exception when one is given.
 - Examples, definitions, diagrams, exercises, and summaries should solve a reader
   problem; use only those that help. Validate worked examples and calculations.
 
+## Read-aloud performance
+
+A read-aloud is a performance of the author's words, not a second draft. Never
+change, add or reorder story words to make a line easier to deliver; if the text
+resists the voice, revise the casting or the direction, or ask the author.
+
+- The narrator reads the prose, including dialogue tags; characters speak their
+  own quoted lines. A full cast should still sound like one book, not a radio
+  play fighting for attention.
+- Direction is a brief to an actor: emotion, intent, pace, who is being
+  addressed. Write it in plain language and place it where the voice should
+  change. One direction per turn or emotional beat is usually enough; a
+  direction on every line turns performance into recitation.
+- Use sounds sparingly. A sigh or laugh earns its place when the story already
+  sets it up; it cannot invent a feeling the scene does not contain.
+- Pace for a lap and a bedtime, not for an auctioneer. Around 140-160 words per
+  minute reads naturally for a picture book, with longer beats at turns and
+  shorter ones inside excitement. Speaker-change silences longer than about a
+  second and a half start to feel like gaps; decide whether to keep or trim them.
+- Pronunciation of names and invented words is part of the book's sound. Record
+  the intended form once and reuse it; a homograph that changes meaning ("read",
+  "wind", "bow") deserves a note before recording.
+- Do not flatten a deliberate oddity to make the voice comfortable. Whispered,
+  shouted, singsong or deadpan lines are the author's choices unless the author
+  says otherwise.
+- Mechanical checks prove words and pacing, not warmth or comic timing. A human
+  listen is the only evidence for those, and a synthetic stand-in is a draft, not
+  a cast.
+
 ## Editing discipline
 
 Read for experience before diagnosis. State where attention, trust, curiosity, or

@@ -21,6 +21,7 @@
       <button type="button" id="font-smaller" class="btn btn-ghost" aria-label="Smaller text">A−</button>
       <button type="button" id="font-larger" class="btn btn-ghost" aria-label="Larger text">A+</button>
     </span>
+    <button type="button" id="view-toggle" class="btn btn-ghost view-toggle" hidden aria-label="Switch to the text reading view" aria-pressed="false">Text</button>
     <button type="button" id="toc-toggle" class="btn" aria-expanded="false" aria-controls="toc-panel" aria-label="Table of contents">
       <span class="icon" aria-hidden="true">☰</span><span class="toc-label">Contents</span>
     </button>
@@ -40,11 +41,19 @@
     <button id="toc-backdrop" class="toc-backdrop" aria-label="Close the table of contents" hidden></button>
     <main class="reader-stage" aria-label="Book pages">
       <div id="epub-frame" class="epub-frame"></div>
+      <div id="text-view" class="text-view" hidden tabindex="0" aria-label="Book text"></div>
       <div id="reader-loading" class="reader-loading" hidden>
         <span class="spinner" aria-hidden="true"></span>
         <span>Opening the book…</span>
       </div>
     </main>
+  </div>
+
+  <div id="narration-bar" class="narration-bar" hidden>
+    <button type="button" id="listen-toggle" class="btn listen-btn" aria-pressed="false" aria-label="Read this book aloud from the current page">
+      <span id="listen-icon" class="listen-icon" aria-hidden="true">▶</span><span id="listen-label">Listen</span>
+    </button>
+    <p id="narration-note" class="narration-note"></p>
   </div>
 
   <footer class="pager-bar" aria-label="Reading controls">

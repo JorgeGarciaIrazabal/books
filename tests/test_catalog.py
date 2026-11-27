@@ -255,9 +255,16 @@ class BuildOutputTests(unittest.TestCase):
                     )
 
     def test_no_studio_or_process_files_in_output(self):
-        names = {p.name for p in self.out.rglob("*") if p.is_file()}
-        for forbidden in ("manifest.json", "AGENTS.md", "AGETNS.md", "tasks.json", "handoff.md"):
-            self.assertNotIn(forbidden, names)
+        for path in self.out.rglob("*"):
+            if not path.is_file():
+                continue
+            rel = path.relative_to(self.out)
+            # narration/manifest.json is a deliberate public index of audio.
+            if rel.parts[:1] == ("narration",) and path.name == "manifest.json":
+                continue
+            self.assertNotIn(path.name, ("manifest.json", "AGENTS.md", "AGETNS.md",
+                                         "tasks.json", "handoff.md"),
+                             f"studio file leaked into output: {rel}")
         self.assertFalse((self.out / ".studio").exists())
 
     def test_all_publication_artifacts_surfaced(self):
@@ -267,6 +274,24 @@ class BuildOutputTests(unittest.TestCase):
             self.assertIn(book["cover"], html)
             for url in book["downloads"].values():
                 self.assertIn(url, html)
+
+    def test_narration_packages_are_complete_and_copied(self):
+        catalog = json.loads((self.out / "catalog.json").read_text(encoding="utf-8"))
+        index_path = ROOT / "narration" / "manifest.json"
+        if not index_path.is_file():
+            self.assertTrue(all("narration" not in book for book in catalog["books"]))
+            return
+        index = {entry["id"]: entry for entry in
+                 json.loads(index_path.read_text(encoding="utf-8"))["books"]}
+        for book in catalog["books"]:
+            audio = book.get("narration")
+            if not audio:
+                continue
+            self.assertIn(book["id"], index)
+            self.assertTrue(audio["manifest"].startswith("narration/"))
+            self.assertTrue((self.out / audio["manifest"]).is_file())
+            for page in index[book["id"]]["files"]:
+                self.assertTrue((self.out / "narration" / book["id"] / page["path"]).is_file())
 
 
 class OutputSafetyTests(unittest.TestCase):
@@ -352,6 +377,31 @@ class OutputSafetyTests(unittest.TestCase):
         self.assertTrue((legacy / bc.OUTPUT_MARKER).is_file())
 
 
+def make_narration(root: Path, book_id: str, pages: int = 2) -> dict:
+    """Write a minimal, internally consistent narration package for fixtures."""
+    package = root / "narration" / book_id
+    package.mkdir(parents=True)
+    files = []
+    total = 0.0
+    for page in range(1, pages + 1):
+        data = b"ID3fake-mp3-" + str(page).encode()
+        path = package / f"page-{page:02d}.mp3"
+        path.write_bytes(data)
+        files.append({"page": page, "path": path.name, "bytes": len(data),
+                      "sha256": hashlib.sha256(data).hexdigest(), "seconds": 1.5})
+        total += 1.5
+    reader = {"schema": 1, "book": book_id, "pages": pages, "seconds": total,
+              "credit": "Test voices",
+              "files": [{"page": item["page"], "src": item["path"],
+                         "seconds": item["seconds"]} for item in files]}
+    (package / "narration.json").write_text(json.dumps(reader), encoding="utf-8")
+    entry = {"id": book_id, "directory": book_id, "pages": pages, "seconds": total,
+             "credit": "Test voices", "files": files}
+    (root / "narration" / "manifest.json").write_text(
+        json.dumps({"schema": 1, "books": [entry]}), encoding="utf-8")
+    return entry
+
+
 class FailureModeTests(unittest.TestCase):
     def setUp(self):
         self.tmp = Path(tempfile.mkdtemp(prefix="books-buildcheck-"))
@@ -420,6 +470,54 @@ class FailureModeTests(unittest.TestCase):
             z.writestr("mimetype", "application/epub+zip")
             z.writestr("META-INF/container.xml", "<container/>")
         write_manifest(self.root, [self.entry])
+        self.expect_build_error()
+
+    def test_narration_package_builds(self):
+        make_epub(self.pub / "book.epub", lang="en", layout="fixed")
+        self.entry = make_book_entry("book", self.pub / "book.epub", self.pub / "book.pdf",
+                                     self.pub / "covers" / "cover.jpg", layout="fixed")
+        write_manifest(self.root, [self.entry])
+        make_narration(self.root, "book", pages=1)
+        out = self.tmp / "out-narration"
+        summary = bc.build(self.root, out)
+        self.assertEqual(summary["narration_files"], 3)  # index + reader json + 1 page
+        catalog = json.loads((out / "catalog.json").read_text(encoding="utf-8"))
+        self.assertEqual(catalog["books"][0]["narration"]["pages"], 1)
+        self.assertTrue((out / "narration" / "book" / "page-01.mp3").is_file())
+
+    def test_narration_hash_mismatch_fails(self):
+        make_epub(self.pub / "book.epub", lang="en", layout="fixed")
+        self.entry = make_book_entry("book", self.pub / "book.epub", self.pub / "book.pdf",
+                                     self.pub / "covers" / "cover.jpg", layout="fixed")
+        write_manifest(self.root, [self.entry])
+        make_narration(self.root, "book", pages=1)
+        (self.root / "narration" / "book" / "page-01.mp3").write_bytes(b"changed")
+        self.expect_build_error()
+
+    def test_narration_page_count_must_match_epub_spine(self):
+        make_epub(self.pub / "book.epub", lang="en", layout="fixed")  # one spine item
+        self.entry = make_book_entry("book", self.pub / "book.epub", self.pub / "book.pdf",
+                                     self.pub / "covers" / "cover.jpg", layout="fixed")
+        write_manifest(self.root, [self.entry])
+        make_narration(self.root, "book", pages=2)
+        self.expect_build_error()
+
+    def test_narration_requires_fixed_layout(self):
+        self.entry["layout"] = "reflowable"
+        write_manifest(self.root, [self.entry])
+        make_narration(self.root, "book", pages=1)
+        self.expect_build_error()
+
+    def test_performance_tag_in_epub_fails(self):
+        write_manifest(self.root, [self.entry])
+        epub = self.pub / "book.epub"
+        with zipfile.ZipFile(epub) as source:
+            items = [(info, source.read(info.filename)) for info in source.infolist()]
+        with zipfile.ZipFile(epub, "w") as target:
+            for info, data in items:
+                if info.filename.endswith(".xhtml"):
+                    data = data.replace(b"<body>", b"<body><|speaker:0|>")
+                target.writestr(info, data)
         self.expect_build_error()
 
     def test_not_a_zip_rejected(self):

@@ -7,5 +7,6 @@
   "kind": "{{kind}}",
   "stage": "brief",
   "language": "en",
-  "chapters": []
+  "chapters": [],
+  "narration": null
 }

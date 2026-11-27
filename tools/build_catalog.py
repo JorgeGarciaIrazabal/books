@@ -31,9 +31,13 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import narration as narration_tool  # noqa: E402  (local tool, no third-party package)
 SITE_DIR_NAME = "site"
 PUB_DIR_NAME = "publications"
 PUB_URL_PREFIX = "publications/"
+NARRATION_DIR_NAME = "narration"
+NARRATION_URL_PREFIX = "narration/"
 DEFAULT_OUTPUT = "_site"
 OUTPUT_MARKER = ".generated-by-build_catalog"
 
@@ -236,6 +240,31 @@ def validate_artifact(pub_dir: Path, book: dict) -> None:
                 fail(f"{where}: cover is neither a JPEG nor a PNG")
 
 
+def epub_spine_count(path: Path) -> int:
+    with zipfile.ZipFile(path) as archive:
+        _opf_path, opf, _base = epub_opf(archive)
+        spine = opf.find("{*}spine")
+        return len(spine.findall("{*}itemref")) if spine is not None else 0
+
+
+def validate_narration_pages(root: Path, books: list[dict]) -> None:
+    """Page audio must match the page documents a fixed-layout EPUB declares."""
+    index_root = root / NARRATION_DIR_NAME / "manifest.json"
+    if not index_root.is_file():
+        return
+    by_id = {book["id"]: book for book in books}
+    pub_dir = root / PUB_DIR_NAME
+    for entry in json.loads(index_root.read_text(encoding="utf-8")).get("books", []):
+        book = by_id.get(entry.get("id"))
+        if not book:
+            continue
+        epub = pub_dir / safe_rel_path(book["downloads"]["epub"]["path"], "epub")
+        count = epub_spine_count(epub)
+        if count != entry.get("pages"):
+            fail(f"narration {entry['id']}: {entry.get('pages')} page audio files "
+                 f"but the EPUB spine declares {count} page documents")
+
+
 def validate_all(root: Path) -> list[dict]:
     pub_dir = root / PUB_DIR_NAME
     site_dir = root / SITE_DIR_NAME
@@ -244,6 +273,14 @@ def validate_all(root: Path) -> list[dict]:
     books = validate_manifest(load_manifest(pub_dir))
     for book in books:
         validate_artifact(pub_dir, book)
+    validate_narration_pages(root, books)
+    # Narration is optional, but when present it must be complete and must never
+    # have leaked a performance tag into a published EPUB or PDF.
+    try:
+        narration_tool.validate_public(root)
+        narration_tool.validate_publications_for_tags(root)
+    except narration_tool.NarrationError as err:
+        fail(str(err))
     return books
 
 
@@ -251,10 +288,19 @@ def validate_all(root: Path) -> list[dict]:
 # Public catalog projection
 # ---------------------------------------------------------------------------
 
-def public_catalog(books: list[dict]) -> dict:
+def narration_index(root: Path) -> dict[str, dict]:
+    path = root / NARRATION_DIR_NAME / "manifest.json"
+    if not path.is_file():
+        return {}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return {entry["id"]: entry for entry in data.get("books", [])}
+
+
+def public_catalog(books: list[dict], narration: dict[str, dict] | None = None) -> dict:
+    narration = narration or {}
     out_books = []
     for book in books:
-        out_books.append({
+        entry = {
             "id": book["id"],
             "title": book["title"],
             "summary": book["summary"],
@@ -263,14 +309,23 @@ def public_catalog(books: list[dict]) -> dict:
             "layout": book["layout"],
             "layout_label": LAYOUT_LABELS[book["layout"]],
             "downloads": {
-                kind: PUB_URL_PREFIX + entry["path"]
-                for kind, entry in book["downloads"].items()
+                kind: PUB_URL_PREFIX + item["path"]
+                for kind, item in book["downloads"].items()
             },
             "cover": PUB_URL_PREFIX + book["cover"]["path"],
             "sizes": {
-                kind: entry["bytes"] for kind, entry in book["downloads"].items()
+                kind: item["bytes"] for kind, item in book["downloads"].items()
             },
-        })
+        }
+        audio = narration.get(book["id"])
+        if audio:
+            entry["narration"] = {
+                "manifest": f"{NARRATION_URL_PREFIX}{audio['directory']}/narration.json",
+                "pages": audio["pages"],
+                "seconds": audio["seconds"],
+                "credit": audio["credit"],
+            }
+        out_books.append(entry)
     return {"schema": 1, "books": out_books}
 
 
@@ -316,6 +371,13 @@ def check_links(out_dir: Path, catalog: dict) -> None:
             problems.append(f"catalog.json books[{i}].cover must be a relative {PUB_URL_PREFIX}* URL, got {url!r}")
         elif not (out_dir / url).is_file():
             problems.append(f"catalog.json books[{i}].cover: missing file {url}")
+        audio = book.get("narration")
+        if audio:
+            url = audio.get("manifest", "")
+            if not url.startswith(NARRATION_URL_PREFIX) or url.startswith("/") or ":" in url:
+                problems.append(f"catalog.json books[{i}].narration.manifest must be a relative {NARRATION_URL_PREFIX}* URL, got {url!r}")
+            elif not (out_dir / url).is_file():
+                problems.append(f"catalog.json books[{i}].narration.manifest: missing file {url}")
     if problems:
         fail("link check failed:\n  " + "\n  ".join(problems))
 
@@ -325,6 +387,13 @@ def check_links(out_dir: Path, catalog: dict) -> None:
         for url in list(book["downloads"].values()) + [book["cover"]]:
             if url not in all_html:
                 fail(f"book {book['id']}: {url} is published but not linked from any page")
+        # Narration files are fetched by the reader at runtime, so they are
+        # checked against the built output rather than for a static link.
+        audio = book.get("narration")
+        if audio:
+            for page_file in sorted((out_dir / NARRATION_URL_PREFIX.rstrip("/") / book["id"]).glob("page-*.mp3")):
+                if not page_file.is_file():
+                    fail(f"book {book['id']}: narration page missing from build: {page_file.name}")
         if f"reader.html?book={book['id']}" not in all_html:
             fail(f"book {book['id']}: no 'Read online' link (reader.html?book={book['id']}) found on any page")
 
@@ -362,7 +431,7 @@ def _is_owned_output(root: Path, out: Path) -> bool:
         return True
     if out.name == DEFAULT_OUTPUT:
         allowed_top = {p.name for p in (root / SITE_DIR_NAME).iterdir()} | {
-            "catalog.json", PUB_DIR_NAME, OUTPUT_MARKER,
+            "catalog.json", PUB_DIR_NAME, NARRATION_DIR_NAME, OUTPUT_MARKER,
         }
         names = {e.name for e in entries}
         if "catalog.json" in names and names <= allowed_top:
@@ -372,7 +441,7 @@ def _is_owned_output(root: Path, out: Path) -> bool:
 
 def build(root: Path, out: Path) -> dict:
     books = validate_all(root)
-    catalog = public_catalog(books)
+    catalog = public_catalog(books, narration_index(root))
 
     root_resolved = root.resolve()
     out_resolved = out.resolve()
@@ -410,12 +479,24 @@ def build(root: Path, out: Path) -> dict:
             copied += 1
             bytes_copied += src.stat().st_size
 
+    audio_files = 0
+    audio_bytes = 0
+    narration_root = root / NARRATION_DIR_NAME
+    if narration_root.is_dir():
+        shutil.copytree(narration_root, out / NARRATION_DIR_NAME)
+        for path in (out / NARRATION_DIR_NAME).rglob("*"):
+            if path.is_file():
+                audio_files += 1
+                audio_bytes += path.stat().st_size
+
     check_links(out, catalog)
 
     return {
         "books": len(books),
         "publication_files": copied,
         "publication_bytes": bytes_copied,
+        "narration_files": audio_files,
+        "narration_bytes": audio_bytes,
         "output": str(out),
     }
 

@@ -316,6 +316,17 @@ button, input { font: inherit; }
   border-color: transparent;
   color: var(--accent-deep);
 }
+.badge-audio {
+  background: #f6ecd4;
+  border-color: #e6d3a8;
+  color: #6d5014;
+}
+.audio-credit {
+  margin: 0 0 0.35rem;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  color: var(--muted);
+}
 .summary {
   margin: 0;
   font-size: 0.96rem;
@@ -537,7 +548,14 @@ button, input { font: inherit; }
 }
 #font-smaller,
 #font-larger { min-width: var(--tap); min-height: var(--tap); padding: 0; }
-#toc-toggle { order: 4; padding-inline: 0.85rem; }
+.view-toggle {
+  order: 4;
+  min-height: var(--tap);
+  padding-inline: 0.75rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.01em;
+}
+#toc-toggle { order: 5; padding-inline: 0.85rem; }
 #toc-toggle .icon { display: none; font-size: 1.15rem; line-height: 1; }
 .toc-label { display: inline; }
 
@@ -667,6 +685,97 @@ button, input { font: inherit; }
   overflow: hidden;
 }
 
+/* Reflowable text view for fixed-layout books. The book's own page documents
+   supply the text and illustrations; this view drops the fixed canvas so the
+   content can use the available width and grow with the reader's text size. */
+.text-view {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  background: var(--panel);
+  color: #233b45;
+  font-family: var(--serif);
+  font-size: calc(var(--text-base, 18px) * var(--text-scale, 1));
+  line-height: 1.65;
+  padding: clamp(1.15rem, 4.5vw, 2.6rem);
+  outline: none;
+}
+.text-mode .epub-frame { display: none; }
+.text-mode .reader-stage { place-items: stretch; }
+.text-page {
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+.text-page + .text-page {
+  margin-top: 2.4em;
+  padding-top: 2.4em;
+  border-top: 1px solid var(--line);
+}
+.text-page h1,
+.text-page h2 { color: #254e60; }
+.text-book-title {
+  margin: 0 0 1.4em;
+  font-size: 1.75em;
+  line-height: 1.15;
+}
+.text-chapter { margin: 0 0 1.1em; }
+.text-chapter .chapter-number {
+  display: block;
+  margin-bottom: 0.2em;
+  font-family: var(--sans);
+  font-size: 0.66em;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #607d84;
+}
+.text-chapter h2 { margin: 0; font-size: 1.35em; line-height: 1.2; }
+.text-story p { margin: 0 0 0.9em; }
+.text-story p:last-child { margin-bottom: 0; }
+.text-illustration {
+  margin: 1.6em 0 0;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #f0eadf;
+}
+.text-illustration img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+.text-folio {
+  margin-top: 1.6em;
+  padding-top: 0;
+  text-align: center;
+  color: #8b8578;
+  font-family: var(--sans);
+  font-size: 0.72em;
+}
+.text-error { color: #8a2f22; }
+.text-view:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: -2px; }
+
+@media (min-width: 720px) {
+  .text-view {
+    max-width: 46rem;
+    margin-inline: auto;
+    padding-inline: clamp(1.5rem, 3vw, 2rem);
+    border-radius: 8px;
+    box-shadow: 0 8px 26px rgba(38, 38, 43, 0.16);
+  }
+  .text-page { max-width: 42rem; }
+}
+
+/* Landscape tablets have a height-limited fixed page. Give the text view a
+   little more of the width while keeping a comfortable line length. */
+@media (orientation: landscape) and (min-width: 720px) and (max-width: 1399px) {
+  .text-view { max-width: 50rem; }
+  .text-page { max-width: 44rem; }
+}
+
 /* Fixed-layout picture books keep their own page proportions: the frame is
    sized from the stage height (or width, whichever binds) so the page fills
    it exactly instead of floating at the left of a wide white panel. */
@@ -708,6 +817,46 @@ button, input { font: inherit; }
   animation: reader-spin 1s linear infinite;
 }
 @keyframes reader-spin { to { transform: rotate(360deg); } }
+
+.narration-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.35rem calc(0.7rem + var(--safe-r)) 0.35rem calc(0.7rem + var(--safe-l));
+  background: var(--night-soft);
+  border-top: 1px solid rgba(243, 234, 217, 0.14);
+  color: #ece5d6;
+}
+.narration-bar[hidden] { display: none; }
+.listen-btn {
+  flex: 0 0 auto;
+  min-height: var(--tap);
+  min-width: 7.2rem;
+  color: inherit;
+  border-color: rgba(243, 234, 217, 0.42);
+  background: transparent;
+}
+.listen-btn:hover { background: rgba(243, 234, 217, 0.08); }
+.listen-btn[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fffdf7;
+}
+.listen-icon { display: inline-block; width: 1.2em; font-size: 0.82em; }
+.narration-note {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  color: #bdb6a6;
+  font-size: 0.78rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.text-page.is-narrating {
+  background: linear-gradient(90deg, rgba(160, 74, 47, 0.10), rgba(160, 74, 47, 0) 3.5rem);
+}
+.text-page.is-narrating .text-folio { color: var(--accent); }
 
 .pager-bar {
   position: relative;
@@ -754,13 +903,15 @@ button, input { font: inherit; }
 /* Tablet and below: compact header, icon pager, drawer contents. */
 @media (max-width: 1099px) {
   .reader-title { flex-basis: 9rem; }
+  .text-view { --text-base: 19px; }
 }
 
 @media (max-width: 719px) {
   .reader-bar { padding-block: 0.35rem; }
   #toc-toggle { order: 3; }
+  .view-toggle { order: 4; }
   .font-controls {
-    order: 4;
+    order: 5;
     flex: 1 0 100%;
     justify-content: center;
     padding-top: 0.05rem;
@@ -768,6 +919,8 @@ button, input { font: inherit; }
   .font-label { font-size: 0.78rem; }
   .epub-frame { max-width: none; border-radius: 6px; }
   .reader-stage { padding: 0.3rem; }
+  .text-mode .reader-stage { padding: 0; }
+  .text-view { padding-inline: 1.1rem; }
 }
 
 @media (max-width: 599px) {
@@ -775,7 +928,7 @@ button, input { font: inherit; }
   .back-link { min-width: var(--tap); padding-inline: 0.7rem; }
   .toc-label { display: none; }
   #toc-toggle .icon { display: inline; }
-  .reader-title { font-size: 0.98rem; }
+  .reader-title { flex: 1 1 0; font-size: 0.98rem; }
 
   .pager-bar { gap: 0.4rem; }
   .pager-btn {

@@ -10,6 +10,8 @@ deployed, and how to add or update an edition.
 | --- | --- |
 | `site/` | Website sources: `index.html` (catalog), `reader.html` (browser EPUB reader), styles, scripts, icon, and the vendored reader libraries in `site/assets/vendor/`. |
 | `publications/` | The tracked publication artifacts (`.epub`, `.pdf`), the derived cover images in `publications/covers/`, and `manifest.json` with byte sizes, sha256 hashes, and studio source paths for every file. |
+| `narration/` | Optional read-aloud packages: `manifest.json` plus `{book-id}/narration.json` and `{book-id}/page-NN.mp3`. Never part of the EPUB or PDF. |
+| `tools/narration.py` | Packs page audio into `narration/` and validates scripts, hashes and tag exclusion. |
 | `tools/build_catalog.py` | Build tool: validates the manifest and the actual artifact packages, assembles `_site/` from `site/` and `publications/` only, and checks every URL in the output. |
 | `tests/test_catalog.py` | Automated checks for manifest and artifact integrity, EPUB package behavior, vendored library pinning, and subpath-safe output. |
 | `.github/workflows/pages.yml` | GitHub Pages deployment workflow. |
@@ -25,26 +27,93 @@ The catalog and reader are styled in three deliberate bands:
 
 | Band | Catalog | Reader |
 | --- | --- | --- |
-| Phone (`<600px`) | one compact card per book; a 100px cover plate beside the details | compact header, icon pager buttons, contents drawer |
-| Tablet (`600–1023px`) | two cards per row | contents drawer, full-width reading area |
-| Desktop (`>=1024px`) | three cards per row, `76rem` maximum | persistent contents rail at wide widths, capped reading measure |
+| Phone (`<600px`) | one compact card per book; a 100px cover plate beside the details | adaptive text view for fixed-layout books; compact header, icon pager buttons, contents drawer |
+| Tablet (`600–1023px`) | two cards per row | portrait keeps the illustrated page; landscape uses the adaptive text view; contents drawer |
+| Desktop (`>=1024px`) | three cards per row, `76rem` maximum | persistent contents rail at wide widths; page view at 1440px, capped text measure when selected |
 
 - Interactive controls use at least a 44×44px target. Search text is 16px so
   iOS does not zoom the page on focus.
-- The phone reader keeps one header row for fixed-layout books and adds a
-  slim text-size row only for reflowable books, maximizing page area.
-- Fixed-layout pages declare their own viewport. The reader measures the
-  rendered page body and fits the frame to that aspect ratio, so illustrations
-  are neither cropped nor left-anchored in a wide white panel.
-- Reflowable books are capped at `46rem` for a comfortable line length. The
-  progress bar uses the EPUB spine index plus the current page within the
-  section when EPUB.js has not generated location percentages.
+- Fixed-layout books have two reading views. **Text** reflows the book's own page
+  documents and illustrations into a continuous scroll with a page-aware status,
+  contents jumps, saved section and scroll position, and 90–170% text sizing.
+  **Pages** is the original illustrated layout, still fitted to its native
+  720:912 page ratio.
+- The illustrated page view measures the rendered page body and resizes the
+  frame to that aspect ratio, so illustrations are neither cropped nor
+  left-anchored in a wide white panel.
+- The text view is the default on phones, phone landscape, tablet landscape, and
+  short landscape laptops up to 1399×820. Tablet portrait and a 1440px desktop
+  keep the illustrated page by default. The `Text` / `Pages` header button
+  switches views at any size and remembers the choice per book.
+- The text view uses the EPUB.js archive already in memory, so it adds no second
+  download. Its illustrations load lazily when they approach the viewport, with
+  their intended aspect ratios reserved to avoid scroll jumps. It reads the
+  `.story` paragraphs, `.chapter-heading`, and `figure img` elements used by the
+  studio's fixed-layout exports; a fixed-layout EPUB with a different internal
+  structure would need an adapter.
+- The phone reader keeps one header row for the illustrated page view; the text
+  view adds a slim text-size row. Title flexing keeps the header at two rows even
+  at 320px.
+- Reflowable books start at 115% on phones (18.4px from a 16px base), 110% on
+  tablets (17.6px), and 100% on desktop (16px), within the same 90–170% controls.
+  They are capped at `46rem` for a comfortable line length. The progress bar uses
+  the EPUB spine index plus the current page within the section when EPUB.js has
+  not generated location percentages.
 - Safe-area insets, `100dvh`, reduced-motion, and hover-only effects are
   handled in CSS.
 
 These bands were checked with headless Chrome at 320×640, 390×844, 844×390,
-768×1024, 1280×800, and 1440×900, including all three books. That is emulated
-viewport coverage, not a physical-device or cross-browser certification.
+768×1024, 1024×768, 1280×800, 1366×768, and 1440×900, including all three books.
+That is emulated viewport coverage, not a physical-device or cross-browser
+certification.
+
+## Read-aloud narration
+
+Narration is a separate layer. The tagged script, cast and render record live in
+the book at `production/narration/`; only the finished mono MP3s and two small
+manifests live in `narration/`. The manuscript, the export, the EPUB and the PDF
+never contain a performance tag, and the build fails if one is found.
+
+| Path | Role |
+| --- | --- |
+| `production/narration/script.md` | Tagged script, one block per story page |
+| `production/narration/cast.json` | Voices, reference clips, transcripts, provenance, licences |
+| `production/narration/render.json` | Engine, model hash, seed, settings, per-page hashes |
+| `narration/manifest.json` | Public index: book id, pages, seconds, credit, file hashes |
+| `narration/<book-id>/narration.json` | Reader manifest: page to MP3, durations |
+| `narration/<book-id>/page-NN.mp3` | 96 kbps mono page audio |
+
+Add or refresh a package after rendering the book's pages:
+
+```sh
+python3 tools/narration.py pack \
+  --book-dir little-weather/standalone/nell-and-the-pocket-sized-storm \
+  --audio little-weather/standalone/nell-and-the-pocket-sized-storm/exports/narration-v1 \
+  --book-id nell-and-the-pocket-sized-storm
+python3 tools/narration.py validate
+python3 tools/build_catalog.py build
+```
+
+`tools/build_catalog.py` copies `narration/` into the build and adds a
+`narration` block to that book's `catalog.json` entry. The reader shows a
+**Listen** control only for fixed-layout books that have that block. It starts
+only on a click, follows the current page, preloads only the next page, turns the
+page when a track ends, and stops with a readable message if audio is missing or
+blocked. Reflowable books do not get page audio without a separate chapter-level
+contract.
+
+Keep the layer honest:
+
+- Only ship audio whose rights are recorded. Do not imitate an identifiable
+  person without documented consent; a public dataset clip is not consent.
+  Label synthetic stand-in voices as synthetic.
+- `narration/` is not a place for drafts. Publish only takes that passed a
+  per-page transcript and pause check and, for anything presented as finished,
+  a human listen.
+- EPUB and PDF remain silent reading editions. Do not add audio dependencies,
+  media overlays or tags to them unless the author asks for a separate edition.
+- The build scans every published EPUB's XHTML, and the PDF text when
+  `pdftotext` is available, for tag tokens and fails on a hit.
 
 ## Audiobooks
 
@@ -113,9 +182,16 @@ writing output.
   or a legacy `_site/` from earlier builds. The source root, its ancestors,
   symlinks and unrelated populated directories are refused before any
   cleanup; sentinel tests cover each case.
+* When narration exists, every page file exists, matches its recorded size and
+  sha256, pages are contiguous, the durations add up, the reader manifest agrees
+  with the index, and the book is fixed-layout. The catalog entry carries the
+  narration manifest URL, and the build copies `narration/` into `_site/`.
+* No performance tag (`<|speaker:`, delivery spans, structural tokens) appears in
+  a manuscript, the export Markdown, the published EPUB XHTML or, when
+  `pdftotext` runs, the published PDF text.
 * Studio and process files (manifest source paths, handoffs, and so on) are
   not copied into the site; `_site/` contains only `site/`, the selected
-  `publications/` files, and `catalog.json`.
+  `publications/` files, `narration/`, and `catalog.json`.
 
 Known limit: the automated checks validate packages and output structure,
 not the visual reading experience. Open the built site in a browser after any
@@ -202,9 +278,12 @@ version together.
 
 * The reader only opens books listed in `catalog.json`; it never loads an
   EPUB from an arbitrary external URL.
-* Fixed-layout books (like Nell) render one page at a time and are fitted to
-  their own page proportions; reflowable books (like the Mila editions)
-  paginate, offer text size controls, and are capped at a `46rem` measure.
+* Fixed-layout books (like Nell) offer two views. **Text** reflows the book's
+  own page documents and illustrations into a continuous scroll on small
+  screens (the default there), with text size controls and saved
+  section/scroll. **Pages** fits the illustrated page to its native
+  proportions. Reflowable books (like the Mila editions) paginate, offer text
+  size controls, and are capped at a `46rem` measure.
 * Wide desktop screens show a persistent contents rail; smaller screens use a
   slide-over drawer with an explicit close button. "Start over" lives in the
   contents panel so the reading header stays compact.

@@ -1,0 +1,142 @@
+{
+  "date": "2026-10-25",
+  "role": "studio_director",
+  "question": "Can Fish Audio Drama 3 run on this machine and narrate Nell?",
+  "verdict": "runs locally via audio.cpp GGUF on Vulkan; draft narration produced; not release-ready",
+  "environment": {
+    "apu": "AMD Ryzen AI Max+ 395",
+    "gpu": "Radeon 8060S (RADV GFX1151), Mesa 25.2.8, Vulkan 1.4.318",
+    "gpu_features": {
+      "fp16": true,
+      "bf16": false,
+      "integer_dot_product": true,
+      "cooperative_matrix": "KHR_coopmat"
+    },
+    "vram_total_bytes": 103079215104,
+    "vram_gib": 96,
+    "vulkan_heap_bytes_seen_by_ggml": 39814270976,
+    "host_ram_gib": 32,
+    "gtt_bytes": 16363597824
+  },
+  "runtime": {
+    "name": "audio.cpp",
+    "commit": "c7230db27f196118e00537a4d27c4145a5e89937",
+    "built": "2026-10-25 local Release, backends cpu,vulkan",
+    "cmake_options": [
+      "ENGINE_ENABLE_VULKAN=ON",
+      "ENGINE_ENABLE_CUDA=OFF",
+      "ENGINE_ENABLE_METAL=OFF",
+      "ENGINE_ENABLE_NATIVE_CPU=ON",
+      "AUDIOCPP_MODEL_SET=custom",
+      "AUDIOCPP_MODELS=fish_drama3"
+    ],
+    "vulkan_sdk_glslc": "LunarG SDK 1.4.363 (extracted to local prefix; Ubuntu glslc 2025.2 cannot compile ggml's integer-dot-product/bfloat16 shaders)",
+    "unavailable_paths": [
+      "CUDA (no NVIDIA GPU)",
+      "ROCm/HIP (no hipcc or /opt/rocm)",
+      "SGLang-Omni",
+      "vLLM-Omni"
+    ]
+  },
+  "model": {
+    "upstream": "fishaudio/drama-3 (35B MoE, 3B active, FP8 experts)",
+    "used": "Jmica/Drama-3-GGUF drama-3-backbone-8bit-experts-Q4_K_S.gguf",
+    "size_gib": 22.91,
+    "note": "community GGUF quantisation, not the reference implementation; upstream checkpoint is ~39 GB plus 1.87 GB codec and needs CUDA-oriented serving stacks"
+  },
+  "reference_voice": {
+    "path": "/home/jgarcairaza/.cache/drama3/refs/en0.wav",
+    "source": "zhaochenyang20/seed-tts-eval-mini en/prompt-wavs/common_voice_en_10119832.wav, the clip published in the Drama 3 model card",
+    "duration_s": 3.9,
+    "license_note": "Mozilla Common Voice test clip, used as a temporary narrator reference only"
+  },
+  "book_input": {
+    "pages": 30,
+    "words": 2047,
+    "chars": 12067,
+    "source": "exports/nell-and-the-pocket-sized-storm.md (illustrated-v3 production export)"
+  },
+  "settings": {
+    "backend": "vulkan",
+    "mode": "offline",
+    "text_chunk_size": 4000,
+    "max_tokens": 1400,
+    "temperature": 1.0,
+    "top_p": 0.9,
+    "top_k": 4097,
+    "seed": 1234,
+    "threads": 8,
+    "direction": "[warm, unhurried storyteller voice]"
+  },
+  "generation": {
+    "pages_ok": 30,
+    "audio_seconds": 819,
+    "audio_minutes": 13.35,
+    "generation_wall_seconds": 837.5,
+    "mean_generation_seconds_per_page": 27.9,
+    "x_realtime_mean": 0.954,
+    "session_wall_seconds_including_load": 900,
+    "model_load_seconds": 13
+  },
+  "checks": {
+    "wpm_mean": 154.9,
+    "wpm_min": 128.8,
+    "wpm_max": 189.1,
+    "longest_pause_seconds": 0.0,
+    "pages_flagged": 0,
+    "loudness_lufs": -24.2,
+    "true_peak_dbfs": -2.0,
+    "word_diff": "normalized diff against source flagged only homophones/onomatopoeia after the page 22 retake",
+    "asr": "faster-whisper small.en, beam_size=5, CPU int8"
+  },
+  "defects_found_and_handled": [
+    {
+      "page": 16,
+      "seed": 1234,
+      "chunk": 128,
+      "defect": "inserted line 'Watch them now.' plus 11 s silence",
+      "fix": "text_chunk_size=4000; two seeds then read the page correctly"
+    },
+    {
+      "page": 22,
+      "seed": 1234,
+      "defect": "'Grandma let out the breath' instead of 'Nell'",
+      "fix": "re-rendered at seed 7, export uses that take"
+    },
+    {
+      "page": 20,
+      "defect": "'His rain stopped' transcribes as 'reins/reign' in both seeds",
+      "status": "unresolved, needs human listen"
+    },
+    {
+      "page": 18,
+      "seed": 1234,
+      "defect": "'Mr. Moss' transcribed 'Mr. Ma'",
+      "status": "transcribes correctly at seed 7; ambiguous ASR"
+    }
+  ],
+  "multi_speaker_test": {
+    "result": "both <|speaker:0|>/<|speaker:1|> spans rendered with two reference clips",
+    "not_verified": "distinct per-character timbre; pitch-shifted synthetic second reference is plumbing evidence only"
+  },
+  "artifacts": {
+    "audio_dir": "little-weather/standalone/nell-and-the-pocket-sized-storm/exports/tts-drama3-v1",
+    "master_wav_sha256": "4483cbc18bd63b36ecc456377109871fc158a53c3bb299d3f68ee5d52e194818",
+    "master_mp3_sha256": "32dccac36073188f11fd62c6e44ef47725d7b24f4c36c00d25f5aa39f147f0a9",
+    "scripts": "little-weather/standalone/nell-and-the-pocket-sized-storm/production/tts/"
+  },
+  "not_done": [
+    "human listen",
+    "narration loudness normalisation",
+    "per-character casting",
+    "narrator reference choice",
+    "publication",
+    "commit"
+  ],
+  "limitations": [
+    "Q4_K community quantisation, not FP8/bf16 upstream",
+    "no human listening or pronunciation review",
+    "mechanical ASR checks cannot judge warmth, timing or homophones",
+    "Vulkan heap is about 37 GiB of the 96 GiB carve-out; larger packages were not needed"
+  ]
+}

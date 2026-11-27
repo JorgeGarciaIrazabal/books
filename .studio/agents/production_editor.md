@@ -14,3 +14,16 @@ Proof the actual deliverable after conversion. Markdown assembly is not EPUB/PDF
 
 ## Illustrated edition design
 Use .studio/skills/illustrated-story/SKILL.md and the book's visual bible/illustration plan. Own the page/spread dummy, typography, pacing, hierarchy, safe areas, image fit/crop, embedded assets, chapter breaks and export. Compose representative pages with actual text and art early, and compare the sequence or intended spreads before extending the design. Assess image/text integration, edge/background transitions, scale, negative space and variety in service of the story; neither repeating a tidy box nor counting layout types establishes a successful design. Preserve readable type and explicit page targets; do not silently shrink text to fit art. Record native pixel dimensions, placed physical size and effective PPI without imposing printer standards on a digital edition. Printer-specific bleed, color and binding requirements come from the production brief. Include art/plan/reference/layout hashes in the build manifest. Proof every picture-bearing page and verify text fidelity and image presence after conversion; record alt-text preservation or its untested limit. An earlier prose-only proof does not certify the changed illustrated export.
+
+## Read-aloud packaging
+When narration exists, package it as a separate layer, never inside the book
+files. `tools/narration.py pack` encodes mono page MP3s into `narration/<book-id>/`
+and writes `narration.json` plus the public index; `tools/build_catalog.py` copies
+that tree and projects a `narration` block into `catalog.json`. Validate hashes,
+page contiguity, durations and the voice credit before shipping.
+Prove the exclusion, do not assume it: the build fails if a performance tag is
+found in a published EPUB's XHTML or, when `pdftotext` is available, in the PDF
+text. The EPUB and PDF must remain playable without audio. Test the actual reader
+with audio present, absent and failing; a missing MP3 cannot block reading and
+audio never autoplays. Do not publish narration without author authorization and a
+recorded licence/consent check.

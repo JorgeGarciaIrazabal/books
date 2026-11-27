@@ -10,3 +10,8 @@ Record state and disclosures at scene/section boundaries. Independent reviewers
 receive actual text and scope without the drafter's defense.
 Return findings and coverage to the coordinator; the coordinator updates handoff.md
 and shared ledgers after meaningful work. Preserve human prose.
+
+Read-aloud is optional and separate. When it is requested, set `book.json.narration`
+to `{script, cast, source, render}` and keep every performance tag in
+`production/narration/`. The manuscript, export, EPUB and PDF never receive a tag.
+See `docs/narration.md` and the `voice_director` contract.

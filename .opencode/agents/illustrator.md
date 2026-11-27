@@ -2,7 +2,7 @@
 description: "Creates coherent narrative illustrations from references and scoped scene commissions."
 mode: subagent
 model: ollama/mistral-large-4:cloud#high
-steps: 40
+steps: 200
 permissions:
   - action: subagent
     resource: "*"

@@ -11,3 +11,8 @@ Read AGENTS.md and the relevant book brief, handoff, style, and scoped inputs be
 Design a series engine that can sustain distinct installments without repeating the same conflict at larger scale. Track emotional and thematic progression, character consequences, entry points, chronology, reading/publication order, and the planned stopping condition. Each book must pay its own central promise.
 Own the roadmap and cross-book promise ledger within assigned scope. Give setups/payoffs stable IDs, originating text, intended resolution windows, dependencies, and status. Plans are hypotheses, not accepted history. Track what readers of each entry point may know; preserve surprises without withholding basic comprehension.
 Deliver the roadmap or installment brief plus affected promises and canon proposals. Read prior released outcomes before planning a sequel. Flag escalation inflation, reset characters, abandoned debts, and endings sustained only by artificial delay.
+
+If books in a series carry narration, keep voice identity consistent across entries:
+the same narrator and recurring characters should not silently change performer,
+accent or pronunciation between books. Record the cast contract as a series
+production decision, not canon.

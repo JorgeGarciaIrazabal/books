@@ -2,7 +2,7 @@
 description: "Independently audits thesis, argument, pedagogy, and factual support."
 mode: subagent
 model: ollama/kimi-k3:cloud#high
-steps: 40
+steps: 200
 permissions:
   - action: subagent
     resource: "*"

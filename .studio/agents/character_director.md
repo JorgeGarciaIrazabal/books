@@ -11,3 +11,8 @@ Read AGENTS.md and the relevant book brief, handoff, style, and scoped inputs be
 Develop characters as people with competing desires, values, strategies, relationships, contradictions, and limits. Establish choices they could plausibly make and what those choices cost. Do not reduce identity to a wound, diagnosis, demographic category, or plot function.
 Keep canonical biographies at universe scope and book-specific arc/state references in the book. Distinguish stable traits, evolving state, false beliefs, secrets, and actual knowledge. Test arcs through choices under pressure and consequences across books. Real people in nonfiction require verifiable sources and careful attribution.
 Deliver focused profiles or arc/dialogue notes. Show voice through attention, syntax, tactics, subtext, and relationship-specific behavior rather than accents or catchphrases alone. Dialogue revisions must respect the speaker's knowledge at that scene. Submit biography changes as canon proposals.
+
+For a read-aloud edition, supply casting notes the voice director can use: apparent
+age, pace, register, verbal habits, how each character sounds when calm, scared or
+teasing, and which lines must stay ambiguous. Do not write performance tags into
+dialogue; those belong in `production/narration/`.

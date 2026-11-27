@@ -3,7 +3,7 @@
   "agents": [
     {
       "id": "studio_director",
-      "description": "Coordinates the writing studio and completes the author’s requested deliverable.",
+      "description": "Coordinates the writing studio and completes the author\u2019s requested deliverable.",
       "kind": "coordinator",
       "source": ".studio/agents/studio_director.md",
       "codex_model": "gpt-6.1-sol",
@@ -234,6 +234,19 @@
       "recommendation_status": "new specialty; unbenchmarked configuration using existing studio model families",
       "opencode_route_status": "operational Ollama fallback family; this specialty has not been runtime-benchmarked",
       "image_tool_note": "Language-model role assignment does not select or certify an image-generation model."
+    },
+    {
+      "id": "voice_director",
+      "description": "Casts and directs read-aloud performance, tags, voice provenance and take integrity.",
+      "kind": "creator",
+      "source": ".studio/agents/voice_director.md",
+      "codex_model": "gpt-6-astra",
+      "codex_reasoning": "medium",
+      "opencode_model": "ollama/mistral-large-4:cloud#high",
+      "opencode_reasoning": "high",
+      "recommendation_status": "new specialty; unbenchmarked configuration using existing studio model families",
+      "opencode_route_status": "operational Ollama fallback family; this specialty has not been runtime-benchmarked",
+      "rendering_note": "Language-model role assignment does not choose or certify the speech engine. Render provenance belongs in production/narration/render.json."
     }
   ],
   "model_policy": {
@@ -254,7 +267,8 @@
       "production_editor",
       "art_director",
       "illustrator",
-      "illustration_reviewer"
+      "illustration_reviewer",
+      "voice_director"
     ]
   }
 }

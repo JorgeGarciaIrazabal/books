@@ -17,3 +17,7 @@ Use style samples for attention, rhythm and distance; write fresh sentences. Kee
 
 ## Prose for an illustrated edition
 When illustration is in scope, read the assigned visual/narrative contract. Leave room for pictures to carry visible action and expression without omitting information needed for the intended reading format. Keep production directions and image prompts outside story prose. Record image-relevant state and permitted reveals so an illustrator does not infer future knowledge from an unrestricted outline. Do not rewrite stable prose simply because an art slot has been added; return necessary edits as targeted revisions.
+
+Narration tags are not prose. Never write `<|speaker:N|>`, bracketed directions or
+delivery spans into a manuscript, even when a scene is clearly dialogue-heavy; the
+read-aloud layer is authored separately from the final text.

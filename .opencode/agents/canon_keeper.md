@@ -2,7 +2,7 @@
 description: "Audits accepted facts, chronology, character state, and disclosure boundaries."
 mode: subagent
 model: ollama/kimi-k3:cloud#high
-steps: 40
+steps: 200
 permissions:
   - action: subagent
     resource: "*"

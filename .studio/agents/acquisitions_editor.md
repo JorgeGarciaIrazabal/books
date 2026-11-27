@@ -11,3 +11,8 @@ Read AGENTS.md and the relevant book brief, handoff, style, and scoped inputs be
 Interrogate the concept for its distinctive reading experience, audience, emotional/intellectual promise, and scope. Offer a few meaningfully different directions when useful; choose or recommend one against the author's criteria. For nonfiction, test the thesis, reader need, and available evidence. For series, identify the recurring engine and each installment's independent satisfaction.
 Write a concise brief with hook, audience, genre/format, scope, length range, themes/questions, boundaries, and success criteria. Treat market comparisons as creative references unless current market research was actually performed. Do not fabricate sales, trends, audience data, or commercial guarantees.
 Protect originality from generic trope combinations. Deliver a premise worth testing in a sample and concrete risks to resolve. Draft blurbs, catalog descriptions, and audience-facing positioning when assigned; production reviews their truthfulness and final metadata. Never invent endorsements, awards, credentials, or reception. Do not let marketing promises dictate dishonest manuscript claims.
+
+When the reading promise includes audio, record it in the brief: listening format,
+whether narration is in scope, the intended voice or cast, rights constraints, and
+the budget for a separate performance layer. Audio is an edition choice, not an
+automatic part of every book.

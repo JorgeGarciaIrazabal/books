@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-26",
+  "role": "studio_director",
+  "deliverable": "Narration layer contracts, docs, web read-aloud and EPUB/PDF tag exclusion",
+  "narration": {
+    "book": "nell-and-the-pocket-sized-storm",
+    "pages": 30,
+    "audio_seconds": 1009.8,
+    "generation_seconds": 1073.9,
+    "wpm": {
+      "mean": 123.1,
+      "min": 100.4,
+      "max": 168.6
+    },
+    "pages_transcript_exact": 28,
+    "pages_flagged_for_pace": 9,
+    "retakes": [
+      {
+        "page": 7,
+        "seed": 11,
+        "reason": "repeated line and 50 s stall"
+      },
+      {
+        "page": 17,
+        "seed": 11,
+        "reason": "slow first take"
+      },
+      {
+        "page": 27,
+        "seed": 11,
+        "reason": "truncated after first sentence"
+      }
+    ],
+    "lufs": -22.4,
+    "true_peak_dbfs": -0.7,
+    "audio_bytes": 12141663,
+    "mp3_kbps": 96,
+    "engine": "audio.cpp c7230db (vulkan), drama-3-backbone-8bit-experts-Q4_K_S.gguf",
+    "reference_engine": "Kokoro-82M",
+    "credit": "Synthetic narration \u00b7 built with Fish Audio Drama 3 \u00b7 Kokoro-82M voices",
+    "script_sha256": "213dd28b7cee3012c248012c96fa5e4917cf2c225009cd0bcd1cb0d3f35b03d4",
+    "cast_sha256": "5a9b7590703a3bbe319812d86c3f4066e284a765f29dc6ae1cb871c1e5a898c0"
+  },
+  "checks": {
+    "unit_tests": 57,
+    "narration_validate": {
+      "books": 1,
+      "page_files": 30,
+      "epubs_scanned": 3,
+      "pdfs_scanned": 3,
+      "tags_found": 0
+    },
+    "site_build": {
+      "books": 3,
+      "publication_files": 9,
+      "narration_files": 32,
+      "narration_bytes": 12151692
+    },
+    "browser": {
+      "checks": 17,
+      "errors": 0,
+      "viewports": [
+        "390x844",
+        "1440x900"
+      ],
+      "real_mp3": [
+        "page-01.mp3",
+        "page-02.mp3"
+      ],
+      "no_narration_book": "mila-and-the-missing-moon bar hidden"
+    },
+    "tag_scan_sources": [
+      "manuscript/*.md",
+      "exports/nell-and-the-pocket-sized-storm.md",
+      "publications/*.epub XHTML",
+      "publications/*.pdf text via pdftotext"
+    ]
+  },
+  "artifacts": {
+    "public_package": "narration/nell-and-the-pocket-sized-storm/",
+    "review": ".studio/reviews/narration-layer-2026-10-26/",
+    "script": "little-weather/standalone/nell-and-the-pocket-sized-storm/production/narration/script.md",
+    "cast": "little-weather/standalone/nell-and-the-pocket-sized-storm/production/narration/cast.json",
+    "render": "little-weather/standalone/nell-and-the-pocket-sized-storm/production/narration/render.json",
+    "master_checks": "little-weather/standalone/nell-and-the-pocket-sized-storm/exports/narration-v1/checks.json"
+  },
+  "not_done": [
+    "human listen",
+    "narrator casting",
+    "pause trimming decision",
+    "dog and twins voices",
+    "reflowable read-aloud",
+    "commit",
+    "publish"
+  ],
+  "limitations": [
+    "Synthetic Kokoro bed is a stand-in, not casting",
+    "Headless Chrome viewports, not physical devices or every browser",
+    "Mechanical transcript checks cannot judge warmth or pronunciation",
+    "Page audio only for fixed-layout books",
+    "Publication not performed"
+  ]
+}

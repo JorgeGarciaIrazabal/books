@@ -103,6 +103,164 @@
       "result": "Implemented and checked. Catalog cards dropped from 862px to 298px on a 390px phone and from 986px to 659px on desktop; phone reader header dropped from 153px to 106px (reflowable) and 104px to 56px (fixed); fixed-layout pages now fit their own 720:912 ratio instead of clipping. 51 tests and the build pass; six-viewport Playwright coverage and all three books were exercised. Published in commit f045b63; GitHub Pages run 40258816097 succeeded; live checks at https://jorgegarciairazabal.github.io/books/ passed with no JavaScript errors."
     },
     {
+      "id": "TASK-SITE-0004",
+      "role": "studio_director",
+      "status": "done",
+      "source_snapshot": "a135b26 plus the adaptive-reader working tree (2026-10-25)",
+      "inputs": [
+        "AGENTS.md",
+        ".studio/agents/studio_director.md",
+        "handoff.md",
+        "site/reader.html",
+        "site/assets/css/styles.css",
+        "site/assets/js/reader.js",
+        "publications/nell-and-the-pocket-sized-storm.epub",
+        "publications/manifest.json",
+        "docs/publishing.md"
+      ],
+      "allowed_writes": [
+        "site/**",
+        "docs/publishing.md",
+        "handoff.md",
+        "tasks.json",
+        ".studio/reviews/site-adaptive-reader-2026-10-25/**"
+      ],
+      "deliverable": "Adaptive, continuously scrolling text view for fixed-layout books on phones, tablets, and short landscape laptops, with working text sizing, a page-view toggle, and preserved illustrations and reading position",
+      "acceptance": [
+        "Fixed-layout books offer a text view that uses the available screen width and height instead of fitting the whole illustrated page into one screen",
+        "The text view preserves the book's real text, chapter headings, illustration order, alt text, and page count",
+        "Text size controls work in the text view and persist per book",
+        "Page/text switching preserves the current page and the choice persists",
+        "Phones, small phones, phone landscape, tablet portrait, tablet landscape, laptop, and desktop defaults are deliberate and documented",
+        "51 unit tests, site build, link/hash checks, and JavaScript syntax checks pass",
+        "Playwright coverage finds no horizontal overflow or JavaScript errors and verifies all 12 illustrations",
+        "The illustrated page view remains available at its native 720:912 ratio"
+      ],
+      "budget": {
+        "max_rounds": 2,
+        "max_tool_calls": 120
+      },
+      "dependencies": [
+        "TASK-SITE-0003"
+      ],
+      "owner": "studio_director",
+      "result": "Implemented and verified locally. Nell now opens in a continuous text view on phones, phone landscape, tablet landscape, and short landscape laptops: 30 real pages, 12 illustrations, 19px default text (32.3px at 170%), page-aware status, contents jumps, saved section/scroll, and a Text/Pages toggle that preserves the current page. The 1440px desktop and tablet portrait keep the 720:912 illustrated page by default. The 320px header wrap was found and fixed (155px to 106px, 472px reading area). Reflowable Mila defaults to 18.4px on phones and 17.6px on tablets. 51 tests and the build pass; eight-viewport Playwright coverage and the 320px/170% accessibility check pass with no JS errors or overflow. Not committed or published; author approval pending."
+    },
+    {
+      "id": "TASK-TTS-0001",
+      "role": "studio_director",
+      "status": "done",
+      "source_snapshot": "audio.cpp c7230db + Jmica/Drama-3-GGUF Q4_K_S + illustrated-v3 export, 2026-10-25",
+      "inputs": [
+        "AGENTS.md",
+        ".studio/agents/studio_director.md",
+        "little-weather/standalone/nell-and-the-pocket-sized-storm/book.json",
+        "little-weather/standalone/nell-and-the-pocket-sized-storm/exports/nell-and-the-pocket-sized-storm.md"
+      ],
+      "allowed_writes": [
+        "little-weather/standalone/nell-and-the-pocket-sized-storm/production/tts/**",
+        "little-weather/standalone/nell-and-the-pocket-sized-storm/exports/tts-drama3-v1/**",
+        ".studio/reviews/tts-drama3-2026-10-25/**",
+        "handoff.md",
+        "tasks.json",
+        "little-weather/standalone/nell-and-the-pocket-sized-storm/handoff.md",
+        "little-weather/standalone/nell-and-the-pocket-sized-storm/tasks.json"
+      ],
+      "deliverable": "Local feasibility answer for Fish Audio Drama 3 plus a draft 30-page narration with fidelity checks",
+      "acceptance": [
+        "Model actually runs on this machine",
+        "No manuscript edits",
+        "Every take checked for inserted/dropped words and long pauses",
+        "Limits and unresolved defects stated"
+      ],
+      "budget": {
+        "max_rounds": 2,
+        "max_tool_calls": 120
+      },
+      "dependencies": [],
+      "owner": "coordinator (deepseek-v4.1-flash:1017)",
+      "result": "Drama 3 runs via audio.cpp Vulkan GGUF; 30/30 pages, 13:35 audio, 0.954x real time, 0/30 mechanical flags after a page-22 retake. Evidence in .studio/reviews/tts-drama3-2026-10-25."
+    },
+    {
+      "id": "TASK-TTS-0002",
+      "role": "studio_director",
+      "status": "done",
+      "source_snapshot": "tagged-pilot.md 2026-10-26 + audio.cpp c7230db + Drama 3 Q4_K_S",
+      "inputs": [
+        "AGENTS.md",
+        "little-weather/standalone/nell-and-the-pocket-sized-storm/production/tts/notes.md",
+        "little-weather/standalone/nell-and-the-pocket-sized-storm/exports/nell-and-the-pocket-sized-storm.md"
+      ],
+      "allowed_writes": [
+        "little-weather/standalone/nell-and-the-pocket-sized-storm/production/tts/**",
+        "little-weather/standalone/nell-and-the-pocket-sized-storm/exports/tts-drama3-pilot-tagged/**",
+        ".studio/reviews/tts-drama3-tags-2026-10-26/**",
+        "handoff.md",
+        "tasks.json"
+      ],
+      "deliverable": "Speaker- and emotion-tagged pilot for Nell with measured evidence",
+      "acceptance": [
+        "Tag removal reproduces the source exactly",
+        "Voices verified distinct",
+        "Tag effects measured",
+        "Limits recorded"
+      ],
+      "budget": {
+        "max_rounds": 2,
+        "max_tool_calls": 120
+      },
+      "dependencies": [
+        "TASK-TTS-0001"
+      ],
+      "owner": "coordinator (deepseek-v4.1-flash:1017)",
+      "result": "Pilot complete for 11 pages; evidence in .studio/reviews/tts-drama3-tags-2026-10-26. Remaining 19 pages untagged."
+    },
+    {
+      "id": "TASK-NARR-0001",
+      "role": "studio_director",
+      "status": "done",
+      "source_snapshot": "2026-10-26 working tree; narration package and review hashes in .studio/reviews/narration-layer-2026-10-26/metrics.json",
+      "inputs": [
+        "AGENTS.md",
+        ".studio/agents/studio_director.md",
+        "docs/narration.md",
+        "little-weather/standalone/nell-and-the-pocket-sized-storm/production/narration/script.md"
+      ],
+      "allowed_writes": [
+        "AGENTS.md",
+        "README.md",
+        "narration/**",
+        "tools/**",
+        "tests/**",
+        "site/**",
+        "docs/**",
+        ".studio/**",
+        ".opencode/agents/**",
+        ".codex/agents/**",
+        "templates/**",
+        "handoff.md",
+        "tasks.json",
+        "little-weather/standalone/nell-and-the-pocket-sized-storm/**"
+      ],
+      "deliverable": "Studio-wide narration contract, documented read-aloud layer, web Listen control and EPUB/PDF tag exclusion",
+      "acceptance": [
+        "Agents and docs define the layer",
+        "Reader plays page audio without autoplay",
+        "EPUB/PDF tag scan enforced",
+        "30-page package built and verified",
+        "Limits and rights recorded"
+      ],
+      "budget": {
+        "max_rounds": 2,
+        "max_tool_calls": 250
+      },
+      "dependencies": [
+        "TASK-TTS-0002"
+      ],
+      "owner": "coordinator (deepseek-v4.1-flash:1017)",
+      "result": "Complete: voice_director + 7 updated contracts, workflow/craft/skill/docs, tools/narration.py, site reader + catalogue, 56 tests, 16 browser checks, 3 EPUB/3 PDF tag scans clean. No human listen; not committed or published."
+    },
+    {
       "id": "TASK-PAGES-0005",
       "role": "studio_director",
       "status": "done",

@@ -2,16 +2,12 @@
 
 - **Date**: 2026-11-26
 - **Role**: `studio_director`
-- **Canon revision**: `3` (`corporate-castle/universe.json`).
+- **Canon revision**: `4` (`corporate-castle/universe.json`).
 
 ## Completed work
 - Published **Prologue Preview Edition** (EPUB 3, 4-page PDF, 720×1080 cover) live to GitHub Pages (`91712e2`).
-- Rendered, ASR-checked, retaken, assembled, and published **Prologue Preview Audiobook** (strictly Prologue only, excluding draft Chapter 1):
-  - Engine: local **Fish Audio Drama 3** (`audio.cpp` Vulkan, synthetic `af_heart` narrator reference).
-  - 11 word-exact segments (`production/narration/segments.json`, `script.md`, `cast.json`, `cast/narrator.wav`, `render.json`, `notes.md`).
-  - Faster-whisper ASR check caught two stumbles (`u02` *"full-blown"*, `u10` *"Volun-telling"*) — retaken cleanly at seed 11 -> final check: **0 flagged, 0 word errors, 0.0s runaway pauses, mean 155.6 wpm**.
-  - Assembled `site/audio/the-hot-potato-of-corporate-castle/chapter-01.mp3` (`5:05`, `3,659,660` bytes) + `chapters.json`, created `site/audiobook-the-hot-potato-of-corporate-castle.html`, and linked from `site/index.html`.
-  - Validated EPUB/PDF tag exclusion (`tools/narration.py validate`), rebuilt `_site/`, passed all 60 unit tests, and pushed live to `origin/main`.
+- Rendered, ASR-checked, retaken, assembled, and published **Prologue Preview Audiobook** (`6925081`, strictly Prologue only, excluding draft Chapter 1).
+- Revised **Chapter 1: The Reluctant Steward** (`manuscript/001-the-reluctant-steward.md`, 4,069 words, 0 dashes, 0 inline bold) with the real-time Elliot, High Lord of Engineering 15-minute Deep Magic vise (`"preoccupied"` → `"not paying attention"`, `'Elliot, protect me'` / laughing and doing nothing, High Lord obligation → quiet fear → `"Absolutely. Absolutely."`), immediate Liability Tower loudspeaker welcome & Lois's velvet curtain shut, Sienna's 2-hour therapy cutaway, the clean gold-standard file close with Lois/Leo/Orla, Leo's `"Like a knife through butter"` Slack-rune and friendship tax, Lois's `"packed by the door"` cutaway, Victoria & Riley's live barge Squire moments, Sarai guarding the door, and the `"three weeks"` Protected Exile hook. Synced `scenes.json` (`SC-0001`).
 
 ## Remaining open items
 - Human listening review of the synthetic Prologue audio (mechanical ASR/pause checks pass; warmth/pronunciation of proper nouns like `Sarai` and `Okta` still benefit from human ear).

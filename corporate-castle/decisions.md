@@ -52,4 +52,15 @@
 - **Authority**: Explicit author instruction (`2026-11-26`).
 - **Affected paths**: `corporate-castle/universe.json`, `bible.md`, `canon.json`, `glossary.md`, `characters/CHAR-0002-doctor-lois.md`, `characters/CHAR-0007-sir-leo.md`, `standalone/the-hot-potato-of-corporate-castle/manuscript/001-the-reluctant-steward.md`.
 
+## DEC-CC-0008: Lock Sir Leo's nuanced knight-of-Deep-Magic engine and the Bullying High Lord Fracture chain
+- **Date**: 2026-11-26
+- **Question**: How do Sir Leo's strengths and personal foibles work alongside Marissa and Doctor Lois, and how does the Bullying High Lord Fracture play out?
+- **Accepted choice**:
+  1. **Sir Leo (`CHAR-0007`, promoted to `accepted`)**: A true knight of Deep Magic, far more learned in the intricacies of its spells than Doctor Lois; brings dry wit and humor; respects Marissa as a fellow licensed practitioner and delights in her skill because it also makes his own job easier. As a confidant, he vents about feeling mistreated and undervalued by Lois—which quietly irritates Marissa because his treatment inside Liability Tower is nothing compared to how Lois treats the ER Watch, and because Leo knows Marissa carries heavy weight even for him and quietly takes advantage of it (the tax she pays for his friendship and allyship). Yet when it counts, he goes to bat for her and takes the hit.
+  2. **The Fracture (Bullying High Lord Inquiry)**: Marissa brings her pushback on the Bullying High Lord case to Leo first. Leo goes to bat for her, using his deeper mastery of Deep Magic's spell intricacies to secure a Silk-Robed Sellsword of Outside Counsel to interview the High Lord on a technicality, then takes it to Lois. Lois is furious because Leo stood up for Marissa and escalated a High Lord matter. Leo takes the hit behind closed doors and returns to Marissa speaking in coded language to let her know he has taken it as far as he was able—forcing Marissa to swallow the bitter pill of agreeing to hollow coaching in the end.
+  3. Bump `universe.json.canon_revision` from `3` to `4`.
+- **Authority**: Explicit author instruction (`2026-11-26`).
+- **Affected paths**: `corporate-castle/universe.json`, `canon.json`, `characters/CHAR-0001-marissa.md`, `CHAR-0002-doctor-lois.md`, `CHAR-0007-sir-leo.md`, and Book 1 `outline.md`, `scenes.json`, `canon/proposals.json`, `state.md`, `handoff.md`.
+
+
 

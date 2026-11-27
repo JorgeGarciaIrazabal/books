@@ -2,7 +2,7 @@
 description: "Independently checks story images and final illustrated layouts against prose and visual constraints."
 mode: subagent
 model: ollama/kimi-k3:cloud#high
-steps: 40
+steps: 200
 permissions:
   - action: subagent
     resource: "*"

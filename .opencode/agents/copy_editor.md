@@ -2,7 +2,7 @@
 description: "Checks grammar, usage, mechanics, naming consistency, and citation presentation."
 mode: subagent
 model: ollama/mistral-large-4:cloud#high
-steps: 40
+steps: 200
 permissions:
   - action: subagent
     resource: "*"

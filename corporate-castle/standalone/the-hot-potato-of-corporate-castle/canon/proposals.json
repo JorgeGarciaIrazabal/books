@@ -18,11 +18,11 @@
     },
     {
       "id": "PROP-0002",
-      "fact": "Sir Leo, Counsel of Liability, serves under Doctor Lois in Liability Tower as Marissa's candid professional ally, warns Lois against refusing Marissa's layering severance request, takes Protected Exile in January–February, and champions bringing Marissa back on an independent consulting retainer in April.",
+      "fact": "Sir Leo, Counsel of Liability, is a knight of Deep Magic (promoted to accepted universe canon `FACT-0015` via `DEC-CC-0008`). Back-half beats (warning Lois against denying Marissa's layering severance, taking Protected Exile Jan–Feb, championing Marissa's consulting return) remain proposed until back-half review.",
       "scope": "corporate-castle",
-      "status": "proposed",
-      "source_passage": "Google Doc Tabs 1, 2, and 3",
-      "story_time": "Book 1, Ch 1–9",
+      "status": "accepted",
+      "source_passage": "Author ruling `DEC-CC-0008` (2026-11-26); back-half parked from Tabs 2–3",
+      "story_time": "Book 1",
       "affected_entities": [
         "CHAR-0007",
         "CHAR-0001",
@@ -47,7 +47,7 @@
     },
     {
       "id": "PROP-0004",
-      "fact": "Supporting castle figures include Brittany (Sales Courtier of Optics), Sienna (Engineering Courtier of Optics), Bryce (High Lord of Engineering), the Grand Treasurer of Finance, and the Silk-Robed Sellswords of Outside Counsel (managed by partner Arthur).",
+      "fact": "Supporting castle figures include Brittany (Sales Courtier of Optics), Sienna (Engineering Courtier of Optics), Elliot (High Lord of Engineering), the Grand Treasurer of Finance, and the Silk-Robed Sellswords of Outside Counsel (managed by partner Arthur).",
       "scope": "corporate-castle",
       "status": "proposed",
       "source_passage": "Google Doc Tabs 1, 2, and 3",
@@ -61,14 +61,15 @@
     },
     {
       "id": "PROP-0005",
-      "fact": "In Act I/II (The Fracture), Marissa completes an airtight Formal Inquiry proving an unnamed High Lord is bullying their fiefdom and recommends Okta Excommunication; Doctor Lois folds to High Table politics and pressures Marissa to downgrade the remedy to coaching.",
+      "fact": "In Chapter 2 (The Fracture), Marissa brings her pushback on a Bullying High Lord inquiry to Sir Leo first; Leo secures a Silk-Robed Sellsword of Outside Counsel on a technicality to interview the High Lord, takes Doctor Lois's fury behind closed doors, and returns in coded language letting Marissa know he took it as far as he was able—forcing Marissa to swallow the bitter pill of hollow coaching.",
       "scope": "corporate-castle",
-      "status": "proposed",
-      "source_passage": "Google Doc Tab 4 Section 4 (Pivotal Arc Beats — The Fracture)",
+      "status": "accepted",
+      "source_passage": "Author ruling `DEC-CC-0008`, 2026-11-26",
       "story_time": "Book 1, Ch 2",
       "affected_entities": [
         "CHAR-0001",
-        "CHAR-0002"
+        "CHAR-0002",
+        "CHAR-0007"
       ],
       "changes_existing_fact": false
     }
