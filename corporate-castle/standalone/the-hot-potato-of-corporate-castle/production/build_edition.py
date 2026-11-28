@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Build the typographic cover, typeset 6x9 PDF, and reflowable EPUB 3 for
-The Hot Potato of Corporate Castle (Prologue Preview edition).
+The Hot Potato of Corporate Castle (Preview Edition: Prologue & Chapter One).
 
-Reads the Prologue prose strictly from manuscript/000-prologue-the-hot-potato-of-corporate-castle.md
-without altering story wording, excluding unfinished chapters.
+Reads all chapters registered in book.json strictly from manuscript/*.md
+without altering story wording.
 
 Run with ReportLab and Pillow:
     uv run --with reportlab --with pillow python production/build_edition.py
@@ -39,7 +39,6 @@ from reportlab.platypus import (
 
 BOOK = Path(__file__).resolve().parents[1]
 OUT = BOOK / "exports"
-PROLOGUE_REL = "manuscript/000-prologue-the-hot-potato-of-corporate-castle.md"
 
 XHTML_NS = "http://www.w3.org/1999/xhtml"
 OPF_NS = "http://www.idpf.org/2007/opf"
@@ -49,26 +48,38 @@ FONT_CANDIDATES = {
     "regular": [
         Path("/usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf"),
         Path("/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf"),
+        Path("C:/Windows/Fonts/georgia.ttf"),
+        Path("C:/Windows/Fonts/times.ttf"),
     ],
     "bold": [
         Path("/usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf"),
         Path("/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf"),
+        Path("C:/Windows/Fonts/georgiab.ttf"),
+        Path("C:/Windows/Fonts/timesbd.ttf"),
     ],
     "italic": [
         Path("/usr/share/fonts/truetype/liberation/LiberationSerif-Italic.ttf"),
         Path("/usr/share/fonts/truetype/dejavu/DejaVuSerif-Italic.ttf"),
+        Path("C:/Windows/Fonts/georgiai.ttf"),
+        Path("C:/Windows/Fonts/timesi.ttf"),
     ],
     "bold_italic": [
         Path("/usr/share/fonts/truetype/liberation/LiberationSerif-BoldItalic.ttf"),
         Path("/usr/share/fonts/truetype/dejavu/DejaVuSerif-BoldItalic.ttf"),
+        Path("C:/Windows/Fonts/georgiaz.ttf"),
+        Path("C:/Windows/Fonts/timesbi.ttf"),
     ],
     "sans": [
         Path("/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf"),
         Path("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"),
+        Path("C:/Windows/Fonts/arial.ttf"),
+        Path("C:/Windows/Fonts/segoeui.ttf"),
     ],
     "sans_bold": [
         Path("/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"),
         Path("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"),
+        Path("C:/Windows/Fonts/arialbd.ttf"),
+        Path("C:/Windows/Fonts/segoeuib.ttf"),
     ],
 }
 
@@ -95,6 +106,7 @@ html { font-size: 100%; }
 body { margin: 5%; font-family: Georgia, "Liberation Serif", "DejaVu Serif", serif; line-height: 1.6; color: #22262e; }
 p { margin: 0 0 0.9em; orphans: 2; widows: 2; }
 h1 { font-size: 1.65em; line-height: 1.25; margin: 1em 0 1em; break-after: avoid; page-break-after: avoid; }
+hr.scene-break { border: 0; text-align: center; margin: 1.5em auto; width: 4em; border-top: 1px solid #b48b48; }
 nav li { margin-bottom: 0.6em; }
 .cover-page { margin: 0; padding: 0; text-align: center; background: #1d2430; }
 .cover-page img { max-width: 100%; max-height: 98vh; height: auto; }
@@ -115,22 +127,35 @@ def norm(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
-def load_prologue() -> tuple[dict, dict]:
+def is_scene_break(block: str) -> bool:
+    return block.strip() in {"---", "***", "* * *"}
+
+
+def load_chapters() -> tuple[dict, list[dict]]:
     meta = json.loads((BOOK / "book.json").read_text(encoding="utf-8"))
-    src = BOOK / PROLOGUE_REL
-    raw_bytes = src.read_bytes()
-    raw = raw_bytes.decode("utf-8").strip()
-    heading, body = raw.split("\n", 1)
-    if not heading.startswith("# "):
-        raise ValueError(f"Expected '# ' heading in {PROLOGUE_REL}")
-    title = heading[2:].strip()
-    paragraphs = [norm(p) for p in re.split(r"\n\s*\n", body.strip()) if p.strip()]
-    return meta, {
-        "source": PROLOGUE_REL,
-        "title": title,
-        "paragraphs": paragraphs,
-        "sha256": sha256_bytes(raw_bytes),
-    }
+    chapters: list[dict] = []
+    for idx, rel in enumerate(meta["chapters"]):
+        src = BOOK / rel
+        raw_bytes = src.read_bytes()
+        raw = raw_bytes.decode("utf-8").replace("\r\n", "\n").strip()
+        heading, body = raw.split("\n", 1)
+        if not heading.startswith("# "):
+            raise ValueError(f"Expected '# ' heading in {rel}")
+        title = heading[2:].strip()
+        blocks = [norm(p) for p in re.split(r"\n\s*\n", body.strip()) if p.strip()]
+        slug = "prologue" if idx == 0 and title.lower().startswith("prologue") else f"chapter-{idx:02d}"
+        chapters.append(
+            {
+                "id": slug,
+                "filename": f"{slug}.xhtml",
+                "source": rel,
+                "title": title,
+                "blocks": blocks,
+                "sha256": sha256_bytes(raw_bytes),
+                "is_prologue": slug == "prologue",
+            }
+        )
+    return meta, chapters
 
 
 def md_to_rl_xml(text: str) -> str:
@@ -183,15 +208,21 @@ def build_cover(output: Path) -> bytes:
     cx = w // 2
     moat_y = 1660
     # Left spire (Tower of Vibes — slender lavender silhouette)
-    d.polygon([(cx - 210, moat_y - 24), (cx - 190, moat_y - 280), (cx - 150, moat_y - 340),
-               (cx - 110, moat_y - 280), (cx - 90, moat_y - 24)], outline=lavender, width=4)
+    d.polygon(
+        [(cx - 210, moat_y - 24), (cx - 190, moat_y - 280), (cx - 150, moat_y - 340),
+         (cx - 110, moat_y - 280), (cx - 90, moat_y - 24)],
+        outline=lavender,
+        width=4,
+    )
     # Right spire (Liability Tower — austere brass silhouette)
-    d.polygon([(cx + 90, moat_y - 24), (cx + 100, moat_y - 310), (cx + 150, moat_y - 355),
-               (cx + 200, moat_y - 310), (cx + 210, moat_y - 24)], outline=brass, width=4)
-    # Moat line + tiny barge moored outside Liability Tower
+    d.polygon(
+        [(cx + 90, moat_y - 24), (cx + 100, moat_y - 310), (cx + 150, moat_y - 355),
+         (cx + 200, moat_y - 310), (cx + 210, moat_y - 24)],
+        outline=brass,
+        width=4,
+    )
+    # Moat line
     d.line([(cx - 270, moat_y), (cx + 270, moat_y)], fill=(120, 134, 154), width=3)
-    d.polygon([(cx + 8, moat_y - 4), (cx + 72, moat_y - 4), (cx + 62, moat_y + 14), (cx + 18, moat_y + 14)],
-              outline=ivory, width=3)
 
     f_kicker = ImageFont.truetype(str(pick_font("sans_bold")), 36)
     f_title = ImageFont.truetype(str(pick_font("bold")), 116)
@@ -213,7 +244,7 @@ def build_cover(output: Path) -> bytes:
     y = draw_centered(d, w, y, "Corporate Castle", f_title, ivory) + 110
 
     # Preview pill box (vertically centered using exact textbbox ascent)
-    pill_text = "PROLOGUE PREVIEW"
+    pill_text = "PREVIEW EDITION"
     bbox = d.textbbox((0, 0), pill_text, font=f_badge)
     tw = bbox[2] - bbox[0]
     th = bbox[3] - bbox[1]
@@ -224,7 +255,7 @@ def build_cover(output: Path) -> bytes:
     d.text(((w - tw) / 2, text_y), pill_text, font=f_badge, fill=ivory)
 
     draw_centered(d, w, 1820, "A Satirical Corporate Fantasy", f_sub, soft_ivory)
-    draw_centered(d, w, 1930, "WORK-IN-PROGRESS EDITION  ·  PROLOGUE ONLY", f_foot, brass)
+    draw_centered(d, w, 1930, "WORK IN PROGRESS  ·  PROLOGUE & CHAPTER ONE", f_foot, brass)
 
     final = im.resize((720, 1080), Image.LANCZOS)
     output.parent.mkdir(parents=True, exist_ok=True)
@@ -233,11 +264,17 @@ def build_cover(output: Path) -> bytes:
 
 
 class BookDoc(BaseDocTemplate):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self._bookmark_idx = 0
+
     def afterFlowable(self, flowable):
         if isinstance(flowable, Paragraph) and flowable.style.name == "ChapterTitle":
             text = flowable.getPlainText()
-            self.canv.bookmarkPage("prologue")
-            self.canv.addOutlineEntry(text, "prologue", level=0, closed=False)
+            key = f"chap-{self._bookmark_idx}"
+            self._bookmark_idx += 1
+            self.canv.bookmarkPage(key)
+            self.canv.addOutlineEntry(text, key, level=0, closed=False)
 
 
 def draw_plain_page(canv: canvas.Canvas, doc: BookDoc):
@@ -251,7 +288,7 @@ def draw_body_page(canv: canvas.Canvas, doc: BookDoc):
     canv.setFont("Label", 7.5)
     canv.drawString(MARGIN_X, height - 32, "THE HOT POTATO OF CORPORATE CASTLE")
     canv.setFillColor(MUTED)
-    canv.drawRightString(width - MARGIN_X, height - 32, "PROLOGUE PREVIEW")
+    canv.drawRightString(width - MARGIN_X, height - 32, "PREVIEW EDITION")
     canv.setStrokeColor(BRASS)
     canv.setLineWidth(0.5)
     canv.line(MARGIN_X, height - 39, width - MARGIN_X, height - 39)
@@ -261,7 +298,7 @@ def draw_body_page(canv: canvas.Canvas, doc: BookDoc):
     canv.restoreState()
 
 
-def build_pdf(meta: dict, prologue: dict, cover_path: Path, output: Path) -> tuple[bytes, int]:
+def build_pdf(meta: dict, chapters: list[dict], cover_path: Path, output: Path) -> tuple[bytes, int]:
     for name, role in [
         ("Story", "regular"),
         ("StoryBold", "bold"),
@@ -281,6 +318,10 @@ def build_pdf(meta: dict, prologue: dict, cover_path: Path, output: Path) -> tup
     body_style = ParagraphStyle(
         "Body", fontName="Story", fontSize=10.3, leading=14.8, textColor=INK,
         spaceAfter=6.5, alignment=0,
+    )
+    scene_break_style = ParagraphStyle(
+        "SceneBreak", fontName="Story", fontSize=10.5, leading=14, textColor=BRASS,
+        alignment=TA_CENTER, spaceBefore=8, spaceAfter=10,
     )
     chapter_style = ParagraphStyle(
         "ChapterTitle", fontName="StoryBold", fontSize=16.5, leading=21, textColor=INK,
@@ -327,8 +368,8 @@ def build_pdf(meta: dict, prologue: dict, cover_path: Path, output: Path) -> tup
         rightMargin=MARGIN_X,
         topMargin=MARGIN_TOP,
         bottomMargin=MARGIN_BOTTOM,
-        title=f"{meta['title']} (Prologue Preview)",
-        subject="Corporate Castle satirical fantasy prologue preview",
+        title=f"{meta['title']} (Preview Edition)",
+        subject="Corporate Castle satirical fantasy preview edition (Prologue & Chapter One)",
         author="Corporate Castle",
         creator="Book Studio",
     )
@@ -348,13 +389,17 @@ def build_pdf(meta: dict, prologue: dict, cover_path: Path, output: Path) -> tup
         Paragraph("CORPORATE CASTLE", series_style),
         Paragraph("The Hot Potato of<br/>Corporate Castle", title_style),
         Paragraph("A Satirical Corporate Fantasy", sub_style),
-        Paragraph("PROLOGUE PREVIEW EDITION", notice_style),
+        Paragraph("PREVIEW EDITION  ·  PROLOGUE &amp; CHAPTER ONE", notice_style),
         NextPageTemplate("Body"),
-        PageBreak(),
-        Paragraph(html.escape(prologue["title"], quote=False), chapter_style),
     ]
-    for p in prologue["paragraphs"]:
-        story.append(Paragraph(md_to_rl_xml(p), body_style))
+    for chap in chapters:
+        story.append(PageBreak())
+        story.append(Paragraph(html.escape(chap["title"], quote=False), chapter_style))
+        for block in chap["blocks"]:
+            if is_scene_break(block):
+                story.append(Paragraph("*   *   *", scene_break_style))
+            else:
+                story.append(Paragraph(md_to_rl_xml(block), body_style))
 
     doc.build(story)
     return output.read_bytes(), doc.page
@@ -377,13 +422,13 @@ def _xhtml(title: str, body: str, body_class: str = "") -> str:
     )
 
 
-def build_epub(meta: dict, prologue: dict, cover_bytes: bytes, output: Path) -> bytes:
+def build_epub(meta: dict, chapters: list[dict], cover_bytes: bytes, output: Path) -> bytes:
     entries: dict[str, str | bytes] = {}
     entries["style.css"] = EPUB_CSS
     entries["cover.jpg"] = cover_bytes
     entries["cover.xhtml"] = _xhtml(
         f"{meta['title']} Cover",
-        '<section epub:type="cover"><img src="cover.jpg" alt="Typographic cover of The Hot Potato of Corporate Castle: Prologue Preview"/></section>',
+        '<section epub:type="cover"><img src="cover.jpg" alt="Typographic cover of The Hot Potato of Corporate Castle: Preview Edition"/></section>',
         "cover-page",
     )
     entries["title.xhtml"] = _xhtml(
@@ -393,42 +438,71 @@ def build_epub(meta: dict, prologue: dict, cover_bytes: bytes, output: Path) -> 
         f'  <h1>{html.escape(meta["title"], quote=False)}</h1>\n'
         '  <hr class="rule" aria-hidden="true"/>\n'
         '  <p class="subtitle">A Satirical Corporate Fantasy</p>\n'
-        '  <p class="note">Prologue Preview Edition</p>\n'
+        '  <p class="note">Preview Edition · Prologue &amp; Chapter One</p>\n'
         "</section>",
     )
 
-    body_html = "\n".join(f"<p>{md_to_xhtml_inline(p)}</p>" for p in prologue["paragraphs"])
-    entries["prologue.xhtml"] = _xhtml(
-        prologue["title"],
-        '<section epub:type="prologue" role="doc-prologue" id="prologue">\n'
-        f'<h1>{html.escape(prologue["title"], quote=False)}</h1>\n'
-        f"{body_html}\n"
-        "</section>",
-    )
+    toc_items = [f'      <li><a href="title.xhtml">{html.escape(meta["title"], quote=False)}</a></li>']
+    manifest_items = [
+        '    <item id="style" href="style.css" media-type="text/css"/>',
+        '    <item id="cover-image" href="cover.jpg" media-type="image/jpeg" properties="cover-image"/>',
+        '    <item id="cover" href="cover.xhtml" media-type="application/xhtml+xml"/>',
+        '    <item id="title" href="title.xhtml" media-type="application/xhtml+xml"/>',
+        '    <item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>',
+    ]
+    spine_items = [
+        '    <itemref idref="cover"/>',
+        '    <itemref idref="title"/>',
+    ]
 
+    for chap in chapters:
+        body_parts = []
+        for block in chap["blocks"]:
+            if is_scene_break(block):
+                body_parts.append('<hr class="scene-break" aria-hidden="true"/>')
+            else:
+                body_parts.append(f"<p>{md_to_xhtml_inline(block)}</p>")
+        body_html = "\n".join(body_parts)
+        epub_type = "prologue" if chap["is_prologue"] else "chapter"
+        role = "doc-prologue" if chap["is_prologue"] else "doc-chapter"
+        entries[chap["filename"]] = _xhtml(
+            chap["title"],
+            f'<section epub:type="{epub_type}" role="{role}" id="{chap["id"]}">\n'
+            f'<h1>{html.escape(chap["title"], quote=False)}</h1>\n'
+            f"{body_html}\n"
+            "</section>",
+        )
+        toc_items.append(
+            f'      <li><a href="{chap["filename"]}">{html.escape(chap["title"], quote=False)}</a></li>'
+        )
+        manifest_items.append(
+            f'    <item id="{chap["id"]}" href="{chap["filename"]}" media-type="application/xhtml+xml"/>'
+        )
+        spine_items.append(f'    <itemref idref="{chap["id"]}"/>')
+
+    first_chap = chapters[0]
     entries["nav.xhtml"] = _xhtml(
         "Contents",
         '<nav epub:type="toc" id="toc" role="doc-toc">\n'
         "  <h1>Contents</h1>\n"
         "  <ol>\n"
-        f'      <li><a href="title.xhtml">{html.escape(meta["title"], quote=False)}</a></li>\n'
-        f'      <li><a href="prologue.xhtml">{html.escape(prologue["title"], quote=False)}</a></li>\n'
-        "  </ol>\n"
+        + "\n".join(toc_items)
+        + "\n  </ol>\n"
         "</nav>\n"
         '<nav epub:type="landmarks" hidden="hidden">\n'
         "  <h2>Landmarks</h2>\n"
         "  <ol>\n"
         '    <li><a epub:type="cover" href="cover.xhtml">Cover</a></li>\n'
         '    <li><a epub:type="titlepage" href="title.xhtml">Title Page</a></li>\n'
-        '    <li><a epub:type="bodymatter" href="prologue.xhtml">Prologue</a></li>\n'
+        f'    <li><a epub:type="bodymatter" href="{first_chap["filename"]}">{html.escape(first_chap["title"], quote=False)}</a></li>\n'
         "  </ol>\n"
         "</nav>",
     )
 
     identifier = "urn:uuid:" + str(uuid.uuid5(uuid.NAMESPACE_URL, "corporate-castle/standalone/" + meta["id"]))
     description = (
-        "Prologue preview of The Hot Potato of Corporate Castle, a satirical corporate fantasy "
-        "set between the Tower of Vibes, Liability Tower, and the underfunded ER Watch."
+        "Preview edition (Prologue and Chapter One) of The Hot Potato of Corporate Castle, "
+        "a satirical corporate fantasy set between the Tower of Vibes, Liability Tower, and the underfunded ER Watch."
     )
     opf = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -439,21 +513,14 @@ def build_epub(meta: dict, prologue: dict, cover_bytes: bytes, output: Path) -> 
         '    <dc:language>en</dc:language>\n'
         f'    <dc:description>{html.escape(description, quote=False)}</dc:description>\n'
         '    <meta property="rendition:layout">reflowable</meta>\n'
-        '    <meta property="dcterms:modified">2026-11-26T08:36:00Z</meta>\n'
+        '    <meta property="dcterms:modified">2026-11-27T22:55:00Z</meta>\n'
         '  </metadata>\n'
         '  <manifest>\n'
-        '    <item id="style" href="style.css" media-type="text/css"/>\n'
-        '    <item id="cover-image" href="cover.jpg" media-type="image/jpeg" properties="cover-image"/>\n'
-        '    <item id="cover" href="cover.xhtml" media-type="application/xhtml+xml"/>\n'
-        '    <item id="title" href="title.xhtml" media-type="application/xhtml+xml"/>\n'
-        '    <item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>\n'
-        '    <item id="prologue" href="prologue.xhtml" media-type="application/xhtml+xml"/>\n'
-        '  </manifest>\n'
+        + "\n".join(manifest_items)
+        + "\n  </manifest>\n"
         '  <spine>\n'
-        '    <itemref idref="cover"/>\n'
-        '    <itemref idref="title"/>\n'
-        '    <itemref idref="prologue"/>\n'
-        '  </spine>\n'
+        + "\n".join(spine_items)
+        + "\n  </spine>\n"
         "</package>\n"
     )
     container = (
@@ -467,7 +534,7 @@ def build_epub(meta: dict, prologue: dict, cover_bytes: bytes, output: Path) -> 
 
     with ZipFile(output, "w") as zf:
         def add(name: str, val: str | bytes, comp: int = ZIP_DEFLATED):
-            info = ZipInfo(name, (2026, 11, 26, 8, 36, 0))
+            info = ZipInfo(name, (2026, 11, 27, 22, 55, 0))
             info.compress_type = comp
             zf.writestr(info, val if isinstance(val, bytes) else val.encode("utf-8"))
 
@@ -477,7 +544,7 @@ def build_epub(meta: dict, prologue: dict, cover_bytes: bytes, output: Path) -> 
         for fname, val in entries.items():
             add(f"EPUB/{fname}", val)
 
-    # Strict validation of archive and word-for-word prose fidelity
+    # Strict validation of archive and word-for-word prose fidelity for every chapter
     with ZipFile(output) as zf:
         assert zf.testzip() is None
         assert zf.infolist()[0].filename == "mimetype"
@@ -486,32 +553,32 @@ def build_epub(meta: dict, prologue: dict, cover_bytes: bytes, output: Path) -> 
         for name in zf.namelist():
             if name.endswith((".xml", ".xhtml", ".opf")):
                 ET.fromstring(zf.read(name))
-        tree = ET.fromstring(zf.read("EPUB/prologue.xhtml"))
-        h1 = "".join(tree.find(f".//{{{XHTML_NS}}}h1").itertext())
-        assert h1 == prologue["title"], "Prologue heading mismatch"
-        actual = [norm("".join(p.itertext())) for p in tree.findall(f".//{{{XHTML_NS}}}p")]
-        expected_plain = [strip_md_markers(p) for p in prologue["paragraphs"]]
-        assert actual == expected_plain, "Prologue prose mismatch"
+        for chap in chapters:
+            tree = ET.fromstring(zf.read(f"EPUB/{chap['filename']}"))
+            h1 = "".join(tree.find(f".//{{{XHTML_NS}}}h1").itertext())
+            assert h1 == chap["title"], f"Heading mismatch in {chap['filename']}"
+            actual = [norm("".join(p.itertext())) for p in tree.findall(f".//{{{XHTML_NS}}}p")]
+            expected_plain = [strip_md_markers(b) for b in chap["blocks"] if not is_scene_break(b)]
+            assert actual == expected_plain, f"Prose mismatch in {chap['filename']}"
 
     return output.read_bytes()
 
 
 def main() -> int:
     OUT.mkdir(parents=True, exist_ok=True)
-    meta, prologue = load_prologue()
+    meta, chapters = load_chapters()
     cover_path = OUT / "cover.jpg"
     cover_bytes = build_cover(cover_path)
 
     pdf_path = OUT / f"{meta['id']}.pdf"
-    pdf_bytes, page_count = build_pdf(meta, prologue, cover_path, pdf_path)
+    pdf_bytes, page_count = build_pdf(meta, chapters, cover_path, pdf_path)
 
     epub_path = OUT / f"{meta['id']}.epub"
-    epub_bytes = build_epub(meta, prologue, cover_bytes, epub_path)
+    epub_bytes = build_epub(meta, chapters, cover_bytes, epub_path)
 
     summary = {
-        "edition": "prologue-preview",
-        "source": prologue["source"],
-        "source_sha256": prologue["sha256"],
+        "edition": "preview-prologue-ch1",
+        "chapters": [{"source": c["source"], "title": c["title"], "sha256": c["sha256"]} for c in chapters],
         "cover": {"path": str(cover_path), "bytes": len(cover_bytes), "sha256": sha256_bytes(cover_bytes)},
         "pdf": {"path": str(pdf_path), "bytes": len(pdf_bytes), "sha256": sha256_bytes(pdf_bytes), "pages": page_count},
         "epub": {"path": str(epub_path), "bytes": len(epub_bytes), "sha256": sha256_bytes(epub_bytes)},

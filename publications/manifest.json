@@ -83,26 +83,26 @@
     {
       "id": "the-hot-potato-of-corporate-castle",
       "title": "The Hot Potato of Corporate Castle",
-      "summary": "Prologue preview of a satirical corporate fantasy set between the pastel Tower of Vibes, austere Liability Tower, and the underfunded ER Watch. When High Lady Lexi vanishes overnight, Lord Sterling kicks the ER Watch across the moat without a single gold coin, leaving Royal Inquisitor Marissa and Captain Sarai to move their crew onto an abandoned wooden barge outside Liability Tower's drawbridge.",
+      "summary": "Preview edition (Prologue and Chapter One) of a satirical corporate fantasy set between the pastel Tower of Vibes, austere Liability Tower, and the underfunded ER Watch. When High Lady Lexi vanishes overnight, Lord Sterling kicks the ER Watch across the moat without a single gold coin, leaving Royal Inquisitor Marissa, Captain Sarai, and the ER Squires parked in an unfunded corner of Liability Tower while holding the castle together with Deep Magic.",
       "language": "en",
       "layout": "reflowable",
-      "edition_note": "Prologue preview edition (work in progress): Prologue only, 4 PDF pages; reflowable EPUB 3 with typographic cover.",
+      "edition_note": "Preview edition (work in progress): Prologue and Chapter One, 19 PDF pages; reflowable EPUB 3 with linked contents and typographic cover.",
       "downloads": {
         "epub": {
           "path": "the-hot-potato-of-corporate-castle.epub",
-          "bytes": 50964,
-          "sha256": "d0284441fc0683572324c2b2329f438d0fc0f6cfc193e22e5a8709caa12adf41"
+          "bytes": 68333,
+          "sha256": "31b1baf9a2f41d5e0a67826127811077979b45e04448838c4dfa4cc3103d15da"
         },
         "pdf": {
           "path": "the-hot-potato-of-corporate-castle.pdf",
-          "bytes": 169678,
-          "sha256": "c30a4181f3779d1802bc573378035673106162b0f36880ae85364af01afe160f"
+          "bytes": 253377,
+          "sha256": "d9838873e13926f577b47d86c2c3cde6beadd3709b69339deb74d5588c9c507d"
         }
       },
       "cover": {
         "path": "covers/the-hot-potato-of-corporate-castle.jpg",
-        "bytes": 66971,
-        "sha256": "c666c4f71a3f751987e2f5a4f372d6d441abf03df19540d6f4c0f0d87cab91cd",
+        "bytes": 71035,
+        "sha256": "1208b56d4d83e0d4dbb25fe55355f156c9c80119dcd6be99ba0ff860cfaeec95",
         "derived_from": "EPUB/cover.jpg inside the published EPUB, a 720x1080 typographic cover"
       },
       "sources": [
