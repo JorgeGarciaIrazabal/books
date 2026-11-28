@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "comments": [
+    {
+      "id": "CMT-0001",
+      "target": {
+        "kind": "markdown",
+        "file": "manuscript/000-prologue-the-hot-potato-of-corporate-castle.md"
+      },
+      "anchor": {
+        "quote": "It was supposed to be an interim measure. Instead, it was the first crack in the foundation of Corporate Castle.",
+        "originalQuote": "It was supposed to be an interim measure. Instead, it was the first crack in the foundation of Corporate Castle.",
+        "prefix": "",
+        "suffix": " For years, the realm had stayed upright",
+        "blockIndex": 5,
+        "startOffset": 0,
+        "endOffset": 112,
+        "occurrence": 1,
+        "fileSha256": "9f968e2febf2a12446d5cdad0edfeb73642359bb9d38873562ee6aafa5d60b50",
+        "autoUpdated": true,
+        "orphaned": false
+      },
+      "author": "human",
+      "targetRole": "line_editor",
+      "intent": "revise",
+      "body": "elavote on this a little more",
+      "status": "resolved",
+      "createdAt": "11:09 PM",
+      "thread": [
+        {
+          "id": "CMT-0001-R1",
+          "author": "line_editor",
+          "body": "Expanded the closing paragraph of the Prologue while keeping the original two opening sentences verbatim. Elaborated on why stranding the ER Watch on an unfunded barge between the twin spires represents a structural crack in Corporate Castle: the unspoken bargain keeping the realm upright, Sterling and Lois treating the team as an org-chart shuffle without claim or shelter (keeping Liability Tower's craft distinct per DEC-CC-0007), and a closing image that hands directly into Chapter 1's barge opening. Checked zero em dashes (DEC-CC-0006), no King mention (DEC-CC-0005), and unbolded lexicon prose.",
+          "createdAt": "11:12 PM"
+        }
+      ]
+    }
+  ]
+}
