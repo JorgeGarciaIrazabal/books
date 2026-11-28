@@ -1,6 +1,14 @@
 name: Build and deploy the public library site
 
 on:
+  push:
+    branches: ["main"]
+    paths:
+      - "publications/**"
+      - "site/**"
+      - "narration/**"
+      - "tools/build_catalog.py"
+      - ".github/workflows/pages.yml"
   workflow_dispatch:
 
 permissions:
